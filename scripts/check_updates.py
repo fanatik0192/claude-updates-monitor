@@ -440,6 +440,98 @@ def format_message(update):
     return msg
 
 
+def generate_daily_report(all_updates, new_updates, versions, cache):
+    """Genere le rapport quotidien complet."""
+
+    now = datetime.now()
+    last_check = cache.get("last_check", "Premiere execution")
+    previous_versions = cache.get("versions", {})
+
+    # Header du rapport
+    report = f"""
+📊 *RAPPORT QUOTIDIEN CLAUDE*
+📅 {now.strftime('%d/%m/%Y à %H:%M')}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+"""
+
+    # Status global
+    if new_updates:
+        report += f"🔔 *{len(new_updates)} NOUVEAUTE(S) DETECTEE(S)*\n\n"
+    else:
+        report += "✅ *AUCUNE NOUVEAUTE*\n\n"
+
+    # Tableau des versions actuelles
+    report += "📦 *VERSIONS ACTUELLES*\n"
+    report += "```\n"
+
+    version_items = [
+        ("Claude Code npm", versions.get("claude_code_npm", "?")),
+        ("Claude Code GitHub", versions.get("claude_code_github", "?")),
+        ("SDK Python (PyPI)", versions.get("sdk_python", "?")),
+        ("SDK TypeScript", versions.get("sdk_typescript", "?")),
+        ("SDK npm", versions.get("sdk_npm", "?")),
+    ]
+
+    for name, version in version_items:
+        # Indicateur de changement
+        prev = previous_versions.get(name, version)
+        if prev != version and prev != "?":
+            indicator = "🆕"
+        else:
+            indicator = "  "
+        report += f"{indicator} {name}: {version}\n"
+
+    report += "```\n\n"
+
+    # Resume par source
+    report += "📋 *RESUME PAR SOURCE*\n"
+    report += "```\n"
+
+    source_counts = {}
+    source_new = {}
+    for u in all_updates:
+        src = u["source"]
+        source_counts[src] = source_counts.get(src, 0) + 1
+    for u in new_updates:
+        src = u["source"]
+        source_new[src] = source_new.get(src, 0) + 1
+
+    sources_order = [
+        "API Changelog", "Claude Code", "Python SDK", "TypeScript SDK",
+        "npm @anthropic-ai/sdk", "npm @anthropic-ai/claude-code",
+        "PyPI anthropic", "Blog", "Research", "Status", "GitHub Repo"
+    ]
+
+    for src in sources_order:
+        total = source_counts.get(src, 0)
+        new = source_new.get(src, 0)
+        if total > 0:
+            if new > 0:
+                report += f"🔴 {src}: +{new} new\n"
+            else:
+                report += f"⚪ {src}: OK\n"
+
+    report += "```\n\n"
+
+    # Liste des nouveautes
+    if new_updates:
+        report += "🆕 *NOUVEAUTES DETECTEES*\n\n"
+        for i, update in enumerate(new_updates[:8], 1):
+            title = update['title'][:50] + "..." if len(update['title']) > 50 else update['title']
+            report += f"{i}. *{update['source']}*\n"
+            report += f"   {title}\n"
+            report += f"   🔗 {update['url'][:50]}...\n\n"
+
+    # Footer
+    report += "━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+    report += f"⏰ Prochain check: demain 20h\n"
+    report += f"📡 Sources: {len(SOURCES)} actives"
+
+    return report
+
+
 def main():
     print(f"[START] Claude Updates Monitor FULL - {datetime.now().isoformat()}")
     print("=" * 50)
@@ -449,6 +541,9 @@ def main():
     seen_hashes = set(cache.get("seen_hashes", []))
     new_hashes = list(seen_hashes)
 
+    # Dictionnaire pour stocker les versions actuelles
+    versions = {}
+
     # Collecte TOUTES les updates
     all_updates = []
 
@@ -456,13 +551,31 @@ def main():
     all_updates.extend(fetch_changelog())
 
     print("[FETCHING] GitHub releases...")
-    all_updates.extend(fetch_github_releases())
+    github_updates = fetch_github_releases()
+    all_updates.extend(github_updates)
+    # Stocke les versions
+    for u in github_updates:
+        if u["source"] == "Claude Code":
+            versions["claude_code_github"] = u["title"][:20]
+        elif u["source"] == "Python SDK":
+            versions["sdk_typescript"] = u["title"][:20]
+        elif u["source"] == "TypeScript SDK":
+            versions["sdk_typescript"] = u["title"][:20]
 
     print("[FETCHING] npm packages...")
-    all_updates.extend(fetch_npm_packages())
+    npm_updates = fetch_npm_packages()
+    all_updates.extend(npm_updates)
+    for u in npm_updates:
+        if "claude-code" in u["source"]:
+            versions["claude_code_npm"] = u["title"]
+        elif "sdk" in u["source"]:
+            versions["sdk_npm"] = u["title"]
 
     print("[FETCHING] PyPI package...")
-    all_updates.extend(fetch_pypi_package())
+    pypi_updates = fetch_pypi_package()
+    all_updates.extend(pypi_updates)
+    for u in pypi_updates:
+        versions["sdk_python"] = u["title"]
 
     print("[FETCHING] Blog...")
     all_updates.extend(fetch_blog())
@@ -489,18 +602,19 @@ def main():
 
     print(f"\n[NOUVELLES] {len(new_updates)} nouvelles updates")
 
-    # Envoie les notifications
+    # Genere et envoie le rapport quotidien
+    report = generate_daily_report(all_updates, new_updates, versions, cache)
+    send_telegram(report)
+
+    # Si nouvelles updates, envoie aussi les details individuels
     if new_updates:
-        for update in new_updates[:10]:  # Max 10 notifications
+        for update in new_updates[:5]:  # Max 5 notifications detaillees
             message = format_message(update)
             send_telegram(message)
 
-        send_telegram(f"✅ *{len(new_updates)} nouvelle(s) update(s) detectee(s)*\n📅 {datetime.now().strftime('%d/%m/%Y %H:%M')}")
-    else:
-        send_telegram(f"✅ *Check OK* - Aucune nouveaute\n📅 {datetime.now().strftime('%d/%m/%Y %H:%M')}")
-
-    # Sauvegarde le cache
+    # Sauvegarde le cache avec les versions
     cache["seen_hashes"] = new_hashes
+    cache["versions"] = versions
     save_cache(cache)
 
     print(f"\n[END] Termine - {len(new_updates)} notifications envoyees")
