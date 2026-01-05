@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Claude Updates Monitor - VERSION COMPLETE (FR)
+Claude Updates Monitor - VERSION COMPLETE (FR) - UI AMELIOREE
 Verifie TOUTES les mises a jour d'Anthropic et envoie des notifications Telegram.
 """
 
@@ -30,9 +30,23 @@ TELEGRAM_CHAT_IDS = [
 ]
 CACHE_FILE = Path("cache/last_check.json")
 
+# Descriptions des sources pour expliquer ce que c'est
+SOURCE_DESCRIPTIONS = {
+    "Journal API": "Modifications de l'API Claude (nouveaux modeles, endpoints, parametres)",
+    "Claude Code": "L'assistant IA en ligne de commande pour coder avec Claude",
+    "SDK Python": "Bibliotheque Python pour integrer Claude dans vos apps",
+    "SDK TypeScript": "Bibliotheque TypeScript/JavaScript pour integrer Claude",
+    "npm @anthropic-ai/sdk": "Package npm du SDK officiel Anthropic",
+    "npm @anthropic-ai/claude-code": "Package npm de Claude Code",
+    "PyPI anthropic": "Package Python pip du SDK Anthropic",
+    "Blog": "Articles et annonces officielles d'Anthropic",
+    "Recherche": "Publications scientifiques et recherche IA d'Anthropic",
+    "Statut": "Etat des services Anthropic (incidents, maintenance)",
+    "Nouveau Depot": "Nouveaux projets open source d'Anthropic sur GitHub"
+}
+
 # TOUTES les sources a monitorer
 SOURCES = {
-    # API & Documentation
     "changelog": {
         "url": "https://docs.anthropic.com/en/docs/changelog",
         "name": "Journal des modifications API"
@@ -41,8 +55,6 @@ SOURCES = {
         "url": "https://docs.anthropic.com/en/api",
         "name": "Documentation API"
     },
-
-    # Claude Code
     "github_releases": {
         "url": "https://github.com/anthropics/claude-code/releases.atom",
         "name": "Claude Code GitHub"
@@ -51,8 +63,6 @@ SOURCES = {
         "url": "https://registry.npmjs.org/@anthropic-ai/claude-code",
         "name": "Claude Code npm"
     },
-
-    # SDK & Bibliotheques
     "npm_sdk": {
         "url": "https://registry.npmjs.org/@anthropic-ai/sdk",
         "name": "SDK Anthropic npm"
@@ -69,8 +79,6 @@ SOURCES = {
         "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases.atom",
         "name": "SDK TypeScript GitHub"
     },
-
-    # Blog & Actualites
     "blog": {
         "url": "https://www.anthropic.com/news",
         "name": "Blog Anthropic"
@@ -79,14 +87,10 @@ SOURCES = {
         "url": "https://www.anthropic.com/research",
         "name": "Recherche Anthropic"
     },
-
-    # Statut
     "status": {
         "url": "https://status.anthropic.com",
         "name": "Statut Anthropic"
     },
-
-    # Depots GitHub Anthropic
     "github_anthropic": {
         "url": "https://github.com/anthropics",
         "name": "GitHub Anthropic"
@@ -119,17 +123,13 @@ def get_hash(content):
     return hashlib.md5(content.encode()).hexdigest()[:16]
 
 
-def send_telegram(message, chat_id=None):
+def send_telegram(message, chat_id=None, parse_mode="HTML"):
     """Envoie un message Telegram a un ou plusieurs destinataires."""
     if not TELEGRAM_BOT_TOKEN:
         print(f"[TELEGRAM DESACTIVE] {message[:100]}...")
         return False
 
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-
-    # Nettoie le message pour eviter les erreurs Markdown
-    clean_message = message.replace("_", "\\_").replace("*", "\\*").replace("[", "\\[").replace("]", "\\]")
-    clean_message = clean_message.replace("\\*", "*").replace("\\_", "_")
 
     # Si chat_id specifie, envoie a celui-la, sinon envoie a tous
     targets = [chat_id] if chat_id else [cid for cid in TELEGRAM_CHAT_IDS if cid]
@@ -138,8 +138,8 @@ def send_telegram(message, chat_id=None):
     for target_id in targets:
         payload = {
             "chat_id": target_id,
-            "text": clean_message,
-            "parse_mode": "Markdown",
+            "text": message,
+            "parse_mode": parse_mode,
             "disable_web_page_preview": True
         }
 
@@ -149,13 +149,14 @@ def send_telegram(message, chat_id=None):
                 print(f"[TELEGRAM] Message envoye a {target_id} !")
                 success = True
             else:
+                # Retry sans formatage si erreur
                 payload["parse_mode"] = None
                 response = requests.post(url, json=payload, timeout=10)
                 if response.status_code == 200:
                     print(f"[TELEGRAM] Message envoye a {target_id} (sans formatage)")
                     success = True
                 else:
-                    print(f"[ERREUR TELEGRAM] {target_id}: {response.status_code}")
+                    print(f"[ERREUR TELEGRAM] {target_id}: {response.status_code} - {response.text[:100]}")
         except Exception as e:
             print(f"[ERREUR TELEGRAM] {target_id}: {e}")
 
@@ -409,8 +410,8 @@ def fetch_github_anthropic_repos():
     return updates
 
 
-def format_message(update):
-    """Formate un message Telegram."""
+def format_update_detail(update, index):
+    """Formate un message detaille pour une nouveaute."""
     emoji = {
         "Journal API": "🔧",
         "Claude Code": "📦",
@@ -426,49 +427,74 @@ def format_message(update):
     }
 
     e = emoji.get(update['source'], '📌')
-    title = update['title'][:80] if update['title'] else "N/A"
-    summary = update['summary'][:250] if update['summary'] else ""
+    description = SOURCE_DESCRIPTIONS.get(update['source'], '')
+    title = update['title'][:70] if update['title'] else "N/A"
+    summary = update['summary'][:300] if update['summary'] else ""
 
-    msg = f"{e} *MISE A JOUR CLAUDE*\n\n"
-    msg += f"🏷 *Source :* {update['source']}\n"
-    msg += f"📝 {title}\n"
+    msg = f"""
+╔══════════════════════════════════════╗
+║ {e} <b>NOUVEAUTE #{index}</b>
+╚══════════════════════════════════════╝
+
+<b>📂 Source :</b> {update['source']}
+<i>💡 {description}</i>
+
+<b>📝 Titre :</b>
+{title}
+"""
+
     if summary:
-        msg += f"\n{summary}\n"
-    msg += f"\n🔗 {update['url']}\n"
-    msg += "━━━━━━━━━━━━━━━━━━"
+        msg += f"""
+<b>📄 Details :</b>
+{summary}
+"""
 
+    msg += f"""
+🔗 <a href="{update['url']}">Voir la mise a jour</a>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+"""
     return msg
 
 
 def generate_daily_report(all_updates, new_updates, versions, cache):
-    """Genere le rapport quotidien complet."""
+    """Genere le rapport quotidien complet avec design ameliore."""
 
     now = datetime.now()
     previous_versions = cache.get("versions", {})
 
     # En-tete du rapport
     report = f"""
-📊 *RAPPORT QUOTIDIEN CLAUDE*
-📅 {now.strftime('%d/%m/%Y a %H:%M')}
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╔══════════════════════════════════════╗
+║   📊 <b>RAPPORT QUOTIDIEN CLAUDE</b>      ║
+║   📅 {now.strftime('%d/%m/%Y')} a {now.strftime('%H:%M')}               ║
+╚══════════════════════════════════════╝
 
 """
 
     # Statut global
     if new_updates:
-        report += f"🔔 *{len(new_updates)} NOUVEAUTE(S) DETECTEE(S)*\n\n"
+        report += f"""┌──────────────────────────────────────┐
+│ 🔔 <b>{len(new_updates)} NOUVEAUTE(S) DETECTEE(S)</b>       │
+└──────────────────────────────────────┘
+
+"""
     else:
-        report += "✅ *AUCUNE NOUVEAUTE*\n\n"
+        report += """┌──────────────────────────────────────┐
+│ ✅ <b>AUCUNE NOUVEAUTE</b>                 │
+│    Tout est a jour !                 │
+└──────────────────────────────────────┘
+
+"""
 
     # Tableau des versions actuelles
-    report += "📦 *VERSIONS ACTUELLES*\n"
-    report += "```\n"
+    report += """<b>📦 VERSIONS ACTUELLES</b>
+┌────────────────────┬───────────┐
+"""
 
     version_items = [
-        ("Claude Code npm", versions.get("claude_code_npm", "?")),
-        ("Claude Code GitHub", versions.get("claude_code_github", "?")),
-        ("SDK Python (PyPI)", versions.get("sdk_python", "?")),
+        ("Claude Code", versions.get("claude_code_npm", "?")),
+        ("SDK Python", versions.get("sdk_python", "?")),
         ("SDK TypeScript", versions.get("sdk_typescript", "?")),
         ("SDK npm", versions.get("sdk_npm", "?")),
     ]
@@ -479,13 +505,18 @@ def generate_daily_report(all_updates, new_updates, versions, cache):
             indicator = "🆕"
         else:
             indicator = "  "
-        report += f"{indicator} {name}: {version}\n"
+        # Formatage aligne
+        name_padded = name[:16].ljust(16)
+        version_padded = str(version)[:9].ljust(9)
+        report += f"│ {indicator} {name_padded} │ {version_padded} │\n"
 
-    report += "```\n\n"
+    report += """└────────────────────┴───────────┘
 
-    # Resume par source
-    report += "📋 *RESUME PAR SOURCE*\n"
-    report += "```\n"
+"""
+
+    # Resume par source avec indicateurs visuels
+    report += """<b>📋 STATUT DES SOURCES</b>
+"""
 
     source_counts = {}
     source_new = {}
@@ -496,44 +527,64 @@ def generate_daily_report(all_updates, new_updates, versions, cache):
         src = u["source"]
         source_new[src] = source_new.get(src, 0) + 1
 
-    sources_order = [
-        ("Journal API", "Journal API"),
+    sources_display = [
+        ("Journal API", "API"),
         ("Claude Code", "Claude Code"),
         ("SDK Python", "SDK Python"),
-        ("SDK TypeScript", "SDK TypeScript"),
-        ("npm @anthropic-ai/sdk", "SDK npm"),
-        ("npm @anthropic-ai/claude-code", "Claude Code npm"),
-        ("PyPI anthropic", "SDK PyPI"),
+        ("SDK TypeScript", "SDK TS"),
         ("Blog", "Blog"),
         ("Recherche", "Recherche"),
         ("Statut", "Statut"),
-        ("Nouveau Depot", "Nouveaux depots")
+        ("Nouveau Depot", "GitHub"),
     ]
 
-    for src, label in sources_order:
+    for src, label in sources_display:
         total = source_counts.get(src, 0)
         new = source_new.get(src, 0)
-        if total > 0:
+        if total > 0 or src in ["Statut"]:
             if new > 0:
-                report += f"🔴 {label}: +{new} nouveau\n"
+                report += f"├ 🔴 {label}: <b>+{new} nouveau</b>\n"
             else:
-                report += f"⚪ {label}: OK\n"
+                report += f"├ 🟢 {label}: OK\n"
 
-    report += "```\n\n"
+    report += "\n"
 
-    # Liste des nouveautes
-    if new_updates:
-        report += "🆕 *NOUVEAUTES DETECTEES*\n\n"
-        for i, update in enumerate(new_updates[:8], 1):
-            title = update['title'][:50] + "..." if len(update['title']) > 50 else update['title']
-            report += f"{i}. *{update['source']}*\n"
-            report += f"   {title}\n"
-            report += f"   🔗 {update['url'][:50]}...\n\n"
+    # Si pas de nouveautes, message de fin
+    if not new_updates:
+        report += """━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⏰ <b>Prochain check :</b> demain 20h
+📡 <b>Sources surveillees :</b> 12
 
-    # Pied de page
-    report += "━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
-    report += f"⏰ Prochain check : demain 20h\n"
-    report += f"📡 Sources : {len(SOURCES)} actives"
+<i>💡 Ce bot surveille toutes les mises a jour
+d'Anthropic : API, SDK, Claude Code, Blog...</i>
+"""
+        return report
+
+    # Liste des nouveautes avec details
+    report += """<b>🆕 APERCU DES NOUVEAUTES</b>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+"""
+
+    for i, update in enumerate(new_updates[:5], 1):
+        emoji = {
+            "Journal API": "🔧", "Claude Code": "📦", "SDK Python": "🐍",
+            "SDK TypeScript": "📘", "Blog": "📰", "Recherche": "🔬",
+            "Statut": "⚠️", "Nouveau Depot": "🆕"
+        }.get(update['source'], '📌')
+
+        title = update['title'][:45] + "..." if len(update['title']) > 45 else update['title']
+        report += f"""
+{i}️⃣ {emoji} <b>{update['source']}</b>
+   {title}
+"""
+
+    report += f"""
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⏰ <b>Prochain check :</b> demain 20h
+📡 <b>Sources :</b> {len(SOURCES)} actives
+
+<i>📬 Details complets envoyes ci-dessous...</i>
+"""
 
     return report
 
@@ -550,7 +601,20 @@ def main():
     # Message de bienvenue pour les nouveaux membres
     welcomed = cache.get("welcomed_users", [])
     if "1707849259" not in welcomed:
-        send_telegram("🎉 Bienvenue ! Suce zob, rdv 20h chaque jour pour les updates Claude !", chat_id="1707849259")
+        welcome_msg = """
+🎉 <b>Bienvenue !</b>
+
+Suce zob, rdv 20h chaque jour pour les updates Claude !
+
+📊 Tu recevras chaque jour un rapport complet sur :
+• Les nouvelles versions de Claude Code
+• Les mises a jour de l'API
+• Les articles du blog Anthropic
+• Et plus encore...
+
+A demain 20h ! 🚀
+"""
+        send_telegram(welcome_msg, chat_id="1707849259")
         welcomed.append("1707849259")
         cache["welcomed_users"] = welcomed
 
@@ -618,11 +682,11 @@ def main():
     report = generate_daily_report(all_updates, new_updates, versions, cache)
     send_telegram(report)
 
-    # Si nouvelles mises a jour, envoie aussi les details individuels
+    # Si nouvelles mises a jour, envoie les details individuels
     if new_updates:
-        for update in new_updates[:5]:
-            message = format_message(update)
-            send_telegram(message)
+        for i, update in enumerate(new_updates[:5], 1):
+            detail_msg = format_update_detail(update, i)
+            send_telegram(detail_msg)
 
     # Sauvegarde le cache avec les versions
     cache["seen_hashes"] = new_hashes
