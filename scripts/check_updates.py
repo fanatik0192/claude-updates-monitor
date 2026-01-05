@@ -24,7 +24,10 @@ except ImportError:
 
 # Configuration
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
-TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
+TELEGRAM_CHAT_IDS = [
+    os.environ.get("TELEGRAM_CHAT_ID"),  # Antoine
+    "1707849259"  # Pote
+]
 CACHE_FILE = Path("cache/last_check.json")
 
 # TOUTES les sources a monitorer
@@ -116,41 +119,47 @@ def get_hash(content):
     return hashlib.md5(content.encode()).hexdigest()[:16]
 
 
-def send_telegram(message):
-    """Envoie un message Telegram."""
-    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
+def send_telegram(message, chat_id=None):
+    """Envoie un message Telegram a un ou plusieurs destinataires."""
+    if not TELEGRAM_BOT_TOKEN:
         print(f"[TELEGRAM DESACTIVE] {message[:100]}...")
         return False
 
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
 
     # Nettoie le message pour eviter les erreurs Markdown
-    message = message.replace("_", "\\_").replace("*", "\\*").replace("[", "\\[").replace("]", "\\]")
-    message = message.replace("\\*", "*").replace("\\_", "_")
+    clean_message = message.replace("_", "\\_").replace("*", "\\*").replace("[", "\\[").replace("]", "\\]")
+    clean_message = clean_message.replace("\\*", "*").replace("\\_", "_")
 
-    payload = {
-        "chat_id": TELEGRAM_CHAT_ID,
-        "text": message,
-        "parse_mode": "Markdown",
-        "disable_web_page_preview": True
-    }
+    # Si chat_id specifie, envoie a celui-la, sinon envoie a tous
+    targets = [chat_id] if chat_id else [cid for cid in TELEGRAM_CHAT_IDS if cid]
 
-    try:
-        response = requests.post(url, json=payload, timeout=10)
-        if response.status_code == 200:
-            print(f"[TELEGRAM] Message envoye !")
-            return True
-        else:
-            payload["parse_mode"] = None
+    success = False
+    for target_id in targets:
+        payload = {
+            "chat_id": target_id,
+            "text": clean_message,
+            "parse_mode": "Markdown",
+            "disable_web_page_preview": True
+        }
+
+        try:
             response = requests.post(url, json=payload, timeout=10)
             if response.status_code == 200:
-                print(f"[TELEGRAM] Message envoye (sans formatage)")
-                return True
-            print(f"[ERREUR TELEGRAM] {response.status_code}: {response.text}")
-            return False
-    except Exception as e:
-        print(f"[ERREUR TELEGRAM] {e}")
-        return False
+                print(f"[TELEGRAM] Message envoye a {target_id} !")
+                success = True
+            else:
+                payload["parse_mode"] = None
+                response = requests.post(url, json=payload, timeout=10)
+                if response.status_code == 200:
+                    print(f"[TELEGRAM] Message envoye a {target_id} (sans formatage)")
+                    success = True
+                else:
+                    print(f"[ERREUR TELEGRAM] {target_id}: {response.status_code}")
+        except Exception as e:
+            print(f"[ERREUR TELEGRAM] {target_id}: {e}")
+
+    return success
 
 
 def fetch_changelog():
@@ -537,6 +546,13 @@ def main():
     cache = load_cache()
     seen_hashes = set(cache.get("seen_hashes", []))
     new_hashes = list(seen_hashes)
+
+    # Message de bienvenue pour les nouveaux membres
+    welcomed = cache.get("welcomed_users", [])
+    if "1707849259" not in welcomed:
+        send_telegram("🎉 Bienvenue ! Suce zob, rdv 20h chaque jour pour les updates Claude !", chat_id="1707849259")
+        welcomed.append("1707849259")
+        cache["welcomed_users"] = welcomed
 
     # Dictionnaire pour stocker les versions actuelles
     versions = {}
