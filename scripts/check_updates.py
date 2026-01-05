@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Claude Updates Monitor - VERSION COMPLETE (FR) - UI AMELIOREE
-Verifie TOUTES les mises a jour d'Anthropic et envoie des notifications Telegram.
+Claude Updates Monitor - VERSION MINI APP
+Verifie TOUTES les mises a jour d'Anthropic, met a jour la Mini App, et envoie des notifications Telegram.
 """
 
 import os
@@ -29,6 +29,12 @@ TELEGRAM_CHAT_IDS = [
     "1707849259"  # Pote
 ]
 CACHE_FILE = Path("cache/last_check.json")
+WEBAPP_DATA_FILE = Path("docs/data.json")
+
+# URL de la Mini App (GitHub Pages)
+GITHUB_USERNAME = "fanatik0192"
+REPO_NAME = "claude-updates-monitor"
+WEBAPP_URL = f"https://{GITHUB_USERNAME}.github.io/{REPO_NAME}/"
 
 # Descriptions des sources pour expliquer ce que c'est
 SOURCE_DESCRIPTIONS = {
@@ -123,7 +129,7 @@ def get_hash(content):
     return hashlib.md5(content.encode()).hexdigest()[:16]
 
 
-def send_telegram(message, chat_id=None, parse_mode="HTML"):
+def send_telegram(message, chat_id=None, parse_mode="HTML", reply_markup=None):
     """Envoie un message Telegram a un ou plusieurs destinataires."""
     if not TELEGRAM_BOT_TOKEN:
         print(f"[TELEGRAM DESACTIVE] {message[:100]}...")
@@ -142,6 +148,9 @@ def send_telegram(message, chat_id=None, parse_mode="HTML"):
             "parse_mode": parse_mode,
             "disable_web_page_preview": True
         }
+
+        if reply_markup:
+            payload["reply_markup"] = reply_markup
 
         try:
             response = requests.post(url, json=payload, timeout=10)
@@ -410,183 +419,102 @@ def fetch_github_anthropic_repos():
     return updates
 
 
-def format_update_detail(update, index):
-    """Formate un message detaille pour une nouveaute."""
-    emoji = {
-        "Journal API": "🔧",
-        "Claude Code": "📦",
-        "SDK Python": "🐍",
-        "SDK TypeScript": "📘",
-        "npm @anthropic-ai/sdk": "📦",
-        "npm @anthropic-ai/claude-code": "📦",
-        "PyPI anthropic": "🐍",
-        "Blog": "📰",
-        "Recherche": "🔬",
-        "Statut": "⚠️",
-        "Nouveau Depot": "🆕"
+def update_webapp_data(all_updates, new_updates, versions):
+    """Met a jour le fichier JSON pour la Mini App."""
+
+    # Prepare les donnees pour la Mini App
+    webapp_data = {
+        "last_check": datetime.now().isoformat(),
+        "updates": [],
+        "versions": {
+            "Journal API": versions.get("changelog", "N/A"),
+            "Claude Code": versions.get("claude_code_npm", "N/A"),
+            "Claude Code npm": versions.get("claude_code_npm", "N/A"),
+            "SDK Python": versions.get("sdk_python", "N/A"),
+            "SDK Python PyPI": versions.get("sdk_python", "N/A"),
+            "SDK TypeScript": versions.get("sdk_typescript", "N/A"),
+            "Blog Anthropic": "Articles",
+            "Recherche": "Publications",
+            "Status API": versions.get("status", "OK"),
+            "GitHub Anthropic": "Repos",
+            "GitHub Claude Code": versions.get("claude_code_github", "N/A"),
+            "GitHub SDK Python": versions.get("sdk_python_github", "N/A")
+        }
     }
 
-    e = emoji.get(update['source'], '📌')
-    description = SOURCE_DESCRIPTIONS.get(update['source'], '')
-    title = update['title'][:70] if update['title'] else "N/A"
-    summary = update['summary'][:300] if update['summary'] else ""
+    # Marque les nouvelles mises a jour
+    new_hashes = {u["hash"] for u in new_updates}
 
-    msg = f"""
-╔══════════════════════════════════════╗
-║ {e} <b>NOUVEAUTE #{index}</b>
-╚══════════════════════════════════════╝
+    for update in all_updates:
+        webapp_data["updates"].append({
+            "source": update["source"],
+            "title": update["title"],
+            "summary": update.get("summary", ""),
+            "url": update.get("url", ""),
+            "is_new": update["hash"] in new_hashes
+        })
 
-<b>📂 Source :</b> {update['source']}
-<i>💡 {description}</i>
+    # Sauvegarde le fichier JSON
+    WEBAPP_DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(WEBAPP_DATA_FILE, "w", encoding="utf-8") as f:
+        json.dump(webapp_data, f, indent=2, ensure_ascii=False)
 
-<b>📝 Titre :</b>
-{title}
-"""
-
-    if summary:
-        msg += f"""
-<b>📄 Details :</b>
-{summary}
-"""
-
-    msg += f"""
-🔗 <a href="{update['url']}">Voir la mise a jour</a>
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-"""
-    return msg
+    print(f"[WEBAPP] Donnees mises a jour dans {WEBAPP_DATA_FILE}")
 
 
-def generate_daily_report(all_updates, new_updates, versions, cache):
-    """Genere le rapport quotidien complet avec design ameliore."""
+def generate_telegram_message(new_updates, versions):
+    """Genere le message Telegram compact avec bouton vers la Mini App."""
 
     now = datetime.now()
-    previous_versions = cache.get("versions", {})
 
-    # En-tete du rapport
-    report = f"""
-╔══════════════════════════════════════╗
-║   📊 <b>RAPPORT QUOTIDIEN CLAUDE</b>      ║
-║   📅 {now.strftime('%d/%m/%Y')} a {now.strftime('%H:%M')}               ║
-╚══════════════════════════════════════╝
-
-"""
-
-    # Statut global
     if new_updates:
-        report += f"""┌──────────────────────────────────────┐
-│ 🔔 <b>{len(new_updates)} NOUVEAUTE(S) DETECTEE(S)</b>       │
-└──────────────────────────────────────┘
+        msg = f"""
+🔔 <b>CLAUDE UPDATES</b>
+📅 {now.strftime('%d/%m/%Y')} • {now.strftime('%H:%M')}
+
+<b>{len(new_updates)} nouveaute(s) detectee(s) !</b>
 
 """
+        # Liste rapide des nouveautes
+        for i, update in enumerate(new_updates[:5], 1):
+            emoji = {
+                "Journal API": "🔧", "Claude Code": "📦", "SDK Python": "🐍",
+                "SDK TypeScript": "📘", "Blog": "📰", "Recherche": "🔬",
+                "Statut": "⚠️", "Nouveau Depot": "🆕"
+            }.get(update['source'], '📌')
+
+            title = update['title'][:40] + "..." if len(update['title']) > 40 else update['title']
+            msg += f"{emoji} <b>{update['source']}</b>\n   └ {title}\n\n"
+
+        if len(new_updates) > 5:
+            msg += f"<i>+ {len(new_updates) - 5} autres...</i>\n\n"
+
     else:
-        report += """┌──────────────────────────────────────┐
-│ ✅ <b>AUCUNE NOUVEAUTE</b>                 │
-│    Tout est a jour !                 │
-└──────────────────────────────────────┘
+        msg = f"""
+✅ <b>CLAUDE UPDATES</b>
+📅 {now.strftime('%d/%m/%Y')} • {now.strftime('%H:%M')}
+
+<b>Aucune nouveaute aujourd'hui</b>
+Tout est a jour !
 
 """
 
-    # Tableau des versions actuelles
-    report += """<b>📦 VERSIONS ACTUELLES</b>
-┌────────────────────┬───────────┐
+    # Versions actuelles
+    msg += """<b>📦 Versions actuelles</b>
+"""
+    if versions.get("claude_code_npm"):
+        msg += f"• Claude Code: {versions['claude_code_npm']}\n"
+    if versions.get("sdk_python"):
+        msg += f"• SDK Python: {versions['sdk_python']}\n"
+    if versions.get("sdk_npm"):
+        msg += f"• SDK npm: {versions['sdk_npm']}\n"
+
+    msg += f"""
+━━━━━━━━━━━━━━━━━━━━
+⏰ Prochain check: demain 20h
 """
 
-    version_items = [
-        ("Claude Code", versions.get("claude_code_npm", "?")),
-        ("SDK Python", versions.get("sdk_python", "?")),
-        ("SDK TypeScript", versions.get("sdk_typescript", "?")),
-        ("SDK npm", versions.get("sdk_npm", "?")),
-    ]
-
-    for name, version in version_items:
-        prev = previous_versions.get(name, version)
-        if prev != version and prev != "?":
-            indicator = "🆕"
-        else:
-            indicator = "  "
-        # Formatage aligne
-        name_padded = name[:16].ljust(16)
-        version_padded = str(version)[:9].ljust(9)
-        report += f"│ {indicator} {name_padded} │ {version_padded} │\n"
-
-    report += """└────────────────────┴───────────┘
-
-"""
-
-    # Resume par source avec indicateurs visuels
-    report += """<b>📋 STATUT DES SOURCES</b>
-"""
-
-    source_counts = {}
-    source_new = {}
-    for u in all_updates:
-        src = u["source"]
-        source_counts[src] = source_counts.get(src, 0) + 1
-    for u in new_updates:
-        src = u["source"]
-        source_new[src] = source_new.get(src, 0) + 1
-
-    sources_display = [
-        ("Journal API", "API"),
-        ("Claude Code", "Claude Code"),
-        ("SDK Python", "SDK Python"),
-        ("SDK TypeScript", "SDK TS"),
-        ("Blog", "Blog"),
-        ("Recherche", "Recherche"),
-        ("Statut", "Statut"),
-        ("Nouveau Depot", "GitHub"),
-    ]
-
-    for src, label in sources_display:
-        total = source_counts.get(src, 0)
-        new = source_new.get(src, 0)
-        if total > 0 or src in ["Statut"]:
-            if new > 0:
-                report += f"├ 🔴 {label}: <b>+{new} nouveau</b>\n"
-            else:
-                report += f"├ 🟢 {label}: OK\n"
-
-    report += "\n"
-
-    # Si pas de nouveautes, message de fin
-    if not new_updates:
-        report += """━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-⏰ <b>Prochain check :</b> demain 20h
-📡 <b>Sources surveillees :</b> 12
-
-<i>💡 Ce bot surveille toutes les mises a jour
-d'Anthropic : API, SDK, Claude Code, Blog...</i>
-"""
-        return report
-
-    # Liste des nouveautes avec details
-    report += """<b>🆕 APERCU DES NOUVEAUTES</b>
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-"""
-
-    for i, update in enumerate(new_updates[:5], 1):
-        emoji = {
-            "Journal API": "🔧", "Claude Code": "📦", "SDK Python": "🐍",
-            "SDK TypeScript": "📘", "Blog": "📰", "Recherche": "🔬",
-            "Statut": "⚠️", "Nouveau Depot": "🆕"
-        }.get(update['source'], '📌')
-
-        title = update['title'][:45] + "..." if len(update['title']) > 45 else update['title']
-        report += f"""
-{i}️⃣ {emoji} <b>{update['source']}</b>
-   {title}
-"""
-
-    report += f"""
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-⏰ <b>Prochain check :</b> demain 20h
-📡 <b>Sources :</b> {len(SOURCES)} actives
-
-<i>📬 Details complets envoyes ci-dessous...</i>
-"""
-
-    return report
+    return msg
 
 
 def main():
@@ -660,7 +588,9 @@ A demain 20h ! 🚀
     all_updates.extend(fetch_research())
 
     print("[RECUPERATION] Statut...")
-    all_updates.extend(fetch_status())
+    status_updates = fetch_status()
+    all_updates.extend(status_updates)
+    versions["status"] = "Incident" if status_updates else "OK"
 
     print("[RECUPERATION] Depots GitHub...")
     all_updates.extend(fetch_github_anthropic_repos())
@@ -678,22 +608,43 @@ A demain 20h ! 🚀
 
     print(f"\n[NOUVEAUTES] {len(new_updates)} nouvelles mises a jour")
 
-    # Genere et envoie le rapport quotidien
-    report = generate_daily_report(all_updates, new_updates, versions, cache)
-    send_telegram(report)
+    # Met a jour les donnees de la Mini App
+    update_webapp_data(all_updates, new_updates, versions)
 
-    # Si nouvelles mises a jour, envoie les details individuels
-    if new_updates:
-        for i, update in enumerate(new_updates[:5], 1):
-            detail_msg = format_update_detail(update, i)
-            send_telegram(detail_msg)
+    # Genere le message Telegram
+    message = generate_telegram_message(new_updates, versions)
+
+    # Bouton inline vers la Mini App
+    reply_markup = {
+        "inline_keyboard": [
+            [
+                {
+                    "text": "📊 Voir le rapport complet",
+                    "url": WEBAPP_URL
+                }
+            ],
+            [
+                {
+                    "text": "📋 Changelog API",
+                    "url": "https://docs.anthropic.com/en/docs/changelog"
+                },
+                {
+                    "text": "📦 Claude Code",
+                    "url": "https://github.com/anthropics/claude-code/releases"
+                }
+            ]
+        ]
+    }
+
+    # Envoie le message avec les boutons
+    send_telegram(message, reply_markup=reply_markup)
 
     # Sauvegarde le cache avec les versions
     cache["seen_hashes"] = new_hashes
     cache["versions"] = versions
     save_cache(cache)
 
-    print(f"\n[FIN] Termine - {len(new_updates)} notifications envoyees")
+    print(f"\n[FIN] Termine - {len(new_updates)} nouveautes detectees")
 
 
 if __name__ == "__main__":

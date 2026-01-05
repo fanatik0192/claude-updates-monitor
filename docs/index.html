@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Updates Monitor</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        :root {
+            --bg-primary: #1a1a2e;
+            --bg-secondary: #16213e;
+            --bg-card: #0f3460;
+            --accent: #e94560;
+            --accent-light: #ff6b6b;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --success: #00d26a;
+            --warning: #ffc107;
+            --border-radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            padding: 16px;
+            padding-bottom: 100px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 1.8em;
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+
+        .header .date {
+            color: var(--text-secondary);
+            font-size: 0.9em;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .stat-card {
+            background: var(--bg-secondary);
+            border-radius: var(--border-radius);
+            padding: 16px;
+            text-align: center;
+        }
+
+        .stat-card .number {
+            font-size: 2em;
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        .stat-card .label {
+            color: var(--text-secondary);
+            font-size: 0.85em;
+            margin-top: 4px;
+        }
+
+        .stat-card.success .number {
+            color: var(--success);
+        }
+
+        .section-title {
+            font-size: 1.2em;
+            margin: 24px 0 12px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .accordion {
+            background: var(--bg-secondary);
+            border-radius: var(--border-radius);
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+
+        .accordion-header {
+            padding: 16px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.2s;
+        }
+
+        .accordion-header:hover {
+            background: var(--bg-card);
+        }
+
+        .accordion-header .title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .accordion-header .title .icon {
+            font-size: 1.4em;
+        }
+
+        .accordion-header .title .name {
+            font-weight: 600;
+        }
+
+        .accordion-header .badge {
+            background: var(--accent);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 600;
+        }
+
+        .accordion-header .badge.no-update {
+            background: var(--bg-card);
+            color: var(--text-secondary);
+        }
+
+        .accordion-header .arrow {
+            transition: transform 0.3s;
+            color: var(--text-secondary);
+        }
+
+        .accordion.open .accordion-header .arrow {
+            transform: rotate(180deg);
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background: var(--bg-card);
+        }
+
+        .accordion.open .accordion-content {
+            max-height: 500px;
+        }
+
+        .accordion-inner {
+            padding: 16px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .version-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .version-info .current {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: var(--success);
+        }
+
+        .version-info .previous {
+            color: var(--text-secondary);
+            font-size: 0.85em;
+        }
+
+        .description {
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+
+        .update-details {
+            background: rgba(0,0,0,0.2);
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 12px;
+        }
+
+        .update-details h4 {
+            font-size: 0.9em;
+            color: var(--accent-light);
+            margin-bottom: 8px;
+        }
+
+        .update-details p {
+            font-size: 0.85em;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+
+        .link-button {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.85em;
+            margin-top: 12px;
+            transition: background 0.2s;
+        }
+
+        .link-button:hover {
+            background: var(--accent-light);
+        }
+
+        .no-updates {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-secondary);
+        }
+
+        .no-updates .icon {
+            font-size: 3em;
+            margin-bottom: 16px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .loading .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--bg-card);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 16px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-secondary);
+            font-size: 0.8em;
+        }
+
+        .refresh-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--accent);
+            border: none;
+            color: white;
+            font-size: 1.5em;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(233, 69, 96, 0.4);
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .refresh-btn:hover {
+            transform: scale(1.1);
+            background: var(--accent-light);
+        }
+
+        .refresh-btn:active {
+            transform: scale(0.95);
+        }
+
+        .new-badge {
+            background: var(--success);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.7em;
+            margin-left: 8px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="loading">
+            <div class="spinner"></div>
+            <p>Chargement des mises a jour...</p>
+        </div>
+    </div>
+
+    <button class="refresh-btn" onclick="loadData()" title="Rafraichir">
+        🔄
+    </button>
+
+    <script>
+        // Configuration
+        const DATA_URL = 'data.json';
+
+        // Sources avec leurs icones et descriptions
+        const SOURCES = {
+            "Journal API": {
+                icon: "📋",
+                description: "Modifications de l'API Claude (nouveaux modeles, endpoints, parametres)"
+            },
+            "Claude Code": {
+                icon: "💻",
+                description: "L'assistant IA en ligne de commande pour coder avec Claude"
+            },
+            "Claude Code npm": {
+                icon: "📦",
+                description: "Package npm de Claude Code - versioning et dependances"
+            },
+            "SDK Python": {
+                icon: "🐍",
+                description: "Bibliotheque Python officielle pour integrer Claude"
+            },
+            "SDK Python PyPI": {
+                icon: "📦",
+                description: "Package PyPI du SDK Python - versioning et dependances"
+            },
+            "SDK TypeScript": {
+                icon: "📘",
+                description: "Bibliotheque TypeScript/JavaScript pour integrer Claude"
+            },
+            "Blog Anthropic": {
+                icon: "📰",
+                description: "Articles officiels, annonces de fonctionnalites, cas d'usage"
+            },
+            "Recherche": {
+                icon: "🔬",
+                description: "Publications scientifiques et travaux de recherche d'Anthropic"
+            },
+            "Status API": {
+                icon: "🚦",
+                description: "Etat des services, incidents en cours, maintenances"
+            },
+            "GitHub Anthropic": {
+                icon: "🐙",
+                description: "Activite sur les repos GitHub officiels d'Anthropic"
+            },
+            "GitHub Claude Code": {
+                icon: "🐙",
+                description: "Issues, PRs et releases du repo Claude Code"
+            },
+            "GitHub SDK Python": {
+                icon: "🐙",
+                description: "Issues, PRs et releases du repo SDK Python"
+            }
+        };
+
+        // Init Telegram WebApp
+        let tg = window.Telegram?.WebApp;
+        if (tg) {
+            tg.ready();
+            tg.expand();
+            // Adapter les couleurs au theme Telegram
+            document.documentElement.style.setProperty('--bg-primary', tg.themeParams.bg_color || '#1a1a2e');
+            document.documentElement.style.setProperty('--text-primary', tg.themeParams.text_color || '#ffffff');
+        }
+
+        // Charger les donnees
+        async function loadData() {
+            try {
+                const response = await fetch(DATA_URL + '?t=' + Date.now());
+                const data = await response.json();
+                renderApp(data);
+            } catch (error) {
+                console.error('Erreur:', error);
+                renderError();
+            }
+        }
+
+        // Afficher l'app
+        function renderApp(data) {
+            const app = document.getElementById('app');
+            const updates = data.updates || [];
+            const versions = data.versions || {};
+            const lastCheck = data.last_check ? new Date(data.last_check).toLocaleString('fr-FR') : 'Inconnu';
+
+            const newUpdates = updates.filter(u => u.is_new);
+            const totalSources = Object.keys(SOURCES).length;
+
+            app.innerHTML = `
+                <div class="header">
+                    <h1>🤖 Claude Updates</h1>
+                    <div class="date">Derniere verification : ${lastCheck}</div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card ${newUpdates.length > 0 ? '' : 'success'}">
+                        <div class="number">${newUpdates.length}</div>
+                        <div class="label">Nouvelles MAJ</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="number">${totalSources}</div>
+                        <div class="label">Sources suivies</div>
+                    </div>
+                </div>
+
+                <h2 class="section-title">📊 Etat des sources</h2>
+
+                ${Object.entries(SOURCES).map(([name, info]) => {
+                    const version = versions[name] || 'N/A';
+                    const update = updates.find(u => u.source === name);
+                    const isNew = update?.is_new;
+
+                    return `
+                        <div class="accordion ${isNew ? 'has-update' : ''}">
+                            <div class="accordion-header" onclick="toggleAccordion(this)">
+                                <div class="title">
+                                    <span class="icon">${info.icon}</span>
+                                    <span class="name">${name}</span>
+                                    ${isNew ? '<span class="new-badge">NEW</span>' : ''}
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 10px;">
+                                    <span class="badge ${isNew ? '' : 'no-update'}">${isNew ? '🆕 MAJ' : '✓ OK'}</span>
+                                    <span class="arrow">▼</span>
+                                </div>
+                            </div>
+                            <div class="accordion-content">
+                                <div class="accordion-inner">
+                                    <div class="version-info">
+                                        <div>
+                                            <div class="current">${version}</div>
+                                            <div class="previous">Version actuelle</div>
+                                        </div>
+                                    </div>
+                                    <p class="description">${info.description}</p>
+                                    ${update ? `
+                                        <div class="update-details">
+                                            <h4>📝 Derniere mise a jour</h4>
+                                            <p>${update.title || 'Nouvelle version disponible'}</p>
+                                        </div>
+                                        ${update.url ? `<a href="${update.url}" target="_blank" class="link-button">🔗 Voir les details</a>` : ''}
+                                    ` : ''}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }).join('')}
+
+                <div class="footer">
+                    <p>🤖 Claude Updates Monitor</p>
+                    <p>Actualisation automatique tous les jours a 20h</p>
+                </div>
+            `;
+        }
+
+        // Afficher erreur
+        function renderError() {
+            document.getElementById('app').innerHTML = `
+                <div class="no-updates">
+                    <div class="icon">⚠️</div>
+                    <h3>Impossible de charger les donnees</h3>
+                    <p>Verifiez votre connexion et reessayez</p>
+                </div>
+            `;
+        }
+
+        // Toggle accordion
+        function toggleAccordion(header) {
+            const accordion = header.parentElement;
+            accordion.classList.toggle('open');
+        }
+
+        // Charger au demarrage
+        loadData();
+    </script>
+</body>
+</html>
