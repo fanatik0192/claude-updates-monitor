@@ -1,9 +1,9 @@
 name: Claude Updates Monitor
 
 on:
-  # Execution automatique toutes les 12h (8h et 20h UTC = 9h et 21h Paris)
+  # Execution automatique tous les jours a 19h UTC = 20h Paris
   schedule:
-    - cron: '0 8,20 * * *'
+    - cron: '0 19 * * *'
 
   # Permet de lancer manuellement depuis l'interface GitHub
   workflow_dispatch:
