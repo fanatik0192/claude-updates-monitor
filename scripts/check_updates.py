@@ -269,10 +269,11 @@ def main():
         for update in new_updates[:5]:  # Max 5 notifications
             message = format_message(update)
             send_telegram(message)
+        # Resume final
+        send_telegram(f"✅ *{len(new_updates)} nouvelle(s) update(s) detectee(s)*\n📅 {datetime.now().strftime('%d/%m/%Y %H:%M')}")
     else:
-        # Notification silencieuse optionnelle (commentee par defaut)
-        # send_telegram(f"✅ *Check OK* - Aucune nouveaute\n📅 {datetime.now().strftime('%d/%m/%Y %H:%M')}")
-        print("[INFO] Aucune nouvelle update")
+        # Notification quand aucune nouveaute
+        send_telegram(f"✅ *Check OK* - Aucune nouveaute\n📅 {datetime.now().strftime('%d/%m/%Y %H:%M')}")
 
     # Sauvegarde le cache
     cache["seen_hashes"] = new_hashes
