@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-01-06T19:14:05.987280",
+  "last_check": "2026-01-06T19:45:59.086998",
   "updates": [
     {
       "source": "Claude Code",
@@ -216,14 +216,14 @@
       "title": "Incident en cours sur Anthropic",
       "summary": "Un incident ou une maintenance est en cours.",
       "url": "https://status.anthropic.com",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
       "title": "mcp-cms-coverage",
       "summary": "MCP server for CMS Coverage API",
       "url": "https://github.com/anthropics/mcp-cms-coverage",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
