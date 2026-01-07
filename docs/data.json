@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-01-06T19:45:59.086998",
+  "last_check": "2026-01-07T19:18:12.220698",
   "updates": [
     {
       "source": "Claude Code",
@@ -216,14 +216,7 @@
       "title": "Incident en cours sur Anthropic",
       "summary": "Un incident ou une maintenance est en cours.",
       "url": "https://status.anthropic.com",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "mcp-cms-coverage",
-      "summary": "MCP server for CMS Coverage API",
-      "url": "https://github.com/anthropics/mcp-cms-coverage",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Nouveau Depot",
@@ -251,6 +244,13 @@
       "title": "model-cards",
       "summary": "Supplementary materials for Claude Model Cards",
       "url": "https://github.com/anthropics/model-cards",
+      "is_new": false
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "riv2025-long-horizon-coding-agent-demo",
+      "summary": "",
+      "url": "https://github.com/anthropics/riv2025-long-horizon-coding-agent-demo",
       "is_new": false
     }
   ],
