@@ -1,6 +1,27 @@
 {
-  "last_check": "2026-01-07T19:18:12.220698",
+  "last_check": "2026-01-08T19:17:01.886544",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.1",
+      "summary": "No content.",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.1",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.0",
+      "summary": "chore: Update CHANGELOG.md",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.0",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.0.76",
+      "summary": "What's changed\n\nFixed issue with macOS code-sign warning when using Claude in Chrome integration\n",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.0.76",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.0.74",
@@ -94,10 +115,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.0.76",
-      "summary": "Publie le 2025-12-22",
+      "title": "v2.1.1",
+      "summary": "Publie le 2026-01-07",
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
@@ -256,8 +277,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.0.76",
-    "Claude Code npm": "v2.0.76",
+    "Claude Code": "v2.1.1",
+    "Claude Code npm": "v2.1.1",
     "SDK Python": "v0.75.0",
     "SDK Python PyPI": "v0.75.0",
     "SDK TypeScript": "bedrock-sdk: v0.26.1",
