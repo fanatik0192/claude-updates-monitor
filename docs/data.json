@@ -1,39 +1,39 @@
 {
-  "last_check": "2026-01-08T19:17:01.886544",
+  "last_check": "2026-01-09T19:17:52.596220",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.2",
+      "summary": "What's changed\n\nAdded source path metadata to images dragged onto the terminal, helping Claude understand where images originated\nAdded clickable hyperlinks for file paths in tool output in terminals that support OSC 8 (like iTerm)\nAdded support for Windows Package Manager (winget) installations with automatic detection and update instructions\nAdded Shif",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.2",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.1",
       "summary": "No content.",
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
       "title": "v2.1.0",
       "summary": "chore: Update CHANGELOG.md",
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
       "title": "v2.0.76",
       "summary": "What's changed\n\nFixed issue with macOS code-sign warning when using Claude in Chrome integration\n",
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.0.76",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
       "title": "v2.0.74",
       "summary": "What's changed\n\nAdded LSP (Language Server Protocol) tool for code intelligence features like go-to-definition, find references, and hover documentation\nAdded /terminal-setup support for Kitty, Alacritty, Zed, and Warp terminals\nAdded ctrl+t shortcut in /theme to toggle syntax highlighting on/off\nAdded syntax highlighting info t",
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.0.74",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.0.73",
-      "summary": "What's changed\n\nAdded clickable [Image #N] links that open attached images in the default viewer\nAdded alt-y yank-pop to cycle through kill ring history after ctrl-y yank\nAdded search filtering to the plugin discover screen (type to filter by name, description, or marketplace)\nAdded support for custom session IDs when forking sessions with <",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.0.73",
       "is_new": false
     },
     {
@@ -115,8 +115,8 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.1",
-      "summary": "Publie le 2026-01-07",
+      "title": "v2.1.2",
+      "summary": "Publie le 2026-01-08",
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
@@ -248,6 +248,13 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "healthcare",
+      "summary": "",
+      "url": "https://github.com/anthropics/healthcare",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "httpcore",
       "summary": "A minimal HTTP client. ⚙️",
       "url": "https://github.com/anthropics/httpcore",
@@ -266,19 +273,12 @@
       "summary": "Supplementary materials for Claude Model Cards",
       "url": "https://github.com/anthropics/model-cards",
       "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "riv2025-long-horizon-coding-agent-demo",
-      "summary": "",
-      "url": "https://github.com/anthropics/riv2025-long-horizon-coding-agent-demo",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.1",
-    "Claude Code npm": "v2.1.1",
+    "Claude Code": "v2.1.2",
+    "Claude Code npm": "v2.1.2",
     "SDK Python": "v0.75.0",
     "SDK Python PyPI": "v0.75.0",
     "SDK TypeScript": "bedrock-sdk: v0.26.1",
@@ -286,7 +286,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.0.73",
+    "GitHub Claude Code": "v2.0.74",
     "GitHub SDK Python": "v0.72.1"
   }
 }
