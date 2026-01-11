@@ -1,12 +1,19 @@
 {
-  "last_check": "2026-01-10T19:13:17.527110",
+  "last_check": "2026-01-11T19:13:29.050156",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.4",
+      "summary": "What's changed\n\nAdded CLAUDE_CODE_DISABLE_BACKGROUND_TASKS environment variable to disable all background task functionality including auto-backgrounding and the Ctrl+B shortcut\nFixed \"Help improve Claude\" setting fetch to refresh OAuth and retry when it fails due to a stale OAuth token\n",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.4",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.3",
       "summary": "What's changed\n\nMerged slash commands and skills, simplifying the mental model with no change in behavior\nAdded release channel (stable or latest) toggle to /config\nAdded detection and warnings for unreachable permission rules, with warnings in /doctor and after saving rules that include the source of each rule ",
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.3",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -27,13 +34,6 @@
       "title": "v2.1.0",
       "summary": "chore: Update CHANGELOG.md",
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.0",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.0.76",
-      "summary": "What's changed\n\nFixed issue with macOS code-sign warning when using Claude in Chrome integration\n",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.0.76",
       "is_new": false
     },
     {
@@ -115,8 +115,8 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.3",
-      "summary": "Publie le 2026-01-09",
+      "title": "v2.1.4",
+      "summary": "Publie le 2026-01-10",
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
@@ -277,8 +277,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.3",
-    "Claude Code npm": "v2.1.3",
+    "Claude Code": "v2.1.4",
+    "Claude Code npm": "v2.1.4",
     "SDK Python": "v0.75.0",
     "SDK Python PyPI": "v0.75.0",
     "SDK TypeScript": "bedrock-sdk: v0.26.1",
@@ -286,7 +286,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.0.76",
+    "GitHub Claude Code": "v2.1.0",
     "GitHub SDK Python": "v0.72.1"
   }
 }
