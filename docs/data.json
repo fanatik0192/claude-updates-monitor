@@ -1,12 +1,19 @@
 {
-  "last_check": "2026-01-11T19:13:29.050156",
+  "last_check": "2026-01-12T19:18:24.978905",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.5",
+      "summary": "What's changed\n\nAdded CLAUDE_CODE_TMPDIR environment variable to override the temp directory used for internal temp files, useful for environments with custom temp directory requirements\n",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.5",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.4",
       "summary": "What's changed\n\nAdded CLAUDE_CODE_DISABLE_BACKGROUND_TASKS environment variable to disable all background task functionality including auto-backgrounding and the Ctrl+B shortcut\nFixed \"Help improve Claude\" setting fetch to refresh OAuth and retry when it fails due to a stale OAuth token\n",
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.4",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -27,13 +34,6 @@
       "title": "v2.1.1",
       "summary": "No content.",
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.1",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.0",
-      "summary": "chore: Update CHANGELOG.md",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.0",
       "is_new": false
     },
     {
@@ -115,8 +115,8 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.4",
-      "summary": "Publie le 2026-01-10",
+      "title": "v2.1.5",
+      "summary": "Publie le 2026-01-11",
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
@@ -164,6 +164,13 @@
     },
     {
       "source": "Blog",
+      "title": "Jan 11, 2026AnnouncementsAdvancing Claude in healthcare and the life sciences",
+      "summary": "",
+      "url": "https://www.anthropic.com/news/healthcare-life-sciences",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Dec 19, 2025PolicySharing our compliance framework for California's Transparency in Frontier AI Act",
       "summary": "",
       "url": "https://www.anthropic.com/news/compliance-framework-SB53",
@@ -188,13 +195,6 @@
       "title": "Dec 9, 2025AnnouncementsDonating the Model Context Protocol and establishing the Agentic AI Foundati",
       "summary": "",
       "url": "https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Dec 9, 2025AnnouncementsAccenture and Anthropic launch multi-year partnership to move enterprises fr",
-      "summary": "",
-      "url": "https://www.anthropic.com/news/anthropic-accenture-partnership",
       "is_new": false
     },
     {
@@ -277,8 +277,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.4",
-    "Claude Code npm": "v2.1.4",
+    "Claude Code": "v2.1.5",
+    "Claude Code npm": "v2.1.5",
     "SDK Python": "v0.75.0",
     "SDK Python PyPI": "v0.75.0",
     "SDK TypeScript": "bedrock-sdk: v0.26.1",
@@ -286,7 +286,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.0",
+    "GitHub Claude Code": "v2.1.1",
     "GitHub SDK Python": "v0.72.1"
   }
 }
