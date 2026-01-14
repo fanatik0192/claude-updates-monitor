@@ -520,24 +520,38 @@ def fetch_research():
 
 
 def fetch_status():
-    """Verifie le statut d'Anthropic."""
+    """Verifie le statut d'Anthropic/Claude."""
     updates = []
     try:
-        response = requests.get(SOURCES["status"]["url"], timeout=15)
+        # La page status.anthropic.com redirige vers status.claude.com
+        response = requests.get("https://status.claude.com", timeout=15, allow_redirects=True)
         soup = BeautifulSoup(response.text, "html.parser")
         status_text = soup.get_text().lower()
 
-        keywords = ["degraded", "outage", "incident", "maintenance", "investigating",
-                    "monitoring", "identified", "update", "resolved"]
+        # Mots-cles specifiques indiquant un VRAI incident actif
+        # On evite "update", "resolved", "monitoring" qui sont des faux positifs
+        critical_keywords = ["degraded performance", "partial outage", "major outage",
+                            "service disruption", "investigating", "identified"]
 
-        if any(word in status_text for word in keywords[:5]):
+        # Verifie si un incident actif est present
+        is_incident = any(keyword in status_text for keyword in critical_keywords)
+
+        # Double verification : cherche des elements specifiques de la page
+        incident_elements = soup.find_all(class_=lambda x: x and ('incident' in x.lower() or 'degraded' in x.lower()))
+        active_incident = soup.find_all(string=lambda x: x and 'investigating' in x.lower())
+
+        if is_incident or incident_elements or active_incident:
             updates.append({
                 "source": "Statut",
-                "title": "Incident en cours sur Anthropic",
-                "summary": "Un incident ou une maintenance est en cours.",
-                "url": SOURCES["status"]["url"],
+                "title": "Incident en cours sur Claude",
+                "summary": "Un probleme est actuellement detecte sur les services Claude.",
+                "url": "https://status.claude.com",
                 "hash": get_hash(f"incident-{datetime.now().strftime('%Y-%m-%d-%H')}")
             })
+            print("[ALERTE] Incident detecte!")
+        else:
+            print("[OK] Aucun incident actif")
+
     except Exception as e:
         print(f"[ERREUR] Statut: {e}")
 
