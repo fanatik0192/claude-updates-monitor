@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-01-14T17:38:15.893599",
+  "last_check": "2026-01-14T17:49:00.651159",
   "updates": [
     {
       "source": "Claude Code",
@@ -406,13 +406,13 @@
     },
     {
       "source": "Statut",
-      "title": "Incident en cours sur Anthropic",
-      "title_en": "Incident en cours sur Anthropic",
-      "summary": "Un incident ou une maintenance est en cours.",
-      "summary_en": "Un incident ou une maintenance est en cours.",
+      "title": "Incident en cours sur Claude",
+      "title_en": "Incident en cours sur Claude",
+      "summary": "Un probleme est actuellement detecte sur les services Claude.",
+      "summary_en": "Un probleme est actuellement detecte sur les services Claude.",
       "changelog_items": [],
-      "url": "https://status.anthropic.com",
-      "is_new": true
+      "url": "https://status.claude.com",
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
