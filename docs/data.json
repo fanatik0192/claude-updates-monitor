@@ -1,276 +1,466 @@
 {
-  "last_check": "2026-01-14T16:50:37.226295",
+  "last_check": "2026-01-14T17:38:15.893599",
   "updates": [
     {
       "source": "Claude Code",
       "title": "v2.1.7",
-      "summary": "What's changed\n\nAdded showTurnDuration setting to hide turn duration messages (e.g., \"Cooked for 1m 6s\")\nAdded ability to provide feedback when accepting permission prompts\nAdded inline display of agent's final response in task notifications, making it easier to see results without reading the full transcript file\nFixed security vulnerabilit",
+      "title_en": "v2.1.7",
+      "summary": "Ce qui a change Ajout de afficherTurnDuration parametre to masquer turn duration messages (e.g., \"Cooked for 1m 6s\") Ajout de ability to provide feedback when accepting permission prompts Ajout de inline display of agent's final response in task notifications, making it easier to see results without reading the full transcript fichier Correction de securite vulnerabilit",
+      "summary_en": "What's changed\n\nAdded showTurnDuration setting to hide turn duration messages (e.g., \"Cooked for 1m 6s\")\nAdded ability to provide feedback when accepting permission prompts\nAdded inline display of agent's final response in task notifications, making it easier to see results without reading the full transcript file\nFixed security vulnerabilit",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "showTurnDuration setting to hide turn duration messages (e.g., \"Cooked for 1m 6s\")"
+        },
+        {
+          "type": "added",
+          "text": "ability to provide feedback when accepting permission prompts"
+        },
+        {
+          "type": "added",
+          "text": "inline display of agent's final response in task notifications, making it easier to see results without reading the full transcript file"
+        },
+        {
+          "type": "fixed",
+          "text": "security vulnerabilit"
+        },
+        {
+          "type": "changed",
+          "text": "Added showTurnDuration setting to hide turn duration messages (e.g., \"Cooked for 1m 6s\")"
+        }
+      ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.7",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
       "title": "v2.1.6",
-      "summary": "What's changed\n\nAdded search functionality to /config command for quickly filtering settings\nAdded Updates section to /doctor showing auto-update channel and available npm versions (stable/latest)\nAdded date range filtering to /stats command - press r to cycle between Last 7 days, Last 30 days, and All time",
+      "title_en": "v2.1.6",
+      "summary": "Ce qui a change Ajout de recherche functionality to /config commande for quickly filtrage parametres Ajout de Section mises a jour to /doctor affichering mise a jour automatique channel and available versions npm (stable/derniere) Ajout de plage de dates filtrage to /stats commande - appuyer sur r to parcourir between 7 derniers jours, 30 derniers jours, and Tout le temporaires",
+      "summary_en": "What's changed\n\nAdded search functionality to /config command for quickly filtering settings\nAdded Updates section to /doctor showing auto-update channel and available npm versions (stable/latest)\nAdded date range filtering to /stats command - press r to cycle between Last 7 days, Last 30 days, and All time",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "search functionality to /config command for quickly filtering settings"
+        },
+        {
+          "type": "added",
+          "text": "Updates section to /doctor showing auto-update channel and available npm versions (stable/latest)"
+        },
+        {
+          "type": "added",
+          "text": "date range filtering to /stats command - press r to cycle between Last 7 days, Last 30 days, and All time"
+        },
+        {
+          "type": "changed",
+          "text": "Added search functionality to /config command for quickly filtering settings"
+        }
+      ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.6",
       "is_new": false
     },
     {
       "source": "Claude Code",
       "title": "v2.1.5",
-      "summary": "What's changed\n\nAdded CLAUDE_CODE_TMPDIR environment variable to override the temp directory used for internal temp files, useful for environments with custom temp directory requirements\n",
+      "title_en": "v2.1.5",
+      "summary": "Ce qui a change Ajout de CLAUDE_CODE_TMPDIR variable d'environnement to override the repertoire temporaireoraire used for internal temporaire fichiers, useful for environments with personnalise repertoire temporaireoraire requirements",
+      "summary_en": "What's changed\n\nAdded CLAUDE_CODE_TMPDIR environment variable to override the temp directory used for internal temp files, useful for environments with custom temp directory requirements\n",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "CLAUDE_CODE_TMPDIR environment variable to override the temp directory used for internal temp files, useful for environments with custom temp directory requirements"
+        },
+        {
+          "type": "changed",
+          "text": "Added CLAUDE_CODE_TMPDIR environment variable to override the temp directory used for internal temp files, useful for environments with custom temp directory requirements"
+        }
+      ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.5",
       "is_new": false
     },
     {
       "source": "Claude Code",
       "title": "v2.1.4",
-      "summary": "What's changed\n\nAdded CLAUDE_CODE_DISABLE_BACKGROUND_TASKS environment variable to disable all background task functionality including auto-backgrounding and the Ctrl+B shortcut\nFixed \"Help improve Claude\" setting fetch to refresh OAuth and retry when it fails due to a stale OAuth token\n",
+      "title_en": "v2.1.4",
+      "summary": "Ce qui a change Ajout de CLAUDE_CODE_DISABLE_BACKGROUND_TASKS variable d'environnement to desactiver all arriere-plan task functionality including auto-arriere-planing and the Ctrl+B raccourci Correction de \"Help improve Claude\" parametre fetch to actualiser OAuth and reessayer when it fails due to a perime OAuth jeton",
+      "summary_en": "What's changed\n\nAdded CLAUDE_CODE_DISABLE_BACKGROUND_TASKS environment variable to disable all background task functionality including auto-backgrounding and the Ctrl+B shortcut\nFixed \"Help improve Claude\" setting fetch to refresh OAuth and retry when it fails due to a stale OAuth token\n",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "CLAUDE_CODE_DISABLE_BACKGROUND_TASKS environment variable to disable all background task functionality including auto-backgrounding and the Ctrl+B shortcut"
+        },
+        {
+          "type": "fixed",
+          "text": "\"Help improve Claude\" setting fetch to refresh OAuth and retry when it fails due to a stale OAuth token"
+        },
+        {
+          "type": "changed",
+          "text": "Added CLAUDE_CODE_DISABLE_BACKGROUND_TASKS environment variable to disable all background task functionality including auto-backgrounding and the Ctrl+B shortcut"
+        }
+      ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.4",
       "is_new": false
     },
     {
       "source": "Claude Code",
       "title": "v2.1.3",
-      "summary": "What's changed\n\nMerged slash commands and skills, simplifying the mental model with no change in behavior\nAdded release channel (stable or latest) toggle to /config\nAdded detection and warnings for unreachable permission rules, with warnings in /doctor and after saving rules that include the source of each rule ",
+      "title_en": "v2.1.3",
+      "summary": "Ce qui a change Merged slash commandes and skills, simplifying the mental model with no change in behavior Ajout de canal de version (stable or derniere) basculer to /config Ajout de detection and avertissements for inaccessible permission regles, with avertissements in /doctor and after saving regles that include the source of each regle",
+      "summary_en": "What's changed\n\nMerged slash commands and skills, simplifying the mental model with no change in behavior\nAdded release channel (stable or latest) toggle to /config\nAdded detection and warnings for unreachable permission rules, with warnings in /doctor and after saving rules that include the source of each rule ",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "release channel (stable or latest) toggle to /config"
+        },
+        {
+          "type": "added",
+          "text": "detection and warnings for unreachable permission rules, with warnings in /doctor and after saving rules that include the source of each rule"
+        },
+        {
+          "type": "changed",
+          "text": "Merged slash commands and skills, simplifying the mental model with no change in behavior"
+        }
+      ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.3",
       "is_new": false
     },
     {
       "source": "SDK Python",
       "title": "v0.76.0",
-      "summary": "0.76.0 (2026-01-13)\nFull Changelog: v0.75.0...v0.76.0\nFeatures\n\nallow raw JSON schema to be passed to messages.stream() (955c61d)\nclient:",
+      "title_en": "v0.76.0",
+      "summary": "0.76.0 (2026-01-13) Journal complet: v0.75.0...v0.76.0 Fonctionnalites allow raw JSON schema to be passed to messages.stream() () client:",
+      "summary_en": "0.76.0 (2026-01-13)\nFull Changelog: v0.75.0...v0.76.0\nFeatures\n\nallow raw JSON schema to be passed to messages.stream() (955c61d)\nclient:",
+      "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.76.0",
       "is_new": false
     },
     {
       "source": "SDK Python",
       "title": "v0.75.0",
-      "summary": "0.75.0 (2025-11-24)\nFull Changelog: v0.74.1...v0.75.0\nFeatures\n\napi: adds support for Claude Opus 4.5, Effort, Advance Tool Use Features, Autocompaction, and Computer Use v5 (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/5c3e633395acc100c",
+      "title_en": "v0.75.0",
+      "summary": "0.75.0 (2025-11-24) Journal complet: v0.74.1...v0.75.0 Fonctionnalites api: adds prise en charge de Claude Opus 4.5, Effort, Advance Tool Use Fonctionnalites, Compactage automatique, and Computer Use v5 (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/",
+      "summary_en": "0.75.0 (2025-11-24)\nFull Changelog: v0.74.1...v0.75.0\nFeatures\n\napi: adds support for Claude Opus 4.5, Effort, Advance Tool Use Features, Autocompaction, and Computer Use v5 (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/5c3e633395acc100c",
+      "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.75.0",
       "is_new": false
     },
     {
       "source": "SDK Python",
       "title": "v0.74.1",
-      "summary": "0.74.1 (2025-11-19)\nFull Changelog: v0.74.0...v0.74.1\nBug Fixes\n\nstructured outputs: use correct beta header (e90d347)\n\nChores\n",
+      "title_en": "v0.74.1",
+      "summary": "0.74.1 (2025-11-19) Journal complet: v0.74.0...v0.74.1 Corrections de bugs structured sorties: use correct beta header () Maintenance",
+      "summary_en": "0.74.1 (2025-11-19)\nFull Changelog: v0.74.0...v0.74.1\nBug Fixes\n\nstructured outputs: use correct beta header (e90d347)\n\nChores\n",
+      "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.74.1",
       "is_new": false
     },
     {
       "source": "SDK Python",
       "title": "v0.74.0",
-      "summary": "0.74.0 (2025-11-18)\nFull Changelog: v0.73.0...v0.74.0\nFeatures\n\nadd Foundry SDK (3ae9e45)\n\nBug Fixes\n\nexamples/memory: ",
+      "title_en": "v0.74.0",
+      "summary": "0.74.0 (2025-11-18) Journal complet: v0.73.0...v0.74.0 Fonctionnalites add Foundry SDK () Corrections de bugs examples/memory:",
+      "summary_en": "0.74.0 (2025-11-18)\nFull Changelog: v0.73.0...v0.74.0\nFeatures\n\nadd Foundry SDK (3ae9e45)\n\nBug Fixes\n\nexamples/memory: ",
+      "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.74.0",
       "is_new": false
     },
     {
       "source": "SDK Python",
       "title": "v0.73.0",
-      "summary": "0.73.0 (2025-11-14)\nFull Changelog: v0.72.1...v0.73.0\nFeatures\n\napi: add support for structured outputs beta (688da81)\n",
+      "title_en": "v0.73.0",
+      "summary": "0.73.0 (2025-11-14) Journal complet: v0.72.1...v0.73.0 Fonctionnalites api: add prise en charge de structured sorties beta ()",
+      "summary_en": "0.73.0 (2025-11-14)\nFull Changelog: v0.72.1...v0.73.0\nFeatures\n\napi: add support for structured outputs beta (688da81)\n",
+      "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.73.0",
       "is_new": false
     },
     {
       "source": "SDK TypeScript",
       "title": "sdk: v0.71.2",
-      "summary": "0.71.2 (2025-12-05)\nFull Changelog: sdk-v0.71.1...sdk-v0.71.2\nBug Fixes\n\nstreams: ensure errors are catchable (#856) (<a href=\"https://github.com/anthropics/anthropic-",
+      "title_en": "sdk: v0.71.2",
+      "summary": "0.71.2 (2025-12-05) Journal complet: sdk-v0.71.1...sdk-v0.71.2 Corrections de bugs streams: ensure erreurs are catchable (<a href=\"https://github.com/anthropics/anthropic-",
+      "summary_en": "0.71.2 (2025-12-05)\nFull Changelog: sdk-v0.71.1...sdk-v0.71.2\nBug Fixes\n\nstreams: ensure errors are catchable (#856) (<a href=\"https://github.com/anthropics/anthropic-",
+      "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.71.2",
       "is_new": false
     },
     {
       "source": "SDK TypeScript",
       "title": "sdk: v0.71.1",
-      "summary": "0.71.1 (2025-12-04)\nFull Changelog: sdk-v0.71.0...sdk-v0.71.1\nBug Fixes\n\nparser: use correct naming for parsed text blocks (6472bcd</a",
+      "title_en": "sdk: v0.71.1",
+      "summary": "0.71.1 (2025-12-04) Journal complet: sdk-v0.71.0...sdk-v0.71.1 Corrections de bugs parser: use correct naming for parsed text blocks (</a",
+      "summary_en": "0.71.1 (2025-12-04)\nFull Changelog: sdk-v0.71.0...sdk-v0.71.1\nBug Fixes\n\nparser: use correct naming for parsed text blocks (6472bcd</a",
+      "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.71.1",
       "is_new": false
     },
     {
       "source": "SDK TypeScript",
       "title": "vertex-sdk: v0.14.1",
-      "summary": "0.14.1 (2025-11-24)\nFull Changelog: vertex-sdk-v0.14.0...vertex-sdk-v0.14.1\nChores\n\ninclude publishConfig in all package.json files (4c72",
+      "title_en": "vertex-sdk: v0.14.1",
+      "summary": "0.14.1 (2025-11-24) Journal complet: vertex-sdk-v0.14.0...vertex-sdk-v0.14.1 Maintenance include publishConfig in all package.json fichiers (4c72",
+      "summary_en": "0.14.1 (2025-11-24)\nFull Changelog: vertex-sdk-v0.14.0...vertex-sdk-v0.14.1\nChores\n\ninclude publishConfig in all package.json files (4c72",
+      "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.14.1",
       "is_new": false
     },
     {
       "source": "SDK TypeScript",
       "title": "sdk: v0.71.0",
-      "summary": "0.71.0 (2025-11-24)\nFull Changelog: sdk-v0.70.1...sdk-v0.71.0\nFeatures\n\napi: adds support for Claude Opus 4.5, Effort, Advance Tool Use Features, Autocompaction, and Computer Use v5 (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/",
+      "title_en": "sdk: v0.71.0",
+      "summary": "0.71.0 (2025-11-24) Journal complet: sdk-v0.70.1...sdk-v0.71.0 Fonctionnalites api: adds prise en charge de Claude Opus 4.5, Effort, Advance Tool Use Fonctionnalites, Compactage automatique, and Computer Use v5 (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/",
+      "summary_en": "0.71.0 (2025-11-24)\nFull Changelog: sdk-v0.70.1...sdk-v0.71.0\nFeatures\n\napi: adds support for Claude Opus 4.5, Effort, Advance Tool Use Features, Autocompaction, and Computer Use v5 (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/",
+      "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.71.0",
       "is_new": false
     },
     {
       "source": "SDK TypeScript",
       "title": "bedrock-sdk: v0.26.1",
-      "summary": "0.26.1 (2025-11-24)\nFull Changelog: bedrock-sdk-v0.26.0...bedrock-sdk-v0.26.1\nChores\n\ninclude publishConfig in all package.json files (",
+      "title_en": "bedrock-sdk: v0.26.1",
+      "summary": "0.26.1 (2025-11-24) Journal complet: bedrock-sdk-v0.26.0...bedrock-sdk-v0.26.1 Maintenance include publishConfig in all package.json fichiers (",
+      "summary_en": "0.26.1 (2025-11-24)\nFull Changelog: bedrock-sdk-v0.26.0...bedrock-sdk-v0.26.1\nChores\n\ninclude publishConfig in all package.json files (",
+      "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.26.1",
       "is_new": false
     },
     {
       "source": "npm @anthropic-ai/sdk",
       "title": "v0.71.2",
+      "title_en": "v0.71.2",
       "summary": "Publie le 2025-12-06",
+      "summary_en": "Publie le 2025-12-06",
+      "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
       "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
       "title": "v2.1.7",
+      "title_en": "v2.1.7",
       "summary": "Publie le 2026-01-13",
+      "summary_en": "Publie le 2026-01-13",
+      "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
       "title": "v0.76.0",
+      "title_en": "v0.76.0",
       "summary": "The official Python library for the anthropic API",
+      "summary_en": "The official Python library for the anthropic API",
+      "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
       "is_new": false
     },
     {
       "source": "Blog",
-      "title": "Introducing Claude Opus 4.5AnnouncementsNov 24, 2025The best model in the world for coding, agents, ",
+      "title": "Introducing Claude Opus 4.5AnnouncementsNov 24, 2025The best model in the world for coding, agents,",
+      "title_en": "Introducing Claude Opus 4.5AnnouncementsNov 24, 2025The best model in the world for coding, agents, ",
       "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-opus-4-5",
       "is_new": false
     },
     {
       "source": "Blog",
       "title": "AnnouncementsSep 29, 2025Introducing Claude Sonnet 4.5Claude Sonnet 4.5 sets new benchmark records i",
+      "title_en": "AnnouncementsSep 29, 2025Introducing Claude Sonnet 4.5Claude Sonnet 4.5 sets new benchmark records i",
       "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-sonnet-4-5",
       "is_new": false
     },
     {
       "source": "Blog",
       "title": "ProductOct 15, 2025Introducing Claude Haiku 4.5Claude Haiku 4.5 matches state-of-the-art coding capa",
+      "title_en": "ProductOct 15, 2025Introducing Claude Haiku 4.5Claude Haiku 4.5 matches state-of-the-art coding capa",
       "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-haiku-4-5",
       "is_new": false
     },
     {
       "source": "Blog",
       "title": "AnnouncementsSep 2, 2025Anthropic raises $13B Series F at $183B post-money valuationAnthropic raised",
+      "title_en": "AnnouncementsSep 2, 2025Anthropic raises $13B Series F at $183B post-money valuationAnthropic raised",
       "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
       "url": "https://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation",
       "is_new": false
     },
     {
       "source": "Blog",
       "title": "PolicyJul 23, 2025Thoughts on America’s AI Action PlanAnthropic's response to the White House AI Act",
+      "title_en": "PolicyJul 23, 2025Thoughts on America’s AI Action PlanAnthropic's response to the White House AI Act",
       "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
       "url": "https://www.anthropic.com/news/thoughts-on-america-s-ai-action-plan",
       "is_new": false
     },
     {
       "source": "Blog",
       "title": "Jan 13, 2026AnnouncementsIntroducing Labs",
+      "title_en": "Jan 13, 2026AnnouncementsIntroducing Labs",
       "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
       "url": "https://www.anthropic.com/news/introducing-anthropic-labs",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
       "title": "Jan 11, 2026AnnouncementsAdvancing Claude in healthcare and the life sciences",
+      "title_en": "Jan 11, 2026AnnouncementsAdvancing Claude in healthcare and the life sciences",
       "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
       "url": "https://www.anthropic.com/news/healthcare-life-sciences",
       "is_new": false
     },
     {
       "source": "Blog",
       "title": "Dec 19, 2025PolicySharing our compliance framework for California's Transparency in Frontier AI Act",
+      "title_en": "Dec 19, 2025PolicySharing our compliance framework for California's Transparency in Frontier AI Act",
       "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
       "url": "https://www.anthropic.com/news/compliance-framework-SB53",
       "is_new": false
     },
     {
       "source": "Blog",
       "title": "Dec 18, 2025AnnouncementsWorking with the US Department of Energy to unlock the next era of scientif",
+      "title_en": "Dec 18, 2025AnnouncementsWorking with the US Department of Energy to unlock the next era of scientif",
       "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
       "url": "https://www.anthropic.com/news/genesis-mission-partnership",
       "is_new": false
     },
     {
       "source": "Blog",
-      "title": "Dec 18, 2025AnnouncementsProtecting the well-being of our users",
+      "title": "Dec 18, 2025AnnouncementsProtecting the well-being of our utilisateurs",
+      "title_en": "Dec 18, 2025AnnouncementsProtecting the well-being of our users",
       "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
       "url": "https://www.anthropic.com/news/protecting-well-being-of-users",
       "is_new": false
     },
     {
       "source": "Recherche",
-      "title": "Economic Research",
+      "title": "Economic Rerecherche",
+      "title_en": "Economic Research",
       "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/economic-research",
       "is_new": false
     },
     {
       "source": "Recherche",
       "title": "Interpretability",
+      "title_en": "Interpretability",
       "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/interpretability",
       "is_new": false
     },
     {
       "source": "Recherche",
       "title": "Societal Impacts",
+      "title_en": "Societal Impacts",
       "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/societal-impacts",
       "is_new": false
     },
     {
       "source": "Recherche",
       "title": "Project Vend: Phase twoPolicyDec 18, 2025In June, we revealed that we’d set up a small shop in our S",
+      "title_en": "Project Vend: Phase twoPolicyDec 18, 2025In June, we revealed that we’d set up a small shop in our S",
       "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
       "url": "https://www.anthropic.com/research/project-vend-2",
       "is_new": false
     },
     {
       "source": "Recherche",
       "title": "InterpretabilityOct 29, 2025Signs of introspection in large language modelsCan Claude access and rep",
+      "title_en": "InterpretabilityOct 29, 2025Signs of introspection in large language modelsCan Claude access and rep",
       "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
       "url": "https://www.anthropic.com/research/introspection",
       "is_new": false
     },
     {
       "source": "Statut",
       "title": "Incident en cours sur Anthropic",
+      "title_en": "Incident en cours sur Anthropic",
       "summary": "Un incident ou une maintenance est en cours.",
+      "summary_en": "Un incident ou une maintenance est en cours.",
+      "changelog_items": [],
       "url": "https://status.anthropic.com",
       "is_new": true
     },
     {
       "source": "Nouveau Depot",
       "title": "tailscale-hint-extension",
-      "summary": "Chrome extension showing helpful troubleshooting when Tailscale .local domains fail to resolve",
+      "title_en": "tailscale-hint-extension",
+      "summary": "Chrome extension affichering helpful troubleshooting when Tailscale .local domains fail to resolve",
+      "summary_en": "Chrome extension showing helpful troubleshooting when Tailscale .local domains fail to resolve",
+      "changelog_items": [],
       "url": "https://github.com/anthropics/tailscale-hint-extension",
       "is_new": false
     },
     {
       "source": "Nouveau Depot",
       "title": "healthcare",
+      "title_en": "healthcare",
       "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
       "url": "https://github.com/anthropics/healthcare",
       "is_new": false
     },
     {
       "source": "Nouveau Depot",
       "title": "httpcore",
+      "title_en": "httpcore",
       "summary": "A minimal HTTP client. ⚙️",
+      "summary_en": "A minimal HTTP client. ⚙️",
+      "changelog_items": [],
       "url": "https://github.com/anthropics/httpcore",
       "is_new": false
     },
     {
       "source": "Nouveau Depot",
       "title": "claude-ai-mcp",
+      "title_en": "claude-ai-mcp",
       "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
       "url": "https://github.com/anthropics/claude-ai-mcp",
       "is_new": false
     },
     {
       "source": "Nouveau Depot",
       "title": "model-cards",
+      "title_en": "model-cards",
       "summary": "Supplementary materials for Claude Model Cards",
+      "summary_en": "Supplementary materials for Claude Model Cards",
+      "changelog_items": [],
       "url": "https://github.com/anthropics/model-cards",
       "is_new": false
     }
