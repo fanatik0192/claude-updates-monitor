@@ -1352,11 +1352,10 @@
                     </div>
                 ` : ''}
 
-                <div class="filters-bar">
+                <div class="filters-bar" id="filtersBar">
                     ${CATEGORIES.map(cat => `
                         <button class="filter-btn ${cat === 'Tous' ? 'active' : ''}"
-                                data-category="${cat}"
-                                onclick="setFilter('${cat}')">
+                                data-category="${cat}">
                             ${cat}<span class="count">${categoryCounts[cat] || 0}</span>
                         </button>
                     `).join('')}
@@ -1436,9 +1435,18 @@
                 </footer>
             `;
 
+            // Event listeners pour les cartes
             document.querySelectorAll('.update-header').forEach(header => {
                 header.addEventListener('click', () => {
                     header.parentElement.classList.toggle('open');
+                });
+            });
+
+            // Event listeners pour les filtres
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const category = e.currentTarget.dataset.category;
+                    setFilter(category);
                 });
             });
         }
