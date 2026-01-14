@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-01-14T17:49:00.651159",
+  "last_check": "2026-01-14T19:17:01.119455",
   "updates": [
     {
       "source": "Claude Code",
@@ -412,7 +412,7 @@
       "summary_en": "Un probleme est actuellement detecte sur les services Claude.",
       "changelog_items": [],
       "url": "https://status.claude.com",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Nouveau Depot",
