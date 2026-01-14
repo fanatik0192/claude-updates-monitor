@@ -1,0 +1,164 @@
+name: Claude Weekly Summary
+
+on:
+  # Execution chaque dimanche a 20h UTC = 21h Paris
+  schedule:
+    - cron: '0 20 * * 0'
+
+  # Permet de lancer manuellement
+  workflow_dispatch:
+
+jobs:
+  weekly-summary:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Generate Weekly Summary
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python3 << 'EOF'
+          import requests
+          import json
+          import os
+          from datetime import datetime, timedelta
+          from pathlib import Path
+
+          TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
+          TELEGRAM_CHAT_IDS = [
+              os.environ.get("TELEGRAM_CHAT_ID"),
+              "1707849259"
+          ]
+          WEBAPP_URL = "https://fanatik0192.github.io/claude-updates-monitor/"
+
+          def send_telegram(message, reply_markup=None):
+              if not TELEGRAM_BOT_TOKEN:
+                  print(f"[TELEGRAM DESACTIVE] {message[:100]}...")
+                  return False
+
+              url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+              success = False
+
+              for chat_id in TELEGRAM_CHAT_IDS:
+                  if not chat_id:
+                      continue
+                  payload = {
+                      "chat_id": chat_id,
+                      "text": message,
+                      "parse_mode": "HTML",
+                      "disable_web_page_preview": True
+                  }
+                  if reply_markup:
+                      payload["reply_markup"] = reply_markup
+
+                  try:
+                      response = requests.post(url, json=payload, timeout=10)
+                      if response.status_code == 200:
+                          print(f"[TELEGRAM] Resume envoye a {chat_id}")
+                          success = True
+                      else:
+                          print(f"[ERREUR] {chat_id}: {response.status_code}")
+                  except Exception as e:
+                      print(f"[ERREUR] {chat_id}: {e}")
+
+              return success
+
+          def load_data():
+              data_file = Path("docs/data.json")
+              if data_file.exists():
+                  with open(data_file, "r", encoding="utf-8") as f:
+                      return json.load(f)
+              return {"updates": [], "versions": {}}
+
+          def generate_weekly_summary():
+              data = load_data()
+              updates = data.get("updates", [])
+              versions = data.get("versions", {})
+
+              now = datetime.now()
+              week_start = now - timedelta(days=7)
+
+              # Compte les mises a jour par source
+              updates_by_source = {}
+              for u in updates:
+                  source = u.get("source", "Autre")
+                  if source not in updates_by_source:
+                      updates_by_source[source] = []
+                  updates_by_source[source].append(u)
+
+              # Genere le message
+              msg = f"""
+          📊 <b>RESUME HEBDOMADAIRE</b>
+          📅 Semaine du {week_start.strftime('%d/%m')} au {now.strftime('%d/%m/%Y')}
+
+          ━━━━━━━━━━━━━━━━━━━━
+
+          <b>📦 Versions Actuelles</b>
+          """
+
+              if versions.get("Claude Code"):
+                  msg += f"• Claude Code: <code>{versions['Claude Code']}</code>\n"
+              if versions.get("SDK Python"):
+                  msg += f"• SDK Python: <code>{versions['SDK Python']}</code>\n"
+              if versions.get("SDK TypeScript"):
+                  msg += f"• SDK TypeScript: <code>{versions['SDK TypeScript']}</code>\n"
+
+              msg += f"""
+          ━━━━━━━━━━━━━━━━━━━━
+
+          <b>📈 Activite de la Semaine</b>
+          • {len(updates_by_source)} sources surveillees
+          • {sum(len(v) for v in updates_by_source.values())} elements indexes
+
+          """
+
+              # Top sources avec nouveautes
+              new_count = sum(1 for u in updates if u.get("is_new"))
+              if new_count > 0:
+                  msg += f"🔔 <b>{new_count} nouveaute(s)</b> cette semaine\n\n"
+
+              # Liste des sources
+              msg += "<b>📋 Sources Surveillees</b>\n"
+              for source, items in sorted(updates_by_source.items()):
+                  has_new = any(i.get("is_new") for i in items)
+                  emoji = "🔴" if has_new else "⚪"
+                  msg += f"{emoji} {source}\n"
+
+              msg += f"""
+          ━━━━━━━━━━━━━━━━━━━━
+
+          <b>📱 Dashboard</b>
+          Consultez le rapport complet sur le dashboard web.
+
+          ⏰ Prochain resume: dimanche prochain 21h
+          """
+
+              # Bouton vers le dashboard
+              reply_markup = {
+                  "inline_keyboard": [
+                      [{"text": "📊 Voir le dashboard complet", "url": WEBAPP_URL}],
+                      [
+                          {"text": "📋 Changelog API", "url": "https://docs.anthropic.com/en/docs/changelog"},
+                          {"text": "📦 Claude Code", "url": "https://github.com/anthropics/claude-code/releases"}
+                      ]
+                  ]
+              }
+
+              send_telegram(msg, reply_markup)
+              print("[OK] Resume hebdomadaire envoye")
+
+          if __name__ == "__main__":
+              generate_weekly_summary()
+          EOF

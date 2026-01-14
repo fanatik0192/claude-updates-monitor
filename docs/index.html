@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Libre+Baskerville:wght@400;700&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            /* Palette Hermès / Goyard luxe */
+            /* Palette Hermes / Goyard luxe */
             --bg-primary: #0d0d0d;
             --bg-secondary: #141414;
             --bg-tertiary: #1a1a1a;
@@ -23,10 +23,16 @@
             --gold-dark: #8b7355;
             --gold-muted: #6b5d4d;
 
-            /* Accents Hermès orange */
+            /* Accents Hermes orange */
             --orange-hermes: #f37021;
             --orange-light: #ff8c42;
             --orange-muted: #c45e1a;
+
+            /* Couleurs changelog */
+            --green-added: #4ade80;
+            --blue-changed: #60a5fa;
+            --red-removed: #f87171;
+            --yellow-fixed: #fbbf24;
 
             /* Textes */
             --text-primary: #f5f5f0;
@@ -45,7 +51,7 @@
             --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.5);
             --shadow-gold: 0 0 60px rgba(201, 169, 98, 0.08);
 
-            /* Transitions élégantes */
+            /* Transitions elegantes */
             --transition-elegant: 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
             --transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -98,7 +104,7 @@
             z-index: 0;
         }
 
-        /* Effet de lumière dorée en haut */
+        /* Effet de lumiere doree en haut */
         .golden-glow {
             position: fixed;
             top: -200px;
@@ -194,7 +200,76 @@
             color: var(--text-secondary);
         }
 
-        /* Status Banner élégant */
+        /* Bandeau derniere visite */
+        .visit-banner {
+            background: linear-gradient(135deg, rgba(201, 169, 98, 0.1), rgba(201, 169, 98, 0.05));
+            border: 1px solid var(--border-gold);
+            padding: 16px 24px;
+            margin-bottom: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .visit-banner-text {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .visit-banner-highlight {
+            color: var(--gold-primary);
+            font-weight: 500;
+        }
+
+        .visit-banner-count {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.1rem;
+            color: var(--orange-hermes);
+            font-weight: 600;
+        }
+
+        /* Filtres par categorie */
+        .filters-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 32px;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .filter-btn {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: 10px 20px;
+            background: transparent;
+            border: 1px solid var(--border-subtle);
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all var(--transition-smooth);
+        }
+
+        .filter-btn:hover {
+            border-color: var(--gold-primary);
+            color: var(--gold-primary);
+        }
+
+        .filter-btn.active {
+            background: var(--orange-hermes);
+            border-color: var(--orange-hermes);
+            color: white;
+        }
+
+        .filter-btn .count {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            margin-left: 6px;
+            opacity: 0.7;
+        }
+
+        /* Status Banner elegant */
         .status-banner {
             background: var(--bg-card);
             border: 1px solid var(--border-gold);
@@ -288,6 +363,73 @@
             text-transform: uppercase;
             letter-spacing: 0.15em;
             margin-top: 8px;
+        }
+
+        /* Timeline Section */
+        .timeline-section {
+            margin-bottom: 48px;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: linear-gradient(to bottom, var(--gold-primary), var(--border-subtle));
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 24px;
+            padding-left: 20px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -36px;
+            top: 6px;
+            width: 10px;
+            height: 10px;
+            border: 2px solid var(--gold-primary);
+            background: var(--bg-primary);
+            border-radius: 50%;
+        }
+
+        .timeline-item.is-new::before {
+            background: var(--orange-hermes);
+            border-color: var(--orange-hermes);
+            animation: pulse-timeline 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-timeline {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(243, 112, 33, 0.3); }
+            50% { box-shadow: 0 0 0 8px rgba(243, 112, 33, 0); }
+        }
+
+        .timeline-date {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            color: var(--text-tertiary);
+            margin-bottom: 4px;
+        }
+
+        .timeline-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1rem;
+            color: var(--text-primary);
+        }
+
+        .timeline-source {
+            font-size: 0.75rem;
+            color: var(--gold-primary);
         }
 
         /* Section Titles */
@@ -402,6 +544,10 @@
             overflow: hidden;
         }
 
+        .update-card.hidden {
+            display: none;
+        }
+
         .update-card:hover {
             border-color: var(--border-gold);
         }
@@ -409,6 +555,10 @@
         .update-card.is-new {
             border-color: var(--orange-hermes);
             border-left-width: 2px;
+        }
+
+        .update-card.since-visit {
+            background: linear-gradient(90deg, rgba(243, 112, 33, 0.05), transparent);
         }
 
         .update-header {
@@ -462,6 +612,17 @@
             border: 1px solid rgba(243, 112, 33, 0.3);
         }
 
+        .category-tag {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.55rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--gold-primary);
+            background: rgba(201, 169, 98, 0.1);
+            padding: 3px 8px;
+            border: 1px solid rgba(201, 169, 98, 0.2);
+        }
+
         .update-title {
             font-size: 0.8rem;
             color: var(--text-secondary);
@@ -510,7 +671,7 @@
         }
 
         .update-card.open .update-content {
-            max-height: 600px;
+            max-height: 800px;
         }
 
         .update-body {
@@ -570,9 +731,76 @@
             line-height: 1.7;
         }
 
-        .update-summary-box {
+        /* Changelog formaté */
+        .changelog-box {
             background: var(--bg-elevated);
             border-left: 2px solid var(--gold-primary);
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        .changelog-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 0.75rem;
+            color: var(--gold-light);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 16px;
+        }
+
+        .changelog-items {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .changelog-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .changelog-item-icon {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .changelog-item-icon.added {
+            background: rgba(74, 222, 128, 0.15);
+            color: var(--green-added);
+        }
+
+        .changelog-item-icon.fixed {
+            background: rgba(251, 191, 36, 0.15);
+            color: var(--yellow-fixed);
+        }
+
+        .changelog-item-icon.removed {
+            background: rgba(248, 113, 113, 0.15);
+            color: var(--red-removed);
+        }
+
+        .changelog-item-icon.changed {
+            background: rgba(96, 165, 250, 0.15);
+            color: var(--blue-changed);
+        }
+
+        .changelog-item-text {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        /* Texte EN en petit */
+        .update-summary-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
             padding: 20px;
         }
 
@@ -589,6 +817,22 @@
             font-size: 0.85rem;
             color: var(--text-secondary);
             line-height: 1.7;
+            margin-bottom: 12px;
+        }
+
+        .summary-text-en {
+            font-size: 0.7rem;
+            color: var(--text-tertiary);
+            font-style: italic;
+            line-height: 1.5;
+            padding-top: 8px;
+            border-top: 1px dashed var(--border-subtle);
+        }
+
+        .summary-text-en::before {
+            content: 'EN: ';
+            color: var(--gold-muted);
+            font-style: normal;
         }
 
         /* Loading State */
@@ -691,12 +935,15 @@
             .versions-grid { grid-template-columns: repeat(2, 1fr); }
             .update-details { grid-template-columns: 1fr; gap: 16px; }
             .update-meta { display: none; }
+            .filters-bar { justify-content: center; }
+            .visit-banner { flex-direction: column; gap: 12px; text-align: center; }
         }
 
         @media (max-width: 480px) {
             html { font-size: 14px; }
             .versions-grid { grid-template-columns: 1fr; }
             .metric-value { font-size: 1.8rem; }
+            .filter-btn { padding: 8px 14px; font-size: 0.7rem; }
         }
     </style>
 </head>
@@ -778,13 +1025,45 @@
             }
         };
 
+        const CATEGORIES = ['Tous', 'API', 'SDK', 'Developpement', 'Actualites', 'Recherche', 'Infrastructure', 'Open Source'];
+
         let tg = window.Telegram?.WebApp;
         if (tg) { tg.ready(); tg.expand(); }
+
+        let currentFilter = 'Tous';
+        let appData = null;
+
+        // Gestion visite utilisateur
+        function getLastVisit() {
+            const stored = localStorage.getItem('claude_monitor_last_visit');
+            return stored ? JSON.parse(stored) : null;
+        }
+
+        function saveVisit(versions) {
+            localStorage.setItem('claude_monitor_last_visit', JSON.stringify({
+                date: new Date().toISOString(),
+                versions: versions
+            }));
+        }
+
+        function getNewSinceLastVisit(updates, lastVisit) {
+            if (!lastVisit) return [];
+            const lastVersions = lastVisit.versions || {};
+            return updates.filter(u => {
+                const config = SOURCES_CONFIG[u.source];
+                if (!config) return false;
+                // Compare avec les versions sauvegardees
+                const savedVersion = lastVersions[u.source];
+                if (!savedVersion) return true;
+                return u.title !== savedVersion;
+            });
+        }
 
         async function loadData() {
             try {
                 const response = await fetch(DATA_URL + '?t=' + Date.now());
                 const data = await response.json();
+                appData = data;
                 renderApp(data);
             } catch (error) {
                 console.error('Erreur:', error);
@@ -811,9 +1090,33 @@
             });
         }
 
+        function formatShortDate(isoString) {
+            if (!isoString) return '';
+            const date = new Date(isoString);
+            return date.toLocaleDateString('fr-FR', {
+                day: '2-digit',
+                month: 'short'
+            });
+        }
+
         function extractVersion(title) {
             const match = title?.match(/v?(\d+\.\d+\.\d+)/);
             return match ? `v${match[1]}` : title?.slice(0, 15) || '—';
+        }
+
+        function setFilter(category) {
+            currentFilter = category;
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.category === category);
+            });
+            document.querySelectorAll('.update-card').forEach(card => {
+                const cardCategory = card.dataset.category;
+                if (category === 'Tous' || cardCategory === category) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
         }
 
         function renderApp(data) {
@@ -825,9 +1128,29 @@
             const newUpdates = updates.filter(u => u.is_new);
             const hasUpdates = newUpdates.length > 0;
 
+            // Gestion derniere visite
+            const lastVisit = getLastVisit();
+            const newSinceVisit = lastVisit ? getNewSinceLastVisit(updates, lastVisit) : [];
+
+            // Sauvegarde la visite actuelle
+            const currentVersions = {};
+            updates.forEach(u => { currentVersions[u.source] = u.title; });
+            saveVisit(currentVersions);
+
             const latestBySource = {};
             updates.forEach(u => {
                 if (!latestBySource[u.source]) latestBySource[u.source] = u;
+            });
+
+            // Compte par categorie
+            const categoryCounts = {};
+            CATEGORIES.forEach(c => categoryCounts[c] = 0);
+            categoryCounts['Tous'] = Object.keys(latestBySource).length;
+            Object.values(latestBySource).forEach(u => {
+                const config = SOURCES_CONFIG[u.source];
+                if (config) {
+                    categoryCounts[config.category] = (categoryCounts[config.category] || 0) + 1;
+                }
             });
 
             app.innerHTML = `
@@ -839,6 +1162,25 @@
                         Derniere verification : <span class="last-check-time">${lastCheck}</span>
                     </p>
                 </header>
+
+                ${lastVisit && newSinceVisit.length > 0 ? `
+                    <div class="visit-banner">
+                        <span class="visit-banner-text">
+                            Depuis votre derniere visite le <span class="visit-banner-highlight">${formatDate(lastVisit.date)}</span>
+                        </span>
+                        <span class="visit-banner-count">${newSinceVisit.length} nouveau${newSinceVisit.length > 1 ? 'x' : ''}</span>
+                    </div>
+                ` : ''}
+
+                <div class="filters-bar">
+                    ${CATEGORIES.map(cat => `
+                        <button class="filter-btn ${cat === 'Tous' ? 'active' : ''}"
+                                data-category="${cat}"
+                                onclick="setFilter('${cat}')">
+                            ${cat}<span class="count">${categoryCounts[cat] || 0}</span>
+                        </button>
+                    `).join('')}
+                </div>
 
                 <div class="status-banner">
                     <div class="status-content">
@@ -874,13 +1216,24 @@
                 </section>
 
                 ${hasUpdates ? `
+                    <section class="section timeline-section">
+                        <div class="section-header">
+                            <h3 class="section-title">Timeline Recente</h3>
+                        </div>
+                        <div class="timeline">
+                            ${newUpdates.slice(0, 5).map(u => renderTimelineItem(u)).join('')}
+                        </div>
+                    </section>
+                ` : ''}
+
+                ${hasUpdates ? `
                     <section class="section">
                         <div class="section-header">
                             <h3 class="section-title">Nouvelles Mises a Jour</h3>
                             <span class="section-count">${newUpdates.length} element${newUpdates.length > 1 ? 's' : ''}</span>
                         </div>
                         <div class="updates-list">
-                            ${newUpdates.map((u, i) => renderUpdateCard(u, i)).join('')}
+                            ${newUpdates.map((u, i) => renderUpdateCard(u, i, newSinceVisit)).join('')}
                         </div>
                     </section>
                 ` : ''}
@@ -891,13 +1244,13 @@
                         <span class="section-count">${Object.keys(latestBySource).length} sources</span>
                     </div>
                     <div class="updates-list">
-                        ${Object.values(latestBySource).map((u, i) => renderUpdateCard(u, i)).join('')}
+                        ${Object.values(latestBySource).map((u, i) => renderUpdateCard(u, i, newSinceVisit)).join('')}
                     </div>
                 </section>
 
                 <footer class="footer">
                     <p class="footer-brand">◈ Olympus Capital ◈</p>
-                    <p class="footer-text">Actualisation automatique quotidienne a 20h</p>
+                    <p class="footer-text">Alertes critiques toutes les 15 min • Rapport quotidien a 20h</p>
                 </footer>
             `;
 
@@ -906,6 +1259,17 @@
                     header.parentElement.classList.toggle('open');
                 });
             });
+        }
+
+        function renderTimelineItem(update) {
+            const config = SOURCES_CONFIG[update.source] || { icon: '◈' };
+            return `
+                <div class="timeline-item ${update.is_new ? 'is-new' : ''}">
+                    <div class="timeline-date">${formatShortDate(new Date().toISOString())}</div>
+                    <div class="timeline-title">${update.title.slice(0, 50)}${update.title.length > 50 ? '...' : ''}</div>
+                    <div class="timeline-source">${config.icon} ${update.source}</div>
+                </div>
+            `;
         }
 
         function renderVersionCards(versions, newUpdates) {
@@ -934,7 +1298,7 @@
             }).join('');
         }
 
-        function renderUpdateCard(update, index) {
+        function renderUpdateCard(update, index, newSinceVisit = []) {
             const config = SOURCES_CONFIG[update.source] || {
                 icon: '◈',
                 description: 'Source de mise a jour Anthropic',
@@ -943,15 +1307,20 @@
 
             const version = extractVersion(update.title);
             const summary = update.summary || update.title || 'Aucun detail disponible';
+            const summaryEn = update.summary_en || '';
+            const changelogItems = update.changelog_items || [];
+            const isSinceVisit = newSinceVisit.some(u => u.source === update.source && u.title === update.title);
 
             return `
-                <div class="update-card ${update.is_new ? 'is-new' : ''}">
+                <div class="update-card ${update.is_new ? 'is-new' : ''} ${isSinceVisit ? 'since-visit' : ''}"
+                     data-category="${config.category}">
                     <div class="update-header">
                         <div class="update-icon">${config.icon}</div>
                         <div class="update-info">
                             <div class="update-source">
                                 ${update.source}
                                 ${update.is_new ? '<span class="new-tag">Nouveau</span>' : ''}
+                                <span class="category-tag">${config.category}</span>
                             </div>
                             <div class="update-title">${update.title}</div>
                         </div>
@@ -982,9 +1351,30 @@
                                 <p class="description-text">${config.description}</p>
                             </div>
 
+                            ${changelogItems.length > 0 ? `
+                                <div class="changelog-box">
+                                    <div class="changelog-title">Changelog</div>
+                                    <div class="changelog-items">
+                                        ${changelogItems.map(item => `
+                                            <div class="changelog-item">
+                                                <div class="changelog-item-icon ${item.type}">
+                                                    ${item.type === 'added' ? '✚' :
+                                                      item.type === 'fixed' ? '🔧' :
+                                                      item.type === 'removed' ? '✖' : '↻'}
+                                                </div>
+                                                <div class="changelog-item-text">${item.text}</div>
+                                            </div>
+                                        `).join('')}
+                                    </div>
+                                </div>
+                            ` : ''}
+
                             <div class="update-summary-box">
                                 <div class="summary-title">Details de la mise a jour</div>
                                 <p class="summary-text">${summary}</p>
+                                ${summaryEn && summaryEn !== summary ? `
+                                    <p class="summary-text-en">${summaryEn}</p>
+                                ` : ''}
                             </div>
                         </div>
                     </div>

@@ -572,6 +572,41 @@ def fetch_github_anthropic_repos():
     return updates
 
 
+def parse_changelog_items(summary):
+    """Parse le changelog pour extraire les items structures."""
+    items = []
+    if not summary:
+        return items
+
+    # Patterns pour detecter les types de changements
+    patterns = [
+        (r'(?:^|\n)\s*[-•*]\s*[Aa]dded?\s*:?\s*(.+?)(?=\n|$)', 'added'),
+        (r'(?:^|\n)\s*[-•*]\s*[Ff]ix(?:ed)?\s*:?\s*(.+?)(?=\n|$)', 'fixed'),
+        (r'(?:^|\n)\s*[-•*]\s*[Rr]emoved?\s*:?\s*(.+?)(?=\n|$)', 'removed'),
+        (r'(?:^|\n)\s*[-•*]\s*[Cc]hanged?\s*:?\s*(.+?)(?=\n|$)', 'changed'),
+        (r'(?:^|\n)\s*[-•*]\s*[Uu]pdated?\s*:?\s*(.+?)(?=\n|$)', 'updated'),
+        (r'(?:^|\n)\s*[-•*]\s*[Ii]mproved?\s*:?\s*(.+?)(?=\n|$)', 'improved'),
+    ]
+
+    # Cherche les sections explicites
+    sections = {
+        'added': re.findall(r'[Aa]dded[:\s]+([^\n]+)', summary),
+        'fixed': re.findall(r'[Ff]ix(?:ed)?[:\s]+([^\n]+)', summary),
+        'removed': re.findall(r'[Rr]emoved[:\s]+([^\n]+)', summary),
+        'changed': re.findall(r'[Cc]hanged[:\s]+([^\n]+)', summary),
+    }
+
+    for change_type, matches in sections.items():
+        for match in matches:
+            if len(match.strip()) > 5:
+                items.append({
+                    "type": change_type,
+                    "text": match.strip()[:200]
+                })
+
+    return items[:10]  # Max 10 items
+
+
 def update_webapp_data(all_updates, new_updates, versions):
     """Met a jour le fichier JSON pour la Mini App."""
 
@@ -599,14 +634,22 @@ def update_webapp_data(all_updates, new_updates, versions):
     new_hashes = {u["hash"] for u in new_updates}
 
     for update in all_updates:
-        # Traduit le titre et le resume en francais
-        translated_title = translate_to_french(update["title"])
-        translated_summary = translate_to_french(update.get("summary", ""))
+        # Garde l'original EN et traduit en FR
+        original_title = update["title"]
+        original_summary = update.get("summary", "")
+        translated_title = translate_to_french(original_title)
+        translated_summary = translate_to_french(original_summary)
+
+        # Parse les items du changelog
+        changelog_items = parse_changelog_items(original_summary)
 
         webapp_data["updates"].append({
             "source": update["source"],
             "title": translated_title,
+            "title_en": original_title,
             "summary": translated_summary,
+            "summary_en": original_summary,
+            "changelog_items": changelog_items,
             "url": update.get("url", ""),
             "is_new": update["hash"] in new_hashes
         })
