@@ -1222,55 +1222,54 @@
             });
         }
 
-        function generateActivityGraph(updates) {
-            // Genere les donnees pour les 7 derniers jours
-            const days = [];
-            const now = new Date();
-            const dayNames = ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'];
+        function generateActivityGraph(updates, categoryCounts) {
+            // Graphique par categorie (donnees reelles, pas aleatoires)
+            const categories = [
+                { key: 'SDK', label: 'SDK', color: 'var(--gold-primary)' },
+                { key: 'Developpement', label: 'Dev', color: 'var(--orange-hermes)' },
+                { key: 'Actualites', label: 'News', color: 'var(--gold-light)' },
+                { key: 'Recherche', label: 'R&D', color: 'var(--gold-dark)' },
+                { key: 'Infrastructure', label: 'Infra', color: 'var(--orange-muted)' },
+                { key: 'Open Source', label: 'OSS', color: 'var(--gold-muted)' }
+            ];
 
-            for (let i = 6; i >= 0; i--) {
-                const date = new Date(now);
-                date.setDate(date.getDate() - i);
-                const dayName = dayNames[date.getDay()];
-
-                // Compte les updates de ce jour (simule car on n'a pas l'historique complet)
-                let count = i === 0 ? updates.filter(u => u.is_new).length : Math.floor(Math.random() * 4);
-                let hasNew = i === 0 && updates.some(u => u.is_new);
-
-                days.push({
-                    label: dayName,
-                    count: count,
-                    hasNew: hasNew
-                });
-            }
-
-            const maxCount = Math.max(...days.map(d => d.count), 1);
+            const maxCount = Math.max(...categories.map(c => categoryCounts[c.key] || 0), 1);
+            const newCount = updates.filter(u => u.is_new).length;
 
             return `
                 <div class="activity-graph">
                     <div class="graph-header">
-                        <span class="graph-title">Activite des 7 derniers jours</span>
+                        <span class="graph-title">Repartition par categorie</span>
                         <div class="graph-legend">
                             <div class="legend-item">
                                 <div class="legend-dot" style="background: var(--gold-primary);"></div>
-                                <span>Mises a jour</span>
+                                <span>${Object.values(categoryCounts).reduce((a,b) => a+b, 0) - (categoryCounts['Tous'] || 0)} sources</span>
                             </div>
-                            <div class="legend-item">
-                                <div class="legend-dot" style="background: var(--orange-hermes);"></div>
-                                <span>Aujourd'hui</span>
-                            </div>
+                            ${newCount > 0 ? `
+                                <div class="legend-item">
+                                    <div class="legend-dot" style="background: var(--orange-hermes);"></div>
+                                    <span>${newCount} nouveau${newCount > 1 ? 'x' : ''}</span>
+                                </div>
+                            ` : ''}
                         </div>
                     </div>
                     <div class="graph-bars">
-                        ${days.map(d => `
-                            <div class="graph-bar-container">
-                                <div class="graph-bar ${d.hasNew ? 'highlight' : ''}"
-                                     style="height: ${Math.max(4, (d.count / maxCount) * 80)}px;">
-                                    <span class="graph-bar-tooltip">${d.count} update${d.count > 1 ? 's' : ''}</span>
+                        ${categories.map(c => {
+                            const count = categoryCounts[c.key] || 0;
+                            const hasNew = updates.some(u => {
+                                const config = SOURCES_CONFIG[u.source];
+                                return config && config.category === c.key && u.is_new;
+                            });
+                            return `
+                                <div class="graph-bar-container">
+                                    <div class="graph-bar ${hasNew ? 'highlight' : ''}"
+                                         style="height: ${Math.max(4, (count / maxCount) * 80)}px; background: ${hasNew ? 'var(--orange-hermes)' : c.color};">
+                                        <span class="graph-bar-tooltip">${count} source${count > 1 ? 's' : ''}</span>
+                                    </div>
+                                    <span class="graph-label">${c.label}</span>
                                 </div>
-                                <span class="graph-label">${d.label}</span>
-                            </div>
-                        `).join('')}
+                            `;
+                        }).join('')}
                     </div>
                 </div>
             `;
@@ -1363,7 +1362,7 @@
                     </div>
                 </div>
 
-                ${generateActivityGraph(updates)}
+                ${generateActivityGraph(updates, categoryCounts)}
 
                 <section class="section">
                     <div class="section-header">
