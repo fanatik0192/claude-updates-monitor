@@ -1038,15 +1038,39 @@
             .versions-grid { grid-template-columns: repeat(2, 1fr); }
             .update-details { grid-template-columns: 1fr; gap: 16px; }
             .update-meta { display: none; }
-            .filters-bar { justify-content: center; }
+            .filters-bar {
+                justify-content: flex-start;
+                overflow-x: auto;
+                flex-wrap: nowrap;
+                padding-bottom: 12px;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: thin;
+                scrollbar-color: var(--gold-primary) transparent;
+            }
+            .filters-bar::-webkit-scrollbar {
+                height: 4px;
+            }
+            .filters-bar::-webkit-scrollbar-thumb {
+                background: var(--gold-primary);
+                border-radius: 2px;
+            }
+            .filter-btn {
+                flex-shrink: 0;
+                white-space: nowrap;
+            }
             .visit-banner { flex-direction: column; gap: 12px; text-align: center; }
+            .activity-graph { padding: 16px; }
+            .graph-bars { height: 80px; }
+            .graph-header { flex-direction: column; gap: 12px; align-items: flex-start; }
         }
 
         @media (max-width: 480px) {
             html { font-size: 14px; }
             .versions-grid { grid-template-columns: 1fr; }
             .metric-value { font-size: 1.8rem; }
-            .filter-btn { padding: 8px 14px; font-size: 0.7rem; }
+            .filter-btn { padding: 6px 12px; font-size: 0.65rem; }
+            .graph-label { font-size: 0.55rem; }
+            .graph-bar-container { min-width: 40px; }
         }
     </style>
 </head>
