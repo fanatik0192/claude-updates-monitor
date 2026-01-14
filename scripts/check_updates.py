@@ -36,6 +36,159 @@ GITHUB_USERNAME = "fanatik0192"
 REPO_NAME = "claude-updates-monitor"
 WEBAPP_URL = f"https://{GITHUB_USERNAME}.github.io/{REPO_NAME}/"
 
+# Dictionnaire de traduction EN -> FR pour les termes techniques
+TRANSLATIONS = {
+    "What's changed": "Ce qui a change",
+    "What's new": "Nouveautes",
+    "Added": "Ajout de",
+    "Fixed": "Correction de",
+    "Removed": "Suppression de",
+    "Changed": "Modification de",
+    "Updated": "Mise a jour de",
+    "Improved": "Amelioration de",
+    "Bug Fixes": "Corrections de bugs",
+    "Bug Fix": "Correction de bug",
+    "Features": "Fonctionnalites",
+    "Feature": "Fonctionnalite",
+    "Breaking Changes": "Changements majeurs",
+    "Deprecations": "Obsolescences",
+    "Deprecated": "Obsolete",
+    "Performance": "Performance",
+    "Security": "Securite",
+    "Documentation": "Documentation",
+    "Chores": "Maintenance",
+    "Refactor": "Refactorisation",
+    "Full Changelog": "Journal complet",
+    "support": "prise en charge",
+    "command": "commande",
+    "shortcut": "raccourci",
+    "setting": "parametre",
+    "settings": "parametres",
+    "environment variable": "variable d'environnement",
+    "terminal": "terminal",
+    "file": "fichier",
+    "files": "fichiers",
+    "directory": "repertoire",
+    "search": "recherche",
+    "filter": "filtre",
+    "filtering": "filtrage",
+    "click": "clic",
+    "clickable": "cliquable",
+    "toggle": "basculer",
+    "enable": "activer",
+    "disable": "desactiver",
+    "show": "afficher",
+    "hide": "masquer",
+    "open": "ouvrir",
+    "syntax highlighting": "coloration syntaxique",
+    "code intelligence": "intelligence de code",
+    "go-to-definition": "aller a la definition",
+    "find references": "trouver les references",
+    "hover documentation": "documentation au survol",
+    "hover": "survol",
+    "autocomplete": "autocompletion",
+    "autocompaction": "compactage automatique",
+    "background": "arriere-plan",
+    "background tasks": "taches en arriere-plan",
+    "session": "session",
+    "sessions": "sessions",
+    "fork": "dupliquer",
+    "forking": "duplication",
+    "release channel": "canal de version",
+    "release": "version",
+    "releases": "versions",
+    "changelog": "journal des modifications",
+    "latest": "derniere",
+    "stable": "stable",
+    "default": "par defaut",
+    "custom": "personnalise",
+    "user": "utilisateur",
+    "OAuth": "OAuth",
+    "token": "jeton",
+    "permission": "permission",
+    "permissions": "permissions",
+    "rule": "regle",
+    "rules": "regles",
+    "warning": "avertissement",
+    "warnings": "avertissements",
+    "error": "erreur",
+    "errors": "erreurs",
+    "unreachable": "inaccessible",
+    "detection": "detection",
+    "temp directory": "repertoire temporaire",
+    "temp": "temporaire",
+    "retry": "reessayer",
+    "refresh": "actualiser",
+    "stale": "perime",
+    "kill ring": "historique de copie",
+    "yank": "coller",
+    "attached": "jointe",
+    "image": "image",
+    "images": "images",
+    "viewer": "visionneuse",
+    "hyperlinks": "hyperliens",
+    "hyperlink": "hyperlien",
+    "output": "sortie",
+    "input": "entree",
+    "cycle": "parcourir",
+    "date range": "plage de dates",
+    "Last 7 days": "7 derniers jours",
+    "Last 30 days": "30 derniers jours",
+    "All time": "Tout le temps",
+    "Updates section": "Section mises a jour",
+    "auto-update": "mise a jour automatique",
+    "npm versions": "versions npm",
+    "press": "appuyer sur",
+    "type": "taper",
+    "name": "nom",
+    "description": "description",
+    "support for": "prise en charge de",
+    "Windows Package Manager": "Gestionnaire de paquets Windows",
+    "winget": "winget",
+    "installations": "installations",
+    "automatic detection": "detection automatique",
+    "update instructions": "instructions de mise a jour",
+    "source path": "chemin source",
+    "metadata": "metadonnees",
+    "dragged": "glisse",
+    "originated": "provient",
+    "LSP": "LSP (protocole serveur de langage)",
+    "Language Server Protocol": "Protocole Serveur de Langage",
+}
+
+
+def translate_to_french(text):
+    """Traduit un texte anglais en francais en utilisant le dictionnaire."""
+    if not text:
+        return text
+
+    result = text
+
+    # Trie par longueur decroissante pour remplacer les termes longs d'abord
+    sorted_terms = sorted(TRANSLATIONS.keys(), key=len, reverse=True)
+
+    for en_term in sorted_terms:
+        fr_term = TRANSLATIONS[en_term]
+        result = result.replace(en_term, fr_term)
+        # Premiere lettre en majuscule aussi
+        if en_term[0].isupper():
+            result = result.replace(en_term.lower(), fr_term.lower())
+        else:
+            result = result.replace(en_term.capitalize(), fr_term.capitalize())
+
+    # Nettoie les balises HTML residuelles
+    result = re.sub(r'<[^>]+>', '', result)
+    # Nettoie les references GitHub
+    result = re.sub(r'\(#\d+\)', '', result)
+    result = re.sub(r'\[#\d+\]', '', result)
+    # Nettoie les hashes de commit
+    result = re.sub(r'\b[a-f0-9]{7,40}\b', '', result)
+    # Nettoie les espaces multiples
+    result = re.sub(r'\s+', ' ', result).strip()
+
+    return result
+
+
 # Descriptions des sources pour expliquer ce que c'est
 SOURCE_DESCRIPTIONS = {
     "Journal API": "Modifications de l'API Claude (nouveaux modeles, endpoints, parametres)",
@@ -446,10 +599,14 @@ def update_webapp_data(all_updates, new_updates, versions):
     new_hashes = {u["hash"] for u in new_updates}
 
     for update in all_updates:
+        # Traduit le titre et le resume en francais
+        translated_title = translate_to_french(update["title"])
+        translated_summary = translate_to_french(update.get("summary", ""))
+
         webapp_data["updates"].append({
             "source": update["source"],
-            "title": update["title"],
-            "summary": update.get("summary", ""),
+            "title": translated_title,
+            "summary": translated_summary,
             "url": update.get("url", ""),
             "is_new": update["hash"] in new_hashes
         })
