@@ -1,12 +1,19 @@
 {
-  "last_check": "2026-01-13T19:17:55.194222",
+  "last_check": "2026-01-14T16:50:37.226295",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.7",
+      "summary": "What's changed\n\nAdded showTurnDuration setting to hide turn duration messages (e.g., \"Cooked for 1m 6s\")\nAdded ability to provide feedback when accepting permission prompts\nAdded inline display of agent's final response in task notifications, making it easier to see results without reading the full transcript file\nFixed security vulnerabilit",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.7",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.6",
       "summary": "What's changed\n\nAdded search functionality to /config command for quickly filtering settings\nAdded Updates section to /doctor showing auto-update channel and available npm versions (stable/latest)\nAdded date range filtering to /stats command - press r to cycle between Last 7 days, Last 30 days, and All time",
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.6",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -30,18 +37,11 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.2",
-      "summary": "What's changed\n\nAdded source path metadata to images dragged onto the terminal, helping Claude understand where images originated\nAdded clickable hyperlinks for file paths in tool output in terminals that support OSC 8 (like iTerm)\nAdded support for Windows Package Manager (winget) installations with automatic detection and update instructions\nAdded Shif",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.2",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.76.0",
       "summary": "0.76.0 (2026-01-13)\nFull Changelog: v0.75.0...v0.76.0\nFeatures\n\nallow raw JSON schema to be passed to messages.stream() (955c61d)\nclient:",
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.76.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -115,7 +115,7 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.6",
+      "title": "v2.1.7",
       "summary": "Publie le 2026-01-13",
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -125,7 +125,7 @@
       "title": "v0.76.0",
       "summary": "The official Python library for the anthropic API",
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -164,6 +164,13 @@
     },
     {
       "source": "Blog",
+      "title": "Jan 13, 2026AnnouncementsIntroducing Labs",
+      "summary": "",
+      "url": "https://www.anthropic.com/news/introducing-anthropic-labs",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Jan 11, 2026AnnouncementsAdvancing Claude in healthcare and the life sciences",
       "summary": "",
       "url": "https://www.anthropic.com/news/healthcare-life-sciences",
@@ -188,13 +195,6 @@
       "title": "Dec 18, 2025AnnouncementsProtecting the well-being of our users",
       "summary": "",
       "url": "https://www.anthropic.com/news/protecting-well-being-of-users",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Dec 9, 2025AnnouncementsDonating the Model Context Protocol and establishing the Agentic AI Foundati",
-      "summary": "",
-      "url": "https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation",
       "is_new": false
     },
     {
@@ -277,8 +277,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.6",
-    "Claude Code npm": "v2.1.6",
+    "Claude Code": "v2.1.7",
+    "Claude Code npm": "v2.1.7",
     "SDK Python": "v0.76.0",
     "SDK Python PyPI": "v0.76.0",
     "SDK TypeScript": "bedrock-sdk: v0.26.1",
@@ -286,7 +286,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.2",
+    "GitHub Claude Code": "v2.1.3",
     "GitHub SDK Python": "v0.73.0"
   }
 }
