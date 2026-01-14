@@ -7,45 +7,47 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Libre+Baskerville:wght@400;700&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-primary: #0a0a0f;
-            --bg-secondary: #12121a;
-            --bg-tertiary: #1a1a24;
-            --bg-card: #1e1e2a;
-            --bg-hover: #252532;
-            --bg-glass: rgba(30, 30, 42, 0.7);
+            /* Palette Hermès / Goyard luxe */
+            --bg-primary: #0d0d0d;
+            --bg-secondary: #141414;
+            --bg-tertiary: #1a1a1a;
+            --bg-card: #111111;
+            --bg-elevated: #181818;
 
-            --accent-primary: #6366f1;
-            --accent-secondary: #818cf8;
-            --accent-glow: rgba(99, 102, 241, 0.3);
-            --accent-success: #10b981;
-            --accent-warning: #f59e0b;
-            --accent-danger: #ef4444;
-            --accent-info: #3b82f6;
+            /* Or et bronze luxueux */
+            --gold-primary: #c9a962;
+            --gold-light: #e4d4a5;
+            --gold-dark: #8b7355;
+            --gold-muted: #6b5d4d;
 
-            --text-primary: #f8fafc;
-            --text-secondary: #94a3b8;
-            --text-tertiary: #64748b;
-            --text-muted: #475569;
+            /* Accents Hermès orange */
+            --orange-hermes: #f37021;
+            --orange-light: #ff8c42;
+            --orange-muted: #c45e1a;
 
-            --border-subtle: rgba(255, 255, 255, 0.06);
-            --border-light: rgba(255, 255, 255, 0.1);
+            /* Textes */
+            --text-primary: #f5f5f0;
+            --text-secondary: #a8a8a0;
+            --text-tertiary: #6b6b65;
+            --text-gold: var(--gold-primary);
 
-            --radius-sm: 6px;
-            --radius-md: 10px;
-            --radius-lg: 16px;
-            --radius-xl: 24px;
+            /* Bordures subtiles */
+            --border-subtle: rgba(201, 169, 98, 0.08);
+            --border-gold: rgba(201, 169, 98, 0.2);
+            --border-light: rgba(201, 169, 98, 0.12);
 
-            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
-            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
-            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
-            --shadow-glow: 0 0 40px var(--accent-glow);
+            /* Ombres luxueuses */
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
+            --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.5);
+            --shadow-gold: 0 0 60px rgba(201, 169, 98, 0.08);
 
-            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-            --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+            /* Transitions élégantes */
+            --transition-elegant: 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         * {
@@ -61,25 +63,50 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'DM Sans', sans-serif;
             background: var(--bg-primary);
             color: var(--text-primary);
             min-height: 100vh;
             overflow-x: hidden;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
-        /* Animated background */
-        .bg-pattern {
+        /* Pattern Goyard subtil */
+        .luxury-pattern {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background:
-                radial-gradient(ellipse 80% 50% at 50% -20%, rgba(99, 102, 241, 0.15), transparent),
-                radial-gradient(ellipse 60% 40% at 100% 100%, rgba(16, 185, 129, 0.08), transparent),
-                radial-gradient(ellipse 40% 30% at 0% 100%, rgba(59, 130, 246, 0.08), transparent);
+            opacity: 0.015;
+            background-image:
+                repeating-linear-gradient(
+                    45deg,
+                    var(--gold-primary) 0,
+                    var(--gold-primary) 1px,
+                    transparent 1px,
+                    transparent 20px
+                ),
+                repeating-linear-gradient(
+                    -45deg,
+                    var(--gold-primary) 0,
+                    var(--gold-primary) 1px,
+                    transparent 1px,
+                    transparent 20px
+                );
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Effet de lumière dorée en haut */
+        .golden-glow {
+            position: fixed;
+            top: -200px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 400px;
+            background: radial-gradient(ellipse, rgba(201, 169, 98, 0.06) 0%, transparent 70%);
             pointer-events: none;
             z-index: 0;
         }
@@ -87,517 +114,500 @@
         .container {
             position: relative;
             z-index: 1;
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 20px;
-            padding-bottom: 100px;
+            padding: 32px 24px;
+            padding-bottom: 120px;
         }
 
-        /* Header */
+        /* Header luxueux */
         .header {
+            text-align: center;
+            padding: 48px 0 40px;
+            margin-bottom: 48px;
+            border-bottom: 1px solid var(--border-gold);
+            position: relative;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+        }
+
+        .logo-emblem {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 20px;
+            border: 1px solid var(--border-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            background: linear-gradient(135deg, var(--bg-card), var(--bg-elevated));
+            box-shadow: var(--shadow-gold);
+            position: relative;
+        }
+
+        .logo-emblem::before {
+            content: '';
+            position: absolute;
+            inset: 4px;
+            border: 1px solid var(--border-subtle);
+            border-radius: 50%;
+        }
+
+        .brand-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 400;
+            letter-spacing: 0.15em;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+            text-transform: uppercase;
+        }
+
+        .brand-tagline {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 0.95rem;
+            font-weight: 400;
+            letter-spacing: 0.3em;
+            color: var(--gold-primary);
+            text-transform: uppercase;
+        }
+
+        .last-check {
+            margin-top: 24px;
+            font-size: 0.75rem;
+            color: var(--text-tertiary);
+            letter-spacing: 0.1em;
+        }
+
+        .last-check-time {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-secondary);
+        }
+
+        /* Status Banner élégant */
+        .status-banner {
+            background: var(--bg-card);
+            border: 1px solid var(--border-gold);
+            padding: 32px 40px;
+            margin-bottom: 48px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .status-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+        }
+
+        .status-content {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 24px 0;
-            margin-bottom: 32px;
-            border-bottom: 1px solid var(--border-subtle);
         }
 
-        .logo {
+        .status-left {
             display: flex;
             align-items: center;
-            gap: 14px;
+            gap: 24px;
         }
 
-        .logo-icon {
-            width: 44px;
-            height: 44px;
-            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
-            border-radius: var(--radius-md);
+        .status-icon {
+            width: 56px;
+            height: 56px;
+            border: 1px solid var(--border-gold);
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.4rem;
-            box-shadow: var(--shadow-glow);
-        }
-
-        .logo-text {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .logo-title {
-            font-size: 1.25rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            background: linear-gradient(135deg, var(--text-primary), var(--text-secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .logo-subtitle {
-            font-size: 0.75rem;
-            color: var(--text-tertiary);
-            font-weight: 500;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-        }
-
-        .header-meta {
-            text-align: right;
-        }
-
-        .last-update {
-            font-size: 0.8rem;
-            color: var(--text-tertiary);
-        }
-
-        .last-update-time {
-            font-family: 'JetBrains Mono', monospace;
-            color: var(--text-secondary);
-            font-weight: 500;
-        }
-
-        /* Status Banner */
-        .status-banner {
-            background: var(--bg-glass);
-            backdrop-filter: blur(20px);
-            border: 1px solid var(--border-light);
-            border-radius: var(--radius-lg);
-            padding: 24px 28px;
-            margin-bottom: 28px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .status-main {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-
-        .status-indicator {
-            width: 52px;
-            height: 52px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
             position: relative;
         }
 
-        .status-indicator.has-updates {
-            background: linear-gradient(135deg, rgba(239, 68, 68, 0.2), rgba(249, 115, 22, 0.2));
-            border: 2px solid var(--accent-danger);
-            animation: pulse-danger 2s infinite;
+        .status-icon.alert {
+            border-color: var(--orange-hermes);
+            animation: pulse-gold 2.5s ease-in-out infinite;
         }
 
-        .status-indicator.no-updates {
-            background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(34, 197, 94, 0.2));
-            border: 2px solid var(--accent-success);
+        .status-icon.success {
+            border-color: var(--gold-primary);
         }
 
-        @keyframes pulse-danger {
-            0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
-            50% { box-shadow: 0 0 0 12px rgba(239, 68, 68, 0); }
+        @keyframes pulse-gold {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(243, 112, 33, 0.2); }
+            50% { box-shadow: 0 0 0 15px rgba(243, 112, 33, 0); }
         }
 
         .status-text h2 {
+            font-family: 'Libre Baskerville', serif;
             font-size: 1.3rem;
-            font-weight: 600;
+            font-weight: 400;
+            color: var(--text-primary);
             margin-bottom: 4px;
         }
 
         .status-text p {
+            font-size: 0.85rem;
             color: var(--text-secondary);
-            font-size: 0.9rem;
+            letter-spacing: 0.02em;
         }
 
-        .status-stats {
+        .status-metrics {
             display: flex;
-            gap: 32px;
+            gap: 48px;
         }
 
-        .stat-item {
+        .metric {
             text-align: center;
         }
 
-        .stat-value {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: var(--accent-primary);
+        .metric-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 400;
+            color: var(--gold-primary);
+            line-height: 1;
         }
 
-        .stat-label {
-            font-size: 0.75rem;
+        .metric-label {
+            font-size: 0.65rem;
             color: var(--text-tertiary);
             text-transform: uppercase;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.15em;
+            margin-top: 8px;
         }
 
-        /* Section Headers */
+        /* Section Titles */
+        .section {
+            margin-bottom: 48px;
+        }
+
         .section-header {
             display: flex;
             align-items: center;
-            gap: 12px;
-            margin: 36px 0 20px;
-        }
-
-        .section-icon {
-            width: 36px;
-            height: 36px;
-            background: var(--bg-tertiary);
-            border-radius: var(--radius-md);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.1rem;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border-subtle);
         }
 
         .section-title {
+            font-family: 'Cormorant Garamond', serif;
             font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--text-primary);
-        }
-
-        .section-badge {
-            margin-left: auto;
-            background: var(--bg-tertiary);
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            color: var(--text-secondary);
-            font-family: 'JetBrains Mono', monospace;
-        }
-
-        /* Update Cards Grid */
-        .updates-grid {
-            display: grid;
-            gap: 16px;
-        }
-
-        .update-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-            transition: all var(--transition-base);
-        }
-
-        .update-card:hover {
-            border-color: var(--border-light);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .update-card.is-new {
-            border-color: var(--accent-primary);
-            box-shadow: 0 0 0 1px var(--accent-primary), var(--shadow-glow);
-        }
-
-        .update-card-header {
-            padding: 18px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            cursor: pointer;
-            user-select: none;
-            transition: background var(--transition-fast);
-        }
-
-        .update-card-header:hover {
-            background: var(--bg-hover);
-        }
-
-        .update-card-left {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            flex: 1;
-            min-width: 0;
-        }
-
-        .source-icon {
-            width: 42px;
-            height: 42px;
-            border-radius: var(--radius-md);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.25rem;
-            flex-shrink: 0;
-        }
-
-        .source-icon.api { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
-        .source-icon.code { background: linear-gradient(135deg, #8b5cf6, #6d28d9); }
-        .source-icon.python { background: linear-gradient(135deg, #eab308, #ca8a04); }
-        .source-icon.typescript { background: linear-gradient(135deg, #3b82f6, #2563eb); }
-        .source-icon.blog { background: linear-gradient(135deg, #f97316, #ea580c); }
-        .source-icon.research { background: linear-gradient(135deg, #14b8a6, #0d9488); }
-        .source-icon.status { background: linear-gradient(135deg, #ef4444, #dc2626); }
-        .source-icon.github { background: linear-gradient(135deg, #6b7280, #4b5563); }
-
-        .update-card-info {
-            flex: 1;
-            min-width: 0;
-        }
-
-        .update-card-source {
-            font-size: 0.95rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .new-badge {
-            background: linear-gradient(135deg, var(--accent-danger), #f97316);
-            color: white;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 0.65rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            animation: glow-pulse 2s infinite;
-        }
-
-        @keyframes glow-pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
-        }
-
-        .update-card-title {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            margin-top: 2px;
-        }
-
-        .update-card-right {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .version-tag {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.8rem;
             font-weight: 500;
-            background: var(--bg-tertiary);
-            padding: 6px 12px;
-            border-radius: var(--radius-sm);
-            color: var(--accent-secondary);
+            color: var(--gold-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
         }
 
-        .expand-icon {
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            background: var(--bg-tertiary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all var(--transition-base);
-            color: var(--text-tertiary);
-        }
-
-        .update-card.open .expand-icon {
-            transform: rotate(180deg);
-            background: var(--accent-primary);
-            color: white;
-        }
-
-        /* Expanded Content */
-        .update-card-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height var(--transition-slow);
-        }
-
-        .update-card.open .update-card-content {
-            max-height: 800px;
-        }
-
-        .update-card-body {
-            padding: 0 20px 20px;
-            border-top: 1px solid var(--border-subtle);
-        }
-
-        .update-meta {
-            display: flex;
-            gap: 24px;
-            padding: 16px 0;
-            border-bottom: 1px solid var(--border-subtle);
-            margin-bottom: 16px;
-        }
-
-        .meta-item {
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-        }
-
-        .meta-label {
+        .section-count {
+            margin-left: auto;
+            font-family: 'JetBrains Mono', monospace;
             font-size: 0.7rem;
             color: var(--text-tertiary);
-            text-transform: uppercase;
             letter-spacing: 0.05em;
         }
 
-        .meta-value {
-            font-size: 0.9rem;
-            color: var(--text-primary);
-            font-weight: 500;
-        }
-
-        .update-description {
-            background: var(--bg-tertiary);
-            border-radius: var(--radius-md);
-            padding: 16px;
-            margin-bottom: 16px;
-        }
-
-        .update-description h4 {
-            font-size: 0.8rem;
-            color: var(--text-tertiary);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .update-description p {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            line-height: 1.7;
-        }
-
-        .update-summary {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-subtle);
-            border-radius: var(--radius-md);
-            padding: 16px;
-        }
-
-        .update-summary h4 {
-            font-size: 0.8rem;
-            color: var(--accent-secondary);
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .update-summary p {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            line-height: 1.6;
-        }
-
-        .update-summary code {
-            font-family: 'JetBrains Mono', monospace;
-            background: var(--bg-tertiary);
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            color: var(--accent-primary);
-        }
-
-        /* Versions Grid */
+        /* Version Cards Grid */
         .versions-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 12px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
         }
 
         .version-card {
             background: var(--bg-card);
             border: 1px solid var(--border-subtle);
-            border-radius: var(--radius-md);
-            padding: 16px;
-            transition: all var(--transition-fast);
+            padding: 24px 20px;
+            text-align: center;
+            transition: all var(--transition-elegant);
+            position: relative;
+        }
+
+        .version-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 1px;
+            background: var(--gold-primary);
+            opacity: 0;
+            transition: all var(--transition-elegant);
         }
 
         .version-card:hover {
-            border-color: var(--border-light);
+            border-color: var(--border-gold);
+            transform: translateY(-2px);
+        }
+
+        .version-card:hover::before {
+            opacity: 1;
+            width: 60px;
         }
 
         .version-card.updated {
-            border-color: var(--accent-success);
-            background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), transparent);
+            border-color: var(--gold-primary);
         }
 
-        .version-card-header {
+        .version-card.updated::before {
+            opacity: 1;
+        }
+
+        .version-icon {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+        }
+
+        .version-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 8px;
+        }
+
+        .version-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--gold-light);
+        }
+
+        /* Update Cards */
+        .updates-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .update-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            transition: all var(--transition-elegant);
+            overflow: hidden;
+        }
+
+        .update-card:hover {
+            border-color: var(--border-gold);
+        }
+
+        .update-card.is-new {
+            border-color: var(--orange-hermes);
+            border-left-width: 2px;
+        }
+
+        .update-header {
+            padding: 20px 24px;
             display: flex;
             align-items: center;
-            gap: 10px;
-            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background var(--transition-smooth);
         }
 
-        .version-card-icon {
-            font-size: 1.1rem;
+        .update-header:hover {
+            background: var(--bg-elevated);
         }
 
-        .version-card-name {
-            font-size: 0.85rem;
+        .update-icon {
+            width: 44px;
+            height: 44px;
+            border: 1px solid var(--border-subtle);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .update-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .update-source {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1rem;
             font-weight: 500;
             color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
 
-        .version-card-value {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 1rem;
+        .new-tag {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.6rem;
             font-weight: 600;
-            color: var(--accent-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--orange-hermes);
+            background: rgba(243, 112, 33, 0.1);
+            padding: 4px 10px;
+            border: 1px solid rgba(243, 112, 33, 0.3);
         }
 
-        /* Empty State */
-        .empty-state {
-            text-align: center;
-            padding: 60px 20px;
+        .update-title {
+            font-size: 0.8rem;
             color: var(--text-secondary);
+            margin-top: 4px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
-        .empty-state-icon {
-            font-size: 3.5rem;
-            margin-bottom: 16px;
-            opacity: 0.5;
+        .update-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
         }
 
-        .empty-state h3 {
-            font-size: 1.2rem;
-            margin-bottom: 8px;
+        .update-version {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--gold-primary);
+            background: var(--bg-elevated);
+            padding: 6px 14px;
+            border: 1px solid var(--border-subtle);
+        }
+
+        .update-expand {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-tertiary);
+            font-size: 0.75rem;
+            transition: all var(--transition-smooth);
+        }
+
+        .update-card.open .update-expand {
+            transform: rotate(180deg);
+            color: var(--gold-primary);
+        }
+
+        /* Expanded Content */
+        .update-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--transition-elegant);
+        }
+
+        .update-card.open .update-content {
+            max-height: 600px;
+        }
+
+        .update-body {
+            padding: 0 24px 24px;
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .update-details {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border-subtle);
+            margin-bottom: 20px;
+        }
+
+        .detail-item {
+            text-align: center;
+        }
+
+        .detail-label {
+            font-size: 0.6rem;
+            color: var(--text-tertiary);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 6px;
+        }
+
+        .detail-value {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 0.95rem;
             color: var(--text-primary);
         }
 
-        /* Loading */
+        .update-description-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-subtle);
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        .description-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 0.75rem;
+            color: var(--gold-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .description-text {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .update-summary-box {
+            background: var(--bg-elevated);
+            border-left: 2px solid var(--gold-primary);
+            padding: 20px;
+        }
+
+        .summary-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 0.75rem;
+            color: var(--gold-light);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 12px;
+        }
+
+        .summary-text {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Loading State */
         .loading {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 60vh;
-            gap: 20px;
+            gap: 24px;
         }
 
         .loading-spinner {
             width: 48px;
             height: 48px;
-            border: 3px solid var(--bg-tertiary);
-            border-top-color: var(--accent-primary);
+            border: 1px solid var(--border-subtle);
+            border-top-color: var(--gold-primary);
             border-radius: 50%;
-            animation: spin 1s linear infinite;
+            animation: spin 1.2s linear infinite;
         }
 
         @keyframes spin {
@@ -605,34 +615,33 @@
         }
 
         .loading-text {
-            color: var(--text-secondary);
+            font-family: 'Cormorant Garamond', serif;
             font-size: 0.9rem;
+            color: var(--text-secondary);
+            letter-spacing: 0.1em;
         }
 
         /* Refresh Button */
         .refresh-btn {
             position: fixed;
-            bottom: 24px;
-            right: 24px;
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
-            border: none;
-            color: white;
-            font-size: 1.3rem;
+            bottom: 32px;
+            right: 32px;
+            width: 52px;
+            height: 52px;
+            background: var(--bg-card);
+            border: 1px solid var(--gold-primary);
+            color: var(--gold-primary);
+            font-size: 1.1rem;
             cursor: pointer;
-            box-shadow: var(--shadow-lg), var(--shadow-glow);
-            transition: all var(--transition-base);
+            transition: all var(--transition-elegant);
             z-index: 100;
         }
 
         .refresh-btn:hover {
-            transform: scale(1.1);
-        }
-
-        .refresh-btn:active {
-            transform: scale(0.95);
+            background: var(--gold-primary);
+            color: var(--bg-primary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-gold);
         }
 
         .refresh-btn.loading {
@@ -642,51 +651,64 @@
         /* Footer */
         .footer {
             text-align: center;
-            padding: 32px 0;
+            padding: 48px 0 32px;
             border-top: 1px solid var(--border-subtle);
-            margin-top: 40px;
+            position: relative;
         }
 
-        .footer-logo {
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+        }
+
+        .footer-brand {
+            font-family: 'Playfair Display', serif;
             font-size: 0.85rem;
-            color: var(--text-tertiary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
+            color: var(--text-secondary);
+            letter-spacing: 0.15em;
+            margin-bottom: 8px;
         }
 
         .footer-text {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            margin-top: 8px;
+            font-size: 0.7rem;
+            color: var(--text-tertiary);
+            letter-spacing: 0.1em;
         }
 
         /* Responsive */
         @media (max-width: 768px) {
-            .container { padding: 16px; }
-            .header { flex-direction: column; gap: 16px; text-align: center; }
-            .header-meta { text-align: center; }
-            .status-banner { flex-direction: column; text-align: center; }
-            .status-stats { justify-content: center; }
+            .container { padding: 20px 16px; }
+            .brand-name { font-size: 1.6rem; letter-spacing: 0.1em; }
+            .status-content { flex-direction: column; gap: 24px; text-align: center; }
+            .status-left { flex-direction: column; }
+            .status-metrics { justify-content: center; gap: 32px; }
             .versions-grid { grid-template-columns: repeat(2, 1fr); }
-            .update-meta { flex-wrap: wrap; gap: 16px; }
+            .update-details { grid-template-columns: 1fr; gap: 16px; }
+            .update-meta { display: none; }
         }
 
         @media (max-width: 480px) {
             html { font-size: 14px; }
             .versions-grid { grid-template-columns: 1fr; }
+            .metric-value { font-size: 1.8rem; }
         }
     </style>
 </head>
 <body>
-    <div class="bg-pattern"></div>
+    <div class="luxury-pattern"></div>
+    <div class="golden-glow"></div>
 
     <div class="container">
         <div id="app">
             <div class="loading">
                 <div class="loading-spinner"></div>
-                <p class="loading-text">Chargement des donnees...</p>
+                <p class="loading-text">Chargement en cours...</p>
             </div>
         </div>
     </div>
@@ -698,84 +720,67 @@
     <script>
         const DATA_URL = 'data.json';
 
-        // Configuration des sources
         const SOURCES_CONFIG = {
             "Journal API": {
-                icon: "📋",
-                iconClass: "api",
-                description: "Modifications de l'API Claude : nouveaux modeles, endpoints, parametres, limites de tokens, tarification.",
+                icon: "◈",
+                description: "Modifications de l'API Claude : nouveaux modeles, endpoints, parametres, limites de tokens et tarification.",
                 category: "API"
             },
             "Claude Code": {
-                icon: "💻",
-                iconClass: "code",
-                description: "L'assistant IA en ligne de commande pour coder avec Claude. Permet d'utiliser Claude directement dans votre terminal.",
-                category: "Outils"
+                icon: "⌘",
+                description: "Assistant IA en ligne de commande permettant d'utiliser Claude directement dans votre terminal pour le developpement.",
+                category: "Developpement"
             },
             "SDK Python": {
-                icon: "🐍",
-                iconClass: "python",
-                description: "Bibliotheque Python officielle pour integrer Claude dans vos applications. Installation : pip install anthropic",
+                icon: "◇",
+                description: "Bibliotheque Python officielle pour integrer Claude dans vos applications. Installation via pip install anthropic.",
                 category: "SDK"
             },
             "SDK TypeScript": {
-                icon: "📘",
-                iconClass: "typescript",
-                description: "Bibliotheque TypeScript/JavaScript pour integrer Claude dans vos apps Node.js et navigateur.",
+                icon: "◆",
+                description: "Bibliotheque TypeScript/JavaScript pour integrer Claude dans vos applications Node.js et navigateur.",
                 category: "SDK"
             },
             "npm @anthropic-ai/sdk": {
-                icon: "📦",
-                iconClass: "typescript",
-                description: "Package npm du SDK officiel Anthropic pour JavaScript/TypeScript.",
+                icon: "▣",
+                description: "Package npm du SDK officiel Anthropic pour JavaScript et TypeScript.",
                 category: "SDK"
             },
             "npm @anthropic-ai/claude-code": {
-                icon: "📦",
-                iconClass: "code",
-                description: "Package npm de Claude Code - l'outil CLI pour coder avec Claude.",
-                category: "Outils"
+                icon: "▢",
+                description: "Package npm de Claude Code - outil CLI pour developper avec Claude.",
+                category: "Developpement"
             },
             "PyPI anthropic": {
-                icon: "🐍",
-                iconClass: "python",
-                description: "Package Python pip du SDK Anthropic. Derniere version stable sur PyPI.",
+                icon: "◈",
+                description: "Package Python pip du SDK Anthropic. Version stable disponible sur PyPI.",
                 category: "SDK"
             },
             "Blog": {
-                icon: "📰",
-                iconClass: "blog",
-                description: "Articles officiels d'Anthropic : annonces de fonctionnalites, cas d'usage, guides pratiques.",
+                icon: "◎",
+                description: "Articles officiels d'Anthropic : annonces, cas d'usage et guides pratiques.",
                 category: "Actualites"
             },
             "Recherche": {
-                icon: "🔬",
-                iconClass: "research",
-                description: "Publications scientifiques et travaux de recherche d'Anthropic sur la securite et l'alignement de l'IA.",
+                icon: "◉",
+                description: "Publications scientifiques et travaux de recherche sur la securite et l'alignement de l'IA.",
                 category: "Recherche"
             },
             "Statut": {
-                icon: "⚠️",
-                iconClass: "status",
-                description: "Etat des services Anthropic : incidents en cours, maintenances planifiees, degradations.",
+                icon: "◈",
+                description: "Etat des services Anthropic : incidents en cours, maintenances planifiees.",
                 category: "Infrastructure"
             },
             "Nouveau Depot": {
-                icon: "🐙",
-                iconClass: "github",
+                icon: "◇",
                 description: "Nouveaux projets open source publies par Anthropic sur GitHub.",
                 category: "Open Source"
             }
         };
 
-        // Init Telegram WebApp
         let tg = window.Telegram?.WebApp;
-        if (tg) {
-            tg.ready();
-            tg.expand();
-        }
+        if (tg) { tg.ready(); tg.expand(); }
 
-        // Charger les donnees
         async function loadData() {
             try {
                 const response = await fetch(DATA_URL + '?t=' + Date.now());
@@ -787,15 +792,13 @@
             }
         }
 
-        // Rafraichir avec animation
         async function refreshData() {
             const btn = document.getElementById('refreshBtn');
             btn.classList.add('loading');
             await loadData();
-            setTimeout(() => btn.classList.remove('loading'), 500);
+            setTimeout(() => btn.classList.remove('loading'), 600);
         }
 
-        // Formater la date
         function formatDate(isoString) {
             if (!isoString) return 'Inconnu';
             const date = new Date(isoString);
@@ -808,13 +811,11 @@
             });
         }
 
-        // Extraire la version
         function extractVersion(title) {
             const match = title?.match(/v?(\d+\.\d+\.\d+)/);
-            return match ? `v${match[1]}` : title?.slice(0, 20) || 'N/A';
+            return match ? `v${match[1]}` : title?.slice(0, 15) || '—';
         }
 
-        // Generer le HTML
         function renderApp(data) {
             const app = document.getElementById('app');
             const updates = data.updates || [];
@@ -824,137 +825,118 @@
             const newUpdates = updates.filter(u => u.is_new);
             const hasUpdates = newUpdates.length > 0;
 
-            // Grouper les updates par source (garder seulement le plus recent)
             const latestBySource = {};
             updates.forEach(u => {
-                if (!latestBySource[u.source]) {
-                    latestBySource[u.source] = u;
-                }
+                if (!latestBySource[u.source]) latestBySource[u.source] = u;
             });
 
             app.innerHTML = `
-                <!-- Header -->
                 <header class="header">
-                    <div class="logo">
-                        <div class="logo-icon">🤖</div>
-                        <div class="logo-text">
-                            <span class="logo-title">Claude Monitor</span>
-                            <span class="logo-subtitle">Olympus Capital</span>
-                        </div>
-                    </div>
-                    <div class="header-meta">
-                        <div class="last-update">
-                            Derniere verification<br>
-                            <span class="last-update-time">${lastCheck}</span>
-                        </div>
-                    </div>
+                    <div class="logo-emblem">◈</div>
+                    <h1 class="brand-name">Claude Monitor</h1>
+                    <p class="brand-tagline">Olympus Capital</p>
+                    <p class="last-check">
+                        Derniere verification : <span class="last-check-time">${lastCheck}</span>
+                    </p>
                 </header>
 
-                <!-- Status Banner -->
                 <div class="status-banner">
-                    <div class="status-main">
-                        <div class="status-indicator ${hasUpdates ? 'has-updates' : 'no-updates'}">
-                            ${hasUpdates ? '🔔' : '✓'}
+                    <div class="status-content">
+                        <div class="status-left">
+                            <div class="status-icon ${hasUpdates ? 'alert' : 'success'}">
+                                ${hasUpdates ? '◈' : '✓'}
+                            </div>
+                            <div class="status-text">
+                                <h2>${hasUpdates ? `${newUpdates.length} nouveaute${newUpdates.length > 1 ? 's' : ''} detectee${newUpdates.length > 1 ? 's' : ''}` : 'Systeme a jour'}</h2>
+                                <p>${hasUpdates ? 'Des mises a jour sont disponibles' : 'Aucune nouvelle mise a jour detectee'}</p>
+                            </div>
                         </div>
-                        <div class="status-text">
-                            <h2>${hasUpdates ? `${newUpdates.length} nouveaute${newUpdates.length > 1 ? 's' : ''} detectee${newUpdates.length > 1 ? 's' : ''}` : 'Systeme a jour'}</h2>
-                            <p>${hasUpdates ? 'Des mises a jour sont disponibles' : 'Aucune nouvelle mise a jour'}</p>
-                        </div>
-                    </div>
-                    <div class="status-stats">
-                        <div class="stat-item">
-                            <div class="stat-value">${Object.keys(latestBySource).length}</div>
-                            <div class="stat-label">Sources</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-value">${newUpdates.length}</div>
-                            <div class="stat-label">Nouvelles</div>
+                        <div class="status-metrics">
+                            <div class="metric">
+                                <div class="metric-value">${Object.keys(latestBySource).length}</div>
+                                <div class="metric-label">Sources</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">${newUpdates.length}</div>
+                                <div class="metric-label">Nouvelles</div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Versions Grid -->
-                <div class="section-header">
-                    <div class="section-icon">📦</div>
-                    <h3 class="section-title">Versions actuelles</h3>
-                </div>
-                <div class="versions-grid">
-                    ${renderVersionCards(versions, newUpdates)}
-                </div>
-
-                <!-- Updates -->
-                ${hasUpdates ? `
+                <section class="section">
                     <div class="section-header">
-                        <div class="section-icon">🆕</div>
-                        <h3 class="section-title">Nouvelles mises a jour</h3>
-                        <span class="section-badge">${newUpdates.length} nouveau${newUpdates.length > 1 ? 'x' : ''}</span>
+                        <h3 class="section-title">Versions Actuelles</h3>
                     </div>
-                    <div class="updates-grid">
-                        ${newUpdates.map((u, i) => renderUpdateCard(u, i, true)).join('')}
+                    <div class="versions-grid">
+                        ${renderVersionCards(versions, newUpdates)}
                     </div>
+                </section>
+
+                ${hasUpdates ? `
+                    <section class="section">
+                        <div class="section-header">
+                            <h3 class="section-title">Nouvelles Mises a Jour</h3>
+                            <span class="section-count">${newUpdates.length} element${newUpdates.length > 1 ? 's' : ''}</span>
+                        </div>
+                        <div class="updates-list">
+                            ${newUpdates.map((u, i) => renderUpdateCard(u, i)).join('')}
+                        </div>
+                    </section>
                 ` : ''}
 
-                <!-- All Sources -->
-                <div class="section-header">
-                    <div class="section-icon">📊</div>
-                    <h3 class="section-title">Toutes les sources</h3>
-                    <span class="section-badge">${Object.keys(latestBySource).length} sources</span>
-                </div>
-                <div class="updates-grid">
-                    ${Object.values(latestBySource).map((u, i) => renderUpdateCard(u, i, false)).join('')}
-                </div>
-
-                <!-- Footer -->
-                <footer class="footer">
-                    <div class="footer-logo">
-                        🤖 Claude Monitor by Olympus Capital
+                <section class="section">
+                    <div class="section-header">
+                        <h3 class="section-title">Toutes les Sources</h3>
+                        <span class="section-count">${Object.keys(latestBySource).length} sources</span>
                     </div>
-                    <p class="footer-text">Actualisation automatique tous les jours a 20h</p>
+                    <div class="updates-list">
+                        ${Object.values(latestBySource).map((u, i) => renderUpdateCard(u, i)).join('')}
+                    </div>
+                </section>
+
+                <footer class="footer">
+                    <p class="footer-brand">◈ Olympus Capital ◈</p>
+                    <p class="footer-text">Actualisation automatique quotidienne a 20h</p>
                 </footer>
             `;
 
-            // Attacher les evenements
-            document.querySelectorAll('.update-card-header').forEach(header => {
+            document.querySelectorAll('.update-header').forEach(header => {
                 header.addEventListener('click', () => {
                     header.parentElement.classList.toggle('open');
                 });
             });
         }
 
-        // Render version cards
         function renderVersionCards(versions, newUpdates) {
-            const versionItems = [
-                { key: 'Claude Code', icon: '💻', name: 'Claude Code' },
-                { key: 'SDK Python', icon: '🐍', name: 'SDK Python' },
-                { key: 'SDK TypeScript', icon: '📘', name: 'SDK TS' },
-                { key: 'Status API', icon: '🚦', name: 'Status API' }
+            const items = [
+                { key: 'Claude Code', icon: '⌘', name: 'Claude Code' },
+                { key: 'SDK Python', icon: '◇', name: 'SDK Python' },
+                { key: 'SDK TypeScript', icon: '◆', name: 'SDK TypeScript' },
+                { key: 'Status API', icon: '◈', name: 'Status' }
             ];
 
             const newSources = new Set(newUpdates.map(u => u.source));
 
-            return versionItems.map(item => {
-                const value = versions[item.key] || 'N/A';
+            return items.map(item => {
+                const value = versions[item.key] || '—';
                 const isUpdated = newSources.has(item.key) ||
                     (item.key === 'Claude Code' && (newSources.has('npm @anthropic-ai/claude-code') || newSources.has('Claude Code'))) ||
                     (item.key === 'SDK Python' && (newSources.has('PyPI anthropic') || newSources.has('SDK Python')));
 
                 return `
                     <div class="version-card ${isUpdated ? 'updated' : ''}">
-                        <div class="version-card-header">
-                            <span class="version-card-icon">${item.icon}</span>
-                            <span class="version-card-name">${item.name}</span>
-                        </div>
-                        <div class="version-card-value">${value}</div>
+                        <div class="version-icon">${item.icon}</div>
+                        <div class="version-name">${item.name}</div>
+                        <div class="version-value">${value}</div>
                     </div>
                 `;
             }).join('');
         }
 
-        // Render update card
-        function renderUpdateCard(update, index, isNew) {
+        function renderUpdateCard(update, index) {
             const config = SOURCES_CONFIG[update.source] || {
-                icon: '📌',
-                iconClass: 'github',
+                icon: '◈',
                 description: 'Source de mise a jour Anthropic',
                 category: 'Autre'
             };
@@ -964,73 +946,60 @@
 
             return `
                 <div class="update-card ${update.is_new ? 'is-new' : ''}">
-                    <div class="update-card-header">
-                        <div class="update-card-left">
-                            <div class="source-icon ${config.iconClass}">${config.icon}</div>
-                            <div class="update-card-info">
-                                <div class="update-card-source">
-                                    ${update.source}
-                                    ${update.is_new ? '<span class="new-badge">Nouveau</span>' : ''}
-                                </div>
-                                <div class="update-card-title">${update.title}</div>
+                    <div class="update-header">
+                        <div class="update-icon">${config.icon}</div>
+                        <div class="update-info">
+                            <div class="update-source">
+                                ${update.source}
+                                ${update.is_new ? '<span class="new-tag">Nouveau</span>' : ''}
                             </div>
+                            <div class="update-title">${update.title}</div>
                         </div>
-                        <div class="update-card-right">
-                            <span class="version-tag">${version}</span>
-                            <div class="expand-icon">▼</div>
+                        <div class="update-meta">
+                            <span class="update-version">${version}</span>
+                            <div class="update-expand">▼</div>
                         </div>
                     </div>
-                    <div class="update-card-content">
-                        <div class="update-card-body">
-                            <div class="update-meta">
-                                <div class="meta-item">
-                                    <span class="meta-label">Categorie</span>
-                                    <span class="meta-value">${config.category}</span>
+                    <div class="update-content">
+                        <div class="update-body">
+                            <div class="update-details">
+                                <div class="detail-item">
+                                    <div class="detail-label">Categorie</div>
+                                    <div class="detail-value">${config.category}</div>
                                 </div>
-                                <div class="meta-item">
-                                    <span class="meta-label">Source</span>
-                                    <span class="meta-value">${update.source}</span>
+                                <div class="detail-item">
+                                    <div class="detail-label">Source</div>
+                                    <div class="detail-value">${update.source}</div>
                                 </div>
-                                <div class="meta-item">
-                                    <span class="meta-label">Version</span>
-                                    <span class="meta-value">${version}</span>
+                                <div class="detail-item">
+                                    <div class="detail-label">Version</div>
+                                    <div class="detail-value">${version}</div>
                                 </div>
                             </div>
 
-                            <div class="update-description">
-                                <h4>📖 A propos de cette source</h4>
-                                <p>${config.description}</p>
+                            <div class="update-description-box">
+                                <div class="description-title">◈ A propos</div>
+                                <p class="description-text">${config.description}</p>
                             </div>
 
-                            ${summary && summary !== update.title ? `
-                                <div class="update-summary">
-                                    <h4>📝 Details de la mise a jour</h4>
-                                    <p>${summary}</p>
-                                </div>
-                            ` : `
-                                <div class="update-summary">
-                                    <h4>📝 Contenu</h4>
-                                    <p>${update.title}</p>
-                                </div>
-                            `}
+                            <div class="update-summary-box">
+                                <div class="summary-title">Details de la mise a jour</div>
+                                <p class="summary-text">${summary}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             `;
         }
 
-        // Erreur
         function renderError() {
             document.getElementById('app').innerHTML = `
-                <div class="empty-state">
-                    <div class="empty-state-icon">⚠️</div>
-                    <h3>Impossible de charger les donnees</h3>
-                    <p>Verifiez votre connexion et reessayez</p>
+                <div class="loading">
+                    <p class="loading-text">Impossible de charger les donnees</p>
                 </div>
             `;
         }
 
-        // Init
         loadData();
     </script>
 </body>
