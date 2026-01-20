@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-01-19T19:17:18.088739",
+  "last_check": "2026-01-20T20:09:48.934604",
   "updates": [
     {
       "source": "Claude Code",
@@ -310,6 +310,26 @@
     },
     {
       "source": "Blog",
+      "title": "Jan 21, 2026AnnouncementsMariano-Florentino Cuéllar appointed to Anthropic’s Long-Term Benefit Trust",
+      "title_en": "Jan 21, 2026AnnouncementsMariano-Florentino Cuéllar appointed to Anthropic’s Long-Term Benefit Trust",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/mariano-florentino-long-term-benefit-trust",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "Jan 21, 2026AnnouncementsAnthropic and Teach For All launch global AI training initiative for educat",
+      "title_en": "Jan 21, 2026AnnouncementsAnthropic and Teach For All launch global AI training initiative for educat",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/anthropic-teach-for-all",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Jan 16, 2026AnnouncementsAnthropic appoints Irina Ghose as Managing Director of India ahead of Benga",
       "title_en": "Jan 16, 2026AnnouncementsAnthropic appoints Irina Ghose as Managing Director of India ahead of Benga",
       "summary": "",
@@ -336,26 +356,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/introducing-anthropic-labs",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Jan 11, 2026AnnouncementsAdvancing Claude in healthcare and the life sciences",
-      "title_en": "Jan 11, 2026AnnouncementsAdvancing Claude in healthcare and the life sciences",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/healthcare-life-sciences",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Dec 19, 2025PolicySharing our compliance framework for California's Transparency in Frontier AI Act",
-      "title_en": "Dec 19, 2025PolicySharing our compliance framework for California's Transparency in Frontier AI Act",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/compliance-framework-SB53",
       "is_new": false
     },
     {
@@ -420,6 +420,16 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "original_performance_takehome",
+      "title_en": "original_performance_takehome",
+      "summary": "Anthropic's original performance take-home, now ouvrir for you to try!",
+      "summary_en": "Anthropic's original performance take-home, now open for you to try!",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/original_performance_takehome",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "tailscale-hint-extension",
       "title_en": "tailscale-hint-extension",
       "summary": "Chrome extension affichering helpful troubleshooting when Tailscale .local domains fail to resolve",
@@ -456,16 +466,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/claude-ai-mcp",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "model-cards",
-      "title_en": "model-cards",
-      "summary": "Supplementary materials for Claude Model Cards",
-      "summary_en": "Supplementary materials for Claude Model Cards",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/model-cards",
       "is_new": false
     }
   ],
