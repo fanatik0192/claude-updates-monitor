@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-01-20T20:09:48.934604",
+  "last_check": "2026-01-21T19:24:24.110058",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.14",
+      "title_en": "v2.1.14",
+      "summary": "Ce qui a change Ajout de history-based autocompletion in bash mode (!) - taper a partial commande and appuyer sur Tab to complete from your bash commande history Ajout de recherche to installed plugins list - taper to filtre by nom or description Ajout de prise en charge de pinning plugins to specific git commit SHAs, allowing marketplace entries to install exact versions <l",
+      "summary_en": "What's changed\n\nAdded history-based autocomplete in bash mode (!) - type a partial command and press Tab to complete from your bash command history\nAdded search to installed plugins list - type to filter by name or description\nAdded support for pinning plugins to specific git commit SHAs, allowing marketplace entries to install exact versions\n<l",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "history-based autocomplete in bash mode (!) - type a partial command and press Tab to complete from your bash command history"
+        },
+        {
+          "type": "added",
+          "text": "search to installed plugins list - type to filter by name or description"
+        },
+        {
+          "type": "added",
+          "text": "support for pinning plugins to specific git commit SHAs, allowing marketplace entries to install exact versions"
+        },
+        {
+          "type": "changed",
+          "text": "Added history-based autocomplete in bash mode (!) - type a partial command and press Tab to complete from your bash command history"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.14",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.12",
@@ -99,33 +126,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.7",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.6",
-      "title_en": "v2.1.6",
-      "summary": "Ce qui a change Ajout de recherche functionality to /config commande for quickly filtrage parametres Ajout de Section mises a jour to /doctor affichering mise a jour automatique channel and available versions npm (stable/derniere) Ajout de plage de dates filtrage to /stats commande - appuyer sur r to parcourir between 7 derniers jours, 30 derniers jours, and Tout le temporaires",
-      "summary_en": "What's changed\n\nAdded search functionality to /config command for quickly filtering settings\nAdded Updates section to /doctor showing auto-update channel and available npm versions (stable/latest)\nAdded date range filtering to /stats command - press r to cycle between Last 7 days, Last 30 days, and All time",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "search functionality to /config command for quickly filtering settings"
-        },
-        {
-          "type": "added",
-          "text": "Updates section to /doctor showing auto-update channel and available npm versions (stable/latest)"
-        },
-        {
-          "type": "added",
-          "text": "date range filtering to /stats command - press r to cycle between Last 7 days, Last 30 days, and All time"
-        },
-        {
-          "type": "changed",
-          "text": "Added search functionality to /config command for quickly filtering settings"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.6",
       "is_new": false
     },
     {
@@ -240,13 +240,13 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.12",
-      "title_en": "v2.1.12",
-      "summary": "Publie le 2026-01-17",
-      "summary_en": "Publie le 2026-01-17",
+      "title": "v2.1.14",
+      "title_en": "v2.1.14",
+      "summary": "Publie le 2026-01-20",
+      "summary_en": "Publie le 2026-01-20",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
@@ -310,13 +310,23 @@
     },
     {
       "source": "Blog",
+      "title": "Jan 22, 2026AnnouncementsClaude's new constitution",
+      "title_en": "Jan 22, 2026AnnouncementsClaude's new constitution",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/claude-new-constitution",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Jan 21, 2026AnnouncementsMariano-Florentino Cuéllar appointed to Anthropic’s Long-Term Benefit Trust",
       "title_en": "Jan 21, 2026AnnouncementsMariano-Florentino Cuéllar appointed to Anthropic’s Long-Term Benefit Trust",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/mariano-florentino-long-term-benefit-trust",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -326,7 +336,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/anthropic-teach-for-all",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -346,16 +356,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/accelerating-scientific-research",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Jan 13, 2026AnnouncementsIntroducing Labs",
-      "title_en": "Jan 13, 2026AnnouncementsIntroducing Labs",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/introducing-anthropic-labs",
       "is_new": false
     },
     {
@@ -426,7 +426,7 @@
       "summary_en": "Anthropic's original performance take-home, now open for you to try!",
       "changelog_items": [],
       "url": "https://github.com/anthropics/original_performance_takehome",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -471,8 +471,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.12",
-    "Claude Code npm": "v2.1.12",
+    "Claude Code": "v2.1.14",
+    "Claude Code npm": "v2.1.14",
     "SDK Python": "v0.76.0",
     "SDK Python PyPI": "v0.76.0",
     "SDK TypeScript": "bedrock-sdk: v0.26.1",
@@ -480,7 +480,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.6",
+    "GitHub Claude Code": "v2.1.7",
     "GitHub SDK Python": "v0.73.0"
   }
 }
