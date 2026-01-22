@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-01-21T19:24:24.110058",
+  "last_check": "2026-01-22T19:22:02.048726",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.15",
+      "title_en": "v2.1.15",
+      "summary": "Ce qui a change Ajout de deprecation notification for npm installations - run claude install or see https://docs.anthropic.com/en/docs/claude-code/getting-started for more options Amelioration de UI rendering performance with React Compiler Correction de the \"Context left until",
+      "summary_en": "What's changed\n\nAdded deprecation notification for npm installations - run claude install or see https://docs.anthropic.com/en/docs/claude-code/getting-started for more options\nImproved UI rendering performance with React Compiler\nFixed the \"Context left until",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "deprecation notification for npm installations - run claude install or see https://docs.anthropic.com/en/docs/claude-code/getting-started for more options"
+        },
+        {
+          "type": "fixed",
+          "text": "the \"Context left until"
+        },
+        {
+          "type": "changed",
+          "text": "Added deprecation notification for npm installations - run claude install or see https://docs.anthropic.com/en/docs/claude-code/getting-started for more options"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.15",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.14",
@@ -26,7 +49,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.14",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -95,37 +118,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.9",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.7",
-      "title_en": "v2.1.7",
-      "summary": "Ce qui a change Ajout de afficherTurnDuration parametre to masquer turn duration messages (e.g., \"Cooked for 1m 6s\") Ajout de ability to provide feedback when accepting permission prompts Ajout de inline display of agent's final response in task notifications, making it easier to see results without reading the full transcript fichier Correction de securite vulnerabilit",
-      "summary_en": "What's changed\n\nAdded showTurnDuration setting to hide turn duration messages (e.g., \"Cooked for 1m 6s\")\nAdded ability to provide feedback when accepting permission prompts\nAdded inline display of agent's final response in task notifications, making it easier to see results without reading the full transcript file\nFixed security vulnerabilit",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "showTurnDuration setting to hide turn duration messages (e.g., \"Cooked for 1m 6s\")"
-        },
-        {
-          "type": "added",
-          "text": "ability to provide feedback when accepting permission prompts"
-        },
-        {
-          "type": "added",
-          "text": "inline display of agent's final response in task notifications, making it easier to see results without reading the full transcript file"
-        },
-        {
-          "type": "fixed",
-          "text": "security vulnerabilit"
-        },
-        {
-          "type": "changed",
-          "text": "Added showTurnDuration setting to hide turn duration messages (e.g., \"Cooked for 1m 6s\")"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.7",
       "is_new": false
     },
     {
@@ -240,10 +232,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.14",
-      "title_en": "v2.1.14",
-      "summary": "Publie le 2026-01-20",
-      "summary_en": "Publie le 2026-01-20",
+      "title": "v2.1.15",
+      "title_en": "v2.1.15",
+      "summary": "Publie le 2026-01-21",
+      "summary_en": "Publie le 2026-01-21",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -316,7 +308,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-new-constitution",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -417,62 +409,12 @@
       "changelog_items": [],
       "url": "https://status.claude.com",
       "is_new": true
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "original_performance_takehome",
-      "title_en": "original_performance_takehome",
-      "summary": "Anthropic's original performance take-home, now ouvrir for you to try!",
-      "summary_en": "Anthropic's original performance take-home, now open for you to try!",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/original_performance_takehome",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "tailscale-hint-extension",
-      "title_en": "tailscale-hint-extension",
-      "summary": "Chrome extension affichering helpful troubleshooting when Tailscale .local domains fail to resolve",
-      "summary_en": "Chrome extension showing helpful troubleshooting when Tailscale .local domains fail to resolve",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/tailscale-hint-extension",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "healthcare",
-      "title_en": "healthcare",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/healthcare",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "httpcore",
-      "title_en": "httpcore",
-      "summary": "A minimal HTTP client. ⚙️",
-      "summary_en": "A minimal HTTP client. ⚙️",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/httpcore",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "claude-ai-mcp",
-      "title_en": "claude-ai-mcp",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/claude-ai-mcp",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.14",
-    "Claude Code npm": "v2.1.14",
+    "Claude Code": "v2.1.15",
+    "Claude Code npm": "v2.1.15",
     "SDK Python": "v0.76.0",
     "SDK Python PyPI": "v0.76.0",
     "SDK TypeScript": "bedrock-sdk: v0.26.1",
@@ -480,7 +422,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.7",
+    "GitHub Claude Code": "v2.1.9",
     "GitHub SDK Python": "v0.73.0"
   }
 }
