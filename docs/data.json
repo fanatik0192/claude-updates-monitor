@@ -1,6 +1,60 @@
 {
-  "last_check": "2026-01-22T19:22:02.048726",
+  "last_check": "2026-01-23T19:21:58.691871",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.17",
+      "title_en": "v2.1.17",
+      "summary": "Ce qui a change Correction de crashes on processors without AVX instruction prise en charge",
+      "summary_en": "What's changed\n\nFixed crashes on processors without AVX instruction support\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "crashes on processors without AVX instruction support"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed crashes on processors without AVX instruction support"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.17",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.16",
+      "title_en": "v2.1.16",
+      "summary": "Ce qui a change Ajout de new task management system, including new capabilities like dependency tracking [VSCode] Ajout de native plugin management prise en charge [VSCode] Ajout de ability for OAuth utilisateurs to browse and resume remote Claude sessions from the Sessions dialog Correction de out-of-memory crashes when resuming sessions with heavy subagent usage Correction de an iss",
+      "summary_en": "What's changed\n\nAdded new task management system, including new capabilities like dependency tracking\n[VSCode] Added native plugin management support\n[VSCode] Added ability for OAuth users to browse and resume remote Claude sessions from the Sessions dialog\nFixed out-of-memory crashes when resuming sessions with heavy subagent usage\nFixed an iss",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "new task management system, including new capabilities like dependency tracking"
+        },
+        {
+          "type": "added",
+          "text": "native plugin management support"
+        },
+        {
+          "type": "added",
+          "text": "ability for OAuth users to browse and resume remote Claude sessions from the Sessions dialog"
+        },
+        {
+          "type": "fixed",
+          "text": "out-of-memory crashes when resuming sessions with heavy subagent usage"
+        },
+        {
+          "type": "fixed",
+          "text": "an iss"
+        },
+        {
+          "type": "changed",
+          "text": "Added new task management system, including new capabilities like dependency tracking"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.16",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.15",
@@ -22,7 +76,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.15",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -68,56 +122,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.12",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.11",
-      "title_en": "v2.1.11",
-      "summary": "Ce qui a change Correction de excessive MCP connection requests for HTTP/SSE transports",
-      "summary_en": "What's changed\n\nFixed excessive MCP connection requests for HTTP/SSE transports\n",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "excessive MCP connection requests for HTTP/SSE transports"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed excessive MCP connection requests for HTTP/SSE transports"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.11",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.9",
-      "title_en": "v2.1.9",
-      "summary": "Ce qui a change Ajout de auto:N syntax for configuring the MCP tool recherche auto-activer threshold, where N is the context window percentage (0-100) Ajout de plansRepertoire parametre to personnaliseize where plan fichiers are stored Ajout de external editor prise en charge (Ctrl+G) in AskUtilisateurQuestion \"Other\" entree field Ajout de session URL attribution to commi",
-      "summary_en": "What's changed\n\nAdded auto:N syntax for configuring the MCP tool search auto-enable threshold, where N is the context window percentage (0-100)\nAdded plansDirectory setting to customize where plan files are stored\nAdded external editor support (Ctrl+G) in AskUserQuestion \"Other\" input field\nAdded session URL attribution to commi",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "auto:N syntax for configuring the MCP tool search auto-enable threshold, where N is the context window percentage (0-100)"
-        },
-        {
-          "type": "added",
-          "text": "plansDirectory setting to customize where plan files are stored"
-        },
-        {
-          "type": "added",
-          "text": "external editor support (Ctrl+G) in AskUserQuestion \"Other\" input field"
-        },
-        {
-          "type": "added",
-          "text": "session URL attribution to commi"
-        },
-        {
-          "type": "changed",
-          "text": "Added auto:N syntax for configuring the MCP tool search auto-enable threshold, where N is the context window percentage (0-100)"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.9",
       "is_new": false
     },
     {
@@ -232,10 +236,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.15",
-      "title_en": "v2.1.15",
-      "summary": "Publie le 2026-01-21",
-      "summary_en": "Publie le 2026-01-21",
+      "title": "v2.1.17",
+      "title_en": "v2.1.17",
+      "summary": "Publie le 2026-01-22",
+      "summary_en": "Publie le 2026-01-22",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -409,12 +413,62 @@
       "changelog_items": [],
       "url": "https://status.claude.com",
       "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "original_performance_takehome",
+      "title_en": "original_performance_takehome",
+      "summary": "Anthropic's original performance take-home, now ouvrir for you to try!",
+      "summary_en": "Anthropic's original performance take-home, now open for you to try!",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/original_performance_takehome",
+      "is_new": false
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "tailscale-hint-extension",
+      "title_en": "tailscale-hint-extension",
+      "summary": "Chrome extension affichering helpful troubleshooting when Tailscale .local domains fail to resolve",
+      "summary_en": "Chrome extension showing helpful troubleshooting when Tailscale .local domains fail to resolve",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/tailscale-hint-extension",
+      "is_new": false
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "healthcare",
+      "title_en": "healthcare",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/healthcare",
+      "is_new": false
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "httpcore",
+      "title_en": "httpcore",
+      "summary": "A minimal HTTP client. ⚙️",
+      "summary_en": "A minimal HTTP client. ⚙️",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/httpcore",
+      "is_new": false
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "claude-ai-mcp",
+      "title_en": "claude-ai-mcp",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/claude-ai-mcp",
+      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.15",
-    "Claude Code npm": "v2.1.15",
+    "Claude Code": "v2.1.17",
+    "Claude Code npm": "v2.1.17",
     "SDK Python": "v0.76.0",
     "SDK Python PyPI": "v0.76.0",
     "SDK TypeScript": "bedrock-sdk: v0.26.1",
@@ -422,7 +476,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.9",
+    "GitHub Claude Code": "v2.1.12",
     "GitHub SDK Python": "v0.73.0"
   }
 }
