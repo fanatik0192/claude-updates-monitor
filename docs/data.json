@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-01-25T19:14:36.704805",
+  "last_check": "2026-01-26T19:21:02.748798",
   "updates": [
     {
       "source": "Claude Code",
@@ -428,6 +428,16 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "nix-eval-jobs",
+      "title_en": "nix-eval-jobs",
+      "summary": "Parallel nix evaluator with a streamable json sortie [maintainers @Mic92, @adisbladis]",
+      "summary_en": "Parallel nix evaluator with a streamable json output [maintainers @Mic92, @adisbladis]",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/nix-eval-jobs",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "original_performance_takehome",
       "title_en": "original_performance_takehome",
       "summary": "Anthropic's original performance take-home, now ouvrir for you to try!",
@@ -464,16 +474,6 @@
       "summary_en": "A minimal HTTP client. ⚙️",
       "changelog_items": [],
       "url": "https://github.com/anthropics/httpcore",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "claude-ai-mcp",
-      "title_en": "claude-ai-mcp",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/claude-ai-mcp",
       "is_new": false
     }
   ],
