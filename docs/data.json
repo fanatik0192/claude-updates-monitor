@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-01-26T19:21:02.748798",
+  "last_check": "2026-01-27T19:24:27.388962",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.20",
+      "title_en": "v2.1.20",
+      "summary": "Ce qui a change Ajout de arrow key history navigation in vim normal mode when cursor cannot move further Ajout de external editor raccourci (Ctrl+G) to the help menu for better discoverability Ajout de PR review status indicator to the prompt footer, affichering the current branch's PR state (approved, changes requested, pending, or draft) as a colored dot with a cliquable lin",
+      "summary_en": "What's changed\n\nAdded arrow key history navigation in vim normal mode when cursor cannot move further\nAdded external editor shortcut (Ctrl+G) to the help menu for better discoverability\nAdded PR review status indicator to the prompt footer, showing the current branch's PR state (approved, changes requested, pending, or draft) as a colored dot with a clickable lin",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "arrow key history navigation in vim normal mode when cursor cannot move further"
+        },
+        {
+          "type": "added",
+          "text": "external editor shortcut (Ctrl+G) to the help menu for better discoverability"
+        },
+        {
+          "type": "added",
+          "text": "PR review status indicator to the prompt footer, showing the current branch's PR state (approved, changes requested, pending, or draft) as a colored dot with a clickable lin"
+        },
+        {
+          "type": "changed",
+          "text": "Added arrow key history navigation in vim normal mode when cursor cannot move further"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.20",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.19",
@@ -107,33 +134,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.15",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.14",
-      "title_en": "v2.1.14",
-      "summary": "Ce qui a change Ajout de history-based autocompletion in bash mode (!) - taper a partial commande and appuyer sur Tab to complete from your bash commande history Ajout de recherche to installed plugins list - taper to filtre by nom or description Ajout de prise en charge de pinning plugins to specific git commit SHAs, allowing marketplace entries to install exact versions <l",
-      "summary_en": "What's changed\n\nAdded history-based autocomplete in bash mode (!) - type a partial command and press Tab to complete from your bash command history\nAdded search to installed plugins list - type to filter by name or description\nAdded support for pinning plugins to specific git commit SHAs, allowing marketplace entries to install exact versions\n<l",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "history-based autocomplete in bash mode (!) - type a partial command and press Tab to complete from your bash command history"
-        },
-        {
-          "type": "added",
-          "text": "search to installed plugins list - type to filter by name or description"
-        },
-        {
-          "type": "added",
-          "text": "support for pinning plugins to specific git commit SHAs, allowing marketplace entries to install exact versions"
-        },
-        {
-          "type": "changed",
-          "text": "Added history-based autocomplete in bash mode (!) - type a partial command and press Tab to complete from your bash command history"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.14",
       "is_new": false
     },
     {
@@ -248,13 +248,13 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.19",
-      "title_en": "v2.1.19",
-      "summary": "Publie le 2026-01-23",
-      "summary_en": "Publie le 2026-01-23",
+      "title": "v2.1.20",
+      "title_en": "v2.1.20",
+      "summary": "Publie le 2026-01-27",
+      "summary_en": "Publie le 2026-01-27",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
@@ -318,6 +318,16 @@
     },
     {
       "source": "Blog",
+      "title": "Jan 27, 2026AnnouncementsAnthropic partners with the UK Government to bring AI assistance to GOV.UK",
+      "title_en": "Jan 27, 2026AnnouncementsAnthropic partners with the UK Government to bring AI assistance to GOV.UK ",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/gov-UK-partnership",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Jan 22, 2026AnnouncementsClaude's new constitution",
       "title_en": "Jan 22, 2026AnnouncementsClaude's new constitution",
       "summary": "",
@@ -354,16 +364,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/anthropic-appoints-irina-ghose-as-managing-director-of-india",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Jan 15, 2026Case StudyHow scientists are using Claude to accelerate rerecherche and discovery",
-      "title_en": "Jan 15, 2026Case StudyHow scientists are using Claude to accelerate research and discovery",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/accelerating-scientific-research",
       "is_new": false
     },
     {
@@ -434,7 +434,7 @@
       "summary_en": "Parallel nix evaluator with a streamable json output [maintainers @Mic92, @adisbladis]",
       "changelog_items": [],
       "url": "https://github.com/anthropics/nix-eval-jobs",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -479,8 +479,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.19",
-    "Claude Code npm": "v2.1.19",
+    "Claude Code": "v2.1.20",
+    "Claude Code npm": "v2.1.20",
     "SDK Python": "v0.76.0",
     "SDK Python PyPI": "v0.76.0",
     "SDK TypeScript": "bedrock-sdk: v0.26.1",
@@ -488,7 +488,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.14",
+    "GitHub Claude Code": "v2.1.15",
     "GitHub SDK Python": "v0.73.0"
   }
 }
