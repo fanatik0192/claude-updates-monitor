@@ -1,6 +1,56 @@
 {
-  "last_check": "2026-01-27T19:24:27.388962",
+  "last_check": "2026-01-28T19:24:36.198745",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.22",
+      "title_en": "v2.1.22",
+      "summary": "Ce qui a change Correction de structured sorties for non-interactive (-p) mode",
+      "summary_en": "What's changed\n\nFixed structured outputs for non-interactive (-p) mode\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "structured outputs for non-interactive (-p) mode"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed structured outputs for non-interactive (-p) mode"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.22",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.21",
+      "title_en": "v2.1.21",
+      "summary": "Ce qui a change Ajout de prise en charge de full-width (zenkaku) number entree from Japanese IME in option selection prompts Correction de shell completion cache fichiers being truncated on exit Correction de API erreurs when resuming sessions that were interrupted during tool execution Correction de auto-compact triggering too early on models with large sortie jeton limits Correction de tas",
+      "summary_en": "What's changed\n\nAdded support for full-width (zenkaku) number input from Japanese IME in option selection prompts\nFixed shell completion cache files being truncated on exit\nFixed API errors when resuming sessions that were interrupted during tool execution\nFixed auto-compact triggering too early on models with large output token limits\nFixed tas",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "support for full-width (zenkaku) number input from Japanese IME in option selection prompts"
+        },
+        {
+          "type": "fixed",
+          "text": "shell completion cache files being truncated on exit"
+        },
+        {
+          "type": "fixed",
+          "text": "API errors when resuming sessions that were interrupted during tool execution"
+        },
+        {
+          "type": "fixed",
+          "text": "auto-compact triggering too early on models with large output token limits"
+        },
+        {
+          "type": "changed",
+          "text": "Added support for full-width (zenkaku) number input from Japanese IME in option selection prompts"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.21",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.20",
@@ -26,7 +76,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.20",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -76,64 +126,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.17",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.16",
-      "title_en": "v2.1.16",
-      "summary": "Ce qui a change Ajout de new task management system, including new capabilities like dependency tracking [VSCode] Ajout de native plugin management prise en charge [VSCode] Ajout de ability for OAuth utilisateurs to browse and resume remote Claude sessions from the Sessions dialog Correction de out-of-memory crashes when resuming sessions with heavy subagent usage Correction de an iss",
-      "summary_en": "What's changed\n\nAdded new task management system, including new capabilities like dependency tracking\n[VSCode] Added native plugin management support\n[VSCode] Added ability for OAuth users to browse and resume remote Claude sessions from the Sessions dialog\nFixed out-of-memory crashes when resuming sessions with heavy subagent usage\nFixed an iss",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "new task management system, including new capabilities like dependency tracking"
-        },
-        {
-          "type": "added",
-          "text": "native plugin management support"
-        },
-        {
-          "type": "added",
-          "text": "ability for OAuth users to browse and resume remote Claude sessions from the Sessions dialog"
-        },
-        {
-          "type": "fixed",
-          "text": "out-of-memory crashes when resuming sessions with heavy subagent usage"
-        },
-        {
-          "type": "fixed",
-          "text": "an iss"
-        },
-        {
-          "type": "changed",
-          "text": "Added new task management system, including new capabilities like dependency tracking"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.16",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.15",
-      "title_en": "v2.1.15",
-      "summary": "Ce qui a change Ajout de deprecation notification for npm installations - run claude install or see https://docs.anthropic.com/en/docs/claude-code/getting-started for more options Amelioration de UI rendering performance with React Compiler Correction de the \"Context left until",
-      "summary_en": "What's changed\n\nAdded deprecation notification for npm installations - run claude install or see https://docs.anthropic.com/en/docs/claude-code/getting-started for more options\nImproved UI rendering performance with React Compiler\nFixed the \"Context left until",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "deprecation notification for npm installations - run claude install or see https://docs.anthropic.com/en/docs/claude-code/getting-started for more options"
-        },
-        {
-          "type": "fixed",
-          "text": "the \"Context left until"
-        },
-        {
-          "type": "changed",
-          "text": "Added deprecation notification for npm installations - run claude install or see https://docs.anthropic.com/en/docs/claude-code/getting-started for more options"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.15",
       "is_new": false
     },
     {
@@ -248,10 +240,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.20",
-      "title_en": "v2.1.20",
-      "summary": "Publie le 2026-01-27",
-      "summary_en": "Publie le 2026-01-27",
+      "title": "v2.1.22",
+      "title_en": "v2.1.22",
+      "summary": "Publie le 2026-01-28",
+      "summary_en": "Publie le 2026-01-28",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -324,7 +316,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/gov-UK-partnership",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -479,8 +471,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.20",
-    "Claude Code npm": "v2.1.20",
+    "Claude Code": "v2.1.22",
+    "Claude Code npm": "v2.1.22",
     "SDK Python": "v0.76.0",
     "SDK Python PyPI": "v0.76.0",
     "SDK TypeScript": "bedrock-sdk: v0.26.1",
@@ -488,7 +480,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.15",
+    "GitHub Claude Code": "v2.1.17",
     "GitHub SDK Python": "v0.73.0"
   }
 }
