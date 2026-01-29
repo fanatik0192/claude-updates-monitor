@@ -1,6 +1,37 @@
 {
-  "last_check": "2026-01-28T19:24:36.198745",
+  "last_check": "2026-01-29T19:28:06.014850",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.23",
+      "title_en": "v2.1.23",
+      "summary": "Ce qui a change Ajout de personnaliseizable spinner verbs parametre (spinnerVerbs) Correction de mTLS and proxy connectivity for utilisateurs behind corporate proxies or using client certificates Correction de per-utilisateur repertoire temporaireoraire isolation to prevent permission conflicts on shared systems Correction de a race condition that could cause 400 erreurs when prompt caching scope was en",
+      "summary_en": "What's changed\n\nAdded customizable spinner verbs setting (spinnerVerbs)\nFixed mTLS and proxy connectivity for users behind corporate proxies or using client certificates\nFixed per-user temp directory isolation to prevent permission conflicts on shared systems\nFixed a race condition that could cause 400 errors when prompt caching scope was en",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "customizable spinner verbs setting (spinnerVerbs)"
+        },
+        {
+          "type": "fixed",
+          "text": "mTLS and proxy connectivity for users behind corporate proxies or using client certificates"
+        },
+        {
+          "type": "fixed",
+          "text": "per-user temp directory isolation to prevent permission conflicts on shared systems"
+        },
+        {
+          "type": "fixed",
+          "text": "a race condition that could cause 400 errors when prompt caching scope was en"
+        },
+        {
+          "type": "changed",
+          "text": "Added customizable spinner verbs setting (spinnerVerbs)"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.23",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.22",
@@ -18,7 +49,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.22",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -49,7 +80,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.21",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -110,23 +141,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.17",
-      "title_en": "v2.1.17",
-      "summary": "Ce qui a change Correction de crashes on processors without AVX instruction prise en charge",
-      "summary_en": "What's changed\n\nFixed crashes on processors without AVX instruction support\n",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "crashes on processors without AVX instruction support"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed crashes on processors without AVX instruction support"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.17",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.77.0",
+      "title_en": "v0.77.0",
+      "summary": "0.77.0 (2026-01-29) Journal complet: v0.76.0...v0.77.0 Fonctionnalites api: add prise en charge de Structured Sorties in the Messages API () <st",
+      "summary_en": "0.77.0 (2026-01-29)\nFull Changelog: v0.76.0...v0.77.0\nFeatures\n\napi: add support for Structured Outputs in the Messages API (ad56677)\n<st",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.77.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -169,14 +191,44 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.73.0",
-      "title_en": "v0.73.0",
-      "summary": "0.73.0 (2025-11-14) Journal complet: v0.72.1...v0.73.0 Fonctionnalites api: add prise en charge de structured sorties beta ()",
-      "summary_en": "0.73.0 (2025-11-14)\nFull Changelog: v0.72.1...v0.73.0\nFeatures\n\napi: add support for structured outputs beta (688da81)\n",
+      "source": "SDK TypeScript",
+      "title": "vertex-sdk: v0.14.2",
+      "title_en": "vertex-sdk: v0.14.2",
+      "summary": "0.14.2 (2026-01-29) Journal complet: vertex-sdk-v0.14.1...vertex-sdk-v0.14.2 Maintenance internal: version bump ()",
+      "summary_en": "0.14.2 (2026-01-29)\nFull Changelog: vertex-sdk-v0.14.1...vertex-sdk-v0.14.2\nChores\n\ninternal: version bump (24ecc83)",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.73.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.14.2",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.72.0",
+      "title_en": "sdk: v0.72.0",
+      "summary": "0.72.0 (2026-01-29) Journal complet: sdk-v0.71.2...sdk-v0.72.0 Fonctionnalites api: add prise en charge de Structured Sorties in the Messages API (e",
+      "summary_en": "0.72.0 (2026-01-29)\nFull Changelog: sdk-v0.71.2...sdk-v0.72.0\nFeatures\n\napi: add support for Structured Outputs in the Messages API (e",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.72.0",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "foundry-sdk: v0.2.2",
+      "title_en": "foundry-sdk: v0.2.2",
+      "summary": "0.2.2 (2026-01-29) Journal complet: foundry-sdk-v0.2.1...foundry-sdk-v0.2.2 Maintenance internal: version bump ()<",
+      "summary_en": "0.2.2 (2026-01-29)\nFull Changelog: foundry-sdk-v0.2.1...foundry-sdk-v0.2.2\nChores\n\ninternal: version bump (24ecc83)<",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.2.2",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "bedrock-sdk: v0.26.2",
+      "title_en": "bedrock-sdk: v0.26.2",
+      "summary": "0.26.2 (2026-01-29) Journal complet: bedrock-sdk-v0.26.1...bedrock-sdk-v0.26.2 Maintenance internal: version bump (<",
+      "summary_en": "0.26.2 (2026-01-29)\nFull Changelog: bedrock-sdk-v0.26.1...bedrock-sdk-v0.26.2\nChores\n\ninternal: version bump (24ecc83<",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.26.2",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -189,74 +241,34 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.71.1",
-      "title_en": "sdk: v0.71.1",
-      "summary": "0.71.1 (2025-12-04) Journal complet: sdk-v0.71.0...sdk-v0.71.1 Corrections de bugs parser: use correct naming for parsed text blocks (</a",
-      "summary_en": "0.71.1 (2025-12-04)\nFull Changelog: sdk-v0.71.0...sdk-v0.71.1\nBug Fixes\n\nparser: use correct naming for parsed text blocks (6472bcd</a",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.71.1",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "vertex-sdk: v0.14.1",
-      "title_en": "vertex-sdk: v0.14.1",
-      "summary": "0.14.1 (2025-11-24) Journal complet: vertex-sdk-v0.14.0...vertex-sdk-v0.14.1 Maintenance include publishConfig in all package.json fichiers (4c72",
-      "summary_en": "0.14.1 (2025-11-24)\nFull Changelog: vertex-sdk-v0.14.0...vertex-sdk-v0.14.1\nChores\n\ninclude publishConfig in all package.json files (4c72",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.14.1",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.71.0",
-      "title_en": "sdk: v0.71.0",
-      "summary": "0.71.0 (2025-11-24) Journal complet: sdk-v0.70.1...sdk-v0.71.0 Fonctionnalites api: adds prise en charge de Claude Opus 4.5, Effort, Advance Tool Use Fonctionnalites, Compactage automatique, and Computer Use v5 (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/",
-      "summary_en": "0.71.0 (2025-11-24)\nFull Changelog: sdk-v0.70.1...sdk-v0.71.0\nFeatures\n\napi: adds support for Claude Opus 4.5, Effort, Advance Tool Use Features, Autocompaction, and Computer Use v5 (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.71.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "bedrock-sdk: v0.26.1",
-      "title_en": "bedrock-sdk: v0.26.1",
-      "summary": "0.26.1 (2025-11-24) Journal complet: bedrock-sdk-v0.26.0...bedrock-sdk-v0.26.1 Maintenance include publishConfig in all package.json fichiers (",
-      "summary_en": "0.26.1 (2025-11-24)\nFull Changelog: bedrock-sdk-v0.26.0...bedrock-sdk-v0.26.1\nChores\n\ninclude publishConfig in all package.json files (",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.26.1",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.71.2",
-      "title_en": "v0.71.2",
-      "summary": "Publie le 2025-12-06",
-      "summary_en": "Publie le 2025-12-06",
+      "title": "v0.72.0",
+      "title_en": "v0.72.0",
+      "summary": "Publie le 2026-01-29",
+      "summary_en": "Publie le 2026-01-29",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.22",
-      "title_en": "v2.1.22",
-      "summary": "Publie le 2026-01-28",
-      "summary_en": "Publie le 2026-01-28",
+      "title": "v2.1.23",
+      "title_en": "v2.1.23",
+      "summary": "Publie le 2026-01-29",
+      "summary_en": "Publie le 2026-01-29",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.76.0",
-      "title_en": "v0.76.0",
+      "title": "v0.77.0",
+      "title_en": "v0.77.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -310,6 +322,16 @@
     },
     {
       "source": "Blog",
+      "title": "Jan 28, 2026AnnouncementsServiceNow chooses Claude to power personnaliseer apps and increase internal prod",
+      "title_en": "Jan 28, 2026AnnouncementsServiceNow chooses Claude to power customer apps and increase internal prod",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/servicenow-anthropic-claude",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Jan 27, 2026AnnouncementsAnthropic partners with the UK Government to bring AI assistance to GOV.UK",
       "title_en": "Jan 27, 2026AnnouncementsAnthropic partners with the UK Government to bring AI assistance to GOV.UK ",
       "summary": "",
@@ -346,16 +368,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/anthropic-teach-for-all",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Jan 16, 2026AnnouncementsAnthropic appoints Irina Ghose as Managing Director of India ahead of Benga",
-      "title_en": "Jan 16, 2026AnnouncementsAnthropic appoints Irina Ghose as Managing Director of India ahead of Benga",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/anthropic-appoints-irina-ghose-as-managing-director-of-india",
       "is_new": false
     },
     {
@@ -471,16 +483,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.22",
-    "Claude Code npm": "v2.1.22",
-    "SDK Python": "v0.76.0",
-    "SDK Python PyPI": "v0.76.0",
-    "SDK TypeScript": "bedrock-sdk: v0.26.1",
+    "Claude Code": "v2.1.23",
+    "Claude Code npm": "v2.1.23",
+    "SDK Python": "v0.77.0",
+    "SDK Python PyPI": "v0.77.0",
+    "SDK TypeScript": "sdk: v0.71.2",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.17",
-    "GitHub SDK Python": "v0.73.0"
+    "GitHub Claude Code": "v2.1.19",
+    "GitHub SDK Python": "v0.74.0"
   }
 }
