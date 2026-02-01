@@ -1,6 +1,25 @@
 {
-  "last_check": "2026-01-31T19:18:27.678460",
+  "last_check": "2026-02-01T19:21:16.470196",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.29",
+      "title_en": "v2.1.29",
+      "summary": "Ce qui a change Correction de startup performance issues when resuming sessions that have saved_hook_context",
+      "summary_en": "What's changed\n\nFixed startup performance issues when resuming sessions that have saved_hook_context\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "startup performance issues when resuming sessions that have saved_hook_context"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed startup performance issues when resuming sessions that have saved_hook_context"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.29",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.27",
@@ -26,7 +45,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.27",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -95,37 +114,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.22",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.21",
-      "title_en": "v2.1.21",
-      "summary": "Ce qui a change Ajout de prise en charge de full-width (zenkaku) number entree from Japanese IME in option selection prompts Correction de shell completion cache fichiers being truncated on exit Correction de API erreurs when resuming sessions that were interrupted during tool execution Correction de auto-compact triggering too early on models with large sortie jeton limits Correction de tas",
-      "summary_en": "What's changed\n\nAdded support for full-width (zenkaku) number input from Japanese IME in option selection prompts\nFixed shell completion cache files being truncated on exit\nFixed API errors when resuming sessions that were interrupted during tool execution\nFixed auto-compact triggering too early on models with large output token limits\nFixed tas",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "support for full-width (zenkaku) number input from Japanese IME in option selection prompts"
-        },
-        {
-          "type": "fixed",
-          "text": "shell completion cache files being truncated on exit"
-        },
-        {
-          "type": "fixed",
-          "text": "API errors when resuming sessions that were interrupted during tool execution"
-        },
-        {
-          "type": "fixed",
-          "text": "auto-compact triggering too early on models with large output token limits"
-        },
-        {
-          "type": "changed",
-          "text": "Added support for full-width (zenkaku) number input from Japanese IME in option selection prompts"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.21",
       "is_new": false
     },
     {
@@ -240,10 +228,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.27",
-      "title_en": "v2.1.27",
-      "summary": "Publie le 2026-01-30",
-      "summary_en": "Publie le 2026-01-30",
+      "title": "v2.1.29",
+      "title_en": "v2.1.29",
+      "summary": "Publie le 2026-01-31",
+      "summary_en": "Publie le 2026-01-31",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -471,8 +459,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.27",
-    "Claude Code npm": "v2.1.27",
+    "Claude Code": "v2.1.29",
+    "Claude Code npm": "v2.1.29",
     "SDK Python": "v0.77.0",
     "SDK Python PyPI": "v0.77.0",
     "SDK TypeScript": "bedrock-sdk: v0.26.2",
@@ -480,7 +468,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.21",
+    "GitHub Claude Code": "v2.1.22",
     "GitHub SDK Python": "v0.74.0"
   }
 }
