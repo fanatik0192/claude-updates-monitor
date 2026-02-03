@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-02-01T19:21:16.470196",
+  "last_check": "2026-02-03T19:42:46.984487",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.30",
+      "title_en": "v2.1.30",
+      "summary": "Ce qui a change Ajout de pages parameter to the Read tool for PDFs, allowing specific page ranges to be read (e.g., pages: \"1-5\"). Large PDFs (&gt;10 pages) now return a lightweight reference when @ mentioned instead of being inlined into context. Ajout de pre-configured OAuth client credentials for MCP servers that don't prise en charge Dynamic C",
+      "summary_en": "What's changed\n\nAdded pages parameter to the Read tool for PDFs, allowing specific page ranges to be read (e.g., pages: \"1-5\"). Large PDFs (&gt;10 pages) now return a lightweight reference when @ mentioned instead of being inlined into context.\nAdded pre-configured OAuth client credentials for MCP servers that don't support Dynamic C",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "pages parameter to the Read tool for PDFs, allowing specific page ranges to be read (e.g., pages: \"1-5\"). Large PDFs (&gt;10 pages) now return a lightweight reference when @ mentioned instead of being"
+        },
+        {
+          "type": "added",
+          "text": "pre-configured OAuth client credentials for MCP servers that don't support Dynamic C"
+        },
+        {
+          "type": "changed",
+          "text": "Added pages parameter to the Read tool for PDFs, allowing specific page ranges to be read (e.g., pages: \"1-5\"). Large PDFs (&gt;10 pages) now return a lightweight reference when @ mentioned instead of"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.30",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.29",
@@ -18,7 +41,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.29",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -98,23 +121,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.22",
-      "title_en": "v2.1.22",
-      "summary": "Ce qui a change Correction de structured sorties for non-interactive (-p) mode",
-      "summary_en": "What's changed\n\nFixed structured outputs for non-interactive (-p) mode\n",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "structured outputs for non-interactive (-p) mode"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed structured outputs for non-interactive (-p) mode"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.22",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.77.1",
+      "title_en": "v0.77.1",
+      "summary": "0.77.1 (2026-02-03) Journal complet: v0.77.0...v0.77.1 Corrections de bugs structured sorties: send structured sortie beta header when format is omitted (<a href=\"https://github.com/an",
+      "summary_en": "0.77.1 (2026-02-03)\nFull Changelog: v0.77.0...v0.77.1\nBug Fixes\n\nstructured outputs: send structured output beta header when format is omitted (#1158) (<a href=\"https://github.com/an",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.77.1",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -154,16 +168,6 @@
       "summary_en": "0.74.1 (2025-11-19)\nFull Changelog: v0.74.0...v0.74.1\nBug Fixes\n\nstructured outputs: use correct beta header (e90d347)\n\nChores\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.74.1",
-      "is_new": false
-    },
-    {
-      "source": "SDK Python",
-      "title": "v0.74.0",
-      "title_en": "v0.74.0",
-      "summary": "0.74.0 (2025-11-18) Journal complet: v0.73.0...v0.74.0 Fonctionnalites add Foundry SDK () Corrections de bugs examples/memory:",
-      "summary_en": "0.74.0 (2025-11-18)\nFull Changelog: v0.73.0...v0.74.0\nFeatures\n\nadd Foundry SDK (3ae9e45)\n\nBug Fixes\n\nexamples/memory: ",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.74.0",
       "is_new": false
     },
     {
@@ -228,23 +232,23 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.29",
-      "title_en": "v2.1.29",
-      "summary": "Publie le 2026-01-31",
-      "summary_en": "Publie le 2026-01-31",
+      "title": "v2.1.30",
+      "title_en": "v2.1.30",
+      "summary": "Publie le 2026-02-03",
+      "summary_en": "Publie le 2026-02-03",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.77.0",
-      "title_en": "v0.77.0",
+      "title": "v0.77.1",
+      "title_en": "v0.77.1",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -288,6 +292,26 @@
     },
     {
       "source": "Blog",
+      "title": "Feb 3, 2026ProductApple’s Xcode now prise en charges the Claude Agent SDK",
+      "title_en": "Feb 3, 2026ProductApple’s Xcode now supports the Claude Agent SDK",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/apple-xcode-claude-agent-sdk",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "Feb 2, 2026Societal ImpactsAnthropic partners with Allen Institute and Howard Hughes Medical Institu",
+      "title_en": "Feb 2, 2026Societal ImpactsAnthropic partners with Allen Institute and Howard Hughes Medical Institu",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/anthropic-partners-with-allen-institute-and-howard-hughes-medical-institute",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Jan 28, 2026AnnouncementsServiceNow chooses Claude to power personnaliseer apps and increase internal prod",
       "title_en": "Jan 28, 2026AnnouncementsServiceNow chooses Claude to power customer apps and increase internal prod",
       "summary": "",
@@ -324,26 +348,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/mariano-florentino-long-term-benefit-trust",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Jan 21, 2026AnnouncementsAnthropic and Teach For All launch global AI training initiative for educat",
-      "title_en": "Jan 21, 2026AnnouncementsAnthropic and Teach For All launch global AI training initiative for educat",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/anthropic-teach-for-all",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Jan 16, 2026AnnouncementsAnthropic appoints Irina Ghose as Managing Director of India ahead of Benga",
-      "title_en": "Jan 16, 2026AnnouncementsAnthropic appoints Irina Ghose as Managing Director of India ahead of Benga",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/anthropic-appoints-irina-ghose-as-managing-director-of-india",
       "is_new": false
     },
     {
@@ -428,6 +432,16 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "claude-constitution",
+      "title_en": "claude-constitution",
+      "summary": "The foundational document describing Claude's values and behavior",
+      "summary_en": "The foundational document describing Claude's values and behavior",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/claude-constitution",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "original_performance_takehome",
       "title_en": "original_performance_takehome",
       "summary": "Anthropic's original performance take-home, now ouvrir for you to try!",
@@ -445,30 +459,20 @@
       "changelog_items": [],
       "url": "https://github.com/anthropics/tailscale-hint-extension",
       "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "healthcare",
-      "title_en": "healthcare",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/healthcare",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.29",
-    "Claude Code npm": "v2.1.29",
-    "SDK Python": "v0.77.0",
-    "SDK Python PyPI": "v0.77.0",
+    "Claude Code": "v2.1.30",
+    "Claude Code npm": "v2.1.30",
+    "SDK Python": "v0.77.1",
+    "SDK Python PyPI": "v0.77.1",
     "SDK TypeScript": "bedrock-sdk: v0.26.2",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.22",
-    "GitHub SDK Python": "v0.74.0"
+    "GitHub Claude Code": "v2.1.23",
+    "GitHub SDK Python": "v0.74.1"
   }
 }
