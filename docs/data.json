@@ -1,6 +1,37 @@
 {
-  "last_check": "2026-02-03T19:42:46.984487",
+  "last_check": "2026-02-04T19:36:30.232117",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.31",
+      "title_en": "v2.1.31",
+      "summary": "Ce qui a change Ajout de session resume hint on exit, affichering how to continue your conversation later Ajout de prise en charge de full-width (zenkaku) space entree from Japanese IME in checkbox selection Correction de PDF too large erreurs permanently locking up sessions, requiring utilisateurs to start a new conversation Correction de bash commandes incorrectly reporting failure with \"Read-o",
+      "summary_en": "What's changed\n\nAdded session resume hint on exit, showing how to continue your conversation later\nAdded support for full-width (zenkaku) space input from Japanese IME in checkbox selection\nFixed PDF too large errors permanently locking up sessions, requiring users to start a new conversation\nFixed bash commands incorrectly reporting failure with \"Read-o",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "session resume hint on exit, showing how to continue your conversation later"
+        },
+        {
+          "type": "added",
+          "text": "support for full-width (zenkaku) space input from Japanese IME in checkbox selection"
+        },
+        {
+          "type": "fixed",
+          "text": "PDF too large errors permanently locking up sessions, requiring users to start a new conversation"
+        },
+        {
+          "type": "fixed",
+          "text": "bash commands incorrectly reporting failure with \"Read-o"
+        },
+        {
+          "type": "changed",
+          "text": "Added session resume hint on exit, showing how to continue your conversation later"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.31",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.30",
@@ -22,7 +53,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.30",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -90,37 +121,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.23",
-      "title_en": "v2.1.23",
-      "summary": "Ce qui a change Ajout de personnaliseizable spinner verbs parametre (spinnerVerbs) Correction de mTLS and proxy connectivity for utilisateurs behind corporate proxies or using client certificates Correction de per-utilisateur repertoire temporaireoraire isolation to prevent permission conflicts on shared systems Correction de a race condition that could cause 400 erreurs when prompt caching scope was en",
-      "summary_en": "What's changed\n\nAdded customizable spinner verbs setting (spinnerVerbs)\nFixed mTLS and proxy connectivity for users behind corporate proxies or using client certificates\nFixed per-user temp directory isolation to prevent permission conflicts on shared systems\nFixed a race condition that could cause 400 errors when prompt caching scope was en",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "customizable spinner verbs setting (spinnerVerbs)"
-        },
-        {
-          "type": "fixed",
-          "text": "mTLS and proxy connectivity for users behind corporate proxies or using client certificates"
-        },
-        {
-          "type": "fixed",
-          "text": "per-user temp directory isolation to prevent permission conflicts on shared systems"
-        },
-        {
-          "type": "fixed",
-          "text": "a race condition that could cause 400 errors when prompt caching scope was en"
-        },
-        {
-          "type": "changed",
-          "text": "Added customizable spinner verbs setting (spinnerVerbs)"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.23",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.77.1",
       "title_en": "v0.77.1",
@@ -128,7 +128,7 @@
       "summary_en": "0.77.1 (2026-02-03)\nFull Changelog: v0.77.0...v0.77.1\nBug Fixes\n\nstructured outputs: send structured output beta header when format is omitted (#1158) (<a href=\"https://github.com/an",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.77.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -232,10 +232,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.30",
-      "title_en": "v2.1.30",
-      "summary": "Publie le 2026-02-03",
-      "summary_en": "Publie le 2026-02-03",
+      "title": "v2.1.31",
+      "title_en": "v2.1.31",
+      "summary": "Publie le 2026-02-04",
+      "summary_en": "Publie le 2026-02-04",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -248,6 +248,16 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
+      "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Claude is a space to thinkAnnouncementsFeb 4, 2026We’ve made a choice: Claude will remain ad-free. W",
+      "title_en": "Claude is a space to thinkAnnouncementsFeb 4, 2026We’ve made a choice: Claude will remain ad-free. W",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
       "is_new": true
     },
     {
@@ -282,23 +292,13 @@
     },
     {
       "source": "Blog",
-      "title": "AnnouncementsSep 2, 2025Anthropic raises $13B Series F at $183B post-money valuationAnthropic raised",
-      "title_en": "AnnouncementsSep 2, 2025Anthropic raises $13B Series F at $183B post-money valuationAnthropic raised",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
       "title": "Feb 3, 2026ProductApple’s Xcode now prise en charges the Claude Agent SDK",
       "title_en": "Feb 3, 2026ProductApple’s Xcode now supports the Claude Agent SDK",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/apple-xcode-claude-agent-sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -308,7 +308,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/anthropic-partners-with-allen-institute-and-howard-hughes-medical-institute",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -438,7 +438,7 @@
       "summary_en": "The foundational document describing Claude's values and behavior",
       "changelog_items": [],
       "url": "https://github.com/anthropics/claude-constitution",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -463,8 +463,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.30",
-    "Claude Code npm": "v2.1.30",
+    "Claude Code": "v2.1.31",
+    "Claude Code npm": "v2.1.31",
     "SDK Python": "v0.77.1",
     "SDK Python PyPI": "v0.77.1",
     "SDK TypeScript": "bedrock-sdk: v0.26.2",
@@ -472,7 +472,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.23",
+    "GitHub Claude Code": "v2.1.25",
     "GitHub SDK Python": "v0.74.1"
   }
 }
