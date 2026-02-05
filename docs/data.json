@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-02-04T19:36:30.232117",
+  "last_check": "2026-02-05T19:35:03.909452",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.32",
+      "title_en": "v2.1.32",
+      "summary": "Ce qui a change Claude Opus 4.6 is now available! Ajout de rerecherche preview agent teams fonctionnalite for multi-agent collaboration (jeton-intensive fonctionnalite, requires parametre CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1) Claude now automatically records and recalls memories as it works Ajout de \"Summarize from here\" to the message selector, allowing partial conversation s",
+      "summary_en": "What's changed\n\nClaude Opus 4.6 is now available!\nAdded research preview agent teams feature for multi-agent collaboration (token-intensive feature, requires setting CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1)\nClaude now automatically records and recalls memories as it works\nAdded \"Summarize from here\" to the message selector, allowing partial conversation s",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "research preview agent teams feature for multi-agent collaboration (token-intensive feature, requires setting CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1)"
+        },
+        {
+          "type": "added",
+          "text": "\"Summarize from here\" to the message selector, allowing partial conversation s"
+        },
+        {
+          "type": "changed",
+          "text": "Claude Opus 4.6 is now available!"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.32",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.31",
@@ -30,7 +53,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.31",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -102,23 +125,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.25",
-      "title_en": "v2.1.25",
-      "summary": "Ce qui a change Correction de beta header validation erreur for gateway utilisateurs on Bedrock and Vertex, ensuring CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1 avoids the erreur",
-      "summary_en": "What's changed\n\nFixed beta header validation error for gateway users on Bedrock and Vertex, ensuring CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1 avoids the error\n",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "beta header validation error for gateway users on Bedrock and Vertex, ensuring CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1 avoids the error"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed beta header validation error for gateway users on Bedrock and Vertex, ensuring CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1 avoids the error"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.25",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.78.0",
+      "title_en": "v0.78.0",
+      "summary": "0.78.0 (2026-02-05) Journal complet: v0.77.1...v0.78.0 Fonctionnalites api: manual updates ()",
+      "summary_en": "0.78.0 (2026-02-05)\nFull Changelog: v0.77.1...v0.78.0\nFeatures\n\napi: manual updates (3ef1529)\n",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.78.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -161,14 +175,44 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.74.1",
-      "title_en": "v0.74.1",
-      "summary": "0.74.1 (2025-11-19) Journal complet: v0.74.0...v0.74.1 Corrections de bugs structured sorties: use correct beta header () Maintenance",
-      "summary_en": "0.74.1 (2025-11-19)\nFull Changelog: v0.74.0...v0.74.1\nBug Fixes\n\nstructured outputs: use correct beta header (e90d347)\n\nChores\n",
+      "source": "SDK TypeScript",
+      "title": "vertex-sdk: v0.14.3",
+      "title_en": "vertex-sdk: v0.14.3",
+      "summary": "0.14.3 (2026-02-05) Journal complet: vertex-sdk-v0.14.2...vertex-sdk-v0.14.3 Corrections de bugs client: avoid memory leak with abort signals (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
+      "summary_en": "0.14.3 (2026-02-05)\nFull Changelog: vertex-sdk-v0.14.2...vertex-sdk-v0.14.3\nBug Fixes\n\nclient: avoid memory leak with abort signals (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/53e47dfa6985e6a206c475b8c920b",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.74.1",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.14.3",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.73.0",
+      "title_en": "sdk: v0.73.0",
+      "summary": "0.73.0 (2026-02-05) Journal complet: sdk-v0.72.1...sdk-v0.73.0 Fonctionnalites api: manual updates () Corrections de bugs</h3",
+      "summary_en": "0.73.0 (2026-02-05)\nFull Changelog: sdk-v0.72.1...sdk-v0.73.0\nFeatures\n\napi: manual updates (f741f92)\n\nBug Fixes</h3",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.73.0",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "foundry-sdk: v0.2.3",
+      "title_en": "foundry-sdk: v0.2.3",
+      "summary": "0.2.3 (2026-02-05) Journal complet: foundry-sdk-v0.2.2...foundry-sdk-v0.2.3 Corrections de bugs client: avoid memory leak with abort signals (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
+      "summary_en": "0.2.3 (2026-02-05)\nFull Changelog: foundry-sdk-v0.2.2...foundry-sdk-v0.2.3\nBug Fixes\n\nclient: avoid memory leak with abort signals (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/53e47dfa6985e6a206c475b8c920b8",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.2.3",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "bedrock-sdk: v0.26.3",
+      "title_en": "bedrock-sdk: v0.26.3",
+      "summary": "0.26.3 (2026-02-05) Journal complet: bedrock-sdk-v0.26.2...bedrock-sdk-v0.26.3 Corrections de bugs client: avoid memory leak with abort signals (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
+      "summary_en": "0.26.3 (2026-02-05)\nFull Changelog: bedrock-sdk-v0.26.2...bedrock-sdk-v0.26.3\nBug Fixes\n\nclient: avoid memory leak with abort signals (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/53e47dfa6985e6a206c475b8c",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.26.3",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -181,93 +225,53 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "vertex-sdk: v0.14.2",
-      "title_en": "vertex-sdk: v0.14.2",
-      "summary": "0.14.2 (2026-01-29) Journal complet: vertex-sdk-v0.14.1...vertex-sdk-v0.14.2 Maintenance internal: version bump ()",
-      "summary_en": "0.14.2 (2026-01-29)\nFull Changelog: vertex-sdk-v0.14.1...vertex-sdk-v0.14.2\nChores\n\ninternal: version bump (24ecc83)",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.14.2",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.72.0",
-      "title_en": "sdk: v0.72.0",
-      "summary": "0.72.0 (2026-01-29) Journal complet: sdk-v0.71.2...sdk-v0.72.0 Fonctionnalites api: add prise en charge de Structured Sorties in the Messages API (e",
-      "summary_en": "0.72.0 (2026-01-29)\nFull Changelog: sdk-v0.71.2...sdk-v0.72.0\nFeatures\n\napi: add support for Structured Outputs in the Messages API (e",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.72.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "foundry-sdk: v0.2.2",
-      "title_en": "foundry-sdk: v0.2.2",
-      "summary": "0.2.2 (2026-01-29) Journal complet: foundry-sdk-v0.2.1...foundry-sdk-v0.2.2 Maintenance internal: version bump ()<",
-      "summary_en": "0.2.2 (2026-01-29)\nFull Changelog: foundry-sdk-v0.2.1...foundry-sdk-v0.2.2\nChores\n\ninternal: version bump (24ecc83)<",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.2.2",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "bedrock-sdk: v0.26.2",
-      "title_en": "bedrock-sdk: v0.26.2",
-      "summary": "0.26.2 (2026-01-29) Journal complet: bedrock-sdk-v0.26.1...bedrock-sdk-v0.26.2 Maintenance internal: version bump (<",
-      "summary_en": "0.26.2 (2026-01-29)\nFull Changelog: bedrock-sdk-v0.26.1...bedrock-sdk-v0.26.2\nChores\n\ninternal: version bump (24ecc83<",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.26.2",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.72.1",
-      "title_en": "v0.72.1",
-      "summary": "Publie le 2026-01-30",
-      "summary_en": "Publie le 2026-01-30",
+      "title": "v0.73.0",
+      "title_en": "v0.73.0",
+      "summary": "Publie le 2026-02-05",
+      "summary_en": "Publie le 2026-02-05",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.31",
-      "title_en": "v2.1.31",
-      "summary": "Publie le 2026-02-04",
-      "summary_en": "Publie le 2026-02-04",
+      "title": "v2.1.32",
+      "title_en": "v2.1.32",
+      "summary": "Publie le 2026-02-05",
+      "summary_en": "Publie le 2026-02-05",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.77.1",
-      "title_en": "v0.77.1",
+      "title": "v0.78.0",
+      "title_en": "v0.78.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Claude is a space to thinkAnnouncementsFeb 4, 2026We’ve made a choice: Claude will remain ad-free. W",
-      "title_en": "Claude is a space to thinkAnnouncementsFeb 4, 2026We’ve made a choice: Claude will remain ad-free. W",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
       "is_new": true
     },
     {
       "source": "Blog",
-      "title": "AnnouncementsNov 24, 2025Introducing Claude Opus 4.5The best model in the world for coding, agents,",
-      "title_en": "AnnouncementsNov 24, 2025Introducing Claude Opus 4.5The best model in the world for coding, agents, ",
+      "title": "Introducing Claude Opus 4.6AnnouncementsFeb 5, 2026We’re upgrading our smartest model. Across agenti",
+      "title_en": "Introducing Claude Opus 4.6AnnouncementsFeb 5, 2026We’re upgrading our smartest model. Across agenti",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-opus-4-5",
+      "url": "https://www.anthropic.com/news/claude-opus-4-6",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "AnnouncementsFeb 4, 2026Claude is a space to thinkWe’ve made a choice: Claude will remain ad-free. W",
+      "title_en": "AnnouncementsFeb 4, 2026Claude is a space to thinkWe’ve made a choice: Claude will remain ad-free. W",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
       "is_new": false
     },
     {
@@ -412,6 +416,16 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "claudes-c-compiler",
+      "title_en": "claudes-c-compiler",
+      "summary": "Claude Opus 4.6 wrote a dependency-free C compiler in Rust, with backends targeting x86 (64- and 32-bit), ARM, and RISC-V, capable of compiling a booting Linux kernel.",
+      "summary_en": "Claude Opus 4.6 wrote a dependency-free C compiler in Rust, with backends targeting x86 (64- and 32-bit), ARM, and RISC-V, capable of compiling a booting Linux kernel.",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/claudes-c-compiler",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "nix-eval-jobs",
       "title_en": "nix-eval-jobs",
       "summary": "Parallel nix evaluator with a streamable json sortie [maintainers @Mic92, @adisbladis]",
@@ -449,30 +463,20 @@
       "changelog_items": [],
       "url": "https://github.com/anthropics/original_performance_takehome",
       "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "tailscale-hint-extension",
-      "title_en": "tailscale-hint-extension",
-      "summary": "Chrome extension affichering helpful troubleshooting when Tailscale .local domains fail to resolve",
-      "summary_en": "Chrome extension showing helpful troubleshooting when Tailscale .local domains fail to resolve",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/tailscale-hint-extension",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.31",
-    "Claude Code npm": "v2.1.31",
-    "SDK Python": "v0.77.1",
-    "SDK Python PyPI": "v0.77.1",
-    "SDK TypeScript": "bedrock-sdk: v0.26.2",
+    "Claude Code": "v2.1.32",
+    "Claude Code npm": "v2.1.32",
+    "SDK Python": "v0.78.0",
+    "SDK Python PyPI": "v0.78.0",
+    "SDK TypeScript": "sdk: v0.72.1",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.25",
-    "GitHub SDK Python": "v0.74.1"
+    "GitHub Claude Code": "v2.1.27",
+    "GitHub SDK Python": "v0.75.0"
   }
 }
