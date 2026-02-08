@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-02-07T19:20:32.201568",
+  "last_check": "2026-02-08T19:22:17.268333",
   "updates": [
     {
       "source": "Claude Code",
@@ -18,7 +18,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.37",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -33,7 +33,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.36",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -120,14 +120,14 @@
       "summary_en": "0.79.0 (2026-02-07)\nFull Changelog: v0.78.0...v0.79.0\nFeatures\n\napi: enabling fast-mode in claude-opus-4-6 (5953ba7)\n\nBug Fixes",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.79.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
       "title": "v0.78.0",
       "title_en": "v0.78.0",
-      "summary": "0.78.0 (2026-02-05) Journal complet: v0.77.1...v0.78.0 Fonctionnalites api: manual updates ()",
-      "summary_en": "0.78.0 (2026-02-05)\nFull Changelog: v0.77.1...v0.78.0\nFeatures\n\napi: manual updates (3ef1529)\n",
+      "summary": "0.78.0 (2026-02-05) Journal complet: v0.77.1...v0.78.0 Fonctionnalites api: Version Claude Opus 4.6, adaptive thinking, and other fonctionnalites ()",
+      "summary_en": "0.78.0 (2026-02-05)\nFull Changelog: v0.77.1...v0.78.0\nFeatures\n\napi: Release Claude Opus 4.6, adaptive thinking, and other features (3ef1529)",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.78.0",
       "is_new": false
@@ -170,7 +170,7 @@
       "summary_en": "0.74.0 (2026-02-07)\nFull Changelog: sdk-v0.73.0...sdk-v0.74.0\nFeatures\n\napi: enabling fast-mode in claude-opus-4-6 (e337981)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.74.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -186,8 +186,8 @@
       "source": "SDK TypeScript",
       "title": "sdk: v0.73.0",
       "title_en": "sdk: v0.73.0",
-      "summary": "0.73.0 (2026-02-05) Journal complet: sdk-v0.72.1...sdk-v0.73.0 Fonctionnalites api: manual updates () Corrections de bugs</h3",
-      "summary_en": "0.73.0 (2026-02-05)\nFull Changelog: sdk-v0.72.1...sdk-v0.73.0\nFeatures\n\napi: manual updates (f741f92)\n\nBug Fixes</h3",
+      "summary": "0.73.0 (2026-02-05) Journal complet: sdk-v0.72.1...sdk-v0.73.0 Fonctionnalites api: Version Claude Opus 4.6, adaptive thinking, and other fonctionnalites (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
+      "summary_en": "0.73.0 (2026-02-05)\nFull Changelog: sdk-v0.72.1...sdk-v0.73.0\nFeatures\n\napi: Release Claude Opus 4.6, adaptive thinking, and other features (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/f741f921d10e020d3c67c7a3f8442f0c4ad",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.73.0",
       "is_new": false
@@ -220,7 +220,7 @@
       "summary_en": "Publie le 2026-02-07",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
@@ -230,7 +230,7 @@
       "summary_en": "Publie le 2026-02-07",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -240,26 +240,26 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
-    },
-    {
-      "source": "Blog",
-      "title": "Introducing Claude Opus 4.6AnnouncementsFeb 5, 2026We’re upgrading our smartest model. Across agenti",
-      "title_en": "Introducing Claude Opus 4.6AnnouncementsFeb 5, 2026We’re upgrading our smartest model. Across agenti",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-opus-4-6",
       "is_new": false
     },
     {
       "source": "Blog",
-      "title": "AnnouncementsFeb 4, 2026Claude is a space to thinkWe’ve made a choice: Claude will remain ad-free. W",
-      "title_en": "AnnouncementsFeb 4, 2026Claude is a space to thinkWe’ve made a choice: Claude will remain ad-free. W",
+      "title": "Claude is a space to thinkAnnouncementsFeb 4, 2026We’ve made a choice: Claude will remain ad-free. W",
+      "title_en": "Claude is a space to thinkAnnouncementsFeb 4, 2026We’ve made a choice: Claude will remain ad-free. W",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
+      "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "AnnouncementsFeb 5, 2026Introducing Claude Opus 4.6We’re upgrading our smartest model. Across agenti",
+      "title_en": "AnnouncementsFeb 5, 2026Introducing Claude Opus 4.6We’re upgrading our smartest model. Across agenti",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/claude-opus-4-6",
       "is_new": false
     },
     {
@@ -410,7 +410,7 @@
       "summary_en": "Declarative Continuous Deployment for Kubernetes",
       "changelog_items": [],
       "url": "https://github.com/anthropics/argo-cd",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
