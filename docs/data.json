@@ -1,6 +1,41 @@
 {
-  "last_check": "2026-02-09T20:00:16.651303",
+  "last_check": "2026-02-10T19:58:15.553942",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.38",
+      "title_en": "v2.1.38",
+      "summary": "Ce qui a change Correction de VS Code terminal scroll-to-top regression introduced in 2.1.37 Correction de Tab key queueing slash commandes instead of autocompleting Correction de bash permission matching for commandes using variable d'environnement wrappers Correction de text between tool uses disappearing when not using streaming Correction de duplicate sessions when resuming in VS Code e",
+      "summary_en": "What's changed\n\nFixed VS Code terminal scroll-to-top regression introduced in 2.1.37\nFixed Tab key queueing slash commands instead of autocompleting\nFixed bash permission matching for commands using environment variable wrappers\nFixed text between tool uses disappearing when not using streaming\nFixed duplicate sessions when resuming in VS Code e",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "VS Code terminal scroll-to-top regression introduced in 2.1.37"
+        },
+        {
+          "type": "fixed",
+          "text": "Tab key queueing slash commands instead of autocompleting"
+        },
+        {
+          "type": "fixed",
+          "text": "bash permission matching for commands using environment variable wrappers"
+        },
+        {
+          "type": "fixed",
+          "text": "text between tool uses disappearing when not using streaming"
+        },
+        {
+          "type": "fixed",
+          "text": "duplicate sessions when resuming in VS Code e"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed VS Code terminal scroll-to-top regression introduced in 2.1.37"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.38",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.37",
@@ -87,29 +122,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.33",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.32",
-      "title_en": "v2.1.32",
-      "summary": "Ce qui a change Claude Opus 4.6 is now available! Ajout de rerecherche preview agent teams fonctionnalite for multi-agent collaboration (jeton-intensive fonctionnalite, requires parametre CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1) Claude now automatically records and recalls memories as it works Ajout de \"Summarize from here\" to the message selector, allowing partial conversation s",
-      "summary_en": "What's changed\n\nClaude Opus 4.6 is now available!\nAdded research preview agent teams feature for multi-agent collaboration (token-intensive feature, requires setting CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1)\nClaude now automatically records and recalls memories as it works\nAdded \"Summarize from here\" to the message selector, allowing partial conversation s",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "research preview agent teams feature for multi-agent collaboration (token-intensive feature, requires setting CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1)"
-        },
-        {
-          "type": "added",
-          "text": "\"Summarize from here\" to the message selector, allowing partial conversation s"
-        },
-        {
-          "type": "changed",
-          "text": "Claude Opus 4.6 is now available!"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.32",
       "is_new": false
     },
     {
@@ -224,13 +236,13 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.37",
-      "title_en": "v2.1.37",
-      "summary": "Publie le 2026-02-07",
-      "summary_en": "Publie le 2026-02-07",
+      "title": "v2.1.38",
+      "title_en": "v2.1.38",
+      "summary": "Publie le 2026-02-10",
+      "summary_en": "Publie le 2026-02-10",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
@@ -244,22 +256,22 @@
     },
     {
       "source": "Blog",
-      "title": "Claude is a space to thinkAnnouncementsFeb 4, 2026We’ve made a choice: Claude will remain ad-free. W",
-      "title_en": "Claude is a space to thinkAnnouncementsFeb 4, 2026We’ve made a choice: Claude will remain ad-free. W",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "AnnouncementsFeb 5, 2026Introducing Claude Opus 4.6We’re upgrading our smartest model. Across agenti",
-      "title_en": "AnnouncementsFeb 5, 2026Introducing Claude Opus 4.6We’re upgrading our smartest model. Across agenti",
+      "title": "Introducing Claude Opus 4.6AnnouncementsFeb 5, 2026We’re upgrading our smartest model. Across agenti",
+      "title_en": "Introducing Claude Opus 4.6AnnouncementsFeb 5, 2026We’re upgrading our smartest model. Across agenti",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-opus-4-6",
+      "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "AnnouncementsFeb 4, 2026Claude is a space to thinkWe’ve made a choice: Claude will remain ad-free. W",
+      "title_en": "AnnouncementsFeb 4, 2026Claude is a space to thinkWe’ve made a choice: Claude will remain ad-free. W",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
       "is_new": false
     },
     {
@@ -455,8 +467,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.37",
-    "Claude Code npm": "v2.1.37",
+    "Claude Code": "v2.1.38",
+    "Claude Code npm": "v2.1.38",
     "SDK Python": "v0.79.0",
     "SDK Python PyPI": "v0.79.0",
     "SDK TypeScript": "bedrock-sdk: v0.26.3",
@@ -464,7 +476,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.32",
+    "GitHub Claude Code": "v2.1.33",
     "GitHub SDK Python": "v0.76.0"
   }
 }
