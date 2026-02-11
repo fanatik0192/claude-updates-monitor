@@ -1,6 +1,37 @@
 {
-  "last_check": "2026-02-10T19:58:15.553942",
+  "last_check": "2026-02-11T19:54:02.923744",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.39",
+      "title_en": "v2.1.39",
+      "summary": "Ce qui a change Amelioration de terminal rendering performance Correction de fatal erreurs being swallowed instead of displayed Correction de process hanging after session close Correction de character loss at terminal screen boundary Correction de blank lines in verbose transcript view",
+      "summary_en": "What's changed\n\nImproved terminal rendering performance\nFixed fatal errors being swallowed instead of displayed\nFixed process hanging after session close\nFixed character loss at terminal screen boundary\nFixed blank lines in verbose transcript view\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "fatal errors being swallowed instead of displayed"
+        },
+        {
+          "type": "fixed",
+          "text": "process hanging after session close"
+        },
+        {
+          "type": "fixed",
+          "text": "character loss at terminal screen boundary"
+        },
+        {
+          "type": "fixed",
+          "text": "blank lines in verbose transcript view"
+        },
+        {
+          "type": "changed",
+          "text": "Improved terminal rendering performance"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.39",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.38",
@@ -34,7 +65,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.38",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -91,37 +122,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.34",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.33",
-      "title_en": "v2.1.33",
-      "summary": "Ce qui a change Correction de agent teammate sessions in tmux to send and receive messages Correction de avertissements about agent teams not being available on your current plan Ajout de TeammateIdle and TaskCompleted hook events for multi-agent workflows Ajout de prise en charge de restricting which sub-agents can be spawned via Task(agent_taper) sy",
-      "summary_en": "What's changed\n\nFixed agent teammate sessions in tmux to send and receive messages\nFixed warnings about agent teams not being available on your current plan\nAdded TeammateIdle and TaskCompleted hook events for multi-agent workflows\nAdded support for restricting which sub-agents can be spawned via Task(agent_type) sy",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "TeammateIdle and TaskCompleted hook events for multi-agent workflows"
-        },
-        {
-          "type": "added",
-          "text": "support for restricting which sub-agents can be spawned via Task(agent_type) sy"
-        },
-        {
-          "type": "fixed",
-          "text": "agent teammate sessions in tmux to send and receive messages"
-        },
-        {
-          "type": "fixed",
-          "text": "warnings about agent teams not being available on your current plan"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed agent teammate sessions in tmux to send and receive messages"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.33",
       "is_new": false
     },
     {
@@ -236,8 +236,8 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.38",
-      "title_en": "v2.1.38",
+      "title": "v2.1.39",
+      "title_en": "v2.1.39",
       "summary": "Publie le 2026-02-10",
       "summary_en": "Publie le 2026-02-10",
       "changelog_items": [],
@@ -467,8 +467,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.38",
-    "Claude Code npm": "v2.1.38",
+    "Claude Code": "v2.1.39",
+    "Claude Code npm": "v2.1.39",
     "SDK Python": "v0.79.0",
     "SDK Python PyPI": "v0.79.0",
     "SDK TypeScript": "bedrock-sdk: v0.26.3",
@@ -476,7 +476,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.33",
+    "GitHub Claude Code": "v2.1.34",
     "GitHub SDK Python": "v0.76.0"
   }
 }
