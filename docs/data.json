@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-02-11T19:54:02.923744",
+  "last_check": "2026-02-12T19:48:17.818524",
   "updates": [
     {
       "source": "Claude Code",
@@ -30,7 +30,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.39",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -242,7 +242,7 @@
       "summary_en": "Publie le 2026-02-10",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -296,6 +296,36 @@
     },
     {
       "source": "Blog",
+      "title": "Feb 12, 2026AnnouncementsAnthropic raises $30 billion in Series G funding at $380 billion post-money",
+      "title_en": "Feb 12, 2026AnnouncementsAnthropic raises $30 billion in Series G funding at $380 billion post-money",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "Feb 12, 2026PolicyAnthropic is donating $20 million to Public First Action",
+      "title_en": "Feb 12, 2026PolicyAnthropic is donating $20 million to Public First Action",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/donate-public-first-action",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "Feb 11, 2026PolicyCovering electricity price increases from our data centers",
+      "title_en": "Feb 11, 2026PolicyCovering electricity price increases from our data centers",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/covering-electricity-price-increases",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Feb 3, 2026ProductApple’s Xcode now prise en charges the Claude Agent SDK",
       "title_en": "Feb 3, 2026ProductApple’s Xcode now supports the Claude Agent SDK",
       "summary": "",
@@ -322,36 +352,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/servicenow-anthropic-claude",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Jan 27, 2026AnnouncementsAnthropic partners with the UK Government to bring AI assistance to GOV.UK",
-      "title_en": "Jan 27, 2026AnnouncementsAnthropic partners with the UK Government to bring AI assistance to GOV.UK ",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/gov-UK-partnership",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Jan 22, 2026AnnouncementsClaude's new constitution",
-      "title_en": "Jan 22, 2026AnnouncementsClaude's new constitution",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-new-constitution",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Jan 21, 2026AnnouncementsMariano-Florentino Cuéllar appointed to Anthropic’s Long-Term Benefit Trust",
-      "title_en": "Jan 21, 2026AnnouncementsMariano-Florentino Cuéllar appointed to Anthropic’s Long-Term Benefit Trust",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/mariano-florentino-long-term-benefit-trust",
       "is_new": false
     },
     {
