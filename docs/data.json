@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-02-12T19:48:17.818524",
+  "last_check": "2026-02-13T19:39:27.258260",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.41",
+      "title_en": "v2.1.41",
+      "summary": "Ce qui a change Correction de AWS auth actualiser hanging indefinitely by adding a 3-minute timeout Ajout de claude auth login, claude auth status, and claude auth logout CLI subcommandes Ajout de Windows ARM64 (win32-arm64) native binary prise en charge Amelioration de /renom to auto-generate session nom from conversation context wh",
+      "summary_en": "What's changed\n\nFixed AWS auth refresh hanging indefinitely by adding a 3-minute timeout\nAdded claude auth login, claude auth status, and claude auth logout CLI subcommands\nAdded Windows ARM64 (win32-arm64) native binary support\nImproved /rename to auto-generate session name from conversation context wh",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "claude auth login, claude auth status, and claude auth logout CLI subcommands"
+        },
+        {
+          "type": "added",
+          "text": "Windows ARM64 (win32-arm64) native binary support"
+        },
+        {
+          "type": "fixed",
+          "text": "AWS auth refresh hanging indefinitely by adding a 3-minute timeout"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed AWS auth refresh hanging indefinitely by adding a 3-minute timeout"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.41",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.39",
@@ -99,29 +126,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.36",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.34",
-      "title_en": "v2.1.34",
-      "summary": "Ce qui a change Correction de a crash when agent teams parametre modification de between renders Correction de a bug where commandes excluded from sandboxing (via sandbox.excludedCommandes or dangerouslyDesactiverSandbox) could bypass the Bash ask permission regle when autoAllowBashIfSandboxed was activerd",
-      "summary_en": "What's changed\n\nFixed a crash when agent teams setting changed between renders\nFixed a bug where commands excluded from sandboxing (via sandbox.excludedCommands or dangerouslyDisableSandbox) could bypass the Bash ask permission rule when autoAllowBashIfSandboxed was enabled\n",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "a crash when agent teams setting changed between renders"
-        },
-        {
-          "type": "fixed",
-          "text": "a bug where commands excluded from sandboxing (via sandbox.excludedCommands or dangerouslyDisableSandbox) could bypass the Bash ask permission rule when autoAllowBashIfSandboxed was enabled"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed a crash when agent teams setting changed between renders"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.34",
       "is_new": false
     },
     {
@@ -236,13 +240,13 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.39",
-      "title_en": "v2.1.39",
-      "summary": "Publie le 2026-02-10",
-      "summary_en": "Publie le 2026-02-10",
+      "title": "v2.1.41",
+      "title_en": "v2.1.41",
+      "summary": "Publie le 2026-02-13",
+      "summary_en": "Publie le 2026-02-13",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
@@ -262,6 +266,16 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-opus-4-6",
+      "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "AnnouncementsFeb 12, 2026Anthropic raises $30 billion in Series G funding at $380 billion post-money",
+      "title_en": "AnnouncementsFeb 12, 2026Anthropic raises $30 billion in Series G funding at $380 billion post-money",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
       "is_new": false
     },
     {
@@ -286,22 +300,22 @@
     },
     {
       "source": "Blog",
-      "title": "ProductOct 15, 2025Introducing Claude Haiku 4.5Claude Haiku 4.5 matches state-of-the-art coding capa",
-      "title_en": "ProductOct 15, 2025Introducing Claude Haiku 4.5Claude Haiku 4.5 matches state-of-the-art coding capa",
+      "title": "Feb 13, 2026AnnouncementsAnthropic partners with CodePath to bring Claude to the US’s largest colleg",
+      "title_en": "Feb 13, 2026AnnouncementsAnthropic partners with CodePath to bring Claude to the US’s largest colleg",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-haiku-4-5",
-      "is_new": false
+      "url": "https://www.anthropic.com/news/anthropic-codepath-partnership",
+      "is_new": true
     },
     {
       "source": "Blog",
-      "title": "Feb 12, 2026AnnouncementsAnthropic raises $30 billion in Series G funding at $380 billion post-money",
-      "title_en": "Feb 12, 2026AnnouncementsAnthropic raises $30 billion in Series G funding at $380 billion post-money",
+      "title": "Feb 13, 2026AnnouncementsChris Liddell appointed to Anthropic’s board of directors",
+      "title_en": "Feb 13, 2026AnnouncementsChris Liddell appointed to Anthropic’s board of directors",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
+      "url": "https://www.anthropic.com/news/chris-liddell-appointed-anthropic-board",
       "is_new": true
     },
     {
@@ -312,7 +326,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/donate-public-first-action",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -322,7 +336,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/covering-electricity-price-increases",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -342,16 +356,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/anthropic-partners-with-allen-institute-and-howard-hughes-medical-institute",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Jan 28, 2026AnnouncementsServiceNow chooses Claude to power personnaliseer apps and increase internal prod",
-      "title_en": "Jan 28, 2026AnnouncementsServiceNow chooses Claude to power customer apps and increase internal prod",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/servicenow-anthropic-claude",
       "is_new": false
     },
     {
@@ -467,8 +471,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.39",
-    "Claude Code npm": "v2.1.39",
+    "Claude Code": "v2.1.41",
+    "Claude Code npm": "v2.1.41",
     "SDK Python": "v0.79.0",
     "SDK Python PyPI": "v0.79.0",
     "SDK TypeScript": "bedrock-sdk: v0.26.3",
@@ -476,7 +480,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.34",
+    "GitHub Claude Code": "v2.1.36",
     "GitHub SDK Python": "v0.76.0"
   }
 }
