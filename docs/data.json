@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-02-13T19:39:27.258260",
+  "last_check": "2026-02-14T19:20:58.949108",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.42",
+      "title_en": "v2.1.42",
+      "summary": "Ce qui a change Correction de /resume affichering interrupt messages as session titles Correction de Opus 4.6 launch announcement affichering for Bedrock/Vertex/Foundry utilisateurs Amelioration de erreur message for many-image dimension limit erreurs with /compact suggestion",
+      "summary_en": "What's changed\n\nFixed /resume showing interrupt messages as session titles\nFixed Opus 4.6 launch announcement showing for Bedrock/Vertex/Foundry users\nImproved error message for many-image dimension limit errors with /compact suggestion\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "/resume showing interrupt messages as session titles"
+        },
+        {
+          "type": "fixed",
+          "text": "Opus 4.6 launch announcement showing for Bedrock/Vertex/Foundry users"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed /resume showing interrupt messages as session titles"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.42",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.41",
@@ -26,7 +49,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.41",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -111,21 +134,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.37",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.36",
-      "title_en": "v2.1.36",
-      "summary": "Ce qui a change Fast mode is now available for Opus 4.6. Learn more at https://code.claude.com/docs/en/fast-mode",
-      "summary_en": "What's changed\n\nFast mode is now available for Opus 4.6. Learn more at https://code.claude.com/docs/en/fast-mode\n",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Fast mode is now available for Opus 4.6. Learn more at https://code.claude.com/docs/en/fast-mode"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.36",
       "is_new": false
     },
     {
@@ -240,8 +248,8 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.41",
-      "title_en": "v2.1.41",
+      "title": "v2.1.42",
+      "title_en": "v2.1.42",
       "summary": "Publie le 2026-02-13",
       "summary_en": "Publie le 2026-02-13",
       "changelog_items": [],
@@ -306,7 +314,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/anthropic-codepath-partnership",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -316,7 +324,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/chris-liddell-appointed-anthropic-board",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -471,8 +479,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.41",
-    "Claude Code npm": "v2.1.41",
+    "Claude Code": "v2.1.42",
+    "Claude Code npm": "v2.1.42",
     "SDK Python": "v0.79.0",
     "SDK Python PyPI": "v0.79.0",
     "SDK TypeScript": "bedrock-sdk: v0.26.3",
@@ -480,7 +488,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.36",
+    "GitHub Claude Code": "v2.1.37",
     "GitHub SDK Python": "v0.76.0"
   }
 }
