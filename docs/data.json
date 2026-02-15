@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-02-14T19:20:58.949108",
+  "last_check": "2026-02-15T19:22:05.904693",
   "updates": [
     {
       "source": "Claude Code",
@@ -22,7 +22,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.42",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -254,7 +254,7 @@
       "summary_en": "Publie le 2026-02-13",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -428,6 +428,16 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "maestro",
+      "title_en": "maestro",
+      "summary": "Maestro: Netflix’s Workflow Orchestrator",
+      "summary_en": "Maestro: Netflix’s Workflow Orchestrator",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/maestro",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "argo-cd",
       "title_en": "argo-cd",
       "summary": "Declarative Continuous Deployment for Kubernetes",
@@ -464,16 +474,6 @@
       "summary_en": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
       "changelog_items": [],
       "url": "https://github.com/anthropics/knowledge-work-plugins",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "claude-constitution",
-      "title_en": "claude-constitution",
-      "summary": "The foundational document describing Claude's values and behavior",
-      "summary_en": "The foundational document describing Claude's values and behavior",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/claude-constitution",
       "is_new": false
     }
   ],
