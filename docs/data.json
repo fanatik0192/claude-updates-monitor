@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-02-15T19:22:05.904693",
+  "last_check": "2026-02-16T19:30:34.283770",
   "updates": [
     {
       "source": "Claude Code",
@@ -308,6 +308,16 @@
     },
     {
       "source": "Blog",
+      "title": "Feb 16, 2026AnnouncementsAnthropic ouvrirs Bengaluru office and announces new partnerships across Indi",
+      "title_en": "Feb 16, 2026AnnouncementsAnthropic opens Bengaluru office and announces new partnerships across Indi",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/bengaluru-office-partnerships-across-india",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Feb 13, 2026AnnouncementsAnthropic partners with CodePath to bring Claude to the US’s largest colleg",
       "title_en": "Feb 13, 2026AnnouncementsAnthropic partners with CodePath to bring Claude to the US’s largest colleg",
       "summary": "",
@@ -354,16 +364,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/apple-xcode-claude-agent-sdk",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Feb 2, 2026Societal ImpactsAnthropic partners with Allen Institute and Howard Hughes Medical Institu",
-      "title_en": "Feb 2, 2026Societal ImpactsAnthropic partners with Allen Institute and Howard Hughes Medical Institu",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/anthropic-partners-with-allen-institute-and-howard-hughes-medical-institute",
       "is_new": false
     },
     {
@@ -434,7 +434,7 @@
       "summary_en": "Maestro: Netflix’s Workflow Orchestrator",
       "changelog_items": [],
       "url": "https://github.com/anthropics/maestro",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
