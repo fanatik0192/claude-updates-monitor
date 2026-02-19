@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-02-18T19:44:49.153111",
+  "last_check": "2026-02-19T19:36:59.183372",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.47",
+      "title_en": "v2.1.47",
+      "summary": "Ce qui a change Correction de FichierWriteTool line counting to preserve intentional trailing blank lines instead of stripping them with trimEnd(). Correction de Windows terminal rendering bugs caused by os.EOL (\\r\\n) in display code — line counts now afficher correct values instead of always affichering 1 on Windows. Amelioration de VS Code plan preview: au",
+      "summary_en": "What's changed\n\nFixed FileWriteTool line counting to preserve intentional trailing blank lines instead of stripping them with trimEnd().\nFixed Windows terminal rendering bugs caused by os.EOL (\\r\\n) in display code — line counts now show correct values instead of always showing 1 on Windows.\nImproved VS Code plan preview: au",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "FileWriteTool line counting to preserve intentional trailing blank lines instead of stripping them with trimEnd()."
+        },
+        {
+          "type": "fixed",
+          "text": "Windows terminal rendering bugs caused by os.EOL (\\r\\n) in display code — line counts now show correct values instead of always showing 1 on Windows."
+        },
+        {
+          "type": "changed",
+          "text": "Fixed FileWriteTool line counting to preserve intentional trailing blank lines instead of stripping them with trimEnd()."
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.47",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.45",
@@ -98,35 +121,29 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.39",
-      "title_en": "v2.1.39",
-      "summary": "Ce qui a change Amelioration de terminal rendering performance Correction de fatal erreurs being swallowed instead of displayed Correction de process hanging after session close Correction de character loss at terminal screen boundary Correction de blank lines in verbose transcript view",
-      "summary_en": "What's changed\n\nImproved terminal rendering performance\nFixed fatal errors being swallowed instead of displayed\nFixed process hanging after session close\nFixed character loss at terminal screen boundary\nFixed blank lines in verbose transcript view\n",
+      "source": "SDK Python",
+      "title": "v0.83.0",
+      "title_en": "v0.83.0",
+      "summary": "0.83.0 (2026-02-19) Journal complet: v0.82.0...v0.83.0 Fonctionnalites api: Add top-level cache control (automatic caching) () Chor",
+      "summary_en": "0.83.0 (2026-02-19)\nFull Changelog: v0.82.0...v0.83.0\nFeatures\n\napi: Add top-level cache control (automatic caching) (a940123)\n\nChor",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.83.0",
+      "is_new": true
+    },
+    {
+      "source": "SDK Python",
+      "title": "v0.82.0",
+      "title_en": "v0.82.0",
+      "summary": "0.82.0 (2026-02-18) Journal complet: v0.81.0...v0.82.0 Fonctionnalites api: fix shared UtilisateurLocation and erreur code tapers () Correction de bug",
+      "summary_en": "0.82.0 (2026-02-18)\nFull Changelog: v0.81.0...v0.82.0\nFeatures\n\napi: fix shared UserLocation and error code types (da3b931)\n\nBug Fix",
       "changelog_items": [
         {
           "type": "fixed",
-          "text": "fatal errors being swallowed instead of displayed"
-        },
-        {
-          "type": "fixed",
-          "text": "process hanging after session close"
-        },
-        {
-          "type": "fixed",
-          "text": "character loss at terminal screen boundary"
-        },
-        {
-          "type": "fixed",
-          "text": "blank lines in verbose transcript view"
-        },
-        {
-          "type": "changed",
-          "text": "Improved terminal rendering performance"
+          "text": "shared UserLocation and error code types (da3b931)"
         }
       ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.39",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.82.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -136,7 +153,7 @@
       "summary_en": "0.81.0 (2026-02-18)\nFull Changelog: v0.80.0...v0.81.0\nFeatures\n\napi: Make new tool versions available as top level tool types (0a385c2)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.81.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -159,24 +176,19 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.78.0",
-      "title_en": "v0.78.0",
-      "summary": "0.78.0 (2026-02-05) Journal complet: v0.77.1...v0.78.0 Fonctionnalites api: Version Claude Opus 4.6, adaptive thinking, and other fonctionnalites ()",
-      "summary_en": "0.78.0 (2026-02-05)\nFull Changelog: v0.77.1...v0.78.0\nFeatures\n\napi: Release Claude Opus 4.6, adaptive thinking, and other features (3ef1529)",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.78.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK Python",
-      "title": "v0.77.1",
-      "title_en": "v0.77.1",
-      "summary": "0.77.1 (2026-02-03) Journal complet: v0.77.0...v0.77.1 Corrections de bugs structured sorties: send structured sortie beta header when format is omitted (<a href=\"https://github.com/an",
-      "summary_en": "0.77.1 (2026-02-03)\nFull Changelog: v0.77.0...v0.77.1\nBug Fixes\n\nstructured outputs: send structured output beta header when format is omitted (#1158) (<a href=\"https://github.com/an",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.77.1",
-      "is_new": false
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.77.0",
+      "title_en": "sdk: v0.77.0",
+      "summary": "0.77.0 (2026-02-18) Journal complet: sdk-v0.76.0...sdk-v0.77.0 Fonctionnalites api: fix shared UtilisateurLocation and erreur code tapers (",
+      "summary_en": "0.77.0 (2026-02-18)\nFull Changelog: sdk-v0.76.0...sdk-v0.77.0\nFeatures\n\napi: fix shared UserLocation and error code types (c84038f",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "shared UserLocation and error code types (c84038f"
+        }
+      ],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.77.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -186,7 +198,7 @@
       "summary_en": "0.76.0 (2026-02-18)\nFull Changelog: sdk-v0.75.0...sdk-v0.76.0\nFeatures\n\napi: Make new tool versions available as top level tool types (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/25fe41cdf61a1d8c0a5700955bf3c00f28900339\"",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.76.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -219,19 +231,9 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.73.0",
-      "title_en": "sdk: v0.73.0",
-      "summary": "0.73.0 (2026-02-05) Journal complet: sdk-v0.72.1...sdk-v0.73.0 Fonctionnalites api: Version Claude Opus 4.6, adaptive thinking, and other fonctionnalites (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
-      "summary_en": "0.73.0 (2026-02-05)\nFull Changelog: sdk-v0.72.1...sdk-v0.73.0\nFeatures\n\napi: Release Claude Opus 4.6, adaptive thinking, and other features (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/f741f921d10e020d3c67c7a3f8442f0c4ad",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.73.0",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.76.0",
-      "title_en": "v0.76.0",
+      "title": "v0.77.0",
+      "title_en": "v0.77.0",
       "summary": "Publie le 2026-02-18",
       "summary_en": "Publie le 2026-02-18",
       "changelog_items": [],
@@ -240,18 +242,18 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.45",
-      "title_en": "v2.1.45",
-      "summary": "Publie le 2026-02-17",
-      "summary_en": "Publie le 2026-02-17",
+      "title": "v2.1.47",
+      "title_en": "v2.1.47",
+      "summary": "Publie le 2026-02-18",
+      "summary_en": "Publie le 2026-02-18",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.81.0",
-      "title_en": "v0.81.0",
+      "title": "v0.83.0",
+      "title_en": "v0.83.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
@@ -336,7 +338,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/anthropic-codepath-partnership",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -346,7 +348,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/chris-liddell-appointed-anthropic-board",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -471,16 +473,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.45",
-    "Claude Code npm": "v2.1.45",
-    "SDK Python": "v0.81.0",
-    "SDK Python PyPI": "v0.81.0",
-    "SDK TypeScript": "sdk: v0.73.0",
+    "Claude Code": "v2.1.47",
+    "Claude Code npm": "v2.1.47",
+    "SDK Python": "v0.83.0",
+    "SDK Python PyPI": "v0.83.0",
+    "SDK TypeScript": "vertex-sdk: v0.14.3",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.39",
-    "GitHub SDK Python": "v0.77.1"
+    "GitHub Claude Code": "v2.1.41",
+    "GitHub SDK Python": "v0.79.0"
   }
 }
