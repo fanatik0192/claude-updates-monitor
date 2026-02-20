@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-02-19T19:36:59.183372",
+  "last_check": "2026-02-20T19:34:52.927298",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.49",
+      "title_en": "v2.1.49",
+      "summary": "Ce qui a change Correction de Ctrl+C and ESC being silently ignored when arriere-plan agents are running and the main thread is idle. Appuyer suring twice within 3 seconds now kills all arriere-plan agents. Correction de prompt suggestion cache regression that reduced cache hit rates. Correction de plugin activer and plugin desactiver to auto-detect the correct scope when <c",
+      "summary_en": "What's changed\n\nFixed Ctrl+C and ESC being silently ignored when background agents are running and the main thread is idle. Pressing twice within 3 seconds now kills all background agents.\nFixed prompt suggestion cache regression that reduced cache hit rates.\nFixed plugin enable and plugin disable to auto-detect the correct scope when <c",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "Ctrl+C and ESC being silently ignored when background agents are running and the main thread is idle. Pressing twice within 3 seconds now kills all background agents."
+        },
+        {
+          "type": "fixed",
+          "text": "prompt suggestion cache regression that reduced cache hit rates."
+        },
+        {
+          "type": "fixed",
+          "text": "plugin enable and plugin disable to auto-detect the correct scope when <c"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed Ctrl+C and ESC being silently ignored when background agents are running and the main thread is idle. Pressing twice within 3 seconds now kills all background agents."
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.49",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.47",
@@ -22,7 +49,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.47",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -49,7 +76,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.45",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Claude Code",
@@ -94,33 +121,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.41",
-      "title_en": "v2.1.41",
-      "summary": "Ce qui a change Correction de AWS auth actualiser hanging indefinitely by adding a 3-minute timeout Ajout de claude auth login, claude auth status, and claude auth logout CLI subcommandes Ajout de Windows ARM64 (win32-arm64) native binary prise en charge Amelioration de /renom to auto-generate session nom from conversation context wh",
-      "summary_en": "What's changed\n\nFixed AWS auth refresh hanging indefinitely by adding a 3-minute timeout\nAdded claude auth login, claude auth status, and claude auth logout CLI subcommands\nAdded Windows ARM64 (win32-arm64) native binary support\nImproved /rename to auto-generate session name from conversation context wh",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "claude auth login, claude auth status, and claude auth logout CLI subcommands"
-        },
-        {
-          "type": "added",
-          "text": "Windows ARM64 (win32-arm64) native binary support"
-        },
-        {
-          "type": "fixed",
-          "text": "AWS auth refresh hanging indefinitely by adding a 3-minute timeout"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed AWS auth refresh hanging indefinitely by adding a 3-minute timeout"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.41",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.83.0",
       "title_en": "v0.83.0",
@@ -128,7 +128,7 @@
       "summary_en": "0.83.0 (2026-02-19)\nFull Changelog: v0.82.0...v0.83.0\nFeatures\n\napi: Add top-level cache control (automatic caching) (a940123)\n\nChor",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.83.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -143,7 +143,7 @@
         }
       ],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.82.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -177,6 +177,36 @@
     },
     {
       "source": "SDK TypeScript",
+      "title": "vertex-sdk: v0.14.4",
+      "title_en": "vertex-sdk: v0.14.4",
+      "summary": "0.14.4 (2026-02-19) Journal complet: vertex-sdk-v0.14.3...vertex-sdk-v0.14.4",
+      "summary_en": "0.14.4 (2026-02-19)\nFull Changelog: vertex-sdk-v0.14.3...vertex-sdk-v0.14.4",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.14.4",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.78.0",
+      "title_en": "sdk: v0.78.0",
+      "summary": "0.78.0 (2026-02-19) Journal complet: sdk-v0.77.0...sdk-v0.78.0 Fonctionnalites api: Add top-level cache control (automatic caching) (<",
+      "summary_en": "0.78.0 (2026-02-19)\nFull Changelog: sdk-v0.77.0...sdk-v0.78.0\nFeatures\n\napi: Add top-level cache control (automatic caching) (1e2f83d<",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.78.0",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "bedrock-sdk: v0.26.4",
+      "title_en": "bedrock-sdk: v0.26.4",
+      "summary": "0.26.4 (2026-02-19) Journal complet: bedrock-sdk-v0.26.3...bedrock-sdk-v0.26.4 Corrections de bugs bedrock: eliminate race condition in AWS credential resolution (#9",
+      "summary_en": "0.26.4 (2026-02-19)\nFull Changelog: bedrock-sdk-v0.26.3...bedrock-sdk-v0.26.4\nBug Fixes\n\nbedrock: eliminate race condition in AWS credential resolution (#9",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.26.4",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
       "title": "sdk: v0.77.0",
       "title_en": "sdk: v0.77.0",
       "summary": "0.77.0 (2026-02-18) Journal complet: sdk-v0.76.0...sdk-v0.77.0 Fonctionnalites api: fix shared UtilisateurLocation and erreur code tapers (",
@@ -188,7 +218,7 @@
         }
       ],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.77.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -201,51 +231,21 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.75.0",
-      "title_en": "sdk: v0.75.0",
-      "summary": "0.75.0 (2026-02-17) Journal complet: sdk-v0.74.0...sdk-v0.75.0 Fonctionnalites api: Releasing claude-sonnet-4-6 ()",
-      "summary_en": "0.75.0 (2026-02-17)\nFull Changelog: sdk-v0.74.0...sdk-v0.75.0\nFeatures\n\napi: Releasing claude-sonnet-4-6 (d75e1c0)\n\n",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.75.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.74.0",
-      "title_en": "sdk: v0.74.0",
-      "summary": "0.74.0 (2026-02-07) Journal complet: sdk-v0.73.0...sdk-v0.74.0 Fonctionnalites api: enabling fast-mode in claude-opus-4-6 ()",
-      "summary_en": "0.74.0 (2026-02-07)\nFull Changelog: sdk-v0.73.0...sdk-v0.74.0\nFeatures\n\napi: enabling fast-mode in claude-opus-4-6 (e337981)\n",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.74.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "vertex-sdk: v0.14.3",
-      "title_en": "vertex-sdk: v0.14.3",
-      "summary": "0.14.3 (2026-02-05) Journal complet: vertex-sdk-v0.14.2...vertex-sdk-v0.14.3 Corrections de bugs client: avoid memory leak with abort signals (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
-      "summary_en": "0.14.3 (2026-02-05)\nFull Changelog: vertex-sdk-v0.14.2...vertex-sdk-v0.14.3\nBug Fixes\n\nclient: avoid memory leak with abort signals (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/53e47dfa6985e6a206c475b8c920b",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.14.3",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.77.0",
-      "title_en": "v0.77.0",
-      "summary": "Publie le 2026-02-18",
-      "summary_en": "Publie le 2026-02-18",
+      "title": "v0.78.0",
+      "title_en": "v0.78.0",
+      "summary": "Publie le 2026-02-19",
+      "summary_en": "Publie le 2026-02-19",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
       "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.47",
-      "title_en": "v2.1.47",
-      "summary": "Publie le 2026-02-18",
-      "summary_en": "Publie le 2026-02-18",
+      "title": "v2.1.49",
+      "title_en": "v2.1.49",
+      "summary": "Publie le 2026-02-19",
+      "summary_en": "Publie le 2026-02-19",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -258,7 +258,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -302,13 +302,23 @@
     },
     {
       "source": "Blog",
+      "title": "Feb 20, 2026AnnouncementsMaking frontier cybersecurite capabilities available to defenders",
+      "title_en": "Feb 20, 2026AnnouncementsMaking frontier cybersecurity capabilities available to defenders",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/claude-code-security",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Feb 17, 2026AnnouncementsAnthropic and the Government of Rwanda sign MOU for AI in health and educat",
       "title_en": "Feb 17, 2026AnnouncementsAnthropic and the Government of Rwanda sign MOU for AI in health and educat",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/anthropic-rwanda-mou",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -348,16 +358,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/chris-liddell-appointed-anthropic-board",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Feb 12, 2026PolicyAnthropic is donating $20 million to Public First Action",
-      "title_en": "Feb 12, 2026PolicyAnthropic is donating $20 million to Public First Action",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/donate-public-first-action",
       "is_new": false
     },
     {
@@ -422,6 +422,16 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "moka",
+      "title_en": "moka",
+      "summary": "A high performance concurrent caching library for Rust",
+      "summary_en": "A high performance concurrent caching library for Rust",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/moka",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "maestro",
       "title_en": "maestro",
       "summary": "Maestro: Netflix’s Workflow Orchestrator",
@@ -459,30 +469,20 @@
       "changelog_items": [],
       "url": "https://github.com/anthropics/nix-eval-jobs",
       "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "knowledge-work-plugins",
-      "title_en": "knowledge-work-plugins",
-      "summary": "Ouvrir source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
-      "summary_en": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/knowledge-work-plugins",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.47",
-    "Claude Code npm": "v2.1.47",
+    "Claude Code": "v2.1.49",
+    "Claude Code npm": "v2.1.49",
     "SDK Python": "v0.83.0",
     "SDK Python PyPI": "v0.83.0",
-    "SDK TypeScript": "vertex-sdk: v0.14.3",
+    "SDK TypeScript": "sdk: v0.76.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.41",
+    "GitHub Claude Code": "v2.1.42",
     "GitHub SDK Python": "v0.79.0"
   }
 }
