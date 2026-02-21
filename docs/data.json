@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-02-20T19:34:52.927298",
+  "last_check": "2026-02-21T19:20:56.084750",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.50",
+      "title_en": "v2.1.50",
+      "summary": "Ce qui a change Ajout de prise en charge de startupTimeout configuration for LSP (protocole serveur de langage) servers Ajout de WorktreeCreate and WorktreeRemove hook events, enabling personnalise VCS setup and teardown when agent worktree isolation creates or removes worktrees. Correction de a bug where resumed sessions could be invisible when the working repertoire involved symli",
+      "summary_en": "What's changed\n\nAdded support for startupTimeout configuration for LSP servers\nAdded WorktreeCreate and WorktreeRemove hook events, enabling custom VCS setup and teardown when agent worktree isolation creates or removes worktrees.\nFixed a bug where resumed sessions could be invisible when the working directory involved symli",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "support for startupTimeout configuration for LSP servers"
+        },
+        {
+          "type": "added",
+          "text": "WorktreeCreate and WorktreeRemove hook events, enabling custom VCS setup and teardown when agent worktree isolation creates or removes worktrees."
+        },
+        {
+          "type": "fixed",
+          "text": "a bug where resumed sessions could be invisible when the working directory involved symli"
+        },
+        {
+          "type": "changed",
+          "text": "Added support for startupTimeout configuration for LSP servers"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.50",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.49",
@@ -26,7 +53,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.49",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -76,7 +103,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.45",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -95,29 +122,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.44",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.42",
-      "title_en": "v2.1.42",
-      "summary": "Ce qui a change Correction de /resume affichering interrupt messages as session titles Correction de Opus 4.6 launch announcement affichering for Bedrock/Vertex/Foundry utilisateurs Amelioration de erreur message for many-image dimension limit erreurs with /compact suggestion",
-      "summary_en": "What's changed\n\nFixed /resume showing interrupt messages as session titles\nFixed Opus 4.6 launch announcement showing for Bedrock/Vertex/Foundry users\nImproved error message for many-image dimension limit errors with /compact suggestion\n",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "/resume showing interrupt messages as session titles"
-        },
-        {
-          "type": "fixed",
-          "text": "Opus 4.6 launch announcement showing for Bedrock/Vertex/Foundry users"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed /resume showing interrupt messages as session titles"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.42",
       "is_new": false
     },
     {
@@ -183,7 +187,7 @@
       "summary_en": "0.14.4 (2026-02-19)\nFull Changelog: vertex-sdk-v0.14.3...vertex-sdk-v0.14.4",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.14.4",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -193,7 +197,7 @@
       "summary_en": "0.78.0 (2026-02-19)\nFull Changelog: sdk-v0.77.0...sdk-v0.78.0\nFeatures\n\napi: Add top-level cache control (automatic caching) (1e2f83d<",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.78.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -203,7 +207,7 @@
       "summary_en": "0.26.4 (2026-02-19)\nFull Changelog: bedrock-sdk-v0.26.3...bedrock-sdk-v0.26.4\nBug Fixes\n\nbedrock: eliminate race condition in AWS credential resolution (#9",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.26.4",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -238,14 +242,14 @@
       "summary_en": "Publie le 2026-02-19",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.49",
-      "title_en": "v2.1.49",
-      "summary": "Publie le 2026-02-19",
-      "summary_en": "Publie le 2026-02-19",
+      "title": "v2.1.50",
+      "title_en": "v2.1.50",
+      "summary": "Publie le 2026-02-20",
+      "summary_en": "Publie le 2026-02-20",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -308,7 +312,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-code-security",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -318,7 +322,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/anthropic-rwanda-mou",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -428,7 +432,7 @@
       "summary_en": "A high performance concurrent caching library for Rust",
       "changelog_items": [],
       "url": "https://github.com/anthropics/moka",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -473,8 +477,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.49",
-    "Claude Code npm": "v2.1.49",
+    "Claude Code": "v2.1.50",
+    "Claude Code npm": "v2.1.50",
     "SDK Python": "v0.83.0",
     "SDK Python PyPI": "v0.83.0",
     "SDK TypeScript": "sdk: v0.76.0",
@@ -482,7 +486,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.42",
+    "GitHub Claude Code": "v2.1.44",
     "GitHub SDK Python": "v0.79.0"
   }
 }
