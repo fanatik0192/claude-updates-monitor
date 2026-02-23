@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-02-22T19:22:06.790702",
+  "last_check": "2026-02-23T19:55:08.565935",
   "updates": [
     {
       "source": "Claude Code",
@@ -306,6 +306,16 @@
     },
     {
       "source": "Blog",
+      "title": "Feb 23, 2026AnnouncementsDetecting and preventing distillation attacks",
+      "title_en": "Feb 23, 2026AnnouncementsDetecting and preventing distillation attacks",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Feb 20, 2026AnnouncementsMaking frontier cybersecurite capabilities available to defenders",
       "title_en": "Feb 20, 2026AnnouncementsMaking frontier cybersecurity capabilities available to defenders",
       "summary": "",
@@ -352,16 +362,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/anthropic-codepath-partnership",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Feb 13, 2026AnnouncementsChris Liddell appointed to Anthropic’s board of directors",
-      "title_en": "Feb 13, 2026AnnouncementsChris Liddell appointed to Anthropic’s board of directors",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/chris-liddell-appointed-anthropic-board",
       "is_new": false
     },
     {
