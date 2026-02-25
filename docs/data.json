@@ -1,6 +1,71 @@
 {
-  "last_check": "2026-02-24T19:47:06.665571",
+  "last_check": "2026-02-25T19:47:36.051884",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.56",
+      "title_en": "v2.1.56",
+      "summary": "Ce qui a change VS Code: Correction de another cause of \"commande 'claude-vscode.editor.ouvrirLast' not found\" crashes",
+      "summary_en": "What's changed\n\nVS Code: Fixed another cause of \"command 'claude-vscode.editor.openLast' not found\" crashes\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "another cause of \"command 'claude-vscode.editor.openLast' not found\" crashes"
+        },
+        {
+          "type": "changed",
+          "text": "VS Code: Fixed another cause of \"command 'claude-vscode.editor.openLast' not found\" crashes"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.56",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.55",
+      "title_en": "v2.1.55",
+      "summary": "Ce qui a change Correction de BashTool failing on Windows with EINVAL erreur",
+      "summary_en": "What's changed\n\nFixed BashTool failing on Windows with EINVAL error\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "BashTool failing on Windows with EINVAL error"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed BashTool failing on Windows with EINVAL error"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.55",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.53",
+      "title_en": "v2.1.53",
+      "summary": "Ce qui a change Correction de a UI flicker where utilisateur entree would briefly disappear after submission before the message rendered Correction de bulk agent kill (ctrl+f) to send a single aggregate notification instead of one per agent, and to properly clear the commande queue Correction de graceful shutdown sometimes leaving perime sessions when using Remote Control by parallelizing teardow",
+      "summary_en": "What's changed\n\nFixed a UI flicker where user input would briefly disappear after submission before the message rendered\nFixed bulk agent kill (ctrl+f) to send a single aggregate notification instead of one per agent, and to properly clear the command queue\nFixed graceful shutdown sometimes leaving stale sessions when using Remote Control by parallelizing teardow",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "a UI flicker where user input would briefly disappear after submission before the message rendered"
+        },
+        {
+          "type": "fixed",
+          "text": "bulk agent kill (ctrl+f) to send a single aggregate notification instead of one per agent, and to properly clear the command queue"
+        },
+        {
+          "type": "fixed",
+          "text": "graceful shutdown sometimes leaving stale sessions when using Remote Control by parallelizing teardow"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed a UI flicker where user input would briefly disappear after submission before the message rendered"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.53",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.52",
@@ -18,7 +83,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.52",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -45,84 +110,17 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.51",
+      "is_new": false
+    },
+    {
+      "source": "SDK Python",
+      "title": "v0.84.0",
+      "title_en": "v0.84.0",
+      "summary": "0.84.0 (2026-02-25) Journal complet: v0.83.0...v0.84.0 Fonctionnalites api: change array_format to brackets () api: remo",
+      "summary_en": "0.84.0 (2026-02-25)\nFull Changelog: v0.83.0...v0.84.0\nFeatures\n\napi: change array_format to brackets (925d2ad)\napi: remo",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.84.0",
       "is_new": true
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.50",
-      "title_en": "v2.1.50",
-      "summary": "Ce qui a change Ajout de prise en charge de startupTimeout configuration for LSP (protocole serveur de langage) servers Ajout de WorktreeCreate and WorktreeRemove hook events, enabling personnalise VCS setup and teardown when agent worktree isolation creates or removes worktrees. Correction de a bug where resumed sessions could be invisible when the working repertoire involved symli",
-      "summary_en": "What's changed\n\nAdded support for startupTimeout configuration for LSP servers\nAdded WorktreeCreate and WorktreeRemove hook events, enabling custom VCS setup and teardown when agent worktree isolation creates or removes worktrees.\nFixed a bug where resumed sessions could be invisible when the working directory involved symli",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "support for startupTimeout configuration for LSP servers"
-        },
-        {
-          "type": "added",
-          "text": "WorktreeCreate and WorktreeRemove hook events, enabling custom VCS setup and teardown when agent worktree isolation creates or removes worktrees."
-        },
-        {
-          "type": "fixed",
-          "text": "a bug where resumed sessions could be invisible when the working directory involved symli"
-        },
-        {
-          "type": "changed",
-          "text": "Added support for startupTimeout configuration for LSP servers"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.50",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.49",
-      "title_en": "v2.1.49",
-      "summary": "Ce qui a change Correction de Ctrl+C and ESC being silently ignored when arriere-plan agents are running and the main thread is idle. Appuyer suring twice within 3 seconds now kills all arriere-plan agents. Correction de prompt suggestion cache regression that reduced cache hit rates. Correction de plugin activer and plugin desactiver to auto-detect the correct scope when <c",
-      "summary_en": "What's changed\n\nFixed Ctrl+C and ESC being silently ignored when background agents are running and the main thread is idle. Pressing twice within 3 seconds now kills all background agents.\nFixed prompt suggestion cache regression that reduced cache hit rates.\nFixed plugin enable and plugin disable to auto-detect the correct scope when <c",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "Ctrl+C and ESC being silently ignored when background agents are running and the main thread is idle. Pressing twice within 3 seconds now kills all background agents."
-        },
-        {
-          "type": "fixed",
-          "text": "prompt suggestion cache regression that reduced cache hit rates."
-        },
-        {
-          "type": "fixed",
-          "text": "plugin enable and plugin disable to auto-detect the correct scope when <c"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed Ctrl+C and ESC being silently ignored when background agents are running and the main thread is idle. Pressing twice within 3 seconds now kills all background agents."
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.49",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.47",
-      "title_en": "v2.1.47",
-      "summary": "Ce qui a change Correction de FichierWriteTool line counting to preserve intentional trailing blank lines instead of stripping them with trimEnd(). Correction de Windows terminal rendering bugs caused by os.EOL (\\r\\n) in display code — line counts now afficher correct values instead of always affichering 1 on Windows. Amelioration de VS Code plan preview: au",
-      "summary_en": "What's changed\n\nFixed FileWriteTool line counting to preserve intentional trailing blank lines instead of stripping them with trimEnd().\nFixed Windows terminal rendering bugs caused by os.EOL (\\r\\n) in display code — line counts now show correct values instead of always showing 1 on Windows.\nImproved VS Code plan preview: au",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "FileWriteTool line counting to preserve intentional trailing blank lines instead of stripping them with trimEnd()."
-        },
-        {
-          "type": "fixed",
-          "text": "Windows terminal rendering bugs caused by os.EOL (\\r\\n) in display code — line counts now show correct values instead of always showing 1 on Windows."
-        },
-        {
-          "type": "changed",
-          "text": "Fixed FileWriteTool line counting to preserve intentional trailing blank lines instead of stripping them with trimEnd()."
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.47",
-      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -167,16 +165,6 @@
       "summary_en": "0.80.0 (2026-02-17)\nFull Changelog: v0.79.0...v0.80.0\nFeatures\n\napi: Releasing claude-sonnet-4-6 (d518d6e)\n\nBug Fixes\n\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.80.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK Python",
-      "title": "v0.79.0",
-      "title_en": "v0.79.0",
-      "summary": "0.79.0 (2026-02-07) Journal complet: v0.78.0...v0.79.0 Fonctionnalites api: enabling fast-mode in claude-opus-4-6 () Corrections de bugs",
-      "summary_en": "0.79.0 (2026-02-07)\nFull Changelog: v0.78.0...v0.79.0\nFeatures\n\napi: enabling fast-mode in claude-opus-4-6 (5953ba7)\n\nBug Fixes",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.79.0",
       "is_new": false
     },
     {
@@ -246,23 +234,23 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.52",
-      "title_en": "v2.1.52",
-      "summary": "Publie le 2026-02-24",
-      "summary_en": "Publie le 2026-02-24",
+      "title": "v2.1.56",
+      "title_en": "v2.1.56",
+      "summary": "Publie le 2026-02-25",
+      "summary_en": "Publie le 2026-02-25",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.83.0",
-      "title_en": "v0.83.0",
+      "title": "v0.84.0",
+      "title_en": "v0.84.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -306,6 +294,26 @@
     },
     {
       "source": "Blog",
+      "title": "Feb 25, 2026AnnouncementsAnthropic acquires Vercept to advance Claude's computer use capabilities",
+      "title_en": "Feb 25, 2026AnnouncementsAnthropic acquires Vercept to advance Claude's computer use capabilities",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/acquires-vercept",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "Feb 24, 2026PolicyAnthropic’s Responsible Scaling Policy: Version 3.0",
+      "title_en": "Feb 24, 2026PolicyAnthropic’s Responsible Scaling Policy: Version 3.0",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/responsible-scaling-policy-v3",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Feb 23, 2026AnnouncementsDetecting and preventing distillation attacks",
       "title_en": "Feb 23, 2026AnnouncementsDetecting and preventing distillation attacks",
       "summary": "",
@@ -342,26 +350,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/anthropic-infosys",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Feb 16, 2026AnnouncementsAnthropic ouvrirs Bengaluru office and announces new partnerships across Indi",
-      "title_en": "Feb 16, 2026AnnouncementsAnthropic opens Bengaluru office and announces new partnerships across Indi",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/bengaluru-office-partnerships-across-india",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Feb 13, 2026AnnouncementsAnthropic partners with CodePath to bring Claude to the US’s largest colleg",
-      "title_en": "Feb 13, 2026AnnouncementsAnthropic partners with CodePath to bring Claude to the US’s largest colleg",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/anthropic-codepath-partnership",
       "is_new": false
     },
     {
@@ -432,7 +420,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/financial-services-plugins",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -477,16 +465,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.52",
-    "Claude Code npm": "v2.1.52",
-    "SDK Python": "v0.83.0",
-    "SDK Python PyPI": "v0.83.0",
+    "Claude Code": "v2.1.56",
+    "Claude Code npm": "v2.1.56",
+    "SDK Python": "v0.84.0",
+    "SDK Python PyPI": "v0.84.0",
     "SDK TypeScript": "sdk: v0.76.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.47",
-    "GitHub SDK Python": "v0.79.0"
+    "GitHub Claude Code": "v2.1.51",
+    "GitHub SDK Python": "v0.80.0"
   }
 }
