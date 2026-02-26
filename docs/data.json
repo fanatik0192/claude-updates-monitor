@@ -1,6 +1,44 @@
 {
-  "last_check": "2026-02-25T19:47:36.051884",
+  "last_check": "2026-02-26T19:41:32.791596",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.59",
+      "title_en": "v2.1.59",
+      "summary": "Ce qui a change Claude automatically saves useful context to auto-memory. Manage with /memory Ajout de /copy commande to afficher an interactive picker when code blocks are present, allowing selection of individual code blocks or the full response. Amelioration de \"always allow\" prefix suggestions for compound bash commandes (e.g. cd /tmp &amp;&amp; git fetch",
+      "summary_en": "What's changed\n\nClaude automatically saves useful context to auto-memory. Manage with /memory\nAdded /copy command to show an interactive picker when code blocks are present, allowing selection of individual code blocks or the full response.\nImproved \"always allow\" prefix suggestions for compound bash commands (e.g. cd /tmp &amp;&amp; git fetch ",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "/copy command to show an interactive picker when code blocks are present, allowing selection of individual code blocks or the full response."
+        },
+        {
+          "type": "fixed",
+          "text": "suggestions for compound bash commands (e.g. cd /tmp &amp;&amp; git fetch"
+        },
+        {
+          "type": "changed",
+          "text": "Claude automatically saves useful context to auto-memory. Manage with /memory"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.59",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.58",
+      "title_en": "v2.1.58",
+      "summary": "Ce qui a change Expand Remote Control to more utilisateurs",
+      "summary_en": "What's changed\n\nExpand Remote Control to more users\n",
+      "changelog_items": [
+        {
+          "type": "changed",
+          "text": "Expand Remote Control to more users"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.58",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.56",
@@ -18,7 +56,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.56",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -37,7 +75,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.55",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -64,52 +102,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.53",
-      "is_new": true
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.52",
-      "title_en": "v2.1.52",
-      "summary": "Ce qui a change VS Code: Correction de extension crash on Windows (\"commande 'claude-vscode.editor.ouvrirLast' not found\")",
-      "summary_en": "What's changed\n\nVS Code: Fixed extension crash on Windows (\"command 'claude-vscode.editor.openLast' not found\")\n",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "extension crash on Windows (\"command 'claude-vscode.editor.openLast' not found\")"
-        },
-        {
-          "type": "changed",
-          "text": "VS Code: Fixed extension crash on Windows (\"command 'claude-vscode.editor.openLast' not found\")"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.52",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.51",
-      "title_en": "v2.1.51",
-      "summary": "Ce qui a change Ajout de claude remote-control subcommande for external builds, enabling local environment serving for all utilisateurs. Mise a jour de plugin marketplace par defaut git timeout from 30s to 120s and ajout de CLAUDE_CODE_PLUGIN_GIT_TIMEOUT_MS to configure. Ajout de prise en charge de personnalise npm registries and specific version pinning when installing plugin",
-      "summary_en": "What's changed\n\nAdded claude remote-control subcommand for external builds, enabling local environment serving for all users.\nUpdated plugin marketplace default git timeout from 30s to 120s and added CLAUDE_CODE_PLUGIN_GIT_TIMEOUT_MS to configure.\nAdded support for custom npm registries and specific version pinning when installing plugin",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "claude remote-control subcommand for external builds, enabling local environment serving for all users."
-        },
-        {
-          "type": "added",
-          "text": "CLAUDE_CODE_PLUGIN_GIT_TIMEOUT_MS to configure."
-        },
-        {
-          "type": "added",
-          "text": "support for custom npm registries and specific version pinning when installing plugin"
-        },
-        {
-          "type": "changed",
-          "text": "Added claude remote-control subcommand for external builds, enabling local environment serving for all users."
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.51",
       "is_new": false
     },
     {
@@ -120,7 +112,7 @@
       "summary_en": "0.84.0 (2026-02-25)\nFull Changelog: v0.83.0...v0.84.0\nFeatures\n\napi: change array_format to brackets (925d2ad)\napi: remo",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.84.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -155,7 +147,7 @@
       "summary_en": "0.81.0 (2026-02-18)\nFull Changelog: v0.80.0...v0.81.0\nFeatures\n\napi: Make new tool versions available as top level tool types (0a385c2)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.81.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -234,8 +226,8 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.56",
-      "title_en": "v2.1.56",
+      "title": "v2.1.59",
+      "title_en": "v2.1.59",
       "summary": "Publie le 2026-02-25",
       "summary_en": "Publie le 2026-02-25",
       "changelog_items": [],
@@ -250,7 +242,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -300,7 +292,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/acquires-vercept",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -310,7 +302,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/responsible-scaling-policy-v3",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -465,8 +457,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.56",
-    "Claude Code npm": "v2.1.56",
+    "Claude Code": "v2.1.59",
+    "Claude Code npm": "v2.1.59",
     "SDK Python": "v0.84.0",
     "SDK Python PyPI": "v0.84.0",
     "SDK TypeScript": "sdk: v0.76.0",
@@ -474,7 +466,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.51",
+    "GitHub Claude Code": "v2.1.53",
     "GitHub SDK Python": "v0.80.0"
   }
 }
