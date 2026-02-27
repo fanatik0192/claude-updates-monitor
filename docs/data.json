@@ -1,6 +1,44 @@
 {
-  "last_check": "2026-02-26T19:41:32.791596",
+  "last_check": "2026-02-27T19:30:57.946864",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.62",
+      "title_en": "v2.1.62",
+      "summary": "Ce qui a change Correction de prompt suggestion cache regression that reduced cache hit rates",
+      "summary_en": "What's changed\n\nFixed prompt suggestion cache regression that reduced cache hit rates\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "prompt suggestion cache regression that reduced cache hit rates"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed prompt suggestion cache regression that reduced cache hit rates"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.62",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.61",
+      "title_en": "v2.1.61",
+      "summary": "Ce qui a change Correction de concurrent writes corrupting config fichier on Windows",
+      "summary_en": "What's changed\n\nFixed concurrent writes corrupting config file on Windows\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "concurrent writes corrupting config file on Windows"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed concurrent writes corrupting config file on Windows"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.61",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.59",
@@ -22,7 +60,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.59",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -37,7 +75,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.58",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -56,52 +94,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.56",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.55",
-      "title_en": "v2.1.55",
-      "summary": "Ce qui a change Correction de BashTool failing on Windows with EINVAL erreur",
-      "summary_en": "What's changed\n\nFixed BashTool failing on Windows with EINVAL error\n",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "BashTool failing on Windows with EINVAL error"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed BashTool failing on Windows with EINVAL error"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.55",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.53",
-      "title_en": "v2.1.53",
-      "summary": "Ce qui a change Correction de a UI flicker where utilisateur entree would briefly disappear after submission before the message rendered Correction de bulk agent kill (ctrl+f) to send a single aggregate notification instead of one per agent, and to properly clear the commande queue Correction de graceful shutdown sometimes leaving perime sessions when using Remote Control by parallelizing teardow",
-      "summary_en": "What's changed\n\nFixed a UI flicker where user input would briefly disappear after submission before the message rendered\nFixed bulk agent kill (ctrl+f) to send a single aggregate notification instead of one per agent, and to properly clear the command queue\nFixed graceful shutdown sometimes leaving stale sessions when using Remote Control by parallelizing teardow",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "a UI flicker where user input would briefly disappear after submission before the message rendered"
-        },
-        {
-          "type": "fixed",
-          "text": "bulk agent kill (ctrl+f) to send a single aggregate notification instead of one per agent, and to properly clear the command queue"
-        },
-        {
-          "type": "fixed",
-          "text": "graceful shutdown sometimes leaving stale sessions when using Remote Control by parallelizing teardow"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed a UI flicker where user input would briefly disappear after submission before the message rendered"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.53",
       "is_new": false
     },
     {
@@ -147,7 +139,7 @@
       "summary_en": "0.81.0 (2026-02-18)\nFull Changelog: v0.80.0...v0.81.0\nFeatures\n\napi: Make new tool versions available as top level tool types (0a385c2)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.81.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -226,10 +218,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.59",
-      "title_en": "v2.1.59",
-      "summary": "Publie le 2026-02-25",
-      "summary_en": "Publie le 2026-02-25",
+      "title": "v2.1.62",
+      "title_en": "v2.1.62",
+      "summary": "Publie le 2026-02-27",
+      "summary_en": "Publie le 2026-02-27",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -246,22 +238,22 @@
     },
     {
       "source": "Blog",
-      "title": "Introducing Claude Sonnet 4.6ProductFeb 17, 2026Sonnet 4.6 delivers frontier performance across codi",
-      "title_en": "Introducing Claude Sonnet 4.6ProductFeb 17, 2026Sonnet 4.6 delivers frontier performance across codi",
+      "title": "Statement from Dario Amodei on our discussions with the Department of WarAnnouncementsFeb 26, 2026A",
+      "title_en": "Statement from Dario Amodei on our discussions with the Department of WarAnnouncementsFeb 26, 2026A ",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/statement-department-of-war",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "ProductFeb 17, 2026Introducing Claude Sonnet 4.6Sonnet 4.6 delivers frontier performance across codi",
+      "title_en": "ProductFeb 17, 2026Introducing Claude Sonnet 4.6Sonnet 4.6 delivers frontier performance across codi",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "AnnouncementsFeb 5, 2026Introducing Claude Opus 4.6We’re upgrading our smartest model. Across agenti",
-      "title_en": "AnnouncementsFeb 5, 2026Introducing Claude Opus 4.6We’re upgrading our smartest model. Across agenti",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-opus-4-6",
       "is_new": false
     },
     {
@@ -457,8 +449,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.59",
-    "Claude Code npm": "v2.1.59",
+    "Claude Code": "v2.1.62",
+    "Claude Code npm": "v2.1.62",
     "SDK Python": "v0.84.0",
     "SDK Python PyPI": "v0.84.0",
     "SDK TypeScript": "sdk: v0.76.0",
@@ -466,7 +458,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.53",
+    "GitHub Claude Code": "v2.1.56",
     "GitHub SDK Python": "v0.80.0"
   }
 }
