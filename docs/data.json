@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-02-27T19:30:57.946864",
+  "last_check": "2026-02-28T19:18:12.449537",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.63",
+      "title_en": "v2.1.63",
+      "summary": "Ce qui a change Ajout de /simplify and /batch bundled slash commandes Correction de local slash commande sortie like /cost appearing as utilisateur-sent messages instead of system messages in the UI Project configs &amp; auto memory now shared across git worktrees of the same repository Ajout de ENABLE_CLAUDEAI_MCP_SERVERS=false env var t",
+      "summary_en": "What's changed\n\nAdded /simplify and /batch bundled slash commands\nFixed local slash command output like /cost appearing as user-sent messages instead of system messages in the UI\nProject configs &amp; auto memory now shared across git worktrees of the same repository\nAdded ENABLE_CLAUDEAI_MCP_SERVERS=false env var t",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "/simplify and /batch bundled slash commands"
+        },
+        {
+          "type": "added",
+          "text": "ENABLE_CLAUDEAI_MCP_SERVERS=false env var t"
+        },
+        {
+          "type": "fixed",
+          "text": "local slash command output like /cost appearing as user-sent messages instead of system messages in the UI"
+        },
+        {
+          "type": "changed",
+          "text": "Added /simplify and /batch bundled slash commands"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.63",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.62",
@@ -18,7 +45,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.62",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -37,7 +64,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.61",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -75,25 +102,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.58",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.56",
-      "title_en": "v2.1.56",
-      "summary": "Ce qui a change VS Code: Correction de another cause of \"commande 'claude-vscode.editor.ouvrirLast' not found\" crashes",
-      "summary_en": "What's changed\n\nVS Code: Fixed another cause of \"command 'claude-vscode.editor.openLast' not found\" crashes\n",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "another cause of \"command 'claude-vscode.editor.openLast' not found\" crashes"
-        },
-        {
-          "type": "changed",
-          "text": "VS Code: Fixed another cause of \"command 'claude-vscode.editor.openLast' not found\" crashes"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.56",
       "is_new": false
     },
     {
@@ -194,7 +202,7 @@
         }
       ],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.77.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -218,10 +226,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.62",
-      "title_en": "v2.1.62",
-      "summary": "Publie le 2026-02-27",
-      "summary_en": "Publie le 2026-02-27",
+      "title": "v2.1.63",
+      "title_en": "v2.1.63",
+      "summary": "Publie le 2026-02-28",
+      "summary_en": "Publie le 2026-02-28",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -238,13 +246,23 @@
     },
     {
       "source": "Blog",
-      "title": "Statement from Dario Amodei on our discussions with the Department of WarAnnouncementsFeb 26, 2026A",
-      "title_en": "Statement from Dario Amodei on our discussions with the Department of WarAnnouncementsFeb 26, 2026A ",
+      "title": "Statement on the comments from Secretary of War Pete HegsethAnnouncementsFeb 27, 2026Anthropic's res",
+      "title_en": "Statement on the comments from Secretary of War Pete HegsethAnnouncementsFeb 27, 2026Anthropic's res",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/statement-comments-secretary-war",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "AnnouncementsFeb 26, 2026Statement from Dario Amodei on our discussions with the Department of WarA",
+      "title_en": "AnnouncementsFeb 26, 2026Statement from Dario Amodei on our discussions with the Department of WarA ",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/statement-department-of-war",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -264,16 +282,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "AnnouncementsFeb 12, 2026Anthropic raises $30 billion in Series G funding at $380 billion post-money",
-      "title_en": "AnnouncementsFeb 12, 2026Anthropic raises $30 billion in Series G funding at $380 billion post-money",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
       "is_new": false
     },
     {
@@ -449,8 +457,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.62",
-    "Claude Code npm": "v2.1.62",
+    "Claude Code": "v2.1.63",
+    "Claude Code npm": "v2.1.63",
     "SDK Python": "v0.84.0",
     "SDK Python PyPI": "v0.84.0",
     "SDK TypeScript": "sdk: v0.76.0",
@@ -458,7 +466,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.56",
+    "GitHub Claude Code": "v2.1.58",
     "GitHub SDK Python": "v0.80.0"
   }
 }
