@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-02-28T19:18:12.449537",
+  "last_check": "2026-03-01T19:20:12.478275",
   "updates": [
     {
       "source": "Claude Code",
@@ -26,7 +26,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.63",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -202,7 +202,7 @@
         }
       ],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.77.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -232,7 +232,7 @@
       "summary_en": "Publie le 2026-02-28",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -252,7 +252,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/statement-comments-secretary-war",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
