@@ -1,6 +1,35 @@
 {
-  "last_check": "2026-03-03T19:36:58.817652",
+  "last_check": "2026-03-04T19:35:46.045707",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.68",
+      "title_en": "v2.1.68",
+      "summary": "Ce qui a change Opus 4.6 now par defauts to medium effort for Max and Team subscribers. Medium effort works well for most tasks — it's the sweet spot between speed and thoroughness. You can change this anytime with /model Re-introduced the \"ultrathink\" keyword to activer high effort for the next turn Supappuyer surion de Opus 4 and 4.1 from Claude Code on the first-p",
+      "summary_en": "What's changed\n\nOpus 4.6 now defaults to medium effort for Max and Team subscribers. Medium effort works well for most tasks — it's the sweet spot between speed and thoroughness. You can change this anytime with /model\nRe-introduced the \"ultrathink\" keyword to enable high effort for the next turn\nRemoved Opus 4 and 4.1 from Claude Code on the first-p",
+      "changelog_items": [
+        {
+          "type": "removed",
+          "text": "Opus 4 and 4.1 from Claude Code on the first-p"
+        },
+        {
+          "type": "changed",
+          "text": "Opus 4.6 now defaults to medium effort for Max and Team subscribers. Medium effort works well for most tasks — it's the sweet spot between speed and thoroughness. You can change this anytime with /mod"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.68",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.66",
+      "title_en": "v2.1.66",
+      "summary": "No content.",
+      "summary_en": "No content.",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.66",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.63",
@@ -64,44 +93,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.61",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.59",
-      "title_en": "v2.1.59",
-      "summary": "Ce qui a change Claude automatically saves useful context to auto-memory. Manage with /memory Ajout de /copy commande to afficher an interactive picker when code blocks are present, allowing selection of individual code blocks or the full response. Amelioration de \"always allow\" prefix suggestions for compound bash commandes (e.g. cd /tmp &amp;&amp; git fetch",
-      "summary_en": "What's changed\n\nClaude automatically saves useful context to auto-memory. Manage with /memory\nAdded /copy command to show an interactive picker when code blocks are present, allowing selection of individual code blocks or the full response.\nImproved \"always allow\" prefix suggestions for compound bash commands (e.g. cd /tmp &amp;&amp; git fetch ",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "/copy command to show an interactive picker when code blocks are present, allowing selection of individual code blocks or the full response."
-        },
-        {
-          "type": "fixed",
-          "text": "suggestions for compound bash commands (e.g. cd /tmp &amp;&amp; git fetch"
-        },
-        {
-          "type": "changed",
-          "text": "Claude automatically saves useful context to auto-memory. Manage with /memory"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.59",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.58",
-      "title_en": "v2.1.58",
-      "summary": "Ce qui a change Expand Remote Control to more utilisateurs",
-      "summary_en": "What's changed\n\nExpand Remote Control to more users\n",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Expand Remote Control to more users"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.58",
       "is_new": false
     },
     {
@@ -226,13 +217,13 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.63",
-      "title_en": "v2.1.63",
-      "summary": "Publie le 2026-02-28",
-      "summary_en": "Publie le 2026-02-28",
+      "title": "v2.1.68",
+      "title_en": "v2.1.68",
+      "summary": "Publie le 2026-03-04",
+      "summary_en": "Publie le 2026-03-04",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
@@ -457,8 +448,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.63",
-    "Claude Code npm": "v2.1.63",
+    "Claude Code": "v2.1.68",
+    "Claude Code npm": "v2.1.68",
     "SDK Python": "v0.84.0",
     "SDK Python PyPI": "v0.84.0",
     "SDK TypeScript": "sdk: v0.76.0",
@@ -466,7 +457,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.58",
+    "GitHub Claude Code": "v2.1.61",
     "GitHub SDK Python": "v0.80.0"
   }
 }
