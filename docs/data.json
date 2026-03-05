@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-03-04T19:35:46.045707",
+  "last_check": "2026-03-05T19:49:25.875079",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.69",
+      "title_en": "v2.1.69",
+      "summary": "Ce qui a change Ajout de the /claude-api skill for building applications with the Claude API and Anthropic SDK Ajout de Ctrl+U on an empty bash prompt (!) to exit bash mode, matching escape and backspace Ajout de numeric keypad prise en charge de selecting options in Claude's interview questions (previously only the number row",
+      "summary_en": "What's changed\n\nAdded the /claude-api skill for building applications with the Claude API and Anthropic SDK\nAdded Ctrl+U on an empty bash prompt (!) to exit bash mode, matching escape and backspace\nAdded numeric keypad support for selecting options in Claude's interview questions (previously only the number row ",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "the /claude-api skill for building applications with the Claude API and Anthropic SDK"
+        },
+        {
+          "type": "added",
+          "text": "Ctrl+U on an empty bash prompt (!) to exit bash mode, matching escape and backspace"
+        },
+        {
+          "type": "added",
+          "text": "numeric keypad support for selecting options in Claude's interview questions (previously only the number row"
+        },
+        {
+          "type": "changed",
+          "text": "Added the /claude-api skill for building applications with the Claude API and Anthropic SDK"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.69",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.68",
@@ -18,7 +45,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.68",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -28,7 +55,7 @@
       "summary_en": "No content.",
       "changelog_items": [],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.66",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -74,25 +101,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.62",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.61",
-      "title_en": "v2.1.61",
-      "summary": "Ce qui a change Correction de concurrent writes corrupting config fichier on Windows",
-      "summary_en": "What's changed\n\nFixed concurrent writes corrupting config file on Windows\n",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "concurrent writes corrupting config file on Windows"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed concurrent writes corrupting config file on Windows"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.61",
       "is_new": false
     },
     {
@@ -203,7 +211,7 @@
       "summary_en": "0.76.0 (2026-02-18)\nFull Changelog: sdk-v0.75.0...sdk-v0.76.0\nFeatures\n\napi: Make new tool versions available as top level tool types (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/25fe41cdf61a1d8c0a5700955bf3c00f28900339\"",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.76.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/sdk",
@@ -217,8 +225,8 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.68",
-      "title_en": "v2.1.68",
+      "title": "v2.1.69",
+      "title_en": "v2.1.69",
       "summary": "Publie le 2026-03-04",
       "summary_en": "Publie le 2026-03-04",
       "changelog_items": [],
@@ -397,6 +405,16 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "agent-sdk-workshop",
+      "title_en": "agent-sdk-workshop",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/agent-sdk-workshop",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "financial-services-plugins",
       "title_en": "financial-services-plugins",
       "summary": "",
@@ -434,22 +452,12 @@
       "changelog_items": [],
       "url": "https://github.com/anthropics/argo-cd",
       "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "claudes-c-compiler",
-      "title_en": "claudes-c-compiler",
-      "summary": "Claude Opus 4.6 wrote a dependency-free C compiler in Rust, with backends targeting x86 (64- and 32-bit), ARM, and RISC-V, capable of compiling a booting Linux kernel.",
-      "summary_en": "Claude Opus 4.6 wrote a dependency-free C compiler in Rust, with backends targeting x86 (64- and 32-bit), ARM, and RISC-V, capable of compiling a booting Linux kernel.",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/claudes-c-compiler",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.68",
-    "Claude Code npm": "v2.1.68",
+    "Claude Code": "v2.1.69",
+    "Claude Code npm": "v2.1.69",
     "SDK Python": "v0.84.0",
     "SDK Python PyPI": "v0.84.0",
     "SDK TypeScript": "sdk: v0.76.0",
@@ -457,7 +465,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.61",
+    "GitHub Claude Code": "v2.1.62",
     "GitHub SDK Python": "v0.80.0"
   }
 }
