@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-03-07T19:18:56.448732",
+  "last_check": "2026-03-08T19:20:36.910300",
   "updates": [
     {
       "source": "Claude Code",
@@ -26,7 +26,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.71",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -150,7 +150,7 @@
       "summary_en": "0.81.0 (2026-02-18)\nFull Changelog: v0.80.0...v0.81.0\nFeatures\n\napi: Make new tool versions available as top level tool types (0a385c2)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.81.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -235,7 +235,7 @@
       "summary_en": "Publie le 2026-03-06",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
