@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-03-08T19:20:36.910300",
+  "last_check": "2026-03-09T19:38:00.845359",
   "updates": [
     {
       "source": "Claude Code",
@@ -125,7 +125,7 @@
       "summary_en": "0.83.0 (2026-02-19)\nFull Changelog: v0.82.0...v0.83.0\nFeatures\n\napi: Add top-level cache control (automatic caching) (a940123)\n\nChor",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.83.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -150,7 +150,7 @@
       "summary_en": "0.81.0 (2026-02-18)\nFull Changelog: v0.80.0...v0.81.0\nFeatures\n\napi: Make new tool versions available as top level tool types (0a385c2)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.81.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
