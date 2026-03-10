@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-03-09T19:38:00.845359",
+  "last_check": "2026-03-10T19:35:46.531690",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.72",
+      "title_en": "v2.1.72",
+      "summary": "Ce qui a change Modification de tool recherche to bypass the third-party proxy gate when the variable d'environnement is set (replaces CLAUDE_CODE_PROXY_SUPPORTS_TOOL_REFERENCE, now supappuyer surion de) Ajout de w key in /copy to write the focused selection directly to a fichier, bypassing the clipboard (useful over SSH) Ajout de optional description argument",
+      "summary_en": "What's changed\n\nChanged tool search to bypass the third-party proxy gate when the environment variable is set (replaces CLAUDE_CODE_PROXY_SUPPORTS_TOOL_REFERENCE, now removed)\nAdded w key in /copy to write the focused selection directly to a file, bypassing the clipboard (useful over SSH)\nAdded optional description argument ",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "w key in /copy to write the focused selection directly to a file, bypassing the clipboard (useful over SSH)"
+        },
+        {
+          "type": "added",
+          "text": "optional description argument"
+        },
+        {
+          "type": "changed",
+          "text": "Changed tool search to bypass the third-party proxy gate when the environment variable is set (replaces CLAUDE_CODE_PROXY_SUPPORTS_TOOL_REFERENCE, now removed)"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.72",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.71",
@@ -98,16 +121,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.66",
-      "title_en": "v2.1.66",
-      "summary": "No content.",
-      "summary_en": "No content.",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.66",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.84.0",
       "title_en": "v0.84.0",
@@ -125,7 +138,7 @@
       "summary_en": "0.83.0 (2026-02-19)\nFull Changelog: v0.82.0...v0.83.0\nFeatures\n\napi: Add top-level cache control (automatic caching) (a940123)\n\nChor",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.83.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -229,13 +242,13 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.71",
-      "title_en": "v2.1.71",
-      "summary": "Publie le 2026-03-06",
-      "summary_en": "Publie le 2026-03-06",
+      "title": "v2.1.72",
+      "title_en": "v2.1.72",
+      "summary": "Publie le 2026-03-09",
+      "summary_en": "Publie le 2026-03-09",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
@@ -460,8 +473,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.71",
-    "Claude Code npm": "v2.1.71",
+    "Claude Code": "v2.1.72",
+    "Claude Code npm": "v2.1.72",
     "SDK Python": "v0.84.0",
     "SDK Python PyPI": "v0.84.0",
     "SDK TypeScript": "sdk: v0.76.0",
@@ -469,7 +482,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.66",
+    "GitHub Claude Code": "v2.1.68",
     "GitHub SDK Python": "v0.80.0"
   }
 }
