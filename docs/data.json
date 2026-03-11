@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-03-10T19:35:46.531690",
+  "last_check": "2026-03-11T19:39:12.315857",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.73",
+      "title_en": "v2.1.73",
+      "summary": "Ce qui a change Ajout de modelOverrides parametre to map model picker entries to personnalise provider model IDs (e.g. Bedrock inference profichier ARNs) Ajout de actionable guidance when OAuth login or connectivity checks fail due to SSL certificate erreurs (corporate proxies, NODE_EXTRA_CA_CERTS) Correction de freezes and 100% CPU loops triggered by permission",
+      "summary_en": "What's changed\n\nAdded modelOverrides setting to map model picker entries to custom provider model IDs (e.g. Bedrock inference profile ARNs)\nAdded actionable guidance when OAuth login or connectivity checks fail due to SSL certificate errors (corporate proxies, NODE_EXTRA_CA_CERTS)\nFixed freezes and 100% CPU loops triggered by permission ",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "modelOverrides setting to map model picker entries to custom provider model IDs (e.g. Bedrock inference profile ARNs)"
+        },
+        {
+          "type": "added",
+          "text": "actionable guidance when OAuth login or connectivity checks fail due to SSL certificate errors (corporate proxies, NODE_EXTRA_CA_CERTS)"
+        },
+        {
+          "type": "fixed",
+          "text": "freezes and 100% CPU loops triggered by permission"
+        },
+        {
+          "type": "changed",
+          "text": "Added modelOverrides setting to map model picker entries to custom provider model IDs (e.g. Bedrock inference profile ARNs)"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.73",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.72",
@@ -22,7 +49,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.72",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -99,25 +126,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.69",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.68",
-      "title_en": "v2.1.68",
-      "summary": "Ce qui a change Opus 4.6 now par defauts to medium effort for Max and Team subscribers. Medium effort works well for most tasks — it's the sweet spot between speed and thoroughness. You can change this anytime with /model Re-introduced the \"ultrathink\" keyword to activer high effort for the next turn Supappuyer surion de Opus 4 and 4.1 from Claude Code on the first-p",
-      "summary_en": "What's changed\n\nOpus 4.6 now defaults to medium effort for Max and Team subscribers. Medium effort works well for most tasks — it's the sweet spot between speed and thoroughness. You can change this anytime with /model\nRe-introduced the \"ultrathink\" keyword to enable high effort for the next turn\nRemoved Opus 4 and 4.1 from Claude Code on the first-p",
-      "changelog_items": [
-        {
-          "type": "removed",
-          "text": "Opus 4 and 4.1 from Claude Code on the first-p"
-        },
-        {
-          "type": "changed",
-          "text": "Opus 4.6 now defaults to medium effort for Max and Team subscribers. Medium effort works well for most tasks — it's the sweet spot between speed and thoroughness. You can change this anytime with /mod"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.68",
       "is_new": false
     },
     {
@@ -242,10 +250,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.72",
-      "title_en": "v2.1.72",
-      "summary": "Publie le 2026-03-09",
-      "summary_en": "Publie le 2026-03-09",
+      "title": "v2.1.73",
+      "title_en": "v2.1.73",
+      "summary": "Publie le 2026-03-11",
+      "summary_en": "Publie le 2026-03-11",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -312,6 +320,26 @@
     },
     {
       "source": "Blog",
+      "title": "Mar 11, 2026AnnouncementsIntroducing The Anthropic Institute",
+      "title_en": "Mar 11, 2026AnnouncementsIntroducing The Anthropic Institute",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/the-anthropic-institute",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "Mar 10, 2026AnnouncementsSydney will become Anthropic’s fourth office in Asia-Pacific",
+      "title_en": "Mar 10, 2026AnnouncementsSydney will become Anthropic’s fourth office in Asia-Pacific",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/sydney-fourth-office-asia-pacific",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Mar 6, 2026PolicyPartnering with Mozilla to improve Firefox’s securite",
       "title_en": "Mar 6, 2026PolicyPartnering with Mozilla to improve Firefox’s security",
       "summary": "",
@@ -338,26 +366,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/responsible-scaling-policy-v3",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Feb 23, 2026AnnouncementsDetecting and preventing distillation attacks",
-      "title_en": "Feb 23, 2026AnnouncementsDetecting and preventing distillation attacks",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Feb 20, 2026AnnouncementsMaking frontier cybersecurite capabilities available to defenders",
-      "title_en": "Feb 20, 2026AnnouncementsMaking frontier cybersecurity capabilities available to defenders",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-code-security",
       "is_new": false
     },
     {
@@ -448,7 +456,7 @@
       "summary_en": "A high performance concurrent caching library for Rust",
       "changelog_items": [],
       "url": "https://github.com/anthropics/moka",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Nouveau Depot",
@@ -473,8 +481,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.72",
-    "Claude Code npm": "v2.1.72",
+    "Claude Code": "v2.1.73",
+    "Claude Code npm": "v2.1.73",
     "SDK Python": "v0.84.0",
     "SDK Python PyPI": "v0.84.0",
     "SDK TypeScript": "sdk: v0.76.0",
@@ -482,7 +490,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.68",
+    "GitHub Claude Code": "v2.1.69",
     "GitHub SDK Python": "v0.80.0"
   }
 }
