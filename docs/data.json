@@ -1,6 +1,16 @@
 {
-  "last_check": "2026-03-12T19:39:57.006680",
+  "last_check": "2026-03-13T19:28:45.445207",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.75",
+      "title_en": "v2.1.75",
+      "summary": "Merge pull request #33472 from anthropics/kashyap/code-review-batch-o… …utput feat(code-review): pass confirmed=true when posting inline comments",
+      "summary_en": "Merge pull request #33472 from anthropics/kashyap/code-review-batch-o…\n\n…utput\n\nfeat(code-review): pass confirmed=true when posting inline comments",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.75",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.74",
@@ -26,7 +36,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.74",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -106,29 +116,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.70",
-      "title_en": "v2.1.70",
-      "summary": "Ce qui a change Correction de API 400 erreurs when using ANTHROPIC_BASE_URL with a third-party gateway — tool recherche now correctly detects proxy endpoints and desactivers tool_reference blocks Correction de API Erreur: 400 This model does not prise en charge the effort parameter when using personnalise Bedrock inference profichiers or other model identifiers not matching",
-      "summary_en": "What's changed\n\nFixed API 400 errors when using ANTHROPIC_BASE_URL with a third-party gateway — tool search now correctly detects proxy endpoints and disables tool_reference blocks\nFixed API Error: 400 This model does not support the effort parameter when using custom Bedrock inference profiles or other model identifiers not matching",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "API 400 errors when using ANTHROPIC_BASE_URL with a third-party gateway — tool search now correctly detects proxy endpoints and disables tool_reference blocks"
-        },
-        {
-          "type": "fixed",
-          "text": "API Error: 400 This model does not support the effort parameter when using custom Bedrock inference profiles or other model identifiers not matching"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed API 400 errors when using ANTHROPIC_BASE_URL with a third-party gateway — tool search now correctly detects proxy endpoints and disables tool_reference blocks"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.70",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.84.0",
       "title_en": "v0.84.0",
@@ -161,7 +148,7 @@
         }
       ],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.82.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -250,10 +237,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.74",
-      "title_en": "v2.1.74",
-      "summary": "Publie le 2026-03-11",
-      "summary_en": "Publie le 2026-03-11",
+      "title": "v2.1.75",
+      "title_en": "v2.1.75",
+      "summary": "Publie le 2026-03-13",
+      "summary_en": "Publie le 2026-03-13",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -286,7 +273,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/statement-comments-secretary-war",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -316,7 +303,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -326,7 +313,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-partner-network",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -396,7 +383,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/societal-impacts",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -427,62 +414,12 @@
       "changelog_items": [],
       "url": "https://status.claude.com",
       "is_new": true
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "agent-sdk-workshop",
-      "title_en": "agent-sdk-workshop",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/agent-sdk-workshop",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "financial-services-plugins",
-      "title_en": "financial-services-plugins",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/financial-services-plugins",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "moka",
-      "title_en": "moka",
-      "summary": "A high performance concurrent caching library for Rust",
-      "summary_en": "A high performance concurrent caching library for Rust",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/moka",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "maestro",
-      "title_en": "maestro",
-      "summary": "Maestro: Netflix’s Workflow Orchestrator",
-      "summary_en": "Maestro: Netflix’s Workflow Orchestrator",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/maestro",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "argo-cd",
-      "title_en": "argo-cd",
-      "summary": "Declarative Continuous Deployment for Kubernetes",
-      "summary_en": "Declarative Continuous Deployment for Kubernetes",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/argo-cd",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.74",
-    "Claude Code npm": "v2.1.74",
+    "Claude Code": "v2.1.75",
+    "Claude Code npm": "v2.1.75",
     "SDK Python": "v0.84.0",
     "SDK Python PyPI": "v0.84.0",
     "SDK TypeScript": "sdk: v0.76.0",
@@ -490,7 +427,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.70",
+    "GitHub Claude Code": "v2.1.71",
     "GitHub SDK Python": "v0.80.0"
   }
 }
