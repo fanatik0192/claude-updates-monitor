@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-03-13T19:28:45.445207",
+  "last_check": "2026-03-14T19:24:01.652447",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.76",
+      "title_en": "v2.1.76",
+      "summary": "Ce qui a change Ajout de MCP elicitation prise en charge — MCP servers can now request structured entree mid-task via an interactive dialog (form fields or browser URL) Ajout de new Elicitation and ElicitationResult hooks to intercept and override responses before they're sent back Ajout de -n / --nom &lt;nom&gt; CLI flag to se",
+      "summary_en": "What's changed\n\nAdded MCP elicitation support — MCP servers can now request structured input mid-task via an interactive dialog (form fields or browser URL)\nAdded new Elicitation and ElicitationResult hooks to intercept and override responses before they're sent back\nAdded -n / --name &lt;name&gt; CLI flag to se",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "MCP elicitation support — MCP servers can now request structured input mid-task via an interactive dialog (form fields or browser URL)"
+        },
+        {
+          "type": "added",
+          "text": "new Elicitation and ElicitationResult hooks to intercept and override responses before they're sent back"
+        },
+        {
+          "type": "added",
+          "text": "-n / --name &lt;name&gt; CLI flag to se"
+        },
+        {
+          "type": "changed",
+          "text": "Added MCP elicitation support — MCP servers can now request structured input mid-task via an interactive dialog (form fields or browser URL)"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.76",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.75",
@@ -9,7 +36,7 @@
       "summary_en": "Merge pull request #33472 from anthropics/kashyap/code-review-batch-o…\n\n…utput\n\nfeat(code-review): pass confirmed=true when posting inline comments",
       "changelog_items": [],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.75",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -89,33 +116,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.71",
-      "title_en": "v2.1.71",
-      "summary": "Ce qui a change Ajout de /loop commande to run a prompt or slash commande on a recurring interval (e.g. /loop 5m check the deploy) Ajout de cron scheduling tools for recurring prompts within a session Ajout de voice:pushToTalk keybinding to make the voice activation key rebindable in keybindings.json (par defaut: space) — mod",
-      "summary_en": "What's changed\n\nAdded /loop command to run a prompt or slash command on a recurring interval (e.g. /loop 5m check the deploy)\nAdded cron scheduling tools for recurring prompts within a session\nAdded voice:pushToTalk keybinding to make the voice activation key rebindable in keybindings.json (default: space) — mod",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "/loop command to run a prompt or slash command on a recurring interval (e.g. /loop 5m check the deploy)"
-        },
-        {
-          "type": "added",
-          "text": "cron scheduling tools for recurring prompts within a session"
-        },
-        {
-          "type": "added",
-          "text": "voice:pushToTalk keybinding to make the voice activation key rebindable in keybindings.json (default: space) — mod"
-        },
-        {
-          "type": "changed",
-          "text": "Added /loop command to run a prompt or slash command on a recurring interval (e.g. /loop 5m check the deploy)"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.71",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.84.0",
       "title_en": "v0.84.0",
@@ -148,7 +148,7 @@
         }
       ],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.82.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -237,10 +237,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.75",
-      "title_en": "v2.1.75",
-      "summary": "Publie le 2026-03-13",
-      "summary_en": "Publie le 2026-03-13",
+      "title": "v2.1.76",
+      "title_en": "v2.1.76",
+      "summary": "Publie le 2026-03-14",
+      "summary_en": "Publie le 2026-03-14",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -293,7 +293,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -303,7 +303,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -363,7 +363,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/economic-research",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -414,12 +414,62 @@
       "changelog_items": [],
       "url": "https://status.claude.com",
       "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "tokio",
+      "title_en": "tokio",
+      "summary": "A runtime for writing reliable asynchronous applications with Rust. Provides I/O, networking, scheduling, timers, ...",
+      "summary_en": "A runtime for writing reliable asynchronous applications with Rust. Provides I/O, networking, scheduling, timers, ...",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/tokio",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "buffa",
+      "title_en": "buffa",
+      "summary": "Rust implementation of protobuf with editions prise en charge, JSON serialization, and zero-copy views",
+      "summary_en": "Rust implementation of protobuf with editions support, JSON serialization, and zero-copy views",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/buffa",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "agent-sdk-workshop",
+      "title_en": "agent-sdk-workshop",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/agent-sdk-workshop",
+      "is_new": false
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "financial-services-plugins",
+      "title_en": "financial-services-plugins",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/financial-services-plugins",
+      "is_new": false
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "moka",
+      "title_en": "moka",
+      "summary": "A high performance concurrent caching library for Rust",
+      "summary_en": "A high performance concurrent caching library for Rust",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/moka",
+      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.75",
-    "Claude Code npm": "v2.1.75",
+    "Claude Code": "v2.1.76",
+    "Claude Code npm": "v2.1.76",
     "SDK Python": "v0.84.0",
     "SDK Python PyPI": "v0.84.0",
     "SDK TypeScript": "sdk: v0.76.0",
@@ -427,7 +477,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.71",
+    "GitHub Claude Code": "v2.1.72",
     "GitHub SDK Python": "v0.80.0"
   }
 }
