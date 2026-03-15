@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-03-14T19:24:01.652447",
+  "last_check": "2026-03-15T19:25:09.470725",
   "updates": [
     {
       "source": "Claude Code",
@@ -26,7 +26,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.76",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -158,7 +158,7 @@
       "summary_en": "0.81.0 (2026-02-18)\nFull Changelog: v0.80.0...v0.81.0\nFeatures\n\napi: Make new tool versions available as top level tool types (0a385c2)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.81.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -243,7 +243,7 @@
       "summary_en": "Publie le 2026-03-14",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -293,7 +293,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -363,7 +363,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/economic-research",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -423,7 +423,7 @@
       "summary_en": "A runtime for writing reliable asynchronous applications with Rust. Provides I/O, networking, scheduling, timers, ...",
       "changelog_items": [],
       "url": "https://github.com/anthropics/tokio",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -433,6 +433,16 @@
       "summary_en": "Rust implementation of protobuf with editions support, JSON serialization, and zero-copy views",
       "changelog_items": [],
       "url": "https://github.com/anthropics/buffa",
+      "is_new": false
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "connect-rust",
+      "title_en": "connect-rust",
+      "summary": "An implementation of the ConnectRPC protocol for Rust",
+      "summary_en": "An implementation of the ConnectRPC protocol for Rust",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/connect-rust",
       "is_new": true
     },
     {
@@ -453,16 +463,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/financial-services-plugins",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "moka",
-      "title_en": "moka",
-      "summary": "A high performance concurrent caching library for Rust",
-      "summary_en": "A high performance concurrent caching library for Rust",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/moka",
       "is_new": false
     }
   ],
