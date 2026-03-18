@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-03-17T19:52:49.469498",
+  "last_check": "2026-03-18T19:46:17.847465",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.78",
+      "title_en": "v2.1.78",
+      "summary": "Ce qui a change Ajout de StopFailure hook event that fires when the turn ends due to an API erreur (rate limit, auth failure, etc.) Ajout de ${CLAUDE_PLUGIN_DATA} variable for plugin persistent state that survives plugin updates; /plugin uninstall prompts before deleting it Ajout de effort, maxTurns, and <cod",
+      "summary_en": "What's changed\n\nAdded StopFailure hook event that fires when the turn ends due to an API error (rate limit, auth failure, etc.)\nAdded ${CLAUDE_PLUGIN_DATA} variable for plugin persistent state that survives plugin updates; /plugin uninstall prompts before deleting it\nAdded effort, maxTurns, and <cod",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "StopFailure hook event that fires when the turn ends due to an API error (rate limit, auth failure, etc.)"
+        },
+        {
+          "type": "added",
+          "text": "${CLAUDE_PLUGIN_DATA} variable for plugin persistent state that survives plugin updates; /plugin uninstall prompts before deleting it"
+        },
+        {
+          "type": "added",
+          "text": "effort, maxTurns, and <cod"
+        },
+        {
+          "type": "changed",
+          "text": "Added StopFailure hook event that fires when the turn ends due to an API error (rate limit, auth failure, etc.)"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.78",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.77",
@@ -18,7 +45,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.77",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -85,31 +112,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.73",
-      "title_en": "v2.1.73",
-      "summary": "Ce qui a change Ajout de modelOverrides parametre to map model picker entries to personnalise provider model IDs (e.g. Bedrock inference profichier ARNs) Ajout de actionable guidance when OAuth login or connectivity checks fail due to SSL certificate erreurs (corporate proxies, NODE_EXTRA_CA_CERTS) Correction de freezes and 100% CPU loops triggered by permission",
-      "summary_en": "What's changed\n\nAdded modelOverrides setting to map model picker entries to custom provider model IDs (e.g. Bedrock inference profile ARNs)\nAdded actionable guidance when OAuth login or connectivity checks fail due to SSL certificate errors (corporate proxies, NODE_EXTRA_CA_CERTS)\nFixed freezes and 100% CPU loops triggered by permission ",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "modelOverrides setting to map model picker entries to custom provider model IDs (e.g. Bedrock inference profile ARNs)"
-        },
-        {
-          "type": "added",
-          "text": "actionable guidance when OAuth login or connectivity checks fail due to SSL certificate errors (corporate proxies, NODE_EXTRA_CA_CERTS)"
-        },
-        {
-          "type": "fixed",
-          "text": "freezes and 100% CPU loops triggered by permission"
-        },
-        {
-          "type": "changed",
-          "text": "Added modelOverrides setting to map model picker entries to custom provider model IDs (e.g. Bedrock inference profile ARNs)"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.73",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.86.0",
+      "title_en": "v0.86.0",
+      "summary": "0.86.0 (2026-03-18) Journal complet: v0.85.0...v0.86.0 Fonctionnalites add prise en charge de fichiersystem memory tools (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/",
+      "summary_en": "0.86.0 (2026-03-18)\nFull Changelog: v0.85.0...v0.86.0\nFeatures\n\nadd support for filesystem memory tools (#1247) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/235d218211ac4b8f1aa",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.86.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -157,14 +167,14 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.81.0",
-      "title_en": "v0.81.0",
-      "summary": "0.81.0 (2026-02-18) Journal complet: v0.80.0...v0.81.0 Fonctionnalites api: Make new tool versions available as top level tool tapers ()",
-      "summary_en": "0.81.0 (2026-02-18)\nFull Changelog: v0.80.0...v0.81.0\nFeatures\n\napi: Make new tool versions available as top level tool types (0a385c2)\n",
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.80.0",
+      "title_en": "sdk: v0.80.0",
+      "summary": "0.80.0 (2026-03-18) Journal complet: sdk-v0.79.0...sdk-v0.80.0 Fonctionnalites api: manual updates () api:</stron",
+      "summary_en": "0.80.0 (2026-03-18)\nFull Changelog: sdk-v0.79.0...sdk-v0.80.0\nFeatures\n\napi: manual updates (dd12f1a)\napi:</stron",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.81.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.80.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -207,79 +217,34 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.77.0",
-      "title_en": "sdk: v0.77.0",
-      "summary": "0.77.0 (2026-02-18) Journal complet: sdk-v0.76.0...sdk-v0.77.0 Fonctionnalites api: fix shared UtilisateurLocation and erreur code tapers (",
-      "summary_en": "0.77.0 (2026-02-18)\nFull Changelog: sdk-v0.76.0...sdk-v0.77.0\nFeatures\n\napi: fix shared UserLocation and error code types (c84038f",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "shared UserLocation and error code types (c84038f"
-        }
-      ],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.77.0",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.79.0",
-      "title_en": "v0.79.0",
-      "summary": "Publie le 2026-03-16",
-      "summary_en": "Publie le 2026-03-16",
+      "title": "v0.80.0",
+      "title_en": "v0.80.0",
+      "summary": "Publie le 2026-03-18",
+      "summary_en": "Publie le 2026-03-18",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.77",
-      "title_en": "v2.1.77",
-      "summary": "Publie le 2026-03-16",
-      "summary_en": "Publie le 2026-03-16",
+      "title": "v2.1.78",
+      "title_en": "v2.1.78",
+      "summary": "Publie le 2026-03-17",
+      "summary_en": "Publie le 2026-03-17",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.85.0",
-      "title_en": "v0.85.0",
+      "title": "v0.86.0",
+      "title_en": "v0.86.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Where things stand with the Department of WarAnnouncementsMar 5, 2026A statement from Dario Amodei.",
-      "title_en": "Where things stand with the Department of WarAnnouncementsMar 5, 2026A statement from Dario Amodei.",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/where-stand-department-war",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "AnnouncementsFeb 27, 2026Statement on the comments from Secretary of War Pete HegsethAnthropic's res",
-      "title_en": "AnnouncementsFeb 27, 2026Statement on the comments from Secretary of War Pete HegsethAnthropic's res",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/statement-comments-secretary-war",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "AnnouncementsFeb 26, 2026Statement from Dario Amodei on our discussions with the Department of WarA",
-      "title_en": "AnnouncementsFeb 26, 2026Statement from Dario Amodei on our discussions with the Department of WarA ",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/statement-department-of-war",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -289,6 +254,16 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+      "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "AnnouncementsFeb 5, 2026Introducing Claude Opus 4.6We’re upgrading our smartest model. Across agenti",
+      "title_en": "AnnouncementsFeb 5, 2026Introducing Claude Opus 4.6We’re upgrading our smartest model. Across agenti",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/claude-opus-4-6",
       "is_new": false
     },
     {
@@ -343,12 +318,32 @@
     },
     {
       "source": "Blog",
-      "title": "Feb 25, 2026AnnouncementsAnthropic acquires Vercept to advance Claude's computer use capabilities",
-      "title_en": "Feb 25, 2026AnnouncementsAnthropic acquires Vercept to advance Claude's computer use capabilities",
+      "title": "Mar 5, 2026AnnouncementsWhere things stand with the Department of War",
+      "title_en": "Mar 5, 2026AnnouncementsWhere things stand with the Department of War",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/news/acquires-vercept",
+      "url": "https://www.anthropic.com/news/where-stand-department-war",
+      "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Feb 27, 2026AnnouncementsStatement on the comments from Secretary of War Pete Hegseth",
+      "title_en": "Feb 27, 2026AnnouncementsStatement on the comments from Secretary of War Pete Hegseth",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/statement-comments-secretary-war",
+      "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Feb 26, 2026AnnouncementsStatement from Dario Amodei on our discussions with the Department of War",
+      "title_en": "Feb 26, 2026AnnouncementsStatement from Dario Amodei on our discussions with the Department of War",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/statement-department-of-war",
       "is_new": false
     },
     {
@@ -383,8 +378,8 @@
     },
     {
       "source": "Recherche",
-      "title": "Project Vend: Phase twoPolicyDec 18, 2025In June, we revealed that we’d set up a small shop in our S",
-      "title_en": "Project Vend: Phase twoPolicyDec 18, 2025In June, we revealed that we’d set up a small shop in our S",
+      "title": "PolicyDec 18, 2025Project Vend: Phase twoIn June, we revealed that we’d set up a small shop in our S",
+      "title_en": "PolicyDec 18, 2025Project Vend: Phase twoIn June, we revealed that we’d set up a small shop in our S",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
@@ -413,6 +408,26 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "grafanacubism-panel",
+      "title_en": "grafanacubism-panel",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/grafanacubism-panel",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "cubism-es",
+      "title_en": "cubism-es",
+      "summary": "ES6 module of cubism.js for a recent version of d3.js",
+      "summary_en": "ES6 module of cubism.js for a recent version of d3.js",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/cubism-es",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "tokio",
       "title_en": "tokio",
       "summary": "A runtime for writing reliable asynchronous applications with Rust. Provides I/O, networking, scheduling, timers, ...",
@@ -429,7 +444,7 @@
       "summary_en": "Rust implementation of protobuf with editions support, JSON serialization, and zero-copy views",
       "changelog_items": [],
       "url": "https://github.com/anthropics/buffa",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -440,40 +455,20 @@
       "changelog_items": [],
       "url": "https://github.com/anthropics/connect-rust",
       "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "agent-sdk-workshop",
-      "title_en": "agent-sdk-workshop",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/agent-sdk-workshop",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "financial-services-plugins",
-      "title_en": "financial-services-plugins",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/financial-services-plugins",
-      "is_new": true
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.77",
-    "Claude Code npm": "v2.1.77",
-    "SDK Python": "v0.85.0",
-    "SDK Python PyPI": "v0.85.0",
-    "SDK TypeScript": "sdk: v0.77.0",
+    "Claude Code": "v2.1.78",
+    "Claude Code npm": "v2.1.78",
+    "SDK Python": "v0.86.0",
+    "SDK Python PyPI": "v0.86.0",
+    "SDK TypeScript": "bedrock-sdk: v0.26.4",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.73",
-    "GitHub SDK Python": "v0.81.0"
+    "GitHub Claude Code": "v2.1.74",
+    "GitHub SDK Python": "v0.82.0"
   }
 }
