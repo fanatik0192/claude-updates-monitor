@@ -1,6 +1,37 @@
 {
-  "last_check": "2026-03-18T19:46:17.847465",
+  "last_check": "2026-03-19T19:43:54.814938",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.79",
+      "title_en": "v2.1.79",
+      "summary": "Ce qui a change Ajout de --console flag to claude auth login for Anthropic Console (API billing) authentication Ajout de \"Afficher turn duration\" basculer to the /config menu Correction de claude -p hanging when spawned as a subprocess without explicit stdin (e.g. Python subprocess.run) Correction de Ctrl+C not workin",
+      "summary_en": "What's changed\n\nAdded --console flag to claude auth login for Anthropic Console (API billing) authentication\nAdded \"Show turn duration\" toggle to the /config menu\nFixed claude -p hanging when spawned as a subprocess without explicit stdin (e.g. Python subprocess.run)\nFixed Ctrl+C not workin",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "--console flag to claude auth login for Anthropic Console (API billing) authentication"
+        },
+        {
+          "type": "added",
+          "text": "\"Show turn duration\" toggle to the /config menu"
+        },
+        {
+          "type": "fixed",
+          "text": "claude -p hanging when spawned as a subprocess without explicit stdin (e.g. Python subprocess.run)"
+        },
+        {
+          "type": "fixed",
+          "text": "Ctrl+C not workin"
+        },
+        {
+          "type": "changed",
+          "text": "Added --console flag to claude auth login for Anthropic Console (API billing) authentication"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.79",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.78",
@@ -26,7 +57,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.78",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -85,33 +116,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.74",
-      "title_en": "v2.1.74",
-      "summary": "Ce qui a change Ajout de actionable suggestions to /context commande — identifies context-heavy tools, memory bloat, and capacity avertissements with specific optimization tips Ajout de autoMemoryRepertoire parametre to configure a personnalise repertoire for auto-memory storage Correction de memory leak where streaming API response buffers were not versiond when the",
-      "summary_en": "What's changed\n\nAdded actionable suggestions to /context command — identifies context-heavy tools, memory bloat, and capacity warnings with specific optimization tips\nAdded autoMemoryDirectory setting to configure a custom directory for auto-memory storage\nFixed memory leak where streaming API response buffers were not released when the ",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "actionable suggestions to /context command — identifies context-heavy tools, memory bloat, and capacity warnings with specific optimization tips"
-        },
-        {
-          "type": "added",
-          "text": "autoMemoryDirectory setting to configure a custom directory for auto-memory storage"
-        },
-        {
-          "type": "fixed",
-          "text": "memory leak where streaming API response buffers were not released when the"
-        },
-        {
-          "type": "changed",
-          "text": "Added actionable suggestions to /context command — identifies context-heavy tools, memory bloat, and capacity warnings with specific optimization tips"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.74",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.86.0",
       "title_en": "v0.86.0",
@@ -119,7 +123,7 @@
       "summary_en": "0.86.0 (2026-03-18)\nFull Changelog: v0.85.0...v0.86.0\nFeatures\n\nadd support for filesystem memory tools (#1247) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/235d218211ac4b8f1aa",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.86.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -174,7 +178,7 @@
       "summary_en": "0.80.0 (2026-03-18)\nFull Changelog: sdk-v0.79.0...sdk-v0.80.0\nFeatures\n\napi: manual updates (dd12f1a)\napi:</stron",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.80.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -184,7 +188,7 @@
       "summary_en": "0.79.0 (2026-03-16)\nFull Changelog: sdk-v0.78.0...sdk-v0.79.0\nFeatures\n\nadd support for filesystem memory tools (#599) (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.79.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -224,14 +228,14 @@
       "summary_en": "Publie le 2026-03-18",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.78",
-      "title_en": "v2.1.78",
-      "summary": "Publie le 2026-03-17",
-      "summary_en": "Publie le 2026-03-17",
+      "title": "v2.1.79",
+      "title_en": "v2.1.79",
+      "summary": "Publie le 2026-03-18",
+      "summary_en": "Publie le 2026-03-18",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -244,7 +248,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -254,7 +258,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -408,13 +412,23 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "terragrunt",
+      "title_en": "terragrunt",
+      "summary": "Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OuvrirTofu/Terraform to scale.",
+      "summary_en": "Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTofu/Terraform to scale.",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/terragrunt",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "grafanacubism-panel",
       "title_en": "grafanacubism-panel",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/grafanacubism-panel",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -424,7 +438,7 @@
       "summary_en": "ES6 module of cubism.js for a recent version of d3.js",
       "changelog_items": [],
       "url": "https://github.com/anthropics/cubism-es",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -445,22 +459,12 @@
       "changelog_items": [],
       "url": "https://github.com/anthropics/buffa",
       "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "connect-rust",
-      "title_en": "connect-rust",
-      "summary": "An implementation of the ConnectRPC protocol for Rust",
-      "summary_en": "An implementation of the ConnectRPC protocol for Rust",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/connect-rust",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.78",
-    "Claude Code npm": "v2.1.78",
+    "Claude Code": "v2.1.79",
+    "Claude Code npm": "v2.1.79",
     "SDK Python": "v0.86.0",
     "SDK Python PyPI": "v0.86.0",
     "SDK TypeScript": "bedrock-sdk: v0.26.4",
@@ -468,7 +472,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.74",
+    "GitHub Claude Code": "v2.1.75",
     "GitHub SDK Python": "v0.82.0"
   }
 }
