@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-03-20T19:35:14.758480",
+  "last_check": "2026-03-21T19:21:11.640748",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.81",
+      "title_en": "v2.1.81",
+      "summary": "Ce qui a change Ajout de --bare flag for scripted -p calls — skips hooks, LSP (protocole serveur de langage), plugin sync, and skill repertoire walks; requires ANTHROPIC_API_KEY or an apiKeyHelper via --parametres (OAuth and keychain auth desactiverd); auto-memory fully desactiverd Ajout de --channels permission relay — channel servers that",
+      "summary_en": "What's changed\n\nAdded --bare flag for scripted -p calls — skips hooks, LSP, plugin sync, and skill directory walks; requires ANTHROPIC_API_KEY or an apiKeyHelper via --settings (OAuth and keychain auth disabled); auto-memory fully disabled\nAdded --channels permission relay — channel servers that",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "--bare flag for scripted -p calls — skips hooks, LSP, plugin sync, and skill directory walks; requires ANTHROPIC_API_KEY or an apiKeyHelper via --settings (OAuth and keychain auth disabled); auto-memo"
+        },
+        {
+          "type": "added",
+          "text": "--channels permission relay — channel servers that"
+        },
+        {
+          "type": "changed",
+          "text": "Added --bare flag for scripted -p calls — skips hooks, LSP, plugin sync, and skill directory walks; requires ANTHROPIC_API_KEY or an apiKeyHelper via --settings (OAuth and keychain auth disabled); aut"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.81",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.80",
@@ -26,7 +49,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.80",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -103,33 +126,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.77",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.76",
-      "title_en": "v2.1.76",
-      "summary": "Ce qui a change Ajout de MCP elicitation prise en charge — MCP servers can now request structured entree mid-task via an interactive dialog (form fields or browser URL) Ajout de new Elicitation and ElicitationResult hooks to intercept and override responses before they're sent back Ajout de -n / --nom &lt;nom&gt; CLI flag to se",
-      "summary_en": "What's changed\n\nAdded MCP elicitation support — MCP servers can now request structured input mid-task via an interactive dialog (form fields or browser URL)\nAdded new Elicitation and ElicitationResult hooks to intercept and override responses before they're sent back\nAdded -n / --name &lt;name&gt; CLI flag to se",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "MCP elicitation support — MCP servers can now request structured input mid-task via an interactive dialog (form fields or browser URL)"
-        },
-        {
-          "type": "added",
-          "text": "new Elicitation and ElicitationResult hooks to intercept and override responses before they're sent back"
-        },
-        {
-          "type": "added",
-          "text": "-n / --name &lt;name&gt; CLI flag to se"
-        },
-        {
-          "type": "changed",
-          "text": "Added MCP elicitation support — MCP servers can now request structured input mid-task via an interactive dialog (form fields or browser URL)"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.76",
       "is_new": false
     },
     {
@@ -249,10 +245,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.80",
-      "title_en": "v2.1.80",
-      "summary": "Publie le 2026-03-19",
-      "summary_en": "Publie le 2026-03-19",
+      "title": "v2.1.81",
+      "title_en": "v2.1.81",
+      "summary": "Publie le 2026-03-20",
+      "summary_en": "Publie le 2026-03-20",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -480,8 +476,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.80",
-    "Claude Code npm": "v2.1.80",
+    "Claude Code": "v2.1.81",
+    "Claude Code npm": "v2.1.81",
     "SDK Python": "v0.86.0",
     "SDK Python PyPI": "v0.86.0",
     "SDK TypeScript": "bedrock-sdk: v0.26.4",
@@ -489,7 +485,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.76",
+    "GitHub Claude Code": "v2.1.77",
     "GitHub SDK Python": "v0.82.0"
   }
 }
