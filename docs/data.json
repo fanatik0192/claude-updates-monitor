@@ -1,6 +1,37 @@
 {
-  "last_check": "2026-03-24T19:51:38.626601",
+  "last_check": "2026-03-25T19:43:53.071597",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.83",
+      "title_en": "v2.1.83",
+      "summary": "Ce qui a change Ajout de managed-parametres.d/ drop-in repertoire alongside managed-parametres.json, letting separate teams deploy independent policy fragments that merge alphabetically Ajout de CwdModification de and FichierModification de hook events for reactive environment management (e.g., direnv) Ajout de sandbox.failIfUnavailable</",
+      "summary_en": "What's changed\n\nAdded managed-settings.d/ drop-in directory alongside managed-settings.json, letting separate teams deploy independent policy fragments that merge alphabetically\nAdded CwdChanged and FileChanged hook events for reactive environment management (e.g., direnv)\nAdded sandbox.failIfUnavailable</",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "managed-settings.d/ drop-in directory alongside managed-settings.json, letting separate teams deploy independent policy fragments that merge alphabetically"
+        },
+        {
+          "type": "added",
+          "text": "CwdChanged and FileChanged hook events for reactive environment management (e.g., direnv)"
+        },
+        {
+          "type": "added",
+          "text": "sandbox.failIfUnavailable</"
+        },
+        {
+          "type": "changed",
+          "text": "Added managed-settings.d/ drop-in directory alongside managed-settings.json, letting separate teams deploy independent policy fragments that merge alphabetically"
+        },
+        {
+          "type": "changed",
+          "text": "and FileChanged hook events for reactive environment management (e.g., direnv)"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.83",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.81",
@@ -107,25 +138,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.78",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.77",
-      "title_en": "v2.1.77",
-      "summary": "Ce qui a change Increased par defaut maximum sortie jeton limits for Claude Opus 4.6 to 64k jetons, and the upper bound for Opus 4.6 and Sonnet 4.6 models to 128k jetons Ajout de allowRead sandbox fichiersystem parametre to re-allow read access within denyRead regions /copy now accepts an optional index: /copy N copies the",
-      "summary_en": "What's changed\n\nIncreased default maximum output token limits for Claude Opus 4.6 to 64k tokens, and the upper bound for Opus 4.6 and Sonnet 4.6 models to 128k tokens\nAdded allowRead sandbox filesystem setting to re-allow read access within denyRead regions\n/copy now accepts an optional index: /copy N copies the",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "allowRead sandbox filesystem setting to re-allow read access within denyRead regions"
-        },
-        {
-          "type": "changed",
-          "text": "Increased default maximum output token limits for Claude Opus 4.6 to 64k tokens, and the upper bound for Opus 4.6 and Sonnet 4.6 models to 128k tokens"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.77",
       "is_new": false
     },
     {
@@ -245,13 +257,13 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.81",
-      "title_en": "v2.1.81",
-      "summary": "Publie le 2026-03-20",
-      "summary_en": "Publie le 2026-03-20",
+      "title": "v2.1.83",
+      "title_en": "v2.1.83",
+      "summary": "Publie le 2026-03-24",
+      "summary_en": "Publie le 2026-03-24",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
@@ -476,8 +488,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.81",
-    "Claude Code npm": "v2.1.81",
+    "Claude Code": "v2.1.83",
+    "Claude Code npm": "v2.1.83",
     "SDK Python": "v0.86.0",
     "SDK Python PyPI": "v0.86.0",
     "SDK TypeScript": "bedrock-sdk: v0.26.4",
@@ -485,7 +497,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.77",
+    "GitHub Claude Code": "v2.1.78",
     "GitHub SDK Python": "v0.82.0"
   }
 }
