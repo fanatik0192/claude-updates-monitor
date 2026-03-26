@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-03-25T19:43:53.071597",
+  "last_check": "2026-03-26T19:52:49.894328",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.84",
+      "title_en": "v2.1.84",
+      "summary": "Ce qui a change Ajout de PowerShell tool for Windows as an opt-in preview. Learn more at https://code.claude.com/docs/en/tools-reference#powershell-tool Ajout de ANTHROPIC_DEFAULT_{OPUS,SONNET,HAIKU}_MODEL_SUPPORTS env vars to override effort/thinking capability detection f",
+      "summary_en": "What's changed\n\nAdded PowerShell tool for Windows as an opt-in preview. Learn more at https://code.claude.com/docs/en/tools-reference#powershell-tool\nAdded ANTHROPIC_DEFAULT_{OPUS,SONNET,HAIKU}_MODEL_SUPPORTS env vars to override effort/thinking capability detection f",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "PowerShell tool for Windows as an opt-in preview. Learn more at https://code.claude.com/docs/en/tools-reference#powershell-tool"
+        },
+        {
+          "type": "added",
+          "text": "ANTHROPIC_DEFAULT_{OPUS,SONNET,HAIKU}_MODEL_SUPPORTS env vars to override effort/thinking capability detection f"
+        },
+        {
+          "type": "changed",
+          "text": "Added PowerShell tool for Windows as an opt-in preview. Learn more at https://code.claude.com/docs/en/tools-reference#powershell-tool"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.84",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.83",
@@ -30,7 +53,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.83",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -111,33 +134,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.79",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.78",
-      "title_en": "v2.1.78",
-      "summary": "Ce qui a change Ajout de StopFailure hook event that fires when the turn ends due to an API erreur (rate limit, auth failure, etc.) Ajout de ${CLAUDE_PLUGIN_DATA} variable for plugin persistent state that survives plugin updates; /plugin uninstall prompts before deleting it Ajout de effort, maxTurns, and <cod",
-      "summary_en": "What's changed\n\nAdded StopFailure hook event that fires when the turn ends due to an API error (rate limit, auth failure, etc.)\nAdded ${CLAUDE_PLUGIN_DATA} variable for plugin persistent state that survives plugin updates; /plugin uninstall prompts before deleting it\nAdded effort, maxTurns, and <cod",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "StopFailure hook event that fires when the turn ends due to an API error (rate limit, auth failure, etc.)"
-        },
-        {
-          "type": "added",
-          "text": "${CLAUDE_PLUGIN_DATA} variable for plugin persistent state that survives plugin updates; /plugin uninstall prompts before deleting it"
-        },
-        {
-          "type": "added",
-          "text": "effort, maxTurns, and <cod"
-        },
-        {
-          "type": "changed",
-          "text": "Added StopFailure hook event that fires when the turn ends due to an API error (rate limit, auth failure, etc.)"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.78",
       "is_new": false
     },
     {
@@ -257,10 +253,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.83",
-      "title_en": "v2.1.83",
-      "summary": "Publie le 2026-03-24",
-      "summary_en": "Publie le 2026-03-24",
+      "title": "v2.1.84",
+      "title_en": "v2.1.84",
+      "summary": "Publie le 2026-03-25",
+      "summary_en": "Publie le 2026-03-25",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -437,6 +433,16 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "claude-plugins-community",
+      "title_en": "claude-plugins-community",
+      "summary": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-repertoire-submission.",
+      "summary_en": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/claude-plugins-community",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "terragrunt",
       "title_en": "terragrunt",
       "summary": "Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OuvrirTofu/Terraform to scale.",
@@ -474,22 +480,12 @@
       "changelog_items": [],
       "url": "https://github.com/anthropics/connect-rust",
       "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "agent-sdk-workshop",
-      "title_en": "agent-sdk-workshop",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/agent-sdk-workshop",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.83",
-    "Claude Code npm": "v2.1.83",
+    "Claude Code": "v2.1.84",
+    "Claude Code npm": "v2.1.84",
     "SDK Python": "v0.86.0",
     "SDK Python PyPI": "v0.86.0",
     "SDK TypeScript": "bedrock-sdk: v0.26.4",
@@ -497,7 +493,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.78",
+    "GitHub Claude Code": "v2.1.79",
     "GitHub SDK Python": "v0.82.0"
   }
 }
