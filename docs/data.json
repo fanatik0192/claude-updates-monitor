@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-03-26T19:52:49.894328",
+  "last_check": "2026-03-27T19:39:14.066689",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.85",
+      "title_en": "v2.1.85",
+      "summary": "Ce qui a change Ajout de CLAUDE_CODE_MCP_SERVER_NAME and CLAUDE_CODE_MCP_SERVER_URL variable d'environnements to MCP headersHelper scripts, allowing one helper to serve multiple servers Ajout de conditional if field for hooks using permission regle syntax (e.g., Bash(git *)) to filtre when they run, reducing process sp",
+      "summary_en": "What's changed\n\nAdded CLAUDE_CODE_MCP_SERVER_NAME and CLAUDE_CODE_MCP_SERVER_URL environment variables to MCP headersHelper scripts, allowing one helper to serve multiple servers\nAdded conditional if field for hooks using permission rule syntax (e.g., Bash(git *)) to filter when they run, reducing process sp",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "CLAUDE_CODE_MCP_SERVER_NAME and CLAUDE_CODE_MCP_SERVER_URL environment variables to MCP headersHelper scripts, allowing one helper to serve multiple servers"
+        },
+        {
+          "type": "added",
+          "text": "conditional if field for hooks using permission rule syntax (e.g., Bash(git *)) to filter when they run, reducing process sp"
+        },
+        {
+          "type": "changed",
+          "text": "Added CLAUDE_CODE_MCP_SERVER_NAME and CLAUDE_CODE_MCP_SERVER_URL environment variables to MCP headersHelper scripts, allowing one helper to serve multiple servers"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.85",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.84",
@@ -22,7 +45,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.84",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -76,7 +99,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.81",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Claude Code",
@@ -103,37 +126,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.80",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.79",
-      "title_en": "v2.1.79",
-      "summary": "Ce qui a change Ajout de --console flag to claude auth login for Anthropic Console (API billing) authentication Ajout de \"Afficher turn duration\" basculer to the /config menu Correction de claude -p hanging when spawned as a subprocess without explicit stdin (e.g. Python subprocess.run) Correction de Ctrl+C not workin",
-      "summary_en": "What's changed\n\nAdded --console flag to claude auth login for Anthropic Console (API billing) authentication\nAdded \"Show turn duration\" toggle to the /config menu\nFixed claude -p hanging when spawned as a subprocess without explicit stdin (e.g. Python subprocess.run)\nFixed Ctrl+C not workin",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "--console flag to claude auth login for Anthropic Console (API billing) authentication"
-        },
-        {
-          "type": "added",
-          "text": "\"Show turn duration\" toggle to the /config menu"
-        },
-        {
-          "type": "fixed",
-          "text": "claude -p hanging when spawned as a subprocess without explicit stdin (e.g. Python subprocess.run)"
-        },
-        {
-          "type": "fixed",
-          "text": "Ctrl+C not workin"
-        },
-        {
-          "type": "changed",
-          "text": "Added --console flag to claude auth login for Anthropic Console (API billing) authentication"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.79",
       "is_new": false
     },
     {
@@ -253,10 +245,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.84",
-      "title_en": "v2.1.84",
-      "summary": "Publie le 2026-03-25",
-      "summary_en": "Publie le 2026-03-25",
+      "title": "v2.1.85",
+      "title_en": "v2.1.85",
+      "summary": "Publie le 2026-03-26",
+      "summary_en": "Publie le 2026-03-26",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -439,7 +431,7 @@
       "summary_en": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
       "changelog_items": [],
       "url": "https://github.com/anthropics/claude-plugins-community",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -484,8 +476,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.84",
-    "Claude Code npm": "v2.1.84",
+    "Claude Code": "v2.1.85",
+    "Claude Code npm": "v2.1.85",
     "SDK Python": "v0.86.0",
     "SDK Python PyPI": "v0.86.0",
     "SDK TypeScript": "bedrock-sdk: v0.26.4",
@@ -493,7 +485,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.79",
+    "GitHub Claude Code": "v2.1.80",
     "GitHub SDK Python": "v0.82.0"
   }
 }
