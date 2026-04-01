@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-03-31T19:52:56.468485",
+  "last_check": "2026-04-01T19:56:21.823150",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.89",
+      "title_en": "v2.1.89",
+      "summary": "Ce qui a change Ajout de \"defer\" permission decision to PreToolUse hooks — headless sessions can pause at a tool call and resume with -p --resume to have the hook re-evaluate Ajout de CLAUDE_CODE_NO_FLICKER=1 variable d'environnement to opt into flicker-free alt-screen rendering with virtualized scrollback Ajout de Per",
+      "summary_en": "What's changed\n\nAdded \"defer\" permission decision to PreToolUse hooks — headless sessions can pause at a tool call and resume with -p --resume to have the hook re-evaluate\nAdded CLAUDE_CODE_NO_FLICKER=1 environment variable to opt into flicker-free alt-screen rendering with virtualized scrollback\nAdded Per",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "\"defer\" permission decision to PreToolUse hooks — headless sessions can pause at a tool call and resume with -p --resume to have the hook re-evaluate"
+        },
+        {
+          "type": "added",
+          "text": "CLAUDE_CODE_NO_FLICKER=1 environment variable to opt into flicker-free alt-screen rendering with virtualized scrollback"
+        },
+        {
+          "type": "changed",
+          "text": "Added \"defer\" permission decision to PreToolUse hooks — headless sessions can pause at a tool call and resume with -p --resume to have the hook re-evaluate"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.89",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.88",
@@ -9,7 +32,7 @@
       "summary_en": "chore: Update CHANGELOG.md",
       "changelog_items": [],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.88",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -81,29 +104,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.84",
-      "title_en": "v2.1.84",
-      "summary": "Ce qui a change Ajout de PowerShell tool for Windows as an opt-in preview. Learn more at https://code.claude.com/docs/en/tools-reference#powershell-tool Ajout de ANTHROPIC_DEFAULT_{OPUS,SONNET,HAIKU}_MODEL_SUPPORTS env vars to override effort/thinking capability detection f",
-      "summary_en": "What's changed\n\nAdded PowerShell tool for Windows as an opt-in preview. Learn more at https://code.claude.com/docs/en/tools-reference#powershell-tool\nAdded ANTHROPIC_DEFAULT_{OPUS,SONNET,HAIKU}_MODEL_SUPPORTS env vars to override effort/thinking capability detection f",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "PowerShell tool for Windows as an opt-in preview. Learn more at https://code.claude.com/docs/en/tools-reference#powershell-tool"
-        },
-        {
-          "type": "added",
-          "text": "ANTHROPIC_DEFAULT_{OPUS,SONNET,HAIKU}_MODEL_SUPPORTS env vars to override effort/thinking capability detection f"
-        },
-        {
-          "type": "changed",
-          "text": "Added PowerShell tool for Windows as an opt-in preview. Learn more at https://code.claude.com/docs/en/tools-reference#powershell-tool"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.84",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.87.0",
       "title_en": "v0.87.0",
@@ -111,7 +111,7 @@
       "summary_en": "0.87.0 (2026-03-31)\nFull Changelog: v0.86.0...v0.87.0\nFeatures\n\nclient: add error type field to APIStatusError (#1587) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/co",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.87.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -151,7 +151,37 @@
       "summary_en": "0.83.0 (2026-02-19)\nFull Changelog: v0.82.0...v0.83.0\nFeatures\n\napi: Add top-level cache control (automatic caching) (a940123)\n\nChor",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.83.0",
-      "is_new": false
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.82.0",
+      "title_en": "sdk: v0.82.0",
+      "summary": "0.82.0 (2026-04-01) Journal complet: sdk-v0.81.0...sdk-v0.82.0 Fonctionnalites api: add structured stop_details to message responses (",
+      "summary_en": "0.82.0 (2026-04-01)\nFull Changelog: sdk-v0.81.0...sdk-v0.82.0\nFeatures\n\napi: add structured stop_details to message responses (031328a",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.82.0",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "bedrock-sdk: v0.27.0",
+      "title_en": "bedrock-sdk: v0.27.0",
+      "summary": "0.27.0 (2026-04-01) Journal complet: bedrock-sdk-v0.26.4...bedrock-sdk-v0.27.0 Fonctionnalites prise en charge API keys in Bedrock SDK (<a href=\"https://github.com/anthropics/a",
+      "summary_en": "0.27.0 (2026-04-01)\nFull Changelog: bedrock-sdk-v0.26.4...bedrock-sdk-v0.27.0\nFeatures\n\nsupport API keys in Bedrock SDK (#824) (<a href=\"https://github.com/anthropics/a",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.27.0",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "aws-sdk: v0.2.0",
+      "title_en": "aws-sdk: v0.2.0",
+      "summary": "0.2.0 (2026-04-01) Journal complet: aws-sdk-v0.1.0...aws-sdk-v0.2.0 Fonctionnalites prepare aws package (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/f3",
+      "summary_en": "0.2.0 (2026-04-01)\nFull Changelog: aws-sdk-v0.1.0...aws-sdk-v0.2.0\nFeatures\n\nprepare aws package (#782) (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/f3",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.2.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -161,7 +191,7 @@
       "summary_en": "0.81.0 (2026-03-31)\nFull Changelog: sdk-v0.80.0...sdk-v0.81.0\nFeatures\n\nadd .type field to APIError for error kind identification (#790) (<a href=\"https://github.com/anthropics/anthrop",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.81.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -174,54 +204,24 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.79.0",
-      "title_en": "sdk: v0.79.0",
-      "summary": "0.79.0 (2026-03-16) Journal complet: sdk-v0.78.0...sdk-v0.79.0 Fonctionnalites add prise en charge de fichiersystem memory tools (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/",
-      "summary_en": "0.79.0 (2026-03-16)\nFull Changelog: sdk-v0.78.0...sdk-v0.79.0\nFeatures\n\nadd support for filesystem memory tools (#599) (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.79.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "vertex-sdk: v0.14.4",
-      "title_en": "vertex-sdk: v0.14.4",
-      "summary": "0.14.4 (2026-02-19) Journal complet: vertex-sdk-v0.14.3...vertex-sdk-v0.14.4",
-      "summary_en": "0.14.4 (2026-02-19)\nFull Changelog: vertex-sdk-v0.14.3...vertex-sdk-v0.14.4",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.14.4",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.78.0",
-      "title_en": "sdk: v0.78.0",
-      "summary": "0.78.0 (2026-02-19) Journal complet: sdk-v0.77.0...sdk-v0.78.0 Fonctionnalites api: Add top-level cache control (automatic caching) (<",
-      "summary_en": "0.78.0 (2026-02-19)\nFull Changelog: sdk-v0.77.0...sdk-v0.78.0\nFeatures\n\napi: Add top-level cache control (automatic caching) (1e2f83d<",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.78.0",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.81.0",
-      "title_en": "v0.81.0",
-      "summary": "Publie le 2026-03-31",
-      "summary_en": "Publie le 2026-03-31",
+      "title": "v0.82.0",
+      "title_en": "v0.82.0",
+      "summary": "Publie le 2026-04-01",
+      "summary_en": "Publie le 2026-04-01",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
       "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.87",
-      "title_en": "v2.1.87",
-      "summary": "Publie le 2026-03-29",
-      "summary_en": "Publie le 2026-03-29",
+      "title": "v2.1.89",
+      "title_en": "v2.1.89",
+      "summary": "Publie le 2026-03-31",
+      "summary_en": "Publie le 2026-03-31",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
@@ -231,7 +231,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -262,6 +262,16 @@
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
       "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Mar 31, 2026AnnouncementsAustralian government and Anthropic sign MOU for AI safety and rerecherche",
+      "title_en": "Mar 31, 2026AnnouncementsAustralian government and Anthropic sign MOU for AI safety and research",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/australia-MOU",
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -321,16 +331,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/statement-comments-secretary-war",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Feb 26, 2026AnnouncementsStatement from Dario Amodei on our discussions with the Department of War",
-      "title_en": "Feb 26, 2026AnnouncementsStatement from Dario Amodei on our discussions with the Department of War",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/statement-department-of-war",
       "is_new": false
     },
     {
@@ -441,21 +441,21 @@
       "summary_en": "An implementation of the ConnectRPC protocol for Rust",
       "changelog_items": [],
       "url": "https://github.com/anthropics/connect-rust",
-      "is_new": false
+      "is_new": true
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.87",
-    "Claude Code npm": "v2.1.87",
+    "Claude Code": "v2.1.89",
+    "Claude Code npm": "v2.1.89",
     "SDK Python": "v0.87.0",
     "SDK Python PyPI": "v0.87.0",
-    "SDK TypeScript": "sdk: v0.78.0",
+    "SDK TypeScript": "sdk: v0.80.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.84",
+    "GitHub Claude Code": "v2.1.85",
     "GitHub SDK Python": "v0.83.0"
   }
 }
