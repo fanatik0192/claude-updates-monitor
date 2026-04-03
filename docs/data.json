@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-04-02T19:47:49.186925",
+  "last_check": "2026-04-03T19:35:40.362739",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.91",
+      "title_en": "v2.1.91",
+      "summary": "Ce qui a change Ajout de MCP tool result persistence override via _meta[\"anthropic/maxResultSizeChars\"] annotation (up to 500K), allowing larger results like DB schemas to pass through without truncation Ajout de desactiverSkillShellExecution parametre to desactiver inline shell execution in skills, personnalise slash commandes, and plugin commandes Ajout de sup",
+      "summary_en": "What's changed\n\nAdded MCP tool result persistence override via _meta[\"anthropic/maxResultSizeChars\"] annotation (up to 500K), allowing larger results like DB schemas to pass through without truncation\nAdded disableSkillShellExecution setting to disable inline shell execution in skills, custom slash commands, and plugin commands\nAdded sup",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "MCP tool result persistence override via _meta[\"anthropic/maxResultSizeChars\"] annotation (up to 500K), allowing larger results like DB schemas to pass through without truncation"
+        },
+        {
+          "type": "added",
+          "text": "disableSkillShellExecution setting to disable inline shell execution in skills, custom slash commands, and plugin commands"
+        },
+        {
+          "type": "changed",
+          "text": "Added MCP tool result persistence override via _meta[\"anthropic/maxResultSizeChars\"] annotation (up to 500K), allowing larger results like DB schemas to pass through without truncation"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.91",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.90",
@@ -26,7 +49,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.90",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -81,31 +104,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.86",
-      "title_en": "v2.1.86",
-      "summary": "Ce qui a change Ajout de X-Claude-Code-Session-Id header to API requests so proxies can aggregate requests by session without parsing the body Ajout de .jj and .sl to VCS repertoire exclusion lists so Grep and fichier autocompletion don't descend into Jujutsu or Sapling metadonnees Correction de --resume failing with \"tool_use ids wer",
-      "summary_en": "What's changed\n\nAdded X-Claude-Code-Session-Id header to API requests so proxies can aggregate requests by session without parsing the body\nAdded .jj and .sl to VCS directory exclusion lists so Grep and file autocomplete don't descend into Jujutsu or Sapling metadata\nFixed --resume failing with \"tool_use ids wer",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "X-Claude-Code-Session-Id header to API requests so proxies can aggregate requests by session without parsing the body"
-        },
-        {
-          "type": "added",
-          "text": ".jj and .sl to VCS directory exclusion lists so Grep and file autocomplete don't descend into Jujutsu or Sapling metadata"
-        },
-        {
-          "type": "fixed",
-          "text": "--resume failing with \"tool_use ids wer"
-        },
-        {
-          "type": "changed",
-          "text": "Added X-Claude-Code-Session-Id header to API requests so proxies can aggregate requests by session without parsing the body"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.86",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.89.0",
+      "title_en": "v0.89.0",
+      "summary": "0.89.0 (2026-04-03) Journal complet: v0.88.0...v0.89.0 Fonctionnalites vertex: add prise en charge de US multi-region endpoint () Correction de buge",
+      "summary_en": "0.89.0 (2026-04-03)\nFull Changelog: v0.88.0...v0.89.0\nFeatures\n\nvertex: add support for US multi-region endpoint (4e732da)\n\nBug Fixe",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.89.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -115,7 +121,7 @@
       "summary_en": "0.88.0 (2026-04-01)\nFull Changelog: v0.87.0...v0.88.0\nFeatures\n\napi: add structured stop_details to message responses (fd82d6b)\nbedrock a",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.88.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -148,14 +154,24 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.84.0",
-      "title_en": "v0.84.0",
-      "summary": "0.84.0 (2026-02-25) Journal complet: v0.83.0...v0.84.0 Fonctionnalites api: change array_format to brackets () api: remo",
-      "summary_en": "0.84.0 (2026-02-25)\nFull Changelog: v0.83.0...v0.84.0\nFeatures\n\napi: change array_format to brackets (925d2ad)\napi: remo",
+      "source": "SDK TypeScript",
+      "title": "vertex-sdk: v0.15.0",
+      "title_en": "vertex-sdk: v0.15.0",
+      "summary": "0.15.0 (2026-04-03) Journal complet: vertex-sdk-v0.14.4...vertex-sdk-v0.15.0 Fonctionnalites vertex: add prise en charge de US multi-region endpoint (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
+      "summary_en": "0.15.0 (2026-04-03)\nFull Changelog: vertex-sdk-v0.14.4...vertex-sdk-v0.15.0\nFeatures\n\nvertex: add support for US multi-region endpoint (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/5e5aea72e8af1d0cd0af7770f7",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.84.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.15.0",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.83.0",
+      "title_en": "sdk: v0.83.0",
+      "summary": "0.83.0 (2026-04-03) Journal complet: sdk-v0.82.0...sdk-v0.83.0 Fonctionnalites vertex: add prise en charge de US multi-region endpoint ()",
+      "summary_en": "0.83.0 (2026-04-03)\nFull Changelog: sdk-v0.82.0...sdk-v0.83.0\nFeatures\n\nvertex: add support for US multi-region endpoint (5e5aea7)",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.83.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -188,26 +204,6 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.81.0",
-      "title_en": "sdk: v0.81.0",
-      "summary": "0.81.0 (2026-03-31) Journal complet: sdk-v0.80.0...sdk-v0.81.0 Fonctionnalites add .taper field to APIErreur for erreur kind identification (<a href=\"https://github.com/anthropics/anthrop",
-      "summary_en": "0.81.0 (2026-03-31)\nFull Changelog: sdk-v0.80.0...sdk-v0.81.0\nFeatures\n\nadd .type field to APIError for error kind identification (#790) (<a href=\"https://github.com/anthropics/anthrop",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.81.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.80.0",
-      "title_en": "sdk: v0.80.0",
-      "summary": "0.80.0 (2026-03-18) Journal complet: sdk-v0.79.0...sdk-v0.80.0 Fonctionnalites api: manual updates () api:</stron",
-      "summary_en": "0.80.0 (2026-03-18)\nFull Changelog: sdk-v0.79.0...sdk-v0.80.0\nFeatures\n\napi: manual updates (dd12f1a)\napi:</stron",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.80.0",
-      "is_new": true
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
       "title": "v0.82.0",
       "title_en": "v0.82.0",
@@ -219,18 +215,18 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.90",
-      "title_en": "v2.1.90",
-      "summary": "Publie le 2026-04-01",
-      "summary_en": "Publie le 2026-04-01",
+      "title": "v2.1.91",
+      "title_en": "v2.1.91",
+      "summary": "Publie le 2026-04-02",
+      "summary_en": "Publie le 2026-04-02",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.88.0",
-      "title_en": "v0.88.0",
+      "title": "v0.89.0",
+      "title_en": "v0.89.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
@@ -355,7 +351,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/interpretability",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -385,7 +381,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/introspection",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Statut",
@@ -450,16 +446,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.90",
-    "Claude Code npm": "v2.1.90",
-    "SDK Python": "v0.88.0",
-    "SDK Python PyPI": "v0.88.0",
-    "SDK TypeScript": "sdk: v0.80.0",
+    "Claude Code": "v2.1.91",
+    "Claude Code npm": "v2.1.91",
+    "SDK Python": "v0.89.0",
+    "SDK Python PyPI": "v0.89.0",
+    "SDK TypeScript": "aws-sdk: v0.2.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.86",
-    "GitHub SDK Python": "v0.84.0"
+    "GitHub Claude Code": "v2.1.87",
+    "GitHub SDK Python": "v0.85.0"
   }
 }
