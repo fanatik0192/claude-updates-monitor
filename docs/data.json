@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-04-03T19:35:40.362739",
+  "last_check": "2026-04-04T19:28:06.314570",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.92",
+      "title_en": "v2.1.92",
+      "summary": "Ce qui a change Ajout de forceRemoteParametresActualiser policy parametre: when set, the CLI blocks startup until remote managed parametres are freshly fetched, and exits if the fetch fails (fail-closed) Ajout de interactive Bedrock setup wizard accessible from the login screen when selecting \"3rd-party platform\" — guides you through AWS authentication, region configuration",
+      "summary_en": "What's changed\n\nAdded forceRemoteSettingsRefresh policy setting: when set, the CLI blocks startup until remote managed settings are freshly fetched, and exits if the fetch fails (fail-closed)\nAdded interactive Bedrock setup wizard accessible from the login screen when selecting \"3rd-party platform\" — guides you through AWS authentication, region configuration",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "forceRemoteSettingsRefresh policy setting: when set, the CLI blocks startup until remote managed settings are freshly fetched, and exits if the fetch fails (fail-closed)"
+        },
+        {
+          "type": "added",
+          "text": "interactive Bedrock setup wizard accessible from the login screen when selecting \"3rd-party platform\" — guides you through AWS authentication, region configuration"
+        },
+        {
+          "type": "changed",
+          "text": "Added forceRemoteSettingsRefresh policy setting: when set, the CLI blocks startup until remote managed settings are freshly fetched, and exits if the fetch fails (fail-closed)"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.92",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.91",
@@ -22,7 +45,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.91",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -85,25 +108,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.87",
-      "title_en": "v2.1.87",
-      "summary": "Ce qui a change Correction de messages in Cowork Dispatch not getting delivered",
-      "summary_en": "What's changed\n\nFixed messages in Cowork Dispatch not getting delivered\n",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "messages in Cowork Dispatch not getting delivered"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed messages in Cowork Dispatch not getting delivered"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.87",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.89.0",
       "title_en": "v0.89.0",
@@ -111,7 +115,7 @@
       "summary_en": "0.89.0 (2026-04-03)\nFull Changelog: v0.88.0...v0.89.0\nFeatures\n\nvertex: add support for US multi-region endpoint (4e732da)\n\nBug Fixe",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.89.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -161,7 +165,7 @@
       "summary_en": "0.15.0 (2026-04-03)\nFull Changelog: vertex-sdk-v0.14.4...vertex-sdk-v0.15.0\nFeatures\n\nvertex: add support for US multi-region endpoint (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/5e5aea72e8af1d0cd0af7770f7",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.15.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -171,7 +175,7 @@
       "summary_en": "0.83.0 (2026-04-03)\nFull Changelog: sdk-v0.82.0...sdk-v0.83.0\nFeatures\n\nvertex: add support for US multi-region endpoint (5e5aea7)",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.83.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -215,10 +219,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.91",
-      "title_en": "v2.1.91",
-      "summary": "Publie le 2026-04-02",
-      "summary_en": "Publie le 2026-04-02",
+      "title": "v2.1.92",
+      "title_en": "v2.1.92",
+      "summary": "Publie le 2026-04-04",
+      "summary_en": "Publie le 2026-04-04",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -231,7 +235,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -381,7 +385,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/introspection",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Statut",
@@ -401,7 +405,7 @@
       "summary_en": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
       "changelog_items": [],
       "url": "https://github.com/anthropics/claude-plugins-community",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Nouveau Depot",
@@ -446,8 +450,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.91",
-    "Claude Code npm": "v2.1.91",
+    "Claude Code": "v2.1.92",
+    "Claude Code npm": "v2.1.92",
     "SDK Python": "v0.89.0",
     "SDK Python PyPI": "v0.89.0",
     "SDK TypeScript": "aws-sdk: v0.2.0",
@@ -455,7 +459,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.87",
+    "GitHub Claude Code": "v2.1.88",
     "GitHub SDK Python": "v0.85.0"
   }
 }
