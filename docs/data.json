@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-04-04T19:28:06.314570",
+  "last_check": "2026-04-05T19:31:22.550036",
   "updates": [
     {
       "source": "Claude Code",
@@ -22,7 +22,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.92",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -225,7 +225,7 @@
       "summary_en": "Publie le 2026-04-04",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -405,7 +405,7 @@
       "summary_en": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
       "changelog_items": [],
       "url": "https://github.com/anthropics/claude-plugins-community",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
