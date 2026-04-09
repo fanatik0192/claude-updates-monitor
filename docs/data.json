@@ -1,6 +1,56 @@
 {
-  "last_check": "2026-04-08T19:56:47.721977",
+  "last_check": "2026-04-09T20:01:00.433756",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.98",
+      "title_en": "v2.1.98",
+      "summary": "Ce qui a change Ajout de interactive Google Vertex AI setup wizard accessible from the login screen when selecting \"3rd-party platform\", guiding you through GCP authentication, project and region configuration, credential verification, and model pinning Ajout de CLAUDE_CODE_PERFORCE_MODE env var: when set, Edit/Write/NotebookEdit fail on read-only fichiers with a <cod",
+      "summary_en": "What's changed\n\nAdded interactive Google Vertex AI setup wizard accessible from the login screen when selecting \"3rd-party platform\", guiding you through GCP authentication, project and region configuration, credential verification, and model pinning\nAdded CLAUDE_CODE_PERFORCE_MODE env var: when set, Edit/Write/NotebookEdit fail on read-only files with a <cod",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "interactive Google Vertex AI setup wizard accessible from the login screen when selecting \"3rd-party platform\", guiding you through GCP authentication, project and region configuration, credential ver"
+        },
+        {
+          "type": "added",
+          "text": "CLAUDE_CODE_PERFORCE_MODE env var: when set, Edit/Write/NotebookEdit fail on read-only files with a <cod"
+        },
+        {
+          "type": "changed",
+          "text": "Added interactive Google Vertex AI setup wizard accessible from the login screen when selecting \"3rd-party platform\", guiding you through GCP authentication, project and region configuration, credenti"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.98",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.97",
+      "title_en": "v2.1.97",
+      "summary": "Ce qui a change Ajout de focus view basculer (Ctrl+O) in NO_FLICKER mode affichering prompt, one-line tool summary with edit diffstats, and final response Ajout de actualiserInterval status line parametre to re-run the status line commande every N seconds Ajout de workspace.git_worktree to the status line JSON entree, set when the cu",
+      "summary_en": "What's changed\n\nAdded focus view toggle (Ctrl+O) in NO_FLICKER mode showing prompt, one-line tool summary with edit diffstats, and final response\nAdded refreshInterval status line setting to re-run the status line command every N seconds\nAdded workspace.git_worktree to the status line JSON input, set when the cu",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "focus view toggle (Ctrl+O) in NO_FLICKER mode showing prompt, one-line tool summary with edit diffstats, and final response"
+        },
+        {
+          "type": "added",
+          "text": "refreshInterval status line setting to re-run the status line command every N seconds"
+        },
+        {
+          "type": "added",
+          "text": "workspace.git_worktree to the status line JSON input, set when the cu"
+        },
+        {
+          "type": "changed",
+          "text": "Added focus view toggle (Ctrl+O) in NO_FLICKER mode showing prompt, one-line tool summary with edit diffstats, and final response"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.97",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.96",
@@ -18,7 +68,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.96",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -45,7 +95,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.94",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -71,54 +121,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.91",
-      "title_en": "v2.1.91",
-      "summary": "Ce qui a change Ajout de MCP tool result persistence override via _meta[\"anthropic/maxResultSizeChars\"] annotation (up to 500K), allowing larger results like DB schemas to pass through without truncation Ajout de desactiverSkillShellExecution parametre to desactiver inline shell execution in skills, personnalise slash commandes, and plugin commandes Ajout de sup",
-      "summary_en": "What's changed\n\nAdded MCP tool result persistence override via _meta[\"anthropic/maxResultSizeChars\"] annotation (up to 500K), allowing larger results like DB schemas to pass through without truncation\nAdded disableSkillShellExecution setting to disable inline shell execution in skills, custom slash commands, and plugin commands\nAdded sup",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "MCP tool result persistence override via _meta[\"anthropic/maxResultSizeChars\"] annotation (up to 500K), allowing larger results like DB schemas to pass through without truncation"
-        },
-        {
-          "type": "added",
-          "text": "disableSkillShellExecution setting to disable inline shell execution in skills, custom slash commands, and plugin commands"
-        },
-        {
-          "type": "changed",
-          "text": "Added MCP tool result persistence override via _meta[\"anthropic/maxResultSizeChars\"] annotation (up to 500K), allowing larger results like DB schemas to pass through without truncation"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.91",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.90",
-      "title_en": "v2.1.90",
-      "summary": "Ce qui a change Ajout de /powerup — interactive lessons teaching Claude Code fonctionnalites with animated demos Ajout de CLAUDE_CODE_PLUGIN_KEEP_MARKETPLACE_ON_FAILURE env var to keep the existing marketplace cache when git pull fails, useful in offline environments Ajout de .husky to protected directories (acceptEdits mode)</",
-      "summary_en": "What's changed\n\nAdded /powerup — interactive lessons teaching Claude Code features with animated demos\nAdded CLAUDE_CODE_PLUGIN_KEEP_MARKETPLACE_ON_FAILURE env var to keep the existing marketplace cache when git pull fails, useful in offline environments\nAdded .husky to protected directories (acceptEdits mode)</",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "/powerup — interactive lessons teaching Claude Code features with animated demos"
-        },
-        {
-          "type": "added",
-          "text": "CLAUDE_CODE_PLUGIN_KEEP_MARKETPLACE_ON_FAILURE env var to keep the existing marketplace cache when git pull fails, useful in offline environments"
-        },
-        {
-          "type": "added",
-          "text": ".husky to protected directories (acceptEdits mode)</"
-        },
-        {
-          "type": "changed",
-          "text": "Added /powerup — interactive lessons teaching Claude Code features with animated demos"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.90",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.93.0",
+      "title_en": "v0.93.0",
+      "summary": "0.93.0 (2026-04-09) Journal complet: v0.92.0...v0.93.0 Fonctionnalites api: Add beta advisor tool ()",
+      "summary_en": "0.93.0 (2026-04-09)\nFull Changelog: v0.92.0...v0.93.0\nFeatures\n\napi: Add beta advisor tool (4297dca)\n",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.93.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -128,7 +138,7 @@
       "summary_en": "0.92.0 (2026-04-08)\nFull Changelog: v0.91.0...v0.92.0\nFeatures\n\napi: add support for Claude Managed Agents (5b879a7)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.92.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -138,7 +148,7 @@
       "summary_en": "0.91.0 (2026-04-07)\nFull Changelog: v0.90.0...v0.91.0\nFeatures\n\nclient: Create Bedrock Mantle client (#1616) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/fd195",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.91.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -161,14 +171,14 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.88.0",
-      "title_en": "v0.88.0",
-      "summary": "0.88.0 (2026-04-01) Journal complet: v0.87.0...v0.88.0 Fonctionnalites api: add structured stop_details to message responses () bedrock a",
-      "summary_en": "0.88.0 (2026-04-01)\nFull Changelog: v0.87.0...v0.88.0\nFeatures\n\napi: add structured stop_details to message responses (fd82d6b)\nbedrock a",
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.87.0",
+      "title_en": "sdk: v0.87.0",
+      "summary": "0.87.0 (2026-04-09) Journal complet: sdk-v0.86.1...sdk-v0.87.0 Fonctionnalites api: Add beta advisor tool ()",
+      "summary_en": "0.87.0 (2026-04-09)\nFull Changelog: sdk-v0.86.1...sdk-v0.87.0\nFeatures\n\napi: Add beta advisor tool (1e99a8d)\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.88.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.87.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -178,7 +188,7 @@
       "summary_en": "0.86.1 (2026-04-08)\nFull Changelog: sdk-v0.86.0...sdk-v0.86.1\nChores\n\nupdate @anthropic-ai/sdk dependency version (#870) (<a href=\"https://github.com/anthropics/anthropic-sdk-typescrip",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.86.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -188,7 +198,7 @@
       "summary_en": "0.86.0 (2026-04-08)\nFull Changelog: sdk-v0.85.0...sdk-v0.86.0\nFeatures\n\napi: add support for Claude Managed Agents (2ef732a)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.86.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -198,7 +208,7 @@
       "summary_en": "0.28.1 (2026-04-08)\nFull Changelog: bedrock-sdk-v0.28.0...bedrock-sdk-v0.28.1\nChores\n\nupdate @anthropic-ai/sdk dependency version (#870) (<a href=\"https://github.com/an",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.28.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -208,42 +218,32 @@
       "summary_en": "0.2.5 (2026-04-08)\nFull Changelog: aws-sdk-v0.2.4...aws-sdk-v0.2.5\nChores\n\ninternal: version bump (eb97e85)\n<strong",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.2.5",
-      "is_new": true
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.85.0",
-      "title_en": "sdk: v0.85.0",
-      "summary": "0.85.0 (2026-04-07) Journal complet: sdk-v0.84.0...sdk-v0.85.0 Fonctionnalites client: Create Bedrock Mantle client (<a href=\"https://github.com/anthropics/anthropic-s",
-      "summary_en": "0.85.0 (2026-04-07)\nFull Changelog: sdk-v0.84.0...sdk-v0.85.0\nFeatures\n\nclient: Create Bedrock Mantle client (#810) (<a href=\"https://github.com/anthropics/anthropic-s",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.85.0",
       "is_new": false
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.86.1",
-      "title_en": "v0.86.1",
-      "summary": "Publie le 2026-04-08",
-      "summary_en": "Publie le 2026-04-08",
+      "title": "v0.87.0",
+      "title_en": "v0.87.0",
+      "summary": "Publie le 2026-04-09",
+      "summary_en": "Publie le 2026-04-09",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
       "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.96",
-      "title_en": "v2.1.96",
-      "summary": "Publie le 2026-04-08",
-      "summary_en": "Publie le 2026-04-08",
+      "title": "v2.1.98",
+      "title_en": "v2.1.98",
+      "summary": "Publie le 2026-04-09",
+      "summary_en": "Publie le 2026-04-09",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.92.0",
-      "title_en": "v0.92.0",
+      "title": "v0.93.0",
+      "title_en": "v0.93.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
@@ -288,7 +288,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -328,7 +328,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/sydney-fourth-office-asia-pacific",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -349,56 +349,6 @@
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/where-stand-department-war",
       "is_new": false
-    },
-    {
-      "source": "Recherche",
-      "title": "Economic Rerecherche",
-      "title_en": "Economic Research",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/research/team/economic-research",
-      "is_new": true
-    },
-    {
-      "source": "Recherche",
-      "title": "Interpretability",
-      "title_en": "Interpretability",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/research/team/interpretability",
-      "is_new": false
-    },
-    {
-      "source": "Recherche",
-      "title": "Societal Impacts",
-      "title_en": "Societal Impacts",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/research/team/societal-impacts",
-      "is_new": false
-    },
-    {
-      "source": "Recherche",
-      "title": "Emotion concepts and their function in a large language modelInterpretabilityApr 2, 2026All modern l",
-      "title_en": "Emotion concepts and their function in a large language modelInterpretabilityApr 2, 2026All modern l",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/research/emotion-concepts-function",
-      "is_new": true
-    },
-    {
-      "source": "Recherche",
-      "title": "Economic RerechercheMar 5, 2026Labor market impacts of AI: A new measure and early evidenceIn this pape",
-      "title_en": "Economic ResearchMar 5, 2026Labor market impacts of AI: A new measure and early evidenceIn this pape",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/research/labor-market-impacts",
-      "is_new": true
     },
     {
       "source": "Statut",
@@ -458,21 +408,21 @@
       "summary_en": "An implementation of the ConnectRPC protocol for Rust",
       "changelog_items": [],
       "url": "https://github.com/anthropics/connect-rust",
-      "is_new": true
+      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.96",
-    "Claude Code npm": "v2.1.96",
-    "SDK Python": "v0.92.0",
-    "SDK Python PyPI": "v0.92.0",
-    "SDK TypeScript": "sdk: v0.85.0",
+    "Claude Code": "v2.1.98",
+    "Claude Code npm": "v2.1.98",
+    "SDK Python": "v0.93.0",
+    "SDK Python PyPI": "v0.93.0",
+    "SDK TypeScript": "aws-sdk: v0.2.5",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.90",
-    "GitHub SDK Python": "v0.88.0"
+    "GitHub Claude Code": "v2.1.92",
+    "GitHub SDK Python": "v0.89.0"
   }
 }
