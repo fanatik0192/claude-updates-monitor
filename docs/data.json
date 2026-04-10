@@ -1,6 +1,39 @@
 {
-  "last_check": "2026-04-09T20:01:00.433756",
+  "last_check": "2026-04-10T19:40:57.605100",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.101",
+      "title_en": "v2.1.101",
+      "summary": "Ce qui a change Ajout de /team-onboarding commande to generate a teammate ramp-up guide from your local Claude Code usage Ajout de OS CA certificate store trust by par defaut, so enterprise TLS proxies work without extra setup (set CLAUDE_CODE_CERT_STORE=bundled to use only bundled CAs) /ultraplan and other remote-session fonctionnalites now",
+      "summary_en": "What's changed\n\nAdded /team-onboarding command to generate a teammate ramp-up guide from your local Claude Code usage\nAdded OS CA certificate store trust by default, so enterprise TLS proxies work without extra setup (set CLAUDE_CODE_CERT_STORE=bundled to use only bundled CAs)\n/ultraplan and other remote-session features now",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "/team-onboarding command to generate a teammate ramp-up guide from your local Claude Code usage"
+        },
+        {
+          "type": "added",
+          "text": "OS CA certificate store trust by default, so enterprise TLS proxies work without extra setup (set CLAUDE_CODE_CERT_STORE=bundled to use only bundled CAs)"
+        },
+        {
+          "type": "changed",
+          "text": "Added /team-onboarding command to generate a teammate ramp-up guide from your local Claude Code usage"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.101",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.100",
+      "title_en": "v2.1.100",
+      "summary": "No content.",
+      "summary_en": "No content.",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.100",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.98",
@@ -22,7 +55,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.98",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -49,7 +82,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.97",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -71,56 +104,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.94",
-      "title_en": "v2.1.94",
-      "summary": "Ce qui a change Ajout de prise en charge de Amazon Bedrock powered by Mantle, set CLAUDE_CODE_USE_MANTLE=1 Modification de par defaut effort level from medium to high for API-key, Bedrock/Vertex/Foundry, Team, and Enterprise utilisateurs (control this with /effort) Ajout de compact Slacked #channel header with a cliquable channel link for Slack MCP send-m",
-      "summary_en": "What's changed\n\nAdded support for Amazon Bedrock powered by Mantle, set CLAUDE_CODE_USE_MANTLE=1\nChanged default effort level from medium to high for API-key, Bedrock/Vertex/Foundry, Team, and Enterprise users (control this with /effort)\nAdded compact Slacked #channel header with a clickable channel link for Slack MCP send-m",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "support for Amazon Bedrock powered by Mantle, set CLAUDE_CODE_USE_MANTLE=1"
-        },
-        {
-          "type": "added",
-          "text": "compact Slacked #channel header with a clickable channel link for Slack MCP send-m"
-        },
-        {
-          "type": "changed",
-          "text": "Added support for Amazon Bedrock powered by Mantle, set CLAUDE_CODE_USE_MANTLE=1"
-        },
-        {
-          "type": "changed",
-          "text": "default effort level from medium to high for API-key, Bedrock/Vertex/Foundry, Team, and Enterprise users (control this with /effort)"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.94",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.92",
-      "title_en": "v2.1.92",
-      "summary": "Ce qui a change Ajout de forceRemoteParametresActualiser policy parametre: when set, the CLI blocks startup until remote managed parametres are freshly fetched, and exits if the fetch fails (fail-closed) Ajout de interactive Bedrock setup wizard accessible from the login screen when selecting \"3rd-party platform\" — guides you through AWS authentication, region configuration",
-      "summary_en": "What's changed\n\nAdded forceRemoteSettingsRefresh policy setting: when set, the CLI blocks startup until remote managed settings are freshly fetched, and exits if the fetch fails (fail-closed)\nAdded interactive Bedrock setup wizard accessible from the login screen when selecting \"3rd-party platform\" — guides you through AWS authentication, region configuration",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "forceRemoteSettingsRefresh policy setting: when set, the CLI blocks startup until remote managed settings are freshly fetched, and exits if the fetch fails (fail-closed)"
-        },
-        {
-          "type": "added",
-          "text": "interactive Bedrock setup wizard accessible from the login screen when selecting \"3rd-party platform\" — guides you through AWS authentication, region configuration"
-        },
-        {
-          "type": "changed",
-          "text": "Added forceRemoteSettingsRefresh policy setting: when set, the CLI blocks startup until remote managed settings are freshly fetched, and exits if the fetch fails (fail-closed)"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.92",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.93.0",
       "title_en": "v0.93.0",
@@ -128,7 +111,7 @@
       "summary_en": "0.93.0 (2026-04-09)\nFull Changelog: v0.92.0...v0.93.0\nFeatures\n\napi: Add beta advisor tool (4297dca)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.93.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -148,7 +131,7 @@
       "summary_en": "0.91.0 (2026-04-07)\nFull Changelog: v0.90.0...v0.91.0\nFeatures\n\nclient: Create Bedrock Mantle client (#1616) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/fd195",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.91.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -178,7 +161,7 @@
       "summary_en": "0.87.0 (2026-04-09)\nFull Changelog: sdk-v0.86.1...sdk-v0.87.0\nFeatures\n\napi: Add beta advisor tool (1e99a8d)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.87.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -228,14 +211,14 @@
       "summary_en": "Publie le 2026-04-09",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.98",
-      "title_en": "v2.1.98",
-      "summary": "Publie le 2026-04-09",
-      "summary_en": "Publie le 2026-04-09",
+      "title": "v2.1.101",
+      "title_en": "v2.1.101",
+      "summary": "Publie le 2026-04-10",
+      "summary_en": "Publie le 2026-04-10",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -248,7 +231,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -288,7 +271,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -348,6 +331,56 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/where-stand-department-war",
+      "is_new": false
+    },
+    {
+      "source": "Recherche",
+      "title": "Economic Rerecherche",
+      "title_en": "Economic Research",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/research/team/economic-research",
+      "is_new": false
+    },
+    {
+      "source": "Recherche",
+      "title": "Interpretability",
+      "title_en": "Interpretability",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/research/team/interpretability",
+      "is_new": false
+    },
+    {
+      "source": "Recherche",
+      "title": "Societal Impacts",
+      "title_en": "Societal Impacts",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/research/team/societal-impacts",
+      "is_new": false
+    },
+    {
+      "source": "Recherche",
+      "title": "Emotion concepts and their function in a large language modelInterpretabilityApr 2, 2026All modern l",
+      "title_en": "Emotion concepts and their function in a large language modelInterpretabilityApr 2, 2026All modern l",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/research/emotion-concepts-function",
+      "is_new": false
+    },
+    {
+      "source": "Recherche",
+      "title": "Economic RerechercheMar 5, 2026Labor market impacts of AI: A new measure and early evidenceIn this pape",
+      "title_en": "Economic ResearchMar 5, 2026Labor market impacts of AI: A new measure and early evidenceIn this pape",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/research/labor-market-impacts",
       "is_new": false
     },
     {
@@ -413,8 +446,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.98",
-    "Claude Code npm": "v2.1.98",
+    "Claude Code": "v2.1.101",
+    "Claude Code npm": "v2.1.101",
     "SDK Python": "v0.93.0",
     "SDK Python PyPI": "v0.93.0",
     "SDK TypeScript": "aws-sdk: v0.2.5",
@@ -422,7 +455,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.92",
+    "GitHub Claude Code": "v2.1.96",
     "GitHub SDK Python": "v0.89.0"
   }
 }
