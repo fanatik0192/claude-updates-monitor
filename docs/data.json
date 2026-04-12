@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-04-11T19:32:22.664625",
+  "last_check": "2026-04-12T19:36:48.430918",
   "updates": [
     {
       "source": "Claude Code",
@@ -22,7 +22,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.101",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -32,7 +32,7 @@
       "summary_en": "No content.",
       "changelog_items": [],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.100",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -111,7 +111,7 @@
       "summary_en": "0.94.0 (2026-04-10)\nFull Changelog: v0.93.0...v0.94.0\nFeatures\n\nvertex eu region (#1658) (",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.94.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -161,7 +161,7 @@
       "summary_en": "0.16.0 (2026-04-10)\nFull Changelog: vertex-sdk-v0.15.0...vertex-sdk-v0.16.0\nFeatures\n\nvertex eu region (#882) (<a href=\"https://github.com/anthropics/anthropic-sdk-typesc",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.16.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -171,7 +171,7 @@
       "summary_en": "0.88.0 (2026-04-10)\nFull Changelog: sdk-v0.87.0...sdk-v0.88.0\nFeatures\n\nvertex eu region (#882) (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/193385760676b1c9",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.88.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -211,14 +211,14 @@
       "summary_en": "Publie le 2026-04-10",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.101",
-      "title_en": "v2.1.101",
-      "summary": "Publie le 2026-04-10",
-      "summary_en": "Publie le 2026-04-10",
+      "title": "v2.1.104",
+      "title_en": "v2.1.104",
+      "summary": "Publie le 2026-04-12",
+      "summary_en": "Publie le 2026-04-12",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -231,7 +231,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -446,8 +446,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.101",
-    "Claude Code npm": "v2.1.101",
+    "Claude Code": "v2.1.104",
+    "Claude Code npm": "v2.1.104",
     "SDK Python": "v0.94.0",
     "SDK Python PyPI": "v0.94.0",
     "SDK TypeScript": "sdk: v0.86.0",
