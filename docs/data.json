@@ -1,6 +1,21 @@
 {
-  "last_check": "2026-04-14T20:02:50.244650",
+  "last_check": "2026-04-15T20:00:40.500819",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.109",
+      "title_en": "v2.1.109",
+      "summary": "Ce qui a change Amelioration de the extended-thinking indicator with a rotating progress hint",
+      "summary_en": "What's changed\n\nImproved the extended-thinking indicator with a rotating progress hint\n",
+      "changelog_items": [
+        {
+          "type": "changed",
+          "text": "Improved the extended-thinking indicator with a rotating progress hint"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.109",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.108",
@@ -22,7 +37,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.108",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -37,7 +52,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.107",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -64,7 +79,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.105",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -77,29 +92,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.101",
-      "title_en": "v2.1.101",
-      "summary": "Ce qui a change Ajout de /team-onboarding commande to generate a teammate ramp-up guide from your local Claude Code usage Ajout de OS CA certificate store trust by par defaut, so enterprise TLS proxies work without extra setup (set CLAUDE_CODE_CERT_STORE=bundled to use only bundled CAs) /ultraplan and other remote-session fonctionnalites now",
-      "summary_en": "What's changed\n\nAdded /team-onboarding command to generate a teammate ramp-up guide from your local Claude Code usage\nAdded OS CA certificate store trust by default, so enterprise TLS proxies work without extra setup (set CLAUDE_CODE_CERT_STORE=bundled to use only bundled CAs)\n/ultraplan and other remote-session features now",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "/team-onboarding command to generate a teammate ramp-up guide from your local Claude Code usage"
-        },
-        {
-          "type": "added",
-          "text": "OS CA certificate store trust by default, so enterprise TLS proxies work without extra setup (set CLAUDE_CODE_CERT_STORE=bundled to use only bundled CAs)"
-        },
-        {
-          "type": "changed",
-          "text": "Added /team-onboarding command to generate a teammate ramp-up guide from your local Claude Code usage"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.101",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.95.0",
       "title_en": "v0.95.0",
@@ -107,7 +99,7 @@
       "summary_en": "0.95.0 (2026-04-14)\nFull Changelog: v0.94.1...v0.95.0\nFeatures\n\napi: mark Sonnet and Opus 4 as deprecated (0c1e773)\nbedrock:</str",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.95.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -157,7 +149,7 @@
       "summary_en": "0.89.0 (2026-04-14)\nFull Changelog: sdk-v0.88.0...sdk-v0.89.0\nFeatures\n\napi: manual updates (57c2a11)\napi:</stron",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.89.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -207,14 +199,14 @@
       "summary_en": "Publie le 2026-04-14",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.108",
-      "title_en": "v2.1.108",
-      "summary": "Publie le 2026-04-14",
-      "summary_en": "Publie le 2026-04-14",
+      "title": "v2.1.109",
+      "title_en": "v2.1.109",
+      "summary": "Publie le 2026-04-15",
+      "summary_en": "Publie le 2026-04-15",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -227,7 +219,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -267,7 +259,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/narasimhan-board",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -407,7 +399,7 @@
       "summary_en": "Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTofu/Terraform to scale.",
       "changelog_items": [],
       "url": "https://github.com/anthropics/terragrunt",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Nouveau Depot",
@@ -442,8 +434,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.108",
-    "Claude Code npm": "v2.1.108",
+    "Claude Code": "v2.1.109",
+    "Claude Code npm": "v2.1.109",
     "SDK Python": "v0.95.0",
     "SDK Python PyPI": "v0.95.0",
     "SDK TypeScript": "sdk: v0.86.1",
@@ -451,7 +443,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.101",
+    "GitHub Claude Code": "v2.1.104",
     "GitHub SDK Python": "v0.92.0"
   }
 }
