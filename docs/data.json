@@ -1,6 +1,71 @@
 {
-  "last_check": "2026-04-15T20:00:40.500819",
+  "last_check": "2026-04-16T19:58:09.518818",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.112",
+      "title_en": "v2.1.112",
+      "summary": "Ce qui a change Correction de \"claude-opus-4-7 is temporaireorarily unavailable\" for auto mode",
+      "summary_en": "What's changed\n\nFixed \"claude-opus-4-7 is temporarily unavailable\" for auto mode\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "\"claude-opus-4-7 is temporarily unavailable\" for auto mode"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed \"claude-opus-4-7 is temporarily unavailable\" for auto mode"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.112",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.111",
+      "title_en": "v2.1.111",
+      "summary": "Ce qui a change Claude Opus 4.7 xhigh is now available! Use /effort to tune speed vs. intelligence Auto mode is now available for Max subscribers when using Opus 4.7 Ajout de xhigh effort level for Opus 4.7, sitting between high and max. Available via /effort, --effort, and the model picker; other mode",
+      "summary_en": "What's changed\n\nClaude Opus 4.7 xhigh is now available! Use /effort to tune speed vs. intelligence\nAuto mode is now available for Max subscribers when using Opus 4.7\nAdded xhigh effort level for Opus 4.7, sitting between high and max. Available via /effort, --effort, and the model picker; other mode",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "xhigh effort level for Opus 4.7, sitting between high and max. Available via /effort, --effort, and the model picker; other mode"
+        },
+        {
+          "type": "changed",
+          "text": "Claude Opus 4.7 xhigh is now available! Use /effort to tune speed vs. intelligence"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.110",
+      "title_en": "v2.1.110",
+      "summary": "Ce qui a change Ajout de /tui commande and tui parametre — run /tui fullscreen to switch to flicker-free rendering in the same conversation Modification de Ctrl+O to basculer between normal and verbose transcript only; focus view is now basculerd separately with the new /focus commande Ajout de push notification tool — C",
+      "summary_en": "What's changed\n\nAdded /tui command and tui setting — run /tui fullscreen to switch to flicker-free rendering in the same conversation\nChanged Ctrl+O to toggle between normal and verbose transcript only; focus view is now toggled separately with the new /focus command\nAdded push notification tool — C",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "/tui command and tui setting — run /tui fullscreen to switch to flicker-free rendering in the same conversation"
+        },
+        {
+          "type": "added",
+          "text": "push notification tool — C"
+        },
+        {
+          "type": "changed",
+          "text": "Added /tui command and tui setting — run /tui fullscreen to switch to flicker-free rendering in the same conversation"
+        },
+        {
+          "type": "changed",
+          "text": "Ctrl+O to toggle between normal and verbose transcript only; focus view is now toggled separately with the new /focus command"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.110",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.109",
@@ -14,7 +79,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.109",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -40,56 +105,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.107",
-      "title_en": "v2.1.107",
-      "summary": "Ce qui a change Afficher thinking hints sooner during long operations",
-      "summary_en": "What's changed\n\nShow thinking hints sooner during long operations\n",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Show thinking hints sooner during long operations"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.107",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.105",
-      "title_en": "v2.1.105",
-      "summary": "Ce qui a change Ajout de path parameter to the EnterWorktree tool to switch into an existing worktree of the current repository Ajout de PreCompact hook prise en charge: hooks can now block compaction by exiting with code 2 or returning {\"decision\":\"block\"} Ajout de arriere-plan monitor prise en charge de plugins via a top-level monitors",
-      "summary_en": "What's changed\n\nAdded path parameter to the EnterWorktree tool to switch into an existing worktree of the current repository\nAdded PreCompact hook support: hooks can now block compaction by exiting with code 2 or returning {\"decision\":\"block\"}\nAdded background monitor support for plugins via a top-level monitors",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "path parameter to the EnterWorktree tool to switch into an existing worktree of the current repository"
-        },
-        {
-          "type": "added",
-          "text": "PreCompact hook support: hooks can now block compaction by exiting with code 2 or returning {\"decision\":\"block\"}"
-        },
-        {
-          "type": "added",
-          "text": "background monitor support for plugins via a top-level monitors"
-        },
-        {
-          "type": "changed",
-          "text": "Added path parameter to the EnterWorktree tool to switch into an existing worktree of the current repository"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.105",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.104",
-      "title_en": "v2.1.104",
-      "summary": "No content.",
-      "summary_en": "No content.",
+      "source": "SDK Python",
+      "title": "v0.96.0",
+      "title_en": "v0.96.0",
+      "summary": "0.96.0 (2026-04-16) Journal complet: v0.95.0...v0.96.0 Fonctionnalites api: add claude-opus-4-7, jeton budgets and utilisateur_profichiers () <h3",
+      "summary_en": "0.96.0 (2026-04-16)\nFull Changelog: v0.95.0...v0.96.0\nFeatures\n\napi: add claude-opus-4-7, token budgets and user_profiles (0aa2a0d)\n\n<h3",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.104",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.96.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -132,14 +155,14 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.92.0",
-      "title_en": "v0.92.0",
-      "summary": "0.92.0 (2026-04-08) Journal complet: v0.91.0...v0.92.0 Fonctionnalites api: add prise en charge de Claude Managed Agents ()",
-      "summary_en": "0.92.0 (2026-04-08)\nFull Changelog: v0.91.0...v0.92.0\nFeatures\n\napi: add support for Claude Managed Agents (5b879a7)\n",
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.90.0",
+      "title_en": "sdk: v0.90.0",
+      "summary": "0.90.0 (2026-04-16) Journal complet: sdk-v0.89.0...sdk-v0.90.0 Fonctionnalites api: add claude-opus-4-7, jeton budgets and utilisateur_profichiers (b26",
+      "summary_en": "0.90.0 (2026-04-16)\nFull Changelog: sdk-v0.89.0...sdk-v0.90.0\nFeatures\n\napi: add claude-opus-4-7, token budgets and user_profiles (b26",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.92.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.90.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -159,7 +182,7 @@
       "summary_en": "0.16.0 (2026-04-10)\nFull Changelog: vertex-sdk-v0.15.0...vertex-sdk-v0.16.0\nFeatures\n\nvertex eu region (#882) (<a href=\"https://github.com/anthropics/anthropic-sdk-typesc",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.16.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -182,44 +205,44 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.86.1",
-      "title_en": "sdk: v0.86.1",
-      "summary": "0.86.1 (2026-04-08) Journal complet: sdk-v0.86.0...sdk-v0.86.1 Maintenance update @anthropic-ai/sdk dependency version (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscrip",
-      "summary_en": "0.86.1 (2026-04-08)\nFull Changelog: sdk-v0.86.0...sdk-v0.86.1\nChores\n\nupdate @anthropic-ai/sdk dependency version (#870) (<a href=\"https://github.com/anthropics/anthropic-sdk-typescrip",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.86.1",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.89.0",
-      "title_en": "v0.89.0",
-      "summary": "Publie le 2026-04-14",
-      "summary_en": "Publie le 2026-04-14",
+      "title": "v0.90.0",
+      "title_en": "v0.90.0",
+      "summary": "Publie le 2026-04-16",
+      "summary_en": "Publie le 2026-04-16",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.109",
-      "title_en": "v2.1.109",
-      "summary": "Publie le 2026-04-15",
-      "summary_en": "Publie le 2026-04-15",
+      "title": "v2.1.112",
+      "title_en": "v2.1.112",
+      "summary": "Publie le 2026-04-16",
+      "summary_en": "Publie le 2026-04-16",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.95.0",
-      "title_en": "v0.95.0",
+      "title": "v0.96.0",
+      "title_en": "v0.96.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "Introducing Claude Opus 4.7ProductApr 16, 2026Our derniere Opus model brings stronger performance acro",
+      "title_en": "Introducing Claude Opus 4.7ProductApr 16, 2026Our latest Opus model brings stronger performance acro",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/claude-opus-4-7",
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -229,16 +252,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "AnnouncementsFeb 5, 2026Introducing Claude Opus 4.6We’re upgrading our smartest model. Across agenti",
-      "title_en": "AnnouncementsFeb 5, 2026Introducing Claude Opus 4.6We’re upgrading our smartest model. Across agenti",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-opus-4-6",
       "is_new": false
     },
     {
@@ -399,7 +412,7 @@
       "summary_en": "Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTofu/Terraform to scale.",
       "changelog_items": [],
       "url": "https://github.com/anthropics/terragrunt",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -434,16 +447,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.109",
-    "Claude Code npm": "v2.1.109",
-    "SDK Python": "v0.95.0",
-    "SDK Python PyPI": "v0.95.0",
-    "SDK TypeScript": "sdk: v0.86.1",
+    "Claude Code": "v2.1.112",
+    "Claude Code npm": "v2.1.112",
+    "SDK Python": "v0.96.0",
+    "SDK Python PyPI": "v0.96.0",
+    "SDK TypeScript": "sdk: v0.87.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.104",
-    "GitHub SDK Python": "v0.92.0"
+    "GitHub Claude Code": "v2.1.108",
+    "GitHub SDK Python": "v0.93.0"
   }
 }
