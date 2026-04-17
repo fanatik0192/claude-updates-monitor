@@ -1,6 +1,25 @@
 {
-  "last_check": "2026-04-16T19:58:09.518818",
+  "last_check": "2026-04-17T19:57:02.994962",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.113",
+      "title_en": "v2.1.113",
+      "summary": "Ce qui a change Modification de the CLI to spawn a native Claude Code binary (via a per-platform optional dependency) instead of bundled JavaScript Ajout de sandbox.network.deniedDomains parametre to block specific domains even when a broader allowedDomains wildcard would otherwise permit them Fullscreen mode: Shift+↑/↓ now scrolls the viewport when",
+      "summary_en": "What's changed\n\nChanged the CLI to spawn a native Claude Code binary (via a per-platform optional dependency) instead of bundled JavaScript\nAdded sandbox.network.deniedDomains setting to block specific domains even when a broader allowedDomains wildcard would otherwise permit them\nFullscreen mode: Shift+↑/↓ now scrolls the viewport when ",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "sandbox.network.deniedDomains setting to block specific domains even when a broader allowedDomains wildcard would otherwise permit them"
+        },
+        {
+          "type": "changed",
+          "text": "Changed the CLI to spawn a native Claude Code binary (via a per-platform optional dependency) instead of bundled JavaScript"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.113",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.112",
@@ -18,7 +37,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.112",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -37,7 +56,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.111",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -64,7 +83,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.110",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -82,29 +101,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.108",
-      "title_en": "v2.1.108",
-      "summary": "Ce qui a change Ajout de ENABLE_PROMPT_CACHING_1H env var to opt into 1-hour prompt cache TTL on API key, Bedrock, Vertex, and Foundry (ENABLE_PROMPT_CACHING_1H_BEDROCK is obsolete but still honored), and FORCE_PROMPT_CACHING_5M to force 5-minute TTL Ajout de recap fonctionnalite to provide context when returning to a session, configurable in /",
-      "summary_en": "What's changed\n\nAdded ENABLE_PROMPT_CACHING_1H env var to opt into 1-hour prompt cache TTL on API key, Bedrock, Vertex, and Foundry (ENABLE_PROMPT_CACHING_1H_BEDROCK is deprecated but still honored), and FORCE_PROMPT_CACHING_5M to force 5-minute TTL\nAdded recap feature to provide context when returning to a session, configurable in /",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "ENABLE_PROMPT_CACHING_1H env var to opt into 1-hour prompt cache TTL on API key, Bedrock, Vertex, and Foundry (ENABLE_PROMPT_CACHING_1H_BEDROCK is deprecated but still honored), and FORCE_PROMPT_CACHI"
-        },
-        {
-          "type": "added",
-          "text": "recap feature to provide context when returning to a session, configurable in /"
-        },
-        {
-          "type": "changed",
-          "text": "Added ENABLE_PROMPT_CACHING_1H env var to opt into 1-hour prompt cache TTL on API key, Bedrock, Vertex, and Foundry (ENABLE_PROMPT_CACHING_1H_BEDROCK is deprecated but still honored), and FORCE_PROMPT"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.108",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.96.0",
       "title_en": "v0.96.0",
@@ -112,7 +108,7 @@
       "summary_en": "0.96.0 (2026-04-16)\nFull Changelog: v0.95.0...v0.96.0\nFeatures\n\napi: add claude-opus-4-7, token budgets and user_profiles (0aa2a0d)\n\n<h3",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.96.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -162,7 +158,7 @@
       "summary_en": "0.90.0 (2026-04-16)\nFull Changelog: sdk-v0.89.0...sdk-v0.90.0\nFeatures\n\napi: add claude-opus-4-7, token budgets and user_profiles (b26",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.90.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -182,7 +178,7 @@
       "summary_en": "0.16.0 (2026-04-10)\nFull Changelog: vertex-sdk-v0.15.0...vertex-sdk-v0.16.0\nFeatures\n\nvertex eu region (#882) (<a href=\"https://github.com/anthropics/anthropic-sdk-typesc",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.16.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -212,14 +208,14 @@
       "summary_en": "Publie le 2026-04-16",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.112",
-      "title_en": "v2.1.112",
-      "summary": "Publie le 2026-04-16",
-      "summary_en": "Publie le 2026-04-16",
+      "title": "v2.1.113",
+      "title_en": "v2.1.113",
+      "summary": "Publie le 2026-04-17",
+      "summary_en": "Publie le 2026-04-17",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -232,7 +228,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -242,17 +238,17 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-opus-4-7",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
-      "title": "ProductFeb 17, 2026Introducing Claude Sonnet 4.6Sonnet 4.6 delivers frontier performance across codi",
-      "title_en": "ProductFeb 17, 2026Introducing Claude Sonnet 4.6Sonnet 4.6 delivers frontier performance across codi",
+      "title": "ProductApr 17, 2026Introducing Claude Design by Anthropic LabsToday, we’re launching Claude Design,",
+      "title_en": "ProductApr 17, 2026Introducing Claude Design by Anthropic LabsToday, we’re launching Claude Design, ",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
-      "is_new": false
+      "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -396,6 +392,16 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "claude-desktop-buddy",
+      "title_en": "claude-desktop-buddy",
+      "summary": "Reference and an example for the Bluetooth API for makers in Claude Cowork & Claude Code Desktop",
+      "summary_en": "Reference and an example for the Bluetooth API for makers in Claude Cowork & Claude Code Desktop",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/claude-desktop-buddy",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "claude-plugins-community",
       "title_en": "claude-plugins-community",
       "summary": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-repertoire-submission.",
@@ -432,23 +438,13 @@
       "summary_en": "Rust implementation of protobuf with editions support, JSON serialization, and zero-copy views",
       "changelog_items": [],
       "url": "https://github.com/anthropics/buffa",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "connect-rust",
-      "title_en": "connect-rust",
-      "summary": "An implementation of the ConnectRPC protocol for Rust",
-      "summary_en": "An implementation of the ConnectRPC protocol for Rust",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/connect-rust",
-      "is_new": false
+      "is_new": true
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.112",
-    "Claude Code npm": "v2.1.112",
+    "Claude Code": "v2.1.113",
+    "Claude Code npm": "v2.1.113",
     "SDK Python": "v0.96.0",
     "SDK Python PyPI": "v0.96.0",
     "SDK TypeScript": "sdk: v0.87.0",
@@ -456,7 +452,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.108",
+    "GitHub Claude Code": "v2.1.109",
     "GitHub SDK Python": "v0.93.0"
   }
 }
