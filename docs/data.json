@@ -1,6 +1,25 @@
 {
-  "last_check": "2026-04-17T19:57:02.994962",
+  "last_check": "2026-04-18T19:38:37.625469",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.114",
+      "title_en": "v2.1.114",
+      "summary": "Ce qui a change Correction de a crash in the permission dialog when an agent teams teammate requested tool permission",
+      "summary_en": "What's changed\n\nFixed a crash in the permission dialog when an agent teams teammate requested tool permission\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "a crash in the permission dialog when an agent teams teammate requested tool permission"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed a crash in the permission dialog when an agent teams teammate requested tool permission"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.114",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.113",
@@ -18,7 +37,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.113",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -83,21 +102,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.110",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.109",
-      "title_en": "v2.1.109",
-      "summary": "Ce qui a change Amelioration de the extended-thinking indicator with a rotating progress hint",
-      "summary_en": "What's changed\n\nImproved the extended-thinking indicator with a rotating progress hint\n",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Improved the extended-thinking indicator with a rotating progress hint"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.109",
       "is_new": false
     },
     {
@@ -212,8 +216,8 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.113",
-      "title_en": "v2.1.113",
+      "title": "v2.1.114",
+      "title_en": "v2.1.114",
       "summary": "Publie le 2026-04-17",
       "summary_en": "Publie le 2026-04-17",
       "changelog_items": [],
@@ -248,7 +252,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -398,7 +402,7 @@
       "summary_en": "Reference and an example for the Bluetooth API for makers in Claude Cowork & Claude Code Desktop",
       "changelog_items": [],
       "url": "https://github.com/anthropics/claude-desktop-buddy",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -438,13 +442,13 @@
       "summary_en": "Rust implementation of protobuf with editions support, JSON serialization, and zero-copy views",
       "changelog_items": [],
       "url": "https://github.com/anthropics/buffa",
-      "is_new": true
+      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.113",
-    "Claude Code npm": "v2.1.113",
+    "Claude Code": "v2.1.114",
+    "Claude Code npm": "v2.1.114",
     "SDK Python": "v0.96.0",
     "SDK Python PyPI": "v0.96.0",
     "SDK TypeScript": "sdk: v0.87.0",
@@ -452,7 +456,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.109",
+    "GitHub Claude Code": "v2.1.110",
     "GitHub SDK Python": "v0.93.0"
   }
 }
