@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-04-18T19:38:37.625469",
+  "last_check": "2026-04-19T19:38:47.401243",
   "updates": [
     {
       "source": "Claude Code",
@@ -18,7 +18,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.114",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -222,7 +222,7 @@
       "summary_en": "Publie le 2026-04-17",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
