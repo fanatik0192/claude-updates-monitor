@@ -1,6 +1,25 @@
 {
-  "last_check": "2026-04-22T20:02:42.177422",
+  "last_check": "2026-04-23T20:04:09.590157",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.118",
+      "title_en": "v2.1.118",
+      "summary": "Ce qui a change Ajout de vim visual mode (v) and visual-line mode (V) with selection, operators, and visual feedback Merged /cost and /stats into /usage — both remain as typing raccourcis that ouvrir the relevant tab Create and switch between nomd personnalise themes from /theme, or hand-edit JSON",
+      "summary_en": "What's changed\n\nAdded vim visual mode (v) and visual-line mode (V) with selection, operators, and visual feedback\nMerged /cost and /stats into /usage — both remain as typing shortcuts that open the relevant tab\nCreate and switch between named custom themes from /theme, or hand-edit JSON",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "vim visual mode (v) and visual-line mode (V) with selection, operators, and visual feedback"
+        },
+        {
+          "type": "changed",
+          "text": "Added vim visual mode (v) and visual-line mode (V) with selection, operators, and visual feedback"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.118",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.117",
@@ -14,7 +33,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.117",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -67,25 +86,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.113",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.112",
-      "title_en": "v2.1.112",
-      "summary": "Ce qui a change Correction de \"claude-opus-4-7 is temporaireorarily unavailable\" for auto mode",
-      "summary_en": "What's changed\n\nFixed \"claude-opus-4-7 is temporarily unavailable\" for auto mode\n",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "\"claude-opus-4-7 is temporarily unavailable\" for auto mode"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed \"claude-opus-4-7 is temporarily unavailable\" for auto mode"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.112",
       "is_new": false
     },
     {
@@ -200,10 +200,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.117",
-      "title_en": "v2.1.117",
-      "summary": "Publie le 2026-04-21",
-      "summary_en": "Publie le 2026-04-21",
+      "title": "v2.1.118",
+      "title_en": "v2.1.118",
+      "summary": "Publie le 2026-04-22",
+      "summary_en": "Publie le 2026-04-22",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -296,7 +296,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/the-anthropic-institute",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -426,13 +426,13 @@
       "summary_en": "Rust implementation of protobuf with editions support, JSON serialization, and zero-copy views",
       "changelog_items": [],
       "url": "https://github.com/anthropics/buffa",
-      "is_new": false
+      "is_new": true
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.117",
-    "Claude Code npm": "v2.1.117",
+    "Claude Code": "v2.1.118",
+    "Claude Code npm": "v2.1.118",
     "SDK Python": "v0.96.0",
     "SDK Python PyPI": "v0.96.0",
     "SDK TypeScript": "sdk: v0.87.0",
@@ -440,7 +440,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.112",
+    "GitHub Claude Code": "v2.1.113",
     "GitHub SDK Python": "v0.93.0"
   }
 }
