@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-04-23T20:04:09.590157",
+  "last_check": "2026-04-24T19:49:06.763688",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.119",
+      "title_en": "v2.1.119",
+      "summary": "Ce qui a change /config parametres (theme, editor mode, verbose, etc.) now persist to ~/.claude/parametres.json and participate in project/local/policy override precedence Ajout de prUrlTemporairelate parametre to point the footer PR badge at a personnalise code-review URL instead of github.com Ajout de CLAUDE_CODE_HIDE_CWD environment",
+      "summary_en": "What's changed\n\n/config settings (theme, editor mode, verbose, etc.) now persist to ~/.claude/settings.json and participate in project/local/policy override precedence\nAdded prUrlTemplate setting to point the footer PR badge at a custom code-review URL instead of github.com\nAdded CLAUDE_CODE_HIDE_CWD environment",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "prUrlTemplate setting to point the footer PR badge at a custom code-review URL instead of github.com"
+        },
+        {
+          "type": "added",
+          "text": "CLAUDE_CODE_HIDE_CWD environment"
+        },
+        {
+          "type": "changed",
+          "text": "/config settings (theme, editor mode, verbose, etc.) now persist to ~/.claude/settings.json and participate in project/local/policy override precedence"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.119",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.118",
@@ -18,7 +41,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.118",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -70,23 +93,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.113",
-      "title_en": "v2.1.113",
-      "summary": "Ce qui a change Modification de the CLI to spawn a native Claude Code binary (via a per-platform optional dependency) instead of bundled JavaScript Ajout de sandbox.network.deniedDomains parametre to block specific domains even when a broader allowedDomains wildcard would otherwise permit them Fullscreen mode: Shift+↑/↓ now scrolls the viewport when",
-      "summary_en": "What's changed\n\nChanged the CLI to spawn a native Claude Code binary (via a per-platform optional dependency) instead of bundled JavaScript\nAdded sandbox.network.deniedDomains setting to block specific domains even when a broader allowedDomains wildcard would otherwise permit them\nFullscreen mode: Shift+↑/↓ now scrolls the viewport when ",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "sandbox.network.deniedDomains setting to block specific domains even when a broader allowedDomains wildcard would otherwise permit them"
-        },
-        {
-          "type": "changed",
-          "text": "Changed the CLI to spawn a native Claude Code binary (via a per-platform optional dependency) instead of bundled JavaScript"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.113",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.97.0",
+      "title_en": "v0.97.0",
+      "summary": "0.97.0 (2026-04-23) Journal complet: v0.96.0...v0.97.0 Fonctionnalites api: CMA Memory public beta () Corrections de bugs <stro",
+      "summary_en": "0.97.0 (2026-04-23)\nFull Changelog: v0.96.0...v0.97.0\nFeatures\n\napi: CMA Memory public beta (fc30ebe)\n\nBug Fixes\n\n<stro",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.97.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -129,14 +143,24 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.93.0",
-      "title_en": "v0.93.0",
-      "summary": "0.93.0 (2026-04-09) Journal complet: v0.92.0...v0.93.0 Fonctionnalites api: Add beta advisor tool ()",
-      "summary_en": "0.93.0 (2026-04-09)\nFull Changelog: v0.92.0...v0.93.0\nFeatures\n\napi: Add beta advisor tool (4297dca)\n",
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.91.0",
+      "title_en": "sdk: v0.91.0",
+      "summary": "0.91.0 (2026-04-23) Journal complet: sdk-v0.90.0...sdk-v0.91.0 Fonctionnalites api: CMA Memory public beta () bed",
+      "summary_en": "0.91.0 (2026-04-23)\nFull Changelog: sdk-v0.90.0...sdk-v0.91.0\nFeatures\n\napi: CMA Memory public beta (ddf732f)\nbed",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.93.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.91.0",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "bedrock-sdk: v0.29.0",
+      "title_en": "bedrock-sdk: v0.29.0",
+      "summary": "0.29.0 (2026-04-23) Journal complet: bedrock-sdk-v0.28.1...bedrock-sdk-v0.29.0 Fonctionnalites bedrock: use auth header for mantle client (<a href=\"htt",
+      "summary_en": "0.29.0 (2026-04-23)\nFull Changelog: bedrock-sdk-v0.28.1...bedrock-sdk-v0.29.0\nFeatures\n\nbedrock: use auth header for mantle client (#866) (<a href=\"htt",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.29.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -169,54 +193,34 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.88.0",
-      "title_en": "sdk: v0.88.0",
-      "summary": "0.88.0 (2026-04-10) Journal complet: sdk-v0.87.0...sdk-v0.88.0 Fonctionnalites vertex eu region (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
-      "summary_en": "0.88.0 (2026-04-10)\nFull Changelog: sdk-v0.87.0...sdk-v0.88.0\nFeatures\n\nvertex eu region (#882) (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/193385760676b1c9",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.88.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.87.0",
-      "title_en": "sdk: v0.87.0",
-      "summary": "0.87.0 (2026-04-09) Journal complet: sdk-v0.86.1...sdk-v0.87.0 Fonctionnalites api: Add beta advisor tool ()",
-      "summary_en": "0.87.0 (2026-04-09)\nFull Changelog: sdk-v0.86.1...sdk-v0.87.0\nFeatures\n\napi: Add beta advisor tool (1e99a8d)\n",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.87.0",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.90.0",
-      "title_en": "v0.90.0",
-      "summary": "Publie le 2026-04-16",
-      "summary_en": "Publie le 2026-04-16",
+      "title": "v0.91.0",
+      "title_en": "v0.91.0",
+      "summary": "Publie le 2026-04-23",
+      "summary_en": "Publie le 2026-04-23",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.118",
-      "title_en": "v2.1.118",
-      "summary": "Publie le 2026-04-22",
-      "summary_en": "Publie le 2026-04-22",
+      "title": "v2.1.119",
+      "title_en": "v2.1.119",
+      "summary": "Publie le 2026-04-23",
+      "summary_en": "Publie le 2026-04-23",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.96.0",
-      "title_en": "v0.96.0",
+      "title": "v0.97.0",
+      "title_en": "v0.97.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -247,6 +251,36 @@
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
       "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Apr 24, 2026AnnouncementsAn update on our election safeguards",
+      "title_en": "Apr 24, 2026AnnouncementsAn update on our election safeguards",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/election-safeguards-update",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "Apr 24, 2026AnnouncementsAnthropic and NEC collaborate to build Japan’s largest AI engineering workf",
+      "title_en": "Apr 24, 2026AnnouncementsAnthropic and NEC collaborate to build Japan’s largest AI engineering workf",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/anthropic-nec",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "Apr 20, 2026AnnouncementsAnthropic and Amazon expand collaboration for up to 5 gigawatts of new comp",
+      "title_en": "Apr 20, 2026AnnouncementsAnthropic and Amazon expand collaboration for up to 5 gigawatts of new comp",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/anthropic-amazon-compute",
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -289,36 +323,6 @@
       "is_new": false
     },
     {
-      "source": "Blog",
-      "title": "Mar 11, 2026AnnouncementsIntroducing The Anthropic Institute",
-      "title_en": "Mar 11, 2026AnnouncementsIntroducing The Anthropic Institute",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/the-anthropic-institute",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Mar 10, 2026AnnouncementsSydney will become Anthropic’s fourth office in Asia-Pacific",
-      "title_en": "Mar 10, 2026AnnouncementsSydney will become Anthropic’s fourth office in Asia-Pacific",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/sydney-fourth-office-asia-pacific",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Mar 6, 2026PolicyPartnering with Mozilla to improve Firefox’s securite",
-      "title_en": "Mar 6, 2026PolicyPartnering with Mozilla to improve Firefox’s security",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/mozilla-firefox-security",
-      "is_new": false
-    },
-    {
       "source": "Recherche",
       "title": "Economic Rerecherche",
       "title_en": "Economic Research",
@@ -350,8 +354,8 @@
     },
     {
       "source": "Recherche",
-      "title": "Emotion concepts and their function in a large language modelInterpretabilityApr 2, 2026All modern l",
-      "title_en": "Emotion concepts and their function in a large language modelInterpretabilityApr 2, 2026All modern l",
+      "title": "InterpretabilityApr 2, 2026Emotion concepts and their function in a large language modelAll modern l",
+      "title_en": "InterpretabilityApr 2, 2026Emotion concepts and their function in a large language modelAll modern l",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
@@ -360,13 +364,13 @@
     },
     {
       "source": "Recherche",
-      "title": "Economic RerechercheMar 5, 2026Labor market impacts of AI: A new measure and early evidenceIn this pape",
-      "title_en": "Economic ResearchMar 5, 2026Labor market impacts of AI: A new measure and early evidenceIn this pape",
+      "title": "PolicyDec 18, 2025Project Vend: Phase twoIn June, we revealed that we’d set up a small shop in our S",
+      "title_en": "PolicyDec 18, 2025Project Vend: Phase twoIn June, we revealed that we’d set up a small shop in our S",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/research/labor-market-impacts",
-      "is_new": false
+      "url": "https://www.anthropic.com/research/project-vend-2",
+      "is_new": true
     },
     {
       "source": "Statut",
@@ -426,21 +430,21 @@
       "summary_en": "Rust implementation of protobuf with editions support, JSON serialization, and zero-copy views",
       "changelog_items": [],
       "url": "https://github.com/anthropics/buffa",
-      "is_new": true
+      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.118",
-    "Claude Code npm": "v2.1.118",
-    "SDK Python": "v0.96.0",
-    "SDK Python PyPI": "v0.96.0",
-    "SDK TypeScript": "sdk: v0.87.0",
+    "Claude Code": "v2.1.119",
+    "Claude Code npm": "v2.1.119",
+    "SDK Python": "v0.97.0",
+    "SDK Python PyPI": "v0.97.0",
+    "SDK TypeScript": "vertex-sdk: v0.16.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.113",
-    "GitHub SDK Python": "v0.93.0"
+    "GitHub Claude Code": "v2.1.114",
+    "GitHub SDK Python": "v0.94.0"
   }
 }
