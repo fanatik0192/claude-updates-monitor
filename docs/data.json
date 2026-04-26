@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-04-25T19:41:19.048818",
+  "last_check": "2026-04-26T19:43:03.537815",
   "updates": [
     {
       "source": "Claude Code",
@@ -9,7 +9,7 @@
       "summary_en": "chore: Update CHANGELOG.md",
       "changelog_items": [],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.120",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -141,7 +141,7 @@
       "summary_en": "0.91.1 (2026-04-24)\nFull Changelog: sdk-v0.91.0...sdk-v0.91.1\nBug Fixes\n\nmemory: use restrictive file mode for memory files (#901) (<a href=\"https://github.com/anthrop",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.91.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -191,7 +191,7 @@
       "summary_en": "Publie le 2026-04-24",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
@@ -231,7 +231,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -372,6 +372,56 @@
       "changelog_items": [],
       "url": "https://status.claude.com",
       "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "claude-desktop-buddy",
+      "title_en": "claude-desktop-buddy",
+      "summary": "Reference and an example for the Bluetooth API for makers in Claude Cowork & Claude Code Desktop",
+      "summary_en": "Reference and an example for the Bluetooth API for makers in Claude Cowork & Claude Code Desktop",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/claude-desktop-buddy",
+      "is_new": false
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "claude-plugins-community",
+      "title_en": "claude-plugins-community",
+      "summary": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-repertoire-submission.",
+      "summary_en": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/claude-plugins-community",
+      "is_new": false
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "terragrunt",
+      "title_en": "terragrunt",
+      "summary": "Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OuvrirTofu/Terraform to scale.",
+      "summary_en": "Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTofu/Terraform to scale.",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/terragrunt",
+      "is_new": false
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "tokio",
+      "title_en": "tokio",
+      "summary": "A runtime for writing reliable asynchronous applications with Rust. Provides I/O, networking, scheduling, timers, ...",
+      "summary_en": "A runtime for writing reliable asynchronous applications with Rust. Provides I/O, networking, scheduling, timers, ...",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/tokio",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "buffa",
+      "title_en": "buffa",
+      "summary": "Rust implementation of protobuf with editions prise en charge, JSON serialization, and zero-copy views",
+      "summary_en": "Rust implementation of protobuf with editions support, JSON serialization, and zero-copy views",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/buffa",
+      "is_new": false
     }
   ],
   "versions": {
