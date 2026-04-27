@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-04-26T19:43:03.537815",
+  "last_check": "2026-04-27T20:05:44.945323",
   "updates": [
     {
       "source": "Claude Code",
@@ -411,7 +411,7 @@
       "summary_en": "A runtime for writing reliable asynchronous applications with Rust. Provides I/O, networking, scheduling, timers, ...",
       "changelog_items": [],
       "url": "https://github.com/anthropics/tokio",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
