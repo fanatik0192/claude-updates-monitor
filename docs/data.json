@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-04-27T20:05:44.945323",
+  "last_check": "2026-04-28T20:12:27.688501",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.121",
+      "title_en": "v2.1.121",
+      "summary": "Ce qui a change Ajout de alwaysLoad option to MCP server config — when true, all tools from that server skip tool-recherche deferral and are always available Ajout de claude plugin prune to remove orphaned auto-installed plugin dependencies; plugin uninstall --prune cascades Ajout de a taper-to-filtre recherche box to /sk",
+      "summary_en": "What's changed\n\nAdded alwaysLoad option to MCP server config — when true, all tools from that server skip tool-search deferral and are always available\nAdded claude plugin prune to remove orphaned auto-installed plugin dependencies; plugin uninstall --prune cascades\nAdded a type-to-filter search box to /sk",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "alwaysLoad option to MCP server config — when true, all tools from that server skip tool-search deferral and are always available"
+        },
+        {
+          "type": "added",
+          "text": "claude plugin prune to remove orphaned auto-installed plugin dependencies; plugin uninstall --prune cascades"
+        },
+        {
+          "type": "added",
+          "text": "a type-to-filter search box to /sk"
+        },
+        {
+          "type": "changed",
+          "text": "Added alwaysLoad option to MCP server config — when true, all tools from that server skip tool-search deferral and are always available"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.121",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.120",
@@ -66,21 +93,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.117",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.116",
-      "title_en": "v2.1.116",
-      "summary": "Ce qui a change /resume on large sessions is significantly faster (up to 67% on 40MB+ sessions) and handles sessions with many dead-dupliquer entries more efficiently Faster MCP startup when multiple stdio servers are configured; resources/temporairelates/list is now deferred to first @-mention Smoother fullscreen scrolling in VS Code,",
-      "summary_en": "What's changed\n\n/resume on large sessions is significantly faster (up to 67% on 40MB+ sessions) and handles sessions with many dead-fork entries more efficiently\nFaster MCP startup when multiple stdio servers are configured; resources/templates/list is now deferred to first @-mention\nSmoother fullscreen scrolling in VS Code,",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "/resume on large sessions is significantly faster (up to 67% on 40MB+ sessions) and handles sessions with many dead-fork entries more efficiently"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.116",
       "is_new": false
     },
     {
@@ -195,13 +207,13 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.119",
-      "title_en": "v2.1.119",
-      "summary": "Publie le 2026-04-23",
-      "summary_en": "Publie le 2026-04-23",
+      "title": "v2.1.121",
+      "title_en": "v2.1.121",
+      "summary": "Publie le 2026-04-27",
+      "summary_en": "Publie le 2026-04-27",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
@@ -242,6 +254,26 @@
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
       "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Apr 28, 2026AnnouncementsClaude for Creative Work",
+      "title_en": "Apr 28, 2026AnnouncementsClaude for Creative Work",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/claude-for-creative-work",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "Apr 27, 2026AnnouncementsAnthropic noms Theo Hourmouzis General Manager of Australia & New Zealand",
+      "title_en": "Apr 27, 2026AnnouncementsAnthropic names Theo Hourmouzis General Manager of Australia & New Zealand ",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/theo-hourmouzis-general-manager-australia-new-zealand",
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -291,26 +323,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Mar 31, 2026AnnouncementsAustralian government and Anthropic sign MOU for AI safety and rerecherche",
-      "title_en": "Mar 31, 2026AnnouncementsAustralian government and Anthropic sign MOU for AI safety and research",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/australia-MOU",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Mar 12, 2026AnnouncementsAnthropic invests $100 million into the Claude Partner Network",
-      "title_en": "Mar 12, 2026AnnouncementsAnthropic invests $100 million into the Claude Partner Network",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-partner-network",
       "is_new": false
     },
     {
@@ -426,8 +438,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.119",
-    "Claude Code npm": "v2.1.119",
+    "Claude Code": "v2.1.121",
+    "Claude Code npm": "v2.1.121",
     "SDK Python": "v0.97.0",
     "SDK Python PyPI": "v0.97.0",
     "SDK TypeScript": "sdk: v0.89.0",
@@ -435,7 +447,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.116",
+    "GitHub Claude Code": "v2.1.117",
     "GitHub SDK Python": "v0.94.0"
   }
 }
