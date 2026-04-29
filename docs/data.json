@@ -1,6 +1,44 @@
 {
-  "last_check": "2026-04-28T20:12:27.688501",
+  "last_check": "2026-04-29T20:07:31.931495",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.123",
+      "title_en": "v2.1.123",
+      "summary": "Ce qui a change Correction de OAuth authentication failing with a 401 reessayer loop when CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1 is set",
+      "summary_en": "What's changed\n\nFixed OAuth authentication failing with a 401 retry loop when CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1 is set\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "OAuth authentication failing with a 401 retry loop when CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1 is set"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed OAuth authentication failing with a 401 retry loop when CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1 is set"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.123",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.122",
+      "title_en": "v2.1.122",
+      "summary": "Ce qui a change Ajout de ANTHROPIC_BEDROCK_SERVICE_TIER variable d'environnement to select a Bedrock service tier (par defaut, flex, or priority), sent as the X-Amzn-Bedrock-Service-Tier header Pasting a PR URL into the /resume recherche box now finds the session that created that PR (GitHub, GitHub Enterpri",
+      "summary_en": "What's changed\n\nAdded ANTHROPIC_BEDROCK_SERVICE_TIER environment variable to select a Bedrock service tier (default, flex, or priority), sent as the X-Amzn-Bedrock-Service-Tier header\nPasting a PR URL into the /resume search box now finds the session that created that PR (GitHub, GitHub Enterpri",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "ANTHROPIC_BEDROCK_SERVICE_TIER environment variable to select a Bedrock service tier (default, flex, or priority), sent as the X-Amzn-Bedrock-Service-Tier header"
+        },
+        {
+          "type": "changed",
+          "text": "Added ANTHROPIC_BEDROCK_SERVICE_TIER environment variable to select a Bedrock service tier (default, flex, or priority), sent as the X-Amzn-Bedrock-Service-Tier header"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.122",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.121",
@@ -26,7 +64,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.121",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -59,40 +97,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.119",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.118",
-      "title_en": "v2.1.118",
-      "summary": "Ce qui a change Ajout de vim visual mode (v) and visual-line mode (V) with selection, operators, and visual feedback Merged /cost and /stats into /usage — both remain as typing raccourcis that ouvrir the relevant tab Create and switch between nomd personnalise themes from /theme, or hand-edit JSON",
-      "summary_en": "What's changed\n\nAdded vim visual mode (v) and visual-line mode (V) with selection, operators, and visual feedback\nMerged /cost and /stats into /usage — both remain as typing shortcuts that open the relevant tab\nCreate and switch between named custom themes from /theme, or hand-edit JSON",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "vim visual mode (v) and visual-line mode (V) with selection, operators, and visual feedback"
-        },
-        {
-          "type": "changed",
-          "text": "Added vim visual mode (v) and visual-line mode (V) with selection, operators, and visual feedback"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.118",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.117",
-      "title_en": "v2.1.117",
-      "summary": "Ce qui a change Dupliquered subagents can now be activerd on external builds by parametre CLAUDE_CODE_FORK_SUBAGENT=1 Agent frontmatter mcpServers are now loaded for main-thread agent sessions via --agent Amelioration de /model: selections now persist across restarts even when the project pins a different model, and the startu",
-      "summary_en": "What's changed\n\nForked subagents can now be enabled on external builds by setting CLAUDE_CODE_FORK_SUBAGENT=1\nAgent frontmatter mcpServers are now loaded for main-thread agent sessions via --agent\nImproved /model: selections now persist across restarts even when the project pins a different model, and the startu",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Forked subagents can now be enabled on external builds by setting CLAUDE_CODE_FORK_SUBAGENT=1"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.117",
       "is_new": false
     },
     {
@@ -207,10 +211,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.121",
-      "title_en": "v2.1.121",
-      "summary": "Publie le 2026-04-27",
-      "summary_en": "Publie le 2026-04-27",
+      "title": "v2.1.123",
+      "title_en": "v2.1.123",
+      "summary": "Publie le 2026-04-29",
+      "summary_en": "Publie le 2026-04-29",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -263,7 +267,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-for-creative-work",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -273,7 +277,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/theo-hourmouzis-general-manager-australia-new-zealand",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -438,8 +442,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.121",
-    "Claude Code npm": "v2.1.121",
+    "Claude Code": "v2.1.123",
+    "Claude Code npm": "v2.1.123",
     "SDK Python": "v0.97.0",
     "SDK Python PyPI": "v0.97.0",
     "SDK TypeScript": "sdk: v0.89.0",
@@ -447,7 +451,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.117",
+    "GitHub Claude Code": "v2.1.119",
     "GitHub SDK Python": "v0.94.0"
   }
 }
