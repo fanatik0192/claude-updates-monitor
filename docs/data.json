@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-04-29T20:07:31.931495",
+  "last_check": "2026-04-30T20:07:14.441931",
   "updates": [
     {
       "source": "Claude Code",
@@ -18,7 +18,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.123",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -37,7 +37,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.122",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -151,6 +151,26 @@
     },
     {
       "source": "SDK TypeScript",
+      "title": "sdk: v0.92.0",
+      "title_en": "sdk: v0.92.0",
+      "summary": "0.92.0 (2026-04-30) Journal complet: sdk-v0.91.1...sdk-v0.92.0 Fonctionnalites api: improve Managed Agents APIs () suppor",
+      "summary_en": "0.92.0 (2026-04-30)\nFull Changelog: sdk-v0.91.1...sdk-v0.92.0\nFeatures\n\napi: improve Managed Agents APIs (ca1bf4a)\nsuppor",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.92.0",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "bedrock-sdk: v0.29.1",
+      "title_en": "bedrock-sdk: v0.29.1",
+      "summary": "0.29.1 (2026-04-30) Journal complet: bedrock-sdk-v0.29.0...bedrock-sdk-v0.29.1 Corrections de bugs bedrock: throw APIErreur for erreur events delivered in chunk frames (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/issues/102",
+      "summary_en": "0.29.1 (2026-04-30)\nFull Changelog: bedrock-sdk-v0.29.0...bedrock-sdk-v0.29.1\nBug Fixes\n\nbedrock: throw APIError for error events delivered in chunk frames (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/issues/102",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.29.1",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
       "title": "sdk: v0.91.1",
       "title_en": "sdk: v0.91.1",
       "summary": "0.91.1 (2026-04-24) Journal complet: sdk-v0.91.0...sdk-v0.91.1 Corrections de bugs memory: use restrictive fichier mode for memory fichiers (<a href=\"https://github.com/anthrop",
@@ -180,34 +200,14 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.90.0",
-      "title_en": "sdk: v0.90.0",
-      "summary": "0.90.0 (2026-04-16) Journal complet: sdk-v0.89.0...sdk-v0.90.0 Fonctionnalites api: add claude-opus-4-7, jeton budgets and utilisateur_profichiers (b26",
-      "summary_en": "0.90.0 (2026-04-16)\nFull Changelog: sdk-v0.89.0...sdk-v0.90.0\nFeatures\n\napi: add claude-opus-4-7, token budgets and user_profiles (b26",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.90.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.89.0",
-      "title_en": "sdk: v0.89.0",
-      "summary": "0.89.0 (2026-04-14) Journal complet: sdk-v0.88.0...sdk-v0.89.0 Fonctionnalites api: manual updates () api:</stron",
-      "summary_en": "0.89.0 (2026-04-14)\nFull Changelog: sdk-v0.88.0...sdk-v0.89.0\nFeatures\n\napi: manual updates (57c2a11)\napi:</stron",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.89.0",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.91.1",
-      "title_en": "v0.91.1",
-      "summary": "Publie le 2026-04-24",
-      "summary_en": "Publie le 2026-04-24",
+      "title": "v0.92.0",
+      "title_en": "v0.92.0",
+      "summary": "Publie le 2026-04-30",
+      "summary_en": "Publie le 2026-04-30",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
@@ -217,7 +217,7 @@
       "summary_en": "Publie le 2026-04-29",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -347,7 +347,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/interpretability",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -446,7 +446,7 @@
     "Claude Code npm": "v2.1.123",
     "SDK Python": "v0.97.0",
     "SDK Python PyPI": "v0.97.0",
-    "SDK TypeScript": "sdk: v0.89.0",
+    "SDK TypeScript": "bedrock-sdk: v0.29.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
