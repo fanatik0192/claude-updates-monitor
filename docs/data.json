@@ -1,6 +1,52 @@
 {
-  "last_check": "2026-05-07T20:11:29.836025",
+  "last_check": "2026-05-08T20:04:52.009693",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.136",
+      "title_en": "v2.1.136",
+      "summary": "Ce qui a change Ajout de CLAUDE_CODE_ENABLE_FEEDBACK_SURVEY_FOR_OTEL to re-activer the session quality survey for enterprises capturing responses through OuvrirTelemetry Ajout de parametres.autoMode.hard_deny for auto mode classifier regles that block unconditionally regardless of utilisateur intent or allow exceptions Correction de MCP servers configured in <code",
+      "summary_en": "What's changed\n\nAdded CLAUDE_CODE_ENABLE_FEEDBACK_SURVEY_FOR_OTEL to re-enable the session quality survey for enterprises capturing responses through OpenTelemetry\nAdded settings.autoMode.hard_deny for auto mode classifier rules that block unconditionally regardless of user intent or allow exceptions\nFixed MCP servers configured in <code",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "CLAUDE_CODE_ENABLE_FEEDBACK_SURVEY_FOR_OTEL to re-enable the session quality survey for enterprises capturing responses through OpenTelemetry"
+        },
+        {
+          "type": "added",
+          "text": "settings.autoMode.hard_deny for auto mode classifier rules that block unconditionally regardless of user intent or allow exceptions"
+        },
+        {
+          "type": "fixed",
+          "text": "MCP servers configured in <code"
+        },
+        {
+          "type": "changed",
+          "text": "Added CLAUDE_CODE_ENABLE_FEEDBACK_SURVEY_FOR_OTEL to re-enable the session quality survey for enterprises capturing responses through OpenTelemetry"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.136",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.133",
+      "title_en": "v2.1.133",
+      "summary": "Ce qui a change Ajout de worktree.baseRef parametre (fresh | head) to choose whether --worktree, EnterWorktree, and agent-isolation worktrees branch from origin/&lt;par defaut&gt; or local HEAD. Note: the par defaut fresh changes EnterWorktree's base back to <",
+      "summary_en": "What's changed\n\nAdded worktree.baseRef setting (fresh | head) to choose whether --worktree, EnterWorktree, and agent-isolation worktrees branch from origin/&lt;default&gt; or local HEAD. Note: the default fresh changes EnterWorktree's base back to <",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "worktree.baseRef setting (fresh | head) to choose whether --worktree, EnterWorktree, and agent-isolation worktrees branch from origin/&lt;default&gt; or local HEAD. Note: the default fresh changes Ent"
+        },
+        {
+          "type": "changed",
+          "text": "Added worktree.baseRef setting (fresh | head) to choose whether --worktree, EnterWorktree, and agent-isolation worktrees branch from origin/&lt;default&gt; or local HEAD. Note: the default fresh chang"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.133",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.132",
@@ -22,7 +68,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.132",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -72,40 +118,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.129",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.128",
-      "title_en": "v2.1.128",
-      "summary": "Ce qui a change Bare /color (no args) now picks a random session color /mcp now affichers the tool count for connected servers and flags servers that connected with 0 tools --plugin-dir now accepts .zip plugin archives in addition to directories --channels now works with console (API key) authe",
-      "summary_en": "What's changed\n\nBare /color (no args) now picks a random session color\n/mcp now shows the tool count for connected servers and flags servers that connected with 0 tools\n--plugin-dir now accepts .zip plugin archives in addition to directories\n--channels now works with console (API key) authe",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Bare /color (no args) now picks a random session color"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.128",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.126",
-      "title_en": "v2.1.126",
-      "summary": "Ce qui a change The /model picker now lists models from your gateway's /v1/models endpoint when ANTHROPIC_BASE_URL points at an Anthropic-compatible gateway Ajout de claude project purge [path] to delete all Claude Code state for a project (transcripts, tasks, fichier history, config entry) — prise en charges --dry-run",
-      "summary_en": "What's changed\n\nThe /model picker now lists models from your gateway's /v1/models endpoint when ANTHROPIC_BASE_URL points at an Anthropic-compatible gateway\n\n\nAdded claude project purge [path] to delete all Claude Code state for a project (transcripts, tasks, file history, config entry) — supports --dry-run",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "claude project purge [path] to delete all Claude Code state for a project (transcripts, tasks, file history, config entry) — supports --dry-run"
-        },
-        {
-          "type": "changed",
-          "text": "The /model picker now lists models from your gateway's /v1/models endpoint when ANTHROPIC_BASE_URL points at an Anthropic-compatible gateway"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.126",
       "is_new": false
     },
     {
@@ -171,7 +183,7 @@
       "summary_en": "0.95.1 (2026-05-07)\nFull Changelog: sdk-v0.95.0...sdk-v0.95.1\nChores\n\nredact api-key headers in debug logs (fad8fee)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.95.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -191,7 +203,7 @@
       "summary_en": "0.94.0 (2026-05-05)\nFull Changelog: sdk-v0.93.0...sdk-v0.94.0\nFeatures\n\nclient: allow targeting a workspace for OIDC federation token exchange (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/bde6620d68c2dd9e8e641b4cfed88474",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.94.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -221,14 +233,14 @@
       "summary_en": "Publie le 2026-05-07",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.132",
-      "title_en": "v2.1.132",
-      "summary": "Publie le 2026-05-06",
-      "summary_en": "Publie le 2026-05-06",
+      "title": "v2.1.136",
+      "title_en": "v2.1.136",
+      "summary": "Publie le 2026-05-08",
+      "summary_en": "Publie le 2026-05-08",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -261,7 +273,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -381,7 +393,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/natural-language-autoencoders",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -401,6 +413,16 @@
       "summary_en": "Un probleme est actuellement detecte sur les services Claude.",
       "changelog_items": [],
       "url": "https://status.claude.com",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "swift-markdown",
+      "title_en": "swift-markdown",
+      "summary": "A Swift package for parsing, building, editing, and analyzing Markdown documents.",
+      "summary_en": "A Swift package for parsing, building, editing, and analyzing Markdown documents.",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/swift-markdown",
       "is_new": true
     },
     {
@@ -442,22 +464,12 @@
       "changelog_items": [],
       "url": "https://github.com/anthropics/claude-desktop-buddy",
       "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "claude-plugins-community",
-      "title_en": "claude-plugins-community",
-      "summary": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-repertoire-submission.",
-      "summary_en": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/claude-plugins-community",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.132",
-    "Claude Code npm": "v2.1.132",
+    "Claude Code": "v2.1.136",
+    "Claude Code npm": "v2.1.136",
     "SDK Python": "v0.100.0",
     "SDK Python PyPI": "v0.100.0",
     "SDK TypeScript": "sdk: v0.92.0",
@@ -465,7 +477,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.126",
+    "GitHub Claude Code": "v2.1.129",
     "GitHub SDK Python": "v0.97.0"
   }
 }
