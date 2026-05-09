@@ -1,6 +1,40 @@
 {
-  "last_check": "2026-05-08T20:04:52.009693",
+  "last_check": "2026-05-09T19:55:58.576025",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.138",
+      "title_en": "v2.1.138",
+      "summary": "Ce qui a change Internal fixes",
+      "summary_en": "What's changed\n\nInternal fixes\n",
+      "changelog_items": [
+        {
+          "type": "changed",
+          "text": "Internal fixes"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.138",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.137",
+      "title_en": "v2.1.137",
+      "summary": "Ce qui a change [VSCode] Correction de extension failing to activate on Windows",
+      "summary_en": "What's changed\n\n[VSCode] Fixed extension failing to activate on Windows\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "extension failing to activate on Windows"
+        },
+        {
+          "type": "changed",
+          "text": "[VSCode] Fixed extension failing to activate on Windows"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.137",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.136",
@@ -26,7 +60,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.136",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -45,7 +79,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.133",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -68,56 +102,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.132",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.131",
-      "title_en": "v2.1.131",
-      "summary": "Ce qui a change Correction de VS Code extension failing to activate on Windows due to a hardcoded build path in the bundled SDK (createRequire polyfill bug) Correction de Mantle endpoint authentication failing with missing x-api-key header",
-      "summary_en": "What's changed\n\nFixed VS Code extension failing to activate on Windows due to a hardcoded build path in the bundled SDK (createRequire polyfill bug)\nFixed Mantle endpoint authentication failing with missing x-api-key header\n",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "VS Code extension failing to activate on Windows due to a hardcoded build path in the bundled SDK (createRequire polyfill bug)"
-        },
-        {
-          "type": "fixed",
-          "text": "Mantle endpoint authentication failing with missing x-api-key header"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed VS Code extension failing to activate on Windows due to a hardcoded build path in the bundled SDK (createRequire polyfill bug)"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.131",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.129",
-      "title_en": "v2.1.129",
-      "summary": "Ce qui a change Ajout de --plugin-url &lt;url&gt; flag to fetch a plugin .zip archive from a URL for the current session Ajout de CLAUDE_CODE_FORCE_SYNC_OUTPUT=1 env var to force-activer synchronized sortie on terminals that auto-detection misses (e.g. Emacs eat) Ajout de CLAUDE_CODE_PACKAGE_MANAGER_AUTO_UPDATE</cod",
-      "summary_en": "What's changed\n\nAdded --plugin-url &lt;url&gt; flag to fetch a plugin .zip archive from a URL for the current session\nAdded CLAUDE_CODE_FORCE_SYNC_OUTPUT=1 env var to force-enable synchronized output on terminals that auto-detection misses (e.g. Emacs eat)\nAdded CLAUDE_CODE_PACKAGE_MANAGER_AUTO_UPDATE</cod",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "--plugin-url &lt;url&gt; flag to fetch a plugin .zip archive from a URL for the current session"
-        },
-        {
-          "type": "added",
-          "text": "CLAUDE_CODE_FORCE_SYNC_OUTPUT=1 env var to force-enable synchronized output on terminals that auto-detection misses (e.g. Emacs eat)"
-        },
-        {
-          "type": "added",
-          "text": "CLAUDE_CODE_PACKAGE_MANAGER_AUTO_UPDATE</cod"
-        },
-        {
-          "type": "changed",
-          "text": "Added --plugin-url &lt;url&gt; flag to fetch a plugin .zip archive from a URL for the current session"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.129",
       "is_new": false
     },
     {
@@ -237,10 +221,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.136",
-      "title_en": "v2.1.136",
-      "summary": "Publie le 2026-05-08",
-      "summary_en": "Publie le 2026-05-08",
+      "title": "v2.1.138",
+      "title_en": "v2.1.138",
+      "summary": "Publie le 2026-05-09",
+      "summary_en": "Publie le 2026-05-09",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -397,13 +381,13 @@
     },
     {
       "source": "Recherche",
-      "title": "InterpretabilityApr 2, 2026Emotion concepts and their function in a large language modelAll modern l",
-      "title_en": "InterpretabilityApr 2, 2026Emotion concepts and their function in a large language modelAll modern l",
+      "title": "AlignmentMay 8, 2026Teaching Claude whyNew rerecherche on how we've reduced agentic misalignment.",
+      "title_en": "AlignmentMay 8, 2026Teaching Claude whyNew research on how we've reduced agentic misalignment.",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/research/emotion-concepts-function",
-      "is_new": false
+      "url": "https://www.anthropic.com/research/teaching-claude-why",
+      "is_new": true
     },
     {
       "source": "Statut",
@@ -423,7 +407,7 @@
       "summary_en": "A Swift package for parsing, building, editing, and analyzing Markdown documents.",
       "changelog_items": [],
       "url": "https://github.com/anthropics/swift-markdown",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -468,8 +452,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.136",
-    "Claude Code npm": "v2.1.136",
+    "Claude Code": "v2.1.138",
+    "Claude Code npm": "v2.1.138",
     "SDK Python": "v0.100.0",
     "SDK Python PyPI": "v0.100.0",
     "SDK TypeScript": "sdk: v0.92.0",
@@ -477,7 +461,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.129",
+    "GitHub Claude Code": "v2.1.132",
     "GitHub SDK Python": "v0.97.0"
   }
 }
