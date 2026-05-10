@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-05-09T19:55:58.576025",
+  "last_check": "2026-05-10T19:57:18.793119",
   "updates": [
     {
       "source": "Claude Code",
@@ -14,7 +14,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.138",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -33,7 +33,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.137",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -147,7 +147,7 @@
       "summary_en": "0.98.0 (2026-05-04)\nFull Changelog: v0.97.0...v0.98.0\nFeatures\n\napi: improve Managed Agents APIs (7faf393)\nclient: add W",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.98.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -197,7 +197,7 @@
       "summary_en": "0.93.0 (2026-05-04)\nFull Changelog: sdk-v0.92.0...sdk-v0.93.0\nFeatures\n\nclient: add Workload Identity Federation, interactive OAuth, and auth profiles (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/d5d6abdb1976db389aca8755",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.93.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -227,7 +227,7 @@
       "summary_en": "Publie le 2026-05-09",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -387,7 +387,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/teaching-claude-why",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Statut",
