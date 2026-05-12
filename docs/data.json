@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-05-11T20:45:08.399181",
+  "last_check": "2026-05-12T20:27:51.590197",
   "updates": [
     {
       "source": "Claude Code",
@@ -22,7 +22,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -112,7 +112,7 @@
       "summary_en": "0.101.0 (2026-05-11)\nFull Changelog: v0.100.0...v0.101.0\nFeatures\n\naws: Add AWS client for Claude Platform on AWS (1e70e3a)\n\nBug F",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.101.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -167,7 +167,7 @@
       "summary_en": "0.95.2 (2026-05-11)\nFull Changelog: sdk-v0.95.1...sdk-v0.95.2",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.95.2",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -177,7 +177,7 @@
       "summary_en": "0.3.0 (2026-05-11)\nFull Changelog: aws-sdk-v0.2.5...aws-sdk-v0.3.0\nFeatures\n\naws: Add AWS client for Claude Platform on AWS (7a3",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.3.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -217,7 +217,7 @@
       "summary_en": "Publie le 2026-05-11",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
@@ -227,7 +227,7 @@
       "summary_en": "Publie le 2026-05-11",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -237,7 +237,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -257,7 +257,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -357,7 +357,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/interpretability",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -441,13 +441,13 @@
     },
     {
       "source": "Nouveau Depot",
-      "title": "claude-desktop-buddy",
-      "title_en": "claude-desktop-buddy",
-      "summary": "Reference and an example for the Bluetooth API for makers in Claude Cowork & Claude Code Desktop",
-      "summary_en": "Reference and an example for the Bluetooth API for makers in Claude Cowork & Claude Code Desktop",
+      "title": "claude-for-legal",
+      "title_en": "claude-for-legal",
+      "summary": "A suite of plugins for legal workflows",
+      "summary_en": "A suite of plugins for legal workflows",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/claude-desktop-buddy",
-      "is_new": false
+      "url": "https://github.com/anthropics/claude-for-legal",
+      "is_new": true
     }
   ],
   "versions": {
