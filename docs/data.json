@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-05-13T20:28:44.182318",
+  "last_check": "2026-05-14T20:26:01.788093",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.141",
+      "title_en": "v2.1.141",
+      "summary": "Ce qui a change Ajout de terminalSequence field to hook JSON sortie so hooks can emit desktop notifications, window titles, and bells without a controlling terminal Ajout de CLAUDE_CODE_PLUGIN_PREFER_HTTPS to clone GitHub plugin sources over HTTPS instead of SSH, for environments without a GitHub SSH key Ajout de ANTHROPIC_WORKSPACE_ID</cod",
+      "summary_en": "What's changed\n\nAdded terminalSequence field to hook JSON output so hooks can emit desktop notifications, window titles, and bells without a controlling terminal\nAdded CLAUDE_CODE_PLUGIN_PREFER_HTTPS to clone GitHub plugin sources over HTTPS instead of SSH, for environments without a GitHub SSH key\nAdded ANTHROPIC_WORKSPACE_ID</cod",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "terminalSequence field to hook JSON output so hooks can emit desktop notifications, window titles, and bells without a controlling terminal"
+        },
+        {
+          "type": "added",
+          "text": "CLAUDE_CODE_PLUGIN_PREFER_HTTPS to clone GitHub plugin sources over HTTPS instead of SSH, for environments without a GitHub SSH key"
+        },
+        {
+          "type": "added",
+          "text": "ANTHROPIC_WORKSPACE_ID</cod"
+        },
+        {
+          "type": "changed",
+          "text": "Added terminalSequence field to hook JSON output so hooks can emit desktop notifications, window titles, and bells without a controlling terminal"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.141",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.140",
@@ -18,7 +45,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.140",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -78,33 +105,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.136",
-      "title_en": "v2.1.136",
-      "summary": "Ce qui a change Ajout de CLAUDE_CODE_ENABLE_FEEDBACK_SURVEY_FOR_OTEL to re-activer the session quality survey for enterprises capturing responses through OuvrirTelemetry Ajout de parametres.autoMode.hard_deny for auto mode classifier regles that block unconditionally regardless of utilisateur intent or allow exceptions Correction de MCP servers configured in <code",
-      "summary_en": "What's changed\n\nAdded CLAUDE_CODE_ENABLE_FEEDBACK_SURVEY_FOR_OTEL to re-enable the session quality survey for enterprises capturing responses through OpenTelemetry\nAdded settings.autoMode.hard_deny for auto mode classifier rules that block unconditionally regardless of user intent or allow exceptions\nFixed MCP servers configured in <code",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "CLAUDE_CODE_ENABLE_FEEDBACK_SURVEY_FOR_OTEL to re-enable the session quality survey for enterprises capturing responses through OpenTelemetry"
-        },
-        {
-          "type": "added",
-          "text": "settings.autoMode.hard_deny for auto mode classifier rules that block unconditionally regardless of user intent or allow exceptions"
-        },
-        {
-          "type": "fixed",
-          "text": "MCP servers configured in <code"
-        },
-        {
-          "type": "changed",
-          "text": "Added CLAUDE_CODE_ENABLE_FEEDBACK_SURVEY_FOR_OTEL to re-enable the session quality survey for enterprises capturing responses through OpenTelemetry"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.136",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.102.0",
       "title_en": "v0.102.0",
@@ -112,7 +112,7 @@
       "summary_en": "0.102.0 (2026-05-13)\nFull Changelog: v0.101.0...v0.102.0\nFeatures\n\napi: Add BetaManagedAgentsSearchResultBlock types (3681f10)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.102.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -142,7 +142,7 @@
       "summary_en": "0.99.0 (2026-05-05)\nFull Changelog: v0.98.1...v0.99.0\nFeatures\n\nclient: allow targeting a workspace for OIDC federation token exchange (4ba8067)</",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.99.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -167,7 +167,7 @@
       "summary_en": "0.96.0 (2026-05-13)\nFull Changelog: sdk-v0.95.2...sdk-v0.96.0\nFeatures\n\napi: Add BetaManagedAgentsSearchResultBlock types (08f02f3",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.96.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -217,14 +217,14 @@
       "summary_en": "Publie le 2026-05-13",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.140",
-      "title_en": "v2.1.140",
-      "summary": "Publie le 2026-05-12",
-      "summary_en": "Publie le 2026-05-12",
+      "title": "v2.1.141",
+      "title_en": "v2.1.141",
+      "summary": "Publie le 2026-05-13",
+      "summary_en": "Publie le 2026-05-13",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -237,7 +237,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -267,6 +267,16 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
+      "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "May 14, 2026AnnouncementsAnthropic forms $200 million partnership with the Gates Foundation",
+      "title_en": "May 14, 2026AnnouncementsAnthropic forms $200 million partnership with the Gates Foundation",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/gates-foundation-partnership",
       "is_new": true
     },
     {
@@ -277,7 +287,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-for-small-business",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -307,7 +317,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/enterprise-ai-services-company",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -327,16 +337,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/theo-hourmouzis-general-manager-australia-new-zealand",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Apr 24, 2026AnnouncementsAn update on our election safeguards",
-      "title_en": "Apr 24, 2026AnnouncementsAn update on our election safeguards",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/election-safeguards-update",
       "is_new": false
     },
     {
@@ -452,8 +452,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.140",
-    "Claude Code npm": "v2.1.140",
+    "Claude Code": "v2.1.141",
+    "Claude Code npm": "v2.1.141",
     "SDK Python": "v0.102.0",
     "SDK Python PyPI": "v0.102.0",
     "SDK TypeScript": "sdk: v0.95.0",
@@ -461,7 +461,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.136",
+    "GitHub Claude Code": "v2.1.137",
     "GitHub SDK Python": "v0.98.1"
   }
 }
