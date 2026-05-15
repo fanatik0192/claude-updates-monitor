@@ -1,6 +1,25 @@
 {
-  "last_check": "2026-05-14T20:26:01.788093",
+  "last_check": "2026-05-15T20:13:46.510680",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.142",
+      "title_en": "v2.1.142",
+      "summary": "Ce qui a change Ajout de new claude agents flags: --add-dir, --parametres, --mcp-config, --plugin-dir, --permission-mode, --model, --effort, and --dangerously-skip-permissions to configure dispatched arriere-plan sessions Fast mode now uses Opus 4.7 by par defaut (pr",
+      "summary_en": "What's changed\n\nAdded new claude agents flags: --add-dir, --settings, --mcp-config, --plugin-dir, --permission-mode, --model, --effort, and --dangerously-skip-permissions to configure dispatched background sessions\nFast mode now uses Opus 4.7 by default (pr",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "new claude agents flags: --add-dir, --settings, --mcp-config, --plugin-dir, --permission-mode, --model, --effort, and --dangerously-skip-permissions to configure dispatched background sessions"
+        },
+        {
+          "type": "changed",
+          "text": "Added new claude agents flags: --add-dir, --settings, --mcp-config, --plugin-dir, --permission-mode, --model, --effort, and --dangerously-skip-permissions to configure dispatched background sessions"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.142",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.141",
@@ -26,7 +45,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.141",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -86,25 +105,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.137",
-      "title_en": "v2.1.137",
-      "summary": "Ce qui a change [VSCode] Correction de extension failing to activate on Windows",
-      "summary_en": "What's changed\n\n[VSCode] Fixed extension failing to activate on Windows\n",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "extension failing to activate on Windows"
-        },
-        {
-          "type": "changed",
-          "text": "[VSCode] Fixed extension failing to activate on Windows"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.137",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.102.0",
       "title_en": "v0.102.0",
@@ -142,7 +142,7 @@
       "summary_en": "0.99.0 (2026-05-05)\nFull Changelog: v0.98.1...v0.99.0\nFeatures\n\nclient: allow targeting a workspace for OIDC federation token exchange (4ba8067)</",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.99.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -221,10 +221,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.141",
-      "title_en": "v2.1.141",
-      "summary": "Publie le 2026-05-13",
-      "summary_en": "Publie le 2026-05-13",
+      "title": "v2.1.142",
+      "title_en": "v2.1.142",
+      "summary": "Publie le 2026-05-14",
+      "summary_en": "Publie le 2026-05-14",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -247,7 +247,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-opus-4-7",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -271,13 +271,23 @@
     },
     {
       "source": "Blog",
+      "title": "May 14, 2026AnnouncementsPwC is deploying Claude to build technology, execute deals, and reinvent en",
+      "title_en": "May 14, 2026AnnouncementsPwC is deploying Claude to build technology, execute deals, and reinvent en",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/pwc-expanded-partnership",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "May 14, 2026AnnouncementsAnthropic forms $200 million partnership with the Gates Foundation",
       "title_en": "May 14, 2026AnnouncementsAnthropic forms $200 million partnership with the Gates Foundation",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/gates-foundation-partnership",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -327,16 +337,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-for-creative-work",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Apr 27, 2026AnnouncementsAnthropic noms Theo Hourmouzis General Manager of Australia & New Zealand",
-      "title_en": "Apr 27, 2026AnnouncementsAnthropic names Theo Hourmouzis General Manager of Australia & New Zealand ",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/theo-hourmouzis-general-manager-australia-new-zealand",
       "is_new": false
     },
     {
@@ -427,7 +427,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/cwc-long-running-agents",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Nouveau Depot",
@@ -452,8 +452,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.141",
-    "Claude Code npm": "v2.1.141",
+    "Claude Code": "v2.1.142",
+    "Claude Code npm": "v2.1.142",
     "SDK Python": "v0.102.0",
     "SDK Python PyPI": "v0.102.0",
     "SDK TypeScript": "sdk: v0.95.0",
@@ -461,7 +461,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.137",
+    "GitHub Claude Code": "v2.1.138",
     "GitHub SDK Python": "v0.98.1"
   }
 }
