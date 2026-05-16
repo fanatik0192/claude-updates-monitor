@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-05-15T20:13:46.510680",
+  "last_check": "2026-05-16T20:00:12.661630",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.143",
+      "title_en": "v2.1.143",
+      "summary": "Ce qui a change Ajout de plugin dependency enforcement: claude plugin desactiver now refuses when another activerd plugin depends on the target (with a copy-pasteable desactiver-chain hint), and claude plugin activer force-activers transitive dependencies Ajout de projected context cost (per-turn and per-invocation jeton estimates) to the /plugin m",
+      "summary_en": "What's changed\n\nAdded plugin dependency enforcement: claude plugin disable now refuses when another enabled plugin depends on the target (with a copy-pasteable disable-chain hint), and claude plugin enable force-enables transitive dependencies\nAdded projected context cost (per-turn and per-invocation token estimates) to the /plugin m",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "plugin dependency enforcement: claude plugin disable now refuses when another enabled plugin depends on the target (with a copy-pasteable disable-chain hint), and claude plugin enable force-enables tr"
+        },
+        {
+          "type": "added",
+          "text": "projected context cost (per-turn and per-invocation token estimates) to the /plugin m"
+        },
+        {
+          "type": "changed",
+          "text": "Added plugin dependency enforcement: claude plugin disable now refuses when another enabled plugin depends on the target (with a copy-pasteable disable-chain hint), and claude plugin enable force-enab"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.143",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.142",
@@ -18,7 +41,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.142",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -87,21 +110,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.138",
-      "title_en": "v2.1.138",
-      "summary": "Ce qui a change Internal fixes",
-      "summary_en": "What's changed\n\nInternal fixes\n",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Internal fixes"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.138",
       "is_new": false
     },
     {
@@ -221,10 +229,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.142",
-      "title_en": "v2.1.142",
-      "summary": "Publie le 2026-05-14",
-      "summary_en": "Publie le 2026-05-14",
+      "title": "v2.1.143",
+      "title_en": "v2.1.143",
+      "summary": "Publie le 2026-05-15",
+      "summary_en": "Publie le 2026-05-15",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -247,7 +255,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-opus-4-7",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -257,7 +265,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -267,7 +275,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -277,7 +285,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/pwc-expanded-partnership",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -337,7 +345,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-for-creative-work",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -427,7 +435,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/cwc-long-running-agents",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -452,8 +460,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.142",
-    "Claude Code npm": "v2.1.142",
+    "Claude Code": "v2.1.143",
+    "Claude Code npm": "v2.1.143",
     "SDK Python": "v0.102.0",
     "SDK Python PyPI": "v0.102.0",
     "SDK TypeScript": "sdk: v0.95.0",
@@ -461,7 +469,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.138",
+    "GitHub Claude Code": "v2.1.139",
     "GitHub SDK Python": "v0.98.1"
   }
 }
