@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-05-16T20:00:12.661630",
+  "last_check": "2026-05-17T20:02:33.466404",
   "updates": [
     {
       "source": "Claude Code",
@@ -22,7 +22,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.143",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -235,7 +235,7 @@
       "summary_en": "Publie le 2026-05-15",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -255,7 +255,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-opus-4-7",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -265,7 +265,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -275,7 +275,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -345,7 +345,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-for-creative-work",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
