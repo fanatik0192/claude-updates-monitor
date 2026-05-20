@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-05-19T20:28:25.415399",
+  "last_check": "2026-05-20T20:57:51.216474",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.145",
+      "title_en": "v2.1.145",
+      "summary": "Ce qui a change Ajout de claude agents --json to list live Claude sessions as JSON for scripting (tmux-resurrect, status bars, session pickers) Ajout de agent_id and parent_agent_id attributes to claude_code.tool OTEL spans, and correction de trace parenting so arriere-plan subagent spans nest under the dispatching Agent tool span",
+      "summary_en": "What's changed\n\nAdded claude agents --json to list live Claude sessions as JSON for scripting (tmux-resurrect, status bars, session pickers)\nAdded agent_id and parent_agent_id attributes to claude_code.tool OTEL spans, and fixed trace parenting so background subagent spans nest under the dispatching Agent tool span\n",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "claude agents --json to list live Claude sessions as JSON for scripting (tmux-resurrect, status bars, session pickers)"
+        },
+        {
+          "type": "added",
+          "text": "agent_id and parent_agent_id attributes to claude_code.tool OTEL spans, and fixed trace parenting so background subagent spans nest under the dispatching Agent tool span"
+        },
+        {
+          "type": "fixed",
+          "text": "trace parenting so background subagent spans nest under the dispatching Agent tool span"
+        },
+        {
+          "type": "changed",
+          "text": "Added claude agents --json to list live Claude sessions as JSON for scripting (tmux-resurrect, status bars, session pickers)"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.145",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.144",
@@ -22,7 +49,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.144",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -45,7 +72,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.143",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Claude Code",
@@ -94,25 +121,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.140",
-      "title_en": "v2.1.140",
-      "summary": "Ce qui a change Amelioration de Agent tool subagent_taper matching to accept case- and separator-insensitive values (e.g. \"Code Revisionneuse\" resolves to code-revisionneuse) Mise a jour de agent color palette Correction de /goal silently hanging when desactiverAllHooks or allowManagedHooksOnly is set — now affichers a clear",
-      "summary_en": "What's changed\n\nImproved Agent tool subagent_type matching to accept case- and separator-insensitive values (e.g. \"Code Reviewer\" resolves to code-reviewer)\nUpdated agent color palette\nFixed /goal silently hanging when disableAllHooks or allowManagedHooksOnly is set — now shows a clear ",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "/goal silently hanging when disableAllHooks or allowManagedHooksOnly is set — now shows a clear"
-        },
-        {
-          "type": "changed",
-          "text": "Improved Agent tool subagent_type matching to accept case- and separator-insensitive values (e.g. \"Code Reviewer\" resolves to code-reviewer)"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.140",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.103.1",
       "title_en": "v0.103.1",
@@ -120,7 +128,7 @@
       "summary_en": "0.103.1 (2026-05-19)\nFull Changelog: v0.103.0...v0.103.1\nBug Fixes\n\nrunner: skip tool calls SessionToolRunner does not own (#1817) (<a href=\"https://github.com/anthropics/anthropic",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.103.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -130,7 +138,7 @@
       "summary_en": "0.103.0 (2026-05-19)\nFull Changelog: v0.102.0...v0.103.0\nFeatures\n\nclient: Add support for self-hosted sandboxes in CMA with sandbox helpers (e5625b",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.103.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -175,7 +183,7 @@
         }
       ],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.16.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -185,7 +193,7 @@
       "summary_en": "0.97.1 (2026-05-19)\nFull Changelog: sdk-v0.97.0...sdk-v0.97.1\nBug Fixes\n\nrunner: skip tool calls SessionToolRunner does not own (99873",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.97.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -195,7 +203,7 @@
       "summary_en": "0.97.0 (2026-05-19)\nFull Changelog: sdk-v0.96.0...sdk-v0.97.0\nFeatures\n\nclient: Add support for self-hosted sandboxes in CMA with sandbox helpers (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/659a343c820e316229715466b64e4",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.97.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -210,7 +218,7 @@
         }
       ],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.29.2",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -230,14 +238,14 @@
       "summary_en": "Publie le 2026-05-19",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.144",
-      "title_en": "v2.1.144",
-      "summary": "Publie le 2026-05-18",
-      "summary_en": "Publie le 2026-05-18",
+      "title": "v2.1.145",
+      "title_en": "v2.1.145",
+      "summary": "Publie le 2026-05-19",
+      "summary_en": "Publie le 2026-05-19",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -250,7 +258,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -284,13 +292,23 @@
     },
     {
       "source": "Blog",
+      "title": "May 19, 2026AnnouncementsWidening the conversation on frontier AI",
+      "title_en": "May 19, 2026AnnouncementsWidening the conversation on frontier AI",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/widening-conversation-ai",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "May 19, 2026AnnouncementsKPMG integrates Claude across its core business and workforce of more than",
       "title_en": "May 19, 2026AnnouncementsKPMG integrates Claude across its core business and workforce of more than ",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/anthropic-kpmg",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -300,7 +318,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -340,16 +358,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/higher-limits-spacex",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "May 5, 2026AnnouncementsAgents for financial services",
-      "title_en": "May 5, 2026AnnouncementsAgents for financial services",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/finance-agents",
       "is_new": false
     },
     {
@@ -420,7 +428,7 @@
       "summary_en": "A Nix plugin that resolves Cargo workspaces natively and allows for crate level builds",
       "changelog_items": [],
       "url": "https://github.com/anthropics/cargo-nix-plugin",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -430,7 +438,7 @@
       "summary_en": "HTML effectiveness examples",
       "changelog_items": [],
       "url": "https://github.com/anthropics/html-effectiveness",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -465,8 +473,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.144",
-    "Claude Code npm": "v2.1.144",
+    "Claude Code": "v2.1.145",
+    "Claude Code npm": "v2.1.145",
     "SDK Python": "v0.103.1",
     "SDK Python PyPI": "v0.103.1",
     "SDK TypeScript": "sdk: v0.96.0",
@@ -474,7 +482,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.140",
+    "GitHub Claude Code": "v2.1.141",
     "GitHub SDK Python": "v0.100.0"
   }
 }
