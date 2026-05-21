@@ -1,6 +1,44 @@
 {
-  "last_check": "2026-05-20T20:57:51.216474",
+  "last_check": "2026-05-21T20:48:54.113928",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.147",
+      "title_en": "v2.1.147",
+      "summary": "Ce qui a change Ajout de the Workflow tool for deterministic multi-agent orchestration. It is off by par defaut — set CLAUDE_CODE_WORKFLOWS=1 to activer Pinned arriere-plan sessions (Ctrl+T in claude agents) now stay alive when idle, are restarted in place to apply Claude Code updates, and are shed under memory appuyer surure only afte",
+      "summary_en": "What's changed\n\nAdded the Workflow tool for deterministic multi-agent orchestration. It is off by default — set CLAUDE_CODE_WORKFLOWS=1 to enable\nPinned background sessions (Ctrl+T in claude agents) now stay alive when idle, are restarted in place to apply Claude Code updates, and are shed under memory pressure only afte",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "the Workflow tool for deterministic multi-agent orchestration. It is off by default — set CLAUDE_CODE_WORKFLOWS=1 to enable"
+        },
+        {
+          "type": "changed",
+          "text": "Added the Workflow tool for deterministic multi-agent orchestration. It is off by default — set CLAUDE_CODE_WORKFLOWS=1 to enable"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.147",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.146",
+      "title_en": "v2.1.146",
+      "summary": "Ce qui a change Renomd /simplify to /code-review with an optional effort level (e.g. /code-review high) Auto mode no longer supappuyer sures AskUtilisateurQuestion when the utilisateur or a skill explicitly relies on it Correction de Windows PowerShell tool failing with \"commande line is invalid\" when pwsh is installed via win",
+      "summary_en": "What's changed\n\nRenamed /simplify to /code-review with an optional effort level (e.g. /code-review high)\nAuto mode no longer suppresses AskUserQuestion when the user or a skill explicitly relies on it\nFixed Windows PowerShell tool failing with \"command line is invalid\" when pwsh is installed via win",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "Windows PowerShell tool failing with \"command line is invalid\" when pwsh is installed via win"
+        },
+        {
+          "type": "changed",
+          "text": "Renamed /simplify to /code-review with an optional effort level (e.g. /code-review high)"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.146",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.145",
@@ -26,7 +64,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.145",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -72,53 +110,17 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.143",
+      "is_new": false
+    },
+    {
+      "source": "SDK Python",
+      "title": "v0.104.0",
+      "title_en": "v0.104.0",
+      "summary": "0.104.0 (2026-05-21) Journal complet: v0.103.1...v0.104.0 Fonctionnalites api: Add prise en charge de thinking-jeton-count beta for estimated jetons in thinking block deltas when streaming (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/",
+      "summary_en": "0.104.0 (2026-05-21)\nFull Changelog: v0.103.1...v0.104.0\nFeatures\n\napi: Add support for thinking-token-count beta for estimated tokens in thinking block deltas when streaming (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/80d0fdf460d6cd",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.104.0",
       "is_new": true
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.142",
-      "title_en": "v2.1.142",
-      "summary": "Ce qui a change Ajout de new claude agents flags: --add-dir, --parametres, --mcp-config, --plugin-dir, --permission-mode, --model, --effort, and --dangerously-skip-permissions to configure dispatched arriere-plan sessions Fast mode now uses Opus 4.7 by par defaut (pr",
-      "summary_en": "What's changed\n\nAdded new claude agents flags: --add-dir, --settings, --mcp-config, --plugin-dir, --permission-mode, --model, --effort, and --dangerously-skip-permissions to configure dispatched background sessions\nFast mode now uses Opus 4.7 by default (pr",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "new claude agents flags: --add-dir, --settings, --mcp-config, --plugin-dir, --permission-mode, --model, --effort, and --dangerously-skip-permissions to configure dispatched background sessions"
-        },
-        {
-          "type": "changed",
-          "text": "Added new claude agents flags: --add-dir, --settings, --mcp-config, --plugin-dir, --permission-mode, --model, --effort, and --dangerously-skip-permissions to configure dispatched background sessions"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.142",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.141",
-      "title_en": "v2.1.141",
-      "summary": "Ce qui a change Ajout de terminalSequence field to hook JSON sortie so hooks can emit desktop notifications, window titles, and bells without a controlling terminal Ajout de CLAUDE_CODE_PLUGIN_PREFER_HTTPS to clone GitHub plugin sources over HTTPS instead of SSH, for environments without a GitHub SSH key Ajout de ANTHROPIC_WORKSPACE_ID</cod",
-      "summary_en": "What's changed\n\nAdded terminalSequence field to hook JSON output so hooks can emit desktop notifications, window titles, and bells without a controlling terminal\nAdded CLAUDE_CODE_PLUGIN_PREFER_HTTPS to clone GitHub plugin sources over HTTPS instead of SSH, for environments without a GitHub SSH key\nAdded ANTHROPIC_WORKSPACE_ID</cod",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "terminalSequence field to hook JSON output so hooks can emit desktop notifications, window titles, and bells without a controlling terminal"
-        },
-        {
-          "type": "added",
-          "text": "CLAUDE_CODE_PLUGIN_PREFER_HTTPS to clone GitHub plugin sources over HTTPS instead of SSH, for environments without a GitHub SSH key"
-        },
-        {
-          "type": "added",
-          "text": "ANTHROPIC_WORKSPACE_ID</cod"
-        },
-        {
-          "type": "changed",
-          "text": "Added terminalSequence field to hook JSON output so hooks can emit desktop notifications, window titles, and bells without a controlling terminal"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.141",
-      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -161,14 +163,14 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.100.0",
-      "title_en": "v0.100.0",
-      "summary": "0.100.0 (2026-05-06) Journal complet: v0.99.0...v0.100.0 Fonctionnalites api: add prise en charge de Managed Agents multiagents and outcomes, webhooks, vault validation (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/",
-      "summary_en": "0.100.0 (2026-05-06)\nFull Changelog: v0.99.0...v0.100.0\nFeatures\n\napi: add support for Managed Agents multiagents and outcomes, webhooks, vault validation (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/3b3deee9c479ce5b54411a8572b66c5a90f",
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.98.0",
+      "title_en": "sdk: v0.98.0",
+      "summary": "0.98.0 (2026-05-21) Journal complet: sdk-v0.97.1...sdk-v0.98.0 Fonctionnalites api: Add prise en charge de thinking-jeton-count beta for estimated jetons in thinking block deltas when streaming (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/co",
+      "summary_en": "0.98.0 (2026-05-21)\nFull Changelog: sdk-v0.97.1...sdk-v0.98.0\nFeatures\n\napi: Add support for thinking-token-count beta for estimated tokens in thinking block deltas when streaming (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/co",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.100.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.98.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -221,44 +223,34 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.96.0",
-      "title_en": "sdk: v0.96.0",
-      "summary": "0.96.0 (2026-05-13) Journal complet: sdk-v0.95.2...sdk-v0.96.0 Fonctionnalites api: Add BetaManagedAgentsRechercheResultBlock tapers (",
-      "summary_en": "0.96.0 (2026-05-13)\nFull Changelog: sdk-v0.95.2...sdk-v0.96.0\nFeatures\n\napi: Add BetaManagedAgentsSearchResultBlock types (08f02f3",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.96.0",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.97.1",
-      "title_en": "v0.97.1",
-      "summary": "Publie le 2026-05-19",
-      "summary_en": "Publie le 2026-05-19",
+      "title": "v0.98.0",
+      "title_en": "v0.98.0",
+      "summary": "Publie le 2026-05-21",
+      "summary_en": "Publie le 2026-05-21",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.145",
-      "title_en": "v2.1.145",
-      "summary": "Publie le 2026-05-19",
-      "summary_en": "Publie le 2026-05-19",
+      "title": "v2.1.147",
+      "title_en": "v2.1.147",
+      "summary": "Publie le 2026-05-21",
+      "summary_en": "Publie le 2026-05-21",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.103.1",
-      "title_en": "v0.103.1",
+      "title": "v0.104.0",
+      "title_en": "v0.104.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -298,7 +290,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/widening-conversation-ai",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -318,7 +310,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -473,16 +465,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.145",
-    "Claude Code npm": "v2.1.145",
-    "SDK Python": "v0.103.1",
-    "SDK Python PyPI": "v0.103.1",
-    "SDK TypeScript": "sdk: v0.96.0",
+    "Claude Code": "v2.1.147",
+    "Claude Code npm": "v2.1.147",
+    "SDK Python": "v0.104.0",
+    "SDK Python PyPI": "v0.104.0",
+    "SDK TypeScript": "bedrock-sdk: v0.29.2",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.141",
-    "GitHub SDK Python": "v0.100.0"
+    "GitHub Claude Code": "v2.1.143",
+    "GitHub SDK Python": "v0.101.0"
   }
 }
