@@ -1,24 +1,39 @@
 {
-  "last_check": "2026-05-21T20:48:54.113928",
+  "last_check": "2026-05-22T20:40:45.927702",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.148",
+      "title_en": "v2.1.148",
+      "summary": "Ce qui a change Correction de the Bash tool returning exit code 127 on every commande for some utilisateurs (a regression introduced in 2.1.147)",
+      "summary_en": "What's changed\n\nFixed the Bash tool returning exit code 127 on every command for some users (a regression introduced in 2.1.147)\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "the Bash tool returning exit code 127 on every command for some users (a regression introduced in 2.1.147)"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed the Bash tool returning exit code 127 on every command for some users (a regression introduced in 2.1.147)"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.148",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.147",
       "title_en": "v2.1.147",
-      "summary": "Ce qui a change Ajout de the Workflow tool for deterministic multi-agent orchestration. It is off by par defaut — set CLAUDE_CODE_WORKFLOWS=1 to activer Pinned arriere-plan sessions (Ctrl+T in claude agents) now stay alive when idle, are restarted in place to apply Claude Code updates, and are shed under memory appuyer surure only afte",
-      "summary_en": "What's changed\n\nAdded the Workflow tool for deterministic multi-agent orchestration. It is off by default — set CLAUDE_CODE_WORKFLOWS=1 to enable\nPinned background sessions (Ctrl+T in claude agents) now stay alive when idle, are restarted in place to apply Claude Code updates, and are shed under memory pressure only afte",
+      "summary": "Ce qui a change Pinned arriere-plan sessions (Ctrl+T in claude agents) now stay alive when idle, are restarted in place to apply Claude Code updates, and are shed under memory appuyer surure only after non-pinned sessions Renomd /simplify to /code-review. It now reports correctness bugs at a chosen effort level (e.g., /co",
+      "summary_en": "What's changed\n\nPinned background sessions (Ctrl+T in claude agents) now stay alive when idle, are restarted in place to apply Claude Code updates, and are shed under memory pressure only after non-pinned sessions\nRenamed /simplify to /code-review. It now reports correctness bugs at a chosen effort level (e.g., /co",
       "changelog_items": [
         {
-          "type": "added",
-          "text": "the Workflow tool for deterministic multi-agent orchestration. It is off by default — set CLAUDE_CODE_WORKFLOWS=1 to enable"
-        },
-        {
           "type": "changed",
-          "text": "Added the Workflow tool for deterministic multi-agent orchestration. It is off by default — set CLAUDE_CODE_WORKFLOWS=1 to enable"
+          "text": "Pinned background sessions (Ctrl+T in claude agents) now stay alive when idle, are restarted in place to apply Claude Code updates, and are shed under memory pressure only after non-pinned sessions"
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.147",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -37,7 +52,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.146",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -90,27 +105,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.143",
-      "title_en": "v2.1.143",
-      "summary": "Ce qui a change Ajout de plugin dependency enforcement: claude plugin desactiver now refuses when another activerd plugin depends on the target (with a copy-pasteable desactiver-chain hint), and claude plugin activer force-activers transitive dependencies Ajout de projected context cost (per-turn and per-invocation jeton estimates) to the /plugin m",
-      "summary_en": "What's changed\n\nAdded plugin dependency enforcement: claude plugin disable now refuses when another enabled plugin depends on the target (with a copy-pasteable disable-chain hint), and claude plugin enable force-enables transitive dependencies\nAdded projected context cost (per-turn and per-invocation token estimates) to the /plugin m",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "plugin dependency enforcement: claude plugin disable now refuses when another enabled plugin depends on the target (with a copy-pasteable disable-chain hint), and claude plugin enable force-enables tr"
-        },
-        {
-          "type": "added",
-          "text": "projected context cost (per-turn and per-invocation token estimates) to the /plugin m"
-        },
-        {
-          "type": "changed",
-          "text": "Added plugin dependency enforcement: claude plugin disable now refuses when another enabled plugin depends on the target (with a copy-pasteable disable-chain hint), and claude plugin enable force-enab"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.143",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.104.1",
+      "title_en": "v0.104.1",
+      "summary": "0.104.1 (2026-05-21) Journal complet: v0.104.0...v0.104.1 Corrections de bugs streaming: carry encrypted_content through beta compaction accumulator (<a href=\"https://github.com/anth",
+      "summary_en": "0.104.1 (2026-05-21)\nFull Changelog: v0.104.0...v0.104.1\nBug Fixes\n\nstreaming: carry encrypted_content through beta compaction accumulator (#1821) (<a href=\"https://github.com/anth",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.104.1",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -120,7 +122,7 @@
       "summary_en": "0.104.0 (2026-05-21)\nFull Changelog: v0.103.1...v0.104.0\nFeatures\n\napi: Add support for thinking-token-count beta for estimated tokens in thinking block deltas when streaming (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/80d0fdf460d6cd",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.104.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -153,16 +155,6 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.101.0",
-      "title_en": "v0.101.0",
-      "summary": "0.101.0 (2026-05-11) Journal complet: v0.100.0...v0.101.0 Fonctionnalites aws: Add AWS client for Claude Platform on AWS () Bug F",
-      "summary_en": "0.101.0 (2026-05-11)\nFull Changelog: v0.100.0...v0.101.0\nFeatures\n\naws: Add AWS client for Claude Platform on AWS (1e70e3a)\n\nBug F",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.101.0",
-      "is_new": false
-    },
-    {
       "source": "SDK TypeScript",
       "title": "sdk: v0.98.0",
       "title_en": "sdk: v0.98.0",
@@ -170,7 +162,7 @@
       "summary_en": "0.98.0 (2026-05-21)\nFull Changelog: sdk-v0.97.1...sdk-v0.98.0\nFeatures\n\napi: Add support for thinking-token-count beta for estimated tokens in thinking block deltas when streaming (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/co",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.98.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -230,22 +222,22 @@
       "summary_en": "Publie le 2026-05-21",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.147",
-      "title_en": "v2.1.147",
-      "summary": "Publie le 2026-05-21",
-      "summary_en": "Publie le 2026-05-21",
+      "title": "v2.1.148",
+      "title_en": "v2.1.148",
+      "summary": "Publie le 2026-05-22",
+      "summary_en": "Publie le 2026-05-22",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.104.0",
-      "title_en": "v0.104.0",
+      "title": "v0.104.1",
+      "title_en": "v0.104.1",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
@@ -424,6 +416,16 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "scone-bench",
+      "title_en": "scone-bench",
+      "summary": "Benchmark for evaluating LLM agents on smart-contract vulnerability discovery and exploitation",
+      "summary_en": "Benchmark for evaluating LLM agents on smart-contract vulnerability discovery and exploitation",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/scone-bench",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "html-effectiveness",
       "title_en": "html-effectiveness",
       "summary": "HTML effectiveness examples",
@@ -451,30 +453,20 @@
       "changelog_items": [],
       "url": "https://github.com/anthropics/cwc-workshops",
       "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "cwc-long-running-agents",
-      "title_en": "cwc-long-running-agents",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/cwc-long-running-agents",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.147",
-    "Claude Code npm": "v2.1.147",
-    "SDK Python": "v0.104.0",
-    "SDK Python PyPI": "v0.104.0",
+    "Claude Code": "v2.1.148",
+    "Claude Code npm": "v2.1.148",
+    "SDK Python": "v0.104.1",
+    "SDK Python PyPI": "v0.104.1",
     "SDK TypeScript": "bedrock-sdk: v0.29.2",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.143",
-    "GitHub SDK Python": "v0.101.0"
+    "GitHub Claude Code": "v2.1.144",
+    "GitHub SDK Python": "v0.102.0"
   }
 }
