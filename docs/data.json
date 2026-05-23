@@ -1,6 +1,36 @@
 {
-  "last_check": "2026-05-22T20:40:45.927702",
+  "last_check": "2026-05-23T20:03:57.534840",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.150",
+      "title_en": "v2.1.150",
+      "summary": "Ce qui a change Internal infrastructure improvements (no utilisateur-facing changes)",
+      "summary_en": "What's changed\n\nInternal infrastructure improvements (no user-facing changes)\n",
+      "changelog_items": [
+        {
+          "type": "changed",
+          "text": "Internal infrastructure improvements (no user-facing changes)"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.150",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.149",
+      "title_en": "v2.1.149",
+      "summary": "Ce qui a change /usage now affichers a per-category breakdown of what's driving your limits usage — skills, subagents, plugins, and per-MCP-server cost /diff detail view can now be scrolled with the keyboard (arrows, j/k, PgUp/PgDn, Space, Home/End) Ma",
+      "summary_en": "What's changed\n\n/usage now shows a per-category breakdown of what's driving your limits usage — skills, subagents, plugins, and per-MCP-server cost\n/diff detail view can now be scrolled with the keyboard (arrows, j/k, PgUp/PgDn, Space, Home/End)\nMa",
+      "changelog_items": [
+        {
+          "type": "changed",
+          "text": "/usage now shows a per-category breakdown of what's driving your limits usage — skills, subagents, plugins, and per-MCP-server cost"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.149",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.148",
@@ -18,7 +48,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.148",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -55,56 +85,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.145",
-      "title_en": "v2.1.145",
-      "summary": "Ce qui a change Ajout de claude agents --json to list live Claude sessions as JSON for scripting (tmux-resurrect, status bars, session pickers) Ajout de agent_id and parent_agent_id attributes to claude_code.tool OTEL spans, and correction de trace parenting so arriere-plan subagent spans nest under the dispatching Agent tool span",
-      "summary_en": "What's changed\n\nAdded claude agents --json to list live Claude sessions as JSON for scripting (tmux-resurrect, status bars, session pickers)\nAdded agent_id and parent_agent_id attributes to claude_code.tool OTEL spans, and fixed trace parenting so background subagent spans nest under the dispatching Agent tool span\n",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "claude agents --json to list live Claude sessions as JSON for scripting (tmux-resurrect, status bars, session pickers)"
-        },
-        {
-          "type": "added",
-          "text": "agent_id and parent_agent_id attributes to claude_code.tool OTEL spans, and fixed trace parenting so background subagent spans nest under the dispatching Agent tool span"
-        },
-        {
-          "type": "fixed",
-          "text": "trace parenting so background subagent spans nest under the dispatching Agent tool span"
-        },
-        {
-          "type": "changed",
-          "text": "Added claude agents --json to list live Claude sessions as JSON for scripting (tmux-resurrect, status bars, session pickers)"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.145",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.144",
-      "title_en": "v2.1.144",
-      "summary": "Ce qui a change Ajout de /resume prise en charge de arriere-plan sessions — sessions started via claude --bg or agent view now appear alongside interactive ones, marked with bg Ajout de elapsed duration to arriere-plan subagent completion notifications (e.g. \"Agent completed · 3h 2m 5s\") The /plugin browse and discover panes now",
-      "summary_en": "What's changed\n\nAdded /resume support for background sessions — sessions started via claude --bg or agent view now appear alongside interactive ones, marked with bg\nAdded elapsed duration to background subagent completion notifications (e.g. \"Agent completed · 3h 2m 5s\")\nThe /plugin browse and discover panes now",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "/resume support for background sessions — sessions started via claude --bg or agent view now appear alongside interactive ones, marked with bg"
-        },
-        {
-          "type": "added",
-          "text": "elapsed duration to background subagent completion notifications (e.g. \"Agent completed · 3h 2m 5s\")"
-        },
-        {
-          "type": "changed",
-          "text": "Added /resume support for background sessions — sessions started via claude --bg or agent view now appear alongside interactive ones, marked with bg"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.144",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.104.1",
       "title_en": "v0.104.1",
@@ -112,7 +92,7 @@
       "summary_en": "0.104.1 (2026-05-21)\nFull Changelog: v0.104.0...v0.104.1\nBug Fixes\n\nstreaming: carry encrypted_content through beta compaction accumulator (#1821) (<a href=\"https://github.com/anth",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.104.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -226,10 +206,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.148",
-      "title_en": "v2.1.148",
-      "summary": "Publie le 2026-05-22",
-      "summary_en": "Publie le 2026-05-22",
+      "title": "v2.1.150",
+      "title_en": "v2.1.150",
+      "summary": "Publie le 2026-05-23",
+      "summary_en": "Publie le 2026-05-23",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -242,7 +222,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -422,7 +402,7 @@
       "summary_en": "Benchmark for evaluating LLM agents on smart-contract vulnerability discovery and exploitation",
       "changelog_items": [],
       "url": "https://github.com/anthropics/scone-bench",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -457,8 +437,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.148",
-    "Claude Code npm": "v2.1.148",
+    "Claude Code": "v2.1.150",
+    "Claude Code npm": "v2.1.150",
     "SDK Python": "v0.104.1",
     "SDK Python PyPI": "v0.104.1",
     "SDK TypeScript": "bedrock-sdk: v0.29.2",
@@ -466,7 +446,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.144",
+    "GitHub Claude Code": "v2.1.146",
     "GitHub SDK Python": "v0.102.0"
   }
 }
