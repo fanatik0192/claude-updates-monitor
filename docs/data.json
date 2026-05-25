@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-05-24T20:02:14.832770",
+  "last_check": "2026-05-25T20:20:24.248566",
   "updates": [
     {
       "source": "Claude Code",
@@ -256,6 +256,16 @@
     },
     {
       "source": "Blog",
+      "title": "May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Mag",
+      "title_en": "May 25, 2026AnnouncementsAnthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Mag",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "May 19, 2026AnnouncementsWidening the conversation on frontier AI",
       "title_en": "May 19, 2026AnnouncementsWidening the conversation on frontier AI",
       "summary": "",
@@ -312,16 +322,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-for-small-business",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "May 6, 2026AnnouncementsHigher usage limits for Claude and a compute deal with SpaceX",
-      "title_en": "May 6, 2026AnnouncementsHigher usage limits for Claude and a compute deal with SpaceX",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/higher-limits-spacex",
       "is_new": false
     },
     {
