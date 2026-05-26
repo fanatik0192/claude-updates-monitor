@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-05-25T20:20:24.248566",
+  "last_check": "2026-05-26T20:51:16.484517",
   "updates": [
     {
       "source": "Claude Code",
@@ -142,7 +142,7 @@
       "summary_en": "0.98.0 (2026-05-21)\nFull Changelog: sdk-v0.97.1...sdk-v0.98.0\nFeatures\n\napi: Add support for thinking-token-count beta for estimated tokens in thinking block deltas when streaming (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/co",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.98.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -212,7 +212,7 @@
       "summary_en": "Publie le 2026-05-23",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
@@ -262,7 +262,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -386,6 +386,16 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "defending-code-reference-harness",
+      "title_en": "defending-code-reference-harness",
+      "summary": "A reference implementation for autonomous vulnerability discovery and human-reviewed remediation with Claude",
+      "summary_en": "A reference implementation for autonomous vulnerability discovery and human-reviewed remediation with Claude",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/defending-code-reference-harness",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "cargo-nix-plugin",
       "title_en": "cargo-nix-plugin",
       "summary": "A Nix plugin that resolves Cargo workspaces natively and allows for crate level builds",
@@ -422,16 +432,6 @@
       "summary_en": "A Swift package for parsing, building, editing, and analyzing Markdown documents.",
       "changelog_items": [],
       "url": "https://github.com/anthropics/swift-markdown",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "cwc-workshops",
-      "title_en": "cwc-workshops",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/cwc-workshops",
       "is_new": false
     }
   ],
