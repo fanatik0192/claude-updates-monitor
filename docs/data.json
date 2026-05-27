@@ -1,6 +1,25 @@
 {
-  "last_check": "2026-05-26T20:51:16.484517",
+  "last_check": "2026-05-27T20:59:57.353387",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.152",
+      "title_en": "v2.1.152",
+      "summary": "Ce qui a change /code-review --fix now applies review findings to your working tree after the review, surfacing reuse, simplification, and efficiency suggestions; /simplify now invokes /code-review --fix Skills and slash commandes can now set disallowed-tools in frontmatter to remove tools from the model while the skill i",
+      "summary_en": "What's changed\n\n/code-review --fix now applies review findings to your working tree after the review, surfacing reuse, simplification, and efficiency suggestions; /simplify now invokes /code-review --fix\nSkills and slash commands can now set disallowed-tools in frontmatter to remove tools from the model while the skill i",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "now applies review findings to your working tree after the review, surfacing reuse, simplification, and efficiency suggestions; /simplify now invokes /code-review --fix"
+        },
+        {
+          "type": "changed",
+          "text": "/code-review --fix now applies review findings to your working tree after the review, surfacing reuse, simplification, and efficiency suggestions; /simplify now invokes /code-review --fix"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.152",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.150",
@@ -66,25 +85,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.146",
-      "title_en": "v2.1.146",
-      "summary": "Ce qui a change Renomd /simplify to /code-review with an optional effort level (e.g. /code-review high) Auto mode no longer supappuyer sures AskUtilisateurQuestion when the utilisateur or a skill explicitly relies on it Correction de Windows PowerShell tool failing with \"commande line is invalid\" when pwsh is installed via win",
-      "summary_en": "What's changed\n\nRenamed /simplify to /code-review with an optional effort level (e.g. /code-review high)\nAuto mode no longer suppresses AskUserQuestion when the user or a skill explicitly relies on it\nFixed Windows PowerShell tool failing with \"command line is invalid\" when pwsh is installed via win",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "Windows PowerShell tool failing with \"command line is invalid\" when pwsh is installed via win"
-        },
-        {
-          "type": "changed",
-          "text": "Renamed /simplify to /code-review with an optional effort level (e.g. /code-review high)"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.146",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.104.1",
       "title_en": "v0.104.1",
@@ -136,13 +136,38 @@
     },
     {
       "source": "SDK TypeScript",
+      "title": "sdk: v0.99.0",
+      "title_en": "sdk: v0.99.0",
+      "summary": "0.99.0 (2026-05-27) Journal complet: sdk-v0.98.1...sdk-v0.99.0 Fonctionnalites prise en charge personnalise fichier size caps (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/8",
+      "summary_en": "0.99.0 (2026-05-27)\nFull Changelog: sdk-v0.98.1...sdk-v0.99.0\nFeatures\n\nsupport custom file size caps (#1029) (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/8",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.99.0",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.98.1",
+      "title_en": "sdk: v0.98.1",
+      "summary": "0.98.1 (2026-05-26) Journal complet: sdk-v0.98.0...sdk-v0.98.1 Corrections de bugs client: preserve repertoire prefix in skills.versions.create uploads (<a href=\"https:/",
+      "summary_en": "0.98.1 (2026-05-26)\nFull Changelog: sdk-v0.98.0...sdk-v0.98.1\nBug Fixes\n\nclient: preserve directory prefix in skills.versions.create uploads (#1024) (<a href=\"https:/",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "in skills.versions.create uploads (#1024) (<a href=\"https:/"
+        }
+      ],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.98.1",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
       "title": "sdk: v0.98.0",
       "title_en": "sdk: v0.98.0",
       "summary": "0.98.0 (2026-05-21) Journal complet: sdk-v0.97.1...sdk-v0.98.0 Fonctionnalites api: Add prise en charge de thinking-jeton-count beta for estimated jetons in thinking block deltas when streaming (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/co",
       "summary_en": "0.98.0 (2026-05-21)\nFull Changelog: sdk-v0.97.1...sdk-v0.98.0\nFeatures\n\napi: Add support for thinking-token-count beta for estimated tokens in thinking block deltas when streaming (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/co",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.98.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -170,46 +195,21 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.97.0",
-      "title_en": "sdk: v0.97.0",
-      "summary": "0.97.0 (2026-05-19) Journal complet: sdk-v0.96.0...sdk-v0.97.0 Fonctionnalites client: Add prise en charge de self-hosted sandboxes in CMA with sandbox helpers (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
-      "summary_en": "0.97.0 (2026-05-19)\nFull Changelog: sdk-v0.96.0...sdk-v0.97.0\nFeatures\n\nclient: Add support for self-hosted sandboxes in CMA with sandbox helpers (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/659a343c820e316229715466b64e4",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.97.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "bedrock-sdk: v0.29.2",
-      "title_en": "bedrock-sdk: v0.29.2",
-      "summary": "0.29.2 (2026-05-19) Journal complet: bedrock-sdk-v0.29.1...bedrock-sdk-v0.29.2 Corrections de bugs align @tapers/node in sub-packages to fix CI build (<a href=\"https://gi",
-      "summary_en": "0.29.2 (2026-05-19)\nFull Changelog: bedrock-sdk-v0.29.1...bedrock-sdk-v0.29.2\nBug Fixes\n\nalign @types/node in sub-packages to fix CI build (#1017) (<a href=\"https://gi",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "CI build (#1017) (<a href=\"https://gi"
-        }
-      ],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.29.2",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.98.0",
-      "title_en": "v0.98.0",
-      "summary": "Publie le 2026-05-21",
-      "summary_en": "Publie le 2026-05-21",
+      "title": "v0.99.0",
+      "title_en": "v0.99.0",
+      "summary": "Publie le 2026-05-27",
+      "summary_en": "Publie le 2026-05-27",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.150",
-      "title_en": "v2.1.150",
-      "summary": "Publie le 2026-05-23",
-      "summary_en": "Publie le 2026-05-23",
+      "title": "v2.1.152",
+      "title_en": "v2.1.152",
+      "summary": "Publie le 2026-05-26",
+      "summary_en": "Publie le 2026-05-26",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -253,6 +253,16 @@
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
       "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "May 26, 2026AnnouncementsAnthropic appoints KiYoung Choi as Representative Director of Korea ahead o",
+      "title_en": "May 26, 2026AnnouncementsAnthropic appoints KiYoung Choi as Representative Director of Korea ahead o",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea",
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -312,16 +322,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/gates-foundation-partnership",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "May 13, 2026AnnouncementsIntroducing Claude for Small Business",
-      "title_en": "May 13, 2026AnnouncementsIntroducing Claude for Small Business",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-for-small-business",
       "is_new": false
     },
     {
@@ -392,7 +392,7 @@
       "summary_en": "A reference implementation for autonomous vulnerability discovery and human-reviewed remediation with Claude",
       "changelog_items": [],
       "url": "https://github.com/anthropics/defending-code-reference-harness",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -437,16 +437,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.150",
-    "Claude Code npm": "v2.1.150",
+    "Claude Code": "v2.1.152",
+    "Claude Code npm": "v2.1.152",
     "SDK Python": "v0.104.1",
     "SDK Python PyPI": "v0.104.1",
-    "SDK TypeScript": "bedrock-sdk: v0.29.2",
+    "SDK TypeScript": "sdk: v0.97.1",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.146",
+    "GitHub Claude Code": "v2.1.147",
     "GitHub SDK Python": "v0.102.0"
   }
 }
