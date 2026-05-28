@@ -1,6 +1,40 @@
 {
-  "last_check": "2026-05-27T20:59:57.353387",
+  "last_check": "2026-05-28T21:05:29.295493",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.154",
+      "title_en": "v2.1.154",
+      "summary": "Ce qui a change Opus 4.8 is here! Now par defauts to high effort · /effort xhigh for your hardest tasks Introducing dynamic workflows: ask Claude to create a workflow and it orchestrates work across tens to hundreds of agents in the arriere-plan, so you can take on larger, more complex tasks. Run /workflows to view your runs Fast mode on Opus 4.8 is now a",
+      "summary_en": "What's changed\n\nOpus 4.8 is here! Now defaults to high effort · /effort xhigh for your hardest tasks\nIntroducing dynamic workflows: ask Claude to create a workflow and it orchestrates work across tens to hundreds of agents in the background, so you can take on larger, more complex tasks. Run /workflows to view your runs\nFast mode on Opus 4.8 is now a",
+      "changelog_items": [
+        {
+          "type": "changed",
+          "text": "Opus 4.8 is here! Now defaults to high effort · /effort xhigh for your hardest tasks"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.154",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.153",
+      "title_en": "v2.1.153",
+      "summary": "Ce qui a change Ajout de skipLfs option to github/git plugin marketplace sources to skip Git LFS downloads during clone and update Claude Code now affichers a one-time notice when your npm global install can't mise a jour automatique; /doctor lists the fixes Status line commandes now receive COLUMNS and LINES</co",
+      "summary_en": "What's changed\n\nAdded skipLfs option to github/git plugin marketplace sources to skip Git LFS downloads during clone and update\nClaude Code now shows a one-time notice when your npm global install can't auto-update; /doctor lists the fixes\nStatus line commands now receive COLUMNS and LINES</co",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "skipLfs option to github/git plugin marketplace sources to skip Git LFS downloads during clone and update"
+        },
+        {
+          "type": "changed",
+          "text": "Added skipLfs option to github/git plugin marketplace sources to skip Git LFS downloads during clone and update"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.153",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.152",
@@ -18,7 +52,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.152",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -51,38 +85,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.148",
-      "title_en": "v2.1.148",
-      "summary": "Ce qui a change Correction de the Bash tool returning exit code 127 on every commande for some utilisateurs (a regression introduced in 2.1.147)",
-      "summary_en": "What's changed\n\nFixed the Bash tool returning exit code 127 on every command for some users (a regression introduced in 2.1.147)\n",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "the Bash tool returning exit code 127 on every command for some users (a regression introduced in 2.1.147)"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed the Bash tool returning exit code 127 on every command for some users (a regression introduced in 2.1.147)"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.148",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.147",
-      "title_en": "v2.1.147",
-      "summary": "Ce qui a change Pinned arriere-plan sessions (Ctrl+T in claude agents) now stay alive when idle, are restarted in place to apply Claude Code updates, and are shed under memory appuyer surure only after non-pinned sessions Renomd /simplify to /code-review. It now reports correctness bugs at a chosen effort level (e.g., /co",
-      "summary_en": "What's changed\n\nPinned background sessions (Ctrl+T in claude agents) now stay alive when idle, are restarted in place to apply Claude Code updates, and are shed under memory pressure only after non-pinned sessions\nRenamed /simplify to /code-review. It now reports correctness bugs at a chosen effort level (e.g., /co",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Pinned background sessions (Ctrl+T in claude agents) now stay alive when idle, are restarted in place to apply Claude Code updates, and are shed under memory pressure only after non-pinned sessions"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.147",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.105.0",
+      "title_en": "v0.105.0",
+      "summary": "0.105.0 (2026-05-28) Journal complet: v0.104.1...v0.105.0 Fonctionnalites api: Add prise en charge de claude-opus-4-8, mid-conversation system blocks, and usage.sortie_jetons_details (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/",
+      "summary_en": "0.105.0 (2026-05-28)\nFull Changelog: v0.104.1...v0.105.0\nFeatures\n\napi: Add support for claude-opus-4-8, mid-conversation system blocks, and usage.output_tokens_details (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/f18b01414b21b49943a6",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.105.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -125,14 +135,14 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.102.0",
-      "title_en": "v0.102.0",
-      "summary": "0.102.0 (2026-05-13) Journal complet: v0.101.0...v0.102.0 Fonctionnalites api: Add BetaManagedAgentsRechercheResultBlock tapers ()",
-      "summary_en": "0.102.0 (2026-05-13)\nFull Changelog: v0.101.0...v0.102.0\nFeatures\n\napi: Add BetaManagedAgentsSearchResultBlock types (3681f10)\n",
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.100.0",
+      "title_en": "sdk: v0.100.0",
+      "summary": "0.100.0 (2026-05-28) Journal complet: sdk-v0.99.0...sdk-v0.100.0 Fonctionnalites api: Add prise en charge de claude-opus-4-8, mid-conversation system blocks, and usage.sortie_jetons_details (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commi",
+      "summary_en": "0.100.0 (2026-05-28)\nFull Changelog: sdk-v0.99.0...sdk-v0.100.0\nFeatures\n\napi: Add support for claude-opus-4-8, mid-conversation system blocks, and usage.output_tokens_details (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commi",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.102.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.100.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -142,7 +152,7 @@
       "summary_en": "0.99.0 (2026-05-27)\nFull Changelog: sdk-v0.98.1...sdk-v0.99.0\nFeatures\n\nsupport custom file size caps (#1029) (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/8",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.99.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -157,7 +167,7 @@
         }
       ],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.98.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -185,54 +195,44 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.97.1",
-      "title_en": "sdk: v0.97.1",
-      "summary": "0.97.1 (2026-05-19) Journal complet: sdk-v0.97.0...sdk-v0.97.1 Corrections de bugs runner: skip tool calls SessionToolRunner does not own (99873",
-      "summary_en": "0.97.1 (2026-05-19)\nFull Changelog: sdk-v0.97.0...sdk-v0.97.1\nBug Fixes\n\nrunner: skip tool calls SessionToolRunner does not own (99873",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.97.1",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.99.0",
-      "title_en": "v0.99.0",
-      "summary": "Publie le 2026-05-27",
-      "summary_en": "Publie le 2026-05-27",
+      "title": "v0.100.0",
+      "title_en": "v0.100.0",
+      "summary": "Publie le 2026-05-28",
+      "summary_en": "Publie le 2026-05-28",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
       "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.152",
-      "title_en": "v2.1.152",
-      "summary": "Publie le 2026-05-26",
-      "summary_en": "Publie le 2026-05-26",
+      "title": "v2.1.154",
+      "title_en": "v2.1.154",
+      "summary": "Publie le 2026-05-28",
+      "summary_en": "Publie le 2026-05-28",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.104.1",
-      "title_en": "v0.104.1",
+      "title": "v0.105.0",
+      "title_en": "v0.105.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
-      "title": "Introducing Claude Opus 4.7ProductApr 16, 2026Our derniere Opus model brings stronger performance acro",
-      "title_en": "Introducing Claude Opus 4.7ProductApr 16, 2026Our latest Opus model brings stronger performance acro",
+      "title": "Introducing Claude Opus 4.8ProductMay 28, 2026An upgrade to our Opus class of models, with stronger",
+      "title_en": "Introducing Claude Opus 4.8ProductMay 28, 2026An upgrade to our Opus class of models, with stronger ",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-opus-4-7",
-      "is_new": false
+      "url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -256,13 +256,33 @@
     },
     {
       "source": "Blog",
+      "title": "May 28, 2026AnnouncementsAnthropic raises $65B in Series H funding at $965B post-money valuation",
+      "title_en": "May 28, 2026AnnouncementsAnthropic raises $65B in Series H funding at $965B post-money valuation",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/series-h",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "May 27, 2026AnnouncementsAnthropic ouvrirs Milan office to prise en charge Italian enterprise, rerecherche, and d",
+      "title_en": "May 27, 2026AnnouncementsAnthropic opens Milan office to support Italian enterprise, research, and d",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/milan-office-opening",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "May 26, 2026AnnouncementsAnthropic appoints KiYoung Choi as Representative Director of Korea ahead o",
       "title_en": "May 26, 2026AnnouncementsAnthropic appoints KiYoung Choi as Representative Director of Korea ahead o",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -302,26 +322,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "May 14, 2026AnnouncementsPwC is deploying Claude to build technology, execute deals, and reinvent en",
-      "title_en": "May 14, 2026AnnouncementsPwC is deploying Claude to build technology, execute deals, and reinvent en",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/pwc-expanded-partnership",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "May 14, 2026AnnouncementsAnthropic forms $200 million partnership with the Gates Foundation",
-      "title_en": "May 14, 2026AnnouncementsAnthropic forms $200 million partnership with the Gates Foundation",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/gates-foundation-partnership",
       "is_new": false
     },
     {
@@ -388,8 +388,8 @@
       "source": "Nouveau Depot",
       "title": "defending-code-reference-harness",
       "title_en": "defending-code-reference-harness",
-      "summary": "A reference implementation for autonomous vulnerability discovery and human-reviewed remediation with Claude",
-      "summary_en": "A reference implementation for autonomous vulnerability discovery and human-reviewed remediation with Claude",
+      "summary": "Skills for threat modeling, scanning, triage, patching, plus an autonomous scanning harness you can /personnaliseize",
+      "summary_en": "Skills for threat modeling, scanning, triage, patching, plus an autonomous scanning harness you can /customize",
       "changelog_items": [],
       "url": "https://github.com/anthropics/defending-code-reference-harness",
       "is_new": false
@@ -437,16 +437,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.152",
-    "Claude Code npm": "v2.1.152",
-    "SDK Python": "v0.104.1",
-    "SDK Python PyPI": "v0.104.1",
-    "SDK TypeScript": "sdk: v0.97.1",
+    "Claude Code": "v2.1.154",
+    "Claude Code npm": "v2.1.154",
+    "SDK Python": "v0.105.0",
+    "SDK Python PyPI": "v0.105.0",
+    "SDK TypeScript": "vertex-sdk: v0.16.1",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.147",
-    "GitHub SDK Python": "v0.102.0"
+    "GitHub Claude Code": "v2.1.149",
+    "GitHub SDK Python": "v0.103.0"
   }
 }
