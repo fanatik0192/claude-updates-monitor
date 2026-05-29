@@ -1,6 +1,48 @@
 {
-  "last_check": "2026-05-28T21:05:29.295493",
+  "last_check": "2026-05-29T21:05:29.450317",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.157",
+      "title_en": "v2.1.157",
+      "summary": "Ce qui a change Plugins in .claude/skills directories are now automatically loaded, no marketplace required Ajout de claude plugin init &lt;nom&gt; to scaffold a new plugin in .claude/skills Ajout de autocompletion for /plugin arguments: subcommandes, installed plugin noms, and plugins from known marketplaces",
+      "summary_en": "What's changed\n\nPlugins in .claude/skills directories are now automatically loaded, no marketplace required\nAdded claude plugin init &lt;name&gt; to scaffold a new plugin in .claude/skills\nAdded autocomplete for /plugin arguments: subcommands, installed plugin names, and plugins from known marketplaces\n",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "claude plugin init &lt;name&gt; to scaffold a new plugin in .claude/skills"
+        },
+        {
+          "type": "added",
+          "text": "autocomplete for /plugin arguments: subcommands, installed plugin names, and plugins from known marketplaces"
+        },
+        {
+          "type": "changed",
+          "text": "Plugins in .claude/skills directories are now automatically loaded, no marketplace required"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.157",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.156",
+      "title_en": "v2.1.156",
+      "summary": "Ce qui a change Correction de an issue when using Opus 4.8 where thinking blocks were modified, leading to API erreurs.",
+      "summary_en": "What's changed\n\nFixed an issue when using Opus 4.8 where thinking blocks were modified, leading to API errors.\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "an issue when using Opus 4.8 where thinking blocks were modified, leading to API errors."
+        },
+        {
+          "type": "changed",
+          "text": "Fixed an issue when using Opus 4.8 where thinking blocks were modified, leading to API errors."
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.156",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.154",
@@ -14,7 +56,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.154",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -33,7 +75,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.153",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -55,34 +97,24 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.150",
-      "title_en": "v2.1.150",
-      "summary": "Ce qui a change Internal infrastructure improvements (no utilisateur-facing changes)",
-      "summary_en": "What's changed\n\nInternal infrastructure improvements (no user-facing changes)\n",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Internal infrastructure improvements (no user-facing changes)"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.150",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.105.2",
+      "title_en": "v0.105.2",
+      "summary": "0.105.2 (2026-05-29) Journal complet: v0.105.1...v0.105.2",
+      "summary_en": "0.105.2 (2026-05-29)\nFull Changelog: v0.105.1...v0.105.2",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.105.2",
+      "is_new": true
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.149",
-      "title_en": "v2.1.149",
-      "summary": "Ce qui a change /usage now affichers a per-category breakdown of what's driving your limits usage — skills, subagents, plugins, and per-MCP-server cost /diff detail view can now be scrolled with the keyboard (arrows, j/k, PgUp/PgDn, Space, Home/End) Ma",
-      "summary_en": "What's changed\n\n/usage now shows a per-category breakdown of what's driving your limits usage — skills, subagents, plugins, and per-MCP-server cost\n/diff detail view can now be scrolled with the keyboard (arrows, j/k, PgUp/PgDn, Space, Home/End)\nMa",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "/usage now shows a per-category breakdown of what's driving your limits usage — skills, subagents, plugins, and per-MCP-server cost"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.149",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.105.1",
+      "title_en": "v0.105.1",
+      "summary": "0.105.1 (2026-05-29) Journal complet: v0.105.0...v0.105.1 Maintenance internal: use Trusted Publishing for PyPI versions ()",
+      "summary_en": "0.105.1 (2026-05-29)\nFull Changelog: v0.105.0...v0.105.1\nChores\n\ninternal: use Trusted Publishing for PyPI releases (1d04fc5)\n",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.105.1",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -92,7 +124,7 @@
       "summary_en": "0.105.0 (2026-05-28)\nFull Changelog: v0.104.1...v0.105.0\nFeatures\n\napi: Add support for claude-opus-4-8, mid-conversation system blocks, and usage.output_tokens_details (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/f18b01414b21b49943a6",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.105.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -115,24 +147,34 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.103.1",
-      "title_en": "v0.103.1",
-      "summary": "0.103.1 (2026-05-19) Journal complet: v0.103.0...v0.103.1 Corrections de bugs runner: skip tool calls SessionToolRunner does not own (<a href=\"https://github.com/anthropics/anthropic",
-      "summary_en": "0.103.1 (2026-05-19)\nFull Changelog: v0.103.0...v0.103.1\nBug Fixes\n\nrunner: skip tool calls SessionToolRunner does not own (#1817) (<a href=\"https://github.com/anthropics/anthropic",
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.100.1",
+      "title_en": "sdk: v0.100.1",
+      "summary": "0.100.1 (2026-05-29) Journal complet: sdk-v0.100.0...sdk-v0.100.1 Corrections de bugs streaming: carry encrypted_content on beta compaction blocks (<a href=\"https://g",
+      "summary_en": "0.100.1 (2026-05-29)\nFull Changelog: sdk-v0.100.0...sdk-v0.100.1\nBug Fixes\n\nstreaming: carry encrypted_content on beta compaction blocks (#1025) (<a href=\"https://g",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.103.1",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.100.1",
+      "is_new": true
     },
     {
-      "source": "SDK Python",
-      "title": "v0.103.0",
-      "title_en": "v0.103.0",
-      "summary": "0.103.0 (2026-05-19) Journal complet: v0.102.0...v0.103.0 Fonctionnalites client: Add prise en charge de self-hosted sandboxes in CMA with sandbox helpers (e5625b",
-      "summary_en": "0.103.0 (2026-05-19)\nFull Changelog: v0.102.0...v0.103.0\nFeatures\n\nclient: Add support for self-hosted sandboxes in CMA with sandbox helpers (e5625b",
+      "source": "SDK TypeScript",
+      "title": "foundry-sdk: v0.2.4",
+      "title_en": "foundry-sdk: v0.2.4",
+      "summary": "0.2.4 (2026-05-29) Journal complet: foundry-sdk-v0.2.3...foundry-sdk-v0.2.4 Maintenance client: update lockfichiers to have proper dependencies on standardwebhooks (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/5e9b5",
+      "summary_en": "0.2.4 (2026-05-29)\nFull Changelog: foundry-sdk-v0.2.3...foundry-sdk-v0.2.4\nChores\n\nclient: update lockfiles to have proper dependencies on standardwebhooks (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/5e9b5",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.103.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.2.4",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "aws-sdk: v0.3.1",
+      "title_en": "aws-sdk: v0.3.1",
+      "summary": "0.3.1 (2026-05-29) Journal complet: aws-sdk-v0.3.0...aws-sdk-v0.3.1 Maintenance client: update lockfichiers to have proper dependencies on standardwebhooks (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
+      "summary_en": "0.3.1 (2026-05-29)\nFull Changelog: aws-sdk-v0.3.0...aws-sdk-v0.3.1\nChores\n\nclient: update lockfiles to have proper dependencies on standardwebhooks (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/5e9b5237e53aefda65637",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.3.1",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -142,7 +184,7 @@
       "summary_en": "0.100.0 (2026-05-28)\nFull Changelog: sdk-v0.99.0...sdk-v0.100.0\nFeatures\n\napi: Add support for claude-opus-4-8, mid-conversation system blocks, and usage.output_tokens_details (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commi",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.100.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -152,72 +194,32 @@
       "summary_en": "0.99.0 (2026-05-27)\nFull Changelog: sdk-v0.98.1...sdk-v0.99.0\nFeatures\n\nsupport custom file size caps (#1029) (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/8",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.99.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.98.1",
-      "title_en": "sdk: v0.98.1",
-      "summary": "0.98.1 (2026-05-26) Journal complet: sdk-v0.98.0...sdk-v0.98.1 Corrections de bugs client: preserve repertoire prefix in skills.versions.create uploads (<a href=\"https:/",
-      "summary_en": "0.98.1 (2026-05-26)\nFull Changelog: sdk-v0.98.0...sdk-v0.98.1\nBug Fixes\n\nclient: preserve directory prefix in skills.versions.create uploads (#1024) (<a href=\"https:/",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "in skills.versions.create uploads (#1024) (<a href=\"https:/"
-        }
-      ],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.98.1",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.98.0",
-      "title_en": "sdk: v0.98.0",
-      "summary": "0.98.0 (2026-05-21) Journal complet: sdk-v0.97.1...sdk-v0.98.0 Fonctionnalites api: Add prise en charge de thinking-jeton-count beta for estimated jetons in thinking block deltas when streaming (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/co",
-      "summary_en": "0.98.0 (2026-05-21)\nFull Changelog: sdk-v0.97.1...sdk-v0.98.0\nFeatures\n\napi: Add support for thinking-token-count beta for estimated tokens in thinking block deltas when streaming (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/co",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.98.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "vertex-sdk: v0.16.1",
-      "title_en": "vertex-sdk: v0.16.1",
-      "summary": "0.16.1 (2026-05-19) Journal complet: vertex-sdk-v0.16.0...vertex-sdk-v0.16.1 Corrections de bugs align @tapers/node in sub-packages to fix CI build (<a href=\"https://github",
-      "summary_en": "0.16.1 (2026-05-19)\nFull Changelog: vertex-sdk-v0.16.0...vertex-sdk-v0.16.1\nBug Fixes\n\nalign @types/node in sub-packages to fix CI build (#1017) (<a href=\"https://github",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "CI build (#1017) (<a href=\"https://github"
-        }
-      ],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.16.1",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.100.0",
-      "title_en": "v0.100.0",
-      "summary": "Publie le 2026-05-28",
-      "summary_en": "Publie le 2026-05-28",
+      "title": "v0.100.1",
+      "title_en": "v0.100.1",
+      "summary": "Publie le 2026-05-29",
+      "summary_en": "Publie le 2026-05-29",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
       "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.154",
-      "title_en": "v2.1.154",
-      "summary": "Publie le 2026-05-28",
-      "summary_en": "Publie le 2026-05-28",
+      "title": "v2.1.157",
+      "title_en": "v2.1.157",
+      "summary": "Publie le 2026-05-29",
+      "summary_en": "Publie le 2026-05-29",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.105.0",
-      "title_en": "v0.105.0",
+      "title": "v0.105.2",
+      "title_en": "v0.105.2",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
@@ -232,7 +234,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-opus-4-8",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -262,7 +264,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/series-h",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -272,7 +274,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/milan-office-opening",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -352,7 +354,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/societal-impacts",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -437,16 +439,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.154",
-    "Claude Code npm": "v2.1.154",
-    "SDK Python": "v0.105.0",
-    "SDK Python PyPI": "v0.105.0",
-    "SDK TypeScript": "vertex-sdk: v0.16.1",
+    "Claude Code": "v2.1.157",
+    "Claude Code npm": "v2.1.157",
+    "SDK Python": "v0.105.2",
+    "SDK Python PyPI": "v0.105.2",
+    "SDK TypeScript": "sdk: v0.99.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.149",
-    "GitHub SDK Python": "v0.103.0"
+    "GitHub Claude Code": "v2.1.152",
+    "GitHub SDK Python": "v0.104.0"
   }
 }
