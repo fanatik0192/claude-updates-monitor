@@ -1,6 +1,21 @@
 {
-  "last_check": "2026-05-29T21:05:29.450317",
+  "last_check": "2026-05-30T20:06:16.002089",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.158",
+      "title_en": "v2.1.158",
+      "summary": "Ce qui a change Auto mode is now available on Bedrock, Vertex, and Foundry for Opus 4.7 and Opus 4.8. Opt in by parametre CLAUDE_CODE_ENABLE_AUTO_MODE=1",
+      "summary_en": "What's changed\n\nAuto mode is now available on Bedrock, Vertex, and Foundry for Opus 4.7 and Opus 4.8. Opt in by setting CLAUDE_CODE_ENABLE_AUTO_MODE=1\n",
+      "changelog_items": [
+        {
+          "type": "changed",
+          "text": "Auto mode is now available on Bedrock, Vertex, and Foundry for Opus 4.7 and Opus 4.8. Opt in by setting CLAUDE_CODE_ENABLE_AUTO_MODE=1"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.158",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.157",
@@ -22,7 +37,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.157",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -41,7 +56,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.156",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -78,25 +93,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.152",
-      "title_en": "v2.1.152",
-      "summary": "Ce qui a change /code-review --fix now applies review findings to your working tree after the review, surfacing reuse, simplification, and efficiency suggestions; /simplify now invokes /code-review --fix Skills and slash commandes can now set disallowed-tools in frontmatter to remove tools from the model while the skill i",
-      "summary_en": "What's changed\n\n/code-review --fix now applies review findings to your working tree after the review, surfacing reuse, simplification, and efficiency suggestions; /simplify now invokes /code-review --fix\nSkills and slash commands can now set disallowed-tools in frontmatter to remove tools from the model while the skill i",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "now applies review findings to your working tree after the review, surfacing reuse, simplification, and efficiency suggestions; /simplify now invokes /code-review --fix"
-        },
-        {
-          "type": "changed",
-          "text": "/code-review --fix now applies review findings to your working tree after the review, surfacing reuse, simplification, and efficiency suggestions; /simplify now invokes /code-review --fix"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.152",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.105.2",
       "title_en": "v0.105.2",
@@ -104,7 +100,7 @@
       "summary_en": "0.105.2 (2026-05-29)\nFull Changelog: v0.105.1...v0.105.2",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.105.2",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -114,7 +110,7 @@
       "summary_en": "0.105.1 (2026-05-29)\nFull Changelog: v0.105.0...v0.105.1\nChores\n\ninternal: use Trusted Publishing for PyPI releases (1d04fc5)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.105.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -154,7 +150,7 @@
       "summary_en": "0.100.1 (2026-05-29)\nFull Changelog: sdk-v0.100.0...sdk-v0.100.1\nBug Fixes\n\nstreaming: carry encrypted_content on beta compaction blocks (#1025) (<a href=\"https://g",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.100.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -164,7 +160,7 @@
       "summary_en": "0.2.4 (2026-05-29)\nFull Changelog: foundry-sdk-v0.2.3...foundry-sdk-v0.2.4\nChores\n\nclient: update lockfiles to have proper dependencies on standardwebhooks (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/5e9b5",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.2.4",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -174,7 +170,7 @@
       "summary_en": "0.3.1 (2026-05-29)\nFull Changelog: aws-sdk-v0.3.0...aws-sdk-v0.3.1\nChores\n\nclient: update lockfiles to have proper dependencies on standardwebhooks (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/5e9b5237e53aefda65637",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.3.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -194,7 +190,7 @@
       "summary_en": "0.99.0 (2026-05-27)\nFull Changelog: sdk-v0.98.1...sdk-v0.99.0\nFeatures\n\nsupport custom file size caps (#1029) (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/8",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.99.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/sdk",
@@ -204,14 +200,14 @@
       "summary_en": "Publie le 2026-05-29",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.157",
-      "title_en": "v2.1.157",
-      "summary": "Publie le 2026-05-29",
-      "summary_en": "Publie le 2026-05-29",
+      "title": "v2.1.158",
+      "title_en": "v2.1.158",
+      "summary": "Publie le 2026-05-30",
+      "summary_en": "Publie le 2026-05-30",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -224,7 +220,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -264,7 +260,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/series-h",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -344,7 +340,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/interpretability",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -354,7 +350,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/societal-impacts",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -424,7 +420,7 @@
       "summary_en": "HTML effectiveness examples",
       "changelog_items": [],
       "url": "https://github.com/anthropics/html-effectiveness",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Nouveau Depot",
@@ -439,8 +435,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.157",
-    "Claude Code npm": "v2.1.157",
+    "Claude Code": "v2.1.158",
+    "Claude Code npm": "v2.1.158",
     "SDK Python": "v0.105.2",
     "SDK Python PyPI": "v0.105.2",
     "SDK TypeScript": "sdk: v0.99.0",
@@ -448,7 +444,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.152",
+    "GitHub Claude Code": "v2.1.153",
     "GitHub SDK Python": "v0.104.0"
   }
 }
