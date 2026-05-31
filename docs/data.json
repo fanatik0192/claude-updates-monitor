@@ -1,6 +1,21 @@
 {
-  "last_check": "2026-05-30T20:06:16.002089",
+  "last_check": "2026-05-31T20:04:07.643556",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.159",
+      "title_en": "v2.1.159",
+      "summary": "Ce qui a change Internal infrastructure improvements (no utilisateur-facing changes)",
+      "summary_en": "What's changed\n\nInternal infrastructure improvements (no user-facing changes)\n",
+      "changelog_items": [
+        {
+          "type": "changed",
+          "text": "Internal infrastructure improvements (no user-facing changes)"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.159",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.158",
@@ -14,7 +29,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.158",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -74,25 +89,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.153",
-      "title_en": "v2.1.153",
-      "summary": "Ce qui a change Ajout de skipLfs option to github/git plugin marketplace sources to skip Git LFS downloads during clone and update Claude Code now affichers a one-time notice when your npm global install can't mise a jour automatique; /doctor lists the fixes Status line commandes now receive COLUMNS and LINES</co",
-      "summary_en": "What's changed\n\nAdded skipLfs option to github/git plugin marketplace sources to skip Git LFS downloads during clone and update\nClaude Code now shows a one-time notice when your npm global install can't auto-update; /doctor lists the fixes\nStatus line commands now receive COLUMNS and LINES</co",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "skipLfs option to github/git plugin marketplace sources to skip Git LFS downloads during clone and update"
-        },
-        {
-          "type": "changed",
-          "text": "Added skipLfs option to github/git plugin marketplace sources to skip Git LFS downloads during clone and update"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.153",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.105.2",
       "title_en": "v0.105.2",
@@ -120,7 +116,7 @@
       "summary_en": "0.105.0 (2026-05-28)\nFull Changelog: v0.104.1...v0.105.0\nFeatures\n\napi: Add support for claude-opus-4-8, mid-conversation system blocks, and usage.output_tokens_details (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/f18b01414b21b49943a6",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.105.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -150,7 +146,7 @@
       "summary_en": "0.100.1 (2026-05-29)\nFull Changelog: sdk-v0.100.0...sdk-v0.100.1\nBug Fixes\n\nstreaming: carry encrypted_content on beta compaction blocks (#1025) (<a href=\"https://g",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.100.1",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -204,10 +200,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.158",
-      "title_en": "v2.1.158",
-      "summary": "Publie le 2026-05-30",
-      "summary_en": "Publie le 2026-05-30",
+      "title": "v2.1.159",
+      "title_en": "v2.1.159",
+      "summary": "Publie le 2026-05-31",
+      "summary_en": "Publie le 2026-05-31",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -260,7 +256,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/series-h",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -340,7 +336,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/interpretability",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -420,7 +416,7 @@
       "summary_en": "HTML effectiveness examples",
       "changelog_items": [],
       "url": "https://github.com/anthropics/html-effectiveness",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -435,8 +431,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.158",
-    "Claude Code npm": "v2.1.158",
+    "Claude Code": "v2.1.159",
+    "Claude Code npm": "v2.1.159",
     "SDK Python": "v0.105.2",
     "SDK Python PyPI": "v0.105.2",
     "SDK TypeScript": "sdk: v0.99.0",
@@ -444,7 +440,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.153",
+    "GitHub Claude Code": "v2.1.154",
     "GitHub SDK Python": "v0.104.0"
   }
 }
