@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-05-31T20:04:07.643556",
+  "last_check": "2026-06-01T21:57:59.654043",
   "updates": [
     {
       "source": "Claude Code",
@@ -14,7 +14,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.159",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -116,7 +116,7 @@
       "summary_en": "0.105.0 (2026-05-28)\nFull Changelog: v0.104.1...v0.105.0\nFeatures\n\napi: Add support for claude-opus-4-8, mid-conversation system blocks, and usage.output_tokens_details (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/f18b01414b21b49943a6",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.105.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -146,7 +146,7 @@
       "summary_en": "0.100.1 (2026-05-29)\nFull Changelog: sdk-v0.100.0...sdk-v0.100.1\nBug Fixes\n\nstreaming: carry encrypted_content on beta compaction blocks (#1025) (<a href=\"https://g",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.100.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -206,7 +206,7 @@
       "summary_en": "Publie le 2026-05-31",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -247,6 +247,16 @@
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
       "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Jun 1, 2026AnnouncementsAnthropic confidentially submits draft S-1 to the SEC",
+      "title_en": "Jun 1, 2026AnnouncementsAnthropic confidentially submits draft S-1 to the SEC",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -306,16 +316,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/anthropic-kpmg",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "May 18, 2026AnnouncementsAnthropic acquires Stainless",
-      "title_en": "May 18, 2026AnnouncementsAnthropic acquires Stainless",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
       "is_new": false
     },
     {
@@ -380,6 +380,16 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "riegeli-rs",
+      "title_en": "riegeli-rs",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/riegeli-rs",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "defending-code-reference-harness",
       "title_en": "defending-code-reference-harness",
       "summary": "Skills for threat modeling, scanning, triage, patching, plus an autonomous scanning harness you can /personnaliseize",
@@ -416,16 +426,6 @@
       "summary_en": "HTML effectiveness examples",
       "changelog_items": [],
       "url": "https://github.com/anthropics/html-effectiveness",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "swift-markdown",
-      "title_en": "swift-markdown",
-      "summary": "A Swift package for parsing, building, editing, and analyzing Markdown documents.",
-      "summary_en": "A Swift package for parsing, building, editing, and analyzing Markdown documents.",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/swift-markdown",
       "is_new": false
     }
   ],
