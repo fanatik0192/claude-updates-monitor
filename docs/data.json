@@ -1,6 +1,25 @@
 {
-  "last_check": "2026-06-01T21:57:59.654043",
+  "last_check": "2026-06-02T21:44:52.634606",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.160",
+      "title_en": "v2.1.160",
+      "summary": "Ce qui a change Ajout de a prompt before writing to shell startup fichiers (.zshenv, .zlogin, .bash_login) and ~/.config/git/, which could otherwise lead to unintended commande execution acceptEdits mode now prompts before writing build-tool config fichiers that grant code execution (.npmrc, .yarnrc",
+      "summary_en": "What's changed\n\nAdded a prompt before writing to shell startup files (.zshenv, .zlogin, .bash_login) and ~/.config/git/, which could otherwise lead to unintended command execution\nacceptEdits mode now prompts before writing build-tool config files that grant code execution (.npmrc, .yarnrc",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "a prompt before writing to shell startup files (.zshenv, .zlogin, .bash_login) and ~/.config/git/, which could otherwise lead to unintended command execution"
+        },
+        {
+          "type": "changed",
+          "text": "Added a prompt before writing to shell startup files (.zshenv, .zlogin, .bash_login) and ~/.config/git/, which could otherwise lead to unintended command execution"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.160",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.159",
@@ -52,7 +71,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.157",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Claude Code",
@@ -71,21 +90,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.156",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.154",
-      "title_en": "v2.1.154",
-      "summary": "Ce qui a change Opus 4.8 is here! Now par defauts to high effort · /effort xhigh for your hardest tasks Introducing dynamic workflows: ask Claude to create a workflow and it orchestrates work across tens to hundreds of agents in the arriere-plan, so you can take on larger, more complex tasks. Run /workflows to view your runs Fast mode on Opus 4.8 is now a",
-      "summary_en": "What's changed\n\nOpus 4.8 is here! Now defaults to high effort · /effort xhigh for your hardest tasks\nIntroducing dynamic workflows: ask Claude to create a workflow and it orchestrates work across tens to hundreds of agents in the background, so you can take on larger, more complex tasks. Run /workflows to view your runs\nFast mode on Opus 4.8 is now a",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Opus 4.8 is here! Now defaults to high effort · /effort xhigh for your hardest tasks"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.154",
       "is_new": false
     },
     {
@@ -200,13 +204,13 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.159",
-      "title_en": "v2.1.159",
-      "summary": "Publie le 2026-05-31",
-      "summary_en": "Publie le 2026-05-31",
+      "title": "v2.1.160",
+      "title_en": "v2.1.160",
+      "summary": "Publie le 2026-06-01",
+      "summary_en": "Publie le 2026-06-01",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
@@ -250,13 +254,23 @@
     },
     {
       "source": "Blog",
+      "title": "Jun 2, 2026AnnouncementsExpanding Project Glasswing",
+      "title_en": "Jun 2, 2026AnnouncementsExpanding Project Glasswing",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/expanding-project-glasswing",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Jun 1, 2026AnnouncementsAnthropic confidentially submits draft S-1 to the SEC",
       "title_en": "Jun 1, 2026AnnouncementsAnthropic confidentially submits draft S-1 to the SEC",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -306,16 +320,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/widening-conversation-ai",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "May 19, 2026AnnouncementsKPMG integrates Claude across its core business and workforce of more than",
-      "title_en": "May 19, 2026AnnouncementsKPMG integrates Claude across its core business and workforce of more than ",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/anthropic-kpmg",
       "is_new": false
     },
     {
@@ -386,7 +390,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/riegeli-rs",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -431,8 +435,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.159",
-    "Claude Code npm": "v2.1.159",
+    "Claude Code": "v2.1.160",
+    "Claude Code npm": "v2.1.160",
     "SDK Python": "v0.105.2",
     "SDK Python PyPI": "v0.105.2",
     "SDK TypeScript": "sdk: v0.99.0",
@@ -440,7 +444,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.154",
+    "GitHub Claude Code": "v2.1.156",
     "GitHub SDK Python": "v0.104.0"
   }
 }
