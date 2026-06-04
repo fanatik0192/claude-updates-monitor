@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-06-03T21:45:23.859912",
+  "last_check": "2026-06-04T20:54:45.416673",
   "updates": [
     {
       "source": "Claude Code",
@@ -14,7 +14,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.162",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -29,7 +29,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.161",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -88,7 +88,7 @@
       "summary_en": "0.105.2 (2026-05-29)\nFull Changelog: v0.105.1...v0.105.2",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.105.2",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -198,7 +198,7 @@
       "summary_en": "Publie le 2026-06-03",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -238,7 +238,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -248,7 +248,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/services-track-partner-hub",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -258,7 +258,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -318,7 +318,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/economic-research",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -328,7 +328,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/interpretability",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -338,7 +338,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/societal-impacts",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
