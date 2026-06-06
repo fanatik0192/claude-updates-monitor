@@ -1,6 +1,44 @@
 {
-  "last_check": "2026-06-05T20:46:40.026465",
+  "last_check": "2026-06-06T20:06:48.638447",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.167",
+      "title_en": "v2.1.167",
+      "summary": "Ce qui a change Bug fixes and reliability improvements",
+      "summary_en": "What's changed\n\nBug fixes and reliability improvements\n",
+      "changelog_items": [
+        {
+          "type": "changed",
+          "text": "Bug fixes and reliability improvements"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.167",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.166",
+      "title_en": "v2.1.166",
+      "summary": "Ce qui a change Ajout de fallbackModel parametre to configure up to three fallback models tried in order when the primary model is overloaded or unavailable; --fallback-model now also applies to interactive sessions Ajout de glob pattern prise en charge in deny regle tool-nom position (\"*\" denies all tools); allow regles reject non-MCP globs, and unk",
+      "summary_en": "What's changed\n\nAdded fallbackModel setting to configure up to three fallback models tried in order when the primary model is overloaded or unavailable; --fallback-model now also applies to interactive sessions\nAdded glob pattern support in deny rule tool-name position (\"*\" denies all tools); allow rules reject non-MCP globs, and unk",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "fallbackModel setting to configure up to three fallback models tried in order when the primary model is overloaded or unavailable; --fallback-model now also applies to interactive sessions"
+        },
+        {
+          "type": "added",
+          "text": "glob pattern support in deny rule tool-name position (\"*\" denies all tools); allow rules reject non-MCP globs, and unk"
+        },
+        {
+          "type": "changed",
+          "text": "Added fallbackModel setting to configure up to three fallback models tried in order when the primary model is overloaded or unavailable; --fallback-model now also applies to interactive sessions"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.166",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.165",
@@ -14,7 +52,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.165",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -37,7 +75,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.163",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -55,38 +93,24 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.161",
-      "title_en": "v2.1.161",
-      "summary": "Ce qui a change OTEL_RESOURCE_ATTRIBUTES values are now included as labels on metric datapoints, so you can slice usage metrics by personnalise dimensions like team or repo claude agents rows now afficher done/total before the detail when work is fanned out; peek affichers the longest-running item /mcp now collapses claude.ai",
-      "summary_en": "What's changed\n\nOTEL_RESOURCE_ATTRIBUTES values are now included as labels on metric datapoints, so you can slice usage metrics by custom dimensions like team or repo\nclaude agents rows now show done/total before the detail when work is fanned out; peek shows the longest-running item\n/mcp now collapses claude.ai",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "OTEL_RESOURCE_ATTRIBUTES values are now included as labels on metric datapoints, so you can slice usage metrics by custom dimensions like team or repo"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.161",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.107.0",
+      "title_en": "v0.107.0",
+      "summary": "0.107.0 (2026-06-06) Journal complet: v0.106.0...v0.107.0 Fonctionnalites api: small updates to Managed Agents tapers ()",
+      "summary_en": "0.107.0 (2026-06-06)\nFull Changelog: v0.106.0...v0.107.0\nFeatures\n\napi: small updates to Managed Agents types (72923f9)\n",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.107.0",
+      "is_new": true
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.160",
-      "title_en": "v2.1.160",
-      "summary": "Ce qui a change Ajout de a prompt before writing to shell startup fichiers (.zshenv, .zlogin, .bash_login) and ~/.config/git/, which could otherwise lead to unintended commande execution acceptEdits mode now prompts before writing build-tool config fichiers that grant code execution (.npmrc, .yarnrc",
-      "summary_en": "What's changed\n\nAdded a prompt before writing to shell startup files (.zshenv, .zlogin, .bash_login) and ~/.config/git/, which could otherwise lead to unintended command execution\nacceptEdits mode now prompts before writing build-tool config files that grant code execution (.npmrc, .yarnrc",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "a prompt before writing to shell startup files (.zshenv, .zlogin, .bash_login) and ~/.config/git/, which could otherwise lead to unintended command execution"
-        },
-        {
-          "type": "changed",
-          "text": "Added a prompt before writing to shell startup files (.zshenv, .zlogin, .bash_login) and ~/.config/git/, which could otherwise lead to unintended command execution"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.160",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.106.0",
+      "title_en": "v0.106.0",
+      "summary": "0.106.0 (2026-06-05) Journal complet: v0.105.2...v0.106.0 Fonctionnalites api: mark Claude Opus 4.1 as obsolete () Corrections de bugs</h",
+      "summary_en": "0.106.0 (2026-06-05)\nFull Changelog: v0.105.2...v0.106.0\nFeatures\n\napi: mark Claude Opus 4.1 as deprecated (85068cc)\n\nBug Fixes</h",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.106.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -119,24 +143,34 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.104.1",
-      "title_en": "v0.104.1",
-      "summary": "0.104.1 (2026-05-21) Journal complet: v0.104.0...v0.104.1 Corrections de bugs streaming: carry encrypted_content through beta compaction accumulator (<a href=\"https://github.com/anth",
-      "summary_en": "0.104.1 (2026-05-21)\nFull Changelog: v0.104.0...v0.104.1\nBug Fixes\n\nstreaming: carry encrypted_content through beta compaction accumulator (#1821) (<a href=\"https://github.com/anth",
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.102.0",
+      "title_en": "sdk: v0.102.0",
+      "summary": "0.102.0 (2026-06-06) Journal complet: sdk-v0.101.0...sdk-v0.102.0 Fonctionnalites api: small updates to Managed Agents tapers ()<",
+      "summary_en": "0.102.0 (2026-06-06)\nFull Changelog: sdk-v0.101.0...sdk-v0.102.0\nFeatures\n\napi: small updates to Managed Agents types (8ba4f92)<",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.104.1",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.102.0",
+      "is_new": true
     },
     {
-      "source": "SDK Python",
-      "title": "v0.104.0",
-      "title_en": "v0.104.0",
-      "summary": "0.104.0 (2026-05-21) Journal complet: v0.103.1...v0.104.0 Fonctionnalites api: Add prise en charge de thinking-jeton-count beta for estimated jetons in thinking block deltas when streaming (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/",
-      "summary_en": "0.104.0 (2026-05-21)\nFull Changelog: v0.103.1...v0.104.0\nFeatures\n\napi: Add support for thinking-token-count beta for estimated tokens in thinking block deltas when streaming (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/80d0fdf460d6cd",
+      "source": "SDK TypeScript",
+      "title": "bedrock-sdk: v0.30.1",
+      "title_en": "bedrock-sdk: v0.30.1",
+      "summary": "0.30.1 (2026-06-06) Journal complet: bedrock-sdk-v0.30.0...bedrock-sdk-v0.30.1 Corrections de bugs client: run middleware before request signing (<a href=\"h",
+      "summary_en": "0.30.1 (2026-06-06)\nFull Changelog: bedrock-sdk-v0.30.0...bedrock-sdk-v0.30.1\nBug Fixes\n\nclient: run middleware before request signing (#45) (<a href=\"h",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.104.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.30.1",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "aws-sdk: v0.4.1",
+      "title_en": "aws-sdk: v0.4.1",
+      "summary": "0.4.1 (2026-06-06) Journal complet: aws-sdk-v0.4.0...aws-sdk-v0.4.1 Corrections de bugs client: run middleware before request signing (<a href=\"https://github.com/ant",
+      "summary_en": "0.4.1 (2026-06-06)\nFull Changelog: aws-sdk-v0.4.0...aws-sdk-v0.4.1\nBug Fixes\n\nclient: run middleware before request signing (#45) (<a href=\"https://github.com/ant",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.4.1",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -146,7 +180,7 @@
       "summary_en": "0.17.0 (2026-06-05)\nFull Changelog: vertex-sdk-v0.16.1...vertex-sdk-v0.17.0\nFeatures\n\napi: mark Claude Opus 4.1 as deprecated (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/4ee46f24cb2a5388027d7efb0b44fcb210a",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.17.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -156,67 +190,37 @@
       "summary_en": "0.101.0 (2026-06-05)\nFull Changelog: sdk-v0.100.1...sdk-v0.101.0\nFeatures\n\nclient: add support for middleware (9b01120)\n</u",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.101.0",
-      "is_new": true
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "foundry-sdk: v0.3.0",
-      "title_en": "foundry-sdk: v0.3.0",
-      "summary": "0.3.0 (2026-06-05) Journal complet: foundry-sdk-v0.2.4...foundry-sdk-v0.3.0 Fonctionnalites api: mark Claude Opus 4.1 as obsolete (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
-      "summary_en": "0.3.0 (2026-06-05)\nFull Changelog: foundry-sdk-v0.2.4...foundry-sdk-v0.3.0\nFeatures\n\napi: mark Claude Opus 4.1 as deprecated (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/4ee46f24cb2a5388027d7efb0b44fcb210ae",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.3.0",
-      "is_new": true
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "bedrock-sdk: v0.30.0",
-      "title_en": "bedrock-sdk: v0.30.0",
-      "summary": "0.30.0 (2026-06-05) Journal complet: bedrock-sdk-v0.29.2...bedrock-sdk-v0.30.0 Fonctionnalites api: mark Claude Opus 4.1 as obsolete (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
-      "summary_en": "0.30.0 (2026-06-05)\nFull Changelog: bedrock-sdk-v0.29.2...bedrock-sdk-v0.30.0\nFeatures\n\napi: mark Claude Opus 4.1 as deprecated (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/4ee46f24cb2a5388027d7efb0b44fcb",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.30.0",
-      "is_new": true
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "aws-sdk: v0.4.0",
-      "title_en": "aws-sdk: v0.4.0",
-      "summary": "0.4.0 (2026-06-05) Journal complet: aws-sdk-v0.3.1...aws-sdk-v0.4.0 Fonctionnalites api: mark Claude Opus 4.1 as obsolete (</a",
-      "summary_en": "0.4.0 (2026-06-05)\nFull Changelog: aws-sdk-v0.3.1...aws-sdk-v0.4.0\nFeatures\n\napi: mark Claude Opus 4.1 as deprecated (4ee46f2</a",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.4.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.101.0",
-      "title_en": "v0.101.0",
-      "summary": "Publie le 2026-06-05",
-      "summary_en": "Publie le 2026-06-05",
+      "title": "v0.102.0",
+      "title_en": "v0.102.0",
+      "summary": "Publie le 2026-06-06",
+      "summary_en": "Publie le 2026-06-06",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
       "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.165",
-      "title_en": "v2.1.165",
-      "summary": "Publie le 2026-06-05",
-      "summary_en": "Publie le 2026-06-05",
+      "title": "v2.1.167",
+      "title_en": "v2.1.167",
+      "summary": "Publie le 2026-06-06",
+      "summary_en": "Publie le 2026-06-06",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.105.2",
-      "title_en": "v0.105.2",
+      "title": "v0.107.0",
+      "title_en": "v0.107.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -266,7 +270,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/election-safeguards-update",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -431,16 +435,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.165",
-    "Claude Code npm": "v2.1.165",
-    "SDK Python": "v0.105.2",
-    "SDK Python PyPI": "v0.105.2",
-    "SDK TypeScript": "aws-sdk: v0.4.0",
+    "Claude Code": "v2.1.167",
+    "Claude Code npm": "v2.1.167",
+    "SDK Python": "v0.107.0",
+    "SDK Python PyPI": "v0.107.0",
+    "SDK TypeScript": "sdk: v0.101.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.160",
-    "GitHub SDK Python": "v0.104.0"
+    "GitHub Claude Code": "v2.1.162",
+    "GitHub SDK Python": "v0.105.0"
   }
 }
