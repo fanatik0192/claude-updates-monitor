@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-06-07T20:08:03.659983",
+  "last_check": "2026-06-08T21:09:59.304201",
   "updates": [
     {
       "source": "Claude Code",
@@ -14,7 +14,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.168",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -29,7 +29,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.167",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Claude Code",
@@ -100,7 +100,7 @@
       "summary_en": "0.107.1 (2026-06-07)\nFull Changelog: v0.107.0...v0.107.1\nBug Fixes\n\nfoundry: send x-api-key header for API-key auth (#62) (<a href=\"https://github.com/anthropics/anthropic-sdk-python",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.107.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -210,7 +210,7 @@
       "summary_en": "Publie le 2026-06-06",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -220,7 +220,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -290,7 +290,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -370,7 +370,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/teaching-claude-why",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Statut",
@@ -410,7 +410,7 @@
       "summary_en": "A Nix plugin that resolves Cargo workspaces natively and allows for crate level builds",
       "changelog_items": [],
       "url": "https://github.com/anthropics/cargo-nix-plugin",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Nouveau Depot",
