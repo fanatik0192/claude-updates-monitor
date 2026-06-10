@@ -1,6 +1,25 @@
 {
-  "last_check": "2026-06-09T20:54:05.091678",
+  "last_check": "2026-06-10T21:23:39.231435",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.172",
+      "title_en": "v2.1.172",
+      "summary": "Ce qui a change Sub-agents can now spawn their own sub-agents (up to 5 levels deep) Amazon Bedrock now reads the AWS region from ~/.aws config fichiers when AWS_REGION isn't set, matching AWS SDK precedence; /status affichers where the region came from Ajout de a recherche bar when browsing a marketplace's plugins in /plugin",
+      "summary_en": "What's changed\n\nSub-agents can now spawn their own sub-agents (up to 5 levels deep)\nAmazon Bedrock now reads the AWS region from ~/.aws config files when AWS_REGION isn't set, matching AWS SDK precedence; /status shows where the region came from\nAdded a search bar when browsing a marketplace's plugins in /plugin",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "a search bar when browsing a marketplace's plugins in /plugin"
+        },
+        {
+          "type": "changed",
+          "text": "Sub-agents can now spawn their own sub-agents (up to 5 levels deep)"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.172",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.170",
@@ -14,7 +33,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.170",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -41,7 +60,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.169",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -74,27 +93,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.166",
-      "title_en": "v2.1.166",
-      "summary": "Ce qui a change Ajout de fallbackModel parametre to configure up to three fallback models tried in order when the primary model is overloaded or unavailable; --fallback-model now also applies to interactive sessions Ajout de glob pattern prise en charge in deny regle tool-nom position (\"*\" denies all tools); allow regles reject non-MCP globs, and unk",
-      "summary_en": "What's changed\n\nAdded fallbackModel setting to configure up to three fallback models tried in order when the primary model is overloaded or unavailable; --fallback-model now also applies to interactive sessions\nAdded glob pattern support in deny rule tool-name position (\"*\" denies all tools); allow rules reject non-MCP globs, and unk",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "fallbackModel setting to configure up to three fallback models tried in order when the primary model is overloaded or unavailable; --fallback-model now also applies to interactive sessions"
-        },
-        {
-          "type": "added",
-          "text": "glob pattern support in deny rule tool-name position (\"*\" denies all tools); allow rules reject non-MCP globs, and unk"
-        },
-        {
-          "type": "changed",
-          "text": "Added fallbackModel setting to configure up to three fallback models tried in order when the primary model is overloaded or unavailable; --fallback-model now also applies to interactive sessions"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.166",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.109.1",
+      "title_en": "v0.109.1",
+      "summary": "0.109.1 (2026-06-09) Journal complet: v0.109.0...v0.109.1 Corrections de bugs api: add frontier_llm refusal category ()",
+      "summary_en": "0.109.1 (2026-06-09)\nFull Changelog: v0.109.0...v0.109.1\nBug Fixes\n\napi: add frontier_llm refusal category (d3a806b)\n",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.1",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -104,7 +110,7 @@
       "summary_en": "0.109.0 (2026-06-09)\nFull Changelog: v0.108.0...v0.109.0\nFeatures\n\napi: add support for Managed Agents deployments and environment variable credentials (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/47633bff658d4aaced3cd920ef6782c48cf31",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -114,7 +120,7 @@
       "summary_en": "0.108.0 (2026-06-09)\nFull Changelog: v0.107.1...v0.108.0\nFeatures\n\napi: add support for claude-mythos-5 and claude-fable-5, with support for server-side fallbacks on refusal (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/6b76649f99bd782",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.108.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -137,16 +143,6 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.106.0",
-      "title_en": "v0.106.0",
-      "summary": "0.106.0 (2026-06-05) Journal complet: v0.105.2...v0.106.0 Fonctionnalites api: mark Claude Opus 4.1 as obsolete () Corrections de bugs</h",
-      "summary_en": "0.106.0 (2026-06-05)\nFull Changelog: v0.105.2...v0.106.0\nFeatures\n\napi: mark Claude Opus 4.1 as deprecated (85068cc)\n\nBug Fixes</h",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.106.0",
-      "is_new": false
-    },
-    {
       "source": "SDK TypeScript",
       "title": "vertex-sdk: v0.17.1",
       "title_en": "vertex-sdk: v0.17.1",
@@ -154,6 +150,16 @@
       "summary_en": "0.17.1 (2026-06-09)\nFull Changelog: vertex-sdk-v0.17.0...vertex-sdk-v0.17.1\nBug Fixes\n\nclient: 3p middleware ordering (#53) (<a href=\"https://github.com/a",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.17.1",
+      "is_new": false
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.104.1",
+      "title_en": "sdk: v0.104.1",
+      "summary": "0.104.1 (2026-06-09) Journal complet: sdk-v0.104.0...sdk-v0.104.1 Corrections de bugs api: add frontier_llm refusal category (465",
+      "summary_en": "0.104.1 (2026-06-09)\nFull Changelog: sdk-v0.104.0...sdk-v0.104.1\nBug Fixes\n\napi: add frontier_llm refusal category (465",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.1",
       "is_new": true
     },
     {
@@ -164,7 +170,7 @@
       "summary_en": "0.104.0 (2026-06-09)\nFull Changelog: sdk-v0.103.0...sdk-v0.104.0\nFeatures\n\napi: add support for Managed Agents deployments and environment variable credentials (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/d01e38b5b6f62",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -174,7 +180,7 @@
       "summary_en": "0.103.0 (2026-06-09)\nFull Changelog: sdk-v0.102.0...sdk-v0.103.0\nFeatures\n\napi: add support for claude-mythos-5 and claude-fable-5, with support for server-side fallbacks on refusal (<a href=\"https://github.com/anthropics/anthropic-sdk-typescrip",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.103.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -184,22 +190,12 @@
       "summary_en": "0.3.1 (2026-06-09)\nFull Changelog: foundry-sdk-v0.3.0...foundry-sdk-v0.3.1\nBug Fixes\n\nclient: 3p middleware ordering (#53) (<a href=\"https://github.com/an",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.3.1",
-      "is_new": true
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "bedrock-sdk: v0.30.2",
-      "title_en": "bedrock-sdk: v0.30.2",
-      "summary": "0.30.2 (2026-06-09) Journal complet: bedrock-sdk-v0.30.1...bedrock-sdk-v0.30.2 Corrections de bugs client: 3p middleware ordering (<a href=\"https://github.c",
-      "summary_en": "0.30.2 (2026-06-09)\nFull Changelog: bedrock-sdk-v0.30.1...bedrock-sdk-v0.30.2\nBug Fixes\n\nclient: 3p middleware ordering (#53) (<a href=\"https://github.c",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.30.2",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.104.0",
-      "title_en": "v0.104.0",
+      "title": "v0.104.1",
+      "title_en": "v0.104.1",
       "summary": "Publie le 2026-06-09",
       "summary_en": "Publie le 2026-06-09",
       "changelog_items": [],
@@ -208,18 +204,18 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.170",
-      "title_en": "v2.1.170",
-      "summary": "Publie le 2026-06-09",
-      "summary_en": "Publie le 2026-06-09",
+      "title": "v2.1.172",
+      "title_en": "v2.1.172",
+      "summary": "Publie le 2026-06-10",
+      "summary_en": "Publie le 2026-06-10",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.109.0",
-      "title_en": "v0.109.0",
+      "title": "v0.109.1",
+      "title_en": "v0.109.1",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
@@ -234,7 +230,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -264,16 +260,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "AnnouncementsMay 19, 2026Widening the conversation on frontier AIOver the past several months, we’ve",
-      "title_en": "AnnouncementsMay 19, 2026Widening the conversation on frontier AIOver the past several months, we’ve",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/widening-conversation-ai",
       "is_new": false
     },
     {
@@ -325,6 +311,16 @@
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/milan-office-opening",
       "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "May 26, 2026AnnouncementsAnthropic appoints KiYoung Choi as Representative Director of Korea ahead o",
+      "title_en": "May 26, 2026AnnouncementsAnthropic appoints KiYoung Choi as Representative Director of Korea ahead o",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea",
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -388,13 +384,23 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "leptos-chartistry",
+      "title_en": "leptos-chartistry",
+      "summary": "Chartistry is an extensible charting library for Leptos",
+      "summary_en": "Chartistry is an extensible charting library for Leptos",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/leptos-chartistry",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "riegeli-rs",
       "title_en": "riegeli-rs",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/riegeli-rs",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Nouveau Depot",
@@ -414,7 +420,7 @@
       "summary_en": "Claude support for Apple Foundation Models",
       "changelog_items": [],
       "url": "https://github.com/anthropics/ClaudeForFoundationModels",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -425,30 +431,20 @@
       "changelog_items": [],
       "url": "https://github.com/anthropics/cargo-nix-plugin",
       "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "scone-bench",
-      "title_en": "scone-bench",
-      "summary": "Benchmark for evaluating LLM agents on smart-contract vulnerability discovery and exploitation",
-      "summary_en": "Benchmark for evaluating LLM agents on smart-contract vulnerability discovery and exploitation",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/scone-bench",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.170",
-    "Claude Code npm": "v2.1.170",
-    "SDK Python": "v0.109.0",
-    "SDK Python PyPI": "v0.109.0",
-    "SDK TypeScript": "bedrock-sdk: v0.30.2",
+    "Claude Code": "v2.1.172",
+    "Claude Code npm": "v2.1.172",
+    "SDK Python": "v0.109.1",
+    "SDK Python PyPI": "v0.109.1",
+    "SDK TypeScript": "foundry-sdk: v0.3.1",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.166",
-    "GitHub SDK Python": "v0.106.0"
+    "GitHub Claude Code": "v2.1.167",
+    "GitHub SDK Python": "v0.107.0"
   }
 }
