@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-06-10T21:23:39.231435",
+  "last_check": "2026-06-11T21:16:19.644161",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.173",
+      "title_en": "v2.1.173",
+      "summary": "Ce qui a change Correction de Fable 5 model noms with a [1m] suffix not being normalized — Fable 5 includes 1M context by par defaut, so the suffix is now stripped automatically Correction de a spurious \"sandbox dependencies missing\" startup avertissement on Windows when sandbox was activerd in parametres",
+      "summary_en": "What's changed\n\nFixed Fable 5 model names with a [1m] suffix not being normalized — Fable 5 includes 1M context by default, so the suffix is now stripped automatically\nFixed a spurious \"sandbox dependencies missing\" startup warning on Windows when sandbox was enabled in settings\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "Fable 5 model names with a [1m] suffix not being normalized — Fable 5 includes 1M context by default, so the suffix is now stripped automatically"
+        },
+        {
+          "type": "fixed",
+          "text": "a spurious \"sandbox dependencies missing\" startup warning on Windows when sandbox was enabled in settings"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed Fable 5 model names with a [1m] suffix not being normalized — Fable 5 includes 1M context by default, so the suffix is now stripped automatically"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.173",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.172",
@@ -18,7 +41,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.172",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -60,7 +83,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.169",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Claude Code",
@@ -78,21 +101,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.167",
-      "title_en": "v2.1.167",
-      "summary": "Ce qui a change Bug fixes and reliability improvements",
-      "summary_en": "What's changed\n\nBug fixes and reliability improvements\n",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Bug fixes and reliability improvements"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.167",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.109.1",
       "title_en": "v0.109.1",
@@ -100,7 +108,7 @@
       "summary_en": "0.109.1 (2026-06-09)\nFull Changelog: v0.109.0...v0.109.1\nBug Fixes\n\napi: add frontier_llm refusal category (d3a806b)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -160,7 +168,7 @@
       "summary_en": "0.104.1 (2026-06-09)\nFull Changelog: sdk-v0.104.0...sdk-v0.104.1\nBug Fixes\n\napi: add frontier_llm refusal category (465",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -200,14 +208,14 @@
       "summary_en": "Publie le 2026-06-09",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.172",
-      "title_en": "v2.1.172",
-      "summary": "Publie le 2026-06-10",
-      "summary_en": "Publie le 2026-06-10",
+      "title": "v2.1.173",
+      "title_en": "v2.1.173",
+      "summary": "Publie le 2026-06-11",
+      "summary_en": "Publie le 2026-06-11",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -220,7 +228,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -234,22 +242,22 @@
     },
     {
       "source": "Blog",
+      "title": "AnnouncementsJun 11, 2026Introducing Claude CorpsWe’re launching Claude Corps, a national fellowship",
+      "title_en": "AnnouncementsJun 11, 2026Introducing Claude CorpsWe’re launching Claude Corps, a national fellowship",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/claude-corps",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "AnnouncementsJun 2, 2026Expanding Project GlasswingWe’re extending Project Glasswing to approximatel",
       "title_en": "AnnouncementsJun 2, 2026Expanding Project GlasswingWe’re extending Project Glasswing to approximatel",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/expanding-project-glasswing",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "ProductMay 28, 2026Introducing Claude Opus 4.8An upgrade to our Opus class of models, with stronger",
-      "title_en": "ProductMay 28, 2026Introducing Claude Opus 4.8An upgrade to our Opus class of models, with stronger ",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-opus-4-8",
       "is_new": false
     },
     {
@@ -261,6 +269,16 @@
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
       "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Jun 11, 2026AnnouncementsDXC will integrate Claude into the systems banks, airlines, and other regul",
+      "title_en": "Jun 11, 2026AnnouncementsDXC will integrate Claude into the systems banks, airlines, and other regul",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -304,23 +322,13 @@
     },
     {
       "source": "Blog",
-      "title": "May 27, 2026AnnouncementsAnthropic ouvrirs Milan office to prise en charge Italian enterprise, rerecherche, and d",
-      "title_en": "May 27, 2026AnnouncementsAnthropic opens Milan office to support Italian enterprise, research, and d",
+      "title": "May 28, 2026ProductIntroducing Claude Opus 4.8",
+      "title_en": "May 28, 2026ProductIntroducing Claude Opus 4.8",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/news/milan-office-opening",
+      "url": "https://www.anthropic.com/news/claude-opus-4-8",
       "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "May 26, 2026AnnouncementsAnthropic appoints KiYoung Choi as Representative Director of Korea ahead o",
-      "title_en": "May 26, 2026AnnouncementsAnthropic appoints KiYoung Choi as Representative Director of Korea ahead o",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea",
-      "is_new": true
     },
     {
       "source": "Recherche",
@@ -390,7 +398,7 @@
       "summary_en": "Chartistry is an extensible charting library for Leptos",
       "changelog_items": [],
       "url": "https://github.com/anthropics/leptos-chartistry",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -400,7 +408,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/riegeli-rs",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -435,8 +443,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.172",
-    "Claude Code npm": "v2.1.172",
+    "Claude Code": "v2.1.173",
+    "Claude Code npm": "v2.1.173",
     "SDK Python": "v0.109.1",
     "SDK Python PyPI": "v0.109.1",
     "SDK TypeScript": "foundry-sdk: v0.3.1",
@@ -444,7 +452,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.167",
+    "GitHub Claude Code": "v2.1.168",
     "GitHub SDK Python": "v0.107.0"
   }
 }
