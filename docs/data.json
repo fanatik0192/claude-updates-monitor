@@ -1,6 +1,48 @@
 {
-  "last_check": "2026-06-11T21:16:19.644161",
+  "last_check": "2026-06-12T21:00:29.219914",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.175",
+      "title_en": "v2.1.175",
+      "summary": "Ce qui a change Ajout de enforceAvailableModels managed parametre — when activerd, the availableModels allowlist also constrains the Par defaut model (a Par defaut that would resolve to a disallowed model now falls back to the first allowed model), and utilisateur or project parametres can no longer widen a managed availableModels list",
+      "summary_en": "What's changed\n\nAdded enforceAvailableModels managed setting — when enabled, the availableModels allowlist also constrains the Default model (a Default that would resolve to a disallowed model now falls back to the first allowed model), and user or project settings can no longer widen a managed availableModels list\n",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "enforceAvailableModels managed setting — when enabled, the availableModels allowlist also constrains the Default model (a Default that would resolve to a disallowed model now falls back to the first a"
+        },
+        {
+          "type": "changed",
+          "text": "Added enforceAvailableModels managed setting — when enabled, the availableModels allowlist also constrains the Default model (a Default that would resolve to a disallowed model now falls back to the f"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.175",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.174",
+      "title_en": "v2.1.174",
+      "summary": "Ce qui a change Ajout de wheelScrollAccelerationActiverd parametre to desactiver mouse-wheel scroll acceleration in fullscreen mode Correction de the /model picker hiding the model family that Par defaut resolves to — Opus now appears as its own row on Max/Team Premium/Enterprise plans, Sonnet on Pro/Team plans, and Opus on pay-as-you-go API accounts Correction de",
+      "summary_en": "What's changed\n\nAdded wheelScrollAccelerationEnabled setting to disable mouse-wheel scroll acceleration in fullscreen mode\nFixed the /model picker hiding the model family that Default resolves to — Opus now appears as its own row on Max/Team Premium/Enterprise plans, Sonnet on Pro/Team plans, and Opus on pay-as-you-go API accounts\nFixed ",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "wheelScrollAccelerationEnabled setting to disable mouse-wheel scroll acceleration in fullscreen mode"
+        },
+        {
+          "type": "fixed",
+          "text": "the /model picker hiding the model family that Default resolves to — Opus now appears as its own row on Max/Team Premium/Enterprise plans, Sonnet on Pro/Team plans, and Opus on pay-as-you-go API accou"
+        },
+        {
+          "type": "changed",
+          "text": "Added wheelScrollAccelerationEnabled setting to disable mouse-wheel scroll acceleration in fullscreen mode"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.174",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.173",
@@ -22,7 +64,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.173",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -56,48 +98,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.170",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.169",
-      "title_en": "v2.1.169",
-      "summary": "Ce qui a change Ajout de --safe-mode flag (and CLAUDE_CODE_SAFE_MODE) to start Claude Code with all personnaliseizations (CLAUDE.md, plugins, skills, hooks, MCP servers) desactiverd for troubleshooting Ajout de /cd commande to move a session to a new working repertoire without breaking the prompt cache mid-session Ajout de a desactiverBundle",
-      "summary_en": "What's changed\n\nAdded --safe-mode flag (and CLAUDE_CODE_SAFE_MODE) to start Claude Code with all customizations (CLAUDE.md, plugins, skills, hooks, MCP servers) disabled for troubleshooting\nAdded /cd command to move a session to a new working directory without breaking the prompt cache mid-session\nAdded a disableBundle",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "--safe-mode flag (and CLAUDE_CODE_SAFE_MODE) to start Claude Code with all customizations (CLAUDE.md, plugins, skills, hooks, MCP servers) disabled for troubleshooting"
-        },
-        {
-          "type": "added",
-          "text": "/cd command to move a session to a new working directory without breaking the prompt cache mid-session"
-        },
-        {
-          "type": "added",
-          "text": "a disableBundle"
-        },
-        {
-          "type": "changed",
-          "text": "Added --safe-mode flag (and CLAUDE_CODE_SAFE_MODE) to start Claude Code with all customizations (CLAUDE.md, plugins, skills, hooks, MCP servers) disabled for troubleshooting"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.169",
-      "is_new": true
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.168",
-      "title_en": "v2.1.168",
-      "summary": "Ce qui a change Bug fixes and reliability improvements",
-      "summary_en": "What's changed\n\nBug fixes and reliability improvements\n",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Bug fixes and reliability improvements"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.168",
       "is_new": false
     },
     {
@@ -198,7 +198,7 @@
       "summary_en": "0.3.1 (2026-06-09)\nFull Changelog: foundry-sdk-v0.3.0...foundry-sdk-v0.3.1\nBug Fixes\n\nclient: 3p middleware ordering (#53) (<a href=\"https://github.com/an",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.3.1",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/sdk",
@@ -212,10 +212,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.173",
-      "title_en": "v2.1.173",
-      "summary": "Publie le 2026-06-11",
-      "summary_en": "Publie le 2026-06-11",
+      "title": "v2.1.175",
+      "title_en": "v2.1.175",
+      "summary": "Publie le 2026-06-12",
+      "summary_en": "Publie le 2026-06-12",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -248,7 +248,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-corps",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -272,13 +272,33 @@
     },
     {
       "source": "Blog",
+      "title": "Jun 12, 2026AnnouncementsResults from the first Anthropic Public Record",
+      "title_en": "Jun 12, 2026AnnouncementsResults from the first Anthropic Public Record",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/anthropic-public-record",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "Jun 12, 2026AnnouncementsTCS and Anthropic partner to bring Claude to regulated industries",
+      "title_en": "Jun 12, 2026AnnouncementsTCS and Anthropic partner to bring Claude to regulated industries",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Jun 11, 2026AnnouncementsDXC will integrate Claude into the systems banks, airlines, and other regul",
       "title_en": "Jun 11, 2026AnnouncementsDXC will integrate Claude into the systems banks, airlines, and other regul",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -308,26 +328,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "May 28, 2026AnnouncementsAnthropic raises $65B in Series H funding at $965B post-money valuation",
-      "title_en": "May 28, 2026AnnouncementsAnthropic raises $65B in Series H funding at $965B post-money valuation",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/series-h",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "May 28, 2026ProductIntroducing Claude Opus 4.8",
-      "title_en": "May 28, 2026ProductIntroducing Claude Opus 4.8",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-opus-4-8",
       "is_new": false
     },
     {
@@ -443,8 +443,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.173",
-    "Claude Code npm": "v2.1.173",
+    "Claude Code": "v2.1.175",
+    "Claude Code npm": "v2.1.175",
     "SDK Python": "v0.109.1",
     "SDK Python PyPI": "v0.109.1",
     "SDK TypeScript": "foundry-sdk: v0.3.1",
@@ -452,7 +452,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.168",
+    "GitHub Claude Code": "v2.1.170",
     "GitHub SDK Python": "v0.107.0"
   }
 }
