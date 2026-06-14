@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-06-13T20:12:35.260949",
+  "last_check": "2026-06-14T20:14:51.410194",
   "updates": [
     {
       "source": "Claude Code",
@@ -9,7 +9,7 @@
       "summary_en": "No content.",
       "changelog_items": [],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.177",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -28,7 +28,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.176",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -133,7 +133,7 @@
       "summary_en": "0.107.1 (2026-06-07)\nFull Changelog: v0.107.0...v0.107.1\nBug Fixes\n\nfoundry: send x-api-key header for API-key auth (#62) (<a href=\"https://github.com/anthropics/anthropic-sdk-python",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.107.1",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -183,7 +183,7 @@
       "summary_en": "0.103.0 (2026-06-09)\nFull Changelog: sdk-v0.102.0...sdk-v0.103.0\nFeatures\n\napi: add support for claude-mythos-5 and claude-fable-5, with support for server-side fallbacks on refusal (<a href=\"https://github.com/anthropics/anthropic-sdk-typescrip",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.103.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -213,7 +213,7 @@
       "summary_en": "Publie le 2026-06-13",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -233,7 +233,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/fable-mythos-access",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
