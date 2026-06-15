@@ -1,6 +1,25 @@
 {
-  "last_check": "2026-06-14T20:14:51.410194",
+  "last_check": "2026-06-15T21:40:29.387454",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.178",
+      "title_en": "v2.1.178",
+      "summary": "Ce qui a change Ajout de Tool(param:value) syntax for permission regles to match a tool's entree parameters (with * wildcard), e.g. Agent(model:opus) to block Opus subagents Skills in nested .claude/skills directories now load when working on fichiers there; on a nom clash, the nested skill appears as &lt;dir&gt;:&lt;nom",
+      "summary_en": "What's changed\n\nAdded Tool(param:value) syntax for permission rules to match a tool's input parameters (with * wildcard), e.g. Agent(model:opus) to block Opus subagents\nSkills in nested .claude/skills directories now load when working on files there; on a name clash, the nested skill appears as &lt;dir&gt;:&lt;name",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "Tool(param:value) syntax for permission rules to match a tool's input parameters (with * wildcard), e.g. Agent(model:opus) to block Opus subagents"
+        },
+        {
+          "type": "changed",
+          "text": "Added Tool(param:value) syntax for permission rules to match a tool's input parameters (with * wildcard), e.g. Agent(model:opus) to block Opus subagents"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.178",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.177",
@@ -73,27 +92,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.173",
-      "title_en": "v2.1.173",
-      "summary": "Ce qui a change Correction de Fable 5 model noms with a [1m] suffix not being normalized — Fable 5 includes 1M context by par defaut, so the suffix is now stripped automatically Correction de a spurious \"sandbox dependencies missing\" startup avertissement on Windows when sandbox was activerd in parametres",
-      "summary_en": "What's changed\n\nFixed Fable 5 model names with a [1m] suffix not being normalized — Fable 5 includes 1M context by default, so the suffix is now stripped automatically\nFixed a spurious \"sandbox dependencies missing\" startup warning on Windows when sandbox was enabled in settings\n",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "Fable 5 model names with a [1m] suffix not being normalized — Fable 5 includes 1M context by default, so the suffix is now stripped automatically"
-        },
-        {
-          "type": "fixed",
-          "text": "a spurious \"sandbox dependencies missing\" startup warning on Windows when sandbox was enabled in settings"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed Fable 5 model names with a [1m] suffix not being normalized — Fable 5 includes 1M context by default, so the suffix is now stripped automatically"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.173",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.109.2",
+      "title_en": "v0.109.2",
+      "summary": "0.109.2 (2026-06-15) Journal complet: v0.109.1...v0.109.2 Maintenance api: remove retired models from API and SDKs ()",
+      "summary_en": "0.109.2 (2026-06-15)\nFull Changelog: v0.109.1...v0.109.2\nChores\n\napi: remove retired models from API and SDKs (d4bcfcc)\n",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.2",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -133,17 +139,17 @@
       "summary_en": "0.107.1 (2026-06-07)\nFull Changelog: v0.107.0...v0.107.1\nBug Fixes\n\nfoundry: send x-api-key header for API-key auth (#62) (<a href=\"https://github.com/anthropics/anthropic-sdk-python",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.107.1",
-      "is_new": true
+      "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.107.0",
-      "title_en": "v0.107.0",
-      "summary": "0.107.0 (2026-06-06) Journal complet: v0.106.0...v0.107.0 Fonctionnalites api: small updates to Managed Agents tapers ()",
-      "summary_en": "0.107.0 (2026-06-06)\nFull Changelog: v0.106.0...v0.107.0\nFeatures\n\napi: small updates to Managed Agents types (72923f9)\n",
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.104.2",
+      "title_en": "sdk: v0.104.2",
+      "summary": "0.104.2 (2026-06-15) Journal complet: sdk-v0.104.1...sdk-v0.104.2 Maintenance api: remove retired models from API and SDKs ()<",
+      "summary_en": "0.104.2 (2026-06-15)\nFull Changelog: sdk-v0.104.1...sdk-v0.104.2\nChores\n\napi: remove retired models from API and SDKs (a942876)<",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.107.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.2",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -186,44 +192,34 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "foundry-sdk: v0.3.1",
-      "title_en": "foundry-sdk: v0.3.1",
-      "summary": "0.3.1 (2026-06-09) Journal complet: foundry-sdk-v0.3.0...foundry-sdk-v0.3.1 Corrections de bugs client: 3p middleware ordering (<a href=\"https://github.com/an",
-      "summary_en": "0.3.1 (2026-06-09)\nFull Changelog: foundry-sdk-v0.3.0...foundry-sdk-v0.3.1\nBug Fixes\n\nclient: 3p middleware ordering (#53) (<a href=\"https://github.com/an",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.3.1",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.104.1",
-      "title_en": "v0.104.1",
-      "summary": "Publie le 2026-06-09",
-      "summary_en": "Publie le 2026-06-09",
+      "title": "v0.104.2",
+      "title_en": "v0.104.2",
+      "summary": "Publie le 2026-06-15",
+      "summary_en": "Publie le 2026-06-15",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.177",
-      "title_en": "v2.1.177",
-      "summary": "Publie le 2026-06-13",
-      "summary_en": "Publie le 2026-06-13",
+      "title": "v2.1.178",
+      "title_en": "v2.1.178",
+      "summary": "Publie le 2026-06-15",
+      "summary_en": "Publie le 2026-06-15",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.109.1",
-      "title_en": "v0.109.1",
+      "title": "v0.109.2",
+      "title_en": "v0.109.2",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -438,16 +434,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.177",
-    "Claude Code npm": "v2.1.177",
-    "SDK Python": "v0.109.1",
-    "SDK Python PyPI": "v0.109.1",
-    "SDK TypeScript": "foundry-sdk: v0.3.1",
+    "Claude Code": "v2.1.178",
+    "Claude Code npm": "v2.1.178",
+    "SDK Python": "v0.109.2",
+    "SDK Python PyPI": "v0.109.2",
+    "SDK TypeScript": "sdk: v0.103.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.173",
-    "GitHub SDK Python": "v0.107.0"
+    "GitHub Claude Code": "v2.1.174",
+    "GitHub SDK Python": "v0.107.1"
   }
 }
