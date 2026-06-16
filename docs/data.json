@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-06-15T21:40:29.387454",
+  "last_check": "2026-06-16T21:40:10.923312",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.179",
+      "title_en": "v2.1.179",
+      "summary": "Ce qui a change Correction de mid-stream connection drops: partial responses are now preserved instead of affichering a raw erreur, and the spinner no longer gets stuck at \"running tool\" Correction de mouse-wheel scrolling in WSL2 under Windows Terminal and VS Code (regression in 2.1.172) Correction de a sandbox denyRead/allowRead glob over a large repertoire tree ma",
+      "summary_en": "What's changed\n\nFixed mid-stream connection drops: partial responses are now preserved instead of showing a raw error, and the spinner no longer gets stuck at \"running tool\"\nFixed mouse-wheel scrolling in WSL2 under Windows Terminal and VS Code (regression in 2.1.172)\nFixed a sandbox denyRead/allowRead glob over a large directory tree ma",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "mid-stream connection drops: partial responses are now preserved instead of showing a raw error, and the spinner no longer gets stuck at \"running tool\""
+        },
+        {
+          "type": "fixed",
+          "text": "mouse-wheel scrolling in WSL2 under Windows Terminal and VS Code (regression in 2.1.172)"
+        },
+        {
+          "type": "fixed",
+          "text": "a sandbox denyRead/allowRead glob over a large directory tree ma"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed mid-stream connection drops: partial responses are now preserved instead of showing a raw error, and the spinner no longer gets stuck at \"running tool\""
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.179",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.178",
@@ -18,7 +45,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.178",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -69,29 +96,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.174",
-      "title_en": "v2.1.174",
-      "summary": "Ce qui a change Ajout de wheelScrollAccelerationActiverd parametre to desactiver mouse-wheel scroll acceleration in fullscreen mode Correction de the /model picker hiding the model family that Par defaut resolves to — Opus now appears as its own row on Max/Team Premium/Enterprise plans, Sonnet on Pro/Team plans, and Opus on pay-as-you-go API accounts Correction de",
-      "summary_en": "What's changed\n\nAdded wheelScrollAccelerationEnabled setting to disable mouse-wheel scroll acceleration in fullscreen mode\nFixed the /model picker hiding the model family that Default resolves to — Opus now appears as its own row on Max/Team Premium/Enterprise plans, Sonnet on Pro/Team plans, and Opus on pay-as-you-go API accounts\nFixed ",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "wheelScrollAccelerationEnabled setting to disable mouse-wheel scroll acceleration in fullscreen mode"
-        },
-        {
-          "type": "fixed",
-          "text": "the /model picker hiding the model family that Default resolves to — Opus now appears as its own row on Max/Team Premium/Enterprise plans, Sonnet on Pro/Team plans, and Opus on pay-as-you-go API accou"
-        },
-        {
-          "type": "changed",
-          "text": "Added wheelScrollAccelerationEnabled setting to disable mouse-wheel scroll acceleration in fullscreen mode"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.174",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.109.2",
       "title_en": "v0.109.2",
@@ -99,7 +103,7 @@
       "summary_en": "0.109.2 (2026-06-15)\nFull Changelog: v0.109.1...v0.109.2\nChores\n\napi: remove retired models from API and SDKs (d4bcfcc)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.2",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -149,7 +153,7 @@
       "summary_en": "0.104.2 (2026-06-15)\nFull Changelog: sdk-v0.104.1...sdk-v0.104.2\nChores\n\napi: remove retired models from API and SDKs (a942876)<",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.2",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -199,14 +203,14 @@
       "summary_en": "Publie le 2026-06-15",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.178",
-      "title_en": "v2.1.178",
-      "summary": "Publie le 2026-06-15",
-      "summary_en": "Publie le 2026-06-15",
+      "title": "v2.1.179",
+      "title_en": "v2.1.179",
+      "summary": "Publie le 2026-06-16",
+      "summary_en": "Publie le 2026-06-16",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -219,7 +223,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -434,8 +438,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.178",
-    "Claude Code npm": "v2.1.178",
+    "Claude Code": "v2.1.179",
+    "Claude Code npm": "v2.1.179",
     "SDK Python": "v0.109.2",
     "SDK Python PyPI": "v0.109.2",
     "SDK TypeScript": "sdk: v0.103.0",
@@ -443,7 +447,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.174",
+    "GitHub Claude Code": "v2.1.175",
     "GitHub SDK Python": "v0.107.1"
   }
 }
