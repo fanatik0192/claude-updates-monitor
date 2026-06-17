@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-06-16T21:40:10.923312",
+  "last_check": "2026-06-17T21:01:32.401589",
   "updates": [
     {
       "source": "Claude Code",
@@ -26,7 +26,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.179",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -213,7 +213,7 @@
       "summary_en": "Publie le 2026-06-16",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -277,6 +277,16 @@
     },
     {
       "source": "Blog",
+      "title": "Jun 17, 2026AnnouncementsAnthropic ouvrirs Seoul office and announces new partnerships across the Kore",
+      "title_en": "Jun 17, 2026AnnouncementsAnthropic opens Seoul office and announces new partnerships across the Kore",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Jun 12, 2026AnnouncementsResults from the first Anthropic Public Record",
       "title_en": "Jun 12, 2026AnnouncementsResults from the first Anthropic Public Record",
       "summary": "",
@@ -316,16 +326,6 @@
       "is_new": false
     },
     {
-      "source": "Blog",
-      "title": "Jun 3, 2026AnnouncementsIntroducing the Services Track and Partner Hub of the Claude Partner Network",
-      "title_en": "Jun 3, 2026AnnouncementsIntroducing the Services Track and Partner Hub of the Claude Partner Network",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/services-track-partner-hub",
-      "is_new": false
-    },
-    {
       "source": "Recherche",
       "title": "Economic Rerecherche",
       "title_en": "Economic Research",
@@ -353,7 +353,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/societal-impacts",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -383,6 +383,16 @@
       "summary_en": "Un probleme est actuellement detecte sur les services Claude.",
       "changelog_items": [],
       "url": "https://status.claude.com",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "launch-your-agent",
+      "title_en": "launch-your-agent",
+      "summary": "Claude Code skills that take a founder from idea to a live Claude Managed Agent: interview, scope a v0, launch in their own account, grade it, iterate, and schedule it",
+      "summary_en": "Claude Code skills that take a founder from idea to a live Claude Managed Agent: interview, scope a v0, launch in their own account, grade it, iterate, and schedule it",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/launch-your-agent",
       "is_new": true
     },
     {
@@ -423,16 +433,6 @@
       "summary_en": "Claude support for Apple Foundation Models",
       "changelog_items": [],
       "url": "https://github.com/anthropics/ClaudeForFoundationModels",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "cargo-nix-plugin",
-      "title_en": "cargo-nix-plugin",
-      "summary": "A Nix plugin that resolves Cargo workspaces natively and allows for crate level builds",
-      "summary_en": "A Nix plugin that resolves Cargo workspaces natively and allows for crate level builds",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/cargo-nix-plugin",
       "is_new": false
     }
   ],
