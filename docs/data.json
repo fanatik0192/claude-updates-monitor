@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-06-17T21:01:32.401589",
+  "last_check": "2026-06-18T21:21:12.008586",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.181",
+      "title_en": "v2.1.181",
+      "summary": "Ce qui a change Ajout de /config key=value syntax to set any parametre from the prompt (e.g. /config thinking=false) — works in interactive, -p, and Remote Control Ajout de sandbox.allowAppleEvents opt-in parametre that lets sandboxed commandes send Apple Events on macOS Ajout de CLAUDE_CLIENT_PRESENCE_FILE envir",
+      "summary_en": "What's changed\n\nAdded /config key=value syntax to set any setting from the prompt (e.g. /config thinking=false) — works in interactive, -p, and Remote Control\nAdded sandbox.allowAppleEvents opt-in setting that lets sandboxed commands send Apple Events on macOS\nAdded CLAUDE_CLIENT_PRESENCE_FILE envir",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "/config key=value syntax to set any setting from the prompt (e.g. /config thinking=false) — works in interactive, -p, and Remote Control"
+        },
+        {
+          "type": "added",
+          "text": "sandbox.allowAppleEvents opt-in setting that lets sandboxed commands send Apple Events on macOS"
+        },
+        {
+          "type": "added",
+          "text": "CLAUDE_CLIENT_PRESENCE_FILE envir"
+        },
+        {
+          "type": "changed",
+          "text": "Added /config key=value syntax to set any setting from the prompt (e.g. /config thinking=false) — works in interactive, -p, and Remote Control"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.181",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.179",
@@ -77,23 +104,24 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.175",
-      "title_en": "v2.1.175",
-      "summary": "Ce qui a change Ajout de enforceAvailableModels managed parametre — when activerd, the availableModels allowlist also constrains the Par defaut model (a Par defaut that would resolve to a disallowed model now falls back to the first allowed model), and utilisateur or project parametres can no longer widen a managed availableModels list",
-      "summary_en": "What's changed\n\nAdded enforceAvailableModels managed setting — when enabled, the availableModels allowlist also constrains the Default model (a Default that would resolve to a disallowed model now falls back to the first allowed model), and user or project settings can no longer widen a managed availableModels list\n",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "enforceAvailableModels managed setting — when enabled, the availableModels allowlist also constrains the Default model (a Default that would resolve to a disallowed model now falls back to the first a"
-        },
-        {
-          "type": "changed",
-          "text": "Added enforceAvailableModels managed setting — when enabled, the availableModels allowlist also constrains the Default model (a Default that would resolve to a disallowed model now falls back to the f"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.175",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.111.0",
+      "title_en": "v0.111.0",
+      "summary": "0.111.0 (2026-06-18) Journal complet: v0.110.0...v0.111.0 Fonctionnalites helpers: tag refusal-fallback middleware requests with fallback-refusal-middleware (<a href=\"https://github.c",
+      "summary_en": "0.111.0 (2026-06-18)\nFull Changelog: v0.110.0...v0.111.0\nFeatures\n\nhelpers: tag refusal-fallback middleware requests with fallback-refusal-middleware (#96) (<a href=\"https://github.c",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.111.0",
+      "is_new": true
+    },
+    {
+      "source": "SDK Python",
+      "title": "v0.110.0",
+      "title_en": "v0.110.0",
+      "summary": "0.110.0 (2026-06-18) Journal complet: v0.109.2...v0.110.0 Fonctionnalites api: add prise en charge de new code_execution_20260120 tool () <h",
+      "summary_en": "0.110.0 (2026-06-18)\nFull Changelog: v0.109.2...v0.110.0\nFeatures\n\napi: add support for new code_execution_20260120 tool (5e23212)\n\n<h",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.110.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -126,104 +154,84 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.108.0",
-      "title_en": "v0.108.0",
-      "summary": "0.108.0 (2026-06-09) Journal complet: v0.107.1...v0.108.0 Fonctionnalites api: add prise en charge de claude-mythos-5 and claude-fable-5, with prise en charge de server-side fallbacks on refusal (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/",
-      "summary_en": "0.108.0 (2026-06-09)\nFull Changelog: v0.107.1...v0.108.0\nFeatures\n\napi: add support for claude-mythos-5 and claude-fable-5, with support for server-side fallbacks on refusal (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/6b76649f99bd782",
+      "source": "SDK TypeScript",
+      "title": "vertex-sdk: v0.18.0",
+      "title_en": "vertex-sdk: v0.18.0",
+      "summary": "0.18.0 (2026-06-18) Journal complet: vertex-sdk-v0.17.1...vertex-sdk-v0.18.0 Fonctionnalites stream: lazily parse partial tool json entree (<a href=\"https:/",
+      "summary_en": "0.18.0 (2026-06-18)\nFull Changelog: vertex-sdk-v0.17.1...vertex-sdk-v0.18.0\nFeatures\n\nstream: lazily parse partial tool json input (#99) (<a href=\"https:/",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.108.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK Python",
-      "title": "v0.107.1",
-      "title_en": "v0.107.1",
-      "summary": "0.107.1 (2026-06-07) Journal complet: v0.107.0...v0.107.1 Corrections de bugs foundry: send x-api-key header for API-key auth (<a href=\"https://github.com/anthropics/anthropic-sdk-python",
-      "summary_en": "0.107.1 (2026-06-07)\nFull Changelog: v0.107.0...v0.107.1\nBug Fixes\n\nfoundry: send x-api-key header for API-key auth (#62) (<a href=\"https://github.com/anthropics/anthropic-sdk-python",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.107.1",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.18.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk: v0.104.2",
-      "title_en": "sdk: v0.104.2",
-      "summary": "0.104.2 (2026-06-15) Journal complet: sdk-v0.104.1...sdk-v0.104.2 Maintenance api: remove retired models from API and SDKs ()<",
-      "summary_en": "0.104.2 (2026-06-15)\nFull Changelog: sdk-v0.104.1...sdk-v0.104.2\nChores\n\napi: remove retired models from API and SDKs (a942876)<",
+      "title": "sdk: v0.105.0",
+      "title_en": "sdk: v0.105.0",
+      "summary": "0.105.0 (2026-06-18) Journal complet: sdk-v0.104.2...sdk-v0.105.0 Fonctionnalites api: add prise en charge de new code_execution_20260120 tool (8d",
+      "summary_en": "0.105.0 (2026-06-18)\nFull Changelog: sdk-v0.104.2...sdk-v0.105.0\nFeatures\n\napi: add support for new code_execution_20260120 tool (8d",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.2",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.105.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "vertex-sdk: v0.17.1",
-      "title_en": "vertex-sdk: v0.17.1",
-      "summary": "0.17.1 (2026-06-09) Journal complet: vertex-sdk-v0.17.0...vertex-sdk-v0.17.1 Corrections de bugs client: 3p middleware ordering (<a href=\"https://github.com/a",
-      "summary_en": "0.17.1 (2026-06-09)\nFull Changelog: vertex-sdk-v0.17.0...vertex-sdk-v0.17.1\nBug Fixes\n\nclient: 3p middleware ordering (#53) (<a href=\"https://github.com/a",
+      "title": "foundry-sdk: v0.4.0",
+      "title_en": "foundry-sdk: v0.4.0",
+      "summary": "0.4.0 (2026-06-18) Journal complet: foundry-sdk-v0.3.1...foundry-sdk-v0.4.0 Fonctionnalites stream: lazily parse partial tool json entree (<a href=\"https://",
+      "summary_en": "0.4.0 (2026-06-18)\nFull Changelog: foundry-sdk-v0.3.1...foundry-sdk-v0.4.0\nFeatures\n\nstream: lazily parse partial tool json input (#99) (<a href=\"https://",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.17.1",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk: v0.104.1",
-      "title_en": "sdk: v0.104.1",
-      "summary": "0.104.1 (2026-06-09) Journal complet: sdk-v0.104.0...sdk-v0.104.1 Corrections de bugs api: add frontier_llm refusal category (465",
-      "summary_en": "0.104.1 (2026-06-09)\nFull Changelog: sdk-v0.104.0...sdk-v0.104.1\nBug Fixes\n\napi: add frontier_llm refusal category (465",
+      "title": "bedrock-sdk: v0.31.0",
+      "title_en": "bedrock-sdk: v0.31.0",
+      "summary": "0.31.0 (2026-06-18) Journal complet: bedrock-sdk-v0.30.2...bedrock-sdk-v0.31.0 Fonctionnalites stream: lazily parse partial tool json entree (<a href=\"htt",
+      "summary_en": "0.31.0 (2026-06-18)\nFull Changelog: bedrock-sdk-v0.30.2...bedrock-sdk-v0.31.0\nFeatures\n\nstream: lazily parse partial tool json input (#99) (<a href=\"htt",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.1",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.31.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk: v0.104.0",
-      "title_en": "sdk: v0.104.0",
-      "summary": "0.104.0 (2026-06-09) Journal complet: sdk-v0.103.0...sdk-v0.104.0 Fonctionnalites api: add prise en charge de Managed Agents deployments and variable d'environnement credentials (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
-      "summary_en": "0.104.0 (2026-06-09)\nFull Changelog: sdk-v0.103.0...sdk-v0.104.0\nFeatures\n\napi: add support for Managed Agents deployments and environment variable credentials (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/d01e38b5b6f62",
+      "title": "aws-sdk: v0.5.0",
+      "title_en": "aws-sdk: v0.5.0",
+      "summary": "0.5.0 (2026-06-18) Journal complet: aws-sdk-v0.4.2...aws-sdk-v0.5.0 Fonctionnalites stream: lazily parse partial tool json entree (<a href=\"https://github.com/anthr",
+      "summary_en": "0.5.0 (2026-06-18)\nFull Changelog: aws-sdk-v0.4.2...aws-sdk-v0.5.0\nFeatures\n\nstream: lazily parse partial tool json input (#99) (<a href=\"https://github.com/anthr",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.103.0",
-      "title_en": "sdk: v0.103.0",
-      "summary": "0.103.0 (2026-06-09) Journal complet: sdk-v0.102.0...sdk-v0.103.0 Fonctionnalites api: add prise en charge de claude-mythos-5 and claude-fable-5, with prise en charge de server-side fallbacks on refusal (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscrip",
-      "summary_en": "0.103.0 (2026-06-09)\nFull Changelog: sdk-v0.102.0...sdk-v0.103.0\nFeatures\n\napi: add support for claude-mythos-5 and claude-fable-5, with support for server-side fallbacks on refusal (<a href=\"https://github.com/anthropics/anthropic-sdk-typescrip",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.103.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.5.0",
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.104.2",
-      "title_en": "v0.104.2",
-      "summary": "Publie le 2026-06-15",
-      "summary_en": "Publie le 2026-06-15",
+      "title": "v0.105.0",
+      "title_en": "v0.105.0",
+      "summary": "Publie le 2026-06-18",
+      "summary_en": "Publie le 2026-06-18",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.179",
-      "title_en": "v2.1.179",
-      "summary": "Publie le 2026-06-16",
-      "summary_en": "Publie le 2026-06-16",
+      "title": "v2.1.181",
+      "title_en": "v2.1.181",
+      "summary": "Publie le 2026-06-17",
+      "summary_en": "Publie le 2026-06-17",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.109.2",
-      "title_en": "v0.109.2",
+      "title": "v0.111.0",
+      "title_en": "v0.111.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -283,7 +291,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -303,7 +311,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -353,6 +361,16 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/societal-impacts",
+      "is_new": false
+    },
+    {
+      "source": "Recherche",
+      "title": "Frontier Red Team",
+      "title_en": "Frontier Red Team",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/research/team/frontier-red-team",
       "is_new": true
     },
     {
@@ -363,16 +381,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/natural-language-autoencoders",
-      "is_new": false
-    },
-    {
-      "source": "Recherche",
-      "title": "AlignmentMay 8, 2026Teaching Claude whyNew rerecherche on how we've reduced agentic misalignment.",
-      "title_en": "AlignmentMay 8, 2026Teaching Claude whyNew research on how we've reduced agentic misalignment.",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/research/teaching-claude-why",
       "is_new": false
     },
     {
@@ -393,7 +401,7 @@
       "summary_en": "Claude Code skills that take a founder from idea to a live Claude Managed Agent: interview, scope a v0, launch in their own account, grade it, iterate, and schedule it",
       "changelog_items": [],
       "url": "https://github.com/anthropics/launch-your-agent",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -438,16 +446,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.179",
-    "Claude Code npm": "v2.1.179",
-    "SDK Python": "v0.109.2",
-    "SDK Python PyPI": "v0.109.2",
-    "SDK TypeScript": "sdk: v0.103.0",
+    "Claude Code": "v2.1.181",
+    "Claude Code npm": "v2.1.181",
+    "SDK Python": "v0.111.0",
+    "SDK Python PyPI": "v0.111.0",
+    "SDK TypeScript": "aws-sdk: v0.5.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.175",
-    "GitHub SDK Python": "v0.107.1"
+    "GitHub Claude Code": "v2.1.176",
+    "GitHub SDK Python": "v0.109.0"
   }
 }
