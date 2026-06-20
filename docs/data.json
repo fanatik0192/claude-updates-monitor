@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-06-19T20:24:45.651083",
+  "last_check": "2026-06-20T20:12:53.639854",
   "updates": [
     {
       "source": "Claude Code",
@@ -14,7 +14,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.183",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -87,7 +87,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.178",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -217,7 +217,7 @@
       "summary_en": "Publie le 2026-06-19",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -237,7 +237,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/fable-mythos-access",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -287,7 +287,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
