@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-06-21T20:22:06.893298",
+  "last_check": "2026-06-22T21:29:42.703886",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.186",
+      "title_en": "v2.1.186",
+      "summary": "Ce qui a change Ajout de claude mcp login &lt;nom&gt; and claude mcp logout &lt;nom&gt; to authenticate MCP servers from the CLI without ouvriring the interactive /mcp menu, with --no-browser stdin redirect prise en charge de completing over SSH Ajout de status filtrage (appuyer sur f) to the /workflows agent det",
+      "summary_en": "What's changed\n\nAdded claude mcp login &lt;name&gt; and claude mcp logout &lt;name&gt; to authenticate MCP servers from the CLI without opening the interactive /mcp menu, with --no-browser stdin redirect support for completing over SSH\nAdded status filtering (press f) to the /workflows agent det",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "claude mcp login &lt;name&gt; and claude mcp logout &lt;name&gt; to authenticate MCP servers from the CLI without opening the interactive /mcp menu, with --no-browser stdin redirect support for comple"
+        },
+        {
+          "type": "added",
+          "text": "status filtering (press f) to the /workflows agent det"
+        },
+        {
+          "type": "changed",
+          "text": "Added claude mcp login &lt;name&gt; and claude mcp logout &lt;name&gt; to authenticate MCP servers from the CLI without opening the interactive /mcp menu, with --no-browser stdin redirect support for "
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.186",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.185",
@@ -14,7 +37,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.185",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -83,25 +106,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.179",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.178",
-      "title_en": "v2.1.178",
-      "summary": "Ce qui a change Ajout de Tool(param:value) syntax for permission regles to match a tool's entree parameters (with * wildcard), e.g. Agent(model:opus) to block Opus subagents Skills in nested .claude/skills directories now load when working on fichiers there; on a nom clash, the nested skill appears as &lt;dir&gt;:&lt;nom",
-      "summary_en": "What's changed\n\nAdded Tool(param:value) syntax for permission rules to match a tool's input parameters (with * wildcard), e.g. Agent(model:opus) to block Opus subagents\nSkills in nested .claude/skills directories now load when working on files there; on a name clash, the nested skill appears as &lt;dir&gt;:&lt;name",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "Tool(param:value) syntax for permission rules to match a tool's input parameters (with * wildcard), e.g. Agent(model:opus) to block Opus subagents"
-        },
-        {
-          "type": "changed",
-          "text": "Added Tool(param:value) syntax for permission rules to match a tool's input parameters (with * wildcard), e.g. Agent(model:opus) to block Opus subagents"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.178",
       "is_new": false
     },
     {
@@ -216,10 +220,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.185",
-      "title_en": "v2.1.185",
-      "summary": "Publie le 2026-06-20",
-      "summary_en": "Publie le 2026-06-20",
+      "title": "v2.1.186",
+      "title_en": "v2.1.186",
+      "summary": "Publie le 2026-06-22",
+      "summary_en": "Publie le 2026-06-22",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -362,7 +366,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/societal-impacts",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -393,62 +397,12 @@
       "changelog_items": [],
       "url": "https://status.claude.com",
       "is_new": true
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "launch-your-agent",
-      "title_en": "launch-your-agent",
-      "summary": "Claude Code skills that take a founder from idea to a live Claude Managed Agent: interview, scope a v0, launch in their own account, grade it, iterate, and schedule it",
-      "summary_en": "Claude Code skills that take a founder from idea to a live Claude Managed Agent: interview, scope a v0, launch in their own account, grade it, iterate, and schedule it",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/launch-your-agent",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "leptos-chartistry",
-      "title_en": "leptos-chartistry",
-      "summary": "Chartistry is an extensible charting library for Leptos",
-      "summary_en": "Chartistry is an extensible charting library for Leptos",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/leptos-chartistry",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "riegeli-rs",
-      "title_en": "riegeli-rs",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/riegeli-rs",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "defending-code-reference-harness",
-      "title_en": "defending-code-reference-harness",
-      "summary": "Skills for threat modeling, scanning, triage, patching, plus an autonomous scanning harness you can /personnaliseize",
-      "summary_en": "Skills for threat modeling, scanning, triage, patching, plus an autonomous scanning harness you can /customize",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/defending-code-reference-harness",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "ClaudeForFoundationModels",
-      "title_en": "ClaudeForFoundationModels",
-      "summary": "Claude prise en charge de Apple Foundation Models",
-      "summary_en": "Claude support for Apple Foundation Models",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/ClaudeForFoundationModels",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.185",
-    "Claude Code npm": "v2.1.185",
+    "Claude Code": "v2.1.186",
+    "Claude Code npm": "v2.1.186",
     "SDK Python": "v0.111.0",
     "SDK Python PyPI": "v0.111.0",
     "SDK TypeScript": "aws-sdk: v0.5.0",
@@ -456,7 +410,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.178",
+    "GitHub Claude Code": "v2.1.179",
     "GitHub SDK Python": "v0.109.0"
   }
 }
