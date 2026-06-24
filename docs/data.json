@@ -1,6 +1,44 @@
 {
-  "last_check": "2026-06-23T20:58:53.988310",
+  "last_check": "2026-06-24T20:45:09.459210",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.190",
+      "title_en": "v2.1.190",
+      "summary": "Ce qui a change Bug fixes and reliability improvements",
+      "summary_en": "What's changed\n\nBug fixes and reliability improvements\n",
+      "changelog_items": [
+        {
+          "type": "changed",
+          "text": "Bug fixes and reliability improvements"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.190",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.187",
+      "title_en": "v2.1.187",
+      "summary": "Ce qui a change Ajout de sandbox.credentials parametre to block sandboxed commandes from reading credential fichiers and secret variable d'environnements Ajout de org-configured model restrictions to the model picker, --model, /model, and ANTHROPIC_MODEL, with a \"restricted by your organization's parametres\" message when a restricted mode",
+      "summary_en": "What's changed\n\nAdded sandbox.credentials setting to block sandboxed commands from reading credential files and secret environment variables\nAdded org-configured model restrictions to the model picker, --model, /model, and ANTHROPIC_MODEL, with a \"restricted by your organization's settings\" message when a restricted mode",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "sandbox.credentials setting to block sandboxed commands from reading credential files and secret environment variables"
+        },
+        {
+          "type": "added",
+          "text": "org-configured model restrictions to the model picker, --model, /model, and ANTHROPIC_MODEL, with a \"restricted by your organization's settings\" message when a restricted mode"
+        },
+        {
+          "type": "changed",
+          "text": "Added sandbox.credentials setting to block sandboxed commands from reading credential files and secret environment variables"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.187",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.186",
@@ -55,58 +93,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.181",
-      "title_en": "v2.1.181",
-      "summary": "Ce qui a change Ajout de /config key=value syntax to set any parametre from the prompt (e.g. /config thinking=false) — works in interactive, -p, and Remote Control Ajout de sandbox.allowAppleEvents opt-in parametre that lets sandboxed commandes send Apple Events on macOS Ajout de CLAUDE_CLIENT_PRESENCE_FILE envir",
-      "summary_en": "What's changed\n\nAdded /config key=value syntax to set any setting from the prompt (e.g. /config thinking=false) — works in interactive, -p, and Remote Control\nAdded sandbox.allowAppleEvents opt-in setting that lets sandboxed commands send Apple Events on macOS\nAdded CLAUDE_CLIENT_PRESENCE_FILE envir",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "/config key=value syntax to set any setting from the prompt (e.g. /config thinking=false) — works in interactive, -p, and Remote Control"
-        },
-        {
-          "type": "added",
-          "text": "sandbox.allowAppleEvents opt-in setting that lets sandboxed commands send Apple Events on macOS"
-        },
-        {
-          "type": "added",
-          "text": "CLAUDE_CLIENT_PRESENCE_FILE envir"
-        },
-        {
-          "type": "changed",
-          "text": "Added /config key=value syntax to set any setting from the prompt (e.g. /config thinking=false) — works in interactive, -p, and Remote Control"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.181",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.179",
-      "title_en": "v2.1.179",
-      "summary": "Ce qui a change Correction de mid-stream connection drops: partial responses are now preserved instead of affichering a raw erreur, and the spinner no longer gets stuck at \"running tool\" Correction de mouse-wheel scrolling in WSL2 under Windows Terminal and VS Code (regression in 2.1.172) Correction de a sandbox denyRead/allowRead glob over a large repertoire tree ma",
-      "summary_en": "What's changed\n\nFixed mid-stream connection drops: partial responses are now preserved instead of showing a raw error, and the spinner no longer gets stuck at \"running tool\"\nFixed mouse-wheel scrolling in WSL2 under Windows Terminal and VS Code (regression in 2.1.172)\nFixed a sandbox denyRead/allowRead glob over a large directory tree ma",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "mid-stream connection drops: partial responses are now preserved instead of showing a raw error, and the spinner no longer gets stuck at \"running tool\""
-        },
-        {
-          "type": "fixed",
-          "text": "mouse-wheel scrolling in WSL2 under Windows Terminal and VS Code (regression in 2.1.172)"
-        },
-        {
-          "type": "fixed",
-          "text": "a sandbox denyRead/allowRead glob over a large directory tree ma"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed mid-stream connection drops: partial responses are now preserved instead of showing a raw error, and the spinner no longer gets stuck at \"running tool\""
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.179",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.112.0",
+      "title_en": "v0.112.0",
+      "summary": "0.112.0 (2026-06-24) Journal complet: v0.111.0...v0.112.0 Fonctionnalites client: add prise en charge de system.message streaming events ()",
+      "summary_en": "0.112.0 (2026-06-24)\nFull Changelog: v0.111.0...v0.112.0\nFeatures\n\nclient: add support for system.message streaming events (2450d59)\n\n",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.112.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -149,14 +143,14 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.109.0",
-      "title_en": "v0.109.0",
-      "summary": "0.109.0 (2026-06-09) Journal complet: v0.108.0...v0.109.0 Fonctionnalites api: add prise en charge de Managed Agents deployments and variable d'environnement credentials (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/",
-      "summary_en": "0.109.0 (2026-06-09)\nFull Changelog: v0.108.0...v0.109.0\nFeatures\n\napi: add support for Managed Agents deployments and environment variable credentials (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/47633bff658d4aaced3cd920ef6782c48cf31",
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.106.0",
+      "title_en": "sdk: v0.106.0",
+      "summary": "0.106.0 (2026-06-24) Journal complet: sdk-v0.105.0...sdk-v0.106.0 Fonctionnalites client: add prise en charge de system.message streaming events (",
+      "summary_en": "0.106.0 (2026-06-24)\nFull Changelog: sdk-v0.105.0...sdk-v0.106.0\nFeatures\n\nclient: add support for system.message streaming events (",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.106.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -196,47 +190,37 @@
       "summary_en": "0.31.0 (2026-06-18)\nFull Changelog: bedrock-sdk-v0.30.2...bedrock-sdk-v0.31.0\nFeatures\n\nstream: lazily parse partial tool json input (#99) (<a href=\"htt",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.31.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "aws-sdk: v0.5.0",
-      "title_en": "aws-sdk: v0.5.0",
-      "summary": "0.5.0 (2026-06-18) Journal complet: aws-sdk-v0.4.2...aws-sdk-v0.5.0 Fonctionnalites stream: lazily parse partial tool json entree (<a href=\"https://github.com/anthr",
-      "summary_en": "0.5.0 (2026-06-18)\nFull Changelog: aws-sdk-v0.4.2...aws-sdk-v0.5.0\nFeatures\n\nstream: lazily parse partial tool json input (#99) (<a href=\"https://github.com/anthr",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.5.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.105.0",
-      "title_en": "v0.105.0",
-      "summary": "Publie le 2026-06-18",
-      "summary_en": "Publie le 2026-06-18",
+      "title": "v0.106.0",
+      "title_en": "v0.106.0",
+      "summary": "Publie le 2026-06-24",
+      "summary_en": "Publie le 2026-06-24",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.186",
-      "title_en": "v2.1.186",
-      "summary": "Publie le 2026-06-22",
-      "summary_en": "Publie le 2026-06-22",
+      "title": "v2.1.190",
+      "title_en": "v2.1.190",
+      "summary": "Publie le 2026-06-24",
+      "summary_en": "Publie le 2026-06-24",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.111.0",
-      "title_en": "v0.111.0",
+      "title": "v0.112.0",
+      "title_en": "v0.112.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -256,7 +240,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/introducing-claude-tag",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -406,7 +390,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/claude-tag-plugins",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -451,16 +435,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.186",
-    "Claude Code npm": "v2.1.186",
-    "SDK Python": "v0.111.0",
-    "SDK Python PyPI": "v0.111.0",
-    "SDK TypeScript": "aws-sdk: v0.5.0",
+    "Claude Code": "v2.1.190",
+    "Claude Code npm": "v2.1.190",
+    "SDK Python": "v0.112.0",
+    "SDK Python PyPI": "v0.112.0",
+    "SDK TypeScript": "bedrock-sdk: v0.31.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.179",
-    "GitHub SDK Python": "v0.109.0"
+    "GitHub Claude Code": "v2.1.183",
+    "GitHub SDK Python": "v0.109.1"
   }
 }
