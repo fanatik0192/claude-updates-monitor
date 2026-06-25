@@ -1,6 +1,37 @@
 {
-  "last_check": "2026-06-24T20:45:09.459210",
+  "last_check": "2026-06-25T20:53:48.097429",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.191",
+      "title_en": "v2.1.191",
+      "summary": "Ce qui a change Ajout de /rewind prise en charge de resuming a conversation from before /clear was run Correction de scroll position jumping to the bottom while reading earlier sortie during a streaming response Correction de arriere-plan agents resurrecting after being stopped — stopping an agent from the tasks panel is now permanent Correction de /voice</c",
+      "summary_en": "What's changed\n\nAdded /rewind support for resuming a conversation from before /clear was run\nFixed scroll position jumping to the bottom while reading earlier output during a streaming response\nFixed background agents resurrecting after being stopped — stopping an agent from the tasks panel is now permanent\nFixed /voice</c",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "/rewind support for resuming a conversation from before /clear was run"
+        },
+        {
+          "type": "fixed",
+          "text": "scroll position jumping to the bottom while reading earlier output during a streaming response"
+        },
+        {
+          "type": "fixed",
+          "text": "background agents resurrecting after being stopped — stopping an agent from the tasks panel is now permanent"
+        },
+        {
+          "type": "fixed",
+          "text": "/voice</c"
+        },
+        {
+          "type": "changed",
+          "text": "Added /rewind support for resuming a conversation from before /clear was run"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.191",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.190",
@@ -14,7 +45,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.190",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -37,7 +68,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.187",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -78,21 +109,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.183",
-      "title_en": "v2.1.183",
-      "summary": "Ce qui a change Amelioration de auto mode safety: destructive git commandes (git reset --hard, git checkout -- ., git clean -fd, git stash drop) are now blocked when you didn't ask to discard local work, git commit --amend is blocked when the commit wasn't made by the agent this session, and terraform destroy/<c",
-      "summary_en": "What's changed\n\nImproved auto mode safety: destructive git commands (git reset --hard, git checkout -- ., git clean -fd, git stash drop) are now blocked when you didn't ask to discard local work, git commit --amend is blocked when the commit wasn't made by the agent this session, and terraform destroy/<c",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Improved auto mode safety: destructive git commands (git reset --hard, git checkout -- ., git clean -fd, git stash drop) are now blocked when you didn't ask to discard local work, git commit --amend i"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.183",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.112.0",
       "title_en": "v0.112.0",
@@ -100,7 +116,7 @@
       "summary_en": "0.112.0 (2026-06-24)\nFull Changelog: v0.111.0...v0.112.0\nFeatures\n\nclient: add support for system.message streaming events (2450d59)\n\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.112.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -110,7 +126,7 @@
       "summary_en": "0.111.0 (2026-06-18)\nFull Changelog: v0.110.0...v0.111.0\nFeatures\n\nhelpers: tag refusal-fallback middleware requests with fallback-refusal-middleware (#96) (<a href=\"https://github.c",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.111.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -150,7 +166,7 @@
       "summary_en": "0.106.0 (2026-06-24)\nFull Changelog: sdk-v0.105.0...sdk-v0.106.0\nFeatures\n\nclient: add support for system.message streaming events (",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.106.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -190,7 +206,7 @@
       "summary_en": "0.31.0 (2026-06-18)\nFull Changelog: bedrock-sdk-v0.30.2...bedrock-sdk-v0.31.0\nFeatures\n\nstream: lazily parse partial tool json input (#99) (<a href=\"htt",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.31.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/sdk",
@@ -200,12 +216,12 @@
       "summary_en": "Publie le 2026-06-24",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.190",
-      "title_en": "v2.1.190",
+      "title": "v2.1.191",
+      "title_en": "v2.1.191",
       "summary": "Publie le 2026-06-24",
       "summary_en": "Publie le 2026-06-24",
       "changelog_items": [],
@@ -220,7 +236,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -350,7 +366,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/societal-impacts",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -370,7 +386,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/natural-language-autoencoders",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Statut",
@@ -435,8 +451,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.190",
-    "Claude Code npm": "v2.1.190",
+    "Claude Code": "v2.1.191",
+    "Claude Code npm": "v2.1.191",
     "SDK Python": "v0.112.0",
     "SDK Python PyPI": "v0.112.0",
     "SDK TypeScript": "bedrock-sdk: v0.31.0",
@@ -444,7 +460,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.183",
+    "GitHub Claude Code": "v2.1.185",
     "GitHub SDK Python": "v0.109.1"
   }
 }
