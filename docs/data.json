@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-06-25T20:53:48.097429",
+  "last_check": "2026-06-26T20:44:04.756531",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.193",
+      "title_en": "v2.1.193",
+      "summary": "Ce qui a change Ajout de autoMode.classifyAllShell parametre to route all Bash/PowerShell commandes through the auto-mode classifier instead of only arbitrary-code-execution patterns Ajout de auto-mode denial reasons to the transcript, the denial toast, and /permissions recent denials Ajout de claude_code.assistant_response OuvrirTelemetr",
+      "summary_en": "What's changed\n\nAdded autoMode.classifyAllShell setting to route all Bash/PowerShell commands through the auto-mode classifier instead of only arbitrary-code-execution patterns\nAdded auto-mode denial reasons to the transcript, the denial toast, and /permissions recent denials\nAdded claude_code.assistant_response OpenTelemetr",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "autoMode.classifyAllShell setting to route all Bash/PowerShell commands through the auto-mode classifier instead of only arbitrary-code-execution patterns"
+        },
+        {
+          "type": "added",
+          "text": "auto-mode denial reasons to the transcript, the denial toast, and /permissions recent denials"
+        },
+        {
+          "type": "added",
+          "text": "claude_code.assistant_response OpenTelemetr"
+        },
+        {
+          "type": "changed",
+          "text": "Added autoMode.classifyAllShell setting to route all Bash/PowerShell commands through the auto-mode classifier instead of only arbitrary-code-execution patterns"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.193",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.191",
@@ -30,7 +57,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.191",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -94,21 +121,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.185",
-      "title_en": "v2.1.185",
-      "summary": "Ce qui a change The stream-stall hint now reads \"Waiting for API response · will reessayer in …\" instead of \"No response from API · Reessayering in …\", and triggers after 20s of silence instead of 10s",
-      "summary_en": "What's changed\n\nThe stream-stall hint now reads \"Waiting for API response · will retry in …\" instead of \"No response from API · Retrying in …\", and triggers after 20s of silence instead of 10s\n",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "The stream-stall hint now reads \"Waiting for API response · will retry in …\" instead of \"No response from API · Retrying in …\", and triggers after 20s of silence instead of 10s"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.185",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.112.0",
       "title_en": "v0.112.0",
@@ -126,7 +138,7 @@
       "summary_en": "0.111.0 (2026-06-18)\nFull Changelog: v0.110.0...v0.111.0\nFeatures\n\nhelpers: tag refusal-fallback middleware requests with fallback-refusal-middleware (#96) (<a href=\"https://github.c",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.111.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -156,7 +168,7 @@
       "summary_en": "0.109.1 (2026-06-09)\nFull Changelog: v0.109.0...v0.109.1\nBug Fixes\n\napi: add frontier_llm refusal category (d3a806b)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.1",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -206,7 +218,7 @@
       "summary_en": "0.31.0 (2026-06-18)\nFull Changelog: bedrock-sdk-v0.30.2...bedrock-sdk-v0.31.0\nFeatures\n\nstream: lazily parse partial tool json input (#99) (<a href=\"htt",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.31.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/sdk",
@@ -220,10 +232,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.191",
-      "title_en": "v2.1.191",
-      "summary": "Publie le 2026-06-24",
-      "summary_en": "Publie le 2026-06-24",
+      "title": "v2.1.193",
+      "title_en": "v2.1.193",
+      "summary": "Publie le 2026-06-25",
+      "summary_en": "Publie le 2026-06-25",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -366,7 +378,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/societal-impacts",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -386,7 +398,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/natural-language-autoencoders",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Statut",
@@ -451,8 +463,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.191",
-    "Claude Code npm": "v2.1.191",
+    "Claude Code": "v2.1.193",
+    "Claude Code npm": "v2.1.193",
     "SDK Python": "v0.112.0",
     "SDK Python PyPI": "v0.112.0",
     "SDK TypeScript": "bedrock-sdk: v0.31.0",
@@ -460,7 +472,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.185",
+    "GitHub Claude Code": "v2.1.186",
     "GitHub SDK Python": "v0.109.1"
   }
 }
