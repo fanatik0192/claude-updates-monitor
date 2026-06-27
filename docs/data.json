@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-06-26T20:44:04.756531",
+  "last_check": "2026-06-27T20:06:04.383305",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.195",
+      "title_en": "v2.1.195",
+      "summary": "Ce qui a change Ajout de CLAUDE_CODE_DISABLE_MOUSE_CLICKS to desactiver mouse clic/drag/survol in fullscreen mode while keeping wheel scroll Correction de hook matchers with hyphenated identifiers (e.g. code-revisionneuse, mcp__brave-recherche) accidentally substring-matching — they now exact-match. Use mcp__brave-recherche__.* to match all tool",
+      "summary_en": "What's changed\n\nAdded CLAUDE_CODE_DISABLE_MOUSE_CLICKS to disable mouse click/drag/hover in fullscreen mode while keeping wheel scroll\nFixed hook matchers with hyphenated identifiers (e.g. code-reviewer, mcp__brave-search) accidentally substring-matching — they now exact-match. Use mcp__brave-search__.* to match all tool",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "CLAUDE_CODE_DISABLE_MOUSE_CLICKS to disable mouse click/drag/hover in fullscreen mode while keeping wheel scroll"
+        },
+        {
+          "type": "fixed",
+          "text": "hook matchers with hyphenated identifiers (e.g. code-reviewer, mcp__brave-search) accidentally substring-matching — they now exact-match. Use mcp__brave-search__.* to match all tool"
+        },
+        {
+          "type": "changed",
+          "text": "Added CLAUDE_CODE_DISABLE_MOUSE_CLICKS to disable mouse click/drag/hover in fullscreen mode while keeping wheel scroll"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.195",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.193",
@@ -26,7 +49,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.193",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -98,29 +121,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.186",
-      "title_en": "v2.1.186",
-      "summary": "Ce qui a change Ajout de claude mcp login &lt;nom&gt; and claude mcp logout &lt;nom&gt; to authenticate MCP servers from the CLI without ouvriring the interactive /mcp menu, with --no-browser stdin redirect prise en charge de completing over SSH Ajout de status filtrage (appuyer sur f) to the /workflows agent det",
-      "summary_en": "What's changed\n\nAdded claude mcp login &lt;name&gt; and claude mcp logout &lt;name&gt; to authenticate MCP servers from the CLI without opening the interactive /mcp menu, with --no-browser stdin redirect support for completing over SSH\nAdded status filtering (press f) to the /workflows agent det",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "claude mcp login &lt;name&gt; and claude mcp logout &lt;name&gt; to authenticate MCP servers from the CLI without opening the interactive /mcp menu, with --no-browser stdin redirect support for comple"
-        },
-        {
-          "type": "added",
-          "text": "status filtering (press f) to the /workflows agent det"
-        },
-        {
-          "type": "changed",
-          "text": "Added claude mcp login &lt;name&gt; and claude mcp logout &lt;name&gt; to authenticate MCP servers from the CLI without opening the interactive /mcp menu, with --no-browser stdin redirect support for "
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.186",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.112.0",
       "title_en": "v0.112.0",
@@ -158,7 +158,7 @@
       "summary_en": "0.109.2 (2026-06-15)\nFull Changelog: v0.109.1...v0.109.2\nChores\n\napi: remove retired models from API and SDKs (d4bcfcc)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.2",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -168,7 +168,7 @@
       "summary_en": "0.109.1 (2026-06-09)\nFull Changelog: v0.109.0...v0.109.1\nBug Fixes\n\napi: add frontier_llm refusal category (d3a806b)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -218,7 +218,7 @@
       "summary_en": "0.31.0 (2026-06-18)\nFull Changelog: bedrock-sdk-v0.30.2...bedrock-sdk-v0.31.0\nFeatures\n\nstream: lazily parse partial tool json input (#99) (<a href=\"htt",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.31.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/sdk",
@@ -232,10 +232,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.193",
-      "title_en": "v2.1.193",
-      "summary": "Publie le 2026-06-25",
-      "summary_en": "Publie le 2026-06-25",
+      "title": "v2.1.195",
+      "title_en": "v2.1.195",
+      "summary": "Publie le 2026-06-26",
+      "summary_en": "Publie le 2026-06-26",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -463,8 +463,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.193",
-    "Claude Code npm": "v2.1.193",
+    "Claude Code": "v2.1.195",
+    "Claude Code npm": "v2.1.195",
     "SDK Python": "v0.112.0",
     "SDK Python PyPI": "v0.112.0",
     "SDK TypeScript": "bedrock-sdk: v0.31.0",
@@ -472,7 +472,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.186",
+    "GitHub Claude Code": "v2.1.187",
     "GitHub SDK Python": "v0.109.1"
   }
 }
