@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-06-27T20:06:04.383305",
+  "last_check": "2026-06-28T20:09:57.318285",
   "updates": [
     {
       "source": "Claude Code",
@@ -22,7 +22,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.195",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -158,7 +158,7 @@
       "summary_en": "0.109.2 (2026-06-15)\nFull Changelog: v0.109.1...v0.109.2\nChores\n\napi: remove retired models from API and SDKs (d4bcfcc)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.2",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -238,7 +238,7 @@
       "summary_en": "Publie le 2026-06-26",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -258,7 +258,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/fable-mythos-access",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
