@@ -1,6 +1,48 @@
 {
-  "last_check": "2026-06-29T20:47:28.669884",
+  "last_check": "2026-06-30T20:55:33.379388",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.197",
+      "title_en": "v2.1.197",
+      "summary": "Ce qui a change Introducing Claude Sonnet 5: now the par defaut model in Claude Code, with a native 1M-jeton context window and promotional pricing of $2/$10 per Mtok through August 31. Update to version 2.1.197 for access. https://www.anthropic.com/news/claude-sonnet-5",
+      "summary_en": "What's changed\n\nIntroducing Claude Sonnet 5: now the default model in Claude Code, with a native 1M-token context window and promotional pricing of $2/$10 per Mtok through August 31. Update to version 2.1.197 for access. https://www.anthropic.com/news/claude-sonnet-5\n",
+      "changelog_items": [
+        {
+          "type": "changed",
+          "text": "Introducing Claude Sonnet 5: now the default model in Claude Code, with a native 1M-token context window and promotional pricing of $2/$10 per Mtok through August 31. Update to version 2.1.197 for acc"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.197",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.196",
+      "title_en": "v2.1.196",
+      "summary": "Ce qui a change Ajout de prise en charge de organization par defaut models — admins set it in the org console; it affichers as \"Org par defaut\" (or \"Role par defaut\") in /model when you haven't picked one yourself Ajout de readable par defaut noms for sessions at start, making them easier to identify and message Ajout de cliquable fichier attachments in chat — Cmd/Ctrl-clic reveals",
+      "summary_en": "What's changed\n\nAdded support for organization default models — admins set it in the org console; it shows as \"Org default\" (or \"Role default\") in /model when you haven't picked one yourself\nAdded readable default names for sessions at start, making them easier to identify and message\nAdded clickable file attachments in chat — Cmd/Ctrl-click reveals ",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "support for organization default models — admins set it in the org console; it shows as \"Org default\" (or \"Role default\") in /model when you haven't picked one yourself"
+        },
+        {
+          "type": "added",
+          "text": "readable default names for sessions at start, making them easier to identify and message"
+        },
+        {
+          "type": "added",
+          "text": "clickable file attachments in chat — Cmd/Ctrl-click reveals"
+        },
+        {
+          "type": "changed",
+          "text": "Added support for organization default models — admins set it in the org console; it shows as \"Org default\" (or \"Role default\") in /model when you haven't picked one yourself"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.196",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.195",
@@ -83,42 +125,24 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.190",
-      "title_en": "v2.1.190",
-      "summary": "Ce qui a change Bug fixes and reliability improvements",
-      "summary_en": "What's changed\n\nBug fixes and reliability improvements\n",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Bug fixes and reliability improvements"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.190",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.115.0",
+      "title_en": "v0.115.0",
+      "summary": "0.115.0 (2026-06-30) Journal complet: v0.114.0...v0.115.0 Fonctionnalites api: add prise en charge de Managed Agents event delta streaming, agent overrides, reverse pagination, vault credential injection scoping, and agent and deployment webhook events (<a href=\"https://",
+      "summary_en": "0.115.0 (2026-06-30)\nFull Changelog: v0.114.0...v0.115.0\nFeatures\n\napi: add support for Managed Agents event delta streaming, agent overrides, reverse pagination, vault credential injection scoping, and agent and deployment webhook events (<a href=\"https://",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.115.0",
+      "is_new": true
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.187",
-      "title_en": "v2.1.187",
-      "summary": "Ce qui a change Ajout de sandbox.credentials parametre to block sandboxed commandes from reading credential fichiers and secret variable d'environnements Ajout de org-configured model restrictions to the model picker, --model, /model, and ANTHROPIC_MODEL, with a \"restricted by your organization's parametres\" message when a restricted mode",
-      "summary_en": "What's changed\n\nAdded sandbox.credentials setting to block sandboxed commands from reading credential files and secret environment variables\nAdded org-configured model restrictions to the model picker, --model, /model, and ANTHROPIC_MODEL, with a \"restricted by your organization's settings\" message when a restricted mode",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "sandbox.credentials setting to block sandboxed commands from reading credential files and secret environment variables"
-        },
-        {
-          "type": "added",
-          "text": "org-configured model restrictions to the model picker, --model, /model, and ANTHROPIC_MODEL, with a \"restricted by your organization's settings\" message when a restricted mode"
-        },
-        {
-          "type": "changed",
-          "text": "Added sandbox.credentials setting to block sandboxed commands from reading credential files and secret environment variables"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.187",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.114.0",
+      "title_en": "v0.114.0",
+      "summary": "0.114.0 (2026-06-30) Journal complet: v0.113.0...v0.114.0 Fonctionnalites api: add prise en charge de claude-sonnet-5 () Corrections de bugs",
+      "summary_en": "0.114.0 (2026-06-30)\nFull Changelog: v0.113.0...v0.114.0\nFeatures\n\napi: add support for claude-sonnet-5 (b893033)\n\nBug Fixes\n",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.114.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -128,7 +152,7 @@
       "summary_en": "0.113.0 (2026-06-29)\nFull Changelog: v0.112.0...v0.113.0\nFeatures\n\napi: add support for 20260318 web fetch and support tools (88dbfb1)\n</ul",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.113.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -151,99 +175,79 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.110.0",
-      "title_en": "v0.110.0",
-      "summary": "0.110.0 (2026-06-18) Journal complet: v0.109.2...v0.110.0 Fonctionnalites api: add prise en charge de new code_execution_20260120 tool () <h",
-      "summary_en": "0.110.0 (2026-06-18)\nFull Changelog: v0.109.2...v0.110.0\nFeatures\n\napi: add support for new code_execution_20260120 tool (5e23212)\n\n<h",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.110.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK Python",
-      "title": "v0.109.2",
-      "title_en": "v0.109.2",
-      "summary": "0.109.2 (2026-06-15) Journal complet: v0.109.1...v0.109.2 Maintenance api: remove retired models from API and SDKs ()",
-      "summary_en": "0.109.2 (2026-06-15)\nFull Changelog: v0.109.1...v0.109.2\nChores\n\napi: remove retired models from API and SDKs (d4bcfcc)\n",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.2",
-      "is_new": false
-    },
-    {
       "source": "SDK TypeScript",
-      "title": "sdk: v0.107.0",
-      "title_en": "sdk: v0.107.0",
-      "summary": "0.107.0 (2026-06-29) Journal complet: sdk-v0.106.0...sdk-v0.107.0 Fonctionnalites api: add prise en charge de web fetch and prise en charge tools (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
-      "summary_en": "0.107.0 (2026-06-29)\nFull Changelog: sdk-v0.106.0...sdk-v0.107.0\nFeatures\n\napi: add support for 20260318 web fetch and support tools (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/d7057ea73ba564d1e89cff40c58a85d9375ccbbf",
+      "title": "vertex-sdk: v0.19.0",
+      "title_en": "vertex-sdk: v0.19.0",
+      "summary": "0.19.0 (2026-06-30) Journal complet: vertex-sdk-v0.18.0...vertex-sdk-v0.19.0 Fonctionnalites vertex: bump google-auth-library to ^10.2.0 (SDK-91) (<a href=",
+      "summary_en": "0.19.0 (2026-06-30)\nFull Changelog: vertex-sdk-v0.18.0...vertex-sdk-v0.19.0\nFeatures\n\nvertex: bump google-auth-library to ^10.2.0 (SDK-91) (#30) (<a href=",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.107.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.0",
       "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk: v0.106.0",
-      "title_en": "sdk: v0.106.0",
-      "summary": "0.106.0 (2026-06-24) Journal complet: sdk-v0.105.0...sdk-v0.106.0 Fonctionnalites client: add prise en charge de system.message streaming events (",
-      "summary_en": "0.106.0 (2026-06-24)\nFull Changelog: sdk-v0.105.0...sdk-v0.106.0\nFeatures\n\nclient: add support for system.message streaming events (",
+      "title": "sdk: v0.109.0",
+      "title_en": "sdk: v0.109.0",
+      "summary": "0.109.0 (2026-06-30) Journal complet: sdk-v0.108.0...sdk-v0.109.0 Fonctionnalites api: add prise en charge de Managed Agents event delta streaming, agent overrides, reverse pagination, vault credential injection scoping, and agent and deployment webhook event",
+      "summary_en": "0.109.0 (2026-06-30)\nFull Changelog: sdk-v0.108.0...sdk-v0.109.0\nFeatures\n\napi: add support for Managed Agents event delta streaming, agent overrides, reverse pagination, vault credential injection scoping, and agent and deployment webhook event",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.106.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.109.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "vertex-sdk: v0.18.0",
-      "title_en": "vertex-sdk: v0.18.0",
-      "summary": "0.18.0 (2026-06-18) Journal complet: vertex-sdk-v0.17.1...vertex-sdk-v0.18.0 Fonctionnalites stream: lazily parse partial tool json entree (<a href=\"https:/",
-      "summary_en": "0.18.0 (2026-06-18)\nFull Changelog: vertex-sdk-v0.17.1...vertex-sdk-v0.18.0\nFeatures\n\nstream: lazily parse partial tool json input (#99) (<a href=\"https:/",
+      "title": "sdk: v0.108.0",
+      "title_en": "sdk: v0.108.0",
+      "summary": "0.108.0 (2026-06-30) Journal complet: sdk-v0.107.0...sdk-v0.108.0 Fonctionnalites api: add prise en charge de claude-sonnet-5 () <",
+      "summary_en": "0.108.0 (2026-06-30)\nFull Changelog: sdk-v0.107.0...sdk-v0.108.0\nFeatures\n\napi: add support for claude-sonnet-5 (4588db0)\n<",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.18.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.108.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk: v0.105.0",
-      "title_en": "sdk: v0.105.0",
-      "summary": "0.105.0 (2026-06-18) Journal complet: sdk-v0.104.2...sdk-v0.105.0 Fonctionnalites api: add prise en charge de new code_execution_20260120 tool (8d",
-      "summary_en": "0.105.0 (2026-06-18)\nFull Changelog: sdk-v0.104.2...sdk-v0.105.0\nFeatures\n\napi: add support for new code_execution_20260120 tool (8d",
+      "title": "bedrock-sdk: v0.32.0",
+      "title_en": "bedrock-sdk: v0.32.0",
+      "summary": "0.32.0 (2026-06-30) Journal complet: bedrock-sdk-v0.31.0...bedrock-sdk-v0.32.0 Fonctionnalites bedrock: pass client logger to AWS credential provider chain (SDK-90) (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/issues/2",
+      "summary_en": "0.32.0 (2026-06-30)\nFull Changelog: bedrock-sdk-v0.31.0...bedrock-sdk-v0.32.0\nFeatures\n\nbedrock: pass client logger to AWS credential provider chain (SDK-90) (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/issues/2",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.105.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.32.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "foundry-sdk: v0.4.0",
-      "title_en": "foundry-sdk: v0.4.0",
-      "summary": "0.4.0 (2026-06-18) Journal complet: foundry-sdk-v0.3.1...foundry-sdk-v0.4.0 Fonctionnalites stream: lazily parse partial tool json entree (<a href=\"https://",
-      "summary_en": "0.4.0 (2026-06-18)\nFull Changelog: foundry-sdk-v0.3.1...foundry-sdk-v0.4.0\nFeatures\n\nstream: lazily parse partial tool json input (#99) (<a href=\"https://",
+      "title": "aws-sdk: v0.6.0",
+      "title_en": "aws-sdk: v0.6.0",
+      "summary": "0.6.0 (2026-06-30) Journal complet: aws-sdk-v0.5.0...aws-sdk-v0.6.0 Fonctionnalites bedrock: pass client logger to AWS credential provider chain (SDK-90) (<a href=",
+      "summary_en": "0.6.0 (2026-06-30)\nFull Changelog: aws-sdk-v0.5.0...aws-sdk-v0.6.0\nFeatures\n\nbedrock: pass client logger to AWS credential provider chain (SDK-90) (#29) (<a href=",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.6.0",
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.107.0",
-      "title_en": "v0.107.0",
-      "summary": "Publie le 2026-06-29",
-      "summary_en": "Publie le 2026-06-29",
+      "title": "v0.109.0",
+      "title_en": "v0.109.0",
+      "summary": "Publie le 2026-06-30",
+      "summary_en": "Publie le 2026-06-30",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
       "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.195",
-      "title_en": "v2.1.195",
-      "summary": "Publie le 2026-06-26",
-      "summary_en": "Publie le 2026-06-26",
+      "title": "v2.1.197",
+      "title_en": "v2.1.197",
+      "summary": "Publie le 2026-06-30",
+      "summary_en": "Publie le 2026-06-30",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.113.0",
-      "title_en": "v0.113.0",
+      "title": "v0.115.0",
+      "title_en": "v0.115.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
@@ -262,32 +266,32 @@
     },
     {
       "source": "Blog",
+      "title": "ProductJun 30, 2026Introducing Claude Sonnet 5Sonnet 5 delivers frontier performance across coding,",
+      "title_en": "ProductJun 30, 2026Introducing Claude Sonnet 5Sonnet 5 delivers frontier performance across coding, ",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "AnnouncementsJun 30, 2026Claude Science, an AI workbench for scientists, is now availableClaude Scie",
+      "title_en": "AnnouncementsJun 30, 2026Claude Science, an AI workbench for scientists, is now availableClaude Scie",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "ProductJun 23, 2026Introducing Claude TagClaude Tag is a new way for teams to work with Claude.",
       "title_en": "ProductJun 23, 2026Introducing Claude TagClaude Tag is a new way for teams to work with Claude.",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/introducing-claude-tag",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "AnnouncementsJun 11, 2026Introducing Claude CorpsWe’re launching Claude Corps, a national fellowship",
-      "title_en": "AnnouncementsJun 11, 2026Introducing Claude CorpsWe’re launching Claude Corps, a national fellowship",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-corps",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "AnnouncementsJun 2, 2026Expanding Project GlasswingWe’re extending Project Glasswing to approximatel",
-      "title_en": "AnnouncementsJun 2, 2026Expanding Project GlasswingWe’re extending Project Glasswing to approximatel",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/expanding-project-glasswing",
       "is_new": false
     },
     {
@@ -342,12 +346,12 @@
     },
     {
       "source": "Blog",
-      "title": "Jun 9, 2026AnnouncementsClaude Fable 5 and Claude Mythos 5",
-      "title_en": "Jun 9, 2026AnnouncementsClaude Fable 5 and Claude Mythos 5",
+      "title": "Jun 11, 2026AnnouncementsIntroducing Claude Corps",
+      "title_en": "Jun 11, 2026AnnouncementsIntroducing Claude Corps",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "url": "https://www.anthropic.com/news/claude-corps",
       "is_new": false
     },
     {
@@ -463,16 +467,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.195",
-    "Claude Code npm": "v2.1.195",
-    "SDK Python": "v0.113.0",
-    "SDK Python PyPI": "v0.113.0",
-    "SDK TypeScript": "foundry-sdk: v0.4.0",
+    "Claude Code": "v2.1.197",
+    "Claude Code npm": "v2.1.197",
+    "SDK Python": "v0.115.0",
+    "SDK Python PyPI": "v0.115.0",
+    "SDK TypeScript": "aws-sdk: v0.6.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.187",
-    "GitHub SDK Python": "v0.109.2"
+    "GitHub Claude Code": "v2.1.191",
+    "GitHub SDK Python": "v0.111.0"
   }
 }
