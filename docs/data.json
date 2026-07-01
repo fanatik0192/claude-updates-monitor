@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-06-30T20:55:33.379388",
+  "last_check": "2026-07-01T20:46:17.839200",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.198",
+      "title_en": "v2.1.198",
+      "summary": "Ce qui a change Claude in Chrome is now generally available Ajout de arriere-plan agent notifications in claude agents — sessions that need entree or finish now fire the Notification hook (agent_needs_entree / agent_completed) Ajout de /dataviz skill for chart and dashboard design guidance with a runnable col",
+      "summary_en": "What's changed\n\nClaude in Chrome is now generally available\nAdded background agent notifications in claude agents — sessions that need input or finish now fire the Notification hook (agent_needs_input / agent_completed)\nAdded /dataviz skill for chart and dashboard design guidance with a runnable col",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "background agent notifications in claude agents — sessions that need input or finish now fire the Notification hook (agent_needs_input / agent_completed)"
+        },
+        {
+          "type": "added",
+          "text": "/dataviz skill for chart and dashboard design guidance with a runnable col"
+        },
+        {
+          "type": "changed",
+          "text": "Claude in Chrome is now generally available"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.198",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.197",
@@ -14,7 +37,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.197",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -41,7 +64,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.196",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -94,37 +117,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.191",
-      "title_en": "v2.1.191",
-      "summary": "Ce qui a change Ajout de /rewind prise en charge de resuming a conversation from before /clear was run Correction de scroll position jumping to the bottom while reading earlier sortie during a streaming response Correction de arriere-plan agents resurrecting after being stopped — stopping an agent from the tasks panel is now permanent Correction de /voice</c",
-      "summary_en": "What's changed\n\nAdded /rewind support for resuming a conversation from before /clear was run\nFixed scroll position jumping to the bottom while reading earlier output during a streaming response\nFixed background agents resurrecting after being stopped — stopping an agent from the tasks panel is now permanent\nFixed /voice</c",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "/rewind support for resuming a conversation from before /clear was run"
-        },
-        {
-          "type": "fixed",
-          "text": "scroll position jumping to the bottom while reading earlier output during a streaming response"
-        },
-        {
-          "type": "fixed",
-          "text": "background agents resurrecting after being stopped — stopping an agent from the tasks panel is now permanent"
-        },
-        {
-          "type": "fixed",
-          "text": "/voice</c"
-        },
-        {
-          "type": "changed",
-          "text": "Added /rewind support for resuming a conversation from before /clear was run"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.191",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.115.0",
       "title_en": "v0.115.0",
@@ -132,7 +124,7 @@
       "summary_en": "0.115.0 (2026-06-30)\nFull Changelog: v0.114.0...v0.115.0\nFeatures\n\napi: add support for Managed Agents event delta streaming, agent overrides, reverse pagination, vault credential injection scoping, and agent and deployment webhook events (<a href=\"https://",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.115.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -142,7 +134,7 @@
       "summary_en": "0.114.0 (2026-06-30)\nFull Changelog: v0.113.0...v0.114.0\nFeatures\n\napi: add support for claude-sonnet-5 (b893033)\n\nBug Fixes\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.114.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -182,7 +174,7 @@
       "summary_en": "0.19.0 (2026-06-30)\nFull Changelog: vertex-sdk-v0.18.0...vertex-sdk-v0.19.0\nFeatures\n\nvertex: bump google-auth-library to ^10.2.0 (SDK-91) (#30) (<a href=",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -192,7 +184,7 @@
       "summary_en": "0.109.0 (2026-06-30)\nFull Changelog: sdk-v0.108.0...sdk-v0.109.0\nFeatures\n\napi: add support for Managed Agents event delta streaming, agent overrides, reverse pagination, vault credential injection scoping, and agent and deployment webhook event",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.109.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -202,7 +194,7 @@
       "summary_en": "0.108.0 (2026-06-30)\nFull Changelog: sdk-v0.107.0...sdk-v0.108.0\nFeatures\n\napi: add support for claude-sonnet-5 (4588db0)\n<",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.108.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -212,7 +204,7 @@
       "summary_en": "0.32.0 (2026-06-30)\nFull Changelog: bedrock-sdk-v0.31.0...bedrock-sdk-v0.32.0\nFeatures\n\nbedrock: pass client logger to AWS credential provider chain (SDK-90) (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/issues/2",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.32.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -222,7 +214,7 @@
       "summary_en": "0.6.0 (2026-06-30)\nFull Changelog: aws-sdk-v0.5.0...aws-sdk-v0.6.0\nFeatures\n\nbedrock: pass client logger to AWS credential provider chain (SDK-90) (#29) (<a href=",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.6.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/sdk",
@@ -232,14 +224,14 @@
       "summary_en": "Publie le 2026-06-30",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.197",
-      "title_en": "v2.1.197",
-      "summary": "Publie le 2026-06-30",
-      "summary_en": "Publie le 2026-06-30",
+      "title": "v2.1.198",
+      "title_en": "v2.1.198",
+      "summary": "Publie le 2026-07-01",
+      "summary_en": "Publie le 2026-07-01",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -252,17 +244,17 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
-      "title": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5AnnouncementsJun 1",
-      "title_en": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5AnnouncementsJun 1",
+      "title": "Redeploying Fable 5AnnouncementsJun 30, 2026Fable 5 returns globally July 1. We're also proposing an",
+      "title_en": "Redeploying Fable 5AnnouncementsJun 30, 2026Fable 5 returns globally July 1. We're also proposing an",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/news/fable-mythos-access",
-      "is_new": false
+      "url": "https://www.anthropic.com/news/redeploying-fable-5",
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -272,7 +264,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-sonnet-5",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -282,7 +274,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -296,22 +288,22 @@
     },
     {
       "source": "Blog",
-      "title": "ProductMay 28, 2026Introducing Claude Opus 4.8An upgrade to our Opus class of models, with stronger",
-      "title_en": "ProductMay 28, 2026Introducing Claude Opus 4.8An upgrade to our Opus class of models, with stronger ",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-opus-4-8",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
       "title": "Jun 17, 2026AnnouncementsAnthropic ouvrirs Seoul office and announces new partnerships across the Kore",
       "title_en": "Jun 17, 2026AnnouncementsAnthropic opens Seoul office and announces new partnerships across the Kore",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
+      "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Jun 12, 2026AnnouncementsStatement on the US government directive to suspend access to Fable 5 and M",
+      "title_en": "Jun 12, 2026AnnouncementsStatement on the US government directive to suspend access to Fable 5 and M",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/fable-mythos-access",
       "is_new": false
     },
     {
@@ -392,7 +384,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/frontier-red-team",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -467,8 +459,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.197",
-    "Claude Code npm": "v2.1.197",
+    "Claude Code": "v2.1.198",
+    "Claude Code npm": "v2.1.198",
     "SDK Python": "v0.115.0",
     "SDK Python PyPI": "v0.115.0",
     "SDK TypeScript": "aws-sdk: v0.6.0",
@@ -476,7 +468,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.191",
+    "GitHub Claude Code": "v2.1.193",
     "GitHub SDK Python": "v0.111.0"
   }
 }
