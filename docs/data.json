@@ -1,24 +1,58 @@
 {
-  "last_check": "2026-07-02T20:16:24.462359",
+  "last_check": "2026-07-03T20:11:47.867005",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.200",
+      "title_en": "v2.1.200",
+      "summary": "Ce qui a change Modification de AskUtilisateurQuestion dialogs to no longer auto-continue by par defaut; opt into an idle timeout via /config Modification de the \"par defaut\" permission mode to \"Manual\" across the CLI, --help, VS Code, and JetBrains; --permission-mode manual and \"par defautMode\": \"manual\" are accepted alongside defau",
+      "summary_en": "What's changed\n\nChanged AskUserQuestion dialogs to no longer auto-continue by default; opt into an idle timeout via /config\nChanged the \"default\" permission mode to \"Manual\" across the CLI, --help, VS Code, and JetBrains; --permission-mode manual and \"defaultMode\": \"manual\" are accepted alongside defau",
+      "changelog_items": [
+        {
+          "type": "changed",
+          "text": "Changed AskUserQuestion dialogs to no longer auto-continue by default; opt into an idle timeout via /config"
+        },
+        {
+          "type": "changed",
+          "text": "the \"default\" permission mode to \"Manual\" across the CLI, --help, VS Code, and JetBrains; --permission-mode manual and \"defaultMode\": \"manual\" are accepted alongside defau"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.200",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.199",
+      "title_en": "v2.1.199",
+      "summary": "Ce qui a change Stacked slash-skill invocations like /skill-a /skill-b do XYZ now load all leading skills (up to 5), not just the first Correction de SSL certificate erreurs (TLS-inspecting proxies, missing NODE_EXTRA_CA_CERTS, expired certs) burning retries before affichering actionable guidance — they now fail immediately with the fix hint Correction de st",
+      "summary_en": "What's changed\n\nStacked slash-skill invocations like /skill-a /skill-b do XYZ now load all leading skills (up to 5), not just the first\nFixed SSL certificate errors (TLS-inspecting proxies, missing NODE_EXTRA_CA_CERTS, expired certs) burning retries before showing actionable guidance — they now fail immediately with the fix hint\nFixed st",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "SSL certificate errors (TLS-inspecting proxies, missing NODE_EXTRA_CA_CERTS, expired certs) burning retries before showing actionable guidance — they now fail immediately with the fix hint"
+        },
+        {
+          "type": "changed",
+          "text": "Stacked slash-skill invocations like /skill-a /skill-b do XYZ now load all leading skills (up to 5), not just the first"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.199",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.198",
       "title_en": "v2.1.198",
-      "summary": "Ce qui a change Claude in Chrome is now generally available Ajout de arriere-plan agent notifications in claude agents — sessions that need entree or finish now fire the Notification hook (agent_needs_entree / agent_completed) Ajout de /dataviz skill for chart and dashboard design guidance with a runnable col",
-      "summary_en": "What's changed\n\nClaude in Chrome is now generally available\nAdded background agent notifications in claude agents — sessions that need input or finish now fire the Notification hook (agent_needs_input / agent_completed)\nAdded /dataviz skill for chart and dashboard design guidance with a runnable col",
+      "summary": "Ce qui a change Subagents now run in the arriere-plan by par defaut, so Claude keeps working while they run and is notified when they finish (previously a gradual rollout) Claude in Chrome is now generally available Ajout de arriere-plan agent notifications in claude agents — sessions that need entree or finish now fire the Notification hook (<code",
+      "summary_en": "What's changed\n\nSubagents now run in the background by default, so Claude keeps working while they run and is notified when they finish (previously a gradual rollout)\nClaude in Chrome is now generally available\nAdded background agent notifications in claude agents — sessions that need input or finish now fire the Notification hook (<code",
       "changelog_items": [
         {
           "type": "added",
-          "text": "background agent notifications in claude agents — sessions that need input or finish now fire the Notification hook (agent_needs_input / agent_completed)"
-        },
-        {
-          "type": "added",
-          "text": "/dataviz skill for chart and dashboard design guidance with a runnable col"
+          "text": "background agent notifications in claude agents — sessions that need input or finish now fire the Notification hook (<code"
         },
         {
           "type": "changed",
-          "text": "Claude in Chrome is now generally available"
+          "text": "Subagents now run in the background by default, so Claude keeps working while they run and is notified when they finish (previously a gradual rollout)"
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.198",
@@ -67,56 +101,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.195",
-      "title_en": "v2.1.195",
-      "summary": "Ce qui a change Ajout de CLAUDE_CODE_DISABLE_MOUSE_CLICKS to desactiver mouse clic/drag/survol in fullscreen mode while keeping wheel scroll Correction de hook matchers with hyphenated identifiers (e.g. code-revisionneuse, mcp__brave-recherche) accidentally substring-matching — they now exact-match. Use mcp__brave-recherche__.* to match all tool",
-      "summary_en": "What's changed\n\nAdded CLAUDE_CODE_DISABLE_MOUSE_CLICKS to disable mouse click/drag/hover in fullscreen mode while keeping wheel scroll\nFixed hook matchers with hyphenated identifiers (e.g. code-reviewer, mcp__brave-search) accidentally substring-matching — they now exact-match. Use mcp__brave-search__.* to match all tool",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "CLAUDE_CODE_DISABLE_MOUSE_CLICKS to disable mouse click/drag/hover in fullscreen mode while keeping wheel scroll"
-        },
-        {
-          "type": "fixed",
-          "text": "hook matchers with hyphenated identifiers (e.g. code-reviewer, mcp__brave-search) accidentally substring-matching — they now exact-match. Use mcp__brave-search__.* to match all tool"
-        },
-        {
-          "type": "changed",
-          "text": "Added CLAUDE_CODE_DISABLE_MOUSE_CLICKS to disable mouse click/drag/hover in fullscreen mode while keeping wheel scroll"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.195",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.193",
-      "title_en": "v2.1.193",
-      "summary": "Ce qui a change Ajout de autoMode.classifyAllShell parametre to route all Bash/PowerShell commandes through the auto-mode classifier instead of only arbitrary-code-execution patterns Ajout de auto-mode denial reasons to the transcript, the denial toast, and /permissions recent denials Ajout de claude_code.assistant_response OuvrirTelemetr",
-      "summary_en": "What's changed\n\nAdded autoMode.classifyAllShell setting to route all Bash/PowerShell commands through the auto-mode classifier instead of only arbitrary-code-execution patterns\nAdded auto-mode denial reasons to the transcript, the denial toast, and /permissions recent denials\nAdded claude_code.assistant_response OpenTelemetr",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "autoMode.classifyAllShell setting to route all Bash/PowerShell commands through the auto-mode classifier instead of only arbitrary-code-execution patterns"
-        },
-        {
-          "type": "added",
-          "text": "auto-mode denial reasons to the transcript, the denial toast, and /permissions recent denials"
-        },
-        {
-          "type": "added",
-          "text": "claude_code.assistant_response OpenTelemetr"
-        },
-        {
-          "type": "changed",
-          "text": "Added autoMode.classifyAllShell setting to route all Bash/PowerShell commands through the auto-mode classifier instead of only arbitrary-code-execution patterns"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.193",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.116.0",
       "title_en": "v0.116.0",
@@ -124,7 +108,7 @@
       "summary_en": "0.116.0 (2026-07-02)\nFull Changelog: v0.115.1...v0.116.0\nFeatures\n\napi: add agent-memory-2026-07-22 beta header (e181d5c)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.116.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -134,7 +118,7 @@
       "summary_en": "0.115.1 (2026-07-01)\nFull Changelog: v0.115.0...v0.115.1\nChores\n\napi: remove some nonfunctional types from the SDKs (5e7c431)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.115.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -174,7 +158,7 @@
       "summary_en": "0.110.0 (2026-07-02)\nFull Changelog: sdk-v0.109.1...sdk-v0.110.0\nFeatures\n\napi: add agent-memory-2026-07-22 beta header (a470e10",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.110.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -184,7 +168,7 @@
       "summary_en": "0.109.1 (2026-07-01)\nFull Changelog: sdk-v0.109.0...sdk-v0.109.1\nChores\n\napi: remove some nonfunctional types from the SDKs (cc4dd4e",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.109.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -224,17 +208,17 @@
       "summary_en": "Publie le 2026-07-02",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.198",
-      "title_en": "v2.1.198",
-      "summary": "Publie le 2026-07-01",
-      "summary_en": "Publie le 2026-07-01",
+      "title": "v2.1.200",
+      "title_en": "v2.1.200",
+      "summary": "Publie le 2026-07-03",
+      "summary_en": "Publie le 2026-07-03",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
@@ -244,7 +228,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -288,6 +272,16 @@
     },
     {
       "source": "Blog",
+      "title": "Jul 2, 2026AnnouncementsMore details on Fable 5’s cyber safeguards and our jailbreak framework",
+      "title_en": "Jul 2, 2026AnnouncementsMore details on Fable 5’s cyber safeguards and our jailbreak framework",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/fable-safeguards-jailbreak-framework",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Jun 17, 2026AnnouncementsAnthropic ouvrirs Seoul office and announces new partnerships across the Kore",
       "title_en": "Jun 17, 2026AnnouncementsAnthropic opens Seoul office and announces new partnerships across the Kore",
       "summary": "",
@@ -314,7 +308,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/anthropic-public-record",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -334,16 +328,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Jun 11, 2026AnnouncementsIntroducing Claude Corps",
-      "title_en": "Jun 11, 2026AnnouncementsIntroducing Claude Corps",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-corps",
       "is_new": false
     },
     {
@@ -459,8 +443,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.198",
-    "Claude Code npm": "v2.1.198",
+    "Claude Code": "v2.1.200",
+    "Claude Code npm": "v2.1.200",
     "SDK Python": "v0.116.0",
     "SDK Python PyPI": "v0.116.0",
     "SDK TypeScript": "sdk: v0.108.0",
@@ -468,7 +452,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.193",
+    "GitHub Claude Code": "v2.1.196",
     "GitHub SDK Python": "v0.113.0"
   }
 }
