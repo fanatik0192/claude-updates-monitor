@@ -1,6 +1,21 @@
 {
-  "last_check": "2026-07-03T20:11:47.867005",
+  "last_check": "2026-07-04T20:06:33.702445",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.201",
+      "title_en": "v2.1.201",
+      "summary": "Ce qui a change Claude Sonnet 5 sessions no longer use the mid-conversation system role for harness reminders",
+      "summary_en": "What's changed\n\nClaude Sonnet 5 sessions no longer use the mid-conversation system role for harness reminders\n",
+      "changelog_items": [
+        {
+          "type": "changed",
+          "text": "Claude Sonnet 5 sessions no longer use the mid-conversation system role for harness reminders"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.201",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.200",
@@ -18,7 +33,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.200",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -37,7 +52,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.199",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -71,33 +86,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.197",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.196",
-      "title_en": "v2.1.196",
-      "summary": "Ce qui a change Ajout de prise en charge de organization par defaut models — admins set it in the org console; it affichers as \"Org par defaut\" (or \"Role par defaut\") in /model when you haven't picked one yourself Ajout de readable par defaut noms for sessions at start, making them easier to identify and message Ajout de cliquable fichier attachments in chat — Cmd/Ctrl-clic reveals",
-      "summary_en": "What's changed\n\nAdded support for organization default models — admins set it in the org console; it shows as \"Org default\" (or \"Role default\") in /model when you haven't picked one yourself\nAdded readable default names for sessions at start, making them easier to identify and message\nAdded clickable file attachments in chat — Cmd/Ctrl-click reveals ",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "support for organization default models — admins set it in the org console; it shows as \"Org default\" (or \"Role default\") in /model when you haven't picked one yourself"
-        },
-        {
-          "type": "added",
-          "text": "readable default names for sessions at start, making them easier to identify and message"
-        },
-        {
-          "type": "added",
-          "text": "clickable file attachments in chat — Cmd/Ctrl-click reveals"
-        },
-        {
-          "type": "changed",
-          "text": "Added support for organization default models — admins set it in the org console; it shows as \"Org default\" (or \"Role default\") in /model when you haven't picked one yourself"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.196",
       "is_new": false
     },
     {
@@ -198,7 +186,7 @@
       "summary_en": "0.108.0 (2026-06-30)\nFull Changelog: sdk-v0.107.0...sdk-v0.108.0\nFeatures\n\napi: add support for claude-sonnet-5 (4588db0)\n<",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.108.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/sdk",
@@ -212,8 +200,8 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.200",
-      "title_en": "v2.1.200",
+      "title": "v2.1.201",
+      "title_en": "v2.1.201",
       "summary": "Publie le 2026-07-03",
       "summary_en": "Publie le 2026-07-03",
       "changelog_items": [],
@@ -278,7 +266,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/fable-safeguards-jailbreak-framework",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -308,7 +296,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/anthropic-public-record",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -443,8 +431,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.200",
-    "Claude Code npm": "v2.1.200",
+    "Claude Code": "v2.1.201",
+    "Claude Code npm": "v2.1.201",
     "SDK Python": "v0.116.0",
     "SDK Python PyPI": "v0.116.0",
     "SDK TypeScript": "sdk: v0.108.0",
@@ -452,7 +440,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.196",
+    "GitHub Claude Code": "v2.1.197",
     "GitHub SDK Python": "v0.113.0"
   }
 }
