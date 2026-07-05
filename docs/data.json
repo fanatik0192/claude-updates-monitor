@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-07-04T20:06:33.702445",
+  "last_check": "2026-07-05T20:10:31.111800",
   "updates": [
     {
       "source": "Claude Code",
@@ -14,7 +14,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.201",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -186,7 +186,7 @@
       "summary_en": "0.108.0 (2026-06-30)\nFull Changelog: sdk-v0.107.0...sdk-v0.108.0\nFeatures\n\napi: add support for claude-sonnet-5 (4588db0)\n<",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.108.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/sdk",
@@ -206,7 +206,7 @@
       "summary_en": "Publie le 2026-07-03",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -236,7 +236,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-sonnet-5",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
