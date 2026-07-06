@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-07-05T20:10:31.111800",
+  "last_check": "2026-07-06T20:49:58.977239",
   "updates": [
     {
       "source": "Claude Code",
@@ -236,7 +236,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-sonnet-5",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -257,6 +257,16 @@
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/introducing-claude-tag",
       "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Jul 6, 2026Case StudyGovernment of Alberta uses Claude to find and fix cybersecurite vulnerabilities",
+      "title_en": "Jul 6, 2026Case StudyGovernment of Alberta uses Claude to find and fix cybersecurity vulnerabilities",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/alberta-government-claude-cybersecurity",
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -309,16 +319,6 @@
       "is_new": false
     },
     {
-      "source": "Blog",
-      "title": "Jun 11, 2026AnnouncementsDXC will integrate Claude into the systems banks, airlines, and other regul",
-      "title_en": "Jun 11, 2026AnnouncementsDXC will integrate Claude into the systems banks, airlines, and other regul",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
-      "is_new": false
-    },
-    {
       "source": "Recherche",
       "title": "Economic Rerecherche",
       "title_en": "Economic Research",
@@ -360,13 +360,13 @@
     },
     {
       "source": "Recherche",
-      "title": "Natural Language Autoencoders: Turning Claude’s thoughts into textInterpretabilityMay 7, 2026AI mode",
-      "title_en": "Natural Language Autoencoders: Turning Claude’s thoughts into textInterpretabilityMay 7, 2026AI mode",
+      "title": "A global workspace in language modelsInterpretabilityJul 6, 2026New interpretability rerecherche reveal",
+      "title_en": "A global workspace in language modelsInterpretabilityJul 6, 2026New interpretability research reveal",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/research/natural-language-autoencoders",
-      "is_new": false
+      "url": "https://www.anthropic.com/research/global-workspace",
+      "is_new": true
     },
     {
       "source": "Statut",
@@ -376,6 +376,16 @@
       "summary_en": "Un probleme est actuellement detecte sur les services Claude.",
       "changelog_items": [],
       "url": "https://status.claude.com",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "jacobian-lens",
+      "title_en": "jacobian-lens",
+      "summary": "Companion code for the global workspace interpretability paper",
+      "summary_en": " Companion code for the global workspace interpretability paper",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/jacobian-lens",
       "is_new": true
     },
     {
@@ -416,16 +426,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/riegeli-rs",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "defending-code-reference-harness",
-      "title_en": "defending-code-reference-harness",
-      "summary": "Skills for threat modeling, scanning, triage, patching, plus an autonomous scanning harness you can /personnaliseize",
-      "summary_en": "Skills for threat modeling, scanning, triage, patching, plus an autonomous scanning harness you can /customize",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/defending-code-reference-harness",
       "is_new": false
     }
   ],
