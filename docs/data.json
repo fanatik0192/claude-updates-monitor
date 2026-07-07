@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-07-06T20:49:58.977239",
+  "last_check": "2026-07-07T20:47:21.359095",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.202",
+      "title_en": "v2.1.202",
+      "summary": "Ce qui a change Ajout de a \"Dynamic workflow size\" parametre in /config for controlling how large Claude generally makes dynamic workflows (small/medium/large agent counts) — an advisory guideline, not an enforced cap Ajout de workflow.run_id and workflow.nom OuvrirTelemetry attributes to telemetry emitted by workflow-spawned agents, so a wor",
+      "summary_en": "What's changed\n\nAdded a \"Dynamic workflow size\" setting in /config for controlling how large Claude generally makes dynamic workflows (small/medium/large agent counts) — an advisory guideline, not an enforced cap\nAdded workflow.run_id and workflow.name OpenTelemetry attributes to telemetry emitted by workflow-spawned agents, so a wor",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "a \"Dynamic workflow size\" setting in /config for controlling how large Claude generally makes dynamic workflows (small/medium/large agent counts) — an advisory guideline, not an enforced cap"
+        },
+        {
+          "type": "added",
+          "text": "workflow.run_id and workflow.name OpenTelemetry attributes to telemetry emitted by workflow-spawned agents, so a wor"
+        },
+        {
+          "type": "changed",
+          "text": "Added a \"Dynamic workflow size\" setting in /config for controlling how large Claude generally makes dynamic workflows (small/medium/large agent counts) — an advisory guideline, not an enforced cap"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.202",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.201",
@@ -71,21 +94,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.198",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.197",
-      "title_en": "v2.1.197",
-      "summary": "Ce qui a change Introducing Claude Sonnet 5: now the par defaut model in Claude Code, with a native 1M-jeton context window and promotional pricing of $2/$10 per Mtok through August 31. Update to version 2.1.197 for access. https://www.anthropic.com/news/claude-sonnet-5",
-      "summary_en": "What's changed\n\nIntroducing Claude Sonnet 5: now the default model in Claude Code, with a native 1M-token context window and promotional pricing of $2/$10 per Mtok through August 31. Update to version 2.1.197 for access. https://www.anthropic.com/news/claude-sonnet-5\n",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Introducing Claude Sonnet 5: now the default model in Claude Code, with a native 1M-token context window and promotional pricing of $2/$10 per Mtok through August 31. Update to version 2.1.197 for acc"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.197",
       "is_new": false
     },
     {
@@ -200,13 +208,13 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.201",
-      "title_en": "v2.1.201",
-      "summary": "Publie le 2026-07-03",
-      "summary_en": "Publie le 2026-07-03",
+      "title": "v2.1.202",
+      "title_en": "v2.1.202",
+      "summary": "Publie le 2026-07-06",
+      "summary_en": "Publie le 2026-07-06",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
@@ -220,8 +228,8 @@
     },
     {
       "source": "Blog",
-      "title": "Redeploying Fable 5AnnouncementsJun 30, 2026Fable 5 returns globally July 1. We're also proposing an",
-      "title_en": "Redeploying Fable 5AnnouncementsJun 30, 2026Fable 5 returns globally July 1. We're also proposing an",
+      "title": "AnnouncementsJun 30, 2026Redeploying Fable 5Fable 5 returns globally July 1. We're also proposing an",
+      "title_en": "AnnouncementsJun 30, 2026Redeploying Fable 5Fable 5 returns globally July 1. We're also proposing an",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
@@ -266,7 +274,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/alberta-government-claude-cybersecurity",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -286,7 +294,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -356,7 +364,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/frontier-red-team",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -366,7 +374,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/global-workspace",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Statut",
@@ -386,7 +394,7 @@
       "summary_en": " Companion code for the global workspace interpretability paper",
       "changelog_items": [],
       "url": "https://github.com/anthropics/jacobian-lens",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -431,8 +439,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.201",
-    "Claude Code npm": "v2.1.201",
+    "Claude Code": "v2.1.202",
+    "Claude Code npm": "v2.1.202",
     "SDK Python": "v0.116.0",
     "SDK Python PyPI": "v0.116.0",
     "SDK TypeScript": "sdk: v0.108.0",
@@ -440,7 +448,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.197",
+    "GitHub Claude Code": "v2.1.198",
     "GitHub SDK Python": "v0.113.0"
   }
 }
