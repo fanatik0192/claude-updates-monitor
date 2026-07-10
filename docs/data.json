@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-07-09T20:44:18.141188",
+  "last_check": "2026-07-10T20:19:01.141513",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.206",
+      "title_en": "v2.1.206",
+      "summary": "Ce qui a change Ajout de repertoire path suggestions to /cd, matching /add-dir behavior Ajout de a /doctor check that proposes trimming checked-in CLAUDE.md fichiers by cutting content Claude could derive from the codebase /commit-push-pr now auto-allows git push to the repo's configured push rem",
+      "summary_en": "What's changed\n\nAdded directory path suggestions to /cd, matching /add-dir behavior\nAdded a /doctor check that proposes trimming checked-in CLAUDE.md files by cutting content Claude could derive from the codebase\n/commit-push-pr now auto-allows git push to the repo's configured push rem",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "directory path suggestions to /cd, matching /add-dir behavior"
+        },
+        {
+          "type": "added",
+          "text": "a /doctor check that proposes trimming checked-in CLAUDE.md files by cutting content Claude could derive from the codebase"
+        },
+        {
+          "type": "changed",
+          "text": "Added directory path suggestions to /cd, matching /add-dir behavior"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.206",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.205",
@@ -26,7 +49,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.205",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -98,21 +121,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.201",
-      "title_en": "v2.1.201",
-      "summary": "Ce qui a change Claude Sonnet 5 sessions no longer use the mid-conversation system role for harness reminders",
-      "summary_en": "What's changed\n\nClaude Sonnet 5 sessions no longer use the mid-conversation system role for harness reminders\n",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Claude Sonnet 5 sessions no longer use the mid-conversation system role for harness reminders"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.201",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.116.0",
       "title_en": "v0.116.0",
@@ -160,7 +168,17 @@
       "summary_en": "0.113.0 (2026-06-29)\nFull Changelog: v0.112.0...v0.113.0\nFeatures\n\napi: add support for 20260318 web fetch and support tools (88dbfb1)\n</ul",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.113.0",
-      "is_new": false
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.111.0",
+      "title_en": "sdk: v0.111.0",
+      "summary": "0.111.0 (2026-07-10) Journal complet: sdk-v0.110.0...sdk-v0.111.0 Fonctionnalites api: add prise en charge de dreaming () <str",
+      "summary_en": "0.111.0 (2026-07-10)\nFull Changelog: sdk-v0.110.0...sdk-v0.111.0\nFeatures\n\napi: add support for dreaming (77b28a6)\n<str",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.111.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -203,31 +221,21 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.108.0",
-      "title_en": "sdk: v0.108.0",
-      "summary": "0.108.0 (2026-06-30) Journal complet: sdk-v0.107.0...sdk-v0.108.0 Fonctionnalites api: add prise en charge de claude-sonnet-5 () <",
-      "summary_en": "0.108.0 (2026-06-30)\nFull Changelog: sdk-v0.107.0...sdk-v0.108.0\nFeatures\n\napi: add support for claude-sonnet-5 (4588db0)\n<",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.108.0",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.110.0",
-      "title_en": "v0.110.0",
-      "summary": "Publie le 2026-07-02",
-      "summary_en": "Publie le 2026-07-02",
+      "title": "v0.111.0",
+      "title_en": "v0.111.0",
+      "summary": "Publie le 2026-07-10",
+      "summary_en": "Publie le 2026-07-10",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.205",
-      "title_en": "v2.1.205",
-      "summary": "Publie le 2026-07-08",
-      "summary_en": "Publie le 2026-07-08",
+      "title": "v2.1.206",
+      "title_en": "v2.1.206",
+      "summary": "Publie le 2026-07-09",
+      "summary_en": "Publie le 2026-07-09",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -250,7 +258,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/hard-questions",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -284,13 +292,23 @@
     },
     {
       "source": "Blog",
+      "title": "Jul 9, 2026Case StudyUST is bringing Claude to physical AI",
+      "title_en": "Jul 9, 2026Case StudyUST is bringing Claude to physical AI",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/ust-claude",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Jul 9, 2026AnnouncementsBen Bernanke appointed to Anthropic’s Long-Term Benefit Trust",
       "title_en": "Jul 9, 2026AnnouncementsBen Bernanke appointed to Anthropic’s Long-Term Benefit Trust",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/ben-bernanke",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -300,7 +318,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/reflect-with-claude",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -330,16 +348,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/introducing-claude-tag",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Jun 17, 2026AnnouncementsAnthropic ouvrirs Seoul office and announces new partnerships across the Kore",
-      "title_en": "Jun 17, 2026AnnouncementsAnthropic opens Seoul office and announces new partnerships across the Kore",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
       "is_new": false
     },
     {
@@ -455,16 +463,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.205",
-    "Claude Code npm": "v2.1.205",
+    "Claude Code": "v2.1.206",
+    "Claude Code npm": "v2.1.206",
     "SDK Python": "v0.116.0",
     "SDK Python PyPI": "v0.116.0",
-    "SDK TypeScript": "sdk: v0.108.0",
+    "SDK TypeScript": "sdk: v0.109.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.201",
+    "GitHub Claude Code": "v2.1.202",
     "GitHub SDK Python": "v0.113.0"
   }
 }
