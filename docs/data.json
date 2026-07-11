@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-07-10T20:19:01.141513",
+  "last_check": "2026-07-11T20:04:05.270501",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.207",
+      "title_en": "v2.1.207",
+      "summary": "Ce qui a change Auto mode is now available without CLAUDE_CODE_ENABLE_AUTO_MODE opt-in on Bedrock, Vertex AI, and Foundry; desactiver via desactiverAutoMode in parametres Correction de the terminal freezing and keystrokes lagging while streaming responses containing very long lists, tables, paragraphs, or code blocks Correction de remote managed parametres from a",
+      "summary_en": "What's changed\n\nAuto mode is now available without CLAUDE_CODE_ENABLE_AUTO_MODE opt-in on Bedrock, Vertex AI, and Foundry; disable via disableAutoMode in settings\nFixed the terminal freezing and keystrokes lagging while streaming responses containing very long lists, tables, paragraphs, or code blocks\nFixed remote managed settings from a",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "the terminal freezing and keystrokes lagging while streaming responses containing very long lists, tables, paragraphs, or code blocks"
+        },
+        {
+          "type": "fixed",
+          "text": "remote managed settings from a"
+        },
+        {
+          "type": "changed",
+          "text": "Auto mode is now available without CLAUDE_CODE_ENABLE_AUTO_MODE opt-in on Bedrock, Vertex AI, and Foundry; disable via disableAutoMode in settings"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.207",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.206",
@@ -22,7 +45,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.206",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -98,29 +121,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.202",
-      "title_en": "v2.1.202",
-      "summary": "Ce qui a change Ajout de a \"Dynamic workflow size\" parametre in /config for controlling how large Claude generally makes dynamic workflows (small/medium/large agent counts) — an advisory guideline, not an enforced cap Ajout de workflow.run_id and workflow.nom OuvrirTelemetry attributes to telemetry emitted by workflow-spawned agents, so a wor",
-      "summary_en": "What's changed\n\nAdded a \"Dynamic workflow size\" setting in /config for controlling how large Claude generally makes dynamic workflows (small/medium/large agent counts) — an advisory guideline, not an enforced cap\nAdded workflow.run_id and workflow.name OpenTelemetry attributes to telemetry emitted by workflow-spawned agents, so a wor",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "a \"Dynamic workflow size\" setting in /config for controlling how large Claude generally makes dynamic workflows (small/medium/large agent counts) — an advisory guideline, not an enforced cap"
-        },
-        {
-          "type": "added",
-          "text": "workflow.run_id and workflow.name OpenTelemetry attributes to telemetry emitted by workflow-spawned agents, so a wor"
-        },
-        {
-          "type": "changed",
-          "text": "Added a \"Dynamic workflow size\" setting in /config for controlling how large Claude generally makes dynamic workflows (small/medium/large agent counts) — an advisory guideline, not an enforced cap"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.202",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.116.0",
       "title_en": "v0.116.0",
@@ -168,7 +168,7 @@
       "summary_en": "0.113.0 (2026-06-29)\nFull Changelog: v0.112.0...v0.113.0\nFeatures\n\napi: add support for 20260318 web fetch and support tools (88dbfb1)\n</ul",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.113.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -178,7 +178,7 @@
       "summary_en": "0.111.0 (2026-07-10)\nFull Changelog: sdk-v0.110.0...sdk-v0.111.0\nFeatures\n\napi: add support for dreaming (77b28a6)\n<str",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.111.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -218,7 +218,7 @@
       "summary_en": "0.109.0 (2026-06-30)\nFull Changelog: sdk-v0.108.0...sdk-v0.109.0\nFeatures\n\napi: add support for Managed Agents event delta streaming, agent overrides, reverse pagination, vault credential injection scoping, and agent and deployment webhook event",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.109.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/sdk",
@@ -228,14 +228,14 @@
       "summary_en": "Publie le 2026-07-10",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.206",
-      "title_en": "v2.1.206",
-      "summary": "Publie le 2026-07-09",
-      "summary_en": "Publie le 2026-07-09",
+      "title": "v2.1.207",
+      "title_en": "v2.1.207",
+      "summary": "Publie le 2026-07-10",
+      "summary_en": "Publie le 2026-07-10",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -278,7 +278,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-sonnet-5",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -298,7 +298,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/ust-claude",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -463,8 +463,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.206",
-    "Claude Code npm": "v2.1.206",
+    "Claude Code": "v2.1.207",
+    "Claude Code npm": "v2.1.207",
     "SDK Python": "v0.116.0",
     "SDK Python PyPI": "v0.116.0",
     "SDK TypeScript": "sdk: v0.109.0",
@@ -472,7 +472,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.202",
+    "GitHub Claude Code": "v2.1.203",
     "GitHub SDK Python": "v0.113.0"
   }
 }
