@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-07-11T20:04:05.270501",
+  "last_check": "2026-07-12T20:04:03.140634",
   "updates": [
     {
       "source": "Claude Code",
@@ -22,7 +22,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.207",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -208,7 +208,7 @@
       "summary_en": "0.19.0 (2026-06-30)\nFull Changelog: vertex-sdk-v0.18.0...vertex-sdk-v0.19.0\nFeatures\n\nvertex: bump google-auth-library to ^10.2.0 (SDK-91) (#30) (<a href=",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -218,7 +218,7 @@
       "summary_en": "0.109.0 (2026-06-30)\nFull Changelog: sdk-v0.108.0...sdk-v0.109.0\nFeatures\n\napi: add support for Managed Agents event delta streaming, agent overrides, reverse pagination, vault credential injection scoping, and agent and deployment webhook event",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.109.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/sdk",
@@ -238,7 +238,7 @@
       "summary_en": "Publie le 2026-07-10",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -278,7 +278,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-sonnet-5",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
