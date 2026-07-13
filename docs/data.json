@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-07-12T20:04:03.140634",
+  "last_check": "2026-07-13T20:10:49.226518",
   "updates": [
     {
       "source": "Claude Code",
@@ -208,7 +208,7 @@
       "summary_en": "0.19.0 (2026-06-30)\nFull Changelog: vertex-sdk-v0.18.0...vertex-sdk-v0.19.0\nFeatures\n\nvertex: bump google-auth-library to ^10.2.0 (SDK-91) (#30) (<a href=",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
