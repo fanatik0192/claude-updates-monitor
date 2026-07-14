@@ -1,6 +1,52 @@
 {
-  "last_check": "2026-07-13T20:10:49.226518",
+  "last_check": "2026-07-14T20:07:08.004530",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.209",
+      "title_en": "v2.1.209",
+      "summary": "Ce qui a change Correction de /model and other dialogs being blocked in claude agents arriere-plan sessions (reverts an overly broad guard)",
+      "summary_en": "What's changed\n\nFixed /model and other dialogs being blocked in claude agents background sessions (reverts an overly broad guard)\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "/model and other dialogs being blocked in claude agents background sessions (reverts an overly broad guard)"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed /model and other dialogs being blocked in claude agents background sessions (reverts an overly broad guard)"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.209",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.208",
+      "title_en": "v2.1.208",
+      "summary": "Ce qui a change Ajout de screen reader mode: opt-in plain-text rendering for screen reader utilisateurs. Run claude --ax-screen-reader, set CLAUDE_AX_SCREEN_READER=1, or add \"axScreenReader\": true to parametres. Ajout de vimInsertModeRemaps parametre: map two-key insert-mode sequences like jj to Escape in vim mode Ajout de CLAUDE_CODE_PRO",
+      "summary_en": "What's changed\n\nAdded screen reader mode: opt-in plain-text rendering for screen reader users. Run claude --ax-screen-reader, set CLAUDE_AX_SCREEN_READER=1, or add \"axScreenReader\": true to settings.\nAdded vimInsertModeRemaps setting: map two-key insert-mode sequences like jj to Escape in vim mode\nAdded CLAUDE_CODE_PRO",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "screen reader mode: opt-in plain-text rendering for screen reader users. Run claude --ax-screen-reader, set CLAUDE_AX_SCREEN_READER=1, or add \"axScreenReader\": true to settings."
+        },
+        {
+          "type": "added",
+          "text": "vimInsertModeRemaps setting: map two-key insert-mode sequences like jj to Escape in vim mode"
+        },
+        {
+          "type": "added",
+          "text": "CLAUDE_CODE_PRO"
+        },
+        {
+          "type": "changed",
+          "text": "Added screen reader mode: opt-in plain-text rendering for screen reader users. Run claude --ax-screen-reader, set CLAUDE_AX_SCREEN_READER=1, or add \"axScreenReader\": true to settings."
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.208",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.207",
@@ -72,52 +118,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.205",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.204",
-      "title_en": "v2.1.204",
-      "summary": "Ce qui a change Correction de hook events not streaming during SessionStart hooks in headless sessions, which could cause remote workers to be idle-reaped mid-hook",
-      "summary_en": "What's changed\n\nFixed hook events not streaming during SessionStart hooks in headless sessions, which could cause remote workers to be idle-reaped mid-hook\n",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "hook events not streaming during SessionStart hooks in headless sessions, which could cause remote workers to be idle-reaped mid-hook"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed hook events not streaming during SessionStart hooks in headless sessions, which could cause remote workers to be idle-reaped mid-hook"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.204",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.203",
-      "title_en": "v2.1.203",
-      "summary": "Ce qui a change Ajout de a avertissement when your login is about to expire, so you can re-authenticate before arriere-plan sessions are interrupted Ajout de a grey ⏸ badge to the footer when in manual permission mode, making the active mode always visible Ajout de the session's additional working directories to MCP roots/list, with notifications/roots/list_cha",
-      "summary_en": "What's changed\n\nAdded a warning when your login is about to expire, so you can re-authenticate before background sessions are interrupted\nAdded a grey ⏸ badge to the footer when in manual permission mode, making the active mode always visible\nAdded the session's additional working directories to MCP roots/list, with notifications/roots/list_cha",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "a warning when your login is about to expire, so you can re-authenticate before background sessions are interrupted"
-        },
-        {
-          "type": "added",
-          "text": "a grey ⏸ badge to the footer when in manual permission mode, making the active mode always visible"
-        },
-        {
-          "type": "added",
-          "text": "the session's additional working directories to MCP roots/list, with notifications/roots/list_cha"
-        },
-        {
-          "type": "changed",
-          "text": "Added a warning when your login is about to expire, so you can re-authenticate before background sessions are interrupted"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.203",
       "is_new": false
     },
     {
@@ -232,13 +232,13 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.207",
-      "title_en": "v2.1.207",
-      "summary": "Publie le 2026-07-10",
-      "summary_en": "Publie le 2026-07-10",
+      "title": "v2.1.209",
+      "title_en": "v2.1.209",
+      "summary": "Publie le 2026-07-14",
+      "summary_en": "Publie le 2026-07-14",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
@@ -292,6 +292,26 @@
     },
     {
       "source": "Blog",
+      "title": "Jul 14, 2026ProductIntroducing Claude for Teachers",
+      "title_en": "Jul 14, 2026ProductIntroducing Claude for Teachers",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/claude-for-teachers",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "Jul 14, 2026AnnouncementsAnthropic commits $10 million to Canadian AI rerecherche",
+      "title_en": "Jul 14, 2026AnnouncementsAnthropic commits $10 million to Canadian AI research",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/canadian-ai-research",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Jul 9, 2026Case StudyUST is bringing Claude to physical AI",
       "title_en": "Jul 9, 2026Case StudyUST is bringing Claude to physical AI",
       "summary": "",
@@ -328,26 +348,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/alberta-government-claude-cybersecurity",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Jul 2, 2026AnnouncementsMore details on Fable 5’s cyber safeguards and our jailbreak framework",
-      "title_en": "Jul 2, 2026AnnouncementsMore details on Fable 5’s cyber safeguards and our jailbreak framework",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/fable-safeguards-jailbreak-framework",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Jun 23, 2026ProductIntroducing Claude Tag",
-      "title_en": "Jun 23, 2026ProductIntroducing Claude Tag",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/introducing-claude-tag",
       "is_new": false
     },
     {
@@ -412,6 +412,16 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "k12-teacher-skills",
+      "title_en": "k12-teacher-skills",
+      "summary": "Skills and eval rubrics for K-12 teachers, co-developed with Learning Commons",
+      "summary_en": "Skills and eval rubrics for K-12 teachers, co-developed with Learning Commons",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/k12-teacher-skills",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "jacobian-lens",
       "title_en": "jacobian-lens",
       "summary": "Companion code for the global workspace interpretability paper",
@@ -449,22 +459,12 @@
       "changelog_items": [],
       "url": "https://github.com/anthropics/leptos-chartistry",
       "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "riegeli-rs",
-      "title_en": "riegeli-rs",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/riegeli-rs",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.207",
-    "Claude Code npm": "v2.1.207",
+    "Claude Code": "v2.1.209",
+    "Claude Code npm": "v2.1.209",
     "SDK Python": "v0.116.0",
     "SDK Python PyPI": "v0.116.0",
     "SDK TypeScript": "sdk: v0.109.0",
@@ -472,7 +472,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.203",
+    "GitHub Claude Code": "v2.1.205",
     "GitHub SDK Python": "v0.113.0"
   }
 }
