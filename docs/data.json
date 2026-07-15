@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-07-14T20:07:08.004530",
+  "last_check": "2026-07-15T20:04:40.973791",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.210",
+      "title_en": "v2.1.210",
+      "summary": "Ce qui a change Ajout de a live elapsed-time counter to the collapsed tool summary line so long-running tool calls visibly tick instead of looking stuck Ajout de a startup avertissement for Write(path), NotebookEdit(path), and Glob(path) permission regles — use Edit(path) or Read(path) instead Correction de isolat",
+      "summary_en": "What's changed\n\nAdded a live elapsed-time counter to the collapsed tool summary line so long-running tool calls visibly tick instead of looking stuck\nAdded a startup warning for Write(path), NotebookEdit(path), and Glob(path) permission rules — use Edit(path) or Read(path) instead\nFixed isolat",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "a live elapsed-time counter to the collapsed tool summary line so long-running tool calls visibly tick instead of looking stuck"
+        },
+        {
+          "type": "added",
+          "text": "a startup warning for Write(path), NotebookEdit(path), and Glob(path) permission rules — use Edit(path) or Read(path) instead"
+        },
+        {
+          "type": "fixed",
+          "text": "isolat"
+        },
+        {
+          "type": "changed",
+          "text": "Added a live elapsed-time counter to the collapsed tool summary line so long-running tool calls visibly tick instead of looking stuck"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.210",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.209",
@@ -18,7 +45,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.209",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -45,7 +72,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.208",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -91,33 +118,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.206",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.205",
-      "title_en": "v2.1.205",
-      "summary": "Ce qui a change Ajout de an auto mode regle that blocks tampering with session transcript fichiers Correction de --json-schema silently producing unstructured sortie when the schema was invalid, and schemas using the format keyword being rejected Correction de a message sent while Claude was working being silently lost when the turn ended at the --max-tu",
-      "summary_en": "What's changed\n\nAdded an auto mode rule that blocks tampering with session transcript files\nFixed --json-schema silently producing unstructured output when the schema was invalid, and schemas using the format keyword being rejected\nFixed a message sent while Claude was working being silently lost when the turn ended at the --max-tu",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "an auto mode rule that blocks tampering with session transcript files"
-        },
-        {
-          "type": "fixed",
-          "text": "--json-schema silently producing unstructured output when the schema was invalid, and schemas using the format keyword being rejected"
-        },
-        {
-          "type": "fixed",
-          "text": "a message sent while Claude was working being silently lost when the turn ended at the --max-tu"
-        },
-        {
-          "type": "changed",
-          "text": "Added an auto mode rule that blocks tampering with session transcript files"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.205",
       "is_new": false
     },
     {
@@ -232,8 +232,8 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.209",
-      "title_en": "v2.1.209",
+      "title": "v2.1.210",
+      "title_en": "v2.1.210",
       "summary": "Publie le 2026-07-14",
       "summary_en": "Publie le 2026-07-14",
       "changelog_items": [],
@@ -298,7 +298,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-for-teachers",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -308,7 +308,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/canadian-ai-research",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -398,7 +398,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/global-workspace",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Statut",
@@ -418,7 +418,7 @@
       "summary_en": "Skills and eval rubrics for K-12 teachers, co-developed with Learning Commons",
       "changelog_items": [],
       "url": "https://github.com/anthropics/k12-teacher-skills",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -463,8 +463,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.209",
-    "Claude Code npm": "v2.1.209",
+    "Claude Code": "v2.1.210",
+    "Claude Code npm": "v2.1.210",
     "SDK Python": "v0.116.0",
     "SDK Python PyPI": "v0.116.0",
     "SDK TypeScript": "sdk: v0.109.0",
@@ -472,7 +472,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.205",
+    "GitHub Claude Code": "v2.1.206",
     "GitHub SDK Python": "v0.113.0"
   }
 }
