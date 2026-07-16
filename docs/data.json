@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-07-15T20:04:40.973791",
+  "last_check": "2026-07-16T19:59:54.127029",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.211",
+      "title_en": "v2.1.211",
+      "summary": "Ce qui a change Ajout de --forward-subagent-text flag and CLAUDE_CODE_FORWARD_SUBAGENT_TEXT variable d'environnement to include subagent text and thinking in stream-json sortie Correction de permission previews relayed to chat channels not neutralizing bidirectional-override, zero-width, and look-alike quote characters, so tool entrees cannot visually alter the",
+      "summary_en": "What's changed\n\nAdded --forward-subagent-text flag and CLAUDE_CODE_FORWARD_SUBAGENT_TEXT environment variable to include subagent text and thinking in stream-json output\nFixed permission previews relayed to chat channels not neutralizing bidirectional-override, zero-width, and look-alike quote characters, so tool inputs cannot visually alter the ",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "--forward-subagent-text flag and CLAUDE_CODE_FORWARD_SUBAGENT_TEXT environment variable to include subagent text and thinking in stream-json output"
+        },
+        {
+          "type": "fixed",
+          "text": "permission previews relayed to chat channels not neutralizing bidirectional-override, zero-width, and look-alike quote characters, so tool inputs cannot visually alter the"
+        },
+        {
+          "type": "changed",
+          "text": "Added --forward-subagent-text flag and CLAUDE_CODE_FORWARD_SUBAGENT_TEXT environment variable to include subagent text and thinking in stream-json output"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.211",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.210",
@@ -26,7 +49,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.210",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -98,27 +121,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.206",
-      "title_en": "v2.1.206",
-      "summary": "Ce qui a change Ajout de repertoire path suggestions to /cd, matching /add-dir behavior Ajout de a /doctor check that proposes trimming checked-in CLAUDE.md fichiers by cutting content Claude could derive from the codebase /commit-push-pr now auto-allows git push to the repo's configured push rem",
-      "summary_en": "What's changed\n\nAdded directory path suggestions to /cd, matching /add-dir behavior\nAdded a /doctor check that proposes trimming checked-in CLAUDE.md files by cutting content Claude could derive from the codebase\n/commit-push-pr now auto-allows git push to the repo's configured push rem",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "directory path suggestions to /cd, matching /add-dir behavior"
-        },
-        {
-          "type": "added",
-          "text": "a /doctor check that proposes trimming checked-in CLAUDE.md files by cutting content Claude could derive from the codebase"
-        },
-        {
-          "type": "changed",
-          "text": "Added directory path suggestions to /cd, matching /add-dir behavior"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.206",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.117.0",
+      "title_en": "v0.117.0",
+      "summary": "0.117.0 (2026-07-16) Journal complet: v0.116.0...v0.117.0 Fonctionnalites api: add prise en charge de dreaming () api: add su",
+      "summary_en": "0.117.0 (2026-07-16)\nFull Changelog: v0.116.0...v0.117.0\nFeatures\n\napi: add support for dreaming (642eee7)\napi: add su",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.117.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -161,14 +171,24 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.113.0",
-      "title_en": "v0.113.0",
-      "summary": "0.113.0 (2026-06-29) Journal complet: v0.112.0...v0.113.0 Fonctionnalites api: add prise en charge de web fetch and prise en charge tools () </ul",
-      "summary_en": "0.113.0 (2026-06-29)\nFull Changelog: v0.112.0...v0.113.0\nFeatures\n\napi: add support for 20260318 web fetch and support tools (88dbfb1)\n</ul",
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.112.0",
+      "title_en": "sdk: v0.112.0",
+      "summary": "0.112.0 (2026-07-16) Journal complet: sdk-v0.111.0...sdk-v0.112.0 Fonctionnalites api: add prise en charge de MCP Tunnels ()",
+      "summary_en": "0.112.0 (2026-07-16)\nFull Changelog: sdk-v0.111.0...sdk-v0.112.0\nFeatures\n\napi: add support for MCP Tunnels (597ac41)\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.113.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.0",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "google-cloud-sdk: v0.0.2",
+      "title_en": "google-cloud-sdk: v0.0.2",
+      "summary": "0.0.2 (2026-07-16) Journal complet: google-cloud-sdk-v0.0.1...google-cloud-sdk-v0.0.2 Maintenance internal: version bump (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
+      "summary_en": "0.0.2 (2026-07-16)\nFull Changelog: google-cloud-sdk-v0.0.1...google-cloud-sdk-v0.0.2\nChores\n\ninternal: version bump (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/eb97e8577279fb150582297d2a0924a2971",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.2",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -201,54 +221,34 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "vertex-sdk: v0.19.0",
-      "title_en": "vertex-sdk: v0.19.0",
-      "summary": "0.19.0 (2026-06-30) Journal complet: vertex-sdk-v0.18.0...vertex-sdk-v0.19.0 Fonctionnalites vertex: bump google-auth-library to ^10.2.0 (SDK-91) (<a href=",
-      "summary_en": "0.19.0 (2026-06-30)\nFull Changelog: vertex-sdk-v0.18.0...vertex-sdk-v0.19.0\nFeatures\n\nvertex: bump google-auth-library to ^10.2.0 (SDK-91) (#30) (<a href=",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.109.0",
-      "title_en": "sdk: v0.109.0",
-      "summary": "0.109.0 (2026-06-30) Journal complet: sdk-v0.108.0...sdk-v0.109.0 Fonctionnalites api: add prise en charge de Managed Agents event delta streaming, agent overrides, reverse pagination, vault credential injection scoping, and agent and deployment webhook event",
-      "summary_en": "0.109.0 (2026-06-30)\nFull Changelog: sdk-v0.108.0...sdk-v0.109.0\nFeatures\n\napi: add support for Managed Agents event delta streaming, agent overrides, reverse pagination, vault credential injection scoping, and agent and deployment webhook event",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.109.0",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.111.0",
-      "title_en": "v0.111.0",
-      "summary": "Publie le 2026-07-10",
-      "summary_en": "Publie le 2026-07-10",
+      "title": "v0.112.0",
+      "title_en": "v0.112.0",
+      "summary": "Publie le 2026-07-16",
+      "summary_en": "Publie le 2026-07-16",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.210",
-      "title_en": "v2.1.210",
-      "summary": "Publie le 2026-07-14",
-      "summary_en": "Publie le 2026-07-14",
+      "title": "v2.1.211",
+      "title_en": "v2.1.211",
+      "summary": "Publie le 2026-07-15",
+      "summary_en": "Publie le 2026-07-15",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.116.0",
-      "title_en": "v0.116.0",
+      "title": "v0.117.0",
+      "title_en": "v0.117.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -398,7 +398,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/global-workspace",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Statut",
@@ -419,6 +419,16 @@
       "changelog_items": [],
       "url": "https://github.com/anthropics/k12-teacher-skills",
       "is_new": false
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "code-migration-kit-with-claude-code",
+      "title_en": "code-migration-kit-with-claude-code",
+      "summary": "Prompts, temporairelates, and scripts for running large-scale language migrations with Claude Code",
+      "summary_en": "Prompts, templates, and scripts for running large-scale language migrations with Claude Code",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/code-migration-kit-with-claude-code",
+      "is_new": true
     },
     {
       "source": "Nouveau Depot",
@@ -449,30 +459,20 @@
       "changelog_items": [],
       "url": "https://github.com/anthropics/launch-your-agent",
       "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "leptos-chartistry",
-      "title_en": "leptos-chartistry",
-      "summary": "Chartistry is an extensible charting library for Leptos",
-      "summary_en": "Chartistry is an extensible charting library for Leptos",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/leptos-chartistry",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.210",
-    "Claude Code npm": "v2.1.210",
-    "SDK Python": "v0.116.0",
-    "SDK Python PyPI": "v0.116.0",
-    "SDK TypeScript": "sdk: v0.109.0",
+    "Claude Code": "v2.1.211",
+    "Claude Code npm": "v2.1.211",
+    "SDK Python": "v0.117.0",
+    "SDK Python PyPI": "v0.117.0",
+    "SDK TypeScript": "sdk: v0.109.1",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.206",
-    "GitHub SDK Python": "v0.113.0"
+    "GitHub Claude Code": "v2.1.207",
+    "GitHub SDK Python": "v0.114.0"
   }
 }
