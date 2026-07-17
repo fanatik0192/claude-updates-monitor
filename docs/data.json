@@ -1,6 +1,25 @@
 {
-  "last_check": "2026-07-16T19:59:54.127029",
+  "last_check": "2026-07-17T20:02:26.610529",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.212",
+      "title_en": "v2.1.212",
+      "summary": "Ce qui a change /dupliquer now copies your conversation into a new arriere-plan session (its own row in claude agents) while you keep working; the in-session subagent it used to launch is now /subtask Ajout de claude auto-mode reset to restore the par defaut auto-mode configuration, with a confirmation prompt (pass --yes",
+      "summary_en": "What's changed\n\n/fork now copies your conversation into a new background session (its own row in claude agents) while you keep working; the in-session subagent it used to launch is now /subtask\nAdded claude auto-mode reset to restore the default auto-mode configuration, with a confirmation prompt (pass --yes",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "claude auto-mode reset to restore the default auto-mode configuration, with a confirmation prompt (pass --yes"
+        },
+        {
+          "type": "changed",
+          "text": "/fork now copies your conversation into a new background session (its own row in claude agents) while you keep working; the in-session subagent it used to launch is now /subtask"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.211",
@@ -22,7 +41,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.211",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -98,29 +117,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.207",
-      "title_en": "v2.1.207",
-      "summary": "Ce qui a change Auto mode is now available without CLAUDE_CODE_ENABLE_AUTO_MODE opt-in on Bedrock, Vertex AI, and Foundry; desactiver via desactiverAutoMode in parametres Correction de the terminal freezing and keystrokes lagging while streaming responses containing very long lists, tables, paragraphs, or code blocks Correction de remote managed parametres from a",
-      "summary_en": "What's changed\n\nAuto mode is now available without CLAUDE_CODE_ENABLE_AUTO_MODE opt-in on Bedrock, Vertex AI, and Foundry; disable via disableAutoMode in settings\nFixed the terminal freezing and keystrokes lagging while streaming responses containing very long lists, tables, paragraphs, or code blocks\nFixed remote managed settings from a",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "the terminal freezing and keystrokes lagging while streaming responses containing very long lists, tables, paragraphs, or code blocks"
-        },
-        {
-          "type": "fixed",
-          "text": "remote managed settings from a"
-        },
-        {
-          "type": "changed",
-          "text": "Auto mode is now available without CLAUDE_CODE_ENABLE_AUTO_MODE opt-in on Bedrock, Vertex AI, and Foundry; disable via disableAutoMode in settings"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.207",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.117.0",
       "title_en": "v0.117.0",
@@ -128,7 +124,7 @@
       "summary_en": "0.117.0 (2026-07-16)\nFull Changelog: v0.116.0...v0.117.0\nFeatures\n\napi: add support for dreaming (642eee7)\napi: add su",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.117.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -172,70 +168,70 @@
     },
     {
       "source": "SDK TypeScript",
+      "title": "sdk: v0.112.2",
+      "title_en": "sdk: v0.112.2",
+      "summary": "0.112.2 (2026-07-17) Journal complet: sdk-v0.112.1...sdk-v0.112.2 Maintenance client: docs updates ()",
+      "summary_en": "0.112.2 (2026-07-17)\nFull Changelog: sdk-v0.112.1...sdk-v0.112.2\nChores\n\nclient: docs updates (fdb3a65)\n",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.2",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.112.1",
+      "title_en": "sdk: v0.112.1",
+      "summary": "0.112.1 (2026-07-16) Journal complet: sdk-v0.112.0...sdk-v0.112.1",
+      "summary_en": "0.112.1 (2026-07-16)\nFull Changelog: sdk-v0.112.0...sdk-v0.112.1",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.1",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
       "title": "sdk: v0.112.0",
       "title_en": "sdk: v0.112.0",
       "summary": "0.112.0 (2026-07-16) Journal complet: sdk-v0.111.0...sdk-v0.112.0 Fonctionnalites api: add prise en charge de MCP Tunnels ()",
       "summary_en": "0.112.0 (2026-07-16)\nFull Changelog: sdk-v0.111.0...sdk-v0.112.0\nFeatures\n\napi: add support for MCP Tunnels (597ac41)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.0",
+      "is_new": false
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "google-cloud-sdk-v0.0.4",
+      "title_en": "google-cloud-sdk-v0.0.4",
+      "summary": "chore: version main",
+      "summary_en": "chore: release main",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.4",
       "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "google-cloud-sdk: v0.0.2",
-      "title_en": "google-cloud-sdk: v0.0.2",
-      "summary": "0.0.2 (2026-07-16) Journal complet: google-cloud-sdk-v0.0.1...google-cloud-sdk-v0.0.2 Maintenance internal: version bump (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
-      "summary_en": "0.0.2 (2026-07-16)\nFull Changelog: google-cloud-sdk-v0.0.1...google-cloud-sdk-v0.0.2\nChores\n\ninternal: version bump (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/eb97e8577279fb150582297d2a0924a2971",
+      "title": "google-cloud-sdk-v0.0.2",
+      "title_en": "google-cloud-sdk-v0.0.2",
+      "summary": "chore: version main",
+      "summary_en": "chore: release main",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.2",
-      "is_new": true
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.111.0",
-      "title_en": "sdk: v0.111.0",
-      "summary": "0.111.0 (2026-07-10) Journal complet: sdk-v0.110.0...sdk-v0.111.0 Fonctionnalites api: add prise en charge de dreaming () <str",
-      "summary_en": "0.111.0 (2026-07-10)\nFull Changelog: sdk-v0.110.0...sdk-v0.111.0\nFeatures\n\napi: add support for dreaming (77b28a6)\n<str",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.111.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.110.0",
-      "title_en": "sdk: v0.110.0",
-      "summary": "0.110.0 (2026-07-02) Journal complet: sdk-v0.109.1...sdk-v0.110.0 Fonctionnalites api: add agent-memory-2026-07-22 beta header (",
-      "summary_en": "0.110.0 (2026-07-02)\nFull Changelog: sdk-v0.109.1...sdk-v0.110.0\nFeatures\n\napi: add agent-memory-2026-07-22 beta header (a470e10",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.110.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.109.1",
-      "title_en": "sdk: v0.109.1",
-      "summary": "0.109.1 (2026-07-01) Journal complet: sdk-v0.109.0...sdk-v0.109.1 Maintenance api: remove some nonfunctional tapers from the SDKs (",
-      "summary_en": "0.109.1 (2026-07-01)\nFull Changelog: sdk-v0.109.0...sdk-v0.109.1\nChores\n\napi: remove some nonfunctional types from the SDKs (cc4dd4e",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.109.1",
       "is_new": false
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.112.0",
-      "title_en": "v0.112.0",
-      "summary": "Publie le 2026-07-16",
-      "summary_en": "Publie le 2026-07-16",
+      "title": "v0.112.2",
+      "title_en": "v0.112.2",
+      "summary": "Publie le 2026-07-17",
+      "summary_en": "Publie le 2026-07-17",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
       "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.211",
-      "title_en": "v2.1.211",
-      "summary": "Publie le 2026-07-15",
-      "summary_en": "Publie le 2026-07-15",
+      "title": "v2.1.212",
+      "title_en": "v2.1.212",
+      "summary": "Publie le 2026-07-16",
+      "summary_en": "Publie le 2026-07-16",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -248,7 +244,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -428,7 +424,7 @@
       "summary_en": "Prompts, templates, and scripts for running large-scale language migrations with Claude Code",
       "changelog_items": [],
       "url": "https://github.com/anthropics/code-migration-kit-with-claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -463,16 +459,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.211",
-    "Claude Code npm": "v2.1.211",
+    "Claude Code": "v2.1.212",
+    "Claude Code npm": "v2.1.212",
     "SDK Python": "v0.117.0",
     "SDK Python PyPI": "v0.117.0",
-    "SDK TypeScript": "sdk: v0.109.1",
+    "SDK TypeScript": "google-cloud-sdk-v0.",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.207",
+    "GitHub Claude Code": "v2.1.208",
     "GitHub SDK Python": "v0.114.0"
   }
 }
