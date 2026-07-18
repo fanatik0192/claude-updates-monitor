@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-07-17T20:02:26.610529",
+  "last_check": "2026-07-18T20:01:54.123924",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.214",
+      "title_en": "v2.1.214",
+      "summary": "Ce qui a change Correction de single-segment dir/** allow regles like Edit(src/**) auto-approving writes to nested dir/ directories anywhere in the tree instead of only &lt;cwd&gt;/dir Correction de a permission-check bypass affecting commandes run in Windows PowerShell 5.1 sessions Correction de Bash permission checks to fail closed on",
+      "summary_en": "What's changed\n\nFixed single-segment dir/** allow rules like Edit(src/**) auto-approving writes to nested dir/ directories anywhere in the tree instead of only &lt;cwd&gt;/dir\nFixed a permission-check bypass affecting commands run in Windows PowerShell 5.1 sessions\nFixed Bash permission checks to fail closed on ",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "single-segment dir/** allow rules like Edit(src/**) auto-approving writes to nested dir/ directories anywhere in the tree instead of only &lt;cwd&gt;/dir"
+        },
+        {
+          "type": "fixed",
+          "text": "a permission-check bypass affecting commands run in Windows PowerShell 5.1 sessions"
+        },
+        {
+          "type": "fixed",
+          "text": "Bash permission checks to fail closed on"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed single-segment dir/** allow rules like Edit(src/**) auto-approving writes to nested dir/ directories anywhere in the tree instead of only &lt;cwd&gt;/dir"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.214",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.212",
@@ -18,7 +45,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -90,33 +117,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.208",
-      "title_en": "v2.1.208",
-      "summary": "Ce qui a change Ajout de screen reader mode: opt-in plain-text rendering for screen reader utilisateurs. Run claude --ax-screen-reader, set CLAUDE_AX_SCREEN_READER=1, or add \"axScreenReader\": true to parametres. Ajout de vimInsertModeRemaps parametre: map two-key insert-mode sequences like jj to Escape in vim mode Ajout de CLAUDE_CODE_PRO",
-      "summary_en": "What's changed\n\nAdded screen reader mode: opt-in plain-text rendering for screen reader users. Run claude --ax-screen-reader, set CLAUDE_AX_SCREEN_READER=1, or add \"axScreenReader\": true to settings.\nAdded vimInsertModeRemaps setting: map two-key insert-mode sequences like jj to Escape in vim mode\nAdded CLAUDE_CODE_PRO",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "screen reader mode: opt-in plain-text rendering for screen reader users. Run claude --ax-screen-reader, set CLAUDE_AX_SCREEN_READER=1, or add \"axScreenReader\": true to settings."
-        },
-        {
-          "type": "added",
-          "text": "vimInsertModeRemaps setting: map two-key insert-mode sequences like jj to Escape in vim mode"
-        },
-        {
-          "type": "added",
-          "text": "CLAUDE_CODE_PRO"
-        },
-        {
-          "type": "changed",
-          "text": "Added screen reader mode: opt-in plain-text rendering for screen reader users. Run claude --ax-screen-reader, set CLAUDE_AX_SCREEN_READER=1, or add \"axScreenReader\": true to settings."
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.208",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.117.0",
       "title_en": "v0.117.0",
@@ -168,12 +168,32 @@
     },
     {
       "source": "SDK TypeScript",
+      "title": "sdk: v0.112.3",
+      "title_en": "sdk: v0.112.3",
+      "summary": "0.112.3 (2026-07-17) Journal complet: sdk-v0.112.2...sdk-v0.112.3 Maintenance docs: small updates ()",
+      "summary_en": "0.112.3 (2026-07-17)\nFull Changelog: sdk-v0.112.2...sdk-v0.112.3\nChores\n\ndocs: small updates (79fd6c7)\n",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.3",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
       "title": "sdk: v0.112.2",
       "title_en": "sdk: v0.112.2",
       "summary": "0.112.2 (2026-07-17) Journal complet: sdk-v0.112.1...sdk-v0.112.2 Maintenance client: docs updates ()",
       "summary_en": "0.112.2 (2026-07-17)\nFull Changelog: sdk-v0.112.1...sdk-v0.112.2\nChores\n\nclient: docs updates (fdb3a65)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.2",
+      "is_new": false
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "google-cloud-sdk: v0.0.6",
+      "title_en": "google-cloud-sdk: v0.0.6",
+      "summary": "0.0.6 (2026-07-17) Journal complet: google-cloud-sdk-v0.0.5...google-cloud-sdk-v0.0.6 Corrections de bugs google-cloud: bump google-auth-library to ^10.2.0 (",
+      "summary_en": "0.0.6 (2026-07-17)\nFull Changelog: google-cloud-sdk-v0.0.5...google-cloud-sdk-v0.0.6\nBug Fixes\n\ngoogle-cloud: bump google-auth-library to ^10.2.0 (",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.6",
       "is_new": true
     },
     {
@@ -184,7 +204,7 @@
       "summary_en": "0.112.1 (2026-07-16)\nFull Changelog: sdk-v0.112.0...sdk-v0.112.1",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -197,29 +217,9 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "google-cloud-sdk-v0.0.4",
-      "title_en": "google-cloud-sdk-v0.0.4",
-      "summary": "chore: version main",
-      "summary_en": "chore: release main",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.4",
-      "is_new": true
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "google-cloud-sdk-v0.0.2",
-      "title_en": "google-cloud-sdk-v0.0.2",
-      "summary": "chore: version main",
-      "summary_en": "chore: release main",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.2",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.112.2",
-      "title_en": "v0.112.2",
+      "title": "v0.112.3",
+      "title_en": "v0.112.3",
       "summary": "Publie le 2026-07-17",
       "summary_en": "Publie le 2026-07-17",
       "changelog_items": [],
@@ -228,10 +228,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.212",
-      "title_en": "v2.1.212",
-      "summary": "Publie le 2026-07-16",
-      "summary_en": "Publie le 2026-07-16",
+      "title": "v2.1.214",
+      "title_en": "v2.1.214",
+      "summary": "Publie le 2026-07-18",
+      "summary_en": "Publie le 2026-07-18",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -454,21 +454,21 @@
       "summary_en": "Claude Code skills that take a founder from idea to a live Claude Managed Agent: interview, scope a v0, launch in their own account, grade it, iterate, and schedule it",
       "changelog_items": [],
       "url": "https://github.com/anthropics/launch-your-agent",
-      "is_new": false
+      "is_new": true
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.212",
-    "Claude Code npm": "v2.1.212",
+    "Claude Code": "v2.1.214",
+    "Claude Code npm": "v2.1.214",
     "SDK Python": "v0.117.0",
     "SDK Python PyPI": "v0.117.0",
-    "SDK TypeScript": "google-cloud-sdk-v0.",
+    "SDK TypeScript": "sdk: v0.112.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.208",
+    "GitHub Claude Code": "v2.1.209",
     "GitHub SDK Python": "v0.114.0"
   }
 }
