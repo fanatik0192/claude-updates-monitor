@@ -1,6 +1,21 @@
 {
-  "last_check": "2026-07-18T20:01:54.123924",
+  "last_check": "2026-07-19T20:05:13.454390",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.215",
+      "title_en": "v2.1.215",
+      "summary": "Ce qui a change Claude no longer runs the /verify and /code-review skills on its own; invoke them with /verify or /code-review when you want them",
+      "summary_en": "What's changed\n\nClaude no longer runs the /verify and /code-review skills on its own; invoke them with /verify or /code-review when you want them\n",
+      "changelog_items": [
+        {
+          "type": "changed",
+          "text": "Claude no longer runs the /verify and /code-review skills on its own; invoke them with /verify or /code-review when you want them"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.215",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.214",
@@ -26,7 +41,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.214",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -98,25 +113,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.209",
-      "title_en": "v2.1.209",
-      "summary": "Ce qui a change Correction de /model and other dialogs being blocked in claude agents arriere-plan sessions (reverts an overly broad guard)",
-      "summary_en": "What's changed\n\nFixed /model and other dialogs being blocked in claude agents background sessions (reverts an overly broad guard)\n",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "/model and other dialogs being blocked in claude agents background sessions (reverts an overly broad guard)"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed /model and other dialogs being blocked in claude agents background sessions (reverts an overly broad guard)"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.209",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.117.0",
       "title_en": "v0.117.0",
@@ -174,7 +170,7 @@
       "summary_en": "0.112.3 (2026-07-17)\nFull Changelog: sdk-v0.112.2...sdk-v0.112.3\nChores\n\ndocs: small updates (79fd6c7)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.3",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -194,7 +190,7 @@
       "summary_en": "0.0.6 (2026-07-17)\nFull Changelog: google-cloud-sdk-v0.0.5...google-cloud-sdk-v0.0.6\nBug Fixes\n\ngoogle-cloud: bump google-auth-library to ^10.2.0 (",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.6",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -224,14 +220,14 @@
       "summary_en": "Publie le 2026-07-17",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.214",
-      "title_en": "v2.1.214",
-      "summary": "Publie le 2026-07-18",
-      "summary_en": "Publie le 2026-07-18",
+      "title": "v2.1.215",
+      "title_en": "v2.1.215",
+      "summary": "Publie le 2026-07-19",
+      "summary_en": "Publie le 2026-07-19",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -454,13 +450,13 @@
       "summary_en": "Claude Code skills that take a founder from idea to a live Claude Managed Agent: interview, scope a v0, launch in their own account, grade it, iterate, and schedule it",
       "changelog_items": [],
       "url": "https://github.com/anthropics/launch-your-agent",
-      "is_new": true
+      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.214",
-    "Claude Code npm": "v2.1.214",
+    "Claude Code": "v2.1.215",
+    "Claude Code npm": "v2.1.215",
     "SDK Python": "v0.117.0",
     "SDK Python PyPI": "v0.117.0",
     "SDK TypeScript": "sdk: v0.112.0",
@@ -468,7 +464,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.209",
+    "GitHub Claude Code": "v2.1.210",
     "GitHub SDK Python": "v0.114.0"
   }
 }
