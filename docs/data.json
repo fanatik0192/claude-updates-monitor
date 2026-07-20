@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-07-19T20:05:13.454390",
+  "last_check": "2026-07-20T20:17:14.934403",
   "updates": [
     {
       "source": "Claude Code",
@@ -14,7 +14,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.215",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -230,7 +230,7 @@
       "summary_en": "Publie le 2026-07-19",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -284,6 +284,16 @@
     },
     {
       "source": "Blog",
+      "title": "Jul 20, 2026AnnouncementsApply for Anthropic’s AI for Science rare disease rerecherche grants",
+      "title_en": "Jul 20, 2026AnnouncementsApply for Anthropic’s AI for Science rare disease research grants",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/rare-disease-research-grants",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Jul 14, 2026ProductIntroducing Claude for Teachers",
       "title_en": "Jul 14, 2026ProductIntroducing Claude for Teachers",
       "summary": "",
@@ -330,16 +340,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/reflect-with-claude",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Jul 6, 2026Case StudyGovernment of Alberta uses Claude to find and fix cybersecurite vulnerabilities",
-      "title_en": "Jul 6, 2026Case StudyGovernment of Alberta uses Claude to find and fix cybersecurity vulnerabilities",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/alberta-government-claude-cybersecurity",
       "is_new": false
     },
     {
