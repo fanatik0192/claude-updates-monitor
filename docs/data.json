@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-07-21T20:16:38.472863",
+  "last_check": "2026-07-22T20:09:16.340973",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.217",
+      "title_en": "v2.1.217",
+      "summary": "Ce qui a change Ajout de emoji shortcode autocompletion in the prompt entree: taper :heart: to insert ❤️, or :hea for suggestions — desactiver with the emojiCompletionActiverd parametre Ajout de avertissements when transcript writes are failing (e.g. disk full) or when session saving is off due to an inherited variable d'environnement, instead of losing trans",
+      "summary_en": "What's changed\n\nAdded emoji shortcode autocomplete in the prompt input: type :heart: to insert ❤️, or :hea for suggestions — disable with the emojiCompletionEnabled setting\nAdded warnings when transcript writes are failing (e.g. disk full) or when session saving is off due to an inherited environment variable, instead of losing trans",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "emoji shortcode autocomplete in the prompt input: type :heart: to insert ❤️, or :hea for suggestions — disable with the emojiCompletionEnabled setting"
+        },
+        {
+          "type": "added",
+          "text": "warnings when transcript writes are failing (e.g. disk full) or when session saving is off due to an inherited environment variable, instead of losing trans"
+        },
+        {
+          "type": "changed",
+          "text": "Added emoji shortcode autocomplete in the prompt input: type :heart: to insert ❤️, or :hea for suggestions — disable with the emojiCompletionEnabled setting"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.217",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.216",
@@ -26,7 +49,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.216",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -90,27 +113,24 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.211",
-      "title_en": "v2.1.211",
-      "summary": "Ce qui a change Ajout de --forward-subagent-text flag and CLAUDE_CODE_FORWARD_SUBAGENT_TEXT variable d'environnement to include subagent text and thinking in stream-json sortie Correction de permission previews relayed to chat channels not neutralizing bidirectional-override, zero-width, and look-alike quote characters, so tool entrees cannot visually alter the",
-      "summary_en": "What's changed\n\nAdded --forward-subagent-text flag and CLAUDE_CODE_FORWARD_SUBAGENT_TEXT environment variable to include subagent text and thinking in stream-json output\nFixed permission previews relayed to chat channels not neutralizing bidirectional-override, zero-width, and look-alike quote characters, so tool inputs cannot visually alter the ",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "--forward-subagent-text flag and CLAUDE_CODE_FORWARD_SUBAGENT_TEXT environment variable to include subagent text and thinking in stream-json output"
-        },
-        {
-          "type": "fixed",
-          "text": "permission previews relayed to chat channels not neutralizing bidirectional-override, zero-width, and look-alike quote characters, so tool inputs cannot visually alter the"
-        },
-        {
-          "type": "changed",
-          "text": "Added --forward-subagent-text flag and CLAUDE_CODE_FORWARD_SUBAGENT_TEXT environment variable to include subagent text and thinking in stream-json output"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.211",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.118.0",
+      "title_en": "v0.118.0",
+      "summary": "0.118.0 (2026-07-22) Journal complet: v0.117.1...v0.118.0 Fonctionnalites api: add prise en charge de Managed Agents model effort, initial session events, and threads delta streaming (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/",
+      "summary_en": "0.118.0 (2026-07-22)\nFull Changelog: v0.117.1...v0.118.0\nFeatures\n\napi: add support for Managed Agents model effort, initial session events, and threads delta streaming (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/712bc6f5e07ca7607e13",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.118.0",
+      "is_new": true
+    },
+    {
+      "source": "SDK Python",
+      "title": "v0.117.1",
+      "title_en": "v0.117.1",
+      "summary": "0.117.1 (2026-07-21) Journal complet: v0.117.0...v0.117.1 Corrections de bugs aws: handle credentials correctly when using AnthropicAWS.copy() ()</",
+      "summary_en": "0.117.1 (2026-07-21)\nFull Changelog: v0.117.0...v0.117.1\nBug Fixes\n\naws: handle credentials correctly when using AnthropicAWS.copy() (85d3881)</",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.117.1",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -143,24 +163,24 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.115.0",
-      "title_en": "v0.115.0",
-      "summary": "0.115.0 (2026-06-30) Journal complet: v0.114.0...v0.115.0 Fonctionnalites api: add prise en charge de Managed Agents event delta streaming, agent overrides, reverse pagination, vault credential injection scoping, and agent and deployment webhook events (<a href=\"https://",
-      "summary_en": "0.115.0 (2026-06-30)\nFull Changelog: v0.114.0...v0.115.0\nFeatures\n\napi: add support for Managed Agents event delta streaming, agent overrides, reverse pagination, vault credential injection scoping, and agent and deployment webhook events (<a href=\"https://",
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.113.0",
+      "title_en": "sdk: v0.113.0",
+      "summary": "0.113.0 (2026-07-22) Journal complet: sdk-v0.112.5...sdk-v0.113.0 Fonctionnalites api: add prise en charge de Managed Agents model effort, initial session events, and threads delta streaming (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/com",
+      "summary_en": "0.113.0 (2026-07-22)\nFull Changelog: sdk-v0.112.5...sdk-v0.113.0\nFeatures\n\napi: add support for Managed Agents model effort, initial session events, and threads delta streaming (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/com",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.115.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.113.0",
+      "is_new": true
     },
     {
-      "source": "SDK Python",
-      "title": "v0.114.0",
-      "title_en": "v0.114.0",
-      "summary": "0.114.0 (2026-06-30) Journal complet: v0.113.0...v0.114.0 Fonctionnalites api: add prise en charge de claude-sonnet-5 () Corrections de bugs",
-      "summary_en": "0.114.0 (2026-06-30)\nFull Changelog: v0.113.0...v0.114.0\nFeatures\n\napi: add support for claude-sonnet-5 (b893033)\n\nBug Fixes\n",
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.112.5",
+      "title_en": "sdk: v0.112.5",
+      "summary": "0.112.5 (2026-07-21) Journal complet: sdk-v0.112.4...sdk-v0.112.5 Maintenance api: add prise en charge de new refusal category ()</li",
+      "summary_en": "0.112.5 (2026-07-21)\nFull Changelog: sdk-v0.112.4...sdk-v0.112.5\nChores\n\napi: add support for new refusal category (479efe8)</li",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.114.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.5",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -170,7 +190,7 @@
       "summary_en": "0.112.4 (2026-07-20)\nFull Changelog: sdk-v0.112.3...sdk-v0.112.4\nBug Fixes\n\naws: preserve AWS options and auth mode across withOptions() (#214) (<a href=\"https://git",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.4",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -180,7 +200,7 @@
       "summary_en": "0.6.1 (2026-07-20)\nFull Changelog: aws-sdk-v0.6.0...aws-sdk-v0.6.1\nBug Fixes\n\naws: preserve AWS options and auth mode across withOptions() (#214) (<a href=\"https",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.6.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -193,54 +213,34 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.112.2",
-      "title_en": "sdk: v0.112.2",
-      "summary": "0.112.2 (2026-07-17) Journal complet: sdk-v0.112.1...sdk-v0.112.2 Maintenance client: docs updates ()",
-      "summary_en": "0.112.2 (2026-07-17)\nFull Changelog: sdk-v0.112.1...sdk-v0.112.2\nChores\n\nclient: docs updates (fdb3a65)\n",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.2",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "google-cloud-sdk: v0.0.6",
-      "title_en": "google-cloud-sdk: v0.0.6",
-      "summary": "0.0.6 (2026-07-17) Journal complet: google-cloud-sdk-v0.0.5...google-cloud-sdk-v0.0.6 Corrections de bugs google-cloud: bump google-auth-library to ^10.2.0 (",
-      "summary_en": "0.0.6 (2026-07-17)\nFull Changelog: google-cloud-sdk-v0.0.5...google-cloud-sdk-v0.0.6\nBug Fixes\n\ngoogle-cloud: bump google-auth-library to ^10.2.0 (",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.6",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.112.4",
-      "title_en": "v0.112.4",
-      "summary": "Publie le 2026-07-20",
-      "summary_en": "Publie le 2026-07-20",
+      "title": "v0.113.0",
+      "title_en": "v0.113.0",
+      "summary": "Publie le 2026-07-22",
+      "summary_en": "Publie le 2026-07-22",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
       "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.216",
-      "title_en": "v2.1.216",
-      "summary": "Publie le 2026-07-20",
-      "summary_en": "Publie le 2026-07-20",
+      "title": "v2.1.217",
+      "title_en": "v2.1.217",
+      "summary": "Publie le 2026-07-21",
+      "summary_en": "Publie le 2026-07-21",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.117.0",
-      "title_en": "v0.117.0",
+      "title": "v0.118.0",
+      "title_en": "v0.118.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -280,7 +280,37 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
-      "is_new": false
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "Jul 22, 2026Economic RerechercheA rerecherche agenda for the Economic Futures Rerecherche Fund",
+      "title_en": "Jul 22, 2026Economic ResearchA research agenda for the Economic Futures Research Fund",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/economic-futures-research-fund-agenda",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "Jul 22, 2026ProductAsk Claude about the Anthropic Economic Index",
+      "title_en": "Jul 22, 2026ProductAsk Claude about the Anthropic Economic Index",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/anthropic-economic-index-connector",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "Jul 21, 2026AnnouncementsAnthropic is donating another $20 million to Public First Action",
+      "title_en": "Jul 21, 2026AnnouncementsAnthropic is donating another $20 million to Public First Action",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/donation-public-first-action",
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -310,36 +340,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/canadian-ai-research",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Jul 9, 2026Case StudyUST is bringing Claude to physical AI",
-      "title_en": "Jul 9, 2026Case StudyUST is bringing Claude to physical AI",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/ust-claude",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Jul 9, 2026AnnouncementsBen Bernanke appointed to Anthropic’s Long-Term Benefit Trust",
-      "title_en": "Jul 9, 2026AnnouncementsBen Bernanke appointed to Anthropic’s Long-Term Benefit Trust",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/ben-bernanke",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Jul 9, 2026AnnouncementsIntroducing a way to reflect on how you use Claude",
-      "title_en": "Jul 9, 2026AnnouncementsIntroducing a way to reflect on how you use Claude",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/reflect-with-claude",
       "is_new": false
     },
     {
@@ -404,6 +404,16 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "rayon",
+      "title_en": "rayon",
+      "summary": "Rayon: A data parallelism library for Rust",
+      "summary_en": "Rayon: A data parallelism library for Rust",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/rayon",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "k12-teacher-skills",
       "title_en": "k12-teacher-skills",
       "summary": "Skills and eval rubrics for K-12 teachers, co-developed with Learning Commons",
@@ -441,30 +451,20 @@
       "changelog_items": [],
       "url": "https://github.com/anthropics/claude-tag-plugins",
       "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "launch-your-agent",
-      "title_en": "launch-your-agent",
-      "summary": "Claude Code skills that take a founder from idea to a live Claude Managed Agent: interview, scope a v0, launch in their own account, grade it, iterate, and schedule it",
-      "summary_en": "Claude Code skills that take a founder from idea to a live Claude Managed Agent: interview, scope a v0, launch in their own account, grade it, iterate, and schedule it",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/launch-your-agent",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.216",
-    "Claude Code npm": "v2.1.216",
-    "SDK Python": "v0.117.0",
-    "SDK Python PyPI": "v0.117.0",
-    "SDK TypeScript": "google-cloud-sdk: v0",
+    "Claude Code": "v2.1.217",
+    "Claude Code npm": "v2.1.217",
+    "SDK Python": "v0.118.0",
+    "SDK Python PyPI": "v0.118.0",
+    "SDK TypeScript": "sdk: v0.112.3",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.211",
-    "GitHub SDK Python": "v0.114.0"
+    "GitHub Claude Code": "v2.1.212",
+    "GitHub SDK Python": "v0.115.1"
   }
 }
