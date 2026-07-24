@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-07-23T20:09:41.688217",
+  "last_check": "2026-07-24T20:16:45.188235",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.219",
+      "title_en": "v2.1.219",
+      "summary": "Ce qui a change Ajout de Claude Opus 5 (claude-opus-5), now the par defaut Opus model — 1M context, fast mode at $10/$50 per Mtok Ajout de sandbox.network.strictAllowlist parametre to deny non-allowlisted hosts for sandboxed commandes without prompting Ajout de RepertoireAjout de hook that fires after /add-dir or the SDK reg",
+      "summary_en": "What's changed\n\nAdded Claude Opus 5 (claude-opus-5), now the default Opus model — 1M context, fast mode at $10/$50 per Mtok\nAdded sandbox.network.strictAllowlist setting to deny non-allowlisted hosts for sandboxed commands without prompting\nAdded DirectoryAdded hook that fires after /add-dir or the SDK reg",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "Claude Opus 5 (claude-opus-5), now the default Opus model — 1M context, fast mode at $10/$50 per Mtok"
+        },
+        {
+          "type": "added",
+          "text": "sandbox.network.strictAllowlist setting to deny non-allowlisted hosts for sandboxed commands without prompting"
+        },
+        {
+          "type": "added",
+          "text": "DirectoryAdded hook that fires after /add-dir or the SDK reg"
+        },
+        {
+          "type": "changed",
+          "text": "Added Claude Opus 5 (claude-opus-5), now the default Opus model — 1M context, fast mode at $10/$50 per Mtok"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.219",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.218",
@@ -18,7 +45,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.218",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -86,31 +113,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.214",
-      "title_en": "v2.1.214",
-      "summary": "Ce qui a change Correction de single-segment dir/** allow regles like Edit(src/**) auto-approving writes to nested dir/ directories anywhere in the tree instead of only &lt;cwd&gt;/dir Correction de a permission-check bypass affecting commandes run in Windows PowerShell 5.1 sessions Correction de Bash permission checks to fail closed on",
-      "summary_en": "What's changed\n\nFixed single-segment dir/** allow rules like Edit(src/**) auto-approving writes to nested dir/ directories anywhere in the tree instead of only &lt;cwd&gt;/dir\nFixed a permission-check bypass affecting commands run in Windows PowerShell 5.1 sessions\nFixed Bash permission checks to fail closed on ",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "single-segment dir/** allow rules like Edit(src/**) auto-approving writes to nested dir/ directories anywhere in the tree instead of only &lt;cwd&gt;/dir"
-        },
-        {
-          "type": "fixed",
-          "text": "a permission-check bypass affecting commands run in Windows PowerShell 5.1 sessions"
-        },
-        {
-          "type": "fixed",
-          "text": "Bash permission checks to fail closed on"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed single-segment dir/** allow rules like Edit(src/**) auto-approving writes to nested dir/ directories anywhere in the tree instead of only &lt;cwd&gt;/dir"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.214",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.120.0",
+      "title_en": "v0.120.0",
+      "summary": "0.120.0 (2026-07-24) Journal complet: v0.119.0...v0.120.0 Fonctionnalites api: add claude-opus-5 model () api: add too",
+      "summary_en": "0.120.0 (2026-07-24)\nFull Changelog: v0.119.0...v0.120.0\nFeatures\n\napi: add claude-opus-5 model (bf4e31c)\napi: add too",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -120,7 +130,7 @@
       "summary_en": "0.119.0 (2026-07-23)\nFull Changelog: v0.118.0...v0.119.0\nFeatures\n\napi: add new stop reason 'model_context_window_exceeded' (d983cde)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.119.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -130,7 +140,7 @@
       "summary_en": "0.118.0 (2026-07-22)\nFull Changelog: v0.117.1...v0.118.0\nFeatures\n\napi: add support for Managed Agents model effort, initial session events, and threads delta streaming (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/712bc6f5e07ca7607e13",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.118.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -153,14 +163,14 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.116.0",
-      "title_en": "v0.116.0",
-      "summary": "0.116.0 (2026-07-02) Journal complet: v0.115.1...v0.116.0 Fonctionnalites api: add agent-memory-2026-07-22 beta header ()",
-      "summary_en": "0.116.0 (2026-07-02)\nFull Changelog: v0.115.1...v0.116.0\nFeatures\n\napi: add agent-memory-2026-07-22 beta header (e181d5c)\n",
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.115.0",
+      "title_en": "sdk: v0.115.0",
+      "summary": "0.115.0 (2026-07-24) Journal complet: sdk-v0.114.0...sdk-v0.115.0 Fonctionnalites api: add claude-opus-5 model () <stro",
+      "summary_en": "0.115.0 (2026-07-24)\nFull Changelog: sdk-v0.114.0...sdk-v0.115.0\nFeatures\n\napi: add claude-opus-5 model (cdd3606)\n<stro",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.116.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.115.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -170,7 +180,7 @@
       "summary_en": "0.114.0 (2026-07-23)\nFull Changelog: sdk-v0.113.0...sdk-v0.114.0\nFeatures\n\napi: add new stop reason 'model_context_window_exceeded' (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/1ec71c165d9737cb317e3f8fed818f7a1b8169ad\"",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.114.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -203,39 +213,29 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "aws-sdk: v0.6.1",
-      "title_en": "aws-sdk: v0.6.1",
-      "summary": "0.6.1 (2026-07-20) Journal complet: aws-sdk-v0.6.0...aws-sdk-v0.6.1 Corrections de bugs aws: preserve AWS options and auth mode across withOptions() (<a href=\"https",
-      "summary_en": "0.6.1 (2026-07-20)\nFull Changelog: aws-sdk-v0.6.0...aws-sdk-v0.6.1\nBug Fixes\n\naws: preserve AWS options and auth mode across withOptions() (#214) (<a href=\"https",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.6.1",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.114.0",
-      "title_en": "v0.114.0",
-      "summary": "Publie le 2026-07-23",
-      "summary_en": "Publie le 2026-07-23",
+      "title": "v0.115.0",
+      "title_en": "v0.115.0",
+      "summary": "Publie le 2026-07-24",
+      "summary_en": "Publie le 2026-07-24",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
       "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.218",
-      "title_en": "v2.1.218",
-      "summary": "Publie le 2026-07-22",
-      "summary_en": "Publie le 2026-07-22",
+      "title": "v2.1.219",
+      "title_en": "v2.1.219",
+      "summary": "Publie le 2026-07-24",
+      "summary_en": "Publie le 2026-07-24",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.119.0",
-      "title_en": "v0.119.0",
+      "title": "v0.120.0",
+      "title_en": "v0.120.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
@@ -244,8 +244,18 @@
     },
     {
       "source": "Blog",
-      "title": "Inviting hard questionsAnnouncementsJul 9, 2026We’re asking the public for their hardest questions a",
-      "title_en": "Inviting hard questionsAnnouncementsJul 9, 2026We’re asking the public for their hardest questions a",
+      "title": "Introducing Claude Opus 5ProductJul 24, 2026Opus 5 is a step change improvement for the Opus tier po",
+      "title_en": "Introducing Claude Opus 5ProductJul 24, 2026Opus 5 is a step change improvement for the Opus tier po",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/claude-opus-5",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "AnnouncementsJul 9, 2026Inviting hard questionsWe’re asking the public for their hardest questions a",
+      "title_en": "AnnouncementsJul 9, 2026Inviting hard questionsWe’re asking the public for their hardest questions a",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
@@ -260,7 +270,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/redeploying-fable-5",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -270,16 +280,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-sonnet-5",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "AnnouncementsJun 30, 2026Claude Science, an AI workbench for scientists, is now availableClaude Scie",
-      "title_en": "AnnouncementsJun 30, 2026Claude Science, an AI workbench for scientists, is now availableClaude Scie",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
       "is_new": false
     },
     {
@@ -380,7 +380,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/frontier-red-team",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -430,7 +430,7 @@
       "summary_en": "Prompts, templates, and scripts for running large-scale language migrations with Claude Code",
       "changelog_items": [],
       "url": "https://github.com/anthropics/code-migration-kit-with-claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Nouveau Depot",
@@ -455,16 +455,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.218",
-    "Claude Code npm": "v2.1.218",
-    "SDK Python": "v0.119.0",
-    "SDK Python PyPI": "v0.119.0",
-    "SDK TypeScript": "aws-sdk: v0.6.1",
+    "Claude Code": "v2.1.219",
+    "Claude Code npm": "v2.1.219",
+    "SDK Python": "v0.120.0",
+    "SDK Python PyPI": "v0.120.0",
+    "SDK TypeScript": "sdk: v0.112.4",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.214",
-    "GitHub SDK Python": "v0.116.0"
+    "GitHub Claude Code": "v2.1.215",
+    "GitHub SDK Python": "v0.117.0"
   }
 }
