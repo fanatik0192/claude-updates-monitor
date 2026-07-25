@@ -1,6 +1,21 @@
 {
-  "last_check": "2026-07-24T20:16:45.188235",
+  "last_check": "2026-07-25T20:08:31.796542",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.220",
+      "title_en": "v2.1.220",
+      "summary": "Ce qui a change Bug fixes and reliability improvements",
+      "summary_en": "What's changed\n\nBug fixes and reliability improvements\n",
+      "changelog_items": [
+        {
+          "type": "changed",
+          "text": "Bug fixes and reliability improvements"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.220",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.219",
@@ -26,7 +41,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.219",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -98,21 +113,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.215",
-      "title_en": "v2.1.215",
-      "summary": "Ce qui a change Claude no longer runs the /verify and /code-review skills on its own; invoke them with /verify or /code-review when you want them",
-      "summary_en": "What's changed\n\nClaude no longer runs the /verify and /code-review skills on its own; invoke them with /verify or /code-review when you want them\n",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Claude no longer runs the /verify and /code-review skills on its own; invoke them with /verify or /code-review when you want them"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.215",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.120.0",
       "title_en": "v0.120.0",
@@ -120,7 +120,7 @@
       "summary_en": "0.120.0 (2026-07-24)\nFull Changelog: v0.119.0...v0.120.0\nFeatures\n\napi: add claude-opus-5 model (bf4e31c)\napi: add too",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -130,7 +130,7 @@
       "summary_en": "0.119.0 (2026-07-23)\nFull Changelog: v0.118.0...v0.119.0\nFeatures\n\napi: add new stop reason 'model_context_window_exceeded' (d983cde)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.119.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -140,7 +140,7 @@
       "summary_en": "0.118.0 (2026-07-22)\nFull Changelog: v0.117.1...v0.118.0\nFeatures\n\napi: add support for Managed Agents model effort, initial session events, and threads delta streaming (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/712bc6f5e07ca7607e13",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.118.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -170,7 +170,7 @@
       "summary_en": "0.115.0 (2026-07-24)\nFull Changelog: sdk-v0.114.0...sdk-v0.115.0\nFeatures\n\napi: add claude-opus-5 model (cdd3606)\n<stro",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.115.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -220,12 +220,12 @@
       "summary_en": "Publie le 2026-07-24",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.219",
-      "title_en": "v2.1.219",
+      "title": "v2.1.220",
+      "title_en": "v2.1.220",
       "summary": "Publie le 2026-07-24",
       "summary_en": "Publie le 2026-07-24",
       "changelog_items": [],
@@ -240,7 +240,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -250,7 +250,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-opus-5",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -280,7 +280,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-sonnet-5",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -300,7 +300,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/anthropic-economic-index-connector",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -320,7 +320,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/rare-disease-research-grants",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -430,7 +430,7 @@
       "summary_en": "Prompts, templates, and scripts for running large-scale language migrations with Claude Code",
       "changelog_items": [],
       "url": "https://github.com/anthropics/code-migration-kit-with-claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -455,8 +455,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.219",
-    "Claude Code npm": "v2.1.219",
+    "Claude Code": "v2.1.220",
+    "Claude Code npm": "v2.1.220",
     "SDK Python": "v0.120.0",
     "SDK Python PyPI": "v0.120.0",
     "SDK TypeScript": "sdk: v0.112.4",
@@ -464,7 +464,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.215",
+    "GitHub Claude Code": "v2.1.216",
     "GitHub SDK Python": "v0.117.0"
   }
 }
