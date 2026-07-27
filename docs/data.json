@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-07-26T20:05:49.273184",
+  "last_check": "2026-07-27T20:18:55.945203",
   "updates": [
     {
       "source": "Claude Code",
@@ -180,7 +180,7 @@
       "summary_en": "0.114.0 (2026-07-23)\nFull Changelog: sdk-v0.113.0...sdk-v0.114.0\nFeatures\n\napi: add new stop reason 'model_context_window_exceeded' (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/1ec71c165d9737cb317e3f8fed818f7a1b8169ad\"",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.114.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -284,6 +284,16 @@
     },
     {
       "source": "Blog",
+      "title": "Jul 27, 2026AnnouncementsCognizant and Anthropic expand their partnership to bring Claude to enterpr",
+      "title_en": "Jul 27, 2026AnnouncementsCognizant and Anthropic expand their partnership to bring Claude to enterpr",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/cognizant-anthropic",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Jul 22, 2026Economic RerechercheA rerecherche agenda for the Economic Futures Rerecherche Fund",
       "title_en": "Jul 22, 2026Economic ResearchA research agenda for the Economic Futures Research Fund",
       "summary": "",
@@ -333,16 +343,6 @@
       "is_new": false
     },
     {
-      "source": "Blog",
-      "title": "Jul 14, 2026AnnouncementsAnthropic commits $10 million to Canadian AI rerecherche",
-      "title_en": "Jul 14, 2026AnnouncementsAnthropic commits $10 million to Canadian AI research",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/canadian-ai-research",
-      "is_new": false
-    },
-    {
       "source": "Recherche",
       "title": "Economic Rerecherche",
       "title_en": "Economic Research",
@@ -350,7 +350,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/economic-research",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -410,7 +410,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/cryptography-research-demo",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
