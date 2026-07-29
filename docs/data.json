@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-07-28T20:13:07.787814",
+  "last_check": "2026-07-29T20:09:01.108417",
   "updates": [
     {
       "source": "Claude Code",
@@ -120,7 +120,7 @@
       "summary_en": "0.120.2 (2026-07-28)\nFull Changelog: v0.120.1...v0.120.2\nBug Fixes\n\nmcp: support mcp sdk v2 alongside v1 (#300) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/1",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -130,7 +130,7 @@
       "summary_en": "0.120.1 (2026-07-28)\nFull Changelog: v0.120.0...v0.120.1\nBug Fixes\n\nmcp: pin mcp extra to &lt;2 (#1783) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/fb663713",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -150,7 +150,7 @@
       "summary_en": "0.119.0 (2026-07-23)\nFull Changelog: v0.118.0...v0.119.0\nFeatures\n\napi: add new stop reason 'model_context_window_exceeded' (d983cde)\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.119.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -240,7 +240,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -290,7 +290,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/position-open-weights-models",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -450,7 +450,7 @@
       "summary_en": " Companion code for the global workspace interpretability paper",
       "changelog_items": [],
       "url": "https://github.com/anthropics/jacobian-lens",
-      "is_new": false
+      "is_new": true
     }
   ],
   "versions": {
