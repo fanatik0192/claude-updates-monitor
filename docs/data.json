@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-07-30T20:11:46.066291",
+  "last_check": "2026-07-31T20:16:04.841382",
   "updates": [
     {
       "source": "Claude Code",
@@ -284,6 +284,16 @@
     },
     {
       "source": "Blog",
+      "title": "Jul 30, 2026Frontier Red TeamInvestigating three real-world incidents in our cybersecurite evaluatio",
+      "title_en": "Jul 30, 2026Frontier Red TeamInvestigating three real-world incidents in our cybersecurity evaluatio",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Jul 27, 2026AnnouncementsOur position on ouvrir-weights models",
       "title_en": "Jul 27, 2026AnnouncementsOur position on open-weights models",
       "summary": "",
@@ -330,16 +340,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/donation-public-first-action",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Jul 20, 2026AnnouncementsApply for Anthropic’s AI for Science rare disease rerecherche grants",
-      "title_en": "Jul 20, 2026AnnouncementsApply for Anthropic’s AI for Science rare disease research grants",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/rare-disease-research-grants",
       "is_new": false
     },
     {
@@ -410,7 +410,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/cryptography-research-demo",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Nouveau Depot",
