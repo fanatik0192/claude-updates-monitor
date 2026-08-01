@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-07-31T20:16:04.841382",
+  "last_check": "2026-08-01T20:07:28.242645",
   "updates": [
     {
       "source": "Claude Code",
@@ -290,7 +290,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -330,7 +330,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/anthropic-economic-index-connector",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -410,7 +410,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/cryptography-research-demo",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
