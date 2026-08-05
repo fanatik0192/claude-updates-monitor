@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-08-04T20:21:01.814949",
+  "last_check": "2026-08-05T20:22:27.025131",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.222",
+      "title_en": "v2.1.222",
+      "summary": "Ce qui a change Correction de worktree-isolated sessions and their subagents being able to run destructive git commandes against the main checkout; isolation now applies to fichier edits and Bash in every session taper Correction de PreToolUse auto-allow hooks bypassing tool restrictions in arriere-plan agent tasks (summaries, compaction, renoms) Correction de /usage-credits on T",
+      "summary_en": "What's changed\n\nFixed worktree-isolated sessions and their subagents being able to run destructive git commands against the main checkout; isolation now applies to file edits and Bash in every session type\nFixed PreToolUse auto-allow hooks bypassing tool restrictions in background agent tasks (summaries, compaction, renames)\nFixed /usage-credits on T",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "worktree-isolated sessions and their subagents being able to run destructive git commands against the main checkout; isolation now applies to file edits and Bash in every session type"
+        },
+        {
+          "type": "fixed",
+          "text": "PreToolUse auto-allow hooks bypassing tool restrictions in background agent tasks (summaries, compaction, renames)"
+        },
+        {
+          "type": "fixed",
+          "text": "/usage-credits on T"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed worktree-isolated sessions and their subagents being able to run destructive git commands against the main checkout; isolation now applies to file edits and Bash in every session type"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.222",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.221",
@@ -22,7 +49,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.221",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -37,7 +64,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.220",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Claude Code",
@@ -83,29 +110,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.218",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.217",
-      "title_en": "v2.1.217",
-      "summary": "Ce qui a change Ajout de emoji shortcode autocompletion in the prompt entree: taper :heart: to insert ❤️, or :hea for suggestions — desactiver with the emojiCompletionActiverd parametre Ajout de avertissements when transcript writes are failing (e.g. disk full) or when session saving is off due to an inherited variable d'environnement, instead of losing trans",
-      "summary_en": "What's changed\n\nAdded emoji shortcode autocomplete in the prompt input: type :heart: to insert ❤️, or :hea for suggestions — disable with the emojiCompletionEnabled setting\nAdded warnings when transcript writes are failing (e.g. disk full) or when session saving is off due to an inherited environment variable, instead of losing trans",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "emoji shortcode autocomplete in the prompt input: type :heart: to insert ❤️, or :hea for suggestions — disable with the emojiCompletionEnabled setting"
-        },
-        {
-          "type": "added",
-          "text": "warnings when transcript writes are failing (e.g. disk full) or when session saving is off due to an inherited environment variable, instead of losing trans"
-        },
-        {
-          "type": "changed",
-          "text": "Added emoji shortcode autocomplete in the prompt input: type :heart: to insert ❤️, or :hea for suggestions — disable with the emojiCompletionEnabled setting"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.217",
       "is_new": false
     },
     {
@@ -220,10 +224,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.221",
-      "title_en": "v2.1.221",
-      "summary": "Publie le 2026-08-03",
-      "summary_en": "Publie le 2026-08-03",
+      "title": "v2.1.222",
+      "title_en": "v2.1.222",
+      "summary": "Publie le 2026-08-04",
+      "summary_en": "Publie le 2026-08-04",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -286,7 +290,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/tino-cuellar",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -451,8 +455,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.221",
-    "Claude Code npm": "v2.1.221",
+    "Claude Code": "v2.1.222",
+    "Claude Code npm": "v2.1.222",
     "SDK Python": "v0.120.2",
     "SDK Python PyPI": "v0.120.2",
     "SDK TypeScript": "sdk: v0.112.4",
@@ -460,7 +464,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.217",
+    "GitHub Claude Code": "v2.1.218",
     "GitHub SDK Python": "v0.118.0"
   }
 }
