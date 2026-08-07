@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-08-05T20:22:27.025131",
+  "last_check": "2026-08-07T00:38:28.293410",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.223",
+      "title_en": "v2.1.223",
+      "summary": "Ce qui a change Ajout de owner wildcard entries (\"owner/*\") to the strictKnownMarketplaces and blockedMarketplaces managed parametres for allowing or blocking all marketplace repos under a GitHub org Ajout de a avertissement when workflow agents, dupliquered skills, slash commandes, or resumed arriere-plan agents' requested subagent model is restricted an",
+      "summary_en": "What's changed\n\nAdded owner wildcard entries (\"owner/*\") to the strictKnownMarketplaces and blockedMarketplaces managed settings for allowing or blocking all marketplace repos under a GitHub org\nAdded a warning when workflow agents, forked skills, slash commands, or resumed background agents' requested subagent model is restricted an",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "owner wildcard entries (\"owner/*\") to the strictKnownMarketplaces and blockedMarketplaces managed settings for allowing or blocking all marketplace repos under a GitHub org"
+        },
+        {
+          "type": "added",
+          "text": "a warning when workflow agents, forked skills, slash commands, or resumed background agents' requested subagent model is restricted an"
+        },
+        {
+          "type": "changed",
+          "text": "Added owner wildcard entries (\"owner/*\") to the strictKnownMarketplaces and blockedMarketplaces managed settings for allowing or blocking all marketplace repos under a GitHub org"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.223",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.222",
@@ -26,7 +49,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.222",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -64,7 +87,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.220",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -91,25 +114,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.219",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.218",
-      "title_en": "v2.1.218",
-      "summary": "Ce qui a change Modification de /code-review to run as a arriere-plan subagent, so review work no longer fills your conversation and keeps stacked slash commandes as its review target Ajout de screen-reader announcements of deleted text for word and line deletions (Option+Delete, Ctrl+W, Cmd+Backspace, Ctrl+U, Ctrl+",
-      "summary_en": "What's changed\n\nChanged /code-review to run as a background subagent, so review work no longer fills your conversation and keeps stacked slash commands as its review target\nAdded screen-reader announcements of deleted text for word and line deletions (Option+Delete, Ctrl+W, Cmd+Backspace, Ctrl+U, Ctrl+",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "screen-reader announcements of deleted text for word and line deletions (Option+Delete, Ctrl+W, Cmd+Backspace, Ctrl+U, Ctrl+"
-        },
-        {
-          "type": "changed",
-          "text": "Changed /code-review to run as a background subagent, so review work no longer fills your conversation and keeps stacked slash commands as its review target"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.218",
       "is_new": false
     },
     {
@@ -224,10 +228,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.222",
-      "title_en": "v2.1.222",
-      "summary": "Publie le 2026-08-04",
-      "summary_en": "Publie le 2026-08-04",
+      "title": "v2.1.223",
+      "title_en": "v2.1.223",
+      "summary": "Publie le 2026-08-05",
+      "summary_en": "Publie le 2026-08-05",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -360,7 +364,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/interpretability",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -430,7 +434,7 @@
       "summary_en": "Skills and eval rubrics for K-12 teachers, co-developed with Learning Commons",
       "changelog_items": [],
       "url": "https://github.com/anthropics/k12-teacher-skills",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Nouveau Depot",
@@ -455,8 +459,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.222",
-    "Claude Code npm": "v2.1.222",
+    "Claude Code": "v2.1.223",
+    "Claude Code npm": "v2.1.223",
     "SDK Python": "v0.120.2",
     "SDK Python PyPI": "v0.120.2",
     "SDK TypeScript": "sdk: v0.112.4",
@@ -464,7 +468,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.218",
+    "GitHub Claude Code": "v2.1.219",
     "GitHub SDK Python": "v0.118.0"
   }
 }
