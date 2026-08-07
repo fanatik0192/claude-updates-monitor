@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-08-07T00:38:28.293410",
+  "last_check": "2026-08-07T19:49:15.568726",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.224",
+      "title_en": "v2.1.224",
+      "summary": "Ce qui a change Ajout de self-hosted environments: claude self-hosted-runner turns your own machines or containers into a place Claude Code web, mobile, and desktop sessions can run, on Team and Enterprise plans Ajout de archive plugin source: install plugins from a zip over HTTPS without git or npm, with optional SHA-256 pinning Ajout de a cance",
+      "summary_en": "What's changed\n\nAdded self-hosted environments: claude self-hosted-runner turns your own machines or containers into a place Claude Code web, mobile, and desktop sessions can run, on Team and Enterprise plans\nAdded archive plugin source: install plugins from a zip over HTTPS without git or npm, with optional SHA-256 pinning\nAdded a cance",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "self-hosted environments: claude self-hosted-runner turns your own machines or containers into a place Claude Code web, mobile, and desktop sessions can run, on Team and Enterprise plans"
+        },
+        {
+          "type": "added",
+          "text": "archive plugin source: install plugins from a zip over HTTPS without git or npm, with optional SHA-256 pinning"
+        },
+        {
+          "type": "added",
+          "text": "a cance"
+        },
+        {
+          "type": "changed",
+          "text": "Added self-hosted environments: claude self-hosted-runner turns your own machines or containers into a place Claude Code web, mobile, and desktop sessions can run, on Team and Enterprise plans"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.224",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.223",
@@ -22,7 +49,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.223",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -90,31 +117,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.219",
-      "title_en": "v2.1.219",
-      "summary": "Ce qui a change Ajout de Claude Opus 5 (claude-opus-5), now the par defaut Opus model — 1M context, fast mode at $10/$50 per Mtok Ajout de sandbox.network.strictAllowlist parametre to deny non-allowlisted hosts for sandboxed commandes without prompting Ajout de RepertoireAjout de hook that fires after /add-dir or the SDK reg",
-      "summary_en": "What's changed\n\nAdded Claude Opus 5 (claude-opus-5), now the default Opus model — 1M context, fast mode at $10/$50 per Mtok\nAdded sandbox.network.strictAllowlist setting to deny non-allowlisted hosts for sandboxed commands without prompting\nAdded DirectoryAdded hook that fires after /add-dir or the SDK reg",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "Claude Opus 5 (claude-opus-5), now the default Opus model — 1M context, fast mode at $10/$50 per Mtok"
-        },
-        {
-          "type": "added",
-          "text": "sandbox.network.strictAllowlist setting to deny non-allowlisted hosts for sandboxed commands without prompting"
-        },
-        {
-          "type": "added",
-          "text": "DirectoryAdded hook that fires after /add-dir or the SDK reg"
-        },
-        {
-          "type": "changed",
-          "text": "Added Claude Opus 5 (claude-opus-5), now the default Opus model — 1M context, fast mode at $10/$50 per Mtok"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.219",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.121.0",
+      "title_en": "v0.121.0",
+      "summary": "0.121.0 (2026-08-07) Journal complet: v0.120.2...v0.121.0 Fonctionnalites api: add mid-conversation-tool-changes-2026-07-01 beta ()",
+      "summary_en": "0.121.0 (2026-08-07)\nFull Changelog: v0.120.2...v0.121.0\nFeatures\n\napi: add mid-conversation-tool-changes-2026-07-01 beta (c7d1531)",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.121.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -157,94 +167,84 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.118.0",
-      "title_en": "v0.118.0",
-      "summary": "0.118.0 (2026-07-22) Journal complet: v0.117.1...v0.118.0 Fonctionnalites api: add prise en charge de Managed Agents model effort, initial session events, and threads delta streaming (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/",
-      "summary_en": "0.118.0 (2026-07-22)\nFull Changelog: v0.117.1...v0.118.0\nFeatures\n\napi: add support for Managed Agents model effort, initial session events, and threads delta streaming (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/712bc6f5e07ca7607e13",
+      "source": "SDK TypeScript",
+      "title": "vertex-sdk: v0.19.1",
+      "title_en": "vertex-sdk: v0.19.1",
+      "summary": "0.19.1 (2026-08-07) Journal complet: vertex-sdk-v0.19.0...vertex-sdk-v0.19.1 Corrections de bugs client: use hardcoded Utilisateur-Agent strings instead of constructor noms (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/0b97",
+      "summary_en": "0.19.1 (2026-08-07)\nFull Changelog: vertex-sdk-v0.19.0...vertex-sdk-v0.19.1\nBug Fixes\n\nclient: use hardcoded User-Agent strings instead of constructor names (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/0b97",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.118.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.1",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk: v0.115.0",
-      "title_en": "sdk: v0.115.0",
-      "summary": "0.115.0 (2026-07-24) Journal complet: sdk-v0.114.0...sdk-v0.115.0 Fonctionnalites api: add claude-opus-5 model () <stro",
-      "summary_en": "0.115.0 (2026-07-24)\nFull Changelog: sdk-v0.114.0...sdk-v0.115.0\nFeatures\n\napi: add claude-opus-5 model (cdd3606)\n<stro",
+      "title": "sdk: v0.116.0",
+      "title_en": "sdk: v0.116.0",
+      "summary": "0.116.0 (2026-08-07) Journal complet: sdk-v0.115.0...sdk-v0.116.0 Fonctionnalites api: add mid-conversation-tool-changes-2026-07-01 beta (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
+      "summary_en": "0.116.0 (2026-08-07)\nFull Changelog: sdk-v0.115.0...sdk-v0.116.0\nFeatures\n\napi: add mid-conversation-tool-changes-2026-07-01 beta (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/70e04f689baa233e7cb2fed6bb8075",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.115.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.116.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk: v0.114.0",
-      "title_en": "sdk: v0.114.0",
-      "summary": "0.114.0 (2026-07-23) Journal complet: sdk-v0.113.0...sdk-v0.114.0 Fonctionnalites api: add new stop reason 'model_context_window_exceeded' (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/\"",
-      "summary_en": "0.114.0 (2026-07-23)\nFull Changelog: sdk-v0.113.0...sdk-v0.114.0\nFeatures\n\napi: add new stop reason 'model_context_window_exceeded' (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/1ec71c165d9737cb317e3f8fed818f7a1b8169ad\"",
+      "title": "google-cloud-sdk: v0.0.7",
+      "title_en": "google-cloud-sdk: v0.0.7",
+      "summary": "0.0.7 (2026-08-07) Journal complet: google-cloud-sdk-v0.0.6...google-cloud-sdk-v0.0.7 Corrections de bugs client: use hardcoded Utilisateur-Agent strings instead of constructor noms (<a href=\"https://github.com/anthropics/anthropic-sdk-typ",
+      "summary_en": "0.0.7 (2026-08-07)\nFull Changelog: google-cloud-sdk-v0.0.6...google-cloud-sdk-v0.0.7\nBug Fixes\n\nclient: use hardcoded User-Agent strings instead of constructor names (<a href=\"https://github.com/anthropics/anthropic-sdk-typ",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.114.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.7",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk: v0.113.0",
-      "title_en": "sdk: v0.113.0",
-      "summary": "0.113.0 (2026-07-22) Journal complet: sdk-v0.112.5...sdk-v0.113.0 Fonctionnalites api: add prise en charge de Managed Agents model effort, initial session events, and threads delta streaming (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/com",
-      "summary_en": "0.113.0 (2026-07-22)\nFull Changelog: sdk-v0.112.5...sdk-v0.113.0\nFeatures\n\napi: add support for Managed Agents model effort, initial session events, and threads delta streaming (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/com",
+      "title": "foundry-sdk: v0.4.1",
+      "title_en": "foundry-sdk: v0.4.1",
+      "summary": "0.4.1 (2026-08-07) Journal complet: foundry-sdk-v0.4.0...foundry-sdk-v0.4.1 Corrections de bugs client: use hardcoded Utilisateur-Agent strings instead of constructor noms (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/0b97f",
+      "summary_en": "0.4.1 (2026-08-07)\nFull Changelog: foundry-sdk-v0.4.0...foundry-sdk-v0.4.1\nBug Fixes\n\nclient: use hardcoded User-Agent strings instead of constructor names (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/0b97f",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.113.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.1",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk: v0.112.5",
-      "title_en": "sdk: v0.112.5",
-      "summary": "0.112.5 (2026-07-21) Journal complet: sdk-v0.112.4...sdk-v0.112.5 Maintenance api: add prise en charge de new refusal category ()</li",
-      "summary_en": "0.112.5 (2026-07-21)\nFull Changelog: sdk-v0.112.4...sdk-v0.112.5\nChores\n\napi: add support for new refusal category (479efe8)</li",
+      "title": "bedrock-sdk: v0.32.1",
+      "title_en": "bedrock-sdk: v0.32.1",
+      "summary": "0.32.1 (2026-08-07) Journal complet: bedrock-sdk-v0.32.0...bedrock-sdk-v0.32.1 Corrections de bugs client: use hardcoded Utilisateur-Agent strings instead of constructor noms (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
+      "summary_en": "0.32.1 (2026-08-07)\nFull Changelog: bedrock-sdk-v0.32.0...bedrock-sdk-v0.32.1\nBug Fixes\n\nclient: use hardcoded User-Agent strings instead of constructor names (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.5",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.112.4",
-      "title_en": "sdk: v0.112.4",
-      "summary": "0.112.4 (2026-07-20) Journal complet: sdk-v0.112.3...sdk-v0.112.4 Corrections de bugs aws: preserve AWS options and auth mode across withOptions() (<a href=\"https://git",
-      "summary_en": "0.112.4 (2026-07-20)\nFull Changelog: sdk-v0.112.3...sdk-v0.112.4\nBug Fixes\n\naws: preserve AWS options and auth mode across withOptions() (#214) (<a href=\"https://git",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.4",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.32.1",
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.115.0",
-      "title_en": "v0.115.0",
-      "summary": "Publie le 2026-07-24",
-      "summary_en": "Publie le 2026-07-24",
+      "title": "v0.116.0",
+      "title_en": "v0.116.0",
+      "summary": "Publie le 2026-08-07",
+      "summary_en": "Publie le 2026-08-07",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.223",
-      "title_en": "v2.1.223",
-      "summary": "Publie le 2026-08-05",
-      "summary_en": "Publie le 2026-08-05",
+      "title": "v2.1.224",
+      "title_en": "v2.1.224",
+      "summary": "Publie le 2026-08-07",
+      "summary_en": "Publie le 2026-08-07",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.120.2",
-      "title_en": "v0.120.2",
+      "title": "v0.121.0",
+      "title_en": "v0.121.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -285,6 +285,16 @@
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-sonnet-5",
       "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Aug 7, 2026ProductImproving Fable 5's biology safeguards",
+      "title_en": "Aug 7, 2026ProductImproving Fable 5's biology safeguards",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -337,16 +347,6 @@
       "is_new": false
     },
     {
-      "source": "Blog",
-      "title": "Jul 22, 2026ProductAsk Claude about the Anthropic Economic Index",
-      "title_en": "Jul 22, 2026ProductAsk Claude about the Anthropic Economic Index",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/anthropic-economic-index-connector",
-      "is_new": false
-    },
-    {
       "source": "Recherche",
       "title": "Economic Rerecherche",
       "title_en": "Economic Research",
@@ -364,7 +364,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/interpretability",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -434,7 +434,7 @@
       "summary_en": "Skills and eval rubrics for K-12 teachers, co-developed with Learning Commons",
       "changelog_items": [],
       "url": "https://github.com/anthropics/k12-teacher-skills",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -459,16 +459,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.223",
-    "Claude Code npm": "v2.1.223",
-    "SDK Python": "v0.120.2",
-    "SDK Python PyPI": "v0.120.2",
-    "SDK TypeScript": "sdk: v0.112.4",
+    "Claude Code": "v2.1.224",
+    "Claude Code npm": "v2.1.224",
+    "SDK Python": "v0.121.0",
+    "SDK Python PyPI": "v0.121.0",
+    "SDK TypeScript": "bedrock-sdk: v0.32.1",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.219",
-    "GitHub SDK Python": "v0.118.0"
+    "GitHub Claude Code": "v2.1.220",
+    "GitHub SDK Python": "v0.119.0"
   }
 }
