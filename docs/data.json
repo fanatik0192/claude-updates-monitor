@@ -1,6 +1,48 @@
 {
-  "last_check": "2026-08-07T19:49:15.568726",
+  "last_check": "2026-08-08T19:25:00.602147",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.226",
+      "title_en": "v2.1.226",
+      "summary": "Ce qui a change Bug fixes and reliability improvements",
+      "summary_en": "What's changed\n\nBug fixes and reliability improvements\n",
+      "changelog_items": [
+        {
+          "type": "changed",
+          "text": "Bug fixes and reliability improvements"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.226",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.225",
+      "title_en": "v2.1.225",
+      "summary": "Ce qui a change Ajout de gateway spend-limit prise en charge to Claude Code's usage avertissement; the limit-reached message now noms the cap, its reset time, and the operator's message (requires the gateway on 2.1.225) Ajout de a workspace trust prompt to claude agents for untrusted directories, matching the behavior of claude Correction de a transient 401 replac",
+      "summary_en": "What's changed\n\nAdded gateway spend-limit support to Claude Code's usage warning; the limit-reached message now names the cap, its reset time, and the operator's message (requires the gateway on 2.1.225)\nAdded a workspace trust prompt to claude agents for untrusted directories, matching the behavior of claude\nFixed a transient 401 replac",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "gateway spend-limit support to Claude Code's usage warning; the limit-reached message now names the cap, its reset time, and the operator's message (requires the gateway on 2.1.225)"
+        },
+        {
+          "type": "added",
+          "text": "a workspace trust prompt to claude agents for untrusted directories, matching the behavior of claude"
+        },
+        {
+          "type": "fixed",
+          "text": "a transient 401 replac"
+        },
+        {
+          "type": "changed",
+          "text": "Added gateway spend-limit support to Claude Code's usage warning; the limit-reached message now names the cap, its reset time, and the operator's message (requires the gateway on 2.1.225)"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.225",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.224",
@@ -26,7 +68,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.224",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -79,44 +121,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.221",
-      "title_en": "v2.1.221",
-      "summary": "Ce qui a change [VSCode] Ajout de Focus view: a chat-menu basculer that masquers tool activity behind an expandable per-turn summary with a live running-tool indicator, basculerd with Ctrl+Alt+F or the \"Claude Code: Basculer Focus view\" commande Ajout de mode: \"mask\" for sandbox credential fichiers on Linux and WSL — sandboxed commandes read a sentinel copy (the who",
-      "summary_en": "What's changed\n\n[VSCode] Added Focus view: a chat-menu toggle that hides tool activity behind an expandable per-turn summary with a live running-tool indicator, toggled with Ctrl+Alt+F or the \"Claude Code: Toggle Focus view\" command\nAdded mode: \"mask\" for sandbox credential files on Linux and WSL — sandboxed commands read a sentinel copy (the who",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "Focus view: a chat-menu toggle that hides tool activity behind an expandable per-turn summary with a live running-tool indicator, toggled with Ctrl+Alt+F or the \"Claude Code: Toggle Focus view\" comman"
-        },
-        {
-          "type": "added",
-          "text": "mode: \"mask\" for sandbox credential files on Linux and WSL — sandboxed commands read a sentinel copy (the who"
-        },
-        {
-          "type": "changed",
-          "text": "[VSCode] Added Focus view: a chat-menu toggle that hides tool activity behind an expandable per-turn summary with a live running-tool indicator, toggled with Ctrl+Alt+F or the \"Claude Code: Toggle Foc"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.221",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.220",
-      "title_en": "v2.1.220",
-      "summary": "Ce qui a change Bug fixes and reliability improvements",
-      "summary_en": "What's changed\n\nBug fixes and reliability improvements\n",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Bug fixes and reliability improvements"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.220",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.121.0",
       "title_en": "v0.121.0",
@@ -124,7 +128,7 @@
       "summary_en": "0.121.0 (2026-08-07)\nFull Changelog: v0.120.2...v0.121.0\nFeatures\n\napi: add mid-conversation-tool-changes-2026-07-01 beta (c7d1531)",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.121.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -174,7 +178,7 @@
       "summary_en": "0.19.1 (2026-08-07)\nFull Changelog: vertex-sdk-v0.19.0...vertex-sdk-v0.19.1\nBug Fixes\n\nclient: use hardcoded User-Agent strings instead of constructor names (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/0b97",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -184,7 +188,7 @@
       "summary_en": "0.116.0 (2026-08-07)\nFull Changelog: sdk-v0.115.0...sdk-v0.116.0\nFeatures\n\napi: add mid-conversation-tool-changes-2026-07-01 beta (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/70e04f689baa233e7cb2fed6bb8075",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.116.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -194,7 +198,7 @@
       "summary_en": "0.0.7 (2026-08-07)\nFull Changelog: google-cloud-sdk-v0.0.6...google-cloud-sdk-v0.0.7\nBug Fixes\n\nclient: use hardcoded User-Agent strings instead of constructor names (<a href=\"https://github.com/anthropics/anthropic-sdk-typ",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.7",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -204,7 +208,7 @@
       "summary_en": "0.4.1 (2026-08-07)\nFull Changelog: foundry-sdk-v0.4.0...foundry-sdk-v0.4.1\nBug Fixes\n\nclient: use hardcoded User-Agent strings instead of constructor names (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/0b97f",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -214,7 +218,7 @@
       "summary_en": "0.32.1 (2026-08-07)\nFull Changelog: bedrock-sdk-v0.32.0...bedrock-sdk-v0.32.1\nBug Fixes\n\nclient: use hardcoded User-Agent strings instead of constructor names (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.32.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/sdk",
@@ -224,14 +228,14 @@
       "summary_en": "Publie le 2026-08-07",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.224",
-      "title_en": "v2.1.224",
-      "summary": "Publie le 2026-08-07",
-      "summary_en": "Publie le 2026-08-07",
+      "title": "v2.1.226",
+      "title_en": "v2.1.226",
+      "summary": "Publie le 2026-08-08",
+      "summary_en": "Publie le 2026-08-08",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -244,7 +248,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -294,7 +298,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -414,7 +418,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/cryptography-research-demo",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Nouveau Depot",
@@ -459,8 +463,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.224",
-    "Claude Code npm": "v2.1.224",
+    "Claude Code": "v2.1.226",
+    "Claude Code npm": "v2.1.226",
     "SDK Python": "v0.121.0",
     "SDK Python PyPI": "v0.121.0",
     "SDK TypeScript": "bedrock-sdk: v0.32.1",
@@ -468,7 +472,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.220",
+    "GitHub Claude Code": "v2.1.222",
     "GitHub SDK Python": "v0.119.0"
   }
 }
