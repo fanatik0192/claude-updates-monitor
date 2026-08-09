@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-08-08T19:25:00.602147",
+  "last_check": "2026-08-09T19:28:54.433618",
   "updates": [
     {
       "source": "Claude Code",
@@ -14,7 +14,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.226",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -41,7 +41,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.225",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -238,7 +238,7 @@
       "summary_en": "Publie le 2026-08-08",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -418,7 +418,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/cryptography-research-demo",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
