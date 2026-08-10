@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-08-09T19:28:54.433618",
+  "last_check": "2026-08-10T19:52:14.975919",
   "updates": [
     {
       "source": "Claude Code",
@@ -208,7 +208,7 @@
       "summary_en": "0.4.1 (2026-08-07)\nFull Changelog: foundry-sdk-v0.4.0...foundry-sdk-v0.4.1\nBug Fixes\n\nclient: use hardcoded User-Agent strings instead of constructor names (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/0b97f",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.1",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -392,13 +392,13 @@
     },
     {
       "source": "Recherche",
-      "title": "A global workspace in language modelsInterpretabilityJul 6, 2026New interpretability rerecherche reveal",
-      "title_en": "A global workspace in language modelsInterpretabilityJul 6, 2026New interpretability research reveal",
+      "title": "Learning more about Claude's mathematical capabilitiesScienceAug 10, 2026An unversiond rerecherche vers",
+      "title_en": "Learning more about Claude's mathematical capabilitiesScienceAug 10, 2026An unreleased research vers",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/research/global-workspace",
-      "is_new": false
+      "url": "https://www.anthropic.com/research/riemann-zeta",
+      "is_new": true
     },
     {
       "source": "Statut",
@@ -408,6 +408,16 @@
       "summary_en": "Un probleme est actuellement detecte sur les services Claude.",
       "changelog_items": [],
       "url": "https://status.claude.com",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "zeta-23-lean",
+      "title_en": "zeta-23-lean",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/zeta-23-lean",
       "is_new": true
     },
     {
@@ -448,16 +458,6 @@
       "summary_en": "Prompts, templates, and scripts for running large-scale language migrations with Claude Code",
       "changelog_items": [],
       "url": "https://github.com/anthropics/code-migration-kit-with-claude-code",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "jacobian-lens",
-      "title_en": "jacobian-lens",
-      "summary": "Companion code for the global workspace interpretability paper",
-      "summary_en": " Companion code for the global workspace interpretability paper",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/jacobian-lens",
       "is_new": false
     }
   ],
