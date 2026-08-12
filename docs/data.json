@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-08-11T19:58:24.440206",
+  "last_check": "2026-08-12T19:58:50.222417",
   "updates": [
     {
       "source": "Claude Code",
@@ -26,7 +26,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.228",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -49,7 +49,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.227",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -128,7 +128,7 @@
       "summary_en": "0.121.0 (2026-08-07)\nFull Changelog: v0.120.2...v0.121.0\nFeatures\n\napi: add mid-conversation-tool-changes-2026-07-01 beta (c7d1531)",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.121.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -238,7 +238,7 @@
       "summary_en": "Publie le 2026-08-11",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -258,7 +258,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-opus-5",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
