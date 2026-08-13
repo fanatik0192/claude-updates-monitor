@@ -1,6 +1,48 @@
 {
-  "last_check": "2026-08-12T19:58:50.222417",
+  "last_check": "2026-08-13T19:53:37.485245",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.231",
+      "title_en": "v2.1.231",
+      "summary": "Ce qui a change Correction de MCP OAuth sign-in failing with a redirect URI mismatch for servers that use a pre-registered OAuth client, such as Slack",
+      "summary_en": "What's changed\n\nFixed MCP OAuth sign-in failing with a redirect URI mismatch for servers that use a pre-registered OAuth client, such as Slack\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "MCP OAuth sign-in failing with a redirect URI mismatch for servers that use a pre-registered OAuth client, such as Slack"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed MCP OAuth sign-in failing with a redirect URI mismatch for servers that use a pre-registered OAuth client, such as Slack"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.231",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.229",
+      "title_en": "v2.1.229",
+      "summary": "Ce qui a change Documented claude remote-control --continue for resuming the most recent Remote Control session Ajout de server-supplied Claude Code hook prise en charge de self-hosted runner sessions, matching managed-environment behavior Ajout de SSE keepalive pings to gateway streaming responses during long thinking pauses, preventing idle-timeout disconnects",
+      "summary_en": "What's changed\n\nDocumented claude remote-control --continue for resuming the most recent Remote Control session\nAdded server-supplied Claude Code hook support for self-hosted runner sessions, matching managed-environment behavior\nAdded SSE keepalive pings to gateway streaming responses during long thinking pauses, preventing idle-timeout disconnects ",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "server-supplied Claude Code hook support for self-hosted runner sessions, matching managed-environment behavior"
+        },
+        {
+          "type": "added",
+          "text": "SSE keepalive pings to gateway streaming responses during long thinking pauses, preventing idle-timeout disconnects"
+        },
+        {
+          "type": "changed",
+          "text": "Documented claude remote-control --continue for resuming the most recent Remote Control session"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.229",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.228",
@@ -67,58 +109,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.225",
-      "title_en": "v2.1.225",
-      "summary": "Ce qui a change Ajout de gateway spend-limit prise en charge to Claude Code's usage avertissement; the limit-reached message now noms the cap, its reset time, and the operator's message (requires the gateway on 2.1.225) Ajout de a workspace trust prompt to claude agents for untrusted directories, matching the behavior of claude Correction de a transient 401 replac",
-      "summary_en": "What's changed\n\nAdded gateway spend-limit support to Claude Code's usage warning; the limit-reached message now names the cap, its reset time, and the operator's message (requires the gateway on 2.1.225)\nAdded a workspace trust prompt to claude agents for untrusted directories, matching the behavior of claude\nFixed a transient 401 replac",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "gateway spend-limit support to Claude Code's usage warning; the limit-reached message now names the cap, its reset time, and the operator's message (requires the gateway on 2.1.225)"
-        },
-        {
-          "type": "added",
-          "text": "a workspace trust prompt to claude agents for untrusted directories, matching the behavior of claude"
-        },
-        {
-          "type": "fixed",
-          "text": "a transient 401 replac"
-        },
-        {
-          "type": "changed",
-          "text": "Added gateway spend-limit support to Claude Code's usage warning; the limit-reached message now names the cap, its reset time, and the operator's message (requires the gateway on 2.1.225)"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.225",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.224",
-      "title_en": "v2.1.224",
-      "summary": "Ce qui a change Ajout de self-hosted environments: claude self-hosted-runner turns your own machines or containers into a place Claude Code web, mobile, and desktop sessions can run, on Team and Enterprise plans Ajout de archive plugin source: install plugins from a zip over HTTPS without git or npm, with optional SHA-256 pinning Ajout de a cance",
-      "summary_en": "What's changed\n\nAdded self-hosted environments: claude self-hosted-runner turns your own machines or containers into a place Claude Code web, mobile, and desktop sessions can run, on Team and Enterprise plans\nAdded archive plugin source: install plugins from a zip over HTTPS without git or npm, with optional SHA-256 pinning\nAdded a cance",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "self-hosted environments: claude self-hosted-runner turns your own machines or containers into a place Claude Code web, mobile, and desktop sessions can run, on Team and Enterprise plans"
-        },
-        {
-          "type": "added",
-          "text": "archive plugin source: install plugins from a zip over HTTPS without git or npm, with optional SHA-256 pinning"
-        },
-        {
-          "type": "added",
-          "text": "a cance"
-        },
-        {
-          "type": "changed",
-          "text": "Added self-hosted environments: claude self-hosted-runner turns your own machines or containers into a place Claude Code web, mobile, and desktop sessions can run, on Team and Enterprise plans"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.224",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.122.0",
+      "title_en": "v0.122.0",
+      "summary": "0.122.0 (2026-08-13) Journal complet: v0.121.0...v0.122.0 Fonctionnalites api: add sortie_behavior to dream creation (create a new memory store or update the entree store in place) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/",
+      "summary_en": "0.122.0 (2026-08-13)\nFull Changelog: v0.121.0...v0.122.0\nFeatures\n\napi: add output_behavior to dream creation (create a new memory store or update the input store in place) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/852c4bbe4a3a425a",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.122.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -128,7 +126,7 @@
       "summary_en": "0.121.0 (2026-08-07)\nFull Changelog: v0.120.2...v0.121.0\nFeatures\n\napi: add mid-conversation-tool-changes-2026-07-01 beta (c7d1531)",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.121.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -158,16 +156,6 @@
       "summary_en": "0.120.0 (2026-07-24)\nFull Changelog: v0.119.0...v0.120.0\nFeatures\n\napi: add claude-opus-5 model (bf4e31c)\napi: add too",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK Python",
-      "title": "v0.119.0",
-      "title_en": "v0.119.0",
-      "summary": "0.119.0 (2026-07-23) Journal complet: v0.118.0...v0.119.0 Fonctionnalites api: add new stop reason 'model_context_window_exceeded' ()",
-      "summary_en": "0.119.0 (2026-07-23)\nFull Changelog: v0.118.0...v0.119.0\nFeatures\n\napi: add new stop reason 'model_context_window_exceeded' (d983cde)\n",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.119.0",
       "is_new": false
     },
     {
@@ -232,23 +220,23 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.228",
-      "title_en": "v2.1.228",
-      "summary": "Publie le 2026-08-11",
-      "summary_en": "Publie le 2026-08-11",
+      "title": "v2.1.231",
+      "title_en": "v2.1.231",
+      "summary": "Publie le 2026-08-13",
+      "summary_en": "Publie le 2026-08-13",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.121.0",
-      "title_en": "v0.121.0",
+      "title": "v0.122.0",
+      "title_en": "v0.122.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -463,16 +451,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.228",
-    "Claude Code npm": "v2.1.228",
-    "SDK Python": "v0.121.0",
-    "SDK Python PyPI": "v0.121.0",
+    "Claude Code": "v2.1.231",
+    "Claude Code npm": "v2.1.231",
+    "SDK Python": "v0.122.0",
+    "SDK Python PyPI": "v0.122.0",
     "SDK TypeScript": "bedrock-sdk: v0.32.1",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.224",
-    "GitHub SDK Python": "v0.119.0"
+    "GitHub Claude Code": "v2.1.226",
+    "GitHub SDK Python": "v0.120.0"
   }
 }
