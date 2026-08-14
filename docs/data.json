@@ -1,6 +1,21 @@
 {
-  "last_check": "2026-08-13T19:53:37.485245",
+  "last_check": "2026-08-14T19:44:11.160506",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.232",
+      "title_en": "v2.1.232",
+      "summary": "Ce qui a change Subagent duplication is now on by par defaut: a subagent_taper: \"dupliquer\" subagent inherits the full conversation and prompt cache, and non-teammate agent spawns in interactive sessions now run in the arriere-plan by par defaut Taper @ in the prompt to mention another Claude session by nom; Claude then uses SendMessage to reach that",
+      "summary_en": "What's changed\n\nSubagent forking is now on by default: a subagent_type: \"fork\" subagent inherits the full conversation and prompt cache, and non-teammate agent spawns in interactive sessions now run in the background by default\nType @ in the prompt to mention another Claude session by name; Claude then uses SendMessage to reach that ",
+      "changelog_items": [
+        {
+          "type": "changed",
+          "text": "Subagent forking is now on by default: a subagent_type: \"fork\" subagent inherits the full conversation and prompt cache, and non-teammate agent spawns in interactive sessions now run in the background"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.232",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.231",
@@ -18,7 +33,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.231",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -41,7 +56,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.229",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -94,21 +109,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.226",
-      "title_en": "v2.1.226",
-      "summary": "Ce qui a change Bug fixes and reliability improvements",
-      "summary_en": "What's changed\n\nBug fixes and reliability improvements\n",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Bug fixes and reliability improvements"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.226",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.122.0",
       "title_en": "v0.122.0",
@@ -116,7 +116,7 @@
       "summary_en": "0.122.0 (2026-08-13)\nFull Changelog: v0.121.0...v0.122.0\nFeatures\n\napi: add output_behavior to dream creation (create a new memory store or update the input store in place) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/852c4bbe4a3a425a",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.122.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -160,68 +160,68 @@
     },
     {
       "source": "SDK TypeScript",
-      "title": "vertex-sdk: v0.19.1",
-      "title_en": "vertex-sdk: v0.19.1",
-      "summary": "0.19.1 (2026-08-07) Journal complet: vertex-sdk-v0.19.0...vertex-sdk-v0.19.1 Corrections de bugs client: use hardcoded Utilisateur-Agent strings instead of constructor noms (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/0b97",
-      "summary_en": "0.19.1 (2026-08-07)\nFull Changelog: vertex-sdk-v0.19.0...vertex-sdk-v0.19.1\nBug Fixes\n\nclient: use hardcoded User-Agent strings instead of constructor names (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/0b97",
+      "title": "vertex-sdk: v0.19.4",
+      "title_en": "vertex-sdk: v0.19.4",
+      "summary": "0.19.4 (2026-08-13) Journal complet: vertex-sdk-v0.19.3...vertex-sdk-v0.19.4 Maintenance internal: empty commit to trigger builds (<a href=\"https://g",
+      "summary_en": "0.19.4 (2026-08-13)\nFull Changelog: vertex-sdk-v0.19.3...vertex-sdk-v0.19.4\nChores\n\ninternal: empty commit to trigger builds (#1148) (<a href=\"https://g",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.1",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.4",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk: v0.116.0",
-      "title_en": "sdk: v0.116.0",
-      "summary": "0.116.0 (2026-08-07) Journal complet: sdk-v0.115.0...sdk-v0.116.0 Fonctionnalites api: add mid-conversation-tool-changes-2026-07-01 beta (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
-      "summary_en": "0.116.0 (2026-08-07)\nFull Changelog: sdk-v0.115.0...sdk-v0.116.0\nFeatures\n\napi: add mid-conversation-tool-changes-2026-07-01 beta (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/70e04f689baa233e7cb2fed6bb8075",
+      "title": "vertex-sdk: v0.19.3",
+      "title_en": "vertex-sdk: v0.19.3",
+      "summary": "0.19.3 (2026-08-13) Journal complet: vertex-sdk-v0.19.2...vertex-sdk-v0.19.3 Maintenance internal: empty commit to trigger builds (<a href=\"https://g",
+      "summary_en": "0.19.3 (2026-08-13)\nFull Changelog: vertex-sdk-v0.19.2...vertex-sdk-v0.19.3\nChores\n\ninternal: empty commit to trigger builds (#1148) (<a href=\"https://g",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.116.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.3",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "google-cloud-sdk-v0.0.7",
-      "title_en": "google-cloud-sdk-v0.0.7",
-      "summary": "chore: version main",
-      "summary_en": "chore: release main",
+      "title": "vertex-sdk: v0.19.2",
+      "title_en": "vertex-sdk: v0.19.2",
+      "summary": "0.19.2 (2026-08-13) Journal complet: vertex-sdk-v0.19.1...vertex-sdk-v0.19.2 Corrections de bugs vertex,bedrock: never send ambient first-party credentials to provider endpoints (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/",
+      "summary_en": "0.19.2 (2026-08-13)\nFull Changelog: vertex-sdk-v0.19.1...vertex-sdk-v0.19.2\nBug Fixes\n\nvertex,bedrock: never send ambient first-party credentials to provider endpoints (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.7",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.2",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "foundry-sdk: v0.4.1",
-      "title_en": "foundry-sdk: v0.4.1",
-      "summary": "0.4.1 (2026-08-07) Journal complet: foundry-sdk-v0.4.0...foundry-sdk-v0.4.1 Corrections de bugs client: use hardcoded Utilisateur-Agent strings instead of constructor noms (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/0b97f",
-      "summary_en": "0.4.1 (2026-08-07)\nFull Changelog: foundry-sdk-v0.4.0...foundry-sdk-v0.4.1\nBug Fixes\n\nclient: use hardcoded User-Agent strings instead of constructor names (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/0b97f",
+      "title": "sdk: v0.117.1",
+      "title_en": "sdk: v0.117.1",
+      "summary": "0.117.1 (2026-08-13) Journal complet: sdk-v0.117.0...sdk-v0.117.1 Maintenance ci: allow manually re-publishing a package to npm from the version workflow (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
+      "summary_en": "0.117.1 (2026-08-13)\nFull Changelog: sdk-v0.117.0...sdk-v0.117.1\nChores\n\nci: allow manually re-publishing a package to npm from the release workflow (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/af60c1f980557368fb10c370",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.1",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.117.1",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "bedrock-sdk: v0.32.1",
-      "title_en": "bedrock-sdk: v0.32.1",
-      "summary": "0.32.1 (2026-08-07) Journal complet: bedrock-sdk-v0.32.0...bedrock-sdk-v0.32.1 Corrections de bugs client: use hardcoded Utilisateur-Agent strings instead of constructor noms (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
-      "summary_en": "0.32.1 (2026-08-07)\nFull Changelog: bedrock-sdk-v0.32.0...bedrock-sdk-v0.32.1\nBug Fixes\n\nclient: use hardcoded User-Agent strings instead of constructor names (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/",
+      "title": "sdk: v0.117.0",
+      "title_en": "sdk: v0.117.0",
+      "summary": "0.117.0 (2026-08-13) Journal complet: sdk-v0.116.0...sdk-v0.117.0 Fonctionnalites api: add sortie_behavior to dream creation (create a new memory store or update the entree store in place) (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript",
+      "summary_en": "0.117.0 (2026-08-13)\nFull Changelog: sdk-v0.116.0...sdk-v0.117.0\nFeatures\n\napi: add output_behavior to dream creation (create a new memory store or update the input store in place) (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.32.1",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.117.0",
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.116.0",
-      "title_en": "v0.116.0",
-      "summary": "Publie le 2026-08-07",
-      "summary_en": "Publie le 2026-08-07",
+      "title": "v0.117.1",
+      "title_en": "v0.117.1",
+      "summary": "Publie le 2026-08-13",
+      "summary_en": "Publie le 2026-08-13",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.231",
-      "title_en": "v2.1.231",
+      "title": "v2.1.232",
+      "title_en": "v2.1.232",
       "summary": "Publie le 2026-08-13",
       "summary_en": "Publie le 2026-08-13",
       "changelog_items": [],
@@ -236,7 +236,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -277,6 +277,16 @@
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-sonnet-5",
       "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Aug 14, 2026AnnouncementsHow Claude’s text watermark works",
+      "title_en": "Aug 14, 2026AnnouncementsHow Claude’s text watermark works",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/claude-text-watermark",
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -326,17 +336,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/cognizant-anthropic",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Jul 22, 2026Economic RerechercheA rerecherche agenda for the Economic Futures Rerecherche Fund",
-      "title_en": "Jul 22, 2026Economic ResearchA research agenda for the Economic Futures Research Fund",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/economic-futures-research-fund-agenda",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -451,16 +451,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.231",
-    "Claude Code npm": "v2.1.231",
+    "Claude Code": "v2.1.232",
+    "Claude Code npm": "v2.1.232",
     "SDK Python": "v0.122.0",
     "SDK Python PyPI": "v0.122.0",
-    "SDK TypeScript": "bedrock-sdk: v0.32.1",
+    "SDK TypeScript": "sdk: v0.117.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.226",
+    "GitHub Claude Code": "v2.1.227",
     "GitHub SDK Python": "v0.120.0"
   }
 }
