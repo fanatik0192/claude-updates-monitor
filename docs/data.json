@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-08-14T19:44:11.160506",
+  "last_check": "2026-08-15T19:17:45.364124",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.233",
+      "title_en": "v2.1.233",
+      "summary": "Ce qui a change Ajout de GitLab merge request URL prise en charge to the --worktree flag and the claude agents view (where MRs display as !N) Ajout de an opt-in forward_utilisateur_identity apps gateway parametre on Anthropic upstreams that sends the signed-in utilisateur's identity as headers, so a proxy behind the gateway can attribute spend per us",
+      "summary_en": "What's changed\n\nAdded GitLab merge request URL support to the --worktree flag and the claude agents view (where MRs display as !N)\nAdded an opt-in forward_user_identity apps gateway setting on Anthropic upstreams that sends the signed-in user's identity as headers, so a proxy behind the gateway can attribute spend per us",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "GitLab merge request URL support to the --worktree flag and the claude agents view (where MRs display as !N)"
+        },
+        {
+          "type": "added",
+          "text": "an opt-in forward_user_identity apps gateway setting on Anthropic upstreams that sends the signed-in user's identity as headers, so a proxy behind the gateway can attribute spend per us"
+        },
+        {
+          "type": "changed",
+          "text": "Added GitLab merge request URL support to the --worktree flag and the claude agents view (where MRs display as !N)"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.233",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.232",
@@ -14,7 +37,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.232",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -86,29 +109,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.227",
-      "title_en": "v2.1.227",
-      "summary": "Ce qui a change Correction de fonctionnalite flags being evaluated without the utilisateur's subscription tier when a session started with an expired login jeton, which could wrongly prompt Max plan utilisateurs to activer usage credits for Fable Correction de every Bash commande failing under claude-code-action with allowed_non_write_utilisateurs on GitHub-hosted runners Correction de <cod",
-      "summary_en": "What's changed\n\nFixed feature flags being evaluated without the user's subscription tier when a session started with an expired login token, which could wrongly prompt Max plan users to enable usage credits for Fable\nFixed every Bash command failing under claude-code-action with allowed_non_write_users on GitHub-hosted runners\nFixed <cod",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "feature flags being evaluated without the user's subscription tier when a session started with an expired login token, which could wrongly prompt Max plan users to enable usage credits for Fable"
-        },
-        {
-          "type": "fixed",
-          "text": "every Bash command failing under claude-code-action with allowed_non_write_users on GitHub-hosted runners"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed feature flags being evaluated without the user's subscription tier when a session started with an expired login token, which could wrongly prompt Max plan users to enable usage credits for Fable"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.227",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.122.0",
       "title_en": "v0.122.0",
@@ -166,7 +166,7 @@
       "summary_en": "0.19.4 (2026-08-13)\nFull Changelog: vertex-sdk-v0.19.3...vertex-sdk-v0.19.4\nChores\n\ninternal: empty commit to trigger builds (#1148) (<a href=\"https://g",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.4",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -176,7 +176,7 @@
       "summary_en": "0.19.3 (2026-08-13)\nFull Changelog: vertex-sdk-v0.19.2...vertex-sdk-v0.19.3\nChores\n\ninternal: empty commit to trigger builds (#1148) (<a href=\"https://g",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.3",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -186,7 +186,7 @@
       "summary_en": "0.19.2 (2026-08-13)\nFull Changelog: vertex-sdk-v0.19.1...vertex-sdk-v0.19.2\nBug Fixes\n\nvertex,bedrock: never send ambient first-party credentials to provider endpoints (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.2",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -196,7 +196,7 @@
       "summary_en": "0.117.1 (2026-08-13)\nFull Changelog: sdk-v0.117.0...sdk-v0.117.1\nChores\n\nci: allow manually re-publishing a package to npm from the release workflow (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/af60c1f980557368fb10c370",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.117.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -206,7 +206,7 @@
       "summary_en": "0.117.0 (2026-08-13)\nFull Changelog: sdk-v0.116.0...sdk-v0.117.0\nFeatures\n\napi: add output_behavior to dream creation (create a new memory store or update the input store in place) (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.117.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/sdk",
@@ -216,14 +216,14 @@
       "summary_en": "Publie le 2026-08-13",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.232",
-      "title_en": "v2.1.232",
-      "summary": "Publie le 2026-08-13",
-      "summary_en": "Publie le 2026-08-13",
+      "title": "v2.1.233",
+      "title_en": "v2.1.233",
+      "summary": "Publie le 2026-08-14",
+      "summary_en": "Publie le 2026-08-14",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -286,7 +286,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-text-watermark",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -336,7 +336,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/cognizant-anthropic",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -436,7 +436,7 @@
       "summary_en": "Skills and eval rubrics for K-12 teachers, co-developed with Learning Commons",
       "changelog_items": [],
       "url": "https://github.com/anthropics/k12-teacher-skills",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Nouveau Depot",
@@ -451,8 +451,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.232",
-    "Claude Code npm": "v2.1.232",
+    "Claude Code": "v2.1.233",
+    "Claude Code npm": "v2.1.233",
     "SDK Python": "v0.122.0",
     "SDK Python PyPI": "v0.122.0",
     "SDK TypeScript": "sdk: v0.117.0",
@@ -460,7 +460,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.227",
+    "GitHub Claude Code": "v2.1.228",
     "GitHub SDK Python": "v0.120.0"
   }
 }
