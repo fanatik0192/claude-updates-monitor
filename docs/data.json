@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-08-15T19:17:45.364124",
+  "last_check": "2026-08-16T19:17:37.066398",
   "updates": [
     {
       "source": "Claude Code",
@@ -22,7 +22,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.233",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -116,7 +116,7 @@
       "summary_en": "0.122.0 (2026-08-13)\nFull Changelog: v0.121.0...v0.122.0\nFeatures\n\napi: add output_behavior to dream creation (create a new memory store or update the input store in place) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/852c4bbe4a3a425a",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.122.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -226,7 +226,7 @@
       "summary_en": "Publie le 2026-08-14",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -400,6 +400,26 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "mockturtle",
+      "title_en": "mockturtle",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/mockturtle",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "amulet2",
+      "title_en": "amulet2",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/amulet2",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "zeta-23-lean",
       "title_en": "zeta-23-lean",
       "summary": "",
@@ -426,26 +446,6 @@
       "summary_en": "Rayon: A data parallelism library for Rust",
       "changelog_items": [],
       "url": "https://github.com/anthropics/rayon",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "k12-teacher-skills",
-      "title_en": "k12-teacher-skills",
-      "summary": "Skills and eval rubrics for K-12 teachers, co-developed with Learning Commons",
-      "summary_en": "Skills and eval rubrics for K-12 teachers, co-developed with Learning Commons",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/k12-teacher-skills",
-      "is_new": true
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "code-migration-kit-with-claude-code",
-      "title_en": "code-migration-kit-with-claude-code",
-      "summary": "Prompts, temporairelates, and scripts for running large-scale language migrations with Claude Code",
-      "summary_en": "Prompts, templates, and scripts for running large-scale language migrations with Claude Code",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/code-migration-kit-with-claude-code",
       "is_new": false
     }
   ],
