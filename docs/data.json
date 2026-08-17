@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-08-16T19:17:37.066398",
+  "last_check": "2026-08-17T19:23:35.566905",
   "updates": [
     {
       "source": "Claude Code",
@@ -116,7 +116,7 @@
       "summary_en": "0.122.0 (2026-08-13)\nFull Changelog: v0.121.0...v0.122.0\nFeatures\n\napi: add output_behavior to dream creation (create a new memory store or update the input store in place) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/852c4bbe4a3a425a",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.122.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -146,7 +146,7 @@
       "summary_en": "0.120.1 (2026-07-28)\nFull Changelog: v0.120.0...v0.120.1\nBug Fixes\n\nmcp: pin mcp extra to &lt;2 (#1783) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/fb663713",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.1",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -406,7 +406,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/mockturtle",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -416,7 +416,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/amulet2",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
