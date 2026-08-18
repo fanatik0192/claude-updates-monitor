@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-08-17T19:23:35.566905",
+  "last_check": "2026-08-18T19:23:10.915820",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.234",
+      "title_en": "v2.1.234",
+      "summary": "Ce qui a change Ajout de the optional CLAUDE_CODE_PROJECT_DIR_NAME variable d'environnement: hosts that give each session its own config repertoire can choose a short nom for the per-project transcript repertoire Ajout de the selection:clear keybinding action, so a key can be bound to clear an in-app text selection; also works in the agents view Ad",
+      "summary_en": "What's changed\n\nAdded the optional CLAUDE_CODE_PROJECT_DIR_NAME environment variable: hosts that give each session its own config directory can choose a short name for the per-project transcript directory\nAdded the selection:clear keybinding action, so a key can be bound to clear an in-app text selection; also works in the agents view\nAd",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "the optional CLAUDE_CODE_PROJECT_DIR_NAME environment variable: hosts that give each session its own config directory can choose a short name for the per-project transcript directory"
+        },
+        {
+          "type": "added",
+          "text": "the selection:clear keybinding action, so a key can be bound to clear an in-app text selection; also works in the agents view"
+        },
+        {
+          "type": "changed",
+          "text": "Added the optional CLAUDE_CODE_PROJECT_DIR_NAME environment variable: hosts that give each session its own config directory can choose a short name for the per-project transcript directory"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.234",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.233",
@@ -82,33 +105,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.228",
-      "title_en": "v2.1.228",
-      "summary": "Ce qui a change Correction de interactive sessions that could stop redrawing entirely, while the process kept running, after a rare internal layout erreur Correction de git / Git Bash not being found on Windows when Claude Code is launched from a parent folder of the git installation Correction de /tui reverting the session to an earlier model when /model<",
-      "summary_en": "What's changed\n\nFixed interactive sessions that could stop redrawing entirely, while the process kept running, after a rare internal layout error\nFixed git / Git Bash not being found on Windows when Claude Code is launched from a parent folder of the git installation\nFixed /tui reverting the session to an earlier model when /model<",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "interactive sessions that could stop redrawing entirely, while the process kept running, after a rare internal layout error"
-        },
-        {
-          "type": "fixed",
-          "text": "git / Git Bash not being found on Windows when Claude Code is launched from a parent folder of the git installation"
-        },
-        {
-          "type": "fixed",
-          "text": "/tui reverting the session to an earlier model when /model<"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed interactive sessions that could stop redrawing entirely, while the process kept running, after a rare internal layout error"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.228",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v0.122.0",
       "title_en": "v0.122.0",
@@ -146,7 +142,7 @@
       "summary_en": "0.120.1 (2026-07-28)\nFull Changelog: v0.120.0...v0.120.1\nBug Fixes\n\nmcp: pin mcp extra to &lt;2 (#1783) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/fb663713",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -220,13 +216,13 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.233",
-      "title_en": "v2.1.233",
-      "summary": "Publie le 2026-08-14",
-      "summary_en": "Publie le 2026-08-14",
+      "title": "v2.1.234",
+      "title_en": "v2.1.234",
+      "summary": "Publie le 2026-08-17",
+      "summary_en": "Publie le 2026-08-17",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
@@ -430,6 +426,16 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "oncall-kit",
+      "title_en": "oncall-kit",
+      "summary": "Starter kit for a Claude-assisted on-call: mines your incident history into triage playbooks, sets up through human-approved gates, and runs read-only in your Slack channel — humans deploy every fix.",
+      "summary_en": "Starter kit for a Claude-assisted on-call: mines your incident history into triage playbooks, sets up through human-approved gates, and runs read-only in your Slack channel — humans deploy every fix.",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/oncall-kit",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "cryptography-rerecherche-demo",
       "title_en": "cryptography-research-demo",
       "summary": "",
@@ -437,22 +443,12 @@
       "changelog_items": [],
       "url": "https://github.com/anthropics/cryptography-research-demo",
       "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "rayon",
-      "title_en": "rayon",
-      "summary": "Rayon: A data parallelism library for Rust",
-      "summary_en": "Rayon: A data parallelism library for Rust",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/rayon",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.233",
-    "Claude Code npm": "v2.1.233",
+    "Claude Code": "v2.1.234",
+    "Claude Code npm": "v2.1.234",
     "SDK Python": "v0.122.0",
     "SDK Python PyPI": "v0.122.0",
     "SDK TypeScript": "sdk: v0.117.0",
@@ -460,7 +456,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.228",
+    "GitHub Claude Code": "v2.1.229",
     "GitHub SDK Python": "v0.120.0"
   }
 }
