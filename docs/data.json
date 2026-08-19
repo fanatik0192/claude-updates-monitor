@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-08-18T19:23:10.915820",
+  "last_check": "2026-08-19T19:20:35.079411",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.235",
+      "title_en": "v2.1.235",
+      "summary": "Ce qui a change Ajout de an optional spellcheck parametre that underlines misspelled words in the prompt entree as you taper, using your installed aspell, hunspell, or ispell Correction de whole-prompt-cache invalidation when a language server disconnected or reconnected mid-session Correction de nested markdown list items misaligning",
+      "summary_en": "What's changed\n\nAdded an optional spellcheck setting that underlines misspelled words in the prompt input as you type, using your installed aspell, hunspell, or ispell\nFixed whole-prompt-cache invalidation when a language server disconnected or reconnected mid-session\nFixed nested markdown list items misaligning",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "an optional spellcheck setting that underlines misspelled words in the prompt input as you type, using your installed aspell, hunspell, or ispell"
+        },
+        {
+          "type": "fixed",
+          "text": "whole-prompt-cache invalidation when a language server disconnected or reconnected mid-session"
+        },
+        {
+          "type": "fixed",
+          "text": "nested markdown list items misaligning"
+        },
+        {
+          "type": "changed",
+          "text": "Added an optional spellcheck setting that underlines misspelled words in the prompt input as you type, using your installed aspell, hunspell, or ispell"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.235",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.234",
@@ -22,7 +49,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.234",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -82,27 +109,24 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.229",
-      "title_en": "v2.1.229",
-      "summary": "Ce qui a change Documented claude remote-control --continue for resuming the most recent Remote Control session Ajout de server-supplied Claude Code hook prise en charge de self-hosted runner sessions, matching managed-environment behavior Ajout de SSE keepalive pings to gateway streaming responses during long thinking pauses, preventing idle-timeout disconnects",
-      "summary_en": "What's changed\n\nDocumented claude remote-control --continue for resuming the most recent Remote Control session\nAdded server-supplied Claude Code hook support for self-hosted runner sessions, matching managed-environment behavior\nAdded SSE keepalive pings to gateway streaming responses during long thinking pauses, preventing idle-timeout disconnects ",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "server-supplied Claude Code hook support for self-hosted runner sessions, matching managed-environment behavior"
-        },
-        {
-          "type": "added",
-          "text": "SSE keepalive pings to gateway streaming responses during long thinking pauses, preventing idle-timeout disconnects"
-        },
-        {
-          "type": "changed",
-          "text": "Documented claude remote-control --continue for resuming the most recent Remote Control session"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.229",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.124.0",
+      "title_en": "v0.124.0",
+      "summary": "0.124.0 (2026-08-19) Journal complet: v0.123.0...v0.124.0 Fonctionnalites api: Fichiers and Skills APIs are now GA; add computer use and browser use toolsets (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/\"",
+      "summary_en": "0.124.0 (2026-08-19)\nFull Changelog: v0.123.0...v0.124.0\nFeatures\n\napi: Files and Skills APIs are now GA; add computer use and browser use toolsets (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/9a09e84608944172088acf371e7584133ca19844\"",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.124.0",
+      "is_new": true
+    },
+    {
+      "source": "SDK Python",
+      "title": "v0.123.0",
+      "title_en": "v0.123.0",
+      "summary": "0.123.0 (2026-08-18) Journal complet: v0.122.0...v0.123.0 Fonctionnalites api: additions to fichiers and memory stores () api:</st",
+      "summary_en": "0.123.0 (2026-08-18)\nFull Changelog: v0.122.0...v0.123.0\nFeatures\n\napi: additions to files and memory stores (09ce187)\napi:</st",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.123.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -135,24 +159,34 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.120.1",
-      "title_en": "v0.120.1",
-      "summary": "0.120.1 (2026-07-28) Journal complet: v0.120.0...v0.120.1 Corrections de bugs mcp: pin mcp extra to &lt;2 (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/",
-      "summary_en": "0.120.1 (2026-07-28)\nFull Changelog: v0.120.0...v0.120.1\nBug Fixes\n\nmcp: pin mcp extra to &lt;2 (#1783) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/fb663713",
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.119.0",
+      "title_en": "sdk: v0.119.0",
+      "summary": "0.119.0 (2026-08-19) Journal complet: sdk-v0.118.0...sdk-v0.119.0 Fonctionnalites api: Fichiers and Skills APIs are now GA; add computer use and browser use toolsets (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
+      "summary_en": "0.119.0 (2026-08-19)\nFull Changelog: sdk-v0.118.0...sdk-v0.119.0\nFeatures\n\napi: Files and Skills APIs are now GA; add computer use and browser use toolsets (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/ab41aa32b92a7964b",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.1",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.119.0",
+      "is_new": true
     },
     {
-      "source": "SDK Python",
-      "title": "v0.120.0",
-      "title_en": "v0.120.0",
-      "summary": "0.120.0 (2026-07-24) Journal complet: v0.119.0...v0.120.0 Fonctionnalites api: add claude-opus-5 model () api: add too",
-      "summary_en": "0.120.0 (2026-07-24)\nFull Changelog: v0.119.0...v0.120.0\nFeatures\n\napi: add claude-opus-5 model (bf4e31c)\napi: add too",
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.118.0",
+      "title_en": "sdk: v0.118.0",
+      "summary": "0.118.0 (2026-08-18) Journal complet: sdk-v0.117.1...sdk-v0.118.0 Fonctionnalites api: additions to fichiers and memory stores ()</",
+      "summary_en": "0.118.0 (2026-08-18)\nFull Changelog: sdk-v0.117.1...sdk-v0.118.0\nFeatures\n\napi: additions to files and memory stores (fdc0379)</",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.118.0",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "bedrock-sdk: v0.33.0",
+      "title_en": "bedrock-sdk: v0.33.0",
+      "summary": "0.33.0 (2026-08-19) Journal complet: bedrock-sdk-v0.32.4...bedrock-sdk-v0.33.0 Fonctionnalites api: Fichiers and Skills APIs are now GA; add computer use and browser use toolsets (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscri",
+      "summary_en": "0.33.0 (2026-08-19)\nFull Changelog: bedrock-sdk-v0.32.4...bedrock-sdk-v0.33.0\nFeatures\n\napi: Files and Skills APIs are now GA; add computer use and browser use toolsets (<a href=\"https://github.com/anthropics/anthropic-sdk-typescri",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -175,64 +209,34 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "vertex-sdk: v0.19.2",
-      "title_en": "vertex-sdk: v0.19.2",
-      "summary": "0.19.2 (2026-08-13) Journal complet: vertex-sdk-v0.19.1...vertex-sdk-v0.19.2 Corrections de bugs vertex,bedrock: never send ambient first-party credentials to provider endpoints (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/",
-      "summary_en": "0.19.2 (2026-08-13)\nFull Changelog: vertex-sdk-v0.19.1...vertex-sdk-v0.19.2\nBug Fixes\n\nvertex,bedrock: never send ambient first-party credentials to provider endpoints (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.2",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.117.1",
-      "title_en": "sdk: v0.117.1",
-      "summary": "0.117.1 (2026-08-13) Journal complet: sdk-v0.117.0...sdk-v0.117.1 Maintenance ci: allow manually re-publishing a package to npm from the version workflow (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
-      "summary_en": "0.117.1 (2026-08-13)\nFull Changelog: sdk-v0.117.0...sdk-v0.117.1\nChores\n\nci: allow manually re-publishing a package to npm from the release workflow (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/af60c1f980557368fb10c370",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.117.1",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.117.0",
-      "title_en": "sdk: v0.117.0",
-      "summary": "0.117.0 (2026-08-13) Journal complet: sdk-v0.116.0...sdk-v0.117.0 Fonctionnalites api: add sortie_behavior to dream creation (create a new memory store or update the entree store in place) (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript",
-      "summary_en": "0.117.0 (2026-08-13)\nFull Changelog: sdk-v0.116.0...sdk-v0.117.0\nFeatures\n\napi: add output_behavior to dream creation (create a new memory store or update the input store in place) (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.117.0",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.117.1",
-      "title_en": "v0.117.1",
-      "summary": "Publie le 2026-08-13",
-      "summary_en": "Publie le 2026-08-13",
+      "title": "v0.119.0",
+      "title_en": "v0.119.0",
+      "summary": "Publie le 2026-08-19",
+      "summary_en": "Publie le 2026-08-19",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.234",
-      "title_en": "v2.1.234",
-      "summary": "Publie le 2026-08-17",
-      "summary_en": "Publie le 2026-08-17",
+      "title": "v2.1.235",
+      "title_en": "v2.1.235",
+      "summary": "Publie le 2026-08-18",
+      "summary_en": "Publie le 2026-08-18",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.122.0",
-      "title_en": "v0.122.0",
+      "title": "v0.124.0",
+      "title_en": "v0.124.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -396,6 +400,16 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "xls",
+      "title_en": "xls",
+      "summary": "Dupliquer of google/xls — main tracks upstream; Anthropic changes live on anthropic-* branches",
+      "summary_en": "Fork of google/xls — main tracks upstream; Anthropic changes live on anthropic-* branches",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/xls",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "mockturtle",
       "title_en": "mockturtle",
       "summary": "",
@@ -416,6 +430,16 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "OuvrirROAD-flow-scripts",
+      "title_en": "OpenROAD-flow-scripts",
+      "summary": "Read-only mirror of The-OuvrirROAD-Project/OuvrirROAD-flow-scripts (version tags only). No changes accepted here — contribute upstream.",
+      "summary_en": "Read-only mirror of The-OpenROAD-Project/OpenROAD-flow-scripts (release tags only). No changes accepted here — contribute upstream.",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/OpenROAD-flow-scripts",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "zeta-23-lean",
       "title_en": "zeta-23-lean",
       "summary": "",
@@ -423,40 +447,20 @@
       "changelog_items": [],
       "url": "https://github.com/anthropics/zeta-23-lean",
       "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "oncall-kit",
-      "title_en": "oncall-kit",
-      "summary": "Starter kit for a Claude-assisted on-call: mines your incident history into triage playbooks, sets up through human-approved gates, and runs read-only in your Slack channel — humans deploy every fix.",
-      "summary_en": "Starter kit for a Claude-assisted on-call: mines your incident history into triage playbooks, sets up through human-approved gates, and runs read-only in your Slack channel — humans deploy every fix.",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/oncall-kit",
-      "is_new": true
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "cryptography-rerecherche-demo",
-      "title_en": "cryptography-research-demo",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/cryptography-research-demo",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.234",
-    "Claude Code npm": "v2.1.234",
-    "SDK Python": "v0.122.0",
-    "SDK Python PyPI": "v0.122.0",
-    "SDK TypeScript": "sdk: v0.117.0",
+    "Claude Code": "v2.1.235",
+    "Claude Code npm": "v2.1.235",
+    "SDK Python": "v0.124.0",
+    "SDK Python PyPI": "v0.124.0",
+    "SDK TypeScript": "vertex-sdk: v0.19.3",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.229",
-    "GitHub SDK Python": "v0.120.0"
+    "GitHub Claude Code": "v2.1.231",
+    "GitHub SDK Python": "v0.120.2"
   }
 }
