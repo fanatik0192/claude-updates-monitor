@@ -1,6 +1,52 @@
 {
-  "last_check": "2026-08-19T19:20:35.079411",
+  "last_check": "2026-08-20T19:26:41.563596",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.237",
+      "title_en": "v2.1.237",
+      "summary": "Ce qui a change Correction de prompt caching for sessions using an LLM gateway or personnalise base URL Ajout de a built-in \"Concise\" sortie style: Claude leads with results and skips preamble and narration, while doing the work just as thoroughly. Select it under Sortie style in /config.",
+      "summary_en": "What's changed\n\nFixed prompt caching for sessions using an LLM gateway or custom base URL\nAdded a built-in \"Concise\" output style: Claude leads with results and skips preamble and narration, while doing the work just as thoroughly. Select it under Output style in /config.\n",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "a built-in \"Concise\" output style: Claude leads with results and skips preamble and narration, while doing the work just as thoroughly. Select it under Output style in /config."
+        },
+        {
+          "type": "fixed",
+          "text": "prompt caching for sessions using an LLM gateway or custom base URL"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed prompt caching for sessions using an LLM gateway or custom base URL"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.237",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.236",
+      "title_en": "v2.1.236",
+      "summary": "Ce qui a change Ajout de ANTHROPIC_DEFAULT_MODEL variable d'environnement: sets the model new sessions start on, while a /model pick still overrides it and persists across restarts (unlike ANTHROPIC_MODEL) Ajout de notify_when_idle to cross-session SendMessage: ask another Claude Code session on this machine to send o",
+      "summary_en": "What's changed\n\nAdded ANTHROPIC_DEFAULT_MODEL environment variable: sets the model new sessions start on, while a /model pick still overrides it and persists across restarts (unlike ANTHROPIC_MODEL)\nAdded notify_when_idle to cross-session SendMessage: ask another Claude Code session on this machine to send o",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "ANTHROPIC_DEFAULT_MODEL environment variable: sets the model new sessions start on, while a /model pick still overrides it and persists across restarts (unlike ANTHROPIC_MODEL)"
+        },
+        {
+          "type": "added",
+          "text": "notify_when_idle to cross-session SendMessage: ask another Claude Code session on this machine to send o"
+        },
+        {
+          "type": "changed",
+          "text": "Added ANTHROPIC_DEFAULT_MODEL environment variable: sets the model new sessions start on, while a /model pick still overrides it and persists across restarts (unlike ANTHROPIC_MODEL)"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.236",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.235",
@@ -26,7 +72,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.235",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -75,38 +121,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.232",
-      "title_en": "v2.1.232",
-      "summary": "Ce qui a change Subagent duplication is now on by par defaut: a subagent_taper: \"dupliquer\" subagent inherits the full conversation and prompt cache, and non-teammate agent spawns in interactive sessions now run in the arriere-plan by par defaut Taper @ in the prompt to mention another Claude session by nom; Claude then uses SendMessage to reach that",
-      "summary_en": "What's changed\n\nSubagent forking is now on by default: a subagent_type: \"fork\" subagent inherits the full conversation and prompt cache, and non-teammate agent spawns in interactive sessions now run in the background by default\nType @ in the prompt to mention another Claude session by name; Claude then uses SendMessage to reach that ",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Subagent forking is now on by default: a subagent_type: \"fork\" subagent inherits the full conversation and prompt cache, and non-teammate agent spawns in interactive sessions now run in the background"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.232",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.231",
-      "title_en": "v2.1.231",
-      "summary": "Ce qui a change Correction de MCP OAuth sign-in failing with a redirect URI mismatch for servers that use a pre-registered OAuth client, such as Slack",
-      "summary_en": "What's changed\n\nFixed MCP OAuth sign-in failing with a redirect URI mismatch for servers that use a pre-registered OAuth client, such as Slack\n",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "MCP OAuth sign-in failing with a redirect URI mismatch for servers that use a pre-registered OAuth client, such as Slack"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed MCP OAuth sign-in failing with a redirect URI mismatch for servers that use a pre-registered OAuth client, such as Slack"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.231",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v0.125.0",
+      "title_en": "v0.125.0",
+      "summary": "0.125.0 (2026-08-19) Journal complet: v0.124.0...v0.125.0 Fonctionnalites api: managed agents web recherche config and self hosted sandbox memory (",
+      "summary_en": "0.125.0 (2026-08-19)\nFull Changelog: v0.124.0...v0.125.0\nFeatures\n\napi: managed agents web search config and self hosted sandbox memory (b75afd6",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.125.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -116,7 +138,7 @@
       "summary_en": "0.124.0 (2026-08-19)\nFull Changelog: v0.123.0...v0.124.0\nFeatures\n\napi: Files and Skills APIs are now GA; add computer use and browser use toolsets (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/9a09e84608944172088acf371e7584133ca19844\"",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.124.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -126,7 +148,7 @@
       "summary_en": "0.123.0 (2026-08-18)\nFull Changelog: v0.122.0...v0.123.0\nFeatures\n\napi: additions to files and memory stores (09ce187)\napi:</st",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.123.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -149,14 +171,24 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.120.2",
-      "title_en": "v0.120.2",
-      "summary": "0.120.2 (2026-07-28) Journal complet: v0.120.1...v0.120.2 Corrections de bugs mcp: prise en charge mcp sdk v2 alongside v1 (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/1",
-      "summary_en": "0.120.2 (2026-07-28)\nFull Changelog: v0.120.1...v0.120.2\nBug Fixes\n\nmcp: support mcp sdk v2 alongside v1 (#300) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/1",
+      "source": "SDK TypeScript",
+      "title": "vertex-sdk: v0.19.5",
+      "title_en": "vertex-sdk: v0.19.5",
+      "summary": "0.19.5 (2026-08-19) Journal complet: vertex-sdk-v0.19.4...vertex-sdk-v0.19.5 Maintenance internal: use a single pnpm workspace lockfichier (<a href=\"https",
+      "summary_en": "0.19.5 (2026-08-19)\nFull Changelog: vertex-sdk-v0.19.4...vertex-sdk-v0.19.5\nChores\n\ninternal: use a single pnpm workspace lockfile (#359) (<a href=\"https",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.5",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.120.0",
+      "title_en": "sdk: v0.120.0",
+      "summary": "0.120.0 (2026-08-19) Journal complet: sdk-v0.119.0...sdk-v0.120.0 Fonctionnalites api: managed agents web recherche config and self hosted sandbox memory (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
+      "summary_en": "0.120.0 (2026-08-19)\nFull Changelog: sdk-v0.119.0...sdk-v0.120.0\nFeatures\n\napi: managed agents web search config and self hosted sandbox memory (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/ba8ec50ffe31e10781971a942d542",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.120.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -166,7 +198,7 @@
       "summary_en": "0.119.0 (2026-08-19)\nFull Changelog: sdk-v0.118.0...sdk-v0.119.0\nFeatures\n\napi: Files and Skills APIs are now GA; add computer use and browser use toolsets (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/ab41aa32b92a7964b",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.119.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -176,42 +208,22 @@
       "summary_en": "0.118.0 (2026-08-18)\nFull Changelog: sdk-v0.117.1...sdk-v0.118.0\nFeatures\n\napi: additions to files and memory stores (fdc0379)</",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.118.0",
-      "is_new": true
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "bedrock-sdk: v0.33.0",
-      "title_en": "bedrock-sdk: v0.33.0",
-      "summary": "0.33.0 (2026-08-19) Journal complet: bedrock-sdk-v0.32.4...bedrock-sdk-v0.33.0 Fonctionnalites api: Fichiers and Skills APIs are now GA; add computer use and browser use toolsets (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscri",
-      "summary_en": "0.33.0 (2026-08-19)\nFull Changelog: bedrock-sdk-v0.32.4...bedrock-sdk-v0.33.0\nFeatures\n\napi: Files and Skills APIs are now GA; add computer use and browser use toolsets (<a href=\"https://github.com/anthropics/anthropic-sdk-typescri",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.0",
-      "is_new": true
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "vertex-sdk: v0.19.4",
-      "title_en": "vertex-sdk: v0.19.4",
-      "summary": "0.19.4 (2026-08-13) Journal complet: vertex-sdk-v0.19.3...vertex-sdk-v0.19.4 Maintenance internal: empty commit to trigger builds (<a href=\"https://g",
-      "summary_en": "0.19.4 (2026-08-13)\nFull Changelog: vertex-sdk-v0.19.3...vertex-sdk-v0.19.4\nChores\n\ninternal: empty commit to trigger builds (#1148) (<a href=\"https://g",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.4",
       "is_new": false
     },
     {
       "source": "SDK TypeScript",
-      "title": "vertex-sdk: v0.19.3",
-      "title_en": "vertex-sdk: v0.19.3",
-      "summary": "0.19.3 (2026-08-13) Journal complet: vertex-sdk-v0.19.2...vertex-sdk-v0.19.3 Maintenance internal: empty commit to trigger builds (<a href=\"https://g",
-      "summary_en": "0.19.3 (2026-08-13)\nFull Changelog: vertex-sdk-v0.19.2...vertex-sdk-v0.19.3\nChores\n\ninternal: empty commit to trigger builds (#1148) (<a href=\"https://g",
+      "title": "google-cloud-sdk: v0.0.10",
+      "title_en": "google-cloud-sdk: v0.0.10",
+      "summary": "0.0.10 (2026-08-19) Journal complet: google-cloud-sdk-v0.0.9...google-cloud-sdk-v0.0.10 Maintenance internal: use a single pnpm workspace lockfichier (#35",
+      "summary_en": "0.0.10 (2026-08-19)\nFull Changelog: google-cloud-sdk-v0.0.9...google-cloud-sdk-v0.0.10\nChores\n\ninternal: use a single pnpm workspace lockfile (#35",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.3",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.10",
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.119.0",
-      "title_en": "v0.119.0",
+      "title": "v0.120.0",
+      "title_en": "v0.120.0",
       "summary": "Publie le 2026-08-19",
       "summary_en": "Publie le 2026-08-19",
       "changelog_items": [],
@@ -220,18 +232,18 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.235",
-      "title_en": "v2.1.235",
-      "summary": "Publie le 2026-08-18",
-      "summary_en": "Publie le 2026-08-18",
+      "title": "v2.1.237",
+      "title_en": "v2.1.237",
+      "summary": "Publie le 2026-08-19",
+      "summary_en": "Publie le 2026-08-19",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v0.124.0",
-      "title_en": "v0.124.0",
+      "title": "v0.125.0",
+      "title_en": "v0.125.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
@@ -286,7 +298,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-text-watermark",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -386,7 +398,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/riemann-zeta",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Statut",
@@ -406,7 +418,7 @@
       "summary_en": "Fork of google/xls — main tracks upstream; Anthropic changes live on anthropic-* branches",
       "changelog_items": [],
       "url": "https://github.com/anthropics/xls",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -436,7 +448,7 @@
       "summary_en": "Read-only mirror of The-OpenROAD-Project/OpenROAD-flow-scripts (release tags only). No changes accepted here — contribute upstream.",
       "changelog_items": [],
       "url": "https://github.com/anthropics/OpenROAD-flow-scripts",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -451,16 +463,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.235",
-    "Claude Code npm": "v2.1.235",
-    "SDK Python": "v0.124.0",
-    "SDK Python PyPI": "v0.124.0",
-    "SDK TypeScript": "vertex-sdk: v0.19.3",
+    "Claude Code": "v2.1.237",
+    "Claude Code npm": "v2.1.237",
+    "SDK Python": "v0.125.0",
+    "SDK Python PyPI": "v0.125.0",
+    "SDK TypeScript": "google-cloud-sdk: v0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.231",
-    "GitHub SDK Python": "v0.120.2"
+    "GitHub Claude Code": "v2.1.233",
+    "GitHub SDK Python": "v0.121.0"
   }
 }
