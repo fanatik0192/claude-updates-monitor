@@ -1,6 +1,21 @@
 {
-  "last_check": "2026-08-22T19:18:58.748682",
+  "last_check": "2026-08-23T19:18:56.938601",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.241",
+      "title_en": "v2.1.241",
+      "summary": "Ce qui a change Bug fixes and reliability improvements",
+      "summary_en": "What's changed\n\nBug fixes and reliability improvements\n",
+      "changelog_items": [
+        {
+          "type": "changed",
+          "text": "Bug fixes and reliability improvements"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.241",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.240",
@@ -14,7 +29,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.240",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -37,7 +52,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.239",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -82,29 +97,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.236",
-      "title_en": "v2.1.236",
-      "summary": "Ce qui a change Ajout de ANTHROPIC_DEFAULT_MODEL variable d'environnement: sets the model new sessions start on, while a /model pick still overrides it and persists across restarts (unlike ANTHROPIC_MODEL) Ajout de notify_when_idle to cross-session SendMessage: ask another Claude Code session on this machine to send o",
-      "summary_en": "What's changed\n\nAdded ANTHROPIC_DEFAULT_MODEL environment variable: sets the model new sessions start on, while a /model pick still overrides it and persists across restarts (unlike ANTHROPIC_MODEL)\nAdded notify_when_idle to cross-session SendMessage: ask another Claude Code session on this machine to send o",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "ANTHROPIC_DEFAULT_MODEL environment variable: sets the model new sessions start on, while a /model pick still overrides it and persists across restarts (unlike ANTHROPIC_MODEL)"
-        },
-        {
-          "type": "added",
-          "text": "notify_when_idle to cross-session SendMessage: ask another Claude Code session on this machine to send o"
-        },
-        {
-          "type": "changed",
-          "text": "Added ANTHROPIC_DEFAULT_MODEL environment variable: sets the model new sessions start on, while a /model pick still overrides it and persists across restarts (unlike ANTHROPIC_MODEL)"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.236",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v1.0.0",
       "title_en": "v1.0.0",
@@ -142,7 +134,7 @@
       "summary_en": "0.123.0 (2026-08-18)\nFull Changelog: v0.122.0...v0.123.0\nFeatures\n\napi: additions to files and memory stores (09ce187)\napi:</st",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.123.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -216,8 +208,8 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.240",
-      "title_en": "v2.1.240",
+      "title": "v2.1.241",
+      "title_en": "v2.1.241",
       "summary": "Publie le 2026-08-22",
       "summary_en": "Publie le 2026-08-22",
       "changelog_items": [],
@@ -342,7 +334,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/economic-research",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -352,7 +344,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/interpretability",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -447,8 +439,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.240",
-    "Claude Code npm": "v2.1.240",
+    "Claude Code": "v2.1.241",
+    "Claude Code npm": "v2.1.241",
     "SDK Python": "v1.0.0",
     "SDK Python PyPI": "v1.0.0",
     "SDK TypeScript": "google-cloud-sdk: v0",
@@ -456,7 +448,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.236",
+    "GitHub Claude Code": "v2.1.237",
     "GitHub SDK Python": "v0.122.0"
   }
 }
