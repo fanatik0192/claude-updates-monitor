@@ -1,6 +1,35 @@
 {
-  "last_check": "2026-08-24T19:24:34.900028",
+  "last_check": "2026-08-25T19:27:04.434344",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.245",
+      "title_en": "v2.1.245",
+      "summary": "Ce qui a change Correction de a crash on startup on Linux distributions that ship glibc 2.44 (for example Arch Linux, CachyOS and Fedora Rawmasquer)",
+      "summary_en": "What's changed\n\nFixed a crash on startup on Linux distributions that ship glibc 2.44 (for example Arch Linux, CachyOS and Fedora Rawhide)\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "a crash on startup on Linux distributions that ship glibc 2.44 (for example Arch Linux, CachyOS and Fedora Rawhide)"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed a crash on startup on Linux distributions that ship glibc 2.44 (for example Arch Linux, CachyOS and Fedora Rawhide)"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.245",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.243",
+      "title_en": "v2.1.243",
+      "summary": "chore: Update CHANGELOG.md and feed.xml",
+      "summary_en": "chore: Update CHANGELOG.md and feed.xml",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.243",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.241",
@@ -52,48 +81,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.239",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.238",
-      "title_en": "v2.1.238",
-      "summary": "Ce qui a change Ajout de a keybindingFlavor parametre: set it to \"readline\" to make Ctrl+W in the prompt delete back to the previous whitespace, as in Bash; the par defaut (\"classic\") is unmodification de Plugin marketplaces: headersHelper on a url marketplace or a catalog entry runs a commande that mints HTTP headers (e.g. a short-lived",
-      "summary_en": "What's changed\n\nAdded a keybindingFlavor setting: set it to \"readline\" to make Ctrl+W in the prompt delete back to the previous whitespace, as in Bash; the default (\"classic\") is unchanged\nPlugin marketplaces: headersHelper on a url marketplace or a catalog entry runs a command that mints HTTP headers (e.g. a short-lived",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "a keybindingFlavor setting: set it to \"readline\" to make Ctrl+W in the prompt delete back to the previous whitespace, as in Bash; the default (\"classic\") is unchanged"
-        },
-        {
-          "type": "changed",
-          "text": "Added a keybindingFlavor setting: set it to \"readline\" to make Ctrl+W in the prompt delete back to the previous whitespace, as in Bash; the default (\"classic\") is unchanged"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.238",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.237",
-      "title_en": "v2.1.237",
-      "summary": "Ce qui a change Correction de prompt caching for sessions using an LLM gateway or personnalise base URL Ajout de a built-in \"Concise\" sortie style: Claude leads with results and skips preamble and narration, while doing the work just as thoroughly. Select it under Sortie style in /config.",
-      "summary_en": "What's changed\n\nFixed prompt caching for sessions using an LLM gateway or custom base URL\nAdded a built-in \"Concise\" output style: Claude leads with results and skips preamble and narration, while doing the work just as thoroughly. Select it under Output style in /config.\n",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "a built-in \"Concise\" output style: Claude leads with results and skips preamble and narration, while doing the work just as thoroughly. Select it under Output style in /config."
-        },
-        {
-          "type": "fixed",
-          "text": "prompt caching for sessions using an LLM gateway or custom base URL"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed prompt caching for sessions using an LLM gateway or custom base URL"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.237",
       "is_new": false
     },
     {
@@ -208,13 +195,13 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.241",
-      "title_en": "v2.1.241",
-      "summary": "Publie le 2026-08-22",
-      "summary_en": "Publie le 2026-08-22",
+      "title": "v2.1.245",
+      "title_en": "v2.1.245",
+      "summary": "Publie le 2026-08-25",
+      "summary_en": "Publie le 2026-08-25",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
@@ -268,6 +255,16 @@
     },
     {
       "source": "Blog",
+      "title": "Aug 25, 2026AnnouncementsFunding better evaluations of AI’s impact on wellbeing",
+      "title_en": "Aug 25, 2026AnnouncementsFunding better evaluations of AI’s impact on wellbeing",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/wellbeing-research-grants",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Aug 4, 2026AnnouncementsMariano-Florentino (Tino) Cuéllar to join Anthropic as Chief Global Affairs",
       "title_en": "Aug 4, 2026AnnouncementsMariano-Florentino (Tino) Cuéllar to join Anthropic as Chief Global Affairs ",
       "summary": "",
@@ -308,23 +305,13 @@
     },
     {
       "source": "Blog",
-      "title": "Jul 22, 2026Economic RerechercheA rerecherche agenda for the Economic Futures Rerecherche Fund",
-      "title_en": "Jul 22, 2026Economic ResearchA research agenda for the Economic Futures Research Fund",
+      "title": "Jul 22, 2026EconomicsA rerecherche agenda for the Economic Futures Rerecherche Fund",
+      "title_en": "Jul 22, 2026EconomicsA research agenda for the Economic Futures Research Fund",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/economic-futures-research-fund-agenda",
       "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Jul 22, 2026ProductAsk Claude about the Anthropic Economic Index",
-      "title_en": "Jul 22, 2026ProductAsk Claude about the Anthropic Economic Index",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/anthropic-economic-index-connector",
-      "is_new": true
     },
     {
       "source": "Recherche",
@@ -344,7 +331,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/societal-impacts",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -374,7 +361,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Statut",
@@ -404,7 +391,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/mockturtle",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -439,8 +426,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.241",
-    "Claude Code npm": "v2.1.241",
+    "Claude Code": "v2.1.245",
+    "Claude Code npm": "v2.1.245",
     "SDK Python": "v1.0.0",
     "SDK Python PyPI": "v1.0.0",
     "SDK TypeScript": "google-cloud-sdk: v0",
@@ -448,7 +435,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.237",
+    "GitHub Claude Code": "v2.1.239",
     "GitHub SDK Python": "v0.122.0"
   }
 }
