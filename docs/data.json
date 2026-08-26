@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-08-25T19:27:04.434344",
+  "last_check": "2026-08-26T21:36:45.176848",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.246",
+      "title_en": "v2.1.246",
+      "summary": "Ce qui a change Ajout de a startup avertissement for Bash allow regles with a wildcard before the subcommande (e.g. Bash(git * main)), since they also match options inserted before the subcommande Ajout de an Auto mode tab to /permissions for viewing and editing auto mode classifier regles Ajout de the turn's completion time to the end-of-turn duration lin",
+      "summary_en": "What's changed\n\nAdded a startup warning for Bash allow rules with a wildcard before the subcommand (e.g. Bash(git * main)), since they also match options inserted before the subcommand\nAdded an Auto mode tab to /permissions for viewing and editing auto mode classifier rules\nAdded the turn's completion time to the end-of-turn duration lin",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "a startup warning for Bash allow rules with a wildcard before the subcommand (e.g. Bash(git * main)), since they also match options inserted before the subcommand"
+        },
+        {
+          "type": "added",
+          "text": "an Auto mode tab to /permissions for viewing and editing auto mode classifier rules"
+        },
+        {
+          "type": "added",
+          "text": "the turn's completion time to the end-of-turn duration lin"
+        },
+        {
+          "type": "changed",
+          "text": "Added a startup warning for Bash allow rules with a wildcard before the subcommand (e.g. Bash(git * main)), since they also match options inserted before the subcommand"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.246",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.245",
@@ -18,7 +45,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.245",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -28,7 +55,7 @@
       "summary_en": "chore: Update CHANGELOG.md and feed.xml",
       "changelog_items": [],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.243",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -61,27 +88,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.239",
-      "title_en": "v2.1.239",
-      "summary": "Ce qui a change Cost estimates (/cost, status line, --max-budget-usd) now include the 1.1× US-only-inference premium for data-residency workspaces Ajout de the one-time fullscreen renderer offer on Bedrock, Vertex, Foundry and other previously excluded setups; new installs there now start in fullscreen Ajout de /claude-api upgrade",
-      "summary_en": "What's changed\n\nCost estimates (/cost, status line, --max-budget-usd) now include the 1.1× US-only-inference premium for data-residency workspaces\nAdded the one-time fullscreen renderer offer on Bedrock, Vertex, Foundry and other previously excluded setups; new installs there now start in fullscreen\nAdded /claude-api upgrade",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "the one-time fullscreen renderer offer on Bedrock, Vertex, Foundry and other previously excluded setups; new installs there now start in fullscreen"
-        },
-        {
-          "type": "added",
-          "text": "/claude-api upgrade"
-        },
-        {
-          "type": "changed",
-          "text": "Cost estimates (/cost, status line, --max-budget-usd) now include the 1.1× US-only-inference premium for data-residency workspaces"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.239",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v1.1.0",
+      "title_en": "v1.1.0",
+      "summary": "1.1.0 (2026-08-26) Journal complet: v1.0.0...v1.1.0 Fonctionnalites api: add updates thinking display mode (beta) () a",
+      "summary_en": "1.1.0 (2026-08-26)\nFull Changelog: v1.0.0...v1.1.0\nFeatures\n\napi: add updates thinking display mode (beta) (eb4a73f)\na",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.1.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -101,7 +115,7 @@
       "summary_en": "0.125.0 (2026-08-19)\nFull Changelog: v0.124.0...v0.125.0\nFeatures\n\napi: managed agents web search config and self hosted sandbox memory (b75afd6",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.125.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -124,14 +138,44 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.122.0",
-      "title_en": "v0.122.0",
-      "summary": "0.122.0 (2026-08-13) Journal complet: v0.121.0...v0.122.0 Fonctionnalites api: add sortie_behavior to dream creation (create a new memory store or update the entree store in place) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/",
-      "summary_en": "0.122.0 (2026-08-13)\nFull Changelog: v0.121.0...v0.122.0\nFeatures\n\napi: add output_behavior to dream creation (create a new memory store or update the input store in place) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/852c4bbe4a3a425a",
+      "source": "SDK TypeScript",
+      "title": "vertex-sdk: v0.19.6",
+      "title_en": "vertex-sdk: v0.19.6",
+      "summary": "0.19.6 (2026-08-26) Journal complet: vertex-sdk-v0.19.5...vertex-sdk-v0.19.6 Maintenance examples: remove redundant main().catch boilerplate (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
+      "summary_en": "0.19.6 (2026-08-26)\nFull Changelog: vertex-sdk-v0.19.5...vertex-sdk-v0.19.6\nChores\n\nexamples: remove redundant main().catch boilerplate (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/154ace7ea8ccd66d59b3a7d2c",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.122.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.6",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.121.0",
+      "title_en": "sdk: v0.121.0",
+      "summary": "0.121.0 (2026-08-26) Journal complet: sdk-v0.120.0...sdk-v0.121.0 Fonctionnalites api: add updates thinking display mode (beta) (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
+      "summary_en": "0.121.0 (2026-08-26)\nFull Changelog: sdk-v0.120.0...sdk-v0.121.0\nFeatures\n\napi: add updates thinking display mode (beta) (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/22274eaf968edc62a8b9e1f39a1913f5e04b2ad",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.121.0",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "google-cloud-sdk: v0.0.11",
+      "title_en": "google-cloud-sdk: v0.0.11",
+      "summary": "0.0.11 (2026-08-26) Journal complet: google-cloud-sdk-v0.0.10...google-cloud-sdk-v0.0.11 Maintenance examples: remove redundant main().catch boilerplate (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/1",
+      "summary_en": "0.0.11 (2026-08-26)\nFull Changelog: google-cloud-sdk-v0.0.10...google-cloud-sdk-v0.0.11\nChores\n\nexamples: remove redundant main().catch boilerplate (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/1",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.11",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "bedrock-sdk: v0.33.2",
+      "title_en": "bedrock-sdk: v0.33.2",
+      "summary": "0.33.2 (2026-08-26) Journal complet: bedrock-sdk-v0.33.1...bedrock-sdk-v0.33.2 Corrections de bugs bedrock: never send ambient first-party credentials to the Mantle endpoint (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/is",
+      "summary_en": "0.33.2 (2026-08-26)\nFull Changelog: bedrock-sdk-v0.33.1...bedrock-sdk-v0.33.2\nBug Fixes\n\nbedrock: never send ambient first-party credentials to the Mantle endpoint (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/is",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.2",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -144,59 +188,19 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.120.0",
-      "title_en": "sdk: v0.120.0",
-      "summary": "0.120.0 (2026-08-19) Journal complet: sdk-v0.119.0...sdk-v0.120.0 Fonctionnalites api: managed agents web recherche config and self hosted sandbox memory (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
-      "summary_en": "0.120.0 (2026-08-19)\nFull Changelog: sdk-v0.119.0...sdk-v0.120.0\nFeatures\n\napi: managed agents web search config and self hosted sandbox memory (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/ba8ec50ffe31e10781971a942d542",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.120.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.119.0",
-      "title_en": "sdk: v0.119.0",
-      "summary": "0.119.0 (2026-08-19) Journal complet: sdk-v0.118.0...sdk-v0.119.0 Fonctionnalites api: Fichiers and Skills APIs are now GA; add computer use and browser use toolsets (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
-      "summary_en": "0.119.0 (2026-08-19)\nFull Changelog: sdk-v0.118.0...sdk-v0.119.0\nFeatures\n\napi: Files and Skills APIs are now GA; add computer use and browser use toolsets (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/ab41aa32b92a7964b",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.119.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "sdk: v0.118.0",
-      "title_en": "sdk: v0.118.0",
-      "summary": "0.118.0 (2026-08-18) Journal complet: sdk-v0.117.1...sdk-v0.118.0 Fonctionnalites api: additions to fichiers and memory stores ()</",
-      "summary_en": "0.118.0 (2026-08-18)\nFull Changelog: sdk-v0.117.1...sdk-v0.118.0\nFeatures\n\napi: additions to files and memory stores (fdc0379)</",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.118.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "google-cloud-sdk: v0.0.10",
-      "title_en": "google-cloud-sdk: v0.0.10",
-      "summary": "0.0.10 (2026-08-19) Journal complet: google-cloud-sdk-v0.0.9...google-cloud-sdk-v0.0.10 Maintenance internal: use a single pnpm workspace lockfichier (#35",
-      "summary_en": "0.0.10 (2026-08-19)\nFull Changelog: google-cloud-sdk-v0.0.9...google-cloud-sdk-v0.0.10\nChores\n\ninternal: use a single pnpm workspace lockfile (#35",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.10",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.120.0",
-      "title_en": "v0.120.0",
-      "summary": "Publie le 2026-08-19",
-      "summary_en": "Publie le 2026-08-19",
+      "title": "v0.121.0",
+      "title_en": "v0.121.0",
+      "summary": "Publie le 2026-08-26",
+      "summary_en": "Publie le 2026-08-26",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.245",
-      "title_en": "v2.1.245",
+      "title": "v2.1.246",
+      "title_en": "v2.1.246",
       "summary": "Publie le 2026-08-25",
       "summary_en": "Publie le 2026-08-25",
       "changelog_items": [],
@@ -205,13 +209,13 @@
     },
     {
       "source": "PyPI anthropic",
-      "title": "v1.0.0",
-      "title_en": "v1.0.0",
+      "title": "v1.1.0",
+      "title_en": "v1.1.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -261,7 +265,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/wellbeing-research-grants",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -331,7 +335,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/societal-impacts",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -411,7 +415,7 @@
       "summary_en": "Read-only mirror of The-OpenROAD-Project/OpenROAD-flow-scripts (release tags only). No changes accepted here — contribute upstream.",
       "changelog_items": [],
       "url": "https://github.com/anthropics/OpenROAD-flow-scripts",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Nouveau Depot",
@@ -426,16 +430,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.245",
-    "Claude Code npm": "v2.1.245",
-    "SDK Python": "v1.0.0",
-    "SDK Python PyPI": "v1.0.0",
-    "SDK TypeScript": "google-cloud-sdk: v0",
+    "Claude Code": "v2.1.246",
+    "Claude Code npm": "v2.1.246",
+    "SDK Python": "v1.1.0",
+    "SDK Python PyPI": "v1.1.0",
+    "SDK TypeScript": "vertex-sdk: v0.19.5",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.239",
-    "GitHub SDK Python": "v0.122.0"
+    "GitHub Claude Code": "v2.1.240",
+    "GitHub SDK Python": "v0.123.0"
   }
 }
