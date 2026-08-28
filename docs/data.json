@@ -1,6 +1,67 @@
 {
-  "last_check": "2026-08-26T21:36:45.176848",
+  "last_check": "2026-08-28T02:24:31.483435",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.250",
+      "title_en": "v2.1.250",
+      "summary": "Ce qui a change Bug fixes and reliability improvements",
+      "summary_en": "What's changed\n\nBug fixes and reliability improvements\n",
+      "changelog_items": [
+        {
+          "type": "changed",
+          "text": "Bug fixes and reliability improvements"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.250",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.248",
+      "title_en": "v2.1.248",
+      "summary": "Ce qui a change Ajout de --restricted (or CLAUDE_CODE_RESTRICTED=1): removes the built-in tools that run commandes or code and WebFetch (unless nomd in --tools), keeps fichier tools inside the working repertoire, refuses bypassPermissions, and ignores utilisateur, project and local parametres fichiers Ajout de experimental.",
+      "summary_en": "What's changed\n\nAdded --restricted (or CLAUDE_CODE_RESTRICTED=1): removes the built-in tools that run commands or code and WebFetch (unless named in --tools), keeps file tools inside the working directory, refuses bypassPermissions, and ignores user, project and local settings files\nAdded experimental.",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "--restricted (or CLAUDE_CODE_RESTRICTED=1): removes the built-in tools that run commands or code and WebFetch (unless named in --tools), keeps file tools inside the working directory, refuses bypassPe"
+        },
+        {
+          "type": "added",
+          "text": "experimental."
+        },
+        {
+          "type": "changed",
+          "text": "Added --restricted (or CLAUDE_CODE_RESTRICTED=1): removes the built-in tools that run commands or code and WebFetch (unless named in --tools), keeps file tools inside the working directory, refuses by"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.248",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.247",
+      "title_en": "v2.1.247",
+      "summary": "Ce qui a change Ajout de the SendFeedback tool: when something goes wrong in a session, Claude can draft a feedback report for you to review and send from /feedback (turn off with the feedbackDrafts parametre) Ajout de {id, text, cooldownSessions, priority} entries, tipsFichier, and label to spinnerT",
+      "summary_en": "What's changed\n\nAdded the SendFeedback tool: when something goes wrong in a session, Claude can draft a feedback report for you to review and send from /feedback (turn off with the feedbackDrafts setting)\nAdded {id, text, cooldownSessions, priority} entries, tipsFile, and label to spinnerT",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "the SendFeedback tool: when something goes wrong in a session, Claude can draft a feedback report for you to review and send from /feedback (turn off with the feedbackDrafts setting)"
+        },
+        {
+          "type": "added",
+          "text": "{id, text, cooldownSessions, priority} entries, tipsFile, and label to spinnerT"
+        },
+        {
+          "type": "changed",
+          "text": "Added the SendFeedback tool: when something goes wrong in a session, Claude can draft a feedback report for you to review and send from /feedback (turn off with the feedbackDrafts setting)"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.247",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.246",
@@ -26,7 +87,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.246",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -48,44 +109,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.243",
-      "title_en": "v2.1.243",
-      "summary": "chore: Update CHANGELOG.md and feed.xml",
-      "summary_en": "chore: Update CHANGELOG.md and feed.xml",
+      "source": "SDK Python",
+      "title": "v1.2.0",
+      "title_en": "v1.2.0",
+      "summary": "1.2.0 (2026-08-27) Journal complet: v1.1.0...v1.2.0 Fonctionnalites api: beta fichiers/skills nomspaces use GA shapes; drop dated beta header pins ()<",
+      "summary_en": "1.2.0 (2026-08-27)\nFull Changelog: v1.1.0...v1.2.0\nFeatures\n\napi: beta files/skills namespaces use GA shapes; drop dated beta header pins (9df4565)<",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.243",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.241",
-      "title_en": "v2.1.241",
-      "summary": "Ce qui a change Bug fixes and reliability improvements",
-      "summary_en": "What's changed\n\nBug fixes and reliability improvements\n",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Bug fixes and reliability improvements"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.241",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.240",
-      "title_en": "v2.1.240",
-      "summary": "Ce qui a change Bug fixes and reliability improvements",
-      "summary_en": "What's changed\n\nBug fixes and reliability improvements\n",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Bug fixes and reliability improvements"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.240",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.2.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -95,7 +126,7 @@
       "summary_en": "1.1.0 (2026-08-26)\nFull Changelog: v1.0.0...v1.1.0\nFeatures\n\napi: add updates thinking display mode (beta) (eb4a73f)\na",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.1.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -115,7 +146,7 @@
       "summary_en": "0.125.0 (2026-08-19)\nFull Changelog: v0.124.0...v0.125.0\nFeatures\n\napi: managed agents web search config and self hosted sandbox memory (b75afd6",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.125.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -128,14 +159,34 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v0.123.0",
-      "title_en": "v0.123.0",
-      "summary": "0.123.0 (2026-08-18) Journal complet: v0.122.0...v0.123.0 Fonctionnalites api: additions to fichiers and memory stores () api:</st",
-      "summary_en": "0.123.0 (2026-08-18)\nFull Changelog: v0.122.0...v0.123.0\nFeatures\n\napi: additions to files and memory stores (09ce187)\napi:</st",
+      "source": "SDK TypeScript",
+      "title": "sdk: v0.122.0",
+      "title_en": "sdk: v0.122.0",
+      "summary": "0.122.0 (2026-08-27) Journal complet: sdk-v0.121.0...sdk-v0.122.0 Fonctionnalites api: beta fichiers/skills nomspaces use GA shapes; drop dated beta header pins (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
+      "summary_en": "0.122.0 (2026-08-27)\nFull Changelog: sdk-v0.121.0...sdk-v0.122.0\nFeatures\n\napi: beta files/skills namespaces use GA shapes; drop dated beta header pins (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/45d693a66bc7fb1af66d9",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.123.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.122.0",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "bedrock-sdk: v0.33.3",
+      "title_en": "bedrock-sdk: v0.33.3",
+      "summary": "0.33.3 (2026-08-27) Journal complet: bedrock-sdk-v0.33.2...bedrock-sdk-v0.33.3 Corrections de bugs aws,bedrock: prefer env credentials over AWS_PROFILE (<",
+      "summary_en": "0.33.3 (2026-08-27)\nFull Changelog: bedrock-sdk-v0.33.2...bedrock-sdk-v0.33.3\nBug Fixes\n\naws,bedrock: prefer env credentials over AWS_PROFILE (#436) (<",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.3",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "aws-sdk: v0.6.6",
+      "title_en": "aws-sdk: v0.6.6",
+      "summary": "0.6.6 (2026-08-27) Journal complet: aws-sdk-v0.6.5...aws-sdk-v0.6.6 Corrections de bugs aws,bedrock: prefer env credentials over AWS_PROFILE (<a href=\"https://githu",
+      "summary_en": "0.6.6 (2026-08-27)\nFull Changelog: aws-sdk-v0.6.5...aws-sdk-v0.6.6\nBug Fixes\n\naws,bedrock: prefer env credentials over AWS_PROFILE (#436) (<a href=\"https://githu",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.6.6",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -145,7 +196,7 @@
       "summary_en": "0.19.6 (2026-08-26)\nFull Changelog: vertex-sdk-v0.19.5...vertex-sdk-v0.19.6\nChores\n\nexamples: remove redundant main().catch boilerplate (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/154ace7ea8ccd66d59b3a7d2c",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.6",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -155,62 +206,32 @@
       "summary_en": "0.121.0 (2026-08-26)\nFull Changelog: sdk-v0.120.0...sdk-v0.121.0\nFeatures\n\napi: add updates thinking display mode (beta) (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/22274eaf968edc62a8b9e1f39a1913f5e04b2ad",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.121.0",
-      "is_new": true
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "google-cloud-sdk: v0.0.11",
-      "title_en": "google-cloud-sdk: v0.0.11",
-      "summary": "0.0.11 (2026-08-26) Journal complet: google-cloud-sdk-v0.0.10...google-cloud-sdk-v0.0.11 Maintenance examples: remove redundant main().catch boilerplate (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/1",
-      "summary_en": "0.0.11 (2026-08-26)\nFull Changelog: google-cloud-sdk-v0.0.10...google-cloud-sdk-v0.0.11\nChores\n\nexamples: remove redundant main().catch boilerplate (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/1",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.11",
-      "is_new": true
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "bedrock-sdk: v0.33.2",
-      "title_en": "bedrock-sdk: v0.33.2",
-      "summary": "0.33.2 (2026-08-26) Journal complet: bedrock-sdk-v0.33.1...bedrock-sdk-v0.33.2 Corrections de bugs bedrock: never send ambient first-party credentials to the Mantle endpoint (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/is",
-      "summary_en": "0.33.2 (2026-08-26)\nFull Changelog: bedrock-sdk-v0.33.1...bedrock-sdk-v0.33.2\nBug Fixes\n\nbedrock: never send ambient first-party credentials to the Mantle endpoint (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/is",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.2",
-      "is_new": true
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "vertex-sdk: v0.19.5",
-      "title_en": "vertex-sdk: v0.19.5",
-      "summary": "0.19.5 (2026-08-19) Journal complet: vertex-sdk-v0.19.4...vertex-sdk-v0.19.5 Maintenance internal: use a single pnpm workspace lockfichier (<a href=\"https",
-      "summary_en": "0.19.5 (2026-08-19)\nFull Changelog: vertex-sdk-v0.19.4...vertex-sdk-v0.19.5\nChores\n\ninternal: use a single pnpm workspace lockfile (#359) (<a href=\"https",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.5",
       "is_new": false
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.121.0",
-      "title_en": "v0.121.0",
-      "summary": "Publie le 2026-08-26",
-      "summary_en": "Publie le 2026-08-26",
+      "title": "v0.122.0",
+      "title_en": "v0.122.0",
+      "summary": "Publie le 2026-08-27",
+      "summary_en": "Publie le 2026-08-27",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
       "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.246",
-      "title_en": "v2.1.246",
-      "summary": "Publie le 2026-08-25",
-      "summary_en": "Publie le 2026-08-25",
+      "title": "v2.1.250",
+      "title_en": "v2.1.250",
+      "summary": "Publie le 2026-08-27",
+      "summary_en": "Publie le 2026-08-27",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v1.1.0",
-      "title_en": "v1.1.0",
+      "title": "v1.2.0",
+      "title_en": "v1.2.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
@@ -219,13 +240,13 @@
     },
     {
       "source": "Blog",
-      "title": "Introducing Claude Opus 5ProductJul 24, 2026Opus 5 is a step change improvement for the Opus tier po",
-      "title_en": "Introducing Claude Opus 5ProductJul 24, 2026Opus 5 is a step change improvement for the Opus tier po",
+      "title": "Previewing the Model Hardware StandardAnnouncementsAug 27, 2026We’re ouvriring a rerecherche preview of t",
+      "title_en": "Previewing the Model Hardware StandardAnnouncementsAug 27, 2026We’re opening a research preview of t",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-opus-5",
-      "is_new": false
+      "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -239,12 +260,12 @@
     },
     {
       "source": "Blog",
-      "title": "ProductAug 7, 2026Improving Fable 5's biology safeguardsWe’re making updates to Claude Fable 5’s bio",
-      "title_en": "ProductAug 7, 2026Improving Fable 5's biology safeguardsWe’re making updates to Claude Fable 5’s bio",
+      "title": "ProductJul 24, 2026Introducing Claude Opus 5Opus 5 is a step change improvement for the Opus tier po",
+      "title_en": "ProductJul 24, 2026Introducing Claude Opus 5Opus 5 is a step change improvement for the Opus tier po",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
+      "url": "https://www.anthropic.com/news/claude-opus-5",
       "is_new": false
     },
     {
@@ -259,12 +280,32 @@
     },
     {
       "source": "Blog",
+      "title": "Aug 27, 2026AnnouncementsExpanding our prise en charge de scientists",
+      "title_en": "Aug 27, 2026AnnouncementsExpanding our support for scientists",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/expanding-support-for-scientists",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Aug 25, 2026AnnouncementsFunding better evaluations of AI’s impact on wellbeing",
       "title_en": "Aug 25, 2026AnnouncementsFunding better evaluations of AI’s impact on wellbeing",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/wellbeing-research-grants",
+      "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Aug 7, 2026ProductImproving Fable 5's biology safeguards",
+      "title_en": "Aug 7, 2026ProductImproving Fable 5's biology safeguards",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
       "is_new": false
     },
     {
@@ -295,26 +336,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/position-open-weights-models",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Jul 27, 2026AnnouncementsCognizant and Anthropic expand their partnership to bring Claude to enterpr",
-      "title_en": "Jul 27, 2026AnnouncementsCognizant and Anthropic expand their partnership to bring Claude to enterpr",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/cognizant-anthropic",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Jul 22, 2026EconomicsA rerecherche agenda for the Economic Futures Rerecherche Fund",
-      "title_en": "Jul 22, 2026EconomicsA research agenda for the Economic Futures Research Fund",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/economic-futures-research-fund-agenda",
       "is_new": false
     },
     {
@@ -415,31 +436,31 @@
       "summary_en": "Read-only mirror of The-OpenROAD-Project/OpenROAD-flow-scripts (release tags only). No changes accepted here — contribute upstream.",
       "changelog_items": [],
       "url": "https://github.com/anthropics/OpenROAD-flow-scripts",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
-      "title": "zeta-23-lean",
-      "title_en": "zeta-23-lean",
+      "title": "formal-math",
+      "title_en": "formal-math",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/zeta-23-lean",
-      "is_new": false
+      "url": "https://github.com/anthropics/formal-math",
+      "is_new": true
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.246",
-    "Claude Code npm": "v2.1.246",
-    "SDK Python": "v1.1.0",
-    "SDK Python PyPI": "v1.1.0",
-    "SDK TypeScript": "vertex-sdk: v0.19.5",
+    "Claude Code": "v2.1.250",
+    "Claude Code npm": "v2.1.250",
+    "SDK Python": "v1.2.0",
+    "SDK Python PyPI": "v1.2.0",
+    "SDK TypeScript": "sdk: v0.121.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.240",
-    "GitHub SDK Python": "v0.123.0"
+    "GitHub Claude Code": "v2.1.245",
+    "GitHub SDK Python": "v0.124.0"
   }
 }
