@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-08-29T01:58:04.950940",
+  "last_check": "2026-08-29T21:29:12.068938",
   "updates": [
     {
       "source": "Claude Code",
@@ -22,7 +22,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.251",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -190,7 +190,7 @@
       "summary_en": "0.6.6 (2026-08-27)\nFull Changelog: aws-sdk-v0.6.5...aws-sdk-v0.6.6\nBug Fixes\n\naws,bedrock: prefer env credentials over AWS_PROFILE (#436) (<a href=\"https://githu",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.6.6",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -230,7 +230,7 @@
       "summary_en": "Publie le 2026-08-28",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -300,7 +300,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/wellbeing-research-grants",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -420,7 +420,7 @@
       "summary_en": "Sample customer-side gateway for Claude Tag identity federation. Sample code; not maintained.",
       "changelog_items": [],
       "url": "https://github.com/anthropics/claude-tag-wif-gateway-sample",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
