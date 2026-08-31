@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-08-30T21:49:14.919120",
+  "last_check": "2026-08-31T23:05:13.201527",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.252",
+      "title_en": "v2.1.252",
+      "summary": "Ce qui a change Correction de Bash commandes failing with \"task sortie swap refused (tasks dir moved or linked)\" on some Macs Correction de \"always allow\" not saving in a project that has no .claude/parametres.local.json yet Correction de Remote Control sessions hosted by Claude Desktop or VS Code stalling for minutes after a tool finished when the connection to claude.ai was degraded",
+      "summary_en": "What's changed\n\nFixed Bash commands failing with \"task output swap refused (tasks dir moved or linked)\" on some Macs\nFixed \"always allow\" not saving in a project that has no .claude/settings.local.json yet\nFixed Remote Control sessions hosted by Claude Desktop or VS Code stalling for minutes after a tool finished when the connection to claude.ai was degraded",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "Bash commands failing with \"task output swap refused (tasks dir moved or linked)\" on some Macs"
+        },
+        {
+          "type": "fixed",
+          "text": "\"always allow\" not saving in a project that has no .claude/settings.local.json yet"
+        },
+        {
+          "type": "fixed",
+          "text": "Remote Control sessions hosted by Claude Desktop or VS Code stalling for minutes after a tool finished when the connection to claude.ai was degraded"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed Bash commands failing with \"task output swap refused (tasks dir moved or linked)\" on some Macs"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.252",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.251",
@@ -83,33 +110,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.247",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.246",
-      "title_en": "v2.1.246",
-      "summary": "Ce qui a change Ajout de a startup avertissement for Bash allow regles with a wildcard before the subcommande (e.g. Bash(git * main)), since they also match options inserted before the subcommande Ajout de an Auto mode tab to /permissions for viewing and editing auto mode classifier regles Ajout de the turn's completion time to the end-of-turn duration lin",
-      "summary_en": "What's changed\n\nAdded a startup warning for Bash allow rules with a wildcard before the subcommand (e.g. Bash(git * main)), since they also match options inserted before the subcommand\nAdded an Auto mode tab to /permissions for viewing and editing auto mode classifier rules\nAdded the turn's completion time to the end-of-turn duration lin",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "a startup warning for Bash allow rules with a wildcard before the subcommand (e.g. Bash(git * main)), since they also match options inserted before the subcommand"
-        },
-        {
-          "type": "added",
-          "text": "an Auto mode tab to /permissions for viewing and editing auto mode classifier rules"
-        },
-        {
-          "type": "added",
-          "text": "the turn's completion time to the end-of-turn duration lin"
-        },
-        {
-          "type": "changed",
-          "text": "Added a startup warning for Bash allow rules with a wildcard before the subcommand (e.g. Bash(git * main)), since they also match options inserted before the subcommand"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.246",
       "is_new": false
     },
     {
@@ -224,13 +224,13 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.251",
-      "title_en": "v2.1.251",
-      "summary": "Publie le 2026-08-28",
-      "summary_en": "Publie le 2026-08-28",
+      "title": "v2.1.252",
+      "title_en": "v2.1.252",
+      "summary": "Publie le 2026-08-31",
+      "summary_en": "Publie le 2026-08-31",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
@@ -284,6 +284,16 @@
     },
     {
       "source": "Blog",
+      "title": "Aug 31, 2026Improving our alignment and securite efforts",
+      "title_en": "Aug 31, 2026Improving our alignment and security efforts",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Aug 27, 2026AnnouncementsExpanding our prise en charge de scientists",
       "title_en": "Aug 27, 2026AnnouncementsExpanding our support for scientists",
       "summary": "",
@@ -333,16 +343,6 @@
       "is_new": false
     },
     {
-      "source": "Blog",
-      "title": "Jul 27, 2026AnnouncementsOur position on ouvrir-weights models",
-      "title_en": "Jul 27, 2026AnnouncementsOur position on open-weights models",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/position-open-weights-models",
-      "is_new": false
-    },
-    {
       "source": "Recherche",
       "title": "Interpretability",
       "title_en": "Interpretability",
@@ -380,7 +380,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/riemann-zeta",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -455,8 +455,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.251",
-    "Claude Code npm": "v2.1.251",
+    "Claude Code": "v2.1.252",
+    "Claude Code npm": "v2.1.252",
     "SDK Python": "v1.2.0",
     "SDK Python PyPI": "v1.2.0",
     "SDK TypeScript": "sdk: v0.121.0",
@@ -464,7 +464,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.246",
+    "GitHub Claude Code": "v2.1.247",
     "GitHub SDK Python": "v0.124.0"
   }
 }
