@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-09-02T21:32:21.135454",
+  "last_check": "2026-09-03T21:32:37.026427",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.259",
+      "title_en": "v2.1.259",
+      "summary": "Ce qui a change Ajout de managedMcpServers managed parametre: organizations can provide HTTP/SSE MCP servers to every utilisateur (same entry shape as .mcp.json); entries that nom a commande to run are skipped Ajout de --permission-prompts none for unattended headless hosts: anything that would prompt is denied automatically while the active permis",
+      "summary_en": "What's changed\n\nAdded managedMcpServers managed setting: organizations can provide HTTP/SSE MCP servers to every user (same entry shape as .mcp.json); entries that name a command to run are skipped\nAdded --permission-prompts none for unattended headless hosts: anything that would prompt is denied automatically while the active permis",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "managedMcpServers managed setting: organizations can provide HTTP/SSE MCP servers to every user (same entry shape as .mcp.json); entries that name a command to run are skipped"
+        },
+        {
+          "type": "added",
+          "text": "--permission-prompts none for unattended headless hosts: anything that would prompt is denied automatically while the active permis"
+        },
+        {
+          "type": "changed",
+          "text": "Added managedMcpServers managed setting: organizations can provide HTTP/SSE MCP servers to every user (same entry shape as .mcp.json); entries that name a command to run are skipped"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.259",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.258",
@@ -22,7 +45,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.258",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -49,7 +72,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.257",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Claude Code",
@@ -99,21 +122,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.251",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.250",
-      "title_en": "v2.1.250",
-      "summary": "Ce qui a change Bug fixes and reliability improvements",
-      "summary_en": "What's changed\n\nBug fixes and reliability improvements\n",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Bug fixes and reliability improvements"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.250",
       "is_new": false
     },
     {
@@ -228,10 +236,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.258",
-      "title_en": "v2.1.258",
-      "summary": "Publie le 2026-09-01",
-      "summary_en": "Publie le 2026-09-01",
+      "title": "v2.1.259",
+      "title_en": "v2.1.259",
+      "summary": "Publie le 2026-09-02",
+      "summary_en": "Publie le 2026-09-02",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -414,7 +422,7 @@
       "summary_en": "Reference blueprint for building shopping and merchant agents with Claude. Examples in retail, commerce, telecom, and entertainment included.",
       "changelog_items": [],
       "url": "https://github.com/anthropics/commerce-agents",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -444,7 +452,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/mockturtle",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Nouveau Depot",
@@ -459,8 +467,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.258",
-    "Claude Code npm": "v2.1.258",
+    "Claude Code": "v2.1.259",
+    "Claude Code npm": "v2.1.259",
     "SDK Python": "v1.3.0",
     "SDK Python PyPI": "v1.3.0",
     "SDK TypeScript": "vertex-sdk: v0.19.6",
@@ -468,7 +476,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.250",
+    "GitHub Claude Code": "v2.1.251",
     "GitHub SDK Python": "v0.125.0"
   }
 }
