@@ -1,6 +1,52 @@
 {
-  "last_check": "2026-09-03T21:32:37.026427",
+  "last_check": "2026-09-04T21:11:17.927414",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.261",
+      "title_en": "v2.1.261",
+      "summary": "Ce qui a change Ajout de an \"Organization policy\" line to /status and claude doctor that says why your organization's policy could not be loaded, such as a proxy not passing the endpoint through Ajout de bashSortieMaxChars and taskSortieMaxChars parametres to raise how much commande and arriere-plan-task sortie Claude receives inli",
+      "summary_en": "What's changed\n\nAdded an \"Organization policy\" line to /status and claude doctor that says why your organization's policy could not be loaded, such as a proxy not passing the endpoint through\nAdded bashOutputMaxChars and taskOutputMaxChars settings to raise how much command and background-task output Claude receives inli",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "an \"Organization policy\" line to /status and claude doctor that says why your organization's policy could not be loaded, such as a proxy not passing the endpoint through"
+        },
+        {
+          "type": "added",
+          "text": "bashOutputMaxChars and taskOutputMaxChars settings to raise how much command and background-task output Claude receives inli"
+        },
+        {
+          "type": "changed",
+          "text": "Added an \"Organization policy\" line to /status and claude doctor that says why your organization's policy could not be loaded, such as a proxy not passing the endpoint through"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.261",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.260",
+      "title_en": "v2.1.260",
+      "summary": "Ce qui a change Ajout de a diff panel that ouvrirs beside the conversation in fullscreen mode and affichers your uncommitted changes as Claude edits; basculer it with /diff Ajout de a likely cause for prompt-cache misses (e.g. tool definitions or system prompt modification de, idle past the TTL) to /cost and the status line's prompt_cache field A",
+      "summary_en": "What's changed\n\nAdded a diff panel that opens beside the conversation in fullscreen mode and shows your uncommitted changes as Claude edits; toggle it with /diff\nAdded a likely cause for prompt-cache misses (e.g. tool definitions or system prompt changed, idle past the TTL) to /cost and the status line's prompt_cache field\nA",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "a diff panel that opens beside the conversation in fullscreen mode and shows your uncommitted changes as Claude edits; toggle it with /diff"
+        },
+        {
+          "type": "added",
+          "text": "a likely cause for prompt-cache misses (e.g. tool definitions or system prompt changed, idle past the TTL) to /cost and the status line's prompt_cache field"
+        },
+        {
+          "type": "changed",
+          "text": "Added a diff panel that opens beside the conversation in fullscreen mode and shows your uncommitted changes as Claude edits; toggle it with /diff"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.260",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.259",
@@ -22,7 +68,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.259",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -72,56 +118,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.257",
-      "is_new": true
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.252",
-      "title_en": "v2.1.252",
-      "summary": "Ce qui a change Correction de Bash commandes failing with \"task sortie swap refused (tasks dir moved or linked)\" on some Macs Correction de \"always allow\" not saving in a project that has no .claude/parametres.local.json yet Correction de Remote Control sessions hosted by Claude Desktop or VS Code stalling for minutes after a tool finished when the connection to claude.ai was degraded",
-      "summary_en": "What's changed\n\nFixed Bash commands failing with \"task output swap refused (tasks dir moved or linked)\" on some Macs\nFixed \"always allow\" not saving in a project that has no .claude/settings.local.json yet\nFixed Remote Control sessions hosted by Claude Desktop or VS Code stalling for minutes after a tool finished when the connection to claude.ai was degraded",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "Bash commands failing with \"task output swap refused (tasks dir moved or linked)\" on some Macs"
-        },
-        {
-          "type": "fixed",
-          "text": "\"always allow\" not saving in a project that has no .claude/settings.local.json yet"
-        },
-        {
-          "type": "fixed",
-          "text": "Remote Control sessions hosted by Claude Desktop or VS Code stalling for minutes after a tool finished when the connection to claude.ai was degraded"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed Bash commands failing with \"task output swap refused (tasks dir moved or linked)\" on some Macs"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.252",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.251",
-      "title_en": "v2.1.251",
-      "summary": "Ce qui a change Ajout de PreModelSwitch and PostModelSwitch hook events (block, confirm, or annotate a model switch); SessionStart resume hooks now receive session perimeness and the estimated re-cache cost Ajout de live streaming of a foreground subagent's tool calls and results to Remote Control clients (arriere-plan subagents, the par defaut,",
-      "summary_en": "What's changed\n\nAdded PreModelSwitch and PostModelSwitch hook events (block, confirm, or annotate a model switch); SessionStart resume hooks now receive session staleness and the estimated re-cache cost\nAdded live streaming of a foreground subagent's tool calls and results to Remote Control clients (background subagents, the default,",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "PreModelSwitch and PostModelSwitch hook events (block, confirm, or annotate a model switch); SessionStart resume hooks now receive session staleness and the estimated re-cache cost"
-        },
-        {
-          "type": "added",
-          "text": "live streaming of a foreground subagent's tool calls and results to Remote Control clients (background subagents, the default,"
-        },
-        {
-          "type": "changed",
-          "text": "Added PreModelSwitch and PostModelSwitch hook events (block, confirm, or annotate a model switch); SessionStart resume hooks now receive session staleness and the estimated re-cache cost"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.251",
       "is_new": false
     },
     {
@@ -236,10 +232,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.259",
-      "title_en": "v2.1.259",
-      "summary": "Publie le 2026-09-02",
-      "summary_en": "Publie le 2026-09-02",
+      "title": "v2.1.261",
+      "title_en": "v2.1.261",
+      "summary": "Publie le 2026-09-04",
+      "summary_en": "Publie le 2026-09-04",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -292,7 +288,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -346,8 +342,8 @@
     },
     {
       "source": "Blog",
-      "title": "Jul 30, 2026Investigating three real-world incidents in our cybersecurite evaluations",
-      "title_en": "Jul 30, 2026Investigating three real-world incidents in our cybersecurity evaluations",
+      "title": "Jul 30, 2026AnnouncementsInvestigating three real-world incidents in our cybersecurite evaluations",
+      "title_en": "Jul 30, 2026AnnouncementsInvestigating three real-world incidents in our cybersecurity evaluations",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
@@ -392,7 +388,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/riemann-zeta",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -413,62 +409,12 @@
       "changelog_items": [],
       "url": "https://status.claude.com",
       "is_new": true
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "commerce-agents",
-      "title_en": "commerce-agents",
-      "summary": "Reference blueprint for building shopping and merchant agents with Claude. Examples in retail, commerce, telecom, and entertainment included.",
-      "summary_en": "Reference blueprint for building shopping and merchant agents with Claude. Examples in retail, commerce, telecom, and entertainment included.",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/commerce-agents",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "xls",
-      "title_en": "xls",
-      "summary": "Dupliquer of google/xls — main tracks upstream; Anthropic changes live on anthropic-* branches",
-      "summary_en": "Fork of google/xls — main tracks upstream; Anthropic changes live on anthropic-* branches",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/xls",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "claude-tag-wif-gateway-sample",
-      "title_en": "claude-tag-wif-gateway-sample",
-      "summary": "Sample personnaliseer-side gateway for Claude Tag identity federation. Sample code; not maintained.",
-      "summary_en": "Sample customer-side gateway for Claude Tag identity federation. Sample code; not maintained.",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/claude-tag-wif-gateway-sample",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "mockturtle",
-      "title_en": "mockturtle",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/mockturtle",
-      "is_new": true
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "amulet2",
-      "title_en": "amulet2",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/amulet2",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.259",
-    "Claude Code npm": "v2.1.259",
+    "Claude Code": "v2.1.261",
+    "Claude Code npm": "v2.1.261",
     "SDK Python": "v1.3.0",
     "SDK Python PyPI": "v1.3.0",
     "SDK TypeScript": "vertex-sdk: v0.19.6",
@@ -476,7 +422,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.251",
+    "GitHub Claude Code": "v2.1.257",
     "GitHub SDK Python": "v0.125.0"
   }
 }
