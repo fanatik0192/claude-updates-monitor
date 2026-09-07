@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-09-06T21:00:48.748096",
+  "last_check": "2026-09-07T21:53:00.396634",
   "updates": [
     {
       "source": "Claude Code",
@@ -14,7 +14,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.263",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -136,7 +136,7 @@
       "summary_en": "1.2.0 (2026-08-27)\nFull Changelog: v1.1.0...v1.2.0\nFeatures\n\napi: beta files/skills namespaces use GA shapes; drop dated beta header pins (9df4565)<",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.2.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -186,7 +186,7 @@
       "summary_en": "0.4.5 (2026-09-04)\nFull Changelog: foundry-sdk-v0.4.4...foundry-sdk-v0.4.5\nChores\n\nexamples: refresh platform model IDs (#376) (<a href=\"https://github.c",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.5",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -226,7 +226,7 @@
       "summary_en": "Publie le 2026-09-06",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -280,8 +280,8 @@
     },
     {
       "source": "Blog",
-      "title": "Aug 31, 2026Improving our alignment and securite efforts",
-      "title_en": "Aug 31, 2026Improving our alignment and security efforts",
+      "title": "Aug 31, 2026AnnouncementsImproving our alignment and securite efforts",
+      "title_en": "Aug 31, 2026AnnouncementsImproving our alignment and security efforts",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
@@ -370,22 +370,22 @@
     },
     {
       "source": "Recherche",
-      "title": "Learning more about Claude's mathematical capabilitiesScienceAug 10, 2026An unversiond rerecherche vers",
-      "title_en": "Learning more about Claude's mathematical capabilitiesScienceAug 10, 2026An unreleased research vers",
+      "title": "Formalizing Fermat's Last TheoremScienceSep 4, 2026We are sharing the first complete computer-checke",
+      "title_en": "Formalizing Fermat's Last TheoremScienceSep 4, 2026We are sharing the first complete computer-checke",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+      "is_new": true
+    },
+    {
+      "source": "Recherche",
+      "title": "ScienceAug 10, 2026Learning more about Claude's mathematical capabilitiesAn unversiond rerecherche vers",
+      "title_en": "ScienceAug 10, 2026Learning more about Claude's mathematical capabilitiesAn unreleased research vers",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/riemann-zeta",
-      "is_new": false
-    },
-    {
-      "source": "Recherche",
-      "title": "ScienceAug 18, 2026How Claude is accelerating protein design and analytical chemistryIn this post, w",
-      "title_en": "ScienceAug 18, 2026How Claude is accelerating protein design and analytical chemistryIn this post, w",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
       "is_new": false
     },
     {
