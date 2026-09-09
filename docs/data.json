@@ -1,6 +1,48 @@
 {
-  "last_check": "2026-09-08T21:32:15.800703",
+  "last_check": "2026-09-09T21:28:29.547569",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.267",
+      "title_en": "v2.1.267",
+      "summary": "Ce qui a change Ajout de maxEffortLevel parametre (top-level or per model under modelParametres): caps the effort level on every provider, including Bedrock, Vertex and Foundry; utilisateurs can still pick a lower level Ajout de --system-prompt-snapshot off to render the system prompt fresh on every request instead of reusing the conversation's recor",
+      "summary_en": "What's changed\n\nAdded maxEffortLevel setting (top-level or per model under modelSettings): caps the effort level on every provider, including Bedrock, Vertex and Foundry; users can still pick a lower level\nAdded --system-prompt-snapshot off to render the system prompt fresh on every request instead of reusing the conversation's recor",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "maxEffortLevel setting (top-level or per model under modelSettings): caps the effort level on every provider, including Bedrock, Vertex and Foundry; users can still pick a lower level"
+        },
+        {
+          "type": "added",
+          "text": "--system-prompt-snapshot off to render the system prompt fresh on every request instead of reusing the conversation's recor"
+        },
+        {
+          "type": "changed",
+          "text": "Added maxEffortLevel setting (top-level or per model under modelSettings): caps the effort level on every provider, including Bedrock, Vertex and Foundry; users can still pick a lower level"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.267",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.266",
+      "title_en": "v2.1.266",
+      "summary": "Ce qui a change Correction de a 2.1.265 regression affecting LLM-gateway and proxy setups: the undocumented CLAUDE_CODE_USE_GATEWAY variable d'environnement, previously ignored unless ANTHROPIC_BASE_URL and ANTHROPIC_AUTH_TOKEN were both set, began forcing Cloud-gateway sign-in on its own in 2.1.265, so configurations that set it alongside an API key, <c",
+      "summary_en": "What's changed\n\nFixed a 2.1.265 regression affecting LLM-gateway and proxy setups: the undocumented CLAUDE_CODE_USE_GATEWAY environment variable, previously ignored unless ANTHROPIC_BASE_URL and ANTHROPIC_AUTH_TOKEN were both set, began forcing Cloud-gateway sign-in on its own in 2.1.265, so configurations that set it alongside an API key, <c",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "a 2.1.265 regression affecting LLM-gateway and proxy setups: the undocumented CLAUDE_CODE_USE_GATEWAY environment variable, previously ignored unless ANTHROPIC_BASE_URL and ANTHROPIC_AUTH_TOKEN were b"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed a 2.1.265 regression affecting LLM-gateway and proxy setups: the undocumented CLAUDE_CODE_USE_GATEWAY environment variable, previously ignored unless ANTHROPIC_BASE_URL and ANTHROPIC_AUTH_TOKEN "
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.266",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.265",
@@ -26,7 +68,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.265",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -64,52 +106,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.261",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.260",
-      "title_en": "v2.1.260",
-      "summary": "Ce qui a change Ajout de a diff panel that ouvrirs beside the conversation in fullscreen mode and affichers your uncommitted changes as Claude edits; basculer it with /diff Ajout de a likely cause for prompt-cache misses (e.g. tool definitions or system prompt modification de, idle past the TTL) to /cost and the status line's prompt_cache field A",
-      "summary_en": "What's changed\n\nAdded a diff panel that opens beside the conversation in fullscreen mode and shows your uncommitted changes as Claude edits; toggle it with /diff\nAdded a likely cause for prompt-cache misses (e.g. tool definitions or system prompt changed, idle past the TTL) to /cost and the status line's prompt_cache field\nA",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "a diff panel that opens beside the conversation in fullscreen mode and shows your uncommitted changes as Claude edits; toggle it with /diff"
-        },
-        {
-          "type": "added",
-          "text": "a likely cause for prompt-cache misses (e.g. tool definitions or system prompt changed, idle past the TTL) to /cost and the status line's prompt_cache field"
-        },
-        {
-          "type": "changed",
-          "text": "Added a diff panel that opens beside the conversation in fullscreen mode and shows your uncommitted changes as Claude edits; toggle it with /diff"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.260",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.259",
-      "title_en": "v2.1.259",
-      "summary": "Ce qui a change Ajout de managedMcpServers managed parametre: organizations can provide HTTP/SSE MCP servers to every utilisateur (same entry shape as .mcp.json); entries that nom a commande to run are skipped Ajout de --permission-prompts none for unattended headless hosts: anything that would prompt is denied automatically while the active permis",
-      "summary_en": "What's changed\n\nAdded managedMcpServers managed setting: organizations can provide HTTP/SSE MCP servers to every user (same entry shape as .mcp.json); entries that name a command to run are skipped\nAdded --permission-prompts none for unattended headless hosts: anything that would prompt is denied automatically while the active permis",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "managedMcpServers managed setting: organizations can provide HTTP/SSE MCP servers to every user (same entry shape as .mcp.json); entries that name a command to run are skipped"
-        },
-        {
-          "type": "added",
-          "text": "--permission-prompts none for unattended headless hosts: anything that would prompt is denied automatically while the active permis"
-        },
-        {
-          "type": "changed",
-          "text": "Added managedMcpServers managed setting: organizations can provide HTTP/SSE MCP servers to every user (same entry shape as .mcp.json); entries that name a command to run are skipped"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.259",
       "is_new": false
     },
     {
@@ -224,10 +220,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.265",
-      "title_en": "v2.1.265",
-      "summary": "Publie le 2026-09-08",
-      "summary_en": "Publie le 2026-09-08",
+      "title": "v2.1.267",
+      "title_en": "v2.1.267",
+      "summary": "Publie le 2026-09-09",
+      "summary_en": "Publie le 2026-09-09",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -360,7 +356,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/societal-impacts",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -374,8 +370,8 @@
     },
     {
       "source": "Recherche",
-      "title": "Formalizing Fermat's Last TheoremScienceSep 4, 2026We are sharing the first complete computer-checke",
-      "title_en": "Formalizing Fermat's Last TheoremScienceSep 4, 2026We are sharing the first complete computer-checke",
+      "title": "ScienceSep 4, 2026Formalizing Fermat's Last TheoremWe are sharing the first complete computer-checke",
+      "title_en": "ScienceSep 4, 2026Formalizing Fermat's Last TheoremWe are sharing the first complete computer-checke",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
@@ -400,6 +396,16 @@
       "summary_en": "Un probleme est actuellement detecte sur les services Claude.",
       "changelog_items": [],
       "url": "https://status.claude.com",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "mythos-5-incident-transcript",
+      "title_en": "mythos-5-incident-transcript",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/mythos-5-incident-transcript",
       "is_new": true
     },
     {
@@ -430,7 +436,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/axt-verify",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -441,22 +447,12 @@
       "changelog_items": [],
       "url": "https://github.com/anthropics/xls",
       "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "claude-tag-wif-gateway-sample",
-      "title_en": "claude-tag-wif-gateway-sample",
-      "summary": "Sample personnaliseer-side gateway for Claude Tag identity federation. Sample code; not maintained.",
-      "summary_en": "Sample customer-side gateway for Claude Tag identity federation. Sample code; not maintained.",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/claude-tag-wif-gateway-sample",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.265",
-    "Claude Code npm": "v2.1.265",
+    "Claude Code": "v2.1.267",
+    "Claude Code npm": "v2.1.267",
     "SDK Python": "v1.4.0",
     "SDK Python PyPI": "v1.4.0",
     "SDK TypeScript": "aws-sdk: v0.7.0",
@@ -464,7 +460,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.259",
+    "GitHub Claude Code": "v2.1.261",
     "GitHub SDK Python": "v1.0.0"
   }
 }
