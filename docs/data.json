@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-09-09T21:28:29.547569",
+  "last_check": "2026-09-10T21:21:22.466491",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.268",
+      "title_en": "v2.1.268",
+      "summary": "Ce qui a change Ajout de to the Claude apps gateway: with pricing: set in gateway.yaml, signed-in Claude Code clients receive the same rates through managed parametres, so /cost and telemetry match the spend meter Ajout de a startup avertissement for gateways when access_control.allow_cidrs is empty, and a one-time avertissement the first t",
+      "summary_en": "What's changed\n\nAdded to the Claude apps gateway: with pricing: set in gateway.yaml, signed-in Claude Code clients receive the same rates through managed settings, so /cost and telemetry match the spend meter\nAdded a startup warning for gateways when access_control.allow_cidrs is empty, and a one-time warning the first t",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "to the Claude apps gateway: with pricing: set in gateway.yaml, signed-in Claude Code clients receive the same rates through managed settings, so /cost and telemetry match the spend meter"
+        },
+        {
+          "type": "added",
+          "text": "a startup warning for gateways when access_control.allow_cidrs is empty, and a one-time warning the first t"
+        },
+        {
+          "type": "changed",
+          "text": "Added to the Claude apps gateway: with pricing: set in gateway.yaml, signed-in Claude Code clients receive the same rates through managed settings, so /cost and telemetry match the spend meter"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.268",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.267",
@@ -22,7 +45,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.267",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -41,7 +64,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.266",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -86,27 +109,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.261",
-      "title_en": "v2.1.261",
-      "summary": "Ce qui a change Ajout de an \"Organization policy\" line to /status and claude doctor that says why your organization's policy could not be loaded, such as a proxy not passing the endpoint through Ajout de bashSortieMaxChars and taskSortieMaxChars parametres to raise how much commande and arriere-plan-task sortie Claude receives inli",
-      "summary_en": "What's changed\n\nAdded an \"Organization policy\" line to /status and claude doctor that says why your organization's policy could not be loaded, such as a proxy not passing the endpoint through\nAdded bashOutputMaxChars and taskOutputMaxChars settings to raise how much command and background-task output Claude receives inli",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "an \"Organization policy\" line to /status and claude doctor that says why your organization's policy could not be loaded, such as a proxy not passing the endpoint through"
-        },
-        {
-          "type": "added",
-          "text": "bashOutputMaxChars and taskOutputMaxChars settings to raise how much command and background-task output Claude receives inli"
-        },
-        {
-          "type": "changed",
-          "text": "Added an \"Organization policy\" line to /status and claude doctor that says why your organization's policy could not be loaded, such as a proxy not passing the endpoint through"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.261",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v1.5.0",
+      "title_en": "v1.5.0",
+      "summary": "1.5.0 (2026-09-10) Journal complet: v1.4.0...v1.5.0 Fonctionnalites api: add auto mode tool permissions for Managed Agents () api:<",
+      "summary_en": "1.5.0 (2026-09-10)\nFull Changelog: v1.4.0...v1.5.0\nFeatures\n\napi: add auto mode tool permissions for Managed Agents (62aa21b)\napi:<",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.5.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -149,93 +159,93 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v1.0.0",
-      "title_en": "v1.0.0",
-      "summary": "1.0.0 (2026-08-20) Journal complet: v0.125.0...v1.0.0 ⚠ BREAKING CHANGES client: upgrade to httpx2 and some minor changements majeurs. See MIGRATION.md for details Fonctionnalites client: upgrade to httpx2 and some minor br",
-      "summary_en": "1.0.0 (2026-08-20)\nFull Changelog: v0.125.0...v1.0.0\n⚠ BREAKING CHANGES\n\nclient: upgrade to httpx2 and some minor breaking changes. See MIGRATION.md for details\n\nFeatures\n\nclient: upgrade to httpx2 and some minor br",
+      "source": "SDK TypeScript",
+      "title": "vertex-sdk: v0.19.8",
+      "title_en": "vertex-sdk: v0.19.8",
+      "summary": "0.19.8 (2026-09-10) Journal complet: vertex-sdk-v0.19.7...vertex-sdk-v0.19.8",
+      "summary_en": "0.19.8 (2026-09-10)\nFull Changelog: vertex-sdk-v0.19.7...vertex-sdk-v0.19.8",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.0.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.8",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "vertex-sdk: v0.19.7",
-      "title_en": "vertex-sdk: v0.19.7",
-      "summary": "0.19.7 (2026-09-04) Journal complet: vertex-sdk-v0.19.6...vertex-sdk-v0.19.7 Maintenance examples: actualiser platform model IDs (<a href=\"https://github.",
-      "summary_en": "0.19.7 (2026-09-04)\nFull Changelog: vertex-sdk-v0.19.6...vertex-sdk-v0.19.7\nChores\n\nexamples: refresh platform model IDs (#376) (<a href=\"https://github.",
+      "title": "sdk: v0.125.0",
+      "title_en": "sdk: v0.125.0",
+      "summary": "0.125.0 (2026-09-10) Journal complet: sdk-v0.124.0...sdk-v0.125.0 Fonctionnalites api: add auto mode tool permissions for Managed Agents (7",
+      "summary_en": "0.125.0 (2026-09-10)\nFull Changelog: sdk-v0.124.0...sdk-v0.125.0\nFeatures\n\napi: add auto mode tool permissions for Managed Agents (7",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.7",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.125.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk: v0.124.0",
-      "title_en": "sdk: v0.124.0",
-      "summary": "0.124.0 (2026-09-04) Journal complet: sdk-v0.123.0...sdk-v0.124.0 Fonctionnalites api: add Claude Tag category and utilisateur breakdowns to usage reports (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
-      "summary_en": "0.124.0 (2026-09-04)\nFull Changelog: sdk-v0.123.0...sdk-v0.124.0\nFeatures\n\napi: add Claude Tag category and user breakdowns to usage reports (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/669ff2243179acb2df775e62bfd75e3d",
+      "title": "foundry-sdk: v0.4.6",
+      "title_en": "foundry-sdk: v0.4.6",
+      "summary": "0.4.6 (2026-09-10) Journal complet: foundry-sdk-v0.4.5...foundry-sdk-v0.4.6",
+      "summary_en": "0.4.6 (2026-09-10)\nFull Changelog: foundry-sdk-v0.4.5...foundry-sdk-v0.4.6",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.124.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.6",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "foundry-sdk: v0.4.5",
-      "title_en": "foundry-sdk: v0.4.5",
-      "summary": "0.4.5 (2026-09-04) Journal complet: foundry-sdk-v0.4.4...foundry-sdk-v0.4.5 Maintenance examples: actualiser platform model IDs (<a href=\"https://github.c",
-      "summary_en": "0.4.5 (2026-09-04)\nFull Changelog: foundry-sdk-v0.4.4...foundry-sdk-v0.4.5\nChores\n\nexamples: refresh platform model IDs (#376) (<a href=\"https://github.c",
+      "title": "bedrock-sdk: v0.33.5",
+      "title_en": "bedrock-sdk: v0.33.5",
+      "summary": "0.33.5 (2026-09-10) Journal complet: bedrock-sdk-v0.33.4...bedrock-sdk-v0.33.5",
+      "summary_en": "0.33.5 (2026-09-10)\nFull Changelog: bedrock-sdk-v0.33.4...bedrock-sdk-v0.33.5",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.5",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.5",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "bedrock-sdk: v0.33.4",
-      "title_en": "bedrock-sdk: v0.33.4",
-      "summary": "0.33.4 (2026-09-04) Journal complet: bedrock-sdk-v0.33.3...bedrock-sdk-v0.33.4 Maintenance examples: actualiser platform model IDs (<a href=\"https://git",
-      "summary_en": "0.33.4 (2026-09-04)\nFull Changelog: bedrock-sdk-v0.33.3...bedrock-sdk-v0.33.4\nChores\n\nexamples: refresh platform model IDs (#376) (<a href=\"https://git",
+      "title": "aws-sdk: v0.7.1",
+      "title_en": "aws-sdk: v0.7.1",
+      "summary": "0.7.1 (2026-09-10) Journal complet: aws-sdk-v0.7.0...aws-sdk-v0.7.1",
+      "summary_en": "0.7.1 (2026-09-10)\nFull Changelog: aws-sdk-v0.7.0...aws-sdk-v0.7.1",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.4",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "aws-sdk: v0.7.0",
-      "title_en": "aws-sdk: v0.7.0",
-      "summary": "0.7.0 (2026-09-04) Journal complet: aws-sdk-v0.6.6...aws-sdk-v0.7.0 Fonctionnalites api: add prise en charge de sending a workspace ID on more endpoints (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
-      "summary_en": "0.7.0 (2026-09-04)\nFull Changelog: aws-sdk-v0.6.6...aws-sdk-v0.7.0\nFeatures\n\napi: add support for sending a workspace ID on more endpoints (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/a11e6f1d3bb0e12e6369d3611a232a",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.7.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.7.1",
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.124.0",
-      "title_en": "v0.124.0",
-      "summary": "Publie le 2026-09-04",
-      "summary_en": "Publie le 2026-09-04",
+      "title": "v0.125.0",
+      "title_en": "v0.125.0",
+      "summary": "Publie le 2026-09-10",
+      "summary_en": "Publie le 2026-09-10",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.267",
-      "title_en": "v2.1.267",
-      "summary": "Publie le 2026-09-09",
-      "summary_en": "Publie le 2026-09-09",
+      "title": "v2.1.268",
+      "title_en": "v2.1.268",
+      "summary": "Publie le 2026-09-10",
+      "summary_en": "Publie le 2026-09-10",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v1.4.0",
-      "title_en": "v1.4.0",
+      "title": "v1.5.0",
+      "title_en": "v1.5.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "AnnouncementsAug 31, 2026Improving our alignment and securite effortsOn July 30, we reported three i",
+      "title_en": "AnnouncementsAug 31, 2026Improving our alignment and security effortsOn July 30, we reported three i",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
       "is_new": false
     },
     {
@@ -246,16 +256,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "AnnouncementsAug 14, 2026How Claude’s text watermark worksIn this article, we share answers to some",
-      "title_en": "AnnouncementsAug 14, 2026How Claude’s text watermark worksIn this article, we share answers to some ",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-text-watermark",
       "is_new": false
     },
     {
@@ -280,16 +280,6 @@
     },
     {
       "source": "Blog",
-      "title": "Aug 31, 2026AnnouncementsImproving our alignment and securite efforts",
-      "title_en": "Aug 31, 2026AnnouncementsImproving our alignment and security efforts",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
       "title": "Aug 27, 2026AnnouncementsExpanding our prise en charge de scientists",
       "title_en": "Aug 27, 2026AnnouncementsExpanding our support for scientists",
       "summary": "",
@@ -306,6 +296,16 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/wellbeing-research-grants",
+      "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Aug 14, 2026AnnouncementsHow Claude’s text watermark works",
+      "title_en": "Aug 14, 2026AnnouncementsHow Claude’s text watermark works",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/claude-text-watermark",
       "is_new": false
     },
     {
@@ -356,7 +356,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/societal-impacts",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -370,22 +370,22 @@
     },
     {
       "source": "Recherche",
+      "title": "AlignmentSep 9, 2026An alignment assessment of recent cybersecurite incidentsWe present an alignment",
+      "title_en": "AlignmentSep 9, 2026An alignment assessment of recent cybersecurity incidentsWe present an alignment",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
+      "is_new": true
+    },
+    {
+      "source": "Recherche",
       "title": "ScienceSep 4, 2026Formalizing Fermat's Last TheoremWe are sharing the first complete computer-checke",
       "title_en": "ScienceSep 4, 2026Formalizing Fermat's Last TheoremWe are sharing the first complete computer-checke",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
-      "is_new": false
-    },
-    {
-      "source": "Recherche",
-      "title": "ScienceAug 10, 2026Learning more about Claude's mathematical capabilitiesAn unversiond rerecherche vers",
-      "title_en": "ScienceAug 10, 2026Learning more about Claude's mathematical capabilitiesAn unreleased research vers",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/research/riemann-zeta",
       "is_new": false
     },
     {
@@ -406,7 +406,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/mythos-5-incident-transcript",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -451,16 +451,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.267",
-    "Claude Code npm": "v2.1.267",
-    "SDK Python": "v1.4.0",
-    "SDK Python PyPI": "v1.4.0",
-    "SDK TypeScript": "aws-sdk: v0.7.0",
+    "Claude Code": "v2.1.268",
+    "Claude Code npm": "v2.1.268",
+    "SDK Python": "v1.5.0",
+    "SDK Python PyPI": "v1.5.0",
+    "SDK TypeScript": "aws-sdk: v0.7.1",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.261",
-    "GitHub SDK Python": "v1.0.0"
+    "GitHub Claude Code": "v2.1.263",
+    "GitHub SDK Python": "v1.1.0"
   }
 }
