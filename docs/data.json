@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-09-10T21:21:22.466491",
+  "last_check": "2026-09-11T21:31:33.671539",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.269",
+      "title_en": "v2.1.269",
+      "summary": "Ce qui a change Ajout de claude plugin eval: run a plugin's eval suite against Claude Code and get scored, reproducible results (JSON + HTML report); see claude plugin eval --help Ajout de /sortie-style [nom] to list and switch sortie styles, including over Remote Control and in cloud and other headless sessions Ajout de a diff of t",
+      "summary_en": "What's changed\n\nAdded claude plugin eval: run a plugin's eval suite against Claude Code and get scored, reproducible results (JSON + HTML report); see claude plugin eval --help\nAdded /output-style [name] to list and switch output styles, including over Remote Control and in cloud and other headless sessions\nAdded a diff of t",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "claude plugin eval: run a plugin's eval suite against Claude Code and get scored, reproducible results (JSON + HTML report); see claude plugin eval --help"
+        },
+        {
+          "type": "added",
+          "text": "/output-style [name] to list and switch output styles, including over Remote Control and in cloud and other headless sessions"
+        },
+        {
+          "type": "added",
+          "text": "a diff of t"
+        },
+        {
+          "type": "changed",
+          "text": "Added claude plugin eval: run a plugin's eval suite against Claude Code and get scored, reproducible results (JSON + HTML report); see claude plugin eval --help"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.269",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.268",
@@ -22,7 +49,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.268",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -94,21 +121,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.263",
-      "title_en": "v2.1.263",
-      "summary": "Ce qui a change Bug fixes and reliability improvements",
-      "summary_en": "What's changed\n\nBug fixes and reliability improvements\n",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Bug fixes and reliability improvements"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.263",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v1.5.0",
       "title_en": "v1.5.0",
@@ -116,7 +128,7 @@
       "summary_en": "1.5.0 (2026-09-10)\nFull Changelog: v1.4.0...v1.5.0\nFeatures\n\napi: add auto mode tool permissions for Managed Agents (62aa21b)\napi:<",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.5.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -166,7 +178,7 @@
       "summary_en": "0.19.8 (2026-09-10)\nFull Changelog: vertex-sdk-v0.19.7...vertex-sdk-v0.19.8",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.8",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -176,7 +188,7 @@
       "summary_en": "0.125.0 (2026-09-10)\nFull Changelog: sdk-v0.124.0...sdk-v0.125.0\nFeatures\n\napi: add auto mode tool permissions for Managed Agents (7",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.125.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -186,7 +198,7 @@
       "summary_en": "0.4.6 (2026-09-10)\nFull Changelog: foundry-sdk-v0.4.5...foundry-sdk-v0.4.6",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.6",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -196,7 +208,7 @@
       "summary_en": "0.33.5 (2026-09-10)\nFull Changelog: bedrock-sdk-v0.33.4...bedrock-sdk-v0.33.5",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.5",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -206,7 +218,7 @@
       "summary_en": "0.7.1 (2026-09-10)\nFull Changelog: aws-sdk-v0.7.0...aws-sdk-v0.7.1",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.7.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/sdk",
@@ -216,14 +228,14 @@
       "summary_en": "Publie le 2026-09-10",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.268",
-      "title_en": "v2.1.268",
-      "summary": "Publie le 2026-09-10",
-      "summary_en": "Publie le 2026-09-10",
+      "title": "v2.1.269",
+      "title_en": "v2.1.269",
+      "summary": "Publie le 2026-09-11",
+      "summary_en": "Publie le 2026-09-11",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -236,7 +248,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -376,7 +388,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -396,6 +408,16 @@
       "summary_en": "Un probleme est actuellement detecte sur les services Claude.",
       "changelog_items": [],
       "url": "https://status.claude.com",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "raft-rs",
+      "title_en": "raft-rs",
+      "summary": "Raft distributed consensus algorithm implemented in Rust.",
+      "summary_en": "Raft distributed consensus algorithm implemented in Rust.",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/raft-rs",
       "is_new": true
     },
     {
@@ -437,22 +459,12 @@
       "changelog_items": [],
       "url": "https://github.com/anthropics/axt-verify",
       "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "xls",
-      "title_en": "xls",
-      "summary": "Dupliquer of google/xls — main tracks upstream; Anthropic changes live on anthropic-* branches",
-      "summary_en": "Fork of google/xls — main tracks upstream; Anthropic changes live on anthropic-* branches",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/xls",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.268",
-    "Claude Code npm": "v2.1.268",
+    "Claude Code": "v2.1.269",
+    "Claude Code npm": "v2.1.269",
     "SDK Python": "v1.5.0",
     "SDK Python PyPI": "v1.5.0",
     "SDK TypeScript": "aws-sdk: v0.7.1",
@@ -460,7 +472,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.263",
+    "GitHub Claude Code": "v2.1.265",
     "GitHub SDK Python": "v1.1.0"
   }
 }
