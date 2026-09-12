@@ -1,6 +1,25 @@
 {
-  "last_check": "2026-09-11T21:31:33.671539",
+  "last_check": "2026-09-12T21:09:46.376047",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.270",
+      "title_en": "v2.1.270",
+      "summary": "Ce qui a change Correction de read-only git commandes in Bash unexpectedly asking for permission after a session had been running for a while (regression in 2.1.269)",
+      "summary_en": "What's changed\n\nFixed read-only git commands in Bash unexpectedly asking for permission after a session had been running for a while (regression in 2.1.269)\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "read-only git commands in Bash unexpectedly asking for permission after a session had been running for a while (regression in 2.1.269)"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed read-only git commands in Bash unexpectedly asking for permission after a session had been running for a while (regression in 2.1.269)"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.270",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.269",
@@ -26,7 +45,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.269",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -91,33 +110,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.266",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.265",
-      "title_en": "v2.1.265",
-      "summary": "Ce qui a change Ajout de utilisateur.email and utilisateur.groups to the telemetry Claude Desktop and Cowork send through a Claude apps gateway, matching terminal sessions Ajout de prise en charge de pointing --plugin-dir at a folder of plugins: each child folder with a manifest loads, and children ajout de or supappuyer surion de while running are picked up Ajout de a",
-      "summary_en": "What's changed\n\nAdded user.email and user.groups to the telemetry Claude Desktop and Cowork send through a Claude apps gateway, matching terminal sessions\nAdded support for pointing --plugin-dir at a folder of plugins: each child folder with a manifest loads, and children added or removed while running are picked up\nAdded a ",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "user.email and user.groups to the telemetry Claude Desktop and Cowork send through a Claude apps gateway, matching terminal sessions"
-        },
-        {
-          "type": "added",
-          "text": "support for pointing --plugin-dir at a folder of plugins: each child folder with a manifest loads, and children added or removed while running are picked up"
-        },
-        {
-          "type": "removed",
-          "text": "while running are picked up"
-        },
-        {
-          "type": "changed",
-          "text": "Added user.email and user.groups to the telemetry Claude Desktop and Cowork send through a Claude apps gateway, matching terminal sessions"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.265",
       "is_new": false
     },
     {
@@ -232,10 +224,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.269",
-      "title_en": "v2.1.269",
-      "summary": "Publie le 2026-09-11",
-      "summary_en": "Publie le 2026-09-11",
+      "title": "v2.1.270",
+      "title_en": "v2.1.270",
+      "summary": "Publie le 2026-09-12",
+      "summary_en": "Publie le 2026-09-12",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -418,7 +410,7 @@
       "summary_en": "Raft distributed consensus algorithm implemented in Rust.",
       "changelog_items": [],
       "url": "https://github.com/anthropics/raft-rs",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -463,8 +455,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.269",
-    "Claude Code npm": "v2.1.269",
+    "Claude Code": "v2.1.270",
+    "Claude Code npm": "v2.1.270",
     "SDK Python": "v1.5.0",
     "SDK Python PyPI": "v1.5.0",
     "SDK TypeScript": "aws-sdk: v0.7.1",
@@ -472,7 +464,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.265",
+    "GitHub Claude Code": "v2.1.266",
     "GitHub SDK Python": "v1.1.0"
   }
 }
