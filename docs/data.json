@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-09-12T21:09:46.376047",
+  "last_check": "2026-09-13T21:13:55.685563",
   "updates": [
     {
       "source": "Claude Code",
@@ -18,7 +18,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.270",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -230,7 +230,7 @@
       "summary_en": "Publie le 2026-09-12",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -410,7 +410,7 @@
       "summary_en": "Raft distributed consensus algorithm implemented in Rust.",
       "changelog_items": [],
       "url": "https://github.com/anthropics/raft-rs",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Nouveau Depot",
