@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-09-13T21:13:55.685563",
+  "last_check": "2026-09-14T22:14:12.950666",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.271",
+      "title_en": "v2.1.271",
+      "summary": "Ce qui a change Ajout de fast mode in Claude Code Remote sessions (cloud and self-hosted runners): the host's fast-mode parametre or /fast taperd in the session applies where your organization allows it Ajout de mouse prise en charge to the /config panel in fullscreen mode: the wheel scrolls the parametres list, a clic on a parametre's value changes it, and the row",
+      "summary_en": "What's changed\n\nAdded fast mode in Claude Code Remote sessions (cloud and self-hosted runners): the host's fast-mode setting or /fast typed in the session applies where your organization allows it\nAdded mouse support to the /config panel in fullscreen mode: the wheel scrolls the settings list, a click on a setting's value changes it, and the row ",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "fast mode in Claude Code Remote sessions (cloud and self-hosted runners): the host's fast-mode setting or /fast typed in the session applies where your organization allows it"
+        },
+        {
+          "type": "added",
+          "text": "mouse support to the /config panel in fullscreen mode: the wheel scrolls the settings list, a click on a setting's value changes it, and the row"
+        },
+        {
+          "type": "changed",
+          "text": "Added fast mode in Claude Code Remote sessions (cloud and self-hosted runners): the host's fast-mode setting or /fast typed in the session applies where your organization allows it"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.271",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.270",
@@ -91,25 +114,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.267",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.266",
-      "title_en": "v2.1.266",
-      "summary": "Ce qui a change Correction de a 2.1.265 regression affecting LLM-gateway and proxy setups: the undocumented CLAUDE_CODE_USE_GATEWAY variable d'environnement, previously ignored unless ANTHROPIC_BASE_URL and ANTHROPIC_AUTH_TOKEN were both set, began forcing Cloud-gateway sign-in on its own in 2.1.265, so configurations that set it alongside an API key, <c",
-      "summary_en": "What's changed\n\nFixed a 2.1.265 regression affecting LLM-gateway and proxy setups: the undocumented CLAUDE_CODE_USE_GATEWAY environment variable, previously ignored unless ANTHROPIC_BASE_URL and ANTHROPIC_AUTH_TOKEN were both set, began forcing Cloud-gateway sign-in on its own in 2.1.265, so configurations that set it alongside an API key, <c",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "a 2.1.265 regression affecting LLM-gateway and proxy setups: the undocumented CLAUDE_CODE_USE_GATEWAY environment variable, previously ignored unless ANTHROPIC_BASE_URL and ANTHROPIC_AUTH_TOKEN were b"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed a 2.1.265 regression affecting LLM-gateway and proxy setups: the undocumented CLAUDE_CODE_USE_GATEWAY environment variable, previously ignored unless ANTHROPIC_BASE_URL and ANTHROPIC_AUTH_TOKEN "
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.266",
       "is_new": false
     },
     {
@@ -224,13 +228,13 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.270",
-      "title_en": "v2.1.270",
-      "summary": "Publie le 2026-09-12",
-      "summary_en": "Publie le 2026-09-12",
+      "title": "v2.1.271",
+      "title_en": "v2.1.271",
+      "summary": "Publie le 2026-09-14",
+      "summary_en": "Publie le 2026-09-14",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
@@ -410,7 +414,7 @@
       "summary_en": "Raft distributed consensus algorithm implemented in Rust.",
       "changelog_items": [],
       "url": "https://github.com/anthropics/raft-rs",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -455,8 +459,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.270",
-    "Claude Code npm": "v2.1.270",
+    "Claude Code": "v2.1.271",
+    "Claude Code npm": "v2.1.271",
     "SDK Python": "v1.5.0",
     "SDK Python PyPI": "v1.5.0",
     "SDK TypeScript": "aws-sdk: v0.7.1",
@@ -464,7 +468,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.266",
+    "GitHub Claude Code": "v2.1.267",
     "GitHub SDK Python": "v1.1.0"
   }
 }
