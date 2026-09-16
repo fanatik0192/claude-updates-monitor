@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-09-15T21:53:41.495027",
+  "last_check": "2026-09-16T21:51:21.016101",
   "updates": [
     {
       "source": "Claude Code",
@@ -22,7 +22,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.273",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -37,7 +37,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.272",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -116,7 +116,7 @@
       "summary_en": "1.6.0 (2026-09-15)\nFull Changelog: v1.5.0...v1.6.0\nFeatures\n\napi: add auto mode tool permissions for Managed Agents (909d92f)\napi:<",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.6.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -166,7 +166,7 @@
       "summary_en": "0.19.9 (2026-09-15)\nFull Changelog: vertex-sdk-v0.19.8...vertex-sdk-v0.19.9\nChores\n\ninternal: move the sub-packages off ts-node and modernise their tsconfig (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/1d7c",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.9",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -176,7 +176,7 @@
       "summary_en": "0.126.0 (2026-09-15)\nFull Changelog: sdk-v0.125.0...sdk-v0.126.0\nFeatures\n\napi: add auto mode tool permissions for Managed Agents (7",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.126.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -186,7 +186,7 @@
       "summary_en": "0.0.12 (2026-09-15)\nFull Changelog: google-cloud-sdk-v0.0.11...google-cloud-sdk-v0.0.12\nChores\n\ninternal: move the sub-packages off ts-node and modernise their tsconfig (<a href=\"https://github.com/anthropics/anthropic-sd",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.12",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -196,7 +196,7 @@
       "summary_en": "0.4.7 (2026-09-15)\nFull Changelog: foundry-sdk-v0.4.6...foundry-sdk-v0.4.7\nChores\n\ninternal: move the sub-packages off ts-node and modernise their tsconfig (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/1d7cd",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.7",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -206,7 +206,7 @@
       "summary_en": "0.33.6 (2026-09-15)\nFull Changelog: bedrock-sdk-v0.33.5...bedrock-sdk-v0.33.6\nChores\n\ninternal: move the sub-packages off ts-node and modernise their tsconfig (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.6",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/sdk",
@@ -216,7 +216,7 @@
       "summary_en": "Publie le 2026-09-15",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
@@ -226,7 +226,7 @@
       "summary_en": "Publie le 2026-09-15",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -236,7 +236,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -286,7 +286,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/expanding-support-for-scientists",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -296,7 +296,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/wellbeing-research-grants",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -386,7 +386,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Statut",
@@ -406,7 +406,7 @@
       "summary_en": "Claude for Financial Advisors: a Claude Cowork plugin with ready-to-run workflows for financial advisors, drawing on third-party connectors.",
       "changelog_items": [],
       "url": "https://github.com/anthropics/claude-for-financial-advisors",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
