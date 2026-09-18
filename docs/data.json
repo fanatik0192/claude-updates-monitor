@@ -1,6 +1,71 @@
 {
-  "last_check": "2026-09-17T21:52:58.832400",
+  "last_check": "2026-09-18T21:23:49.513988",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.277",
+      "title_en": "v2.1.277",
+      "summary": "Ce qui a change Ajout de AGENTS.md prise en charge: in a project with no CLAUDE.md, Claude Code reads AGENTS.md instead; change it under \"Project instructions\" in /config (not yet on Bedrock, Vertex or Foundry) Ajout de CLAUDE_GATEWAY_PROXY_IS_EGRESS_BOUNDARY=1 for Claude apps gateways whose only egress is a forward proxy: every outbound request hands the prox",
+      "summary_en": "What's changed\n\nAdded AGENTS.md support: in a project with no CLAUDE.md, Claude Code reads AGENTS.md instead; change it under \"Project instructions\" in /config (not yet on Bedrock, Vertex or Foundry)\nAdded CLAUDE_GATEWAY_PROXY_IS_EGRESS_BOUNDARY=1 for Claude apps gateways whose only egress is a forward proxy: every outbound request hands the prox",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "AGENTS.md support: in a project with no CLAUDE.md, Claude Code reads AGENTS.md instead; change it under \"Project instructions\" in /config (not yet on Bedrock, Vertex or Foundry)"
+        },
+        {
+          "type": "added",
+          "text": "CLAUDE_GATEWAY_PROXY_IS_EGRESS_BOUNDARY=1 for Claude apps gateways whose only egress is a forward proxy: every outbound request hands the prox"
+        },
+        {
+          "type": "changed",
+          "text": "Added AGENTS.md support: in a project with no CLAUDE.md, Claude Code reads AGENTS.md instead; change it under \"Project instructions\" in /config (not yet on Bedrock, Vertex or Foundry)"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.277",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.276",
+      "title_en": "v2.1.276",
+      "summary": "Ce qui a change Correction de every request failing with 400 … Entree tag 'advisor_20260301' when ANTHROPIC_BASE_URL points at a proxy or gateway (2.1.275 regression)",
+      "summary_en": "What's changed\n\nFixed every request failing with 400 … Input tag 'advisor_20260301' when ANTHROPIC_BASE_URL points at a proxy or gateway (2.1.275 regression)\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "every request failing with 400 … Input tag 'advisor_20260301' when ANTHROPIC_BASE_URL points at a proxy or gateway (2.1.275 regression)"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed every request failing with 400 … Input tag 'advisor_20260301' when ANTHROPIC_BASE_URL points at a proxy or gateway (2.1.275 regression)"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.276",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.275",
+      "title_en": "v2.1.275",
+      "summary": "Ce qui a change Ajout de the signed-in account to Claude apps gateway sign-in: when the gateway noms it, you confirm it before the credential is saved, and /status affichers it Ajout de a send-now key (ctrl+enter, or ctrl+x ctrl+s) that interrupts the current turn and sends all queued messages at once; sent and queued messages afficher in gray until the model receives the",
+      "summary_en": "What's changed\n\nAdded the signed-in account to Claude apps gateway sign-in: when the gateway names it, you confirm it before the credential is saved, and /status shows it\nAdded a send-now key (ctrl+enter, or ctrl+x ctrl+s) that interrupts the current turn and sends all queued messages at once; sent and queued messages show in gray until the model receives the",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "the signed-in account to Claude apps gateway sign-in: when the gateway names it, you confirm it before the credential is saved, and /status shows it"
+        },
+        {
+          "type": "added",
+          "text": "a send-now key (ctrl+enter, or ctrl+x ctrl+s) that interrupts the current turn and sends all queued messages at once; sent and queued messages show in gray until the model receives the"
+        },
+        {
+          "type": "changed",
+          "text": "Added the signed-in account to Claude apps gateway sign-in: when the gateway names it, you confirm it before the credential is saved, and /status shows it"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.275",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.274",
@@ -26,7 +91,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.274",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -52,61 +117,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.272",
-      "title_en": "v2.1.272",
-      "summary": "Ce qui a change Bug fixes and reliability improvements",
-      "summary_en": "What's changed\n\nBug fixes and reliability improvements\n",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Bug fixes and reliability improvements"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.272",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.271",
-      "title_en": "v2.1.271",
-      "summary": "Ce qui a change Ajout de fast mode in Claude Code Remote sessions (cloud and self-hosted runners): the host's fast-mode parametre or /fast taperd in the session applies where your organization allows it Ajout de mouse prise en charge to the /config panel in fullscreen mode: the wheel scrolls the parametres list, a clic on a parametre's value changes it, and the row",
-      "summary_en": "What's changed\n\nAdded fast mode in Claude Code Remote sessions (cloud and self-hosted runners): the host's fast-mode setting or /fast typed in the session applies where your organization allows it\nAdded mouse support to the /config panel in fullscreen mode: the wheel scrolls the settings list, a click on a setting's value changes it, and the row ",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "fast mode in Claude Code Remote sessions (cloud and self-hosted runners): the host's fast-mode setting or /fast typed in the session applies where your organization allows it"
-        },
-        {
-          "type": "added",
-          "text": "mouse support to the /config panel in fullscreen mode: the wheel scrolls the settings list, a click on a setting's value changes it, and the row"
-        },
-        {
-          "type": "changed",
-          "text": "Added fast mode in Claude Code Remote sessions (cloud and self-hosted runners): the host's fast-mode setting or /fast typed in the session applies where your organization allows it"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.271",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.270",
-      "title_en": "v2.1.270",
-      "summary": "Ce qui a change Correction de read-only git commandes in Bash unexpectedly asking for permission after a session had been running for a while (regression in 2.1.269)",
-      "summary_en": "What's changed\n\nFixed read-only git commands in Bash unexpectedly asking for permission after a session had been running for a while (regression in 2.1.269)\n",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "read-only git commands in Bash unexpectedly asking for permission after a session had been running for a while (regression in 2.1.269)"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed read-only git commands in Bash unexpectedly asking for permission after a session had been running for a while (regression in 2.1.269)"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.270",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v1.7.0",
+      "title_en": "v1.7.0",
+      "summary": "1.7.0 (2026-09-18) Journal complet: v1.6.0...v1.7.0 Fonctionnalites api: add group with display_nom to rate limits, deprecate group_taper () <l",
+      "summary_en": "1.7.0 (2026-09-18)\nFull Changelog: v1.6.0...v1.7.0\nFeatures\n\napi: add group with display_name to rate limits, deprecate group_type (28f0a83)\n<l",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.7.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -149,94 +167,84 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v1.2.0",
-      "title_en": "v1.2.0",
-      "summary": "1.2.0 (2026-08-27) Journal complet: v1.1.0...v1.2.0 Fonctionnalites api: beta fichiers/skills nomspaces use GA shapes; drop dated beta header pins ()<",
-      "summary_en": "1.2.0 (2026-08-27)\nFull Changelog: v1.1.0...v1.2.0\nFeatures\n\napi: beta files/skills namespaces use GA shapes; drop dated beta header pins (9df4565)<",
+      "source": "SDK TypeScript",
+      "title": "vertex-sdk: v0.19.10",
+      "title_en": "vertex-sdk: v0.19.10",
+      "summary": "0.19.10 (2026-09-18) Journal complet: vertex-sdk-v0.19.9...vertex-sdk-v0.19.10 Maintenance internal: build the sub-packages with TaperScript 6.0.3 (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
+      "summary_en": "0.19.10 (2026-09-18)\nFull Changelog: vertex-sdk-v0.19.9...vertex-sdk-v0.19.10\nChores\n\ninternal: build the sub-packages with TypeScript 6.0.3 (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/8a69ff594ffeec3f6bd",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.2.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.10",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "vertex-sdk: v0.19.9",
-      "title_en": "vertex-sdk: v0.19.9",
-      "summary": "0.19.9 (2026-09-15) Journal complet: vertex-sdk-v0.19.8...vertex-sdk-v0.19.9 Maintenance internal: move the sub-packages off ts-node and modernise their tsconfig (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/1d7c",
-      "summary_en": "0.19.9 (2026-09-15)\nFull Changelog: vertex-sdk-v0.19.8...vertex-sdk-v0.19.9\nChores\n\ninternal: move the sub-packages off ts-node and modernise their tsconfig (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/1d7c",
+      "title": "sdk: v0.127.0",
+      "title_en": "sdk: v0.127.0",
+      "summary": "0.127.0 (2026-09-18) Journal complet: sdk-v0.126.0...sdk-v0.127.0 Fonctionnalites api: add group with display_nom to rate limits, deprecate group_taper (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
+      "summary_en": "0.127.0 (2026-09-18)\nFull Changelog: sdk-v0.126.0...sdk-v0.127.0\nFeatures\n\napi: add group with display_name to rate limits, deprecate group_type (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/2575d977be0508d0bd3e3c429b75",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.9",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.127.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk: v0.126.0",
-      "title_en": "sdk: v0.126.0",
-      "summary": "0.126.0 (2026-09-15) Journal complet: sdk-v0.125.0...sdk-v0.126.0 Fonctionnalites api: add auto mode tool permissions for Managed Agents (7",
-      "summary_en": "0.126.0 (2026-09-15)\nFull Changelog: sdk-v0.125.0...sdk-v0.126.0\nFeatures\n\napi: add auto mode tool permissions for Managed Agents (7",
+      "title": "google-cloud-sdk: v0.0.13",
+      "title_en": "google-cloud-sdk: v0.0.13",
+      "summary": "0.0.13 (2026-09-18) Journal complet: google-cloud-sdk-v0.0.12...google-cloud-sdk-v0.0.13 Maintenance internal: build the sub-packages with TaperScript 6.0.3 (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commi",
+      "summary_en": "0.0.13 (2026-09-18)\nFull Changelog: google-cloud-sdk-v0.0.12...google-cloud-sdk-v0.0.13\nChores\n\ninternal: build the sub-packages with TypeScript 6.0.3 (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commi",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.126.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.13",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "google-cloud-sdk: v0.0.12",
-      "title_en": "google-cloud-sdk: v0.0.12",
-      "summary": "0.0.12 (2026-09-15) Journal complet: google-cloud-sdk-v0.0.11...google-cloud-sdk-v0.0.12 Maintenance internal: move the sub-packages off ts-node and modernise their tsconfig (<a href=\"https://github.com/anthropics/anthropic-sd",
-      "summary_en": "0.0.12 (2026-09-15)\nFull Changelog: google-cloud-sdk-v0.0.11...google-cloud-sdk-v0.0.12\nChores\n\ninternal: move the sub-packages off ts-node and modernise their tsconfig (<a href=\"https://github.com/anthropics/anthropic-sd",
+      "title": "foundry-sdk: v0.4.8",
+      "title_en": "foundry-sdk: v0.4.8",
+      "summary": "0.4.8 (2026-09-18) Journal complet: foundry-sdk-v0.4.7...foundry-sdk-v0.4.8 Maintenance internal: build the sub-packages with TaperScript 6.0.3 (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
+      "summary_en": "0.4.8 (2026-09-18)\nFull Changelog: foundry-sdk-v0.4.7...foundry-sdk-v0.4.8\nChores\n\ninternal: build the sub-packages with TypeScript 6.0.3 (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/8a69ff594ffeec3f6bd9640",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.12",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.8",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "foundry-sdk: v0.4.7",
-      "title_en": "foundry-sdk: v0.4.7",
-      "summary": "0.4.7 (2026-09-15) Journal complet: foundry-sdk-v0.4.6...foundry-sdk-v0.4.7 Maintenance internal: move the sub-packages off ts-node and modernise their tsconfig (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/1d7cd",
-      "summary_en": "0.4.7 (2026-09-15)\nFull Changelog: foundry-sdk-v0.4.6...foundry-sdk-v0.4.7\nChores\n\ninternal: move the sub-packages off ts-node and modernise their tsconfig (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/1d7cd",
+      "title": "bedrock-sdk: v0.33.7",
+      "title_en": "bedrock-sdk: v0.33.7",
+      "summary": "0.33.7 (2026-09-18) Journal complet: bedrock-sdk-v0.33.6...bedrock-sdk-v0.33.7 Corrections de bugs bedrock: raise APIErreur for mid-stream exception and erreur frames (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/issues/622\"",
+      "summary_en": "0.33.7 (2026-09-18)\nFull Changelog: bedrock-sdk-v0.33.6...bedrock-sdk-v0.33.7\nBug Fixes\n\nbedrock: raise APIError for mid-stream exception and error frames (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/issues/622\"",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.7",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "bedrock-sdk: v0.33.6",
-      "title_en": "bedrock-sdk: v0.33.6",
-      "summary": "0.33.6 (2026-09-15) Journal complet: bedrock-sdk-v0.33.5...bedrock-sdk-v0.33.6 Maintenance internal: move the sub-packages off ts-node and modernise their tsconfig (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
-      "summary_en": "0.33.6 (2026-09-15)\nFull Changelog: bedrock-sdk-v0.33.5...bedrock-sdk-v0.33.6\nChores\n\ninternal: move the sub-packages off ts-node and modernise their tsconfig (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.6",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.7",
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.126.0",
-      "title_en": "v0.126.0",
-      "summary": "Publie le 2026-09-15",
-      "summary_en": "Publie le 2026-09-15",
+      "title": "v0.127.0",
+      "title_en": "v0.127.0",
+      "summary": "Publie le 2026-09-18",
+      "summary_en": "Publie le 2026-09-18",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.274",
-      "title_en": "v2.1.274",
-      "summary": "Publie le 2026-09-16",
-      "summary_en": "Publie le 2026-09-16",
+      "title": "v2.1.277",
+      "title_en": "v2.1.277",
+      "summary": "Publie le 2026-09-18",
+      "summary_en": "Publie le 2026-09-18",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v1.6.0",
-      "title_en": "v1.6.0",
+      "title": "v1.7.0",
+      "title_en": "v1.7.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -250,13 +258,23 @@
     },
     {
       "source": "Blog",
+      "title": "Sep 18, 2026AnnouncementsPartnering with Accenture on embedded evaluation",
+      "title_en": "Sep 18, 2026AnnouncementsPartnering with Accenture on embedded evaluation",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Sep 17, 2026AnnouncementsIntroducing the Life Sciences Verification Program",
       "title_en": "Sep 17, 2026AnnouncementsIntroducing the Life Sciences Verification Program",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/life-sciences-verification-program",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -329,16 +347,6 @@
       "is_new": false
     },
     {
-      "source": "Blog",
-      "title": "Jul 30, 2026AnnouncementsInvestigating three real-world incidents in our cybersecurite evaluations",
-      "title_en": "Jul 30, 2026AnnouncementsInvestigating three real-world incidents in our cybersecurity evaluations",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
-      "is_new": false
-    },
-    {
       "source": "Recherche",
       "title": "Interpretability",
       "title_en": "Interpretability",
@@ -366,7 +374,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/frontier-red-team",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -406,7 +414,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/uplifting-biomolecular-modeling",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -436,7 +444,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/mythos-5-incident-transcript",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -451,16 +459,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.274",
-    "Claude Code npm": "v2.1.274",
-    "SDK Python": "v1.6.0",
-    "SDK Python PyPI": "v1.6.0",
-    "SDK TypeScript": "bedrock-sdk: v0.33.6",
+    "Claude Code": "v2.1.277",
+    "Claude Code npm": "v2.1.277",
+    "SDK Python": "v1.7.0",
+    "SDK Python PyPI": "v1.7.0",
+    "SDK TypeScript": "bedrock-sdk: v0.33.7",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.270",
-    "GitHub SDK Python": "v1.2.0"
+    "GitHub Claude Code": "v2.1.273",
+    "GitHub SDK Python": "v1.3.0"
   }
 }
