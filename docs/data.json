@@ -1,6 +1,21 @@
 {
-  "last_check": "2026-09-18T21:23:49.513988",
+  "last_check": "2026-09-19T21:14:15.416231",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.278",
+      "title_en": "v2.1.278",
+      "summary": "Ce qui a change Modification de auto mode for Claude API and Enterprise utilisateurs, and on Bedrock, Vertex, Foundry and gateways, to par defaut to the server-side classifier, which does not charge for classifier overhead (CLAUDE_CODE_AUTO_MODE_SERVER=0 opts out on Bedrock, Vertex, Foundry and gateways); warns on billed fallback. See <a href=\"https://code.claude.com/docs/en/auto-mode-",
+      "summary_en": "What's changed\n\nChanged auto mode for Claude API and Enterprise users, and on Bedrock, Vertex, Foundry and gateways, to default to the server-side classifier, which does not charge for classifier overhead (CLAUDE_CODE_AUTO_MODE_SERVER=0 opts out on Bedrock, Vertex, Foundry and gateways); warns on billed fallback. See <a href=\"https://code.claude.com/docs/en/auto-mode-",
+      "changelog_items": [
+        {
+          "type": "changed",
+          "text": "Changed auto mode for Claude API and Enterprise users, and on Bedrock, Vertex, Foundry and gateways, to default to the server-side classifier, which does not charge for classifier overhead (CLAUDE_COD"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.278",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.277",
@@ -22,7 +37,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.277",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -41,7 +56,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.276",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -64,7 +79,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.275",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -94,29 +109,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.273",
-      "title_en": "v2.1.273",
-      "summary": "Ce qui a change Ajout de x-claude-code-request-class, x-claude-code-agent-taper, x-claude-code-prev-tool-durations, x-claude-code-compaction and x-claude-code-context-compacted request headers for LLM gateways; opt in with CLAUDE_CODE_GATEWAY_HINT_HEADERS=1 Ajout de a notification when an MCP server di",
-      "summary_en": "What's changed\n\nAdded x-claude-code-request-class, x-claude-code-agent-type, x-claude-code-prev-tool-durations, x-claude-code-compaction and x-claude-code-context-compacted request headers for LLM gateways; opt in with CLAUDE_CODE_GATEWAY_HINT_HEADERS=1\nAdded a notification when an MCP server di",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "x-claude-code-request-class, x-claude-code-agent-type, x-claude-code-prev-tool-durations, x-claude-code-compaction and x-claude-code-context-compacted request headers for LLM gateways; opt in with CLA"
-        },
-        {
-          "type": "added",
-          "text": "a notification when an MCP server di"
-        },
-        {
-          "type": "changed",
-          "text": "Added x-claude-code-request-class, x-claude-code-agent-type, x-claude-code-prev-tool-durations, x-claude-code-compaction and x-claude-code-context-compacted request headers for LLM gateways; opt in wi"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.273",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v1.7.0",
       "title_en": "v1.7.0",
@@ -124,7 +116,7 @@
       "summary_en": "1.7.0 (2026-09-18)\nFull Changelog: v1.6.0...v1.7.0\nFeatures\n\napi: add group with display_name to rate limits, deprecate group_type (28f0a83)\n<l",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.7.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -174,7 +166,7 @@
       "summary_en": "0.19.10 (2026-09-18)\nFull Changelog: vertex-sdk-v0.19.9...vertex-sdk-v0.19.10\nChores\n\ninternal: build the sub-packages with TypeScript 6.0.3 (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/8a69ff594ffeec3f6bd",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.10",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -184,7 +176,7 @@
       "summary_en": "0.127.0 (2026-09-18)\nFull Changelog: sdk-v0.126.0...sdk-v0.127.0\nFeatures\n\napi: add group with display_name to rate limits, deprecate group_type (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/2575d977be0508d0bd3e3c429b75",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.127.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -194,7 +186,7 @@
       "summary_en": "0.0.13 (2026-09-18)\nFull Changelog: google-cloud-sdk-v0.0.12...google-cloud-sdk-v0.0.13\nChores\n\ninternal: build the sub-packages with TypeScript 6.0.3 (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commi",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.13",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -204,7 +196,7 @@
       "summary_en": "0.4.8 (2026-09-18)\nFull Changelog: foundry-sdk-v0.4.7...foundry-sdk-v0.4.8\nChores\n\ninternal: build the sub-packages with TypeScript 6.0.3 (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/8a69ff594ffeec3f6bd9640",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.8",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -214,7 +206,7 @@
       "summary_en": "0.33.7 (2026-09-18)\nFull Changelog: bedrock-sdk-v0.33.6...bedrock-sdk-v0.33.7\nBug Fixes\n\nbedrock: raise APIError for mid-stream exception and error frames (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/issues/622\"",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.7",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/sdk",
@@ -224,14 +216,14 @@
       "summary_en": "Publie le 2026-09-18",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.277",
-      "title_en": "v2.1.277",
-      "summary": "Publie le 2026-09-18",
-      "summary_en": "Publie le 2026-09-18",
+      "title": "v2.1.278",
+      "title_en": "v2.1.278",
+      "summary": "Publie le 2026-09-19",
+      "summary_en": "Publie le 2026-09-19",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -244,7 +236,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -264,7 +256,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -459,8 +451,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.277",
-    "Claude Code npm": "v2.1.277",
+    "Claude Code": "v2.1.278",
+    "Claude Code npm": "v2.1.278",
     "SDK Python": "v1.7.0",
     "SDK Python PyPI": "v1.7.0",
     "SDK TypeScript": "bedrock-sdk: v0.33.7",
@@ -468,7 +460,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.273",
+    "GitHub Claude Code": "v2.1.274",
     "GitHub SDK Python": "v1.3.0"
   }
 }
