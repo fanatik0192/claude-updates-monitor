@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-09-19T21:14:15.416231",
+  "last_check": "2026-09-20T21:08:35.243825",
   "updates": [
     {
       "source": "Claude Code",
@@ -14,7 +14,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.278",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -106,7 +106,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.274",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -226,7 +226,7 @@
       "summary_en": "Publie le 2026-09-19",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
