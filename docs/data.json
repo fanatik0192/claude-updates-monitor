@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-09-21T22:24:13.220020",
+  "last_check": "2026-09-22T21:45:25.676215",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.280",
+      "title_en": "v2.1.280",
+      "summary": "Ce qui a change Ajout de Claude Opus 5.5 (claude-opus-5-5), now the par defaut Opus model — 1M context, $4/$20 per Mtok with $0.20/Mtok cache reads Ajout de mouse prise en charge to more lists in fullscreen mode: the wheel scrolls the /skills list, and a skill's state options in /plugin can be cliced Ajout de CLAUDE_CODE_MAX_MCP_DESCRIPT",
+      "summary_en": "What's changed\n\nAdded Claude Opus 5.5 (claude-opus-5-5), now the default Opus model — 1M context, $4/$20 per Mtok with $0.20/Mtok cache reads\nAdded mouse support to more lists in fullscreen mode: the wheel scrolls the /skills list, and a skill's state options in /plugin can be clicked\nAdded CLAUDE_CODE_MAX_MCP_DESCRIPT",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "Claude Opus 5.5 (claude-opus-5-5), now the default Opus model — 1M context, $4/$20 per Mtok with $0.20/Mtok cache reads"
+        },
+        {
+          "type": "added",
+          "text": "mouse support to more lists in fullscreen mode: the wheel scrolls the /skills list, and a skill's state options in /plugin can be clicked"
+        },
+        {
+          "type": "added",
+          "text": "CLAUDE_CODE_MAX_MCP_DESCRIPT"
+        },
+        {
+          "type": "changed",
+          "text": "Added Claude Opus 5.5 (claude-opus-5-5), now the default Opus model — 1M context, $4/$20 per Mtok with $0.20/Mtok cache reads"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.280",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.278",
@@ -82,31 +109,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.274",
-      "title_en": "v2.1.274",
-      "summary": "Ce qui a change Ajout de a visible avertissement when memory usage is critical, with steps to free memory or restart safely Ajout de CLAUDE_CODE_MCP_STARTUP_WAIT_MS to bound how long the first non-interactive turn waits for connecting MCP servers (0 = don't wait) Ajout de effort attribute to the claude_code.llm_request OuvrirTel",
-      "summary_en": "What's changed\n\nAdded a visible warning when memory usage is critical, with steps to free memory or restart safely\nAdded CLAUDE_CODE_MCP_STARTUP_WAIT_MS to bound how long the first non-interactive turn waits for connecting MCP servers (0 = don't wait)\nAdded effort attribute to the claude_code.llm_request OpenTel",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "a visible warning when memory usage is critical, with steps to free memory or restart safely"
-        },
-        {
-          "type": "added",
-          "text": "CLAUDE_CODE_MCP_STARTUP_WAIT_MS to bound how long the first non-interactive turn waits for connecting MCP servers (0 = don't wait)"
-        },
-        {
-          "type": "added",
-          "text": "effort attribute to the claude_code.llm_request OpenTel"
-        },
-        {
-          "type": "changed",
-          "text": "Added a visible warning when memory usage is critical, with steps to free memory or restart safely"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.274",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v1.8.0",
+      "title_en": "v1.8.0",
+      "summary": "1.8.0 (2026-09-22) Journal complet: v1.7.0...v1.8.0 Fonctionnalites api: add prise en charge de claude-opus-5-5, inline tool definitions and MCP tool-list pinning (beta) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/",
+      "summary_en": "1.8.0 (2026-09-22)\nFull Changelog: v1.7.0...v1.8.0\nFeatures\n\napi: add support for claude-opus-5-5, inline tool definitions and MCP tool-list pinning (beta) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/b5cc70071a60def1d2e93f3634d1a59591900",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.8.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -149,94 +159,84 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v1.3.0",
-      "title_en": "v1.3.0",
-      "summary": "1.3.0 (2026-09-01) Journal complet: v1.2.0...v1.3.0 Fonctionnalites api: beta utilisateur profichiers: add external_utilisateur_onboarded_at, remove relationship in favor of access_taper (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/",
-      "summary_en": "1.3.0 (2026-09-01)\nFull Changelog: v1.2.0...v1.3.0\nFeatures\n\napi: beta user profiles: add external_user_onboarded_at, remove relationship in favor of access_type (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/74080c35d6e4f3e5e7fd47454ecce23",
+      "source": "SDK TypeScript",
+      "title": "vertex-sdk: v0.19.11",
+      "title_en": "vertex-sdk: v0.19.11",
+      "summary": "0.19.11 (2026-09-22) Journal complet: vertex-sdk-v0.19.10...vertex-sdk-v0.19.11",
+      "summary_en": "0.19.11 (2026-09-22)\nFull Changelog: vertex-sdk-v0.19.10...vertex-sdk-v0.19.11",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.3.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.11",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "vertex-sdk: v0.19.10",
-      "title_en": "vertex-sdk: v0.19.10",
-      "summary": "0.19.10 (2026-09-18) Journal complet: vertex-sdk-v0.19.9...vertex-sdk-v0.19.10 Maintenance internal: build the sub-packages with TaperScript 6.0.3 (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
-      "summary_en": "0.19.10 (2026-09-18)\nFull Changelog: vertex-sdk-v0.19.9...vertex-sdk-v0.19.10\nChores\n\ninternal: build the sub-packages with TypeScript 6.0.3 (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/8a69ff594ffeec3f6bd",
+      "title": "sdk: v0.128.0",
+      "title_en": "sdk: v0.128.0",
+      "summary": "0.128.0 (2026-09-22) Journal complet: sdk-v0.127.0...sdk-v0.128.0 Fonctionnalites api: add prise en charge de claude-opus-5-5, inline tool definitions and MCP tool-list pinning (beta) (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/eff",
+      "summary_en": "0.128.0 (2026-09-22)\nFull Changelog: sdk-v0.127.0...sdk-v0.128.0\nFeatures\n\napi: add support for claude-opus-5-5, inline tool definitions and MCP tool-list pinning (beta) (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/eff",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.10",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.128.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk: v0.127.0",
-      "title_en": "sdk: v0.127.0",
-      "summary": "0.127.0 (2026-09-18) Journal complet: sdk-v0.126.0...sdk-v0.127.0 Fonctionnalites api: add group with display_nom to rate limits, deprecate group_taper (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
-      "summary_en": "0.127.0 (2026-09-18)\nFull Changelog: sdk-v0.126.0...sdk-v0.127.0\nFeatures\n\napi: add group with display_name to rate limits, deprecate group_type (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/2575d977be0508d0bd3e3c429b75",
+      "title": "google-cloud-sdk: v0.0.14",
+      "title_en": "google-cloud-sdk: v0.0.14",
+      "summary": "0.0.14 (2026-09-22) Journal complet: google-cloud-sdk-v0.0.13...google-cloud-sdk-v0.0.14",
+      "summary_en": "0.0.14 (2026-09-22)\nFull Changelog: google-cloud-sdk-v0.0.13...google-cloud-sdk-v0.0.14",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.127.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.14",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "google-cloud-sdk: v0.0.13",
-      "title_en": "google-cloud-sdk: v0.0.13",
-      "summary": "0.0.13 (2026-09-18) Journal complet: google-cloud-sdk-v0.0.12...google-cloud-sdk-v0.0.13 Maintenance internal: build the sub-packages with TaperScript 6.0.3 (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commi",
-      "summary_en": "0.0.13 (2026-09-18)\nFull Changelog: google-cloud-sdk-v0.0.12...google-cloud-sdk-v0.0.13\nChores\n\ninternal: build the sub-packages with TypeScript 6.0.3 (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commi",
+      "title": "foundry-sdk: v0.4.9",
+      "title_en": "foundry-sdk: v0.4.9",
+      "summary": "0.4.9 (2026-09-22) Journal complet: foundry-sdk-v0.4.8...foundry-sdk-v0.4.9",
+      "summary_en": "0.4.9 (2026-09-22)\nFull Changelog: foundry-sdk-v0.4.8...foundry-sdk-v0.4.9",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.13",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.9",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "foundry-sdk: v0.4.8",
-      "title_en": "foundry-sdk: v0.4.8",
-      "summary": "0.4.8 (2026-09-18) Journal complet: foundry-sdk-v0.4.7...foundry-sdk-v0.4.8 Maintenance internal: build the sub-packages with TaperScript 6.0.3 (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
-      "summary_en": "0.4.8 (2026-09-18)\nFull Changelog: foundry-sdk-v0.4.7...foundry-sdk-v0.4.8\nChores\n\ninternal: build the sub-packages with TypeScript 6.0.3 (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/8a69ff594ffeec3f6bd9640",
+      "title": "bedrock-sdk: v0.33.8",
+      "title_en": "bedrock-sdk: v0.33.8",
+      "summary": "0.33.8 (2026-09-22) Journal complet: bedrock-sdk-v0.33.7...bedrock-sdk-v0.33.8",
+      "summary_en": "0.33.8 (2026-09-22)\nFull Changelog: bedrock-sdk-v0.33.7...bedrock-sdk-v0.33.8",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.8",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "bedrock-sdk: v0.33.7",
-      "title_en": "bedrock-sdk: v0.33.7",
-      "summary": "0.33.7 (2026-09-18) Journal complet: bedrock-sdk-v0.33.6...bedrock-sdk-v0.33.7 Corrections de bugs bedrock: raise APIErreur for mid-stream exception and erreur frames (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/issues/622\"",
-      "summary_en": "0.33.7 (2026-09-18)\nFull Changelog: bedrock-sdk-v0.33.6...bedrock-sdk-v0.33.7\nBug Fixes\n\nbedrock: raise APIError for mid-stream exception and error frames (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/issues/622\"",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.7",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.8",
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.127.0",
-      "title_en": "v0.127.0",
-      "summary": "Publie le 2026-09-18",
-      "summary_en": "Publie le 2026-09-18",
+      "title": "v0.128.0",
+      "title_en": "v0.128.0",
+      "summary": "Publie le 2026-09-22",
+      "summary_en": "Publie le 2026-09-22",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.278",
-      "title_en": "v2.1.278",
-      "summary": "Publie le 2026-09-19",
-      "summary_en": "Publie le 2026-09-19",
+      "title": "v2.1.280",
+      "title_en": "v2.1.280",
+      "summary": "Publie le 2026-09-22",
+      "summary_en": "Publie le 2026-09-22",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v1.7.0",
-      "title_en": "v1.7.0",
+      "title": "v1.8.0",
+      "title_en": "v1.8.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -246,6 +246,16 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+      "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "AnnouncementsAug 27, 2026Previewing the Model Hardware StandardWe’re ouvriring a rerecherche preview of t",
+      "title_en": "AnnouncementsAug 27, 2026Previewing the Model Hardware StandardWe’re opening a research preview of t",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
       "is_new": false
     },
     {
@@ -276,16 +286,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Aug 27, 2026AnnouncementsPreviewing the Model Hardware Standard",
-      "title_en": "Aug 27, 2026AnnouncementsPreviewing the Model Hardware Standard",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
       "is_new": false
     },
     {
@@ -451,16 +451,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.278",
-    "Claude Code npm": "v2.1.278",
-    "SDK Python": "v1.7.0",
-    "SDK Python PyPI": "v1.7.0",
-    "SDK TypeScript": "bedrock-sdk: v0.33.7",
+    "Claude Code": "v2.1.280",
+    "Claude Code npm": "v2.1.280",
+    "SDK Python": "v1.8.0",
+    "SDK Python PyPI": "v1.8.0",
+    "SDK TypeScript": "bedrock-sdk: v0.33.8",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.274",
-    "GitHub SDK Python": "v1.3.0"
+    "GitHub Claude Code": "v2.1.275",
+    "GitHub SDK Python": "v1.4.0"
   }
 }
