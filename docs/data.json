@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-09-23T21:59:35.629717",
+  "last_check": "2026-09-24T21:56:42.214700",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.282",
+      "title_en": "v2.1.282",
+      "summary": "Ce qui a change Ajout de a maxProseWidth parametre that caps the width of Claude's prose in wide terminals while tables and code blocks keep the full width Ajout de a startup notice, and /status and claude doctor entries, listing telemetry variables in a project's parametres fichiers that were ignored or that turned telemetry off Ajout de t",
+      "summary_en": "What's changed\n\nAdded a maxProseWidth setting that caps the width of Claude's prose in wide terminals while tables and code blocks keep the full width\nAdded a startup notice, and /status and claude doctor entries, listing telemetry variables in a project's settings files that were ignored or that turned telemetry off\nAdded t",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "a maxProseWidth setting that caps the width of Claude's prose in wide terminals while tables and code blocks keep the full width"
+        },
+        {
+          "type": "added",
+          "text": "a startup notice, and /status and claude doctor entries, listing telemetry variables in a project's settings files that were ignored or that turned telemetry off"
+        },
+        {
+          "type": "changed",
+          "text": "Added a maxProseWidth setting that caps the width of Claude's prose in wide terminals while tables and code blocks keep the full width"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.282",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.281",
@@ -22,7 +45,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.281",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -87,25 +110,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.277",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.276",
-      "title_en": "v2.1.276",
-      "summary": "Ce qui a change Correction de every request failing with 400 … Entree tag 'advisor_20260301' when ANTHROPIC_BASE_URL points at a proxy or gateway (2.1.275 regression)",
-      "summary_en": "What's changed\n\nFixed every request failing with 400 … Input tag 'advisor_20260301' when ANTHROPIC_BASE_URL points at a proxy or gateway (2.1.275 regression)\n",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "every request failing with 400 … Input tag 'advisor_20260301' when ANTHROPIC_BASE_URL points at a proxy or gateway (2.1.275 regression)"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed every request failing with 400 … Input tag 'advisor_20260301' when ANTHROPIC_BASE_URL points at a proxy or gateway (2.1.275 regression)"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.276",
       "is_new": false
     },
     {
@@ -220,10 +224,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.281",
-      "title_en": "v2.1.281",
-      "summary": "Publie le 2026-09-23",
-      "summary_en": "Publie le 2026-09-23",
+      "title": "v2.1.282",
+      "title_en": "v2.1.282",
+      "summary": "Publie le 2026-09-24",
+      "summary_en": "Publie le 2026-09-24",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -246,7 +250,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -400,6 +404,16 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "serde-saphyr",
+      "title_en": "serde-saphyr",
+      "summary": "A strongly taperd, comment-prise en chargeing YAML deserializer that deserializes YAML directly into your Rust tapers without constructing an intermediate tree of “abstract values.”",
+      "summary_en": "A strongly typed, comment-supporting YAML deserializer that deserializes YAML directly into your Rust types without constructing an intermediate tree of “abstract values.” ",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/serde-saphyr",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "uplifting-biomolecular-modeling",
       "title_en": "uplifting-biomolecular-modeling",
       "summary": "",
@@ -437,22 +451,12 @@
       "changelog_items": [],
       "url": "https://github.com/anthropics/mythos-5-incident-transcript",
       "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "fermats-last-theorem",
-      "title_en": "fermats-last-theorem",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/fermats-last-theorem",
-      "is_new": true
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.281",
-    "Claude Code npm": "v2.1.281",
+    "Claude Code": "v2.1.282",
+    "Claude Code npm": "v2.1.282",
     "SDK Python": "v1.8.0",
     "SDK Python PyPI": "v1.8.0",
     "SDK TypeScript": "bedrock-sdk: v0.33.8",
@@ -460,7 +464,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.276",
+    "GitHub Claude Code": "v2.1.277",
     "GitHub SDK Python": "v1.4.0"
   }
 }
