@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-09-25T21:57:26.953171",
+  "last_check": "2026-09-26T21:46:04.877160",
   "updates": [
     {
       "source": "Claude Code",
@@ -22,7 +22,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.283",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -230,7 +230,7 @@
       "summary_en": "Publie le 2026-09-25",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -404,6 +404,16 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "claude-code-playground",
+      "title_en": "claude-code-playground",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/claude-code-playground",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "serde-saphyr",
       "title_en": "serde-saphyr",
       "summary": "A strongly taperd, comment-prise en chargeing YAML deserializer that deserializes YAML directly into your Rust tapers without constructing an intermediate tree of “abstract values.”",
@@ -440,16 +450,6 @@
       "summary_en": "Raft distributed consensus algorithm implemented in Rust.",
       "changelog_items": [],
       "url": "https://github.com/anthropics/raft-rs",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "mythos-5-incident-transcript",
-      "title_en": "mythos-5-incident-transcript",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/mythos-5-incident-transcript",
       "is_new": false
     }
   ],
