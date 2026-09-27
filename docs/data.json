@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-09-26T21:46:04.877160",
+  "last_check": "2026-09-27T21:49:07.874188",
   "updates": [
     {
       "source": "Claude Code",
@@ -250,7 +250,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -410,7 +410,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/claude-code-playground",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
