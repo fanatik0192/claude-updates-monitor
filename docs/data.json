@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-09-28T23:38:53.554796",
+  "last_check": "2026-09-29T22:48:29.020970",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.285",
+      "title_en": "v2.1.285",
+      "summary": "Ce qui a change Ajout de CLAUDE_CODE_DISABLE_WEB_FETCH variable d'environnement to turn off the WebFetch tool Ajout de claude --desktop to ouvrir the Claude desktop app on the current repertoire, or on a session with --continue / --resume &lt;id&gt; Ajout de claude plugin configure &lt;plugin&gt; to afficher a plugin's",
+      "summary_en": "What's changed\n\nAdded CLAUDE_CODE_DISABLE_WEB_FETCH environment variable to turn off the WebFetch tool\nAdded claude --desktop to open the Claude desktop app on the current directory, or on a session with --continue / --resume &lt;id&gt;\nAdded claude plugin configure &lt;plugin&gt; to show a plugin's",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "CLAUDE_CODE_DISABLE_WEB_FETCH environment variable to turn off the WebFetch tool"
+        },
+        {
+          "type": "added",
+          "text": "claude --desktop to open the Claude desktop app on the current directory, or on a session with --continue / --resume &lt;id&gt;"
+        },
+        {
+          "type": "added",
+          "text": "claude plugin configure &lt;plugin&gt; to show a plugin's"
+        },
+        {
+          "type": "changed",
+          "text": "Added CLAUDE_CODE_DISABLE_WEB_FETCH environment variable to turn off the WebFetch tool"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.285",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.284",
@@ -22,7 +49,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.284",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -94,33 +121,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.280",
-      "title_en": "v2.1.280",
-      "summary": "Ce qui a change Ajout de Claude Opus 5.5 (claude-opus-5-5), now the par defaut Opus model — 1M context, $4/$20 per Mtok with $0.20/Mtok cache reads Ajout de mouse prise en charge to more lists in fullscreen mode: the wheel scrolls the /skills list, and a skill's state options in /plugin can be cliced Ajout de CLAUDE_CODE_MAX_MCP_DESCRIPT",
-      "summary_en": "What's changed\n\nAdded Claude Opus 5.5 (claude-opus-5-5), now the default Opus model — 1M context, $4/$20 per Mtok with $0.20/Mtok cache reads\nAdded mouse support to more lists in fullscreen mode: the wheel scrolls the /skills list, and a skill's state options in /plugin can be clicked\nAdded CLAUDE_CODE_MAX_MCP_DESCRIPT",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "Claude Opus 5.5 (claude-opus-5-5), now the default Opus model — 1M context, $4/$20 per Mtok with $0.20/Mtok cache reads"
-        },
-        {
-          "type": "added",
-          "text": "mouse support to more lists in fullscreen mode: the wheel scrolls the /skills list, and a skill's state options in /plugin can be clicked"
-        },
-        {
-          "type": "added",
-          "text": "CLAUDE_CODE_MAX_MCP_DESCRIPT"
-        },
-        {
-          "type": "changed",
-          "text": "Added Claude Opus 5.5 (claude-opus-5-5), now the default Opus model — 1M context, $4/$20 per Mtok with $0.20/Mtok cache reads"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.280",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v1.9.0",
       "title_en": "v1.9.0",
@@ -128,7 +128,7 @@
       "summary_en": "1.9.0 (2026-09-28)\nFull Changelog: v1.8.0...v1.9.0\nFeatures\n\napi: add between_tools thinking type (a9a577d)\napi: add claud",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.9.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -148,7 +148,7 @@
       "summary_en": "1.7.0 (2026-09-18)\nFull Changelog: v1.6.0...v1.7.0\nFeatures\n\napi: add group with display_name to rate limits, deprecate group_type (28f0a83)\n<l",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.7.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -178,7 +178,7 @@
       "summary_en": "0.20.0 (2026-09-28)\nFull Changelog: vertex-sdk-v0.19.11...vertex-sdk-v0.20.0\nFeatures\n\napi: add claude-sonnet-5-5 (4e77",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.20.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -188,7 +188,7 @@
       "summary_en": "0.129.0 (2026-09-28)\nFull Changelog: sdk-v0.128.0...sdk-v0.129.0\nFeatures\n\napi: add between_tools thinking type (ab51075)\n<",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.129.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -198,7 +198,7 @@
       "summary_en": "0.0.15 (2026-09-28)\nFull Changelog: google-cloud-sdk-v0.0.14...google-cloud-sdk-v0.0.15",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.15",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -208,7 +208,7 @@
       "summary_en": "0.5.0 (2026-09-28)\nFull Changelog: foundry-sdk-v0.4.9...foundry-sdk-v0.5.0\nFeatures\n\napi: add claude-sonnet-5-5 (4e77366",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.5.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -218,7 +218,7 @@
       "summary_en": "0.34.0 (2026-09-28)\nFull Changelog: bedrock-sdk-v0.33.8...bedrock-sdk-v0.34.0\nFeatures\n\napi: add claude-sonnet-5-5 (4e",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.34.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/sdk",
@@ -228,14 +228,14 @@
       "summary_en": "Publie le 2026-09-28",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.284",
-      "title_en": "v2.1.284",
-      "summary": "Publie le 2026-09-28",
-      "summary_en": "Publie le 2026-09-28",
+      "title": "v2.1.285",
+      "title_en": "v2.1.285",
+      "summary": "Publie le 2026-09-29",
+      "summary_en": "Publie le 2026-09-29",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -248,7 +248,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -348,7 +348,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -463,8 +463,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.284",
-    "Claude Code npm": "v2.1.284",
+    "Claude Code": "v2.1.285",
+    "Claude Code npm": "v2.1.285",
     "SDK Python": "v1.9.0",
     "SDK Python PyPI": "v1.9.0",
     "SDK TypeScript": "bedrock-sdk: v0.34.0",
@@ -472,7 +472,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.280",
+    "GitHub Claude Code": "v2.1.281",
     "GitHub SDK Python": "v1.5.0"
   }
 }
