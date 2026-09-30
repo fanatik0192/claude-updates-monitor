@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-09-29T22:48:29.020970",
+  "last_check": "2026-09-30T22:47:46.243993",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.286",
+      "title_en": "v2.1.286",
+      "summary": "Ce qui a change Ajout de a count such as \"2 of 5\" to the permission prompt when several permission requests stack up Ajout de mouse prise en charge de the \"N more\" rows of lists in fullscreen mode: clic one to jump to that end of the list, with survol and appuyer sured states Correction de several Claude Code processes and IDE extensions each ouvriring a login browser when gcpAuthActualiser or",
+      "summary_en": "What's changed\n\nAdded a count such as \"2 of 5\" to the permission prompt when several permission requests stack up\nAdded mouse support for the \"N more\" rows of lists in fullscreen mode: click one to jump to that end of the list, with hover and pressed states\nFixed several Claude Code processes and IDE extensions each opening a login browser when gcpAuthRefresh or ",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "a count such as \"2 of 5\" to the permission prompt when several permission requests stack up"
+        },
+        {
+          "type": "added",
+          "text": "mouse support for the \"N more\" rows of lists in fullscreen mode: click one to jump to that end of the list, with hover and pressed states"
+        },
+        {
+          "type": "fixed",
+          "text": "several Claude Code processes and IDE extensions each opening a login browser when gcpAuthRefresh or"
+        },
+        {
+          "type": "changed",
+          "text": "Added a count such as \"2 of 5\" to the permission prompt when several permission requests stack up"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.286",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.285",
@@ -26,7 +53,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.285",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -98,27 +125,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.281",
-      "title_en": "v2.1.281",
-      "summary": "Ce qui a change Ajout de Claude apps gateway prise en charge de newer Claude Desktop keys in desktop policy blocks, including blockReadsOutsideWorkingDirectories and desactiverBypassPermissionsMode Ajout de assume_role on Claude apps gateway Bedrock upstreams: the gateway calls Bedrock as an IAM role it assumes through STS, in another A",
-      "summary_en": "What's changed\n\nAdded Claude apps gateway support for newer Claude Desktop keys in desktop policy blocks, including blockReadsOutsideWorkingDirectories and disableBypassPermissionsMode\nAdded assume_role on Claude apps gateway Bedrock upstreams: the gateway calls Bedrock as an IAM role it assumes through STS, in another A",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "Claude apps gateway support for newer Claude Desktop keys in desktop policy blocks, including blockReadsOutsideWorkingDirectories and disableBypassPermissionsMode"
-        },
-        {
-          "type": "added",
-          "text": "assume_role on Claude apps gateway Bedrock upstreams: the gateway calls Bedrock as an IAM role it assumes through STS, in another A"
-        },
-        {
-          "type": "changed",
-          "text": "Added Claude apps gateway support for newer Claude Desktop keys in desktop policy blocks, including blockReadsOutsideWorkingDirectories and disableBypassPermissionsMode"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.281",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v1.10.0",
+      "title_en": "v1.10.0",
+      "summary": "1.10.0 (2026-09-30) Journal complet: v1.9.0...v1.10.0 Fonctionnalites api: add a refusal stop reason and stop_details to Managed Agents session idle events (c",
+      "summary_en": "1.10.0 (2026-09-30)\nFull Changelog: v1.9.0...v1.10.0\nFeatures\n\napi: add a refusal stop reason and stop_details to Managed Agents session idle events (c",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.10.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -161,94 +175,84 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v1.5.0",
-      "title_en": "v1.5.0",
-      "summary": "1.5.0 (2026-09-10) Journal complet: v1.4.0...v1.5.0 Fonctionnalites api: add auto mode tool permissions for Managed Agents () api:<",
-      "summary_en": "1.5.0 (2026-09-10)\nFull Changelog: v1.4.0...v1.5.0\nFeatures\n\napi: add auto mode tool permissions for Managed Agents (62aa21b)\napi:<",
+      "source": "SDK TypeScript",
+      "title": "vertex-sdk: v0.20.1",
+      "title_en": "vertex-sdk: v0.20.1",
+      "summary": "0.20.1 (2026-09-30) Journal complet: vertex-sdk-v0.20.0...vertex-sdk-v0.20.1",
+      "summary_en": "0.20.1 (2026-09-30)\nFull Changelog: vertex-sdk-v0.20.0...vertex-sdk-v0.20.1",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.5.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.20.1",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "vertex-sdk: v0.20.0",
-      "title_en": "vertex-sdk: v0.20.0",
-      "summary": "0.20.0 (2026-09-28) Journal complet: vertex-sdk-v0.19.11...vertex-sdk-v0.20.0 Fonctionnalites api: add claude-sonnet-5-5 (4e77",
-      "summary_en": "0.20.0 (2026-09-28)\nFull Changelog: vertex-sdk-v0.19.11...vertex-sdk-v0.20.0\nFeatures\n\napi: add claude-sonnet-5-5 (4e77",
+      "title": "sdk: v0.130.0",
+      "title_en": "sdk: v0.130.0",
+      "summary": "0.130.0 (2026-09-30) Journal complet: sdk-v0.129.0...sdk-v0.130.0 Fonctionnalites api: add a refusal stop reason and stop_details to Managed Agents session idle events (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
+      "summary_en": "0.130.0 (2026-09-30)\nFull Changelog: sdk-v0.129.0...sdk-v0.130.0\nFeatures\n\napi: add a refusal stop reason and stop_details to Managed Agents session idle events (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/5cd6910a0e74",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.20.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.130.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk: v0.129.0",
-      "title_en": "sdk: v0.129.0",
-      "summary": "0.129.0 (2026-09-28) Journal complet: sdk-v0.128.0...sdk-v0.129.0 Fonctionnalites api: add between_tools thinking taper () <",
-      "summary_en": "0.129.0 (2026-09-28)\nFull Changelog: sdk-v0.128.0...sdk-v0.129.0\nFeatures\n\napi: add between_tools thinking type (ab51075)\n<",
+      "title": "google-cloud-sdk: v0.0.16",
+      "title_en": "google-cloud-sdk: v0.0.16",
+      "summary": "0.0.16 (2026-09-30) Journal complet: google-cloud-sdk-v0.0.15...google-cloud-sdk-v0.0.16",
+      "summary_en": "0.0.16 (2026-09-30)\nFull Changelog: google-cloud-sdk-v0.0.15...google-cloud-sdk-v0.0.16",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.129.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.16",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "google-cloud-sdk: v0.0.15",
-      "title_en": "google-cloud-sdk: v0.0.15",
-      "summary": "0.0.15 (2026-09-28) Journal complet: google-cloud-sdk-v0.0.14...google-cloud-sdk-v0.0.15",
-      "summary_en": "0.0.15 (2026-09-28)\nFull Changelog: google-cloud-sdk-v0.0.14...google-cloud-sdk-v0.0.15",
+      "title": "foundry-sdk: v0.5.1",
+      "title_en": "foundry-sdk: v0.5.1",
+      "summary": "0.5.1 (2026-09-30) Journal complet: foundry-sdk-v0.5.0...foundry-sdk-v0.5.1",
+      "summary_en": "0.5.1 (2026-09-30)\nFull Changelog: foundry-sdk-v0.5.0...foundry-sdk-v0.5.1",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.15",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.5.1",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "foundry-sdk: v0.5.0",
-      "title_en": "foundry-sdk: v0.5.0",
-      "summary": "0.5.0 (2026-09-28) Journal complet: foundry-sdk-v0.4.9...foundry-sdk-v0.5.0 Fonctionnalites api: add claude-sonnet-5-5 (",
-      "summary_en": "0.5.0 (2026-09-28)\nFull Changelog: foundry-sdk-v0.4.9...foundry-sdk-v0.5.0\nFeatures\n\napi: add claude-sonnet-5-5 (4e77366",
+      "title": "bedrock-sdk: v0.34.1",
+      "title_en": "bedrock-sdk: v0.34.1",
+      "summary": "0.34.1 (2026-09-30) Journal complet: bedrock-sdk-v0.34.0...bedrock-sdk-v0.34.1",
+      "summary_en": "0.34.1 (2026-09-30)\nFull Changelog: bedrock-sdk-v0.34.0...bedrock-sdk-v0.34.1",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.5.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "bedrock-sdk: v0.34.0",
-      "title_en": "bedrock-sdk: v0.34.0",
-      "summary": "0.34.0 (2026-09-28) Journal complet: bedrock-sdk-v0.33.8...bedrock-sdk-v0.34.0 Fonctionnalites api: add claude-sonnet-5-5 (4e",
-      "summary_en": "0.34.0 (2026-09-28)\nFull Changelog: bedrock-sdk-v0.33.8...bedrock-sdk-v0.34.0\nFeatures\n\napi: add claude-sonnet-5-5 (4e",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.34.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.34.1",
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.129.0",
-      "title_en": "v0.129.0",
-      "summary": "Publie le 2026-09-28",
-      "summary_en": "Publie le 2026-09-28",
+      "title": "v0.130.0",
+      "title_en": "v0.130.0",
+      "summary": "Publie le 2026-09-30",
+      "summary_en": "Publie le 2026-09-30",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.285",
-      "title_en": "v2.1.285",
-      "summary": "Publie le 2026-09-29",
-      "summary_en": "Publie le 2026-09-29",
+      "title": "v2.1.286",
+      "title_en": "v2.1.286",
+      "summary": "Publie le 2026-09-30",
+      "summary_en": "Publie le 2026-09-30",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v1.9.0",
-      "title_en": "v1.9.0",
+      "title": "v1.10.0",
+      "title_en": "v1.10.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -348,7 +352,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -463,16 +467,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.285",
-    "Claude Code npm": "v2.1.285",
-    "SDK Python": "v1.9.0",
-    "SDK Python PyPI": "v1.9.0",
-    "SDK TypeScript": "bedrock-sdk: v0.34.0",
+    "Claude Code": "v2.1.286",
+    "Claude Code npm": "v2.1.286",
+    "SDK Python": "v1.10.0",
+    "SDK Python PyPI": "v1.10.0",
+    "SDK TypeScript": "bedrock-sdk: v0.34.1",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.281",
-    "GitHub SDK Python": "v1.5.0"
+    "GitHub Claude Code": "v2.1.282",
+    "GitHub SDK Python": "v1.6.0"
   }
 }
