@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-10-01T22:58:17.892291",
+  "last_check": "2026-10-02T22:47:21.284650",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.288",
+      "title_en": "v2.1.288",
+      "summary": "Ce qui a change Ajout de $.ui.selection() for mods: returns the text you last selected in fullscreen mode and, when the selection lies within one transcript row, that row Ajout de a built-in gh api to cloud sessions whose image has no GitHub CLI, and correction de the built-in sending control characters from fichier noms, jq filtres or GitHub erreurs to the termi",
+      "summary_en": "What's changed\n\nAdded $.ui.selection() for mods: returns the text you last selected in fullscreen mode and, when the selection lies within one transcript row, that row\nAdded a built-in gh api to cloud sessions whose image has no GitHub CLI, and fixed the built-in sending control characters from file names, jq filters or GitHub errors to the termi",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "$.ui.selection() for mods: returns the text you last selected in fullscreen mode and, when the selection lies within one transcript row, that row"
+        },
+        {
+          "type": "added",
+          "text": "a built-in gh api to cloud sessions whose image has no GitHub CLI, and fixed the built-in sending control characters from file names, jq filters or GitHub errors to the termi"
+        },
+        {
+          "type": "fixed",
+          "text": "the built-in sending control characters from file names, jq filters or GitHub errors to the termi"
+        },
+        {
+          "type": "changed",
+          "text": "Added $.ui.selection() for mods: returns the text you last selected in fullscreen mode and, when the selection lies within one transcript row, that row"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.288",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.287",
@@ -26,7 +53,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.287",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -106,29 +133,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.283",
-      "title_en": "v2.1.283",
-      "summary": "Ce qui a change Ajout de x-claude-code-prompt-id to the gateway hint headers so LLM gateways can group the requests that serve one utilisateur prompt; opt in with CLAUDE_CODE_GATEWAY_HINT_HEADERS=1 Ajout de availableModelsMatch managed parametre: with \"exact\", an availableModels entry allows only the model version it noms",
-      "summary_en": "What's changed\n\nAdded x-claude-code-prompt-id to the gateway hint headers so LLM gateways can group the requests that serve one user prompt; opt in with CLAUDE_CODE_GATEWAY_HINT_HEADERS=1\nAdded availableModelsMatch managed setting: with \"exact\", an availableModels entry allows only the model version it names",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "x-claude-code-prompt-id to the gateway hint headers so LLM gateways can group the requests that serve one user prompt; opt in with CLAUDE_CODE_GATEWAY_HINT_HEADERS=1"
-        },
-        {
-          "type": "added",
-          "text": "availableModelsMatch managed setting: with \"exact\", an availableModels entry allows only the model version it names"
-        },
-        {
-          "type": "changed",
-          "text": "Added x-claude-code-prompt-id to the gateway hint headers so LLM gateways can group the requests that serve one user prompt; opt in with CLAUDE_CODE_GATEWAY_HINT_HEADERS=1"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.283",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v1.11.0",
       "title_en": "v1.11.0",
@@ -136,7 +140,7 @@
       "summary_en": "1.11.0 (2026-09-30)\nFull Changelog: v1.10.0...v1.11.0\nFeatures\n\napi: add list spend limits endpoint (e8f0cac)\n\nChores\n\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.11.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -166,7 +170,7 @@
       "summary_en": "1.8.0 (2026-09-22)\nFull Changelog: v1.7.0...v1.8.0\nFeatures\n\napi: add support for claude-opus-5-5, inline tool definitions and MCP tool-list pinning (beta) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/b5cc70071a60def1d2e93f3634d1a59591900",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.8.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -186,7 +190,7 @@
       "summary_en": "0.20.2 (2026-09-30)\nFull Changelog: vertex-sdk-v0.20.1...vertex-sdk-v0.20.2\nChores\n\nclient: deprecate sonnet 4.5 (d72cfa",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.20.2",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -206,7 +210,7 @@
       "summary_en": "0.131.0 (2026-09-30)\nFull Changelog: sdk-v0.130.0...sdk-v0.131.0\nFeatures\n\napi: add list spend limits endpoint (cfb78c8)\n</",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.131.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -226,7 +230,7 @@
       "summary_en": "0.0.17 (2026-09-30)\nFull Changelog: google-cloud-sdk-v0.0.16...google-cloud-sdk-v0.0.17",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.17",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/sdk",
@@ -236,14 +240,14 @@
       "summary_en": "Publie le 2026-09-30",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.287",
-      "title_en": "v2.1.287",
-      "summary": "Publie le 2026-10-01",
-      "summary_en": "Publie le 2026-10-01",
+      "title": "v2.1.288",
+      "title_en": "v2.1.288",
+      "summary": "Publie le 2026-10-02",
+      "summary_en": "Publie le 2026-10-02",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -256,6 +260,16 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
+      "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Oct 2, 2026AnnouncementsAnthropic invests $100 million to train 10,000 engineers and tackle the ente",
+      "title_en": "Oct 2, 2026AnnouncementsAnthropic invests $100 million to train 10,000 engineers and tackle the ente",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/claude-frontier-academy",
       "is_new": true
     },
     {
@@ -266,7 +280,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/barclays-scales-claude",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -349,16 +363,6 @@
       "is_new": false
     },
     {
-      "source": "Blog",
-      "title": "Aug 14, 2026AnnouncementsHow Claude’s text watermark works",
-      "title_en": "Aug 14, 2026AnnouncementsHow Claude’s text watermark works",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-text-watermark",
-      "is_new": false
-    },
-    {
       "source": "Recherche",
       "title": "Interpretability",
       "title_en": "Interpretability",
@@ -376,7 +380,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/societal-impacts",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -426,7 +430,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/claude-code-playground",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Nouveau Depot",
@@ -471,8 +475,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.287",
-    "Claude Code npm": "v2.1.287",
+    "Claude Code": "v2.1.288",
+    "Claude Code npm": "v2.1.288",
     "SDK Python": "v1.11.0",
     "SDK Python PyPI": "v1.11.0",
     "SDK TypeScript": "google-cloud-sdk: v0",
@@ -480,7 +484,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.283",
+    "GitHub Claude Code": "v2.1.284",
     "GitHub SDK Python": "v1.7.0"
   }
 }
