@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-10-02T22:47:21.284650",
+  "last_check": "2026-10-03T21:58:02.808281",
   "updates": [
     {
       "source": "Claude Code",
@@ -26,7 +26,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.288",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -170,7 +170,7 @@
       "summary_en": "1.8.0 (2026-09-22)\nFull Changelog: v1.7.0...v1.8.0\nFeatures\n\napi: add support for claude-opus-5-5, inline tool definitions and MCP tool-list pinning (beta) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/b5cc70071a60def1d2e93f3634d1a59591900",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.8.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -250,7 +250,7 @@
       "summary_en": "Publie le 2026-10-02",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -270,7 +270,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-frontier-academy",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -380,7 +380,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/societal-impacts",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -430,7 +430,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/claude-code-playground",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -450,7 +450,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/uplifting-biomolecular-modeling",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Nouveau Depot",
