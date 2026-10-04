@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-10-03T21:58:02.808281",
+  "last_check": "2026-10-04T22:10:01.317979",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.289",
+      "title_en": "v2.1.289",
+      "summary": "Ce qui a change Correction de a deny or ask regle on a nested part of a compound shell commande not holding over a utilisateur-installed mod's approval on managed machines Correction de the terminal freezing on short code blocks with many unclosed &lt;script&gt; tags or deeply nested ${ substitutions Correction de Read deny regles not applying to fichiers @-men",
+      "summary_en": "What's changed\n\nFixed a deny or ask rule on a nested part of a compound shell command not holding over a user-installed mod's approval on managed machines\nFixed the terminal freezing on short code blocks with many unclosed &lt;script&gt; tags or deeply nested ${ substitutions\nFixed Read deny rules not applying to files @-men",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "a deny or ask rule on a nested part of a compound shell command not holding over a user-installed mod's approval on managed machines"
+        },
+        {
+          "type": "fixed",
+          "text": "the terminal freezing on short code blocks with many unclosed &lt;script&gt; tags or deeply nested ${ substitutions"
+        },
+        {
+          "type": "fixed",
+          "text": "Read deny rules not applying to files @-men"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed a deny or ask rule on a nested part of a compound shell command not holding over a user-installed mod's approval on managed machines"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.289",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.288",
@@ -110,29 +137,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.284",
-      "title_en": "v2.1.284",
-      "summary": "Ce qui a change Ajout de Claude Sonnet 5.5 (claude-sonnet-5-5), now the par defaut Sonnet model on the Anthropic API — 1M context, $2/$10 per Mtok with $0.20/Mtok cache reads Ajout de a \"Yes, but ask again next time\" answer to auto mode's prompt before a read outside the working directories, so you can allow that one read and still be asked about later ones A",
-      "summary_en": "What's changed\n\nAdded Claude Sonnet 5.5 (claude-sonnet-5-5), now the default Sonnet model on the Anthropic API — 1M context, $2/$10 per Mtok with $0.20/Mtok cache reads\nAdded a \"Yes, but ask again next time\" answer to auto mode's prompt before a read outside the working directories, so you can allow that one read and still be asked about later ones\nA",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "Claude Sonnet 5.5 (claude-sonnet-5-5), now the default Sonnet model on the Anthropic API — 1M context, $2/$10 per Mtok with $0.20/Mtok cache reads"
-        },
-        {
-          "type": "added",
-          "text": "a \"Yes, but ask again next time\" answer to auto mode's prompt before a read outside the working directories, so you can allow that one read and still be asked about later ones"
-        },
-        {
-          "type": "changed",
-          "text": "Added Claude Sonnet 5.5 (claude-sonnet-5-5), now the default Sonnet model on the Anthropic API — 1M context, $2/$10 per Mtok with $0.20/Mtok cache reads"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.284",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v1.11.0",
       "title_en": "v1.11.0",
@@ -190,7 +194,7 @@
       "summary_en": "0.20.2 (2026-09-30)\nFull Changelog: vertex-sdk-v0.20.1...vertex-sdk-v0.20.2\nChores\n\nclient: deprecate sonnet 4.5 (d72cfa",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.20.2",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -244,13 +248,13 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.288",
-      "title_en": "v2.1.288",
-      "summary": "Publie le 2026-10-02",
-      "summary_en": "Publie le 2026-10-02",
+      "title": "v2.1.289",
+      "title_en": "v2.1.289",
+      "summary": "Publie le 2026-10-03",
+      "summary_en": "Publie le 2026-10-03",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
@@ -450,7 +454,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://github.com/anthropics/uplifting-biomolecular-modeling",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -475,8 +479,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.288",
-    "Claude Code npm": "v2.1.288",
+    "Claude Code": "v2.1.289",
+    "Claude Code npm": "v2.1.289",
     "SDK Python": "v1.11.0",
     "SDK Python PyPI": "v1.11.0",
     "SDK TypeScript": "google-cloud-sdk: v0",
@@ -484,7 +488,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.284",
+    "GitHub Claude Code": "v2.1.285",
     "GitHub SDK Python": "v1.7.0"
   }
 }
