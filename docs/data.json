@@ -1,6 +1,52 @@
 {
-  "last_check": "2026-10-06T00:33:13.706959",
+  "last_check": "2026-10-06T22:51:52.088731",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.292",
+      "title_en": "v2.1.292",
+      "summary": "Ce qui a change Ajout de --marketplace &lt;source&gt; to claude plugin install: adds the marketplace if needed, under the same policy checks as claude plugin marketplace add, then installs the plugin from it Ajout de an effort parameter to the Agent tool, so Claude runs a sub-agent at the effort level you ask for Adde",
+      "summary_en": "What's changed\n\nAdded --marketplace &lt;source&gt; to claude plugin install: adds the marketplace if needed, under the same policy checks as claude plugin marketplace add, then installs the plugin from it\nAdded an effort parameter to the Agent tool, so Claude runs a sub-agent at the effort level you ask for\nAdde",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "--marketplace &lt;source&gt; to claude plugin install: adds the marketplace if needed, under the same policy checks as claude plugin marketplace add, then installs the plugin from it"
+        },
+        {
+          "type": "added",
+          "text": "an effort parameter to the Agent tool, so Claude runs a sub-agent at the effort level you ask for"
+        },
+        {
+          "type": "changed",
+          "text": "Added --marketplace &lt;source&gt; to claude plugin install: adds the marketplace if needed, under the same policy checks as claude plugin marketplace add, then installs the plugin from it"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.292",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.291",
+      "title_en": "v2.1.291",
+      "summary": "Ce qui a change Correction de a regression in 2.1.290 where cloud sessions could drop answers to permission prompts Correction de a regression in 2.1.288 where the last messages of a session could be lost when quitting",
+      "summary_en": "What's changed\n\nFixed a regression in 2.1.290 where cloud sessions could drop answers to permission prompts\nFixed a regression in 2.1.288 where the last messages of a session could be lost when quitting\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "a regression in 2.1.290 where cloud sessions could drop answers to permission prompts"
+        },
+        {
+          "type": "fixed",
+          "text": "a regression in 2.1.288 where the last messages of a session could be lost when quitting"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed a regression in 2.1.290 where cloud sessions could drop answers to permission prompts"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.291",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.290",
@@ -22,7 +68,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.290",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -79,60 +125,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.287",
-      "title_en": "v2.1.287",
-      "summary": "Ce qui a change Ajout de Claude Mods: plugins may now modify deeper behavior Ajout de You should know, a built-in mod where a side agent watches your back and flags things you or Claude might miss. Turn it on with /plugin activer cc-plugin-you-should-know@builtin (for first-party sessions with telemetry on) Ajout de an n:&lt;text&gt; filtre to the",
-      "summary_en": "What's changed\n\nAdded Claude Mods: plugins may now modify deeper behavior\nAdded You should know, a built-in mod where a side agent watches your back and flags things you or Claude might miss. Turn it on with /plugin enable cc-plugin-you-should-know@builtin (for first-party sessions with telemetry on)\nAdded an n:&lt;text&gt; filter to the",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "Claude Mods: plugins may now modify deeper behavior"
-        },
-        {
-          "type": "added",
-          "text": "You should know, a built-in mod where a side agent watches your back and flags things you or Claude might miss. Turn it on with /plugin enable cc-plugin-you-should-know@builtin (for first-party sessio"
-        },
-        {
-          "type": "added",
-          "text": "an n:&lt;text&gt; filter to the"
-        },
-        {
-          "type": "changed",
-          "text": "Added Claude Mods: plugins may now modify deeper behavior"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.287",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.286",
-      "title_en": "v2.1.286",
-      "summary": "Ce qui a change Ajout de a count such as \"2 of 5\" to the permission prompt when several permission requests stack up Ajout de mouse prise en charge de the \"N more\" rows of lists in fullscreen mode: clic one to jump to that end of the list, with survol and appuyer sured states Correction de several Claude Code processes and IDE extensions each ouvriring a login browser when gcpAuthActualiser or",
-      "summary_en": "What's changed\n\nAdded a count such as \"2 of 5\" to the permission prompt when several permission requests stack up\nAdded mouse support for the \"N more\" rows of lists in fullscreen mode: click one to jump to that end of the list, with hover and pressed states\nFixed several Claude Code processes and IDE extensions each opening a login browser when gcpAuthRefresh or ",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "a count such as \"2 of 5\" to the permission prompt when several permission requests stack up"
-        },
-        {
-          "type": "added",
-          "text": "mouse support for the \"N more\" rows of lists in fullscreen mode: click one to jump to that end of the list, with hover and pressed states"
-        },
-        {
-          "type": "fixed",
-          "text": "several Claude Code processes and IDE extensions each opening a login browser when gcpAuthRefresh or"
-        },
-        {
-          "type": "changed",
-          "text": "Added a count such as \"2 of 5\" to the permission prompt when several permission requests stack up"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.286",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v1.11.0",
       "title_en": "v1.11.0",
@@ -140,7 +132,7 @@
       "summary_en": "1.11.0 (2026-09-30)\nFull Changelog: v1.10.0...v1.11.0\nFeatures\n\napi: add list spend limits endpoint (e8f0cac)\n\nChores\n\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.11.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -244,10 +236,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.290",
-      "title_en": "v2.1.290",
-      "summary": "Publie le 2026-10-05",
-      "summary_en": "Publie le 2026-10-05",
+      "title": "v2.1.292",
+      "title_en": "v2.1.292",
+      "summary": "Publie le 2026-10-06",
+      "summary_en": "Publie le 2026-10-06",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -261,6 +253,16 @@
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
       "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Oct 6, 2026AnnouncementsExpanding the Cyber Verification Program",
+      "title_en": "Oct 6, 2026AnnouncementsExpanding the Cyber Verification Program",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/cyber-verification-program",
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -350,16 +352,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/expanding-support-for-scientists",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Aug 25, 2026AnnouncementsFunding better evaluations of AI’s impact on wellbeing",
-      "title_en": "Aug 25, 2026AnnouncementsFunding better evaluations of AI’s impact on wellbeing",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/wellbeing-research-grants",
       "is_new": false
     },
     {
@@ -475,8 +467,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.290",
-    "Claude Code npm": "v2.1.290",
+    "Claude Code": "v2.1.292",
+    "Claude Code npm": "v2.1.292",
     "SDK Python": "v1.11.0",
     "SDK Python PyPI": "v1.11.0",
     "SDK TypeScript": "google-cloud-sdk: v0",
@@ -484,7 +476,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.286",
+    "GitHub Claude Code": "v2.1.288",
     "GitHub SDK Python": "v1.7.0"
   }
 }
