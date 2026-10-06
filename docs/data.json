@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-10-04T22:10:01.317979",
+  "last_check": "2026-10-06T00:33:13.706959",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.290",
+      "title_en": "v2.1.290",
+      "summary": "Ce qui a change Ajout de serverToolUses to the result of a mod's turn.step hook: the tool calls the API ran itself (the advisor), each with its id, nom, entree, start and end Ajout de agentId to the tool.check event of plugin hooks, so a hook can tell a subagent's permission check from the main session's Ajout de c",
+      "summary_en": "What's changed\n\nAdded serverToolUses to the result of a mod's turn.step hook: the tool calls the API ran itself (the advisor), each with its id, name, input, start and end\nAdded agentId to the tool.check event of plugin hooks, so a hook can tell a subagent's permission check from the main session's\nAdded c",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "serverToolUses to the result of a mod's turn.step hook: the tool calls the API ran itself (the advisor), each with its id, name, input, start and end"
+        },
+        {
+          "type": "added",
+          "text": "agentId to the tool.check event of plugin hooks, so a hook can tell a subagent's permission check from the main session's"
+        },
+        {
+          "type": "changed",
+          "text": "Added serverToolUses to the result of a mod's turn.step hook: the tool calls the API ran itself (the advisor), each with its id, name, input, start and end"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.290",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.289",
@@ -26,7 +49,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.289",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -110,33 +133,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.285",
-      "title_en": "v2.1.285",
-      "summary": "Ce qui a change Ajout de CLAUDE_CODE_DISABLE_WEB_FETCH variable d'environnement to turn off the WebFetch tool Ajout de claude --desktop to ouvrir the Claude desktop app on the current repertoire, or on a session with --continue / --resume &lt;id&gt; Ajout de claude plugin configure &lt;plugin&gt; to afficher a plugin's",
-      "summary_en": "What's changed\n\nAdded CLAUDE_CODE_DISABLE_WEB_FETCH environment variable to turn off the WebFetch tool\nAdded claude --desktop to open the Claude desktop app on the current directory, or on a session with --continue / --resume &lt;id&gt;\nAdded claude plugin configure &lt;plugin&gt; to show a plugin's",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "CLAUDE_CODE_DISABLE_WEB_FETCH environment variable to turn off the WebFetch tool"
-        },
-        {
-          "type": "added",
-          "text": "claude --desktop to open the Claude desktop app on the current directory, or on a session with --continue / --resume &lt;id&gt;"
-        },
-        {
-          "type": "added",
-          "text": "claude plugin configure &lt;plugin&gt; to show a plugin's"
-        },
-        {
-          "type": "changed",
-          "text": "Added CLAUDE_CODE_DISABLE_WEB_FETCH environment variable to turn off the WebFetch tool"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.285",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v1.11.0",
       "title_en": "v1.11.0",
@@ -194,7 +190,7 @@
       "summary_en": "0.20.2 (2026-09-30)\nFull Changelog: vertex-sdk-v0.20.1...vertex-sdk-v0.20.2\nChores\n\nclient: deprecate sonnet 4.5 (d72cfa",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.20.2",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -248,10 +244,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.289",
-      "title_en": "v2.1.289",
-      "summary": "Publie le 2026-10-03",
-      "summary_en": "Publie le 2026-10-03",
+      "title": "v2.1.290",
+      "title_en": "v2.1.290",
+      "summary": "Publie le 2026-10-05",
+      "summary_en": "Publie le 2026-10-05",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -479,8 +475,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.289",
-    "Claude Code npm": "v2.1.289",
+    "Claude Code": "v2.1.290",
+    "Claude Code npm": "v2.1.290",
     "SDK Python": "v1.11.0",
     "SDK Python PyPI": "v1.11.0",
     "SDK TypeScript": "google-cloud-sdk: v0",
@@ -488,7 +484,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.285",
+    "GitHub Claude Code": "v2.1.286",
     "GitHub SDK Python": "v1.7.0"
   }
 }
