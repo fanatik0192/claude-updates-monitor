@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-10-06T22:51:52.088731",
+  "last_check": "2026-10-07T23:25:35.738223",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.293",
+      "title_en": "v2.1.293",
+      "summary": "Ce qui a change Ajout de Claude Haiku 5.5 (claude-haiku-5-5), now the par defaut Haiku model on the Anthropic API — 1M context, $0.10/$0.50 per Mtok ($0.50/$2.50 for prompts over 100K) Ajout de agentTaper to the subagentStatusLine payload, so scripts can tell personnalise subagent tapers apart Ajout de isDeferred to $.tool.re",
+      "summary_en": "What's changed\n\nAdded Claude Haiku 5.5 (claude-haiku-5-5), now the default Haiku model on the Anthropic API — 1M context, $0.10/$0.50 per Mtok ($0.50/$2.50 for prompts over 100K)\nAdded agentType to the subagentStatusLine payload, so scripts can tell custom subagent types apart\nAdded isDeferred to $.tool.re",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "Claude Haiku 5.5 (claude-haiku-5-5), now the default Haiku model on the Anthropic API — 1M context, $0.10/$0.50 per Mtok ($0.50/$2.50 for prompts over 100K)"
+        },
+        {
+          "type": "added",
+          "text": "agentType to the subagentStatusLine payload, so scripts can tell custom subagent types apart"
+        },
+        {
+          "type": "added",
+          "text": "isDeferred to $.tool.re"
+        },
+        {
+          "type": "changed",
+          "text": "Added Claude Haiku 5.5 (claude-haiku-5-5), now the default Haiku model on the Anthropic API — 1M context, $0.10/$0.50 per Mtok ($0.50/$2.50 for prompts over 100K)"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.293",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.292",
@@ -22,7 +49,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.292",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -45,7 +72,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.291",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -98,31 +125,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.288",
-      "title_en": "v2.1.288",
-      "summary": "Ce qui a change Ajout de $.ui.selection() for mods: returns the text you last selected in fullscreen mode and, when the selection lies within one transcript row, that row Ajout de a built-in gh api to cloud sessions whose image has no GitHub CLI, and correction de the built-in sending control characters from fichier noms, jq filtres or GitHub erreurs to the termi",
-      "summary_en": "What's changed\n\nAdded $.ui.selection() for mods: returns the text you last selected in fullscreen mode and, when the selection lies within one transcript row, that row\nAdded a built-in gh api to cloud sessions whose image has no GitHub CLI, and fixed the built-in sending control characters from file names, jq filters or GitHub errors to the termi",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "$.ui.selection() for mods: returns the text you last selected in fullscreen mode and, when the selection lies within one transcript row, that row"
-        },
-        {
-          "type": "added",
-          "text": "a built-in gh api to cloud sessions whose image has no GitHub CLI, and fixed the built-in sending control characters from file names, jq filters or GitHub errors to the termi"
-        },
-        {
-          "type": "fixed",
-          "text": "the built-in sending control characters from file names, jq filters or GitHub errors to the termi"
-        },
-        {
-          "type": "changed",
-          "text": "Added $.ui.selection() for mods: returns the text you last selected in fullscreen mode and, when the selection lies within one transcript row, that row"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.288",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v1.12.0",
+      "title_en": "v1.12.0",
+      "summary": "1.12.0 (2026-10-07) Journal complet: v1.11.0...v1.12.0 Fonctionnalites api: add claude-haiku-5-5 and taperd computer and browser toolset tool calls (</",
+      "summary_en": "1.12.0 (2026-10-07)\nFull Changelog: v1.11.0...v1.12.0\nFeatures\n\napi: add claude-haiku-5-5 and typed computer and browser toolset tool calls (f6346e6</",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.12.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -132,7 +142,7 @@
       "summary_en": "1.11.0 (2026-09-30)\nFull Changelog: v1.10.0...v1.11.0\nFeatures\n\napi: add list spend limits endpoint (e8f0cac)\n\nChores\n\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.11.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -165,104 +175,94 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v1.7.0",
-      "title_en": "v1.7.0",
-      "summary": "1.7.0 (2026-09-18) Journal complet: v1.6.0...v1.7.0 Fonctionnalites api: add group with display_nom to rate limits, deprecate group_taper () <l",
-      "summary_en": "1.7.0 (2026-09-18)\nFull Changelog: v1.6.0...v1.7.0\nFeatures\n\napi: add group with display_name to rate limits, deprecate group_type (28f0a83)\n<l",
+      "source": "SDK TypeScript",
+      "title": "vertex-sdk: v0.20.3",
+      "title_en": "vertex-sdk: v0.20.3",
+      "summary": "0.20.3 (2026-10-07) Journal complet: vertex-sdk-v0.20.2...vertex-sdk-v0.20.3",
+      "summary_en": "0.20.3 (2026-10-07)\nFull Changelog: vertex-sdk-v0.20.2...vertex-sdk-v0.20.3",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.7.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.20.3",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "vertex-sdk: v0.20.2",
-      "title_en": "vertex-sdk: v0.20.2",
-      "summary": "0.20.2 (2026-09-30) Journal complet: vertex-sdk-v0.20.1...vertex-sdk-v0.20.2 Maintenance client: deprecate sonnet 4.5 (d72cfa",
-      "summary_en": "0.20.2 (2026-09-30)\nFull Changelog: vertex-sdk-v0.20.1...vertex-sdk-v0.20.2\nChores\n\nclient: deprecate sonnet 4.5 (d72cfa",
+      "title": "sdk: v0.132.0",
+      "title_en": "sdk: v0.132.0",
+      "summary": "0.132.0 (2026-10-07) Journal complet: sdk-v0.131.0...sdk-v0.132.0 Fonctionnalites api: add claude-haiku-5-5 and taperd computer and browser toolset tool calls (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
+      "summary_en": "0.132.0 (2026-10-07)\nFull Changelog: sdk-v0.131.0...sdk-v0.132.0\nFeatures\n\napi: add claude-haiku-5-5 and typed computer and browser toolset tool calls (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/1fd826175b5742df1dc9fd",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.20.2",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.132.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "vertex-sdk: v0.20.1",
-      "title_en": "vertex-sdk: v0.20.1",
-      "summary": "0.20.1 (2026-09-30) Journal complet: vertex-sdk-v0.20.0...vertex-sdk-v0.20.1",
-      "summary_en": "0.20.1 (2026-09-30)\nFull Changelog: vertex-sdk-v0.20.0...vertex-sdk-v0.20.1",
+      "title": "google-cloud-sdk: v0.0.18",
+      "title_en": "google-cloud-sdk: v0.0.18",
+      "summary": "0.0.18 (2026-10-07) Journal complet: google-cloud-sdk-v0.0.17...google-cloud-sdk-v0.0.18",
+      "summary_en": "0.0.18 (2026-10-07)\nFull Changelog: google-cloud-sdk-v0.0.17...google-cloud-sdk-v0.0.18",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.20.1",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.18",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk: v0.131.0",
-      "title_en": "sdk: v0.131.0",
-      "summary": "0.131.0 (2026-09-30) Journal complet: sdk-v0.130.0...sdk-v0.131.0 Fonctionnalites api: add list spend limits endpoint () </",
-      "summary_en": "0.131.0 (2026-09-30)\nFull Changelog: sdk-v0.130.0...sdk-v0.131.0\nFeatures\n\napi: add list spend limits endpoint (cfb78c8)\n</",
+      "title": "foundry-sdk: v0.5.3",
+      "title_en": "foundry-sdk: v0.5.3",
+      "summary": "0.5.3 (2026-10-07) Journal complet: foundry-sdk-v0.5.2...foundry-sdk-v0.5.3",
+      "summary_en": "0.5.3 (2026-10-07)\nFull Changelog: foundry-sdk-v0.5.2...foundry-sdk-v0.5.3",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.131.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.5.3",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk: v0.130.0",
-      "title_en": "sdk: v0.130.0",
-      "summary": "0.130.0 (2026-09-30) Journal complet: sdk-v0.129.0...sdk-v0.130.0 Fonctionnalites api: add a refusal stop reason and stop_details to Managed Agents session idle events (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
-      "summary_en": "0.130.0 (2026-09-30)\nFull Changelog: sdk-v0.129.0...sdk-v0.130.0\nFeatures\n\napi: add a refusal stop reason and stop_details to Managed Agents session idle events (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/5cd6910a0e74",
+      "title": "bedrock-sdk: v0.34.3",
+      "title_en": "bedrock-sdk: v0.34.3",
+      "summary": "0.34.3 (2026-10-07) Journal complet: bedrock-sdk-v0.34.2...bedrock-sdk-v0.34.3",
+      "summary_en": "0.34.3 (2026-10-07)\nFull Changelog: bedrock-sdk-v0.34.2...bedrock-sdk-v0.34.3",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.130.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "google-cloud-sdk: v0.0.17",
-      "title_en": "google-cloud-sdk: v0.0.17",
-      "summary": "0.0.17 (2026-09-30) Journal complet: google-cloud-sdk-v0.0.16...google-cloud-sdk-v0.0.17",
-      "summary_en": "0.0.17 (2026-09-30)\nFull Changelog: google-cloud-sdk-v0.0.16...google-cloud-sdk-v0.0.17",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.17",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.34.3",
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.131.0",
-      "title_en": "v0.131.0",
-      "summary": "Publie le 2026-09-30",
-      "summary_en": "Publie le 2026-09-30",
+      "title": "v0.132.0",
+      "title_en": "v0.132.0",
+      "summary": "Publie le 2026-10-07",
+      "summary_en": "Publie le 2026-10-07",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.292",
-      "title_en": "v2.1.292",
-      "summary": "Publie le 2026-10-06",
-      "summary_en": "Publie le 2026-10-06",
+      "title": "v2.1.293",
+      "title_en": "v2.1.293",
+      "summary": "Publie le 2026-10-07",
+      "summary_en": "Publie le 2026-10-07",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v1.11.0",
-      "title_en": "v1.11.0",
+      "title": "v1.12.0",
+      "title_en": "v1.12.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
-      "title": "Oct 6, 2026AnnouncementsExpanding the Cyber Verification Program",
-      "title_en": "Oct 6, 2026AnnouncementsExpanding the Cyber Verification Program",
+      "title": "AnnouncementsOct 6, 2026Expanding the Cyber Verification ProgramWe’re launching a new, expanded vers",
+      "title_en": "AnnouncementsOct 6, 2026Expanding the Cyber Verification ProgramWe’re launching a new, expanded vers",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/cyber-verification-program",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -386,23 +386,23 @@
     },
     {
       "source": "Recherche",
-      "title": "ScienceSep 4, 2026Formalizing Fermat's Last TheoremWe are sharing the first complete computer-checke",
-      "title_en": "ScienceSep 4, 2026Formalizing Fermat's Last TheoremWe are sharing the first complete computer-checke",
+      "title": "Societal ImpactsSep 29, 2026What do you want from AI?We’re launching a new study using Anthropic Int",
+      "title_en": "Societal ImpactsSep 29, 2026What do you want from AI?We’re launching a new study using Anthropic Int",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
-      "is_new": false
+      "url": "https://www.anthropic.com/research/your-thoughts-on-ai",
+      "is_new": true
     },
     {
       "source": "Recherche",
-      "title": "AlignmentSep 9, 2026An alignment assessment of recent cybersecurite incidentsWe present an alignment",
-      "title_en": "AlignmentSep 9, 2026An alignment assessment of recent cybersecurity incidentsWe present an alignment",
+      "title": "EconomicsSep 24, 2026Project Swap: What happens when agents trade for us?To see what works and what",
+      "title_en": "EconomicsSep 24, 2026Project Swap: What happens when agents trade for us?To see what works and what ",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
-      "is_new": false
+      "url": "https://www.anthropic.com/research/project-swap",
+      "is_new": true
     },
     {
       "source": "Statut",
@@ -467,16 +467,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.292",
-    "Claude Code npm": "v2.1.292",
-    "SDK Python": "v1.11.0",
-    "SDK Python PyPI": "v1.11.0",
-    "SDK TypeScript": "google-cloud-sdk: v0",
+    "Claude Code": "v2.1.293",
+    "Claude Code npm": "v2.1.293",
+    "SDK Python": "v1.12.0",
+    "SDK Python PyPI": "v1.12.0",
+    "SDK TypeScript": "bedrock-sdk: v0.34.3",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.288",
-    "GitHub SDK Python": "v1.7.0"
+    "GitHub Claude Code": "v2.1.289",
+    "GitHub SDK Python": "v1.8.0"
   }
 }
