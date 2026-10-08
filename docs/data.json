@@ -1,6 +1,52 @@
 {
-  "last_check": "2026-10-07T23:25:35.738223",
+  "last_check": "2026-10-08T23:37:22.017559",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.295",
+      "title_en": "v2.1.295",
+      "summary": "Ce qui a change Ajout de onFailure: \"block\" for commande and HTTP hooks: a hook that can't start, times out, or exits with an unexpected code blocks the action instead of letting it through Ajout de Program Status Protocol (OSC 7501) prise en charge: terminals that implement it can afficher whether Claude Code is working, waiting on you, or done Ajout de quoted text to th",
+      "summary_en": "What's changed\n\nAdded onFailure: \"block\" for command and HTTP hooks: a hook that can't start, times out, or exits with an unexpected code blocks the action instead of letting it through\nAdded Program Status Protocol (OSC 7501) support: terminals that implement it can show whether Claude Code is working, waiting on you, or done\nAdded quoted text to th",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "onFailure: \"block\" for command and HTTP hooks: a hook that can't start, times out, or exits with an unexpected code blocks the action instead of letting it through"
+        },
+        {
+          "type": "added",
+          "text": "Program Status Protocol (OSC 7501) support: terminals that implement it can show whether Claude Code is working, waiting on you, or done"
+        },
+        {
+          "type": "added",
+          "text": "quoted text to th"
+        },
+        {
+          "type": "changed",
+          "text": "Added onFailure: \"block\" for command and HTTP hooks: a hook that can't start, times out, or exits with an unexpected code blocks the action instead of letting it through"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.295",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.294",
+      "title_en": "v2.1.294",
+      "summary": "Ce qui a change Correction de prompt and agent hooks written as instructions (such as \"Block commandes that...\") allowing what they should block Amelioration de how prompt hooks on Stop and SubagentStop written as instructions (such as \"Carry on if the build is broken\") are judged, so Claude is less likely to stop early",
+      "summary_en": "What's changed\n\nFixed prompt and agent hooks written as instructions (such as \"Block commands that...\") allowing what they should block\nImproved how prompt hooks on Stop and SubagentStop written as instructions (such as \"Carry on if the build is broken\") are judged, so Claude is less likely to stop early\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "prompt and agent hooks written as instructions (such as \"Block commands that...\") allowing what they should block"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed prompt and agent hooks written as instructions (such as \"Block commands that...\") allowing what they should block"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.294",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.293",
@@ -26,7 +72,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.293",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -75,54 +121,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.290",
-      "title_en": "v2.1.290",
-      "summary": "Ce qui a change Ajout de serverToolUses to the result of a mod's turn.step hook: the tool calls the API ran itself (the advisor), each with its id, nom, entree, start and end Ajout de agentId to the tool.check event of plugin hooks, so a hook can tell a subagent's permission check from the main session's Ajout de c",
-      "summary_en": "What's changed\n\nAdded serverToolUses to the result of a mod's turn.step hook: the tool calls the API ran itself (the advisor), each with its id, name, input, start and end\nAdded agentId to the tool.check event of plugin hooks, so a hook can tell a subagent's permission check from the main session's\nAdded c",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "serverToolUses to the result of a mod's turn.step hook: the tool calls the API ran itself (the advisor), each with its id, name, input, start and end"
-        },
-        {
-          "type": "added",
-          "text": "agentId to the tool.check event of plugin hooks, so a hook can tell a subagent's permission check from the main session's"
-        },
-        {
-          "type": "changed",
-          "text": "Added serverToolUses to the result of a mod's turn.step hook: the tool calls the API ran itself (the advisor), each with its id, name, input, start and end"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.290",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.289",
-      "title_en": "v2.1.289",
-      "summary": "Ce qui a change Correction de a deny or ask regle on a nested part of a compound shell commande not holding over a utilisateur-installed mod's approval on managed machines Correction de the terminal freezing on short code blocks with many unclosed &lt;script&gt; tags or deeply nested ${ substitutions Correction de Read deny regles not applying to fichiers @-men",
-      "summary_en": "What's changed\n\nFixed a deny or ask rule on a nested part of a compound shell command not holding over a user-installed mod's approval on managed machines\nFixed the terminal freezing on short code blocks with many unclosed &lt;script&gt; tags or deeply nested ${ substitutions\nFixed Read deny rules not applying to files @-men",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "a deny or ask rule on a nested part of a compound shell command not holding over a user-installed mod's approval on managed machines"
-        },
-        {
-          "type": "fixed",
-          "text": "the terminal freezing on short code blocks with many unclosed &lt;script&gt; tags or deeply nested ${ substitutions"
-        },
-        {
-          "type": "fixed",
-          "text": "Read deny rules not applying to files @-men"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed a deny or ask rule on a nested part of a compound shell command not holding over a user-installed mod's approval on managed machines"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.289",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v1.12.1",
+      "title_en": "v1.12.1",
+      "summary": "Maintenance ci: check that pull requests update the journal des modifications docs: note that listing Claude Console spend limits is in early access internal: match the package version in uv.lock",
+      "summary_en": "Chores\n\nci: check that pull requests update the changelog\ndocs: note that listing Claude Console spend limits is in early access\ninternal: match the package version in uv.lock\n",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.12.1",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -132,7 +138,7 @@
       "summary_en": "1.12.0 (2026-10-07)\nFull Changelog: v1.11.0...v1.12.0\nFeatures\n\napi: add claude-haiku-5-5 and typed computer and browser toolset tool calls (f6346e6</",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.12.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -142,7 +148,7 @@
       "summary_en": "1.11.0 (2026-09-30)\nFull Changelog: v1.10.0...v1.11.0\nFeatures\n\napi: add list spend limits endpoint (e8f0cac)\n\nChores\n\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.11.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -165,89 +171,79 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v1.8.0",
-      "title_en": "v1.8.0",
-      "summary": "1.8.0 (2026-09-22) Journal complet: v1.7.0...v1.8.0 Fonctionnalites api: add prise en charge de claude-opus-5-5, inline tool definitions and MCP tool-list pinning (beta) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/",
-      "summary_en": "1.8.0 (2026-09-22)\nFull Changelog: v1.7.0...v1.8.0\nFeatures\n\napi: add support for claude-opus-5-5, inline tool definitions and MCP tool-list pinning (beta) (<a href=\"https://github.com/anthropics/anthropic-sdk-python/commit/b5cc70071a60def1d2e93f3634d1a59591900",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.8.0",
-      "is_new": false
-    },
-    {
       "source": "SDK TypeScript",
-      "title": "vertex-sdk: v0.20.3",
-      "title_en": "vertex-sdk: v0.20.3",
-      "summary": "0.20.3 (2026-10-07) Journal complet: vertex-sdk-v0.20.2...vertex-sdk-v0.20.3",
-      "summary_en": "0.20.3 (2026-10-07)\nFull Changelog: vertex-sdk-v0.20.2...vertex-sdk-v0.20.3",
+      "title": "vertex-sdk-v0.20.4",
+      "title_en": "vertex-sdk-v0.20.4",
+      "summary": "Maintenance ci: check that pull requests update the journal des modifications",
+      "summary_en": "Chores\n\nci: check that pull requests update the changelog\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.20.3",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.20.4",
       "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk: v0.132.0",
-      "title_en": "sdk: v0.132.0",
-      "summary": "0.132.0 (2026-10-07) Journal complet: sdk-v0.131.0...sdk-v0.132.0 Fonctionnalites api: add claude-haiku-5-5 and taperd computer and browser toolset tool calls (<a href=\"https://github.com/anthropics/anthropic-sdk-taperscript/commit/",
-      "summary_en": "0.132.0 (2026-10-07)\nFull Changelog: sdk-v0.131.0...sdk-v0.132.0\nFeatures\n\napi: add claude-haiku-5-5 and typed computer and browser toolset tool calls (<a href=\"https://github.com/anthropics/anthropic-sdk-typescript/commit/1fd826175b5742df1dc9fd",
+      "title": "sdk-v0.132.1",
+      "title_en": "sdk-v0.132.1",
+      "summary": "Corrections de bugs client: throw before sending a request with an empty path parameter Maintenance ci: check that pull requests update the journal des modifications ci: publish every package from the publish workflow docs: note that listing Claude Console spend limits is in early access </ul",
+      "summary_en": "Bug Fixes\n\nclient: throw before sending a request with an empty path parameter\n\nChores\n\nci: check that pull requests update the changelog\nci: publish every package from the publish workflow\ndocs: note that listing Claude Console spend limits is in early access\n</ul",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.132.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.132.1",
       "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "google-cloud-sdk: v0.0.18",
-      "title_en": "google-cloud-sdk: v0.0.18",
-      "summary": "0.0.18 (2026-10-07) Journal complet: google-cloud-sdk-v0.0.17...google-cloud-sdk-v0.0.18",
-      "summary_en": "0.0.18 (2026-10-07)\nFull Changelog: google-cloud-sdk-v0.0.17...google-cloud-sdk-v0.0.18",
+      "title": "google-cloud-sdk-v0.0.19",
+      "title_en": "google-cloud-sdk-v0.0.19",
+      "summary": "Maintenance ci: check that pull requests update the journal des modifications",
+      "summary_en": "Chores\n\nci: check that pull requests update the changelog\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.18",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.19",
       "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "foundry-sdk: v0.5.3",
-      "title_en": "foundry-sdk: v0.5.3",
-      "summary": "0.5.3 (2026-10-07) Journal complet: foundry-sdk-v0.5.2...foundry-sdk-v0.5.3",
-      "summary_en": "0.5.3 (2026-10-07)\nFull Changelog: foundry-sdk-v0.5.2...foundry-sdk-v0.5.3",
+      "title": "foundry-sdk-v0.5.4",
+      "title_en": "foundry-sdk-v0.5.4",
+      "summary": "Maintenance ci: check that pull requests update the journal des modifications",
+      "summary_en": "Chores\n\nci: check that pull requests update the changelog\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.5.3",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.5.4",
       "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "bedrock-sdk: v0.34.3",
-      "title_en": "bedrock-sdk: v0.34.3",
-      "summary": "0.34.3 (2026-10-07) Journal complet: bedrock-sdk-v0.34.2...bedrock-sdk-v0.34.3",
-      "summary_en": "0.34.3 (2026-10-07)\nFull Changelog: bedrock-sdk-v0.34.2...bedrock-sdk-v0.34.3",
+      "title": "bedrock-sdk-v0.34.4",
+      "title_en": "bedrock-sdk-v0.34.4",
+      "summary": "Maintenance ci: check that pull requests update the journal des modifications",
+      "summary_en": "Chores\n\nci: check that pull requests update the changelog\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.34.3",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.34.4",
       "is_new": true
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.132.0",
-      "title_en": "v0.132.0",
-      "summary": "Publie le 2026-10-07",
-      "summary_en": "Publie le 2026-10-07",
+      "title": "v0.132.1",
+      "title_en": "v0.132.1",
+      "summary": "Publie le 2026-10-08",
+      "summary_en": "Publie le 2026-10-08",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
       "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.293",
-      "title_en": "v2.1.293",
-      "summary": "Publie le 2026-10-07",
-      "summary_en": "Publie le 2026-10-07",
+      "title": "v2.1.295",
+      "title_en": "v2.1.295",
+      "summary": "Publie le 2026-10-08",
+      "summary_en": "Publie le 2026-10-08",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v1.12.0",
-      "title_en": "v1.12.0",
+      "title": "v1.12.1",
+      "title_en": "v1.12.1",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
@@ -263,6 +259,36 @@
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/cyber-verification-program",
       "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Oct 8, 2026Announcements2026 Usage Policy update",
+      "title_en": "Oct 8, 2026Announcements2026 Usage Policy update",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "Oct 8, 2026AnnouncementsBuilding on our commitment to American scientific discovery",
+      "title_en": "Oct 8, 2026AnnouncementsBuilding on our commitment to American scientific discovery",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/genesis-mission-commitment",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "Oct 8, 2026AnnouncementsIntroducing the Anthropic Cyber Mission",
+      "title_en": "Oct 8, 2026AnnouncementsIntroducing the Anthropic Cyber Mission",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -282,7 +308,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/barclays-scales-claude",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -322,37 +348,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Aug 31, 2026AnnouncementsImproving our alignment and securite efforts",
-      "title_en": "Aug 31, 2026AnnouncementsImproving our alignment and security efforts",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Aug 27, 2026AnnouncementsPreviewing the Model Hardware Standard",
-      "title_en": "Aug 27, 2026AnnouncementsPreviewing the Model Hardware Standard",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Aug 27, 2026AnnouncementsExpanding our prise en charge de scientists",
-      "title_en": "Aug 27, 2026AnnouncementsExpanding our support for scientists",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/expanding-support-for-scientists",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -392,7 +388,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/your-thoughts-on-ai",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -402,7 +398,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/project-swap",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Statut",
@@ -412,6 +408,26 @@
       "summary_en": "Un probleme est actuellement detecte sur les services Claude.",
       "changelog_items": [],
       "url": "https://status.claude.com",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "oss-scanner",
+      "title_en": "oss-scanner",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/oss-scanner",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "snix",
+      "title_en": "snix",
+      "summary": "Mirror of Snix (git.snix.dev/snix/snix)",
+      "summary_en": "Mirror of Snix (git.snix.dev/snix/snix)",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/snix",
       "is_new": true
     },
     {
@@ -443,40 +459,20 @@
       "changelog_items": [],
       "url": "https://github.com/anthropics/uplifting-biomolecular-modeling",
       "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "claude-for-financial-advisors",
-      "title_en": "claude-for-financial-advisors",
-      "summary": "Claude for Financial Advisors: a Claude Cowork plugin with ready-to-run workflows for financial advisors, drawing on third-party connectors.",
-      "summary_en": "Claude for Financial Advisors: a Claude Cowork plugin with ready-to-run workflows for financial advisors, drawing on third-party connectors.",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/claude-for-financial-advisors",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "raft-rs",
-      "title_en": "raft-rs",
-      "summary": "Raft distributed consensus algorithm implemented in Rust.",
-      "summary_en": "Raft distributed consensus algorithm implemented in Rust.",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/raft-rs",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.293",
-    "Claude Code npm": "v2.1.293",
-    "SDK Python": "v1.12.0",
-    "SDK Python PyPI": "v1.12.0",
-    "SDK TypeScript": "bedrock-sdk: v0.34.3",
+    "Claude Code": "v2.1.295",
+    "Claude Code npm": "v2.1.295",
+    "SDK Python": "v1.12.1",
+    "SDK Python PyPI": "v1.12.1",
+    "SDK TypeScript": "bedrock-sdk-v0.34.4",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.289",
-    "GitHub SDK Python": "v1.8.0"
+    "GitHub Claude Code": "v2.1.291",
+    "GitHub SDK Python": "v1.9.0"
   }
 }
