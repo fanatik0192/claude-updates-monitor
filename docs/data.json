@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-10-09T23:00:09.954616",
+  "last_check": "2026-10-10T22:11:12.730405",
   "updates": [
     {
       "source": "Claude Code",
@@ -22,7 +22,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.296",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -128,7 +128,7 @@
       "summary_en": "Features\n\napi: add types for the Chat and Cowork unified analytics metrics\napi: add workflows, multiagent configuration and thread status filtering to Managed Agents\n\nChores\n\ninternal: name the default API version header value\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.13.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -148,7 +148,7 @@
       "summary_en": "1.12.0 (2026-10-07)\nFull Changelog: v1.11.0...v1.12.0\nFeatures\n\napi: add claude-haiku-5-5 and typed computer and browser toolset tool calls (f6346e6</",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.12.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -178,7 +178,7 @@
       "summary_en": "Features\n\napi: add types for the Chat and Cowork unified analytics metrics\napi: add workflows, multiagent configuration and thread status filtering to Managed Agents\n\nChores\n\ninternal: remove the next branch rule from CLAUDE.md\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.133.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -228,7 +228,7 @@
       "summary_en": "Publie le 2026-10-09",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
@@ -238,7 +238,7 @@
       "summary_en": "Publie le 2026-10-09",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -248,17 +248,17 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
-      "title": "AnnouncementsOct 6, 2026Expanding the Cyber Verification ProgramWe’re launching a new, expanded vers",
-      "title_en": "AnnouncementsOct 6, 2026Expanding the Cyber Verification ProgramWe’re launching a new, expanded vers",
+      "title": "Expanding the Cyber Verification ProgramAnnouncementsOct 6, 2026We’re launching a new, expanded vers",
+      "title_en": "Expanding the Cyber Verification ProgramAnnouncementsOct 6, 2026We’re launching a new, expanded vers",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/cyber-verification-program",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -308,7 +308,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/barclays-scales-claude",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -388,7 +388,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/the-missing-map-of-the-sky",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -409,56 +409,6 @@
       "changelog_items": [],
       "url": "https://status.claude.com",
       "is_new": true
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "oss-scanner",
-      "title_en": "oss-scanner",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/oss-scanner",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "snix",
-      "title_en": "snix",
-      "summary": "Mirror of Snix (git.snix.dev/snix/snix)",
-      "summary_en": "Mirror of Snix (git.snix.dev/snix/snix)",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/snix",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "claude-code-playground",
-      "title_en": "claude-code-playground",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/claude-code-playground",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "serde-saphyr",
-      "title_en": "serde-saphyr",
-      "summary": "A strongly taperd, comment-prise en chargeing YAML deserializer that deserializes YAML directly into your Rust tapers without constructing an intermediate tree of “abstract values.”",
-      "summary_en": "A strongly typed, comment-supporting YAML deserializer that deserializes YAML directly into your Rust types without constructing an intermediate tree of “abstract values.” ",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/serde-saphyr",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "uplifting-biomolecular-modeling",
-      "title_en": "uplifting-biomolecular-modeling",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/uplifting-biomolecular-modeling",
-      "is_new": false
     }
   ],
   "versions": {
