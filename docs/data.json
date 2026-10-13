@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-10-11T22:38:52.361071",
+  "last_check": "2026-10-13T01:04:28.830876",
   "updates": [
     {
       "source": "Claude Code",
@@ -298,7 +298,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/claude-frontier-academy",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
