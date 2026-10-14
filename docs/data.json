@@ -1,6 +1,56 @@
 {
-  "last_check": "2026-10-13T23:10:20.316020",
+  "last_check": "2026-10-14T22:01:07.598449",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.300",
+      "title_en": "v2.1.300",
+      "summary": "Ce qui a change Ajout de virtualText to a mod's prompt decorations: text drawn in the prompt box that never enters the draft or the submitted prompt Ajout de cache_creation_5m_jetons and cache_creation_1h_jetons to the OuvrirTelemetry api_request event, splitting cache writes by lifetime Ajout de $.ui.view({ agentId",
+      "summary_en": "What's changed\n\nAdded virtualText to a mod's prompt decorations: text drawn in the prompt box that never enters the draft or the submitted prompt\nAdded cache_creation_5m_tokens and cache_creation_1h_tokens to the OpenTelemetry api_request event, splitting cache writes by lifetime\nAdded $.ui.view({ agentId ",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "virtualText to a mod's prompt decorations: text drawn in the prompt box that never enters the draft or the submitted prompt"
+        },
+        {
+          "type": "added",
+          "text": "cache_creation_5m_tokens and cache_creation_1h_tokens to the OpenTelemetry api_request event, splitting cache writes by lifetime"
+        },
+        {
+          "type": "added",
+          "text": "$.ui.view({ agentId"
+        },
+        {
+          "type": "changed",
+          "text": "Added virtualText to a mod's prompt decorations: text drawn in the prompt box that never enters the draft or the submitted prompt"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.300",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.299",
+      "title_en": "v2.1.299",
+      "summary": "Ce qui a change Ajout de CLAUDE_CODE_DISABLE_FILE_MENTIONS variable d'environnement: Claude gets the paths of @ fichier mentions to read with its fichier tools, not the fichiers' contents Ajout de idle compaction in the terminal: a 200K+ jeton conversation left idle for about 54 minutes is compacted before its one-hour prompt cache expires, so your next message doe",
+      "summary_en": "What's changed\n\nAdded CLAUDE_CODE_DISABLE_FILE_MENTIONS environment variable: Claude gets the paths of @ file mentions to read with its file tools, not the files' contents\nAdded idle compaction in the terminal: a 200K+ token conversation left idle for about 54 minutes is compacted before its one-hour prompt cache expires, so your next message doe",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "CLAUDE_CODE_DISABLE_FILE_MENTIONS environment variable: Claude gets the paths of @ file mentions to read with its file tools, not the files' contents"
+        },
+        {
+          "type": "added",
+          "text": "idle compaction in the terminal: a 200K+ token conversation left idle for about 54 minutes is compacted before its one-hour prompt cache expires, so your next message doe"
+        },
+        {
+          "type": "changed",
+          "text": "Added CLAUDE_CODE_DISABLE_FILE_MENTIONS environment variable: Claude gets the paths of @ file mentions to read with its file tools, not the files' contents"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.299",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.296",
@@ -71,54 +121,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.293",
-      "title_en": "v2.1.293",
-      "summary": "Ce qui a change Ajout de Claude Haiku 5.5 (claude-haiku-5-5), now the par defaut Haiku model on the Anthropic API — 1M context, $0.10/$0.50 per Mtok ($0.50/$2.50 for prompts over 100K) Ajout de agentTaper to the subagentStatusLine payload, so scripts can tell personnalise subagent tapers apart Ajout de isDeferred to $.tool.re",
-      "summary_en": "What's changed\n\nAdded Claude Haiku 5.5 (claude-haiku-5-5), now the default Haiku model on the Anthropic API — 1M context, $0.10/$0.50 per Mtok ($0.50/$2.50 for prompts over 100K)\nAdded agentType to the subagentStatusLine payload, so scripts can tell custom subagent types apart\nAdded isDeferred to $.tool.re",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "Claude Haiku 5.5 (claude-haiku-5-5), now the default Haiku model on the Anthropic API — 1M context, $0.10/$0.50 per Mtok ($0.50/$2.50 for prompts over 100K)"
-        },
-        {
-          "type": "added",
-          "text": "agentType to the subagentStatusLine payload, so scripts can tell custom subagent types apart"
-        },
-        {
-          "type": "added",
-          "text": "isDeferred to $.tool.re"
-        },
-        {
-          "type": "changed",
-          "text": "Added Claude Haiku 5.5 (claude-haiku-5-5), now the default Haiku model on the Anthropic API — 1M context, $0.10/$0.50 per Mtok ($0.50/$2.50 for prompts over 100K)"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.293",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.292",
-      "title_en": "v2.1.292",
-      "summary": "Ce qui a change Ajout de --marketplace &lt;source&gt; to claude plugin install: adds the marketplace if needed, under the same policy checks as claude plugin marketplace add, then installs the plugin from it Ajout de an effort parameter to the Agent tool, so Claude runs a sub-agent at the effort level you ask for Adde",
-      "summary_en": "What's changed\n\nAdded --marketplace &lt;source&gt; to claude plugin install: adds the marketplace if needed, under the same policy checks as claude plugin marketplace add, then installs the plugin from it\nAdded an effort parameter to the Agent tool, so Claude runs a sub-agent at the effort level you ask for\nAdde",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "--marketplace &lt;source&gt; to claude plugin install: adds the marketplace if needed, under the same policy checks as claude plugin marketplace add, then installs the plugin from it"
-        },
-        {
-          "type": "added",
-          "text": "an effort parameter to the Agent tool, so Claude runs a sub-agent at the effort level you ask for"
-        },
-        {
-          "type": "changed",
-          "text": "Added --marketplace &lt;source&gt; to claude plugin install: adds the marketplace if needed, under the same policy checks as claude plugin marketplace add, then installs the plugin from it"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.292",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v1.14.0",
+      "title_en": "v1.14.0",
+      "summary": "Fonctionnalites api: add execution_identity to Managed Agents agents api: add organization_taper_not_prise en chargeed erreur to spend limit lists api: add telemetry destination test endpoint api: add telemetry destinations to the Admin API client: add OuvrirTelemetry tracing for",
+      "summary_en": "Features\n\napi: add execution_identity to Managed Agents agents\napi: add organization_type_not_supported error to spend limit lists\napi: add telemetry destination test endpoint\napi: add telemetry destinations to the Admin API\nclient: add OpenTelemetry tracing for",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.14.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -161,94 +171,84 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v1.10.0",
-      "title_en": "v1.10.0",
-      "summary": "1.10.0 (2026-09-30) Journal complet: v1.9.0...v1.10.0 Fonctionnalites api: add a refusal stop reason and stop_details to Managed Agents session idle events (c",
-      "summary_en": "1.10.0 (2026-09-30)\nFull Changelog: v1.9.0...v1.10.0\nFeatures\n\napi: add a refusal stop reason and stop_details to Managed Agents session idle events (c",
+      "source": "SDK TypeScript",
+      "title": "vertex-sdk-v0.21.0",
+      "title_en": "vertex-sdk-v0.21.0",
+      "summary": "Fonctionnalites api: add execution_identity to Managed Agents agents client: add OuvrirTelemetry spans for API calls Maintenance include the license fichiers in the published packages internal: strip @internal declarations from published tapers",
+      "summary_en": "Features\n\napi: add execution_identity to Managed Agents agents\nclient: add OpenTelemetry spans for API calls\n\nChores\n\ninclude the license files in the published packages\ninternal: strip @internal declarations from published types\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.10.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.21.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk-v0.133.0",
-      "title_en": "sdk-v0.133.0",
-      "summary": "Fonctionnalites api: add tapers for the Chat and Cowork unified analytics metrics api: add workflows, multiagent configuration and thread status filtrage to Managed Agents Maintenance internal: remove the next branch regle from CLAUDE.md",
-      "summary_en": "Features\n\napi: add types for the Chat and Cowork unified analytics metrics\napi: add workflows, multiagent configuration and thread status filtering to Managed Agents\n\nChores\n\ninternal: remove the next branch rule from CLAUDE.md\n",
+      "title": "sdk-v0.134.0",
+      "title_en": "sdk-v0.134.0",
+      "summary": "Fonctionnalites api: add execution_identity to Managed Agents agents api: add organization_taper_not_prise en chargeed erreur to spend limit lists api: add telemetry destination test endpoint api: add telemetry destinations to the Admin API client: emit OuvrirTelemetry spans for",
+      "summary_en": "Features\n\napi: add execution_identity to Managed Agents agents\napi: add organization_type_not_supported error to spend limit lists\napi: add telemetry destination test endpoint\napi: add telemetry destinations to the Admin API\nclient: emit OpenTelemetry spans for ",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.133.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.134.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "vertex-sdk-v0.20.4",
-      "title_en": "vertex-sdk-v0.20.4",
-      "summary": "Maintenance ci: check that pull requests update the journal des modifications",
-      "summary_en": "Chores\n\nci: check that pull requests update the changelog\n",
+      "title": "google-cloud-sdk-v0.1.0",
+      "title_en": "google-cloud-sdk-v0.1.0",
+      "summary": "Fonctionnalites api: add execution_identity to Managed Agents agents client: add OuvrirTelemetry spans for API calls Maintenance include the license fichiers in the published packages internal: strip @internal declarations from published tapers",
+      "summary_en": "Features\n\napi: add execution_identity to Managed Agents agents\nclient: add OpenTelemetry spans for API calls\n\nChores\n\ninclude the license files in the published packages\ninternal: strip @internal declarations from published types\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.20.4",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.1.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk-v0.132.1",
-      "title_en": "sdk-v0.132.1",
-      "summary": "Corrections de bugs client: throw before sending a request with an empty path parameter Maintenance ci: check that pull requests update the journal des modifications ci: publish every package from the publish workflow docs: note that listing Claude Console spend limits is in early access </ul",
-      "summary_en": "Bug Fixes\n\nclient: throw before sending a request with an empty path parameter\n\nChores\n\nci: check that pull requests update the changelog\nci: publish every package from the publish workflow\ndocs: note that listing Claude Console spend limits is in early access\n</ul",
+      "title": "foundry-sdk-v0.6.0",
+      "title_en": "foundry-sdk-v0.6.0",
+      "summary": "Fonctionnalites api: add execution_identity to Managed Agents agents client: add OuvrirTelemetry spans for API calls Maintenance include the license fichiers in the published packages internal: strip @internal declarations from published tapers",
+      "summary_en": "Features\n\napi: add execution_identity to Managed Agents agents\nclient: add OpenTelemetry spans for API calls\n\nChores\n\ninclude the license files in the published packages\ninternal: strip @internal declarations from published types\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.132.1",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.6.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "google-cloud-sdk-v0.0.19",
-      "title_en": "google-cloud-sdk-v0.0.19",
-      "summary": "Maintenance ci: check that pull requests update the journal des modifications",
-      "summary_en": "Chores\n\nci: check that pull requests update the changelog\n",
+      "title": "bedrock-sdk-v0.35.0",
+      "title_en": "bedrock-sdk-v0.35.0",
+      "summary": "Fonctionnalites api: add execution_identity to Managed Agents agents client: add OuvrirTelemetry spans for API calls Maintenance include the license fichiers in the published packages internal: strip @internal declarations from published tapers",
+      "summary_en": "Features\n\napi: add execution_identity to Managed Agents agents\nclient: add OpenTelemetry spans for API calls\n\nChores\n\ninclude the license files in the published packages\ninternal: strip @internal declarations from published types\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.19",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "foundry-sdk-v0.5.4",
-      "title_en": "foundry-sdk-v0.5.4",
-      "summary": "Maintenance ci: check that pull requests update the journal des modifications",
-      "summary_en": "Chores\n\nci: check that pull requests update the changelog\n",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.5.4",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.35.0",
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.133.0",
-      "title_en": "v0.133.0",
-      "summary": "Publie le 2026-10-09",
-      "summary_en": "Publie le 2026-10-09",
+      "title": "v0.134.0",
+      "title_en": "v0.134.0",
+      "summary": "Publie le 2026-10-14",
+      "summary_en": "Publie le 2026-10-14",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.296",
-      "title_en": "v2.1.296",
-      "summary": "Publie le 2026-10-09",
-      "summary_en": "Publie le 2026-10-09",
+      "title": "v2.1.300",
+      "title_en": "v2.1.300",
+      "summary": "Publie le 2026-10-14",
+      "summary_en": "Publie le 2026-10-14",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v1.13.0",
-      "title_en": "v1.13.0",
+      "title": "v1.14.0",
+      "title_en": "v1.14.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -259,6 +259,26 @@
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/cyber-verification-program",
       "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Oct 14, 2026PolicyPreparing for the 2026 US midterms",
+      "title_en": "Oct 14, 2026PolicyPreparing for the 2026 US midterms",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/2026-us-midterms",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "Oct 14, 2026AnnouncementsAnthropic ouvrirs Singapore office and signs MOU with the Government of Singa",
+      "title_en": "Oct 14, 2026AnnouncementsAnthropic opens Singapore office and signs MOU with the Government of Singa",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/singapore-office-opening",
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -328,26 +348,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Sep 17, 2026AnnouncementsIntroducing the Life Sciences Verification Program",
-      "title_en": "Sep 17, 2026AnnouncementsIntroducing the Life Sciences Verification Program",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/life-sciences-verification-program",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Sep 1, 2026AnnouncementsDeveloping Enterprise Frontier Safeguards with our personnaliseers",
-      "title_en": "Sep 1, 2026AnnouncementsDeveloping Enterprise Frontier Safeguards with our customers",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
       "is_new": false
     },
     {
@@ -463,16 +463,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.296",
-    "Claude Code npm": "v2.1.296",
-    "SDK Python": "v1.13.0",
-    "SDK Python PyPI": "v1.13.0",
-    "SDK TypeScript": "foundry-sdk-v0.5.4",
+    "Claude Code": "v2.1.300",
+    "Claude Code npm": "v2.1.300",
+    "SDK Python": "v1.14.0",
+    "SDK Python PyPI": "v1.14.0",
+    "SDK TypeScript": "bedrock-sdk-v0.35.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.292",
-    "GitHub SDK Python": "v1.10.0"
+    "GitHub Claude Code": "v2.1.294",
+    "GitHub SDK Python": "v1.11.0"
   }
 }
