@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-10-15T21:54:34.737034",
+  "last_check": "2026-10-16T21:53:28.182198",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.302",
+      "title_en": "v2.1.302",
+      "summary": "Ce qui a change Ajout de CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode Ajout de an Idle compaction row to /config for turning idle compaction off or back on; the notices affichern after an idle compaction now say how to turn it off Adde",
+      "summary_en": "What's changed\n\nAdded CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode\nAdded an Idle compaction row to /config for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off\nAdde",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode"
+        },
+        {
+          "type": "added",
+          "text": "an Idle compaction row to /config for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off"
+        },
+        {
+          "type": "changed",
+          "text": "Added CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.302",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.301",
@@ -22,7 +45,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.301",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -98,33 +121,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.295",
-      "title_en": "v2.1.295",
-      "summary": "Ce qui a change Ajout de onFailure: \"block\" for commande and HTTP hooks: a hook that can't start, times out, or exits with an unexpected code blocks the action instead of letting it through Ajout de Program Status Protocol (OSC 7501) prise en charge: terminals that implement it can afficher whether Claude Code is working, waiting on you, or done Ajout de quoted text to th",
-      "summary_en": "What's changed\n\nAdded onFailure: \"block\" for command and HTTP hooks: a hook that can't start, times out, or exits with an unexpected code blocks the action instead of letting it through\nAdded Program Status Protocol (OSC 7501) support: terminals that implement it can show whether Claude Code is working, waiting on you, or done\nAdded quoted text to th",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "onFailure: \"block\" for command and HTTP hooks: a hook that can't start, times out, or exits with an unexpected code blocks the action instead of letting it through"
-        },
-        {
-          "type": "added",
-          "text": "Program Status Protocol (OSC 7501) support: terminals that implement it can show whether Claude Code is working, waiting on you, or done"
-        },
-        {
-          "type": "added",
-          "text": "quoted text to th"
-        },
-        {
-          "type": "changed",
-          "text": "Added onFailure: \"block\" for command and HTTP hooks: a hook that can't start, times out, or exits with an unexpected code blocks the action instead of letting it through"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.295",
-      "is_new": false
-    },
-    {
       "source": "SDK Python",
       "title": "v1.15.0",
       "title_en": "v1.15.0",
@@ -132,7 +128,7 @@
       "summary_en": "Features\n\napi: add between_tools to thinking types in model capabilities\napi: add the speed parameter and usage.speed to Messages\napi: return a Console organization's usage-tier spend cap as a read-only spend limit\n\nChores\n\nci: speed up breaking change detection\n<l",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.15.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -182,7 +178,7 @@
       "summary_en": "Features\n\napi: add between_tools to thinking types in model capabilities\napi: add the speed parameter and usage.speed to Messages\napi: return a Console organization's usage-tier spend cap as a read-only spend limit\n\nBug Fixes\n\nclient: close streams dropped without being",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.135.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -232,14 +228,14 @@
       "summary_en": "Publie le 2026-10-15",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.301",
-      "title_en": "v2.1.301",
-      "summary": "Publie le 2026-10-15",
-      "summary_en": "Publie le 2026-10-15",
+      "title": "v2.1.302",
+      "title_en": "v2.1.302",
+      "summary": "Publie le 2026-10-16",
+      "summary_en": "Publie le 2026-10-16",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -252,7 +248,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -272,7 +268,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -302,7 +298,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/2026-usage-policy-update",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -402,7 +398,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/your-thoughts-on-ai",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Statut",
@@ -467,8 +463,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.301",
-    "Claude Code npm": "v2.1.301",
+    "Claude Code": "v2.1.302",
+    "Claude Code npm": "v2.1.302",
     "SDK Python": "v1.15.0",
     "SDK Python PyPI": "v1.15.0",
     "SDK TypeScript": "foundry-sdk-v0.6.0",
@@ -476,7 +472,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.295",
+    "GitHub Claude Code": "v2.1.296",
     "GitHub SDK Python": "v1.12.0"
   }
 }
