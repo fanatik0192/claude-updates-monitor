@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-10-16T21:53:28.182198",
+  "last_check": "2026-10-17T21:12:03.377192",
   "updates": [
     {
       "source": "Claude Code",
@@ -22,7 +22,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.302",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -238,7 +238,7 @@
       "summary_en": "Publie le 2026-10-16",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -398,7 +398,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/your-thoughts-on-ai",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Statut",
