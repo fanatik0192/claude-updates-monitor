@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-10-17T21:12:03.377192",
+  "last_check": "2026-10-18T21:13:04.151480",
   "updates": [
     {
       "source": "Claude Code",
@@ -262,6 +262,16 @@
     },
     {
       "source": "Blog",
+      "title": "Oct 18, 2026AnnouncementsInvesting in the public benefit",
+      "title_en": "Oct 18, 2026AnnouncementsInvesting in the public benefit",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/public-benefit-fund",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Oct 15, 2026AnnouncementsAn update on independent evaluators",
       "title_en": "Oct 15, 2026AnnouncementsAn update on independent evaluators",
       "summary": "",
@@ -288,7 +298,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/singapore-office-opening",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -338,16 +348,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/barclays-scales-claude",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Sep 23, 2026ScienceClaude discovers a novel enzyme system with CRISPR-like repeats",
-      "title_en": "Sep 23, 2026ScienceClaude discovers a novel enzyme system with CRISPR-like repeats",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
       "is_new": false
     },
     {
