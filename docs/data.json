@@ -1,6 +1,44 @@
 {
-  "last_check": "2026-10-18T21:13:04.151480",
+  "last_check": "2026-10-19T22:46:44.903286",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.304",
+      "title_en": "v2.1.304",
+      "summary": "Ce qui a change Ajout de a transcript line when a plugin that runs first skips one of your mod's hooks, naming the event and the plugin Ajout de decider: \"person\" to a mod's tool.check answer: only the permission dialog or a host's callback can approve the ask, and it is refused with the mod's reason where nobody can be asked Ajout de e.isR",
+      "summary_en": "What's changed\n\nAdded a transcript line when a plugin that runs first skips one of your mod's hooks, naming the event and the plugin\nAdded decider: \"person\" to a mod's tool.check answer: only the permission dialog or a host's callback can approve the ask, and it is refused with the mod's reason where nobody can be asked\nAdded e.isR",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "a transcript line when a plugin that runs first skips one of your mod's hooks, naming the event and the plugin"
+        },
+        {
+          "type": "added",
+          "text": "decider: \"person\" to a mod's tool.check answer: only the permission dialog or a host's callback can approve the ask, and it is refused with the mod's reason where nobody can be asked"
+        },
+        {
+          "type": "changed",
+          "text": "Added a transcript line when a plugin that runs first skips one of your mod's hooks, naming the event and the plugin"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.304",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.303",
+      "title_en": "v2.1.303",
+      "summary": "Ce qui a change Bug fixes and reliability improvements",
+      "summary_en": "What's changed\n\nBug fixes and reliability improvements\n",
+      "changelog_items": [
+        {
+          "type": "changed",
+          "text": "Bug fixes and reliability improvements"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.303",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.302",
@@ -72,52 +110,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.300",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.299",
-      "title_en": "v2.1.299",
-      "summary": "Ce qui a change Ajout de CLAUDE_CODE_DISABLE_FILE_MENTIONS variable d'environnement: Claude gets the paths of @ fichier mentions to read with its fichier tools, not the fichiers' contents Ajout de idle compaction in the terminal: a 200K+ jeton conversation left idle for about 54 minutes is compacted before its one-hour prompt cache expires, so your next message doe",
-      "summary_en": "What's changed\n\nAdded CLAUDE_CODE_DISABLE_FILE_MENTIONS environment variable: Claude gets the paths of @ file mentions to read with its file tools, not the files' contents\nAdded idle compaction in the terminal: a 200K+ token conversation left idle for about 54 minutes is compacted before its one-hour prompt cache expires, so your next message doe",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "CLAUDE_CODE_DISABLE_FILE_MENTIONS environment variable: Claude gets the paths of @ file mentions to read with its file tools, not the files' contents"
-        },
-        {
-          "type": "added",
-          "text": "idle compaction in the terminal: a 200K+ token conversation left idle for about 54 minutes is compacted before its one-hour prompt cache expires, so your next message doe"
-        },
-        {
-          "type": "changed",
-          "text": "Added CLAUDE_CODE_DISABLE_FILE_MENTIONS environment variable: Claude gets the paths of @ file mentions to read with its file tools, not the files' contents"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.299",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.296",
-      "title_en": "v2.1.296",
-      "summary": "Ce qui a change Ajout de a code key to the Claude apps gateway's managed.policies[]: the same parametres as cli, also applied in Claude Desktop's Code tab; beside desktop, it turns on Claude Desktop's gateway mode Ajout de autoCompactWindow to subagent frontmatter and --agents definitions, so a subagent",
-      "summary_en": "What's changed\n\nAdded a code key to the Claude apps gateway's managed.policies[]: the same settings as cli, also applied in Claude Desktop's Code tab; beside desktop, it turns on Claude Desktop's gateway mode\nAdded autoCompactWindow to subagent frontmatter and --agents definitions, so a subagent",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "a code key to the Claude apps gateway's managed.policies[]: the same settings as cli, also applied in Claude Desktop's Code tab; beside desktop, it turns on Claude Desktop's gateway mode"
-        },
-        {
-          "type": "added",
-          "text": "autoCompactWindow to subagent frontmatter and --agents definitions, so a subagent"
-        },
-        {
-          "type": "changed",
-          "text": "Added a code key to the Claude apps gateway's managed.policies[]: the same settings as cli, also applied in Claude Desktop's Code tab; beside desktop, it turns on Claude Desktop's gateway mode"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.296",
       "is_new": false
     },
     {
@@ -232,13 +224,13 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.302",
-      "title_en": "v2.1.302",
-      "summary": "Publie le 2026-10-16",
-      "summary_en": "Publie le 2026-10-16",
+      "title": "v2.1.304",
+      "title_en": "v2.1.304",
+      "summary": "Publie le 2026-10-19",
+      "summary_en": "Publie le 2026-10-19",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
@@ -268,7 +260,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/public-benefit-fund",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -298,7 +290,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/singapore-office-opening",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -463,8 +455,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.302",
-    "Claude Code npm": "v2.1.302",
+    "Claude Code": "v2.1.304",
+    "Claude Code npm": "v2.1.304",
     "SDK Python": "v1.15.0",
     "SDK Python PyPI": "v1.15.0",
     "SDK TypeScript": "foundry-sdk-v0.6.0",
@@ -472,7 +464,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.296",
+    "GitHub Claude Code": "v2.1.300",
     "GitHub SDK Python": "v1.12.0"
   }
 }
