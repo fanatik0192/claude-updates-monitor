@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-10-19T22:46:44.903286",
+  "last_check": "2026-10-20T22:02:24.399279",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.305",
+      "title_en": "v2.1.305",
+      "summary": "Ce qui a change Ajout de sandbox.allowNestedUtilisateurNomspaces so sandboxed commandes on Linux can create utilisateur nomspaces (Chromium, rootless podman); this lets them get around the sandbox's fichier protections Ajout de CLAUDE_CODE_RETRY_WATCHDOG_USAGE_LIMIT_RECHECK_MS so unattended reessayer mode (CLAUDE_CODE_RETRY_WATCHDOG) notices a usage limit tha",
+      "summary_en": "What's changed\n\nAdded sandbox.allowNestedUserNamespaces so sandboxed commands on Linux can create user namespaces (Chromium, rootless podman); this lets them get around the sandbox's file protections\nAdded CLAUDE_CODE_RETRY_WATCHDOG_USAGE_LIMIT_RECHECK_MS so unattended retry mode (CLAUDE_CODE_RETRY_WATCHDOG) notices a usage limit tha",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "sandbox.allowNestedUserNamespaces so sandboxed commands on Linux can create user namespaces (Chromium, rootless podman); this lets them get around the sandbox's file protections"
+        },
+        {
+          "type": "added",
+          "text": "CLAUDE_CODE_RETRY_WATCHDOG_USAGE_LIMIT_RECHECK_MS so unattended retry mode (CLAUDE_CODE_RETRY_WATCHDOG) notices a usage limit tha"
+        },
+        {
+          "type": "changed",
+          "text": "Added sandbox.allowNestedUserNamespaces so sandboxed commands on Linux can create user namespaces (Chromium, rootless podman); this lets them get around the sandbox's file protections"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.305",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.304",
@@ -22,7 +45,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.304",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -37,7 +60,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.303",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -86,31 +109,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.300",
-      "title_en": "v2.1.300",
-      "summary": "Ce qui a change Ajout de virtualText to a mod's prompt decorations: text drawn in the prompt box that never enters the draft or the submitted prompt Ajout de cache_creation_5m_jetons and cache_creation_1h_jetons to the OuvrirTelemetry api_request event, splitting cache writes by lifetime Ajout de $.ui.view({ agentId",
-      "summary_en": "What's changed\n\nAdded virtualText to a mod's prompt decorations: text drawn in the prompt box that never enters the draft or the submitted prompt\nAdded cache_creation_5m_tokens and cache_creation_1h_tokens to the OpenTelemetry api_request event, splitting cache writes by lifetime\nAdded $.ui.view({ agentId ",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "virtualText to a mod's prompt decorations: text drawn in the prompt box that never enters the draft or the submitted prompt"
-        },
-        {
-          "type": "added",
-          "text": "cache_creation_5m_tokens and cache_creation_1h_tokens to the OpenTelemetry api_request event, splitting cache writes by lifetime"
-        },
-        {
-          "type": "added",
-          "text": "$.ui.view({ agentId"
-        },
-        {
-          "type": "changed",
-          "text": "Added virtualText to a mod's prompt decorations: text drawn in the prompt box that never enters the draft or the submitted prompt"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.300",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v1.16.0",
+      "title_en": "v1.16.0",
+      "summary": "Fonctionnalites api: add data_actualisered_at and has_more to analytics report pages api: add workspace rate-limit updates to the Admin API api: make Utilisateur Profichiers generally available client: yield server-sent events with unrecognized event noms google-cloud: use the v1",
+      "summary_en": "Features\n\napi: add data_refreshed_at and has_more to analytics report pages\napi: add workspace rate-limit updates to the Admin API\napi: make User Profiles generally available\nclient: yield server-sent events with unrecognized event names\ngoogle-cloud: use the v1",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.16.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -153,99 +159,89 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v1.12.0",
-      "title_en": "v1.12.0",
-      "summary": "1.12.0 (2026-10-07) Journal complet: v1.11.0...v1.12.0 Fonctionnalites api: add claude-haiku-5-5 and taperd computer and browser toolset tool calls (</",
-      "summary_en": "1.12.0 (2026-10-07)\nFull Changelog: v1.11.0...v1.12.0\nFeatures\n\napi: add claude-haiku-5-5 and typed computer and browser toolset tool calls (f6346e6</",
+      "source": "SDK TypeScript",
+      "title": "vertex-sdk-v0.22.0",
+      "title_en": "vertex-sdk-v0.22.0",
+      "summary": "Fonctionnalites vertex: throw an AnthropicErreur when utilisateurProfichiers or beta.utilisateurProfichiers is read on AnthropicVertex, which doesn't serve the utilisateur profichier endpoints",
+      "summary_en": "Features\n\nvertex: throw an AnthropicError when userProfiles or beta.userProfiles is read on AnthropicVertex, which doesn't serve the user profile endpoints\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.12.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.22.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk-v0.135.0",
-      "title_en": "sdk-v0.135.0",
-      "summary": "Fonctionnalites api: add between_tools to thinking tapers in model capabilities api: add the speed parameter and usage.speed to Messages api: return a Console organization's usage-tier spend cap as a read-only spend limit Corrections de bugs client: close streams dropped without being",
-      "summary_en": "Features\n\napi: add between_tools to thinking types in model capabilities\napi: add the speed parameter and usage.speed to Messages\napi: return a Console organization's usage-tier spend cap as a read-only spend limit\n\nBug Fixes\n\nclient: close streams dropped without being",
+      "title": "sdk-v0.136.0",
+      "title_en": "sdk-v0.136.0",
+      "summary": "Fonctionnalites api: add data_actualisered_at and has_more to analytics report pages api: add workspace rate-limit updates to the Admin API api: make Utilisateur Profichiers generally available client: yield server-sent events with unrecognized event noms tools: accept every tool",
+      "summary_en": "Features\n\napi: add data_refreshed_at and has_more to analytics report pages\napi: add workspace rate-limit updates to the Admin API\napi: make User Profiles generally available\nclient: yield server-sent events with unrecognized event names\ntools: accept every tool",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.135.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.136.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "vertex-sdk-v0.21.0",
-      "title_en": "vertex-sdk-v0.21.0",
-      "summary": "Fonctionnalites api: add execution_identity to Managed Agents agents client: add native prise en charge de OuvrirTelemetry tracing If your app registers a global tracer provider, the SDK will create spans with it after upgrading, and they'll be exported with the rest of your traces. Requests will also get trace context headers from t",
-      "summary_en": "Features\n\n\napi: add execution_identity to Managed Agents agents\n\n\nclient: add native support for OpenTelemetry tracing\nIf your app registers a global tracer provider, the SDK will create spans with it after upgrading, and they'll be exported with the rest of your traces. Requests will also get trace context headers from t",
+      "title": "google-cloud-sdk-v0.2.0",
+      "title_en": "google-cloud-sdk-v0.2.0",
+      "summary": "Fonctionnalites google-cloud: use the v1 endpoints and add the organization endpoint",
+      "summary_en": "Features\n\ngoogle-cloud: use the v1 endpoints and add the organization endpoint\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.21.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.2.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk-v0.134.0",
-      "title_en": "sdk-v0.134.0",
-      "summary": "Fonctionnalites api: add execution_identity to Managed Agents agents api: add organization_taper_not_prise en chargeed erreur to spend limit lists api: add telemetry destination test endpoint api: add telemetry destinations to the Admin API client",
-      "summary_en": "Features\n\n\napi: add execution_identity to Managed Agents agents\n\n\napi: add organization_type_not_supported error to spend limit lists\n\n\napi: add telemetry destination test endpoint\n\n\napi: add telemetry destinations to the Admin API\n\n\nclient",
+      "title": "bedrock-sdk-v0.36.0",
+      "title_en": "bedrock-sdk-v0.36.0",
+      "summary": "Fonctionnalites bedrock: send utilisateur_profichier_id in the request body on AnthropicBedrockMantle Messages and jeton counting requests bedrock: throw an AnthropicErreur when utilisateurProfichiers or beta.utilisateurProfichiers is read on AnthropicBedrock, which doesn't serve utilisateur profichiers",
+      "summary_en": "Features\n\nbedrock: send user_profile_id in the request body on AnthropicBedrockMantle Messages and token counting requests\nbedrock: throw an AnthropicError when userProfiles or beta.userProfiles is read on AnthropicBedrock, which doesn't serve user profiles",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.134.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.36.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "google-cloud-sdk-v0.1.0",
-      "title_en": "google-cloud-sdk-v0.1.0",
-      "summary": "Fonctionnalites api: add execution_identity to Managed Agents agents client: add native prise en charge de OuvrirTelemetry tracing If your app registers a global tracer provider, the SDK will create spans with it after upgrading, and they'll be exported with the rest of your traces. Requests will also get trace context headers from t",
-      "summary_en": "Features\n\n\napi: add execution_identity to Managed Agents agents\n\n\nclient: add native support for OpenTelemetry tracing\nIf your app registers a global tracer provider, the SDK will create spans with it after upgrading, and they'll be exported with the rest of your traces. Requests will also get trace context headers from t",
+      "title": "aws-sdk-v0.9.0",
+      "title_en": "aws-sdk-v0.9.0",
+      "summary": "Fonctionnalites aws: require @anthropic-ai/sdk 0.136.0 or later aws: throw an AnthropicErreur when actionURLs is read on utilisateurProfichiers or beta.utilisateurProfichiers, which the AWS gateway doesn't serve",
+      "summary_en": "Features\n\naws: require @anthropic-ai/sdk 0.136.0 or later\naws: throw an AnthropicError when actionURLs is read on userProfiles or beta.userProfiles, which the AWS gateway doesn't serve\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.1.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "foundry-sdk-v0.6.0",
-      "title_en": "foundry-sdk-v0.6.0",
-      "summary": "Fonctionnalites api: add execution_identity to Managed Agents agents client: add native prise en charge de OuvrirTelemetry tracing If your app registers a global tracer provider, the SDK will create spans with it after upgrading, and they'll be exported with the rest of your traces. Requests will also get trace context headers from t",
-      "summary_en": "Features\n\n\napi: add execution_identity to Managed Agents agents\n\n\nclient: add native support for OpenTelemetry tracing\nIf your app registers a global tracer provider, the SDK will create spans with it after upgrading, and they'll be exported with the rest of your traces. Requests will also get trace context headers from t",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.6.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.9.0",
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.135.0",
-      "title_en": "v0.135.0",
-      "summary": "Publie le 2026-10-15",
-      "summary_en": "Publie le 2026-10-15",
+      "title": "v0.136.0",
+      "title_en": "v0.136.0",
+      "summary": "Publie le 2026-10-20",
+      "summary_en": "Publie le 2026-10-20",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.304",
-      "title_en": "v2.1.304",
-      "summary": "Publie le 2026-10-19",
-      "summary_en": "Publie le 2026-10-19",
+      "title": "v2.1.305",
+      "title_en": "v2.1.305",
+      "summary": "Publie le 2026-10-20",
+      "summary_en": "Publie le 2026-10-20",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v1.15.0",
-      "title_en": "v1.15.0",
+      "title": "v1.16.0",
+      "title_en": "v1.16.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
-      "title": "Expanding the Cyber Verification ProgramAnnouncementsOct 6, 2026We’re launching a new, expanded vers",
-      "title_en": "Expanding the Cyber Verification ProgramAnnouncementsOct 6, 2026We’re launching a new, expanded vers",
+      "title": "Expanding the Cyber Verification ProgramWe’re launching a new, expanded version of our Cyber Verific",
+      "title_en": "Expanding the Cyber Verification ProgramWe’re launching a new, expanded version of our Cyber Verific",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
@@ -254,8 +250,8 @@
     },
     {
       "source": "Blog",
-      "title": "Oct 18, 2026AnnouncementsInvesting in the public benefit",
-      "title_en": "Oct 18, 2026AnnouncementsInvesting in the public benefit",
+      "title": "Investing in the public benefit",
+      "title_en": "Investing in the public benefit",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
@@ -264,8 +260,8 @@
     },
     {
       "source": "Blog",
-      "title": "Oct 15, 2026AnnouncementsAn update on independent evaluators",
-      "title_en": "Oct 15, 2026AnnouncementsAn update on independent evaluators",
+      "title": "An update on independent evaluators",
+      "title_en": "An update on independent evaluators",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
@@ -274,8 +270,8 @@
     },
     {
       "source": "Blog",
-      "title": "Oct 14, 2026PolicyPreparing for the 2026 US midterms",
-      "title_en": "Oct 14, 2026PolicyPreparing for the 2026 US midterms",
+      "title": "Preparing for the 2026 US midterms",
+      "title_en": "Preparing for the 2026 US midterms",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
@@ -284,8 +280,8 @@
     },
     {
       "source": "Blog",
-      "title": "Oct 14, 2026AnnouncementsAnthropic ouvrirs Singapore office and signs MOU with the Government of Singa",
-      "title_en": "Oct 14, 2026AnnouncementsAnthropic opens Singapore office and signs MOU with the Government of Singa",
+      "title": "Anthropic ouvrirs Singapore office and signs MOU with the Government of Singapore",
+      "title_en": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
@@ -294,28 +290,18 @@
     },
     {
       "source": "Blog",
-      "title": "Oct 8, 2026Announcements2026 Usage Policy update",
-      "title_en": "Oct 8, 2026Announcements2026 Usage Policy update",
+      "title": "Strengthening our defenses against distillation attacks",
+      "title_en": "Strengthening our defenses against distillation attacks",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/news/2026-usage-policy-update",
-      "is_new": false
+      "url": "https://www.anthropic.com/news/distillation-defenses",
+      "is_new": true
     },
     {
       "source": "Blog",
-      "title": "Oct 8, 2026AnnouncementsBuilding on our commitment to American scientific discovery",
-      "title_en": "Oct 8, 2026AnnouncementsBuilding on our commitment to American scientific discovery",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/genesis-mission-commitment",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Oct 8, 2026AnnouncementsIntroducing the Anthropic Cyber Mission",
-      "title_en": "Oct 8, 2026AnnouncementsIntroducing the Anthropic Cyber Mission",
+      "title": "Introducing the Anthropic Cyber Mission",
+      "title_en": "Introducing the Anthropic Cyber Mission",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
@@ -324,8 +310,28 @@
     },
     {
       "source": "Blog",
-      "title": "Oct 2, 2026AnnouncementsAnthropic invests $100 million to train 10,000 engineers and tackle the ente",
-      "title_en": "Oct 2, 2026AnnouncementsAnthropic invests $100 million to train 10,000 engineers and tackle the ente",
+      "title": "2026 Usage Policy update",
+      "title_en": "2026 Usage Policy update",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Building on our commitment to American scientific discovery",
+      "title_en": "Building on our commitment to American scientific discovery",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/genesis-mission-commitment",
+      "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
+      "title_en": "Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
@@ -333,14 +339,14 @@
       "is_new": false
     },
     {
-      "source": "Blog",
-      "title": "Oct 1, 2026AnnouncementsBarclays scales Claude to upgrade operations and improve client experience",
-      "title_en": "Oct 1, 2026AnnouncementsBarclays scales Claude to upgrade operations and improve client experience",
+      "source": "Recherche",
+      "title": "Frontier Red Team",
+      "title_en": "Frontier Red Team",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/news/barclays-scales-claude",
-      "is_new": false
+      "url": "https://www.anthropic.com/research/team/frontier-red-team",
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -364,33 +370,23 @@
     },
     {
       "source": "Recherche",
-      "title": "Frontier Red Team",
-      "title_en": "Frontier Red Team",
+      "title": "Natural Language Autoencoders: Turning Claude’s thoughts into text",
+      "title_en": "Natural Language Autoencoders: Turning Claude’s thoughts into text",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/research/team/frontier-red-team",
-      "is_new": false
+      "url": "https://www.anthropic.com/research/natural-language-autoencoders",
+      "is_new": true
     },
     {
       "source": "Recherche",
-      "title": "ScienceOct 8, 2026The missing map of the skyBrice Ménard, an astrophysicist at Johns Hopkins Univers",
-      "title_en": "ScienceOct 8, 2026The missing map of the skyBrice Ménard, an astrophysicist at Johns Hopkins Univers",
+      "title": "Emotion concepts and their function in a large language model",
+      "title_en": "Emotion concepts and their function in a large language model",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/research/the-missing-map-of-the-sky",
-      "is_new": false
-    },
-    {
-      "source": "Recherche",
-      "title": "Societal ImpactsSep 29, 2026What do you want from AI?We’re launching a new study using Anthropic Int",
-      "title_en": "Societal ImpactsSep 29, 2026What do you want from AI?We’re launching a new study using Anthropic Int",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/research/your-thoughts-on-ai",
-      "is_new": false
+      "url": "https://www.anthropic.com/research/emotion-concepts-function",
+      "is_new": true
     },
     {
       "source": "Statut",
@@ -455,16 +451,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.304",
-    "Claude Code npm": "v2.1.304",
-    "SDK Python": "v1.15.0",
-    "SDK Python PyPI": "v1.15.0",
-    "SDK TypeScript": "foundry-sdk-v0.6.0",
+    "Claude Code": "v2.1.305",
+    "Claude Code npm": "v2.1.305",
+    "SDK Python": "v1.16.0",
+    "SDK Python PyPI": "v1.16.0",
+    "SDK TypeScript": "aws-sdk-v0.9.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.300",
-    "GitHub SDK Python": "v1.12.0"
+    "GitHub Claude Code": "v2.1.301",
+    "GitHub SDK Python": "v1.12.1"
   }
 }
