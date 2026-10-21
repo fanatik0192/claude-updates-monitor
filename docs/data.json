@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-10-20T22:02:24.399279",
+  "last_check": "2026-10-21T22:03:26.849938",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.306",
+      "title_en": "v2.1.306",
+      "summary": "Ce qui a change Correction de claude -p inside cloud sessions reporting \"Not logged in\" when started without the session's variable d'environnements Correction de an API erreur being replaced by \"prompt is too long\", and an unneeded compaction, in sessions with many MCP tools",
+      "summary_en": "What's changed\n\nFixed claude -p inside cloud sessions reporting \"Not logged in\" when started without the session's environment variables\nFixed an API error being replaced by \"prompt is too long\", and an unneeded compaction, in sessions with many MCP tools\n",
+      "changelog_items": [
+        {
+          "type": "fixed",
+          "text": "claude -p inside cloud sessions reporting \"Not logged in\" when started without the session's environment variables"
+        },
+        {
+          "type": "fixed",
+          "text": "an API error being replaced by \"prompt is too long\", and an unneeded compaction, in sessions with many MCP tools"
+        },
+        {
+          "type": "changed",
+          "text": "Fixed claude -p inside cloud sessions reporting \"Not logged in\" when started without the session's environment variables"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.306",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.305",
@@ -22,7 +45,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.305",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -83,30 +106,37 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.302",
-      "is_new": false
+      "is_new": true
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.301",
-      "title_en": "v2.1.301",
-      "summary": "Ce qui a change Ajout de CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS so unattended reessayer mode (CLAUDE_CODE_RETRY_WATCHDOG) ends a request at a usage limit that resets too far away instead of waiting Ajout de OuvrirTelemetry tracing guidance to the claude-api skill, including parametre up trace destinations with the ant CLI<",
-      "summary_en": "What's changed\n\nAdded CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS so unattended retry mode (CLAUDE_CODE_RETRY_WATCHDOG) ends a request at a usage limit that resets too far away instead of waiting\nAdded OpenTelemetry tracing guidance to the claude-api skill, including setting up trace destinations with the ant CLI<",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS so unattended retry mode (CLAUDE_CODE_RETRY_WATCHDOG) ends a request at a usage limit that resets too far away instead of waiting"
-        },
-        {
-          "type": "added",
-          "text": "OpenTelemetry tracing guidance to the claude-api skill, including setting up trace destinations with the ant CLI<"
-        },
-        {
-          "type": "changed",
-          "text": "Added CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS so unattended retry mode (CLAUDE_CODE_RETRY_WATCHDOG) ends a request at a usage limit that resets too far away instead of waiting"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.301",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v2.1.0",
+      "title_en": "v2.1.0",
+      "summary": "Fonctionnalites api: add enforcement status, actions and filtre to utilisateur profichiers",
+      "summary_en": "Features\n\napi: add enforcement status, actions and filter to user profiles\n",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.1.0",
+      "is_new": true
+    },
+    {
+      "source": "SDK Python",
+      "title": "v2.0.0",
+      "title_en": "v2.0.0",
+      "summary": "⚠ BREAKING CHANGES api: add prise en charge de new API version 2026-10-21 Fonctionnalites api: add a workspace_id filtre and the usage_tier scope taper to list spend limits api: add prise en charge de new API version 2026-10-21 Documentation api: remove outdated system",
+      "summary_en": "⚠ BREAKING CHANGES\n\napi: add support for new API version 2026-10-21\n\nFeatures\n\napi: add a workspace_id filter and the usage_tier scope type to list spend limits\napi: add support for new API version 2026-10-21\n\nDocumentation\n\napi: remove outdated system",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.0.0",
+      "is_new": true
+    },
+    {
+      "source": "SDK Python",
+      "title": "v1.17.0",
+      "title_en": "v1.17.0",
+      "summary": "Fonctionnalites api: add org webhook endpoints and utilisateur profichier enforcement events api: add RBAC Group owner-access erreur codes to the Admin API api: document the unprise en chargeed_charset erreur code for plugin uploads Corrections de bugs bedrock: keep a workspace ID set in par defaut_headers",
+      "summary_en": "Features\n\napi: add org webhook endpoints and user profile enforcement events\napi: add RBAC Group owner-access error codes to the Admin API\napi: document the unsupported_charset error code for plugin uploads\n\nBug Fixes\n\nbedrock: keep a workspace ID set in default_headers",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.17.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -116,7 +146,7 @@
       "summary_en": "Features\n\napi: add data_refreshed_at and has_more to analytics report pages\napi: add workspace rate-limit updates to the Admin API\napi: make User Profiles generally available\nclient: yield server-sent events with unrecognized event names\ngoogle-cloud: use the v1",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.16.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -129,114 +159,94 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v1.14.0",
-      "title_en": "v1.14.0",
-      "summary": "Fonctionnalites api: add execution_identity to Managed Agents agents api: add organization_taper_not_prise en chargeed erreur to spend limit lists api: add telemetry destination test endpoint api: add telemetry destinations to the Admin API client",
-      "summary_en": "Features\n\n\napi: add execution_identity to Managed Agents agents\n\n\napi: add organization_type_not_supported error to spend limit lists\n\n\napi: add telemetry destination test endpoint\n\n\napi: add telemetry destinations to the Admin API\n\n\nclient",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.14.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK Python",
-      "title": "v1.13.0",
-      "title_en": "v1.13.0",
-      "summary": "Fonctionnalites api: add tapers for the Chat and Cowork unified analytics metrics api: add workflows, multiagent configuration and thread status filtrage to Managed Agents Maintenance internal: nom the par defaut API version header value",
-      "summary_en": "Features\n\napi: add types for the Chat and Cowork unified analytics metrics\napi: add workflows, multiagent configuration and thread status filtering to Managed Agents\n\nChores\n\ninternal: name the default API version header value\n",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.13.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK Python",
-      "title": "v1.12.1",
-      "title_en": "v1.12.1",
-      "summary": "Maintenance ci: check that pull requests update the journal des modifications docs: note that listing Claude Console spend limits is in early access internal: match the package version in uv.lock",
-      "summary_en": "Chores\n\nci: check that pull requests update the changelog\ndocs: note that listing Claude Console spend limits is in early access\ninternal: match the package version in uv.lock\n",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.12.1",
-      "is_new": false
-    },
-    {
       "source": "SDK TypeScript",
-      "title": "vertex-sdk-v0.22.0",
-      "title_en": "vertex-sdk-v0.22.0",
-      "summary": "Fonctionnalites vertex: throw an AnthropicErreur when utilisateurProfichiers or beta.utilisateurProfichiers is read on AnthropicVertex, which doesn't serve the utilisateur profichier endpoints",
-      "summary_en": "Features\n\nvertex: throw an AnthropicError when userProfiles or beta.userProfiles is read on AnthropicVertex, which doesn't serve the user profile endpoints\n",
+      "title": "vertex-sdk-v1.0.0",
+      "title_en": "vertex-sdk-v1.0.0",
+      "summary": "⚠ BREAKING CHANGES api: add prise en charge de new API version 2026-10-21 Fonctionnalites api: add prise en charge de new API version 2026-10-21",
+      "summary_en": "⚠ BREAKING CHANGES\n\napi: add support for new API version 2026-10-21\n\nFeatures\n\napi: add support for new API version 2026-10-21\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.22.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v1.0.0",
       "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk-v0.136.0",
-      "title_en": "sdk-v0.136.0",
-      "summary": "Fonctionnalites api: add data_actualisered_at and has_more to analytics report pages api: add workspace rate-limit updates to the Admin API api: make Utilisateur Profichiers generally available client: yield server-sent events with unrecognized event noms tools: accept every tool",
-      "summary_en": "Features\n\napi: add data_refreshed_at and has_more to analytics report pages\napi: add workspace rate-limit updates to the Admin API\napi: make User Profiles generally available\nclient: yield server-sent events with unrecognized event names\ntools: accept every tool",
+      "title": "sdk-v1.1.0",
+      "title_en": "sdk-v1.1.0",
+      "summary": "Fonctionnalites api: add enforcement status, actions and filtre to utilisateur profichiers",
+      "summary_en": "Features\n\napi: add enforcement status, actions and filter to user profiles\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.136.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.1.0",
       "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "google-cloud-sdk-v0.2.0",
-      "title_en": "google-cloud-sdk-v0.2.0",
-      "summary": "Fonctionnalites google-cloud: use the v1 endpoints and add the organization endpoint",
-      "summary_en": "Features\n\ngoogle-cloud: use the v1 endpoints and add the organization endpoint\n",
+      "title": "sdk-v1.0.0",
+      "title_en": "sdk-v1.0.0",
+      "summary": "⚠ BREAKING CHANGES api: add prise en charge de new API version 2026-10-21 Fonctionnalites api: add a workspace_id filtre and the usage_tier scope taper to list spend limits api: add prise en charge de new API version 2026-10-21 Maintenance ci: check the journal des modifications of each pa",
+      "summary_en": "⚠ BREAKING CHANGES\n\napi: add support for new API version 2026-10-21\n\nFeatures\n\napi: add a workspace_id filter and the usage_tier scope type to list spend limits\napi: add support for new API version 2026-10-21\n\nChores\n\nci: check the changelog of each pa",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.2.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.0.0",
       "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "bedrock-sdk-v0.36.0",
-      "title_en": "bedrock-sdk-v0.36.0",
-      "summary": "Fonctionnalites bedrock: send utilisateur_profichier_id in the request body on AnthropicBedrockMantle Messages and jeton counting requests bedrock: throw an AnthropicErreur when utilisateurProfichiers or beta.utilisateurProfichiers is read on AnthropicBedrock, which doesn't serve utilisateur profichiers",
-      "summary_en": "Features\n\nbedrock: send user_profile_id in the request body on AnthropicBedrockMantle Messages and token counting requests\nbedrock: throw an AnthropicError when userProfiles or beta.userProfiles is read on AnthropicBedrock, which doesn't serve user profiles",
+      "title": "google-cloud-sdk-v1.0.0",
+      "title_en": "google-cloud-sdk-v1.0.0",
+      "summary": "⚠ BREAKING CHANGES api: add prise en charge de new API version 2026-10-21 Fonctionnalites api: add prise en charge de new API version 2026-10-21",
+      "summary_en": "⚠ BREAKING CHANGES\n\napi: add support for new API version 2026-10-21\n\nFeatures\n\napi: add support for new API version 2026-10-21\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.36.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.0.0",
       "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "aws-sdk-v0.9.0",
-      "title_en": "aws-sdk-v0.9.0",
-      "summary": "Fonctionnalites aws: require @anthropic-ai/sdk 0.136.0 or later aws: throw an AnthropicErreur when actionURLs is read on utilisateurProfichiers or beta.utilisateurProfichiers, which the AWS gateway doesn't serve",
-      "summary_en": "Features\n\naws: require @anthropic-ai/sdk 0.136.0 or later\naws: throw an AnthropicError when actionURLs is read on userProfiles or beta.userProfiles, which the AWS gateway doesn't serve\n",
+      "title": "foundry-sdk-v1.0.0",
+      "title_en": "foundry-sdk-v1.0.0",
+      "summary": "⚠ BREAKING CHANGES api: add prise en charge de new API version 2026-10-21 Fonctionnalites api: add prise en charge de new API version 2026-10-21",
+      "summary_en": "⚠ BREAKING CHANGES\n\napi: add support for new API version 2026-10-21\n\nFeatures\n\napi: add support for new API version 2026-10-21\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.9.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v1.0.0",
       "is_new": true
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v0.136.0",
-      "title_en": "v0.136.0",
-      "summary": "Publie le 2026-10-20",
-      "summary_en": "Publie le 2026-10-20",
+      "title": "v1.1.0",
+      "title_en": "v1.1.0",
+      "summary": "Publie le 2026-10-21",
+      "summary_en": "Publie le 2026-10-21",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
       "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.305",
-      "title_en": "v2.1.305",
-      "summary": "Publie le 2026-10-20",
-      "summary_en": "Publie le 2026-10-20",
+      "title": "v2.1.306",
+      "title_en": "v2.1.306",
+      "summary": "Publie le 2026-10-21",
+      "summary_en": "Publie le 2026-10-21",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v1.16.0",
-      "title_en": "v1.16.0",
+      "title": "v2.1.0",
+      "title_en": "v2.1.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
       "is_new": true
+    },
+    {
+      "source": "Blog",
+      "title": "Investing in the public benefitWe’re committing a portion of Anthropic’s shares to the Anthropic Pub",
+      "title_en": "Investing in the public benefitWe’re committing a portion of Anthropic’s shares to the Anthropic Pub",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/public-benefit-fund",
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -250,13 +260,13 @@
     },
     {
       "source": "Blog",
-      "title": "Investing in the public benefit",
-      "title_en": "Investing in the public benefit",
+      "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+      "title_en": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/news/public-benefit-fund",
-      "is_new": false
+      "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -296,7 +306,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/distillation-defenses",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -329,16 +339,6 @@
       "is_new": false
     },
     {
-      "source": "Blog",
-      "title": "Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
-      "title_en": "Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/claude-frontier-academy",
-      "is_new": false
-    },
-    {
       "source": "Recherche",
       "title": "Frontier Red Team",
       "title_en": "Frontier Red Team",
@@ -346,7 +346,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/frontier-red-team",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -370,22 +370,22 @@
     },
     {
       "source": "Recherche",
-      "title": "Natural Language Autoencoders: Turning Claude’s thoughts into text",
-      "title_en": "Natural Language Autoencoders: Turning Claude’s thoughts into text",
+      "title": "The missing map of the sky",
+      "title_en": "The missing map of the sky",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/research/natural-language-autoencoders",
-      "is_new": true
+      "url": "https://www.anthropic.com/research/the-missing-map-of-the-sky",
+      "is_new": false
     },
     {
       "source": "Recherche",
-      "title": "Emotion concepts and their function in a large language model",
-      "title_en": "Emotion concepts and their function in a large language model",
+      "title": "Project Swap: What happens when agents trade for us?",
+      "title_en": "Project Swap: What happens when agents trade for us?",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/research/emotion-concepts-function",
+      "url": "https://www.anthropic.com/research/project-swap",
       "is_new": true
     },
     {
@@ -451,16 +451,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.305",
-    "Claude Code npm": "v2.1.305",
-    "SDK Python": "v1.16.0",
-    "SDK Python PyPI": "v1.16.0",
-    "SDK TypeScript": "aws-sdk-v0.9.0",
+    "Claude Code": "v2.1.306",
+    "Claude Code npm": "v2.1.306",
+    "SDK Python": "v2.1.0",
+    "SDK Python PyPI": "v2.1.0",
+    "SDK TypeScript": "foundry-sdk-v1.0.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.301",
-    "GitHub SDK Python": "v1.12.1"
+    "GitHub Claude Code": "v2.1.302",
+    "GitHub SDK Python": "v1.15.0"
   }
 }
