@@ -1,6 +1,48 @@
 {
-  "last_check": "2026-10-21T22:03:26.849938",
+  "last_check": "2026-10-22T22:02:27.854210",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.308",
+      "title_en": "v2.1.308",
+      "summary": "Ce qui a change Bug fixes and reliability improvements",
+      "summary_en": "What's changed\n\nBug fixes and reliability improvements\n",
+      "changelog_items": [
+        {
+          "type": "changed",
+          "text": "Bug fixes and reliability improvements"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.308",
+      "is_new": true
+    },
+    {
+      "source": "Claude Code",
+      "title": "v2.1.307",
+      "title_en": "v2.1.307",
+      "summary": "Ce qui a change Ajout de /claude-api api-version to move Claude API code to API version 2026-10-21 Ajout de the claude_code.safety_event OuvrirTelemetry event for each tool call a permission regle, auto mode, a safety check, a hook or the sandbox stopped, prompted or sent back Correction de requests failing with a model-not-found erreur when",
+      "summary_en": "What's changed\n\nAdded /claude-api api-version to move Claude API code to API version 2026-10-21\nAdded the claude_code.safety_event OpenTelemetry event for each tool call a permission rule, auto mode, a safety check, a hook or the sandbox stopped, prompted or sent back\nFixed requests failing with a model-not-found error when ",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "/claude-api api-version to move Claude API code to API version 2026-10-21"
+        },
+        {
+          "type": "added",
+          "text": "the claude_code.safety_event OpenTelemetry event for each tool call a permission rule, auto mode, a safety check, a hook or the sandbox stopped, prompted or sent back"
+        },
+        {
+          "type": "fixed",
+          "text": "requests failing with a model-not-found error when"
+        },
+        {
+          "type": "changed",
+          "text": "Added /claude-api api-version to move Claude API code to API version 2026-10-21"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.307",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.306",
@@ -22,7 +64,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.306",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -71,44 +113,6 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.303",
-      "title_en": "v2.1.303",
-      "summary": "Ce qui a change Bug fixes and reliability improvements",
-      "summary_en": "What's changed\n\nBug fixes and reliability improvements\n",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Bug fixes and reliability improvements"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.303",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.302",
-      "title_en": "v2.1.302",
-      "summary": "Ce qui a change Ajout de CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode Ajout de an Idle compaction row to /config for turning idle compaction off or back on; the notices affichern after an idle compaction now say how to turn it off Adde",
-      "summary_en": "What's changed\n\nAdded CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode\nAdded an Idle compaction row to /config for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off\nAdde",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode"
-        },
-        {
-          "type": "added",
-          "text": "an Idle compaction row to /config for turning idle compaction off or back on; the notices shown after an idle compaction now say how to turn it off"
-        },
-        {
-          "type": "changed",
-          "text": "Added CLAUDE_CODE_AUTO_MODE_MODEL to choose the model the client-side auto mode classifier uses; it does not change the model for server-side auto mode"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.302",
-      "is_new": true
-    },
-    {
       "source": "SDK Python",
       "title": "v2.1.0",
       "title_en": "v2.1.0",
@@ -116,7 +120,7 @@
       "summary_en": "Features\n\napi: add enforcement status, actions and filter to user profiles\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.1.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -126,7 +130,7 @@
       "summary_en": "⚠ BREAKING CHANGES\n\napi: add support for new API version 2026-10-21\n\nFeatures\n\napi: add a workspace_id filter and the usage_tier scope type to list spend limits\napi: add support for new API version 2026-10-21\n\nDocumentation\n\napi: remove outdated system",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.0.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -136,7 +140,7 @@
       "summary_en": "Features\n\napi: add org webhook endpoints and user profile enforcement events\napi: add RBAC Group owner-access error codes to the Admin API\napi: document the unsupported_charset error code for plugin uploads\n\nBug Fixes\n\nbedrock: keep a workspace ID set in default_headers",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.17.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -166,7 +170,7 @@
       "summary_en": "⚠ BREAKING CHANGES\n\napi: add support for new API version 2026-10-21\n\nFeatures\n\napi: add support for new API version 2026-10-21\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v1.0.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -176,7 +180,7 @@
       "summary_en": "Features\n\napi: add enforcement status, actions and filter to user profiles\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.1.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -186,7 +190,7 @@
       "summary_en": "⚠ BREAKING CHANGES\n\napi: add support for new API version 2026-10-21\n\nFeatures\n\napi: add a workspace_id filter and the usage_tier scope type to list spend limits\napi: add support for new API version 2026-10-21\n\nChores\n\nci: check the changelog of each pa",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.0.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -196,7 +200,7 @@
       "summary_en": "⚠ BREAKING CHANGES\n\napi: add support for new API version 2026-10-21\n\nFeatures\n\napi: add support for new API version 2026-10-21\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.0.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -206,7 +210,7 @@
       "summary_en": "⚠ BREAKING CHANGES\n\napi: add support for new API version 2026-10-21\n\nFeatures\n\napi: add support for new API version 2026-10-21\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v1.0.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/sdk",
@@ -216,14 +220,14 @@
       "summary_en": "Publie le 2026-10-21",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.306",
-      "title_en": "v2.1.306",
-      "summary": "Publie le 2026-10-21",
-      "summary_en": "Publie le 2026-10-21",
+      "title": "v2.1.308",
+      "title_en": "v2.1.308",
+      "summary": "Publie le 2026-10-22",
+      "summary_en": "Publie le 2026-10-22",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -236,7 +240,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -260,13 +264,23 @@
     },
     {
       "source": "Blog",
+      "title": "Donating Agent Skills to the Agentic AI Foundation",
+      "title_en": "Donating Agent Skills to the Agentic AI Foundation",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
       "title_en": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -316,7 +330,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -329,16 +343,6 @@
       "is_new": false
     },
     {
-      "source": "Blog",
-      "title": "Building on our commitment to American scientific discovery",
-      "title_en": "Building on our commitment to American scientific discovery",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/genesis-mission-commitment",
-      "is_new": false
-    },
-    {
       "source": "Recherche",
       "title": "Frontier Red Team",
       "title_en": "Frontier Red Team",
@@ -346,7 +350,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/frontier-red-team",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -386,7 +390,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/project-swap",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Statut",
@@ -396,6 +400,16 @@
       "summary_en": "Un probleme est actuellement detecte sur les services Claude.",
       "changelog_items": [],
       "url": "https://status.claude.com",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "single-agent-loop-kit",
+      "title_en": "single-agent-loop-kit",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/single-agent-loop-kit",
       "is_new": true
     },
     {
@@ -437,22 +451,12 @@
       "changelog_items": [],
       "url": "https://github.com/anthropics/serde-saphyr",
       "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "uplifting-biomolecular-modeling",
-      "title_en": "uplifting-biomolecular-modeling",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/uplifting-biomolecular-modeling",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.306",
-    "Claude Code npm": "v2.1.306",
+    "Claude Code": "v2.1.308",
+    "Claude Code npm": "v2.1.308",
     "SDK Python": "v2.1.0",
     "SDK Python PyPI": "v2.1.0",
     "SDK TypeScript": "foundry-sdk-v1.0.0",
@@ -460,7 +464,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.302",
+    "GitHub Claude Code": "v2.1.304",
     "GitHub SDK Python": "v1.15.0"
   }
 }
