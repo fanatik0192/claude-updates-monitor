@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-10-23T21:48:42.388791",
+  "last_check": "2026-10-24T21:23:37.182672",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.310",
+      "title_en": "v2.1.310",
+      "summary": "Ce qui a change Ajout de the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is desactiverd; long foreground sleeps are now blocked there too Correction de requests failing behind some gateways and compatible servers that reject the effort-2025-11-24 beta value or mid-conversation system messages; Claude Code now",
+      "summary_en": "What's changed\n\nAdded the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground sleeps are now blocked there too\nFixed requests failing behind some gateways and compatible servers that reject the effort-2025-11-24 beta value or mid-conversation system messages; Claude Code now",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground sleeps are now blocked there too"
+        },
+        {
+          "type": "fixed",
+          "text": "requests failing behind some gateways and compatible servers that reject the effort-2025-11-24 beta value or mid-conversation system messages; Claude Code now"
+        },
+        {
+          "type": "changed",
+          "text": "Added the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground sleeps are now blocked there too"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.310",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.309",
@@ -26,7 +49,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.309",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -41,7 +64,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.308",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Claude Code",
@@ -94,27 +117,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.305",
-      "title_en": "v2.1.305",
-      "summary": "Ce qui a change Ajout de sandbox.allowNestedUtilisateurNomspaces so sandboxed commandes on Linux can create utilisateur nomspaces (Chromium, rootless podman); this lets them get around the sandbox's fichier protections Ajout de CLAUDE_CODE_RETRY_WATCHDOG_USAGE_LIMIT_RECHECK_MS so unattended reessayer mode (CLAUDE_CODE_RETRY_WATCHDOG) notices a usage limit tha",
-      "summary_en": "What's changed\n\nAdded sandbox.allowNestedUserNamespaces so sandboxed commands on Linux can create user namespaces (Chromium, rootless podman); this lets them get around the sandbox's file protections\nAdded CLAUDE_CODE_RETRY_WATCHDOG_USAGE_LIMIT_RECHECK_MS so unattended retry mode (CLAUDE_CODE_RETRY_WATCHDOG) notices a usage limit tha",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "sandbox.allowNestedUserNamespaces so sandboxed commands on Linux can create user namespaces (Chromium, rootless podman); this lets them get around the sandbox's file protections"
-        },
-        {
-          "type": "added",
-          "text": "CLAUDE_CODE_RETRY_WATCHDOG_USAGE_LIMIT_RECHECK_MS so unattended retry mode (CLAUDE_CODE_RETRY_WATCHDOG) notices a usage limit tha"
-        },
-        {
-          "type": "changed",
-          "text": "Added sandbox.allowNestedUserNamespaces so sandboxed commands on Linux can create user namespaces (Chromium, rootless podman); this lets them get around the sandbox's file protections"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.305",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v2.3.0",
+      "title_en": "v2.3.0",
+      "summary": "Fonctionnalites api: add Claude Tag endpoints for Claude Enterprise organizations Corrections de bugs google-cloud: send utilisateur profichiers requests to the organization endpoint Maintenance client: stop sending query params hardcoded in endpoint paths docs: improve the desc",
+      "summary_en": "Features\n\napi: add Claude Tag endpoints for Claude Enterprise organizations\n\nBug Fixes\n\ngoogle-cloud: send user profiles requests to the organization endpoint\n\nChores\n\nclient: stop sending query params hardcoded in endpoint paths\ndocs: improve the desc",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.3.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -124,7 +134,7 @@
       "summary_en": "Features\n\napi: add support for message threads\napi: add usage and cost reports by dimension, mark older reports legacy\n\nBug Fixes\n\nclient: stop suggesting math.inf in the max_retries error message\ntools: leave the tool runner's history to the caller after append_m",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.2.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -157,16 +167,6 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v1.16.0",
-      "title_en": "v1.16.0",
-      "summary": "Fonctionnalites api: add data_actualisered_at and has_more to analytics report pages api: add workspace rate-limit updates to the Admin API api: make Utilisateur Profichiers generally available client: yield server-sent events with unrecognized event noms google-cloud: use the v1",
-      "summary_en": "Features\n\napi: add data_refreshed_at and has_more to analytics report pages\napi: add workspace rate-limit updates to the Admin API\napi: make User Profiles generally available\nclient: yield server-sent events with unrecognized event names\ngoogle-cloud: use the v1",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.16.0",
-      "is_new": false
-    },
-    {
       "source": "SDK TypeScript",
       "title": "vertex-sdk-v1.1.0",
       "title_en": "vertex-sdk-v1.1.0",
@@ -174,6 +174,16 @@
       "summary_en": "Features\n\napi: add support for message threads\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v1.1.0",
+      "is_new": false
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "sdk-v1.3.0",
+      "title_en": "sdk-v1.3.0",
+      "summary": "Fonctionnalites api: add Claude Tag endpoints for Claude Enterprise organizations Corrections de bugs client: link the long-request erreur messages to the SDK documentation Maintenance client: stop sending query params hardcoded in endpoint paths docs: improve the descr",
+      "summary_en": "Features\n\napi: add Claude Tag endpoints for Claude Enterprise organizations\n\nBug Fixes\n\nclient: link the long-request error messages to the SDK documentation\n\nChores\n\nclient: stop sending query params hardcoded in endpoint paths\ndocs: improve the descr",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.3.0",
       "is_new": true
     },
     {
@@ -184,6 +194,16 @@
       "summary_en": "Features\n\napi: add support for message threads\napi: add usage and cost reports by dimension, mark older reports legacy\n\nBug Fixes\n\ntools: copy the messages a tool runner is created with again\ntools: restore what the tool runner does after setMessagesParams() or pushMess",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.2.0",
+      "is_new": false
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "google-cloud-sdk-v1.1.1",
+      "title_en": "google-cloud-sdk-v1.1.1",
+      "summary": "Corrections de bugs google-cloud: send utilisateur profichier routes to the organization endpoint Maintenance internal: stop expecting the beta query param in tests Documentation google-cloud: update the product nom in the package description google-cloud: update the pro",
+      "summary_en": "Bug Fixes\n\ngoogle-cloud: send user profile routes to the organization endpoint\n\nChores\n\ninternal: stop expecting the beta query param in tests\n\nDocumentation\n\ngoogle-cloud: update the product name in the package description\ngoogle-cloud: update the pro",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.1.1",
       "is_new": true
     },
     {
@@ -194,32 +214,12 @@
       "summary_en": "Features\n\napi: add support for message threads\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.1.0",
-      "is_new": true
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "foundry-sdk-v1.1.0",
-      "title_en": "foundry-sdk-v1.1.0",
-      "summary": "Fonctionnalites api: add prise en charge de message threads",
-      "summary_en": "Features\n\napi: add support for message threads\n",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v1.1.0",
-      "is_new": true
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "bedrock-sdk-v1.1.0",
-      "title_en": "bedrock-sdk-v1.1.0",
-      "summary": "Fonctionnalites api: add prise en charge de message threads",
-      "summary_en": "Features\n\napi: add support for message threads\n",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v1.1.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v1.2.0",
-      "title_en": "v1.2.0",
+      "title": "v1.3.0",
+      "title_en": "v1.3.0",
       "summary": "Publie le 2026-10-23",
       "summary_en": "Publie le 2026-10-23",
       "changelog_items": [],
@@ -228,18 +228,18 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.309",
-      "title_en": "v2.1.309",
-      "summary": "Publie le 2026-10-22",
-      "summary_en": "Publie le 2026-10-22",
+      "title": "v2.1.310",
+      "title_en": "v2.1.310",
+      "summary": "Publie le 2026-10-23",
+      "summary_en": "Publie le 2026-10-23",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v2.2.0",
-      "title_en": "v2.2.0",
+      "title": "v2.3.0",
+      "title_en": "v2.3.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
@@ -284,7 +284,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -384,7 +384,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -434,7 +434,7 @@
       "summary_en": "Mirror of Snix (git.snix.dev/snix/snix)",
       "changelog_items": [],
       "url": "https://github.com/anthropics/snix",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -459,16 +459,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.309",
-    "Claude Code npm": "v2.1.309",
-    "SDK Python": "v2.2.0",
-    "SDK Python PyPI": "v2.2.0",
-    "SDK TypeScript": "bedrock-sdk-v1.1.0",
+    "Claude Code": "v2.1.310",
+    "Claude Code npm": "v2.1.310",
+    "SDK Python": "v2.3.0",
+    "SDK Python PyPI": "v2.3.0",
+    "SDK TypeScript": "google-cloud-sdk-v1.",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.305",
-    "GitHub SDK Python": "v1.16.0"
+    "GitHub Claude Code": "v2.1.306",
+    "GitHub SDK Python": "v1.17.0"
   }
 }
