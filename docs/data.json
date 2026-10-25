@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-10-24T21:23:37.182672",
+  "last_check": "2026-10-25T21:22:26.148111",
   "updates": [
     {
       "source": "Claude Code",
@@ -22,7 +22,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.310",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -64,7 +64,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.308",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -124,7 +124,7 @@
       "summary_en": "Features\n\napi: add Claude Tag endpoints for Claude Enterprise organizations\n\nBug Fixes\n\ngoogle-cloud: send user profiles requests to the organization endpoint\n\nChores\n\nclient: stop sending query params hardcoded in endpoint paths\ndocs: improve the desc",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.3.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -184,7 +184,7 @@
       "summary_en": "Features\n\napi: add Claude Tag endpoints for Claude Enterprise organizations\n\nBug Fixes\n\nclient: link the long-request error messages to the SDK documentation\n\nChores\n\nclient: stop sending query params hardcoded in endpoint paths\ndocs: improve the descr",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.3.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -204,7 +204,7 @@
       "summary_en": "Bug Fixes\n\ngoogle-cloud: send user profile routes to the organization endpoint\n\nChores\n\ninternal: stop expecting the beta query param in tests\n\nDocumentation\n\ngoogle-cloud: update the product name in the package description\ngoogle-cloud: update the pro",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.1.1",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -224,7 +224,7 @@
       "summary_en": "Publie le 2026-10-23",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
@@ -234,7 +234,7 @@
       "summary_en": "Publie le 2026-10-23",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -244,7 +244,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
