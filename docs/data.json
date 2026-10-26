@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-10-25T21:22:26.148111",
+  "last_check": "2026-10-26T22:59:46.689002",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.311",
+      "title_en": "v2.1.311",
+      "summary": "Ce qui a change Ajout de --hold-idle-fichier and --max-hold-min to self-hosted-runner, to keep an idle session while your host reports processes it left running Ajout de a tip for the Explanatory sortie style, affichern when you ask Claude for explanations Correction de long freezes at startup and after reading or editing fichiers when a CLAUDE.md",
+      "summary_en": "What's changed\n\nAdded --hold-idle-file and --max-hold-min to self-hosted-runner, to keep an idle session while your host reports processes it left running\nAdded a tip for the Explanatory output style, shown when you ask Claude for explanations\nFixed long freezes at startup and after reading or editing files when a CLAUDE.md ",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "--hold-idle-file and --max-hold-min to self-hosted-runner, to keep an idle session while your host reports processes it left running"
+        },
+        {
+          "type": "added",
+          "text": "a tip for the Explanatory output style, shown when you ask Claude for explanations"
+        },
+        {
+          "type": "fixed",
+          "text": "long freezes at startup and after reading or editing files when a CLAUDE.md"
+        },
+        {
+          "type": "changed",
+          "text": "Added --hold-idle-file and --max-hold-min to self-hosted-runner, to keep an idle session while your host reports processes it left running"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.311",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.310",
@@ -91,29 +118,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.307",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.306",
-      "title_en": "v2.1.306",
-      "summary": "Ce qui a change Correction de claude -p inside cloud sessions reporting \"Not logged in\" when started without the session's variable d'environnements Correction de an API erreur being replaced by \"prompt is too long\", and an unneeded compaction, in sessions with many MCP tools",
-      "summary_en": "What's changed\n\nFixed claude -p inside cloud sessions reporting \"Not logged in\" when started without the session's environment variables\nFixed an API error being replaced by \"prompt is too long\", and an unneeded compaction, in sessions with many MCP tools\n",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "claude -p inside cloud sessions reporting \"Not logged in\" when started without the session's environment variables"
-        },
-        {
-          "type": "fixed",
-          "text": "an API error being replaced by \"prompt is too long\", and an unneeded compaction, in sessions with many MCP tools"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed claude -p inside cloud sessions reporting \"Not logged in\" when started without the session's environment variables"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.306",
       "is_new": false
     },
     {
@@ -228,13 +232,13 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.310",
-      "title_en": "v2.1.310",
-      "summary": "Publie le 2026-10-23",
-      "summary_en": "Publie le 2026-10-23",
+      "title": "v2.1.311",
+      "title_en": "v2.1.311",
+      "summary": "Publie le 2026-10-26",
+      "summary_en": "Publie le 2026-10-26",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
@@ -265,6 +269,16 @@
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/cyber-verification-program",
       "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Anthropic fichiers S-1 with the SEC for proposed initial public offering",
+      "title_en": "Anthropic files S-1 with the SEC for proposed initial public offering",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/s1-sec",
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -334,16 +348,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/distillation-defenses",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Introducing the Anthropic Cyber Mission",
-      "title_en": "Introducing the Anthropic Cyber Mission",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
       "is_new": false
     },
     {
@@ -459,8 +463,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.310",
-    "Claude Code npm": "v2.1.310",
+    "Claude Code": "v2.1.311",
+    "Claude Code npm": "v2.1.311",
     "SDK Python": "v2.3.0",
     "SDK Python PyPI": "v2.3.0",
     "SDK TypeScript": "google-cloud-sdk-v1.",
@@ -468,7 +472,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.306",
+    "GitHub Claude Code": "v2.1.307",
     "GitHub SDK Python": "v1.17.0"
   }
 }
