@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-10-26T22:59:46.689002",
+  "last_check": "2026-10-27T22:49:26.264382",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.312",
+      "title_en": "v2.1.312",
+      "summary": "Ce qui a change Ajout de oidc.utilisateur_id_claim to the Claude apps gateway, to identify people by an id_jeton claim other than sub, such as Microsoft Entra ID's oid Ajout de clic to send: in fullscreen, clicing the \"to send now\" hint under a queued message sends it right away, as its key does Correction de managed parametres and organization",
+      "summary_en": "What's changed\n\nAdded oidc.user_id_claim to the Claude apps gateway, to identify people by an id_token claim other than sub, such as Microsoft Entra ID's oid\nAdded click to send: in fullscreen, clicking the \"to send now\" hint under a queued message sends it right away, as its key does\nFixed managed settings and organization ",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "oidc.user_id_claim to the Claude apps gateway, to identify people by an id_token claim other than sub, such as Microsoft Entra ID's oid"
+        },
+        {
+          "type": "added",
+          "text": "click to send: in fullscreen, clicking the \"to send now\" hint under a queued message sends it right away, as its key does"
+        },
+        {
+          "type": "fixed",
+          "text": "managed settings and organization"
+        },
+        {
+          "type": "changed",
+          "text": "Added oidc.user_id_claim to the Claude apps gateway, to identify people by an id_token claim other than sub, such as Microsoft Entra ID's oid"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.312",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.311",
@@ -26,7 +53,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.311",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -91,33 +118,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.308",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.307",
-      "title_en": "v2.1.307",
-      "summary": "Ce qui a change Ajout de /claude-api api-version to move Claude API code to API version 2026-10-21 Ajout de the claude_code.safety_event OuvrirTelemetry event for each tool call a permission regle, auto mode, a safety check, a hook or the sandbox stopped, prompted or sent back Correction de requests failing with a model-not-found erreur when",
-      "summary_en": "What's changed\n\nAdded /claude-api api-version to move Claude API code to API version 2026-10-21\nAdded the claude_code.safety_event OpenTelemetry event for each tool call a permission rule, auto mode, a safety check, a hook or the sandbox stopped, prompted or sent back\nFixed requests failing with a model-not-found error when ",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "/claude-api api-version to move Claude API code to API version 2026-10-21"
-        },
-        {
-          "type": "added",
-          "text": "the claude_code.safety_event OpenTelemetry event for each tool call a permission rule, auto mode, a safety check, a hook or the sandbox stopped, prompted or sent back"
-        },
-        {
-          "type": "fixed",
-          "text": "requests failing with a model-not-found error when"
-        },
-        {
-          "type": "changed",
-          "text": "Added /claude-api api-version to move Claude API code to API version 2026-10-21"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.307",
       "is_new": false
     },
     {
@@ -232,10 +232,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.311",
-      "title_en": "v2.1.311",
-      "summary": "Publie le 2026-10-26",
-      "summary_en": "Publie le 2026-10-26",
+      "title": "v2.1.312",
+      "title_en": "v2.1.312",
+      "summary": "Publie le 2026-10-27",
+      "summary_en": "Publie le 2026-10-27",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -262,22 +262,22 @@
     },
     {
       "source": "Blog",
-      "title": "Expanding the Cyber Verification ProgramWe’re launching a new, expanded version of our Cyber Verific",
-      "title_en": "Expanding the Cyber Verification ProgramWe’re launching a new, expanded version of our Cyber Verific",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/cyber-verification-program",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Anthropic fichiers S-1 with the SEC for proposed initial public offering",
-      "title_en": "Anthropic files S-1 with the SEC for proposed initial public offering",
+      "title": "Anthropic fichiers S-1 with the SEC for proposed initial public offeringToday, Anthropic, PBC fichierd a r",
+      "title_en": "Anthropic files S-1 with the SEC for proposed initial public offeringToday, Anthropic, PBC filed a r",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/s1-sec",
+      "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+      "title_en": "Expanding our partnership with GSA to bring Claude to all levels of government",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
       "is_new": true
     },
     {
@@ -463,8 +463,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.311",
-    "Claude Code npm": "v2.1.311",
+    "Claude Code": "v2.1.312",
+    "Claude Code npm": "v2.1.312",
     "SDK Python": "v2.3.0",
     "SDK Python PyPI": "v2.3.0",
     "SDK TypeScript": "google-cloud-sdk-v1.",
@@ -472,7 +472,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.307",
+    "GitHub Claude Code": "v2.1.308",
     "GitHub SDK Python": "v1.17.0"
   }
 }
