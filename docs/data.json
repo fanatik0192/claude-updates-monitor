@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-10-28T22:56:04.459307",
+  "last_check": "2026-10-29T23:04:06.216203",
   "updates": [
     {
       "source": "Claude Code",
@@ -248,7 +248,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -278,7 +278,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -338,7 +338,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/2026-us-midterms",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -378,7 +378,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/societal-impacts",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
