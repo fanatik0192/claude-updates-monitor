@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-10-29T23:04:06.216203",
+  "last_check": "2026-10-30T22:44:59.257607",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.314",
+      "title_en": "v2.1.314",
+      "summary": "Ce qui a change Ajout de permissions.blockWritesOutsideWorkingDirectories: Write, Edit and NotebookEdit refuse paths outside the working directories in every permission mode Ajout de an optional groups list to Claude apps gateway upstreams: only developers in the listed IdP groups are sent to that upstream, on failover too Ajout de guardrai",
+      "summary_en": "What's changed\n\nAdded permissions.blockWritesOutsideWorkingDirectories: Write, Edit and NotebookEdit refuse paths outside the working directories in every permission mode\nAdded an optional groups list to Claude apps gateway upstreams: only developers in the listed IdP groups are sent to that upstream, on failover too\nAdded guardrai",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "permissions.blockWritesOutsideWorkingDirectories: Write, Edit and NotebookEdit refuse paths outside the working directories in every permission mode"
+        },
+        {
+          "type": "added",
+          "text": "an optional groups list to Claude apps gateway upstreams: only developers in the listed IdP groups are sent to that upstream, on failover too"
+        },
+        {
+          "type": "added",
+          "text": "guardrai"
+        },
+        {
+          "type": "changed",
+          "text": "Added permissions.blockWritesOutsideWorkingDirectories: Write, Edit and NotebookEdit refuse paths outside the working directories in every permission mode"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.312",
@@ -103,21 +130,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.309",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.308",
-      "title_en": "v2.1.308",
-      "summary": "Ce qui a change Bug fixes and reliability improvements",
-      "summary_en": "What's changed\n\nBug fixes and reliability improvements\n",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Bug fixes and reliability improvements"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.308",
       "is_new": false
     },
     {
@@ -232,13 +244,13 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.312",
-      "title_en": "v2.1.312",
-      "summary": "Publie le 2026-10-27",
-      "summary_en": "Publie le 2026-10-27",
+      "title": "v2.1.314",
+      "title_en": "v2.1.314",
+      "summary": "Publie le 2026-10-30",
+      "summary_en": "Publie le 2026-10-30",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
@@ -338,7 +350,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/2026-us-midterms",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -378,7 +390,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/societal-impacts",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -463,8 +475,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.312",
-    "Claude Code npm": "v2.1.312",
+    "Claude Code": "v2.1.314",
+    "Claude Code npm": "v2.1.314",
     "SDK Python": "v2.3.0",
     "SDK Python PyPI": "v2.3.0",
     "SDK TypeScript": "google-cloud-sdk-v1.",
@@ -472,7 +484,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.308",
+    "GitHub Claude Code": "v2.1.309",
     "GitHub SDK Python": "v1.17.0"
   }
 }
