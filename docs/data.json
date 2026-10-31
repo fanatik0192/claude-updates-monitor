@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-10-30T22:44:59.257607",
+  "last_check": "2026-10-31T22:08:45.172032",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.316",
+      "title_en": "v2.1.316",
+      "summary": "Ce qui a change Ajout de CLAUDE_CODE_DISABLE_ULTRATHINK, which turns the ultrathink keyword off Ajout de pooled group budgets to the Claude apps gateway: one monthly budget that a group's members share, on top of each member's own limit, set with pooled_budget on the spend limits admin API Ajout de CLAUDE_CODE_DISABLE_LOOPED_CR",
+      "summary_en": "What's changed\n\nAdded CLAUDE_CODE_DISABLE_ULTRATHINK, which turns the ultrathink keyword off\nAdded pooled group budgets to the Claude apps gateway: one monthly budget that a group's members share, on top of each member's own limit, set with pooled_budget on the spend limits admin API\nAdded CLAUDE_CODE_DISABLE_LOOPED_CR",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "CLAUDE_CODE_DISABLE_ULTRATHINK, which turns the ultrathink keyword off"
+        },
+        {
+          "type": "added",
+          "text": "pooled group budgets to the Claude apps gateway: one monthly budget that a group's members share, on top of each member's own limit, set with pooled_budget on the spend limits admin API"
+        },
+        {
+          "type": "added",
+          "text": "CLAUDE_CODE_DISABLE_LOOPED_CR"
+        },
+        {
+          "type": "changed",
+          "text": "Added CLAUDE_CODE_DISABLE_ULTRATHINK, which turns the ultrathink keyword off"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.316",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.314",
@@ -26,7 +53,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -103,33 +130,6 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.310",
-      "is_new": false
-    },
-    {
-      "source": "Claude Code",
-      "title": "v2.1.309",
-      "title_en": "v2.1.309",
-      "summary": "Ce qui a change Correction de sandboxed Bash commandes on macOS and Linux running the shell's startup fichiers outside the sandbox before each commande Correction de macOS sandbox denyWrite glob patterns not applying at a path's real location when the pattern's folder is reached through a symlink Correction de sandboxed commandes and auto-accepted edits being able to modify the M",
-      "summary_en": "What's changed\n\nFixed sandboxed Bash commands on macOS and Linux running the shell's startup files outside the sandbox before each command\nFixed macOS sandbox denyWrite glob patterns not applying at a path's real location when the pattern's folder is reached through a symlink\nFixed sandboxed commands and auto-accepted edits being able to modify the M",
-      "changelog_items": [
-        {
-          "type": "fixed",
-          "text": "sandboxed Bash commands on macOS and Linux running the shell's startup files outside the sandbox before each command"
-        },
-        {
-          "type": "fixed",
-          "text": "macOS sandbox denyWrite glob patterns not applying at a path's real location when the pattern's folder is reached through a symlink"
-        },
-        {
-          "type": "fixed",
-          "text": "sandboxed commands and auto-accepted edits being able to modify the M"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed sandboxed Bash commands on macOS and Linux running the shell's startup files outside the sandbox before each command"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.309",
       "is_new": false
     },
     {
@@ -244,10 +244,10 @@
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.314",
-      "title_en": "v2.1.314",
-      "summary": "Publie le 2026-10-30",
-      "summary_en": "Publie le 2026-10-30",
+      "title": "v2.1.316",
+      "title_en": "v2.1.316",
+      "summary": "Publie le 2026-10-31",
+      "summary_en": "Publie le 2026-10-31",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
@@ -475,8 +475,8 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.314",
-    "Claude Code npm": "v2.1.314",
+    "Claude Code": "v2.1.316",
+    "Claude Code npm": "v2.1.316",
     "SDK Python": "v2.3.0",
     "SDK Python PyPI": "v2.3.0",
     "SDK TypeScript": "google-cloud-sdk-v1.",
@@ -484,7 +484,7 @@
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.309",
+    "GitHub Claude Code": "v2.1.310",
     "GitHub SDK Python": "v1.17.0"
   }
 }
