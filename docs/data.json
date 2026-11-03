@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-11-01T22:33:50.681705",
+  "last_check": "2026-11-03T01:26:17.724503",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.317",
+      "title_en": "v2.1.317",
+      "summary": "Ce qui a change Ajout de a avertissement to /schedule when a new cloud scheduled task gets connectors you did not ask for, with how to remove them Ajout de a check that asks before a web or shell tool call sends your account email address to the network Ajout de onFailure: \"block\" for Agent SDK hook callbacks, so a callback that fails blocks the action",
+      "summary_en": "What's changed\n\nAdded a warning to /schedule when a new cloud scheduled task gets connectors you did not ask for, with how to remove them\nAdded a check that asks before a web or shell tool call sends your account email address to the network\nAdded onFailure: \"block\" for Agent SDK hook callbacks, so a callback that fails blocks the action",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "a warning to /schedule when a new cloud scheduled task gets connectors you did not ask for, with how to remove them"
+        },
+        {
+          "type": "added",
+          "text": "a check that asks before a web or shell tool call sends your account email address to the network"
+        },
+        {
+          "type": "added",
+          "text": "onFailure: \"block\" for Agent SDK hook callbacks, so a callback that fails blocks the action"
+        },
+        {
+          "type": "changed",
+          "text": "Added a warning to /schedule when a new cloud scheduled task gets connectors you did not ask for, with how to remove them"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.317",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.316",
@@ -110,27 +137,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.310",
-      "title_en": "v2.1.310",
-      "summary": "Ce qui a change Ajout de the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is desactiverd; long foreground sleeps are now blocked there too Correction de requests failing behind some gateways and compatible servers that reject the effort-2025-11-24 beta value or mid-conversation system messages; Claude Code now",
-      "summary_en": "What's changed\n\nAdded the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground sleeps are now blocked there too\nFixed requests failing behind some gateways and compatible servers that reject the effort-2025-11-24 beta value or mid-conversation system messages; Claude Code now",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground sleeps are now blocked there too"
-        },
-        {
-          "type": "fixed",
-          "text": "requests failing behind some gateways and compatible servers that reject the effort-2025-11-24 beta value or mid-conversation system messages; Claude Code now"
-        },
-        {
-          "type": "changed",
-          "text": "Added the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground sleeps are now blocked there too"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.310",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v2.4.0",
+      "title_en": "v2.4.0",
+      "summary": "Fonctionnalites api: add GA methods for analytics, spend limits and RBAC api: add nomd beta tapers for unified metrics and RBAC delete responses api: add shared analytics order and increase request actor tapers api: add tool_use_limit_reached_erreur and compaction_limit_reached_erreur session err",
+      "summary_en": "Features\n\napi: add GA methods for analytics, spend limits and RBAC\napi: add named beta types for unified metrics and RBAC delete responses\napi: add shared analytics order and increase request actor types\napi: add tool_use_limit_reached_error and compaction_limit_reached_error session err",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.4.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -173,94 +187,84 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v1.17.0",
-      "title_en": "v1.17.0",
-      "summary": "Fonctionnalites api: add org webhook endpoints and utilisateur profichier enforcement events api: add RBAC Group owner-access erreur codes to the Admin API api: document the unprise en chargeed_charset erreur code for plugin uploads Corrections de bugs bedrock: keep a workspace ID set in par defaut_headers",
-      "summary_en": "Features\n\napi: add org webhook endpoints and user profile enforcement events\napi: add RBAC Group owner-access error codes to the Admin API\napi: document the unsupported_charset error code for plugin uploads\n\nBug Fixes\n\nbedrock: keep a workspace ID set in default_headers",
+      "source": "SDK TypeScript",
+      "title": "vertex-sdk-v1.1.1",
+      "title_en": "vertex-sdk-v1.1.1",
+      "summary": "Maintenance internal: taper-check the published declarations of every subpackage",
+      "summary_en": "Chores\n\ninternal: type-check the published declarations of every subpackage\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.17.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v1.1.1",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "vertex-sdk-v1.1.0",
-      "title_en": "vertex-sdk-v1.1.0",
-      "summary": "Fonctionnalites api: add prise en charge de message threads",
-      "summary_en": "Features\n\napi: add support for message threads\n",
+      "title": "sdk-v1.4.0",
+      "title_en": "sdk-v1.4.0",
+      "summary": "Fonctionnalites api: add GA methods for analytics, spend limits and RBAC api: add nomd beta tapers for unified metrics and RBAC delete responses api: add shared analytics order and increase request actor tapers api: add tool_use_limit_reached_erreur and compaction_limit_reached_erreur session err",
+      "summary_en": "Features\n\napi: add GA methods for analytics, spend limits and RBAC\napi: add named beta types for unified metrics and RBAC delete responses\napi: add shared analytics order and increase request actor types\napi: add tool_use_limit_reached_error and compaction_limit_reached_error session err",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v1.1.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.4.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk-v1.3.0",
-      "title_en": "sdk-v1.3.0",
-      "summary": "Fonctionnalites api: add Claude Tag endpoints for Claude Enterprise organizations Corrections de bugs client: link the long-request erreur messages to the SDK documentation Maintenance client: stop sending query params hardcoded in endpoint paths docs: improve the descr",
-      "summary_en": "Features\n\napi: add Claude Tag endpoints for Claude Enterprise organizations\n\nBug Fixes\n\nclient: link the long-request error messages to the SDK documentation\n\nChores\n\nclient: stop sending query params hardcoded in endpoint paths\ndocs: improve the descr",
+      "title": "google-cloud-sdk-v1.1.2",
+      "title_en": "google-cloud-sdk-v1.1.2",
+      "summary": "Maintenance internal: taper-check the published declarations of every subpackage Documentation examples: use current model IDs",
+      "summary_en": "Chores\n\ninternal: type-check the published declarations of every subpackage\n\nDocumentation\n\nexamples: use current model IDs\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.3.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.1.2",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "sdk-v1.2.0",
-      "title_en": "sdk-v1.2.0",
-      "summary": "Fonctionnalites api: add prise en charge de message threads api: add usage and cost reports by dimension, mark older reports legacy Corrections de bugs tools: copy the messages a tool runner is created with again tools: restore what the tool runner does after setMessagesParams() or pushMess",
-      "summary_en": "Features\n\napi: add support for message threads\napi: add usage and cost reports by dimension, mark older reports legacy\n\nBug Fixes\n\ntools: copy the messages a tool runner is created with again\ntools: restore what the tool runner does after setMessagesParams() or pushMess",
+      "title": "foundry-sdk-v1.1.1",
+      "title_en": "foundry-sdk-v1.1.1",
+      "summary": "Corrections de bugs foundry: make client.d.ts taper-check with skipLibCheck off Maintenance internal: taper-check the published declarations of every subpackage",
+      "summary_en": "Bug Fixes\n\nfoundry: make client.d.ts type-check with skipLibCheck off\n\nChores\n\ninternal: type-check the published declarations of every subpackage\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.2.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v1.1.1",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
-      "title": "google-cloud-sdk-v1.1.1",
-      "title_en": "google-cloud-sdk-v1.1.1",
-      "summary": "Corrections de bugs google-cloud: send utilisateur profichier routes to the organization endpoint Maintenance internal: stop expecting the beta query param in tests Documentation google-cloud: update the product nom in the package description google-cloud: update the pro",
-      "summary_en": "Bug Fixes\n\ngoogle-cloud: send user profile routes to the organization endpoint\n\nChores\n\ninternal: stop expecting the beta query param in tests\n\nDocumentation\n\ngoogle-cloud: update the product name in the package description\ngoogle-cloud: update the pro",
+      "title": "bedrock-sdk-v1.1.1",
+      "title_en": "bedrock-sdk-v1.1.1",
+      "summary": "Maintenance internal: taper-check the published declarations of every subpackage",
+      "summary_en": "Chores\n\ninternal: type-check the published declarations of every subpackage\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.1.1",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "google-cloud-sdk-v1.1.0",
-      "title_en": "google-cloud-sdk-v1.1.0",
-      "summary": "Fonctionnalites api: add prise en charge de message threads",
-      "summary_en": "Features\n\napi: add support for message threads\n",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.1.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v1.1.1",
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v1.3.0",
-      "title_en": "v1.3.0",
-      "summary": "Publie le 2026-10-23",
-      "summary_en": "Publie le 2026-10-23",
+      "title": "v1.4.0",
+      "title_en": "v1.4.0",
+      "summary": "Publie le 2026-11-02",
+      "summary_en": "Publie le 2026-11-02",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.316",
-      "title_en": "v2.1.316",
-      "summary": "Publie le 2026-10-31",
-      "summary_en": "Publie le 2026-10-31",
+      "title": "v2.1.317",
+      "title_en": "v2.1.317",
+      "summary": "Publie le 2026-11-02",
+      "summary_en": "Publie le 2026-11-02",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v2.3.0",
-      "title_en": "v2.3.0",
+      "title": "v2.4.0",
+      "title_en": "v2.4.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -394,13 +398,13 @@
     },
     {
       "source": "Recherche",
-      "title": "How Claude designed protein binders against scorpion neurotoxins",
-      "title_en": "How Claude designed protein binders against scorpion neurotoxins",
+      "title": "How AI agents shape experts’ judgment calls",
+      "title_en": "How AI agents shape experts’ judgment calls",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
-      "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
-      "is_new": false
+      "url": "https://www.anthropic.com/research/agents-judgment-calls",
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -470,21 +474,21 @@
       "summary_en": "A strongly typed, comment-supporting YAML deserializer that deserializes YAML directly into your Rust types without constructing an intermediate tree of “abstract values.” ",
       "changelog_items": [],
       "url": "https://github.com/anthropics/serde-saphyr",
-      "is_new": true
+      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.316",
-    "Claude Code npm": "v2.1.316",
-    "SDK Python": "v2.3.0",
-    "SDK Python PyPI": "v2.3.0",
-    "SDK TypeScript": "google-cloud-sdk-v1.",
+    "Claude Code": "v2.1.317",
+    "Claude Code npm": "v2.1.317",
+    "SDK Python": "v2.4.0",
+    "SDK Python PyPI": "v2.4.0",
+    "SDK TypeScript": "bedrock-sdk-v1.1.1",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.310",
-    "GitHub SDK Python": "v1.17.0"
+    "GitHub Claude Code": "v2.1.311",
+    "GitHub SDK Python": "v2.0.0"
   }
 }
