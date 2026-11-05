@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-11-03T23:50:46.487992",
+  "last_check": "2026-11-05T00:04:44.734559",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.318",
+      "title_en": "v2.1.318",
+      "summary": "Ce qui a change Ajout de a record of your answer when Claude Code asks to turn on the mods it writes in a session Ajout de assume_role on mantle upstreams of the Claude apps gateway, for a role in another AWS account and for per-developer AWS cost attribution Ajout de an effort option to a mod's $.model.dupliquer, so a quick",
+      "summary_en": "What's changed\n\nAdded a record of your answer when Claude Code asks to turn on the mods it writes in a session\nAdded assume_role on mantle upstreams of the Claude apps gateway, for a role in another AWS account and for per-developer AWS cost attribution\nAdded an effort option to a mod's $.model.fork, so a quick ",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "a record of your answer when Claude Code asks to turn on the mods it writes in a session"
+        },
+        {
+          "type": "added",
+          "text": "assume_role on mantle upstreams of the Claude apps gateway, for a role in another AWS account and for per-developer AWS cost attribution"
+        },
+        {
+          "type": "added",
+          "text": "an effort option to a mod's $.model.fork, so a quick"
+        },
+        {
+          "type": "changed",
+          "text": "Added a record of your answer when Claude Code asks to turn on the mods it writes in a session"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.318",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.317",
@@ -110,31 +137,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.311",
-      "title_en": "v2.1.311",
-      "summary": "Ce qui a change Ajout de --hold-idle-fichier and --max-hold-min to self-hosted-runner, to keep an idle session while your host reports processes it left running Ajout de a tip for the Explanatory sortie style, affichern when you ask Claude for explanations Correction de long freezes at startup and after reading or editing fichiers when a CLAUDE.md",
-      "summary_en": "What's changed\n\nAdded --hold-idle-file and --max-hold-min to self-hosted-runner, to keep an idle session while your host reports processes it left running\nAdded a tip for the Explanatory output style, shown when you ask Claude for explanations\nFixed long freezes at startup and after reading or editing files when a CLAUDE.md ",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "--hold-idle-file and --max-hold-min to self-hosted-runner, to keep an idle session while your host reports processes it left running"
-        },
-        {
-          "type": "added",
-          "text": "a tip for the Explanatory output style, shown when you ask Claude for explanations"
-        },
-        {
-          "type": "fixed",
-          "text": "long freezes at startup and after reading or editing files when a CLAUDE.md"
-        },
-        {
-          "type": "changed",
-          "text": "Added --hold-idle-file and --max-hold-min to self-hosted-runner, to keep an idle session while your host reports processes it left running"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.311",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v2.5.0",
+      "title_en": "v2.5.0",
+      "summary": "Fonctionnalites api: add erreur details tapers and new erreur taper values api: add ids filtre to list workspaces client: add erreur classes for HTTP statuses and API erreur codes, and erreur_code, details and api_message on APIStatusErreur Corrections de bugs api: capitalize CMEK in erreur d",
+      "summary_en": "Features\n\napi: add error details types and new error type values\napi: add ids filter to list workspaces\nclient: add error classes for HTTP statuses and API error codes, and error_code, details and api_message on APIStatusError\n\nBug Fixes\n\napi: capitalize CMEK in error d",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.5.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -177,14 +187,34 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v2.0.0",
-      "title_en": "v2.0.0",
-      "summary": "⚠ BREAKING CHANGES api: add prise en charge de new API version 2026-10-21 Fonctionnalites api: add a workspace_id filtre and the usage_tier scope taper to list spend limits api: add prise en charge de new API version 2026-10-21 Documentation api: remove outdated system",
-      "summary_en": "⚠ BREAKING CHANGES\n\napi: add support for new API version 2026-10-21\n\nFeatures\n\napi: add a workspace_id filter and the usage_tier scope type to list spend limits\napi: add support for new API version 2026-10-21\n\nDocumentation\n\napi: remove outdated system",
+      "source": "SDK TypeScript",
+      "title": "vertex-sdk-v1.1.2",
+      "title_en": "vertex-sdk-v1.1.2",
+      "summary": "Corrections de bugs vertex: percent-encode the project ID, region and model in the request path, so a / in the model can't move the request outside /publishers/anthropic/models/, and throw an AnthropicErreur for an empty model or a project ID or region of . or ..",
+      "summary_en": "Bug Fixes\n\nvertex: percent-encode the project ID, region and model in the request path, so a / in the model can't move the request outside /publishers/anthropic/models/, and throw an AnthropicError for an empty model or a project ID or region of . or ..\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.0.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v1.1.2",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "sdk-v1.5.0",
+      "title_en": "sdk-v1.5.0",
+      "summary": "Fonctionnalites api: add erreur details tapers and new erreur taper values api: add ids filtre to list workspaces client: add erreur classes for HTTP statuses and API erreur codes, and apiMessage, erreurCode and details on APIErreur Corrections de bugs api: capitalize CMEK in erreur details t",
+      "summary_en": "Features\n\napi: add error details types and new error type values\napi: add ids filter to list workspaces\nclient: add error classes for HTTP statuses and API error codes, and apiMessage, errorCode and details on APIError\n\nBug Fixes\n\napi: capitalize CMEK in error details t",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.5.0",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "google-cloud-sdk-v1.1.3",
+      "title_en": "google-cloud-sdk-v1.1.3",
+      "summary": "Corrections de bugs google-cloud: percent-encode the project, location and workspace ID in the derived base URL, and throw an AnthropicErreur for a value of . or ..",
+      "summary_en": "Bug Fixes\n\ngoogle-cloud: percent-encode the project, location and workspace ID in the derived base URL, and throw an AnthropicError for a value of . or ..\n",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.1.3",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -207,64 +237,34 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "google-cloud-sdk-v1.1.2",
-      "title_en": "google-cloud-sdk-v1.1.2",
-      "summary": "Maintenance internal: taper-check the published declarations of every subpackage Documentation examples: use current model IDs",
-      "summary_en": "Chores\n\ninternal: type-check the published declarations of every subpackage\n\nDocumentation\n\nexamples: use current model IDs\n",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.1.2",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "foundry-sdk-v1.1.1",
-      "title_en": "foundry-sdk-v1.1.1",
-      "summary": "Corrections de bugs foundry: make client.d.ts taper-check with skipLibCheck off Maintenance internal: taper-check the published declarations of every subpackage",
-      "summary_en": "Bug Fixes\n\nfoundry: make client.d.ts type-check with skipLibCheck off\n\nChores\n\ninternal: type-check the published declarations of every subpackage\n",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v1.1.1",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "bedrock-sdk-v1.1.1",
-      "title_en": "bedrock-sdk-v1.1.1",
-      "summary": "Maintenance internal: taper-check the published declarations of every subpackage",
-      "summary_en": "Chores\n\ninternal: type-check the published declarations of every subpackage\n",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v1.1.1",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v1.4.0",
-      "title_en": "v1.4.0",
-      "summary": "Publie le 2026-11-02",
-      "summary_en": "Publie le 2026-11-02",
+      "title": "v1.5.0",
+      "title_en": "v1.5.0",
+      "summary": "Publie le 2026-11-04",
+      "summary_en": "Publie le 2026-11-04",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.317",
-      "title_en": "v2.1.317",
-      "summary": "Publie le 2026-11-02",
-      "summary_en": "Publie le 2026-11-02",
+      "title": "v2.1.318",
+      "title_en": "v2.1.318",
+      "summary": "Publie le 2026-11-03",
+      "summary_en": "Publie le 2026-11-03",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v2.4.0",
-      "title_en": "v2.4.0",
+      "title": "v2.5.0",
+      "title_en": "v2.5.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -434,7 +434,7 @@
       "summary_en": "A research prototype for zero-knowledge proofs of AI inference. Not maintained.",
       "changelog_items": [],
       "url": "https://github.com/anthropics/FlashProve",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -479,16 +479,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.317",
-    "Claude Code npm": "v2.1.317",
-    "SDK Python": "v2.4.0",
-    "SDK Python PyPI": "v2.4.0",
-    "SDK TypeScript": "bedrock-sdk-v1.1.1",
+    "Claude Code": "v2.1.318",
+    "Claude Code npm": "v2.1.318",
+    "SDK Python": "v2.5.0",
+    "SDK Python PyPI": "v2.5.0",
+    "SDK TypeScript": "sdk-v1.4.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.311",
-    "GitHub SDK Python": "v2.0.0"
+    "GitHub Claude Code": "v2.1.312",
+    "GitHub SDK Python": "v2.1.0"
   }
 }
