@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-11-06T23:36:55.386650",
+  "last_check": "2026-11-07T22:27:53.101188",
   "updates": [
     {
       "source": "Claude Code",
@@ -18,7 +18,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.319",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -146,7 +146,7 @@
       "summary_en": "Features\n\napi: add error details types and new error type values\napi: add ids filter to list workspaces\nclient: add error classes for HTTP statuses and API error codes, and error_code, details and api_message on APIStatusError\n\nBug Fixes\n\napi: capitalize CMEK in error d",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.5.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -246,7 +246,7 @@
       "summary_en": "Publie le 2026-11-06",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -386,7 +386,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/societal-impacts",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
