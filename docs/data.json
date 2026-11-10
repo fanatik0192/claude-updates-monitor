@@ -1,6 +1,25 @@
 {
-  "last_check": "2026-11-10T01:50:55.438729",
+  "last_check": "2026-11-10T23:53:13.450006",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.322",
+      "title_en": "v2.1.322",
+      "summary": "Ce qui a change Ajout de fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it",
+      "summary_en": "What's changed\n\nAdded fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it\n",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it"
+        },
+        {
+          "type": "changed",
+          "text": "Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.322",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.321",
@@ -22,7 +41,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.321",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -98,31 +117,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.316",
-      "title_en": "v2.1.316",
-      "summary": "Ce qui a change Ajout de CLAUDE_CODE_DISABLE_ULTRATHINK, which turns the ultrathink keyword off Ajout de pooled group budgets to the Claude apps gateway: one monthly budget that a group's members share, on top of each member's own limit, set with pooled_budget on the spend limits admin API Ajout de CLAUDE_CODE_DISABLE_LOOPED_CR",
-      "summary_en": "What's changed\n\nAdded CLAUDE_CODE_DISABLE_ULTRATHINK, which turns the ultrathink keyword off\nAdded pooled group budgets to the Claude apps gateway: one monthly budget that a group's members share, on top of each member's own limit, set with pooled_budget on the spend limits admin API\nAdded CLAUDE_CODE_DISABLE_LOOPED_CR",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "CLAUDE_CODE_DISABLE_ULTRATHINK, which turns the ultrathink keyword off"
-        },
-        {
-          "type": "added",
-          "text": "pooled group budgets to the Claude apps gateway: one monthly budget that a group's members share, on top of each member's own limit, set with pooled_budget on the spend limits admin API"
-        },
-        {
-          "type": "added",
-          "text": "CLAUDE_CODE_DISABLE_LOOPED_CR"
-        },
-        {
-          "type": "changed",
-          "text": "Added CLAUDE_CODE_DISABLE_ULTRATHINK, which turns the ultrathink keyword off"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.316",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v2.8.0",
+      "title_en": "v2.8.0",
+      "summary": "Fonctionnalites api: add Claude Tag metrics to the analytics summaries and utilisateurs reports api: add reply_mode to Claude Tag Slack channel parametres Corrections de bugs bedrock: send \";\" in a model ID as is, and refuse a model ID whose part before the first \";\" is empty, \".\" or \"..\" google-cloud",
+      "summary_en": "Features\n\napi: add Claude Tag metrics to the analytics summaries and users reports\napi: add reply_mode to Claude Tag Slack channel settings\n\nBug Fixes\n\nbedrock: send \";\" in a model ID as is, and refuse a model ID whose part before the first \";\" is empty, \".\" or \"..\"\ngoogle-cloud",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.8.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -132,7 +134,7 @@
       "summary_en": "Features\n\napi: accept user_profile.program_status_updated on organization webhook endpoints\napi: add claude-fable-5-2 and claude-mythos-5-2\napi: add parent organization filtering and grouping to the usage and cost reports\napi: add the sandbox_egress_restricted error to Admin API write me",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.7.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -165,14 +167,44 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v2.3.0",
-      "title_en": "v2.3.0",
-      "summary": "Fonctionnalites api: add Claude Tag endpoints for Claude Enterprise organizations Corrections de bugs google-cloud: send utilisateur profichiers requests to the organization endpoint Maintenance client: stop sending query params hardcoded in endpoint paths docs: improve the desc",
-      "summary_en": "Features\n\napi: add Claude Tag endpoints for Claude Enterprise organizations\n\nBug Fixes\n\ngoogle-cloud: send user profiles requests to the organization endpoint\n\nChores\n\nclient: stop sending query params hardcoded in endpoint paths\ndocs: improve the desc",
+      "source": "SDK TypeScript",
+      "title": "vertex-sdk-v1.1.3",
+      "title_en": "vertex-sdk-v1.1.3",
+      "summary": "Corrections de bugs vertex: send a ; in the model as %3B vertex: throw an AnthropicErreur for a project ID, region or model such as ;x, .;x or ..;x",
+      "summary_en": "Bug Fixes\n\nvertex: send a ; in the model as %3B\nvertex: throw an AnthropicError for a project ID, region or model such as ;x, .;x or ..;x\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.3.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v1.1.3",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "sdk-v1.8.0",
+      "title_en": "sdk-v1.8.0",
+      "summary": "Fonctionnalites api: add Claude Tag metrics to the analytics summaries and utilisateurs reports api: add reply_mode to Claude Tag Slack channel parametres Maintenance docs: clarify display_nom for RBAC Roles created by Anthropic docs: clarify plugin delete and skill nom conflict descri",
+      "summary_en": "Features\n\napi: add Claude Tag metrics to the analytics summaries and users reports\napi: add reply_mode to Claude Tag Slack channel settings\n\nChores\n\ndocs: clarify display_name for RBAC Roles created by Anthropic\ndocs: clarify plugin delete and skill name conflict descri",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.8.0",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "google-cloud-sdk-v1.1.4",
+      "title_en": "google-cloud-sdk-v1.1.4",
+      "summary": "Corrections de bugs google-cloud: throw an AnthropicErreur for a project, location or workspace ID such as ;x, .;x or ..;x",
+      "summary_en": "Bug Fixes\n\ngoogle-cloud: throw an AnthropicError for a project, location or workspace ID such as ;x, .;x or ..;x\n",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.1.4",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "bedrock-sdk-v1.1.2",
+      "title_en": "bedrock-sdk-v1.1.2",
+      "summary": "Corrections de bugs bedrock: throw an AnthropicErreur for a model such as ;x, .;x or ..;x",
+      "summary_en": "Bug Fixes\n\nbedrock: throw an AnthropicError for a model such as ;x, .;x or ..;x\n",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v1.1.2",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -182,72 +214,32 @@
       "summary_en": "Features\n\napi: accept user_profile.program_status_updated on organization webhook endpoints\napi: add claude-fable-5-2 and claude-mythos-5-2\napi: add parent organization filtering and grouping to the usage and cost reports\napi: add the sandbox_egress_restricted error to Admin API write me",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.7.0",
-      "is_new": true
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "sdk-v1.6.0",
-      "title_en": "sdk-v1.6.0",
-      "summary": "Fonctionnalites api: add erreur code for ramp limit erreurs api: add erreur codes for External Key validation failures api: add prise en charge de signing organization members out everywhere Corrections de bugs client: set the nom of each erreur to its class nom client:</stro",
-      "summary_en": "Features\n\napi: add error code for ramp limit errors\napi: add error codes for External Key validation failures\napi: add support for signing organization members out everywhere\n\nBug Fixes\n\nclient: set the name of each error to its class name\nclient:</stro",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.6.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "vertex-sdk-v1.1.2",
-      "title_en": "vertex-sdk-v1.1.2",
-      "summary": "Corrections de bugs vertex: percent-encode the project ID, region and model in the request path, so a / in the model can't move the request outside /publishers/anthropic/models/, and throw an AnthropicErreur for an empty model or a project ID or region of . or ..",
-      "summary_en": "Bug Fixes\n\nvertex: percent-encode the project ID, region and model in the request path, so a / in the model can't move the request outside /publishers/anthropic/models/, and throw an AnthropicError for an empty model or a project ID or region of . or ..\n",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v1.1.2",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "sdk-v1.5.0",
-      "title_en": "sdk-v1.5.0",
-      "summary": "Fonctionnalites api: add erreur details tapers and new erreur taper values api: add ids filtre to list workspaces client: add erreur classes for HTTP statuses and API erreur codes, and apiMessage, erreurCode and details on APIErreur Corrections de bugs api: capitalize CMEK in erreur details t",
-      "summary_en": "Features\n\napi: add error details types and new error type values\napi: add ids filter to list workspaces\nclient: add error classes for HTTP statuses and API error codes, and apiMessage, errorCode and details on APIError\n\nBug Fixes\n\napi: capitalize CMEK in error details t",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.5.0",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "google-cloud-sdk-v1.1.3",
-      "title_en": "google-cloud-sdk-v1.1.3",
-      "summary": "Corrections de bugs google-cloud: percent-encode the project, location and workspace ID in the derived base URL, and throw an AnthropicErreur for a value of . or ..",
-      "summary_en": "Bug Fixes\n\ngoogle-cloud: percent-encode the project, location and workspace ID in the derived base URL, and throw an AnthropicError for a value of . or ..\n",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.1.3",
       "is_new": false
     },
     {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v1.7.0",
-      "title_en": "v1.7.0",
-      "summary": "Publie le 2026-11-09",
-      "summary_en": "Publie le 2026-11-09",
+      "title": "v1.8.0",
+      "title_en": "v1.8.0",
+      "summary": "Publie le 2026-11-10",
+      "summary_en": "Publie le 2026-11-10",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
       "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.321",
-      "title_en": "v2.1.321",
-      "summary": "Publie le 2026-11-09",
-      "summary_en": "Publie le 2026-11-09",
+      "title": "v2.1.322",
+      "title_en": "v2.1.322",
+      "summary": "Publie le 2026-11-10",
+      "summary_en": "Publie le 2026-11-10",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v2.7.0",
-      "title_en": "v2.7.0",
+      "title": "v2.8.0",
+      "title_en": "v2.8.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
@@ -273,6 +265,16 @@
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/s1-sec",
       "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Anthropic launches roadafficher for proposed initial public offering",
+      "title_en": "Anthropic launches roadshow for proposed initial public offering",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/roadshow-launch",
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -342,16 +344,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/2026-us-midterms",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Anthropic ouvrirs Singapore office and signs MOU with the Government of Singapore",
-      "title_en": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/singapore-office-opening",
       "is_new": false
     },
     {
@@ -467,16 +459,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.321",
-    "Claude Code npm": "v2.1.321",
-    "SDK Python": "v2.7.0",
-    "SDK Python PyPI": "v2.7.0",
-    "SDK TypeScript": "google-cloud-sdk-v1.",
+    "Claude Code": "v2.1.322",
+    "Claude Code npm": "v2.1.322",
+    "SDK Python": "v2.8.0",
+    "SDK Python PyPI": "v2.8.0",
+    "SDK TypeScript": "sdk-v1.7.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.316",
-    "GitHub SDK Python": "v2.3.0"
+    "GitHub Claude Code": "v2.1.317",
+    "GitHub SDK Python": "v2.4.0"
   }
 }
