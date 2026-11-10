@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-11-08T22:38:05.457221",
+  "last_check": "2026-11-10T01:50:55.438729",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.321",
+      "title_en": "v2.1.321",
+      "summary": "Ce qui a change Ajout de Claude Fable 5.2 (claude-fable-5-2), now the par defaut Fable model — 1M context, $8/$40 per Mtok with $0.20/Mtok cache reads Ajout de --parametres &lt;fichier&gt; to claude remote-control, which applies a parametres fichier to every session it starts; if the fichier changes, no new session starts until you restart claude re",
+      "summary_en": "What's changed\n\nAdded Claude Fable 5.2 (claude-fable-5-2), now the default Fable model — 1M context, $8/$40 per Mtok with $0.20/Mtok cache reads\nAdded --settings &lt;file&gt; to claude remote-control, which applies a settings file to every session it starts; if the file changes, no new session starts until you restart claude re",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "Claude Fable 5.2 (claude-fable-5-2), now the default Fable model — 1M context, $8/$40 per Mtok with $0.20/Mtok cache reads"
+        },
+        {
+          "type": "added",
+          "text": "--settings &lt;file&gt; to claude remote-control, which applies a settings file to every session it starts; if the file changes, no new session starts until you restart claude re"
+        },
+        {
+          "type": "changed",
+          "text": "Added Claude Fable 5.2 (claude-fable-5-2), now the default Fable model — 1M context, $8/$40 per Mtok with $0.20/Mtok cache reads"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.321",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.319",
@@ -102,31 +125,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.314",
-      "title_en": "v2.1.314",
-      "summary": "Ce qui a change Ajout de permissions.blockWritesOutsideWorkingDirectories: Write, Edit and NotebookEdit refuse paths outside the working directories in every permission mode Ajout de an optional groups list to Claude apps gateway upstreams: only developers in the listed IdP groups are sent to that upstream, on failover too Ajout de guardrai",
-      "summary_en": "What's changed\n\nAdded permissions.blockWritesOutsideWorkingDirectories: Write, Edit and NotebookEdit refuse paths outside the working directories in every permission mode\nAdded an optional groups list to Claude apps gateway upstreams: only developers in the listed IdP groups are sent to that upstream, on failover too\nAdded guardrai",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "permissions.blockWritesOutsideWorkingDirectories: Write, Edit and NotebookEdit refuse paths outside the working directories in every permission mode"
-        },
-        {
-          "type": "added",
-          "text": "an optional groups list to Claude apps gateway upstreams: only developers in the listed IdP groups are sent to that upstream, on failover too"
-        },
-        {
-          "type": "added",
-          "text": "guardrai"
-        },
-        {
-          "type": "changed",
-          "text": "Added permissions.blockWritesOutsideWorkingDirectories: Write, Edit and NotebookEdit refuse paths outside the working directories in every permission mode"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v2.7.0",
+      "title_en": "v2.7.0",
+      "summary": "Fonctionnalites api: accept utilisateur_profichier.program_status_mise a jour de on organization webhook endpoints api: add claude-fable-5-2 and claude-mythos-5-2 api: add parent organization filtrage and grouping to the usage and cost reports api: add the sandbox_egress_restricted erreur to Admin API write me",
+      "summary_en": "Features\n\napi: accept user_profile.program_status_updated on organization webhook endpoints\napi: add claude-fable-5-2 and claude-mythos-5-2\napi: add parent organization filtering and grouping to the usage and cost reports\napi: add the sandbox_egress_restricted error to Admin API write me",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.7.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -169,14 +175,14 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v2.2.0",
-      "title_en": "v2.2.0",
-      "summary": "Fonctionnalites api: add prise en charge de message threads api: add usage and cost reports by dimension, mark older reports legacy Corrections de bugs client: stop suggesting math.inf in the max_retries erreur message tools: leave the tool runner's history to the caller after append_m",
-      "summary_en": "Features\n\napi: add support for message threads\napi: add usage and cost reports by dimension, mark older reports legacy\n\nBug Fixes\n\nclient: stop suggesting math.inf in the max_retries error message\ntools: leave the tool runner's history to the caller after append_m",
+      "source": "SDK TypeScript",
+      "title": "sdk-v1.7.0",
+      "title_en": "sdk-v1.7.0",
+      "summary": "Fonctionnalites api: accept utilisateur_profichier.program_status_mise a jour de on organization webhook endpoints api: add claude-fable-5-2 and claude-mythos-5-2 api: add parent organization filtrage and grouping to the usage and cost reports api: add the sandbox_egress_restricted erreur to Admin API write me",
+      "summary_en": "Features\n\napi: accept user_profile.program_status_updated on organization webhook endpoints\napi: add claude-fable-5-2 and claude-mythos-5-2\napi: add parent organization filtering and grouping to the usage and cost reports\napi: add the sandbox_egress_restricted error to Admin API write me",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.2.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.7.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -219,44 +225,34 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "vertex-sdk-v1.1.1",
-      "title_en": "vertex-sdk-v1.1.1",
-      "summary": "Maintenance internal: taper-check the published declarations of every subpackage",
-      "summary_en": "Chores\n\ninternal: type-check the published declarations of every subpackage\n",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v1.1.1",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v1.6.0",
-      "title_en": "v1.6.0",
-      "summary": "Publie le 2026-11-05",
-      "summary_en": "Publie le 2026-11-05",
+      "title": "v1.7.0",
+      "title_en": "v1.7.0",
+      "summary": "Publie le 2026-11-09",
+      "summary_en": "Publie le 2026-11-09",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.319",
-      "title_en": "v2.1.319",
-      "summary": "Publie le 2026-11-06",
-      "summary_en": "Publie le 2026-11-06",
+      "title": "v2.1.321",
+      "title_en": "v2.1.321",
+      "summary": "Publie le 2026-11-09",
+      "summary_en": "Publie le 2026-11-09",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v2.6.0",
-      "title_en": "v2.6.0",
+      "title": "v2.7.0",
+      "title_en": "v2.7.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -471,16 +467,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.319",
-    "Claude Code npm": "v2.1.319",
-    "SDK Python": "v2.6.0",
-    "SDK Python PyPI": "v2.6.0",
-    "SDK TypeScript": "vertex-sdk-v1.1.1",
+    "Claude Code": "v2.1.321",
+    "Claude Code npm": "v2.1.321",
+    "SDK Python": "v2.7.0",
+    "SDK Python PyPI": "v2.7.0",
+    "SDK TypeScript": "google-cloud-sdk-v1.",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.314",
-    "GitHub SDK Python": "v2.2.0"
+    "GitHub Claude Code": "v2.1.316",
+    "GitHub SDK Python": "v2.3.0"
   }
 }
