@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-11-10T23:53:13.450006",
+  "last_check": "2026-11-12T01:14:58.565844",
   "updates": [
     {
       "source": "Claude Code",
@@ -18,7 +18,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.322",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -124,7 +124,7 @@
       "summary_en": "Features\n\napi: add Claude Tag metrics to the analytics summaries and users reports\napi: add reply_mode to Claude Tag Slack channel settings\n\nBug Fixes\n\nbedrock: send \";\" in a model ID as is, and refuse a model ID whose part before the first \";\" is empty, \".\" or \"..\"\ngoogle-cloud",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.8.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -174,7 +174,7 @@
       "summary_en": "Bug Fixes\n\nvertex: send a ; in the model as %3B\nvertex: throw an AnthropicError for a project ID, region or model such as ;x, .;x or ..;x\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v1.1.3",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -184,7 +184,7 @@
       "summary_en": "Features\n\napi: add Claude Tag metrics to the analytics summaries and users reports\napi: add reply_mode to Claude Tag Slack channel settings\n\nChores\n\ndocs: clarify display_name for RBAC Roles created by Anthropic\ndocs: clarify plugin delete and skill name conflict descri",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.8.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -194,7 +194,7 @@
       "summary_en": "Bug Fixes\n\ngoogle-cloud: throw an AnthropicError for a project, location or workspace ID such as ;x, .;x or ..;x\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.1.4",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -204,7 +204,7 @@
       "summary_en": "Bug Fixes\n\nbedrock: throw an AnthropicError for a model such as ;x, .;x or ..;x\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v1.1.2",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -224,7 +224,7 @@
       "summary_en": "Publie le 2026-11-10",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
@@ -234,7 +234,7 @@
       "summary_en": "Publie le 2026-11-10",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -244,7 +244,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -274,7 +274,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/roadshow-launch",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -314,7 +314,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
