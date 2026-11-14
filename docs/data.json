@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-11-14T00:07:32.229337",
+  "last_check": "2026-11-14T22:50:54.744645",
   "updates": [
     {
       "source": "Claude Code",
@@ -26,7 +26,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.325",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -230,7 +230,7 @@
       "summary_en": "Publie le 2026-11-13",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -401,6 +401,56 @@
       "changelog_items": [],
       "url": "https://status.claude.com",
       "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "FlashProve",
+      "title_en": "FlashProve",
+      "summary": "A rerecherche prototaper for zero-knowledge proofs of AI inference. Not maintained.",
+      "summary_en": "A research prototype for zero-knowledge proofs of AI inference. Not maintained.",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/FlashProve",
+      "is_new": false
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "single-agent-loop-kit",
+      "title_en": "single-agent-loop-kit",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/single-agent-loop-kit",
+      "is_new": false
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "oss-scanner",
+      "title_en": "oss-scanner",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/oss-scanner",
+      "is_new": false
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "snix",
+      "title_en": "snix",
+      "summary": "Mirror of Snix (git.snix.dev/snix/snix)",
+      "summary_en": "Mirror of Snix (git.snix.dev/snix/snix)",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/snix",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "claude-code-playground",
+      "title_en": "claude-code-playground",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/claude-code-playground",
+      "is_new": false
     }
   ],
   "versions": {
