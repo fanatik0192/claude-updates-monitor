@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-11-14T22:50:54.744645",
+  "last_check": "2026-11-15T23:18:06.813877",
   "updates": [
     {
       "source": "Claude Code",
@@ -250,7 +250,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/public-benefit-fund",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -440,7 +440,7 @@
       "summary_en": "Mirror of Snix (git.snix.dev/snix/snix)",
       "changelog_items": [],
       "url": "https://github.com/anthropics/snix",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
