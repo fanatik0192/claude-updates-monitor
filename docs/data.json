@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-11-15T23:18:06.813877",
+  "last_check": "2026-11-17T02:15:52.310034",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.326",
+      "title_en": "v2.1.326",
+      "summary": "Ce qui a change Ajout de prise en charge de turning on Code Mode while agent teams are activerd; if you already turned it on, sessions with teams on now start in Code Mode Ajout de a startup avertissement when an --allowedTools, --disallowedTools or --tools value has an entry that doesn't look like a complete regle Ajout de a message explaining why",
+      "summary_en": "What's changed\n\nAdded support for turning on Code Mode while agent teams are enabled; if you already turned it on, sessions with teams on now start in Code Mode\nAdded a startup warning when an --allowedTools, --disallowedTools or --tools value has an entry that doesn't look like a complete rule\nAdded a message explaining why",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "support for turning on Code Mode while agent teams are enabled; if you already turned it on, sessions with teams on now start in Code Mode"
+        },
+        {
+          "type": "added",
+          "text": "a startup warning when an --allowedTools, --disallowedTools or --tools value has an entry that doesn't look like a complete rule"
+        },
+        {
+          "type": "added",
+          "text": "a message explaining why"
+        },
+        {
+          "type": "changed",
+          "text": "Added support for turning on Code Mode while agent teams are enabled; if you already turned it on, sessions with teams on now start in Code Mode"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.326",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.325",
@@ -94,23 +121,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.319",
-      "title_en": "v2.1.319",
-      "summary": "Ce qui a change Modification de auto mode with telemetry or fonctionnalite flags off, including behind LLM gateways: calls the server can't check are asked about or denied, with no fallback to the built-in classifier; set CLAUDE_CODE_AUTO_MODE_SERVER=0 to keep using it (Bedrock, Vertex and Foundry are unmodification de) Modification de auto mode behind an LLM gateway: CLAUDE_CODE_AUT",
-      "summary_en": "What's changed\n\nChanged auto mode with telemetry or feature flags off, including behind LLM gateways: calls the server can't check are asked about or denied, with no fallback to the built-in classifier; set CLAUDE_CODE_AUTO_MODE_SERVER=0 to keep using it (Bedrock, Vertex and Foundry are unchanged)\nChanged auto mode behind an LLM gateway: CLAUDE_CODE_AUT",
-      "changelog_items": [
-        {
-          "type": "changed",
-          "text": "Changed auto mode with telemetry or feature flags off, including behind LLM gateways: calls the server can't check are asked about or denied, with no fallback to the built-in classifier; set CLAUDE_CO"
-        },
-        {
-          "type": "changed",
-          "text": "auto mode behind an LLM gateway: CLAUDE_CODE_AUT"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.319",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v2.9.0",
+      "title_en": "v2.9.0",
+      "summary": "Fonctionnalites api: add source and erreur codes to the RBAC Role read endpoints api: add Update Bundle, which sets a Claude Tag Bundle's instructions, and return instructions on Bundle Corrections de bugs credentials: write the credentials fichier on Windows with Python 3.12 and earlier <st",
+      "summary_en": "Features\n\napi: add source and error codes to the RBAC Role read endpoints\napi: add Update Bundle, which sets a Claude Tag Bundle's instructions, and return instructions on Bundle\n\nBug Fixes\n\n\ncredentials: write the credentials file on Windows with Python 3.12 and earlier\n\n\n<st",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.9.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -153,14 +171,14 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v2.4.0",
-      "title_en": "v2.4.0",
-      "summary": "Fonctionnalites api: add GA methods for analytics, spend limits and RBAC api: add nomd beta tapers for unified metrics and RBAC delete responses api: add shared analytics order and increase request actor tapers api: add tool_use_limit_reached_erreur and compaction_limit_reached_erreur session err",
-      "summary_en": "Features\n\napi: add GA methods for analytics, spend limits and RBAC\napi: add named beta types for unified metrics and RBAC delete responses\napi: add shared analytics order and increase request actor types\napi: add tool_use_limit_reached_error and compaction_limit_reached_error session err",
+      "source": "SDK TypeScript",
+      "title": "sdk-v1.9.0",
+      "title_en": "sdk-v1.9.0",
+      "summary": "Fonctionnalites api: add source and erreur codes to the RBAC Role read endpoints api: add Update Bundle, which sets a Claude Tag Bundle's instructions, and return instructions on Bundle Corrections de bugs helpers: keep $schema out of the transformed schema description streaming:<",
+      "summary_en": "Features\n\napi: add source and error codes to the RBAC Role read endpoints\napi: add Update Bundle, which sets a Claude Tag Bundle's instructions, and return instructions on Bundle\n\nBug Fixes\n\n\nhelpers: keep $schema out of the transformed schema description\n\n\nstreaming:<",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.4.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.9.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -203,44 +221,34 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "sdk-v1.7.0",
-      "title_en": "sdk-v1.7.0",
-      "summary": "Fonctionnalites api: accept utilisateur_profichier.program_status_mise a jour de on organization webhook endpoints api: add claude-fable-5-2 and claude-mythos-5-2 api: add parent organization filtrage and grouping to the usage and cost reports api: add the sandbox_egress_restricted erreur to Admin API write me",
-      "summary_en": "Features\n\napi: accept user_profile.program_status_updated on organization webhook endpoints\napi: add claude-fable-5-2 and claude-mythos-5-2\napi: add parent organization filtering and grouping to the usage and cost reports\napi: add the sandbox_egress_restricted error to Admin API write me",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.7.0",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v1.8.0",
-      "title_en": "v1.8.0",
-      "summary": "Publie le 2026-11-10",
-      "summary_en": "Publie le 2026-11-10",
+      "title": "v1.9.0",
+      "title_en": "v1.9.0",
+      "summary": "Publie le 2026-11-16",
+      "summary_en": "Publie le 2026-11-16",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.325",
-      "title_en": "v2.1.325",
-      "summary": "Publie le 2026-11-13",
-      "summary_en": "Publie le 2026-11-13",
+      "title": "v2.1.326",
+      "title_en": "v2.1.326",
+      "summary": "Publie le 2026-11-16",
+      "summary_en": "Publie le 2026-11-16",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v2.8.0",
-      "title_en": "v2.8.0",
+      "title": "v2.9.0",
+      "title_en": "v2.9.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -250,7 +258,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/public-benefit-fund",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -350,7 +358,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/team/frontier-red-team",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Recherche",
@@ -404,6 +412,16 @@
     },
     {
       "source": "Nouveau Depot",
+      "title": "art-paper-data",
+      "title_en": "art-paper-data",
+      "summary": "Data package for the ART manuscript.",
+      "summary_en": "Data package for the ART manuscript.",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/art-paper-data",
+      "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
       "title": "FlashProve",
       "title_en": "FlashProve",
       "summary": "A rerecherche prototaper for zero-knowledge proofs of AI inference. Not maintained.",
@@ -441,30 +459,20 @@
       "changelog_items": [],
       "url": "https://github.com/anthropics/snix",
       "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "claude-code-playground",
-      "title_en": "claude-code-playground",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/claude-code-playground",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.325",
-    "Claude Code npm": "v2.1.325",
-    "SDK Python": "v2.8.0",
-    "SDK Python PyPI": "v2.8.0",
-    "SDK TypeScript": "sdk-v1.7.0",
+    "Claude Code": "v2.1.326",
+    "Claude Code npm": "v2.1.326",
+    "SDK Python": "v2.9.0",
+    "SDK Python PyPI": "v2.9.0",
+    "SDK TypeScript": "bedrock-sdk-v1.1.2",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.319",
-    "GitHub SDK Python": "v2.4.0"
+    "GitHub Claude Code": "v2.1.321",
+    "GitHub SDK Python": "v2.5.0"
   }
 }
