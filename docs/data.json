@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-11-18T01:28:17.541896",
+  "last_check": "2026-11-19T00:56:21.946836",
   "updates": [
     {
       "source": "Claude Code",
@@ -26,7 +26,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.327",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -132,7 +132,7 @@
       "summary_en": "Features\n\napi: add beta support for the billing_policy request parameter\napi: add contract_spend_limit_reached error code to messages\napi: add error codes for linked billing refusals\napi: add the user_profile_billing_not_authorized error code\napi: add webhook ev",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.10.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -182,7 +182,7 @@
       "summary_en": "Features\n\napi: add beta support for the billing_policy request parameter\napi: add contract_spend_limit_reached error code to messages\napi: add error codes for linked billing refusals\napi: add the user_profile_billing_not_authorized error code\napi: add webhook ev",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.10.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -212,7 +212,7 @@
       "summary_en": "Features\n\napi: add Claude Tag metrics to the analytics summaries and users reports\napi: add reply_mode to Claude Tag Slack channel settings\n\nChores\n\ndocs: clarify display_name for RBAC Roles created by Anthropic\ndocs: clarify plugin delete and skill name conflict descri",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.8.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -232,7 +232,7 @@
       "summary_en": "Publie le 2026-11-17",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
@@ -242,7 +242,7 @@
       "summary_en": "Publie le 2026-11-17",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -252,7 +252,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -276,13 +276,23 @@
     },
     {
       "source": "Blog",
+      "title": "Anthropic prices initial public offering",
+      "title_en": "Anthropic prices initial public offering",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "is_new": true
+    },
+    {
+      "source": "Blog",
       "title": "Anthropic launches roadafficher for proposed initial public offering",
       "title_en": "Anthropic launches roadshow for proposed initial public offering",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/roadshow-launch",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -342,16 +352,6 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-      "is_new": false
-    },
-    {
-      "source": "Blog",
-      "title": "Preparing for the 2026 US midterms",
-      "title_en": "Preparing for the 2026 US midterms",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/2026-us-midterms",
       "is_new": false
     },
     {
