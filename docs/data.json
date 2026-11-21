@@ -1,6 +1,29 @@
 {
-  "last_check": "2026-11-20T00:59:49.775754",
+  "last_check": "2026-11-21T00:33:27.150530",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.330",
+      "title_en": "v2.1.330",
+      "summary": "Ce qui a change Ajout de sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login, Claude Code applies the organization's parametres and uses its cloud provider or gateway Ajout de easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS an",
+      "summary_en": "What's changed\n\nAdded sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login, Claude Code applies the organization's settings and uses its cloud provider or gateway\nAdded easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS an",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login, Claude Code applies the organization's settings and uses its cloud provider or gateway"
+        },
+        {
+          "type": "added",
+          "text": "easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS an"
+        },
+        {
+          "type": "changed",
+          "text": "Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login, Claude Code applies the organization's settings and uses its cloud provider or gateway"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.329",
@@ -26,7 +49,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.329",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -49,7 +72,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.328",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -106,31 +129,14 @@
       "is_new": false
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.325",
-      "title_en": "v2.1.325",
-      "summary": "Ce qui a change Correction de a securite issue in how zstd-comappuyer sured responses are decoded Ajout de a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, affichern once Claude has read or edited a Jupyter notebook Ajout de a line under the erreur affichern when your organization's policy blocks a request, saying how to continue: run /rewind<",
-      "summary_en": "What's changed\n\nFixed a security issue in how zstd-compressed responses are decoded\nAdded a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook\nAdded a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind<",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook"
-        },
-        {
-          "type": "added",
-          "text": "a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind<"
-        },
-        {
-          "type": "fixed",
-          "text": "a security issue in how zstd-compressed responses are decoded"
-        },
-        {
-          "type": "changed",
-          "text": "Fixed a security issue in how zstd-compressed responses are decoded"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.325",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v2.12.0",
+      "title_en": "v2.12.0",
+      "summary": "Fonctionnalites api: add the image_dimensions_too_large erreur code Corrections de bugs bedrock: send the utilisateur profichier ID in the request body Amazon Bedrock reads utilisateur_profichier_id from the request body and ignores the anthropic-utilisateur-profichier-id header, so a profichier ID given to AnthropicBedrock</",
+      "summary_en": "Features\n\napi: add the image_dimensions_too_large error code\n\nBug Fixes\n\n\nbedrock: send the user profile ID in the request body\nAmazon Bedrock reads user_profile_id from the request body and ignores the anthropic-user-profile-id header, so a profile ID given to AnthropicBedrock</",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.12.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -140,7 +146,7 @@
       "summary_en": "Features\n\napi: add Claude Code managed settings to the Admin API\napi: add the sandbox_egress_restricted error to Admin API plugin methods\n\nBug Fixes\n\n\nclient: encode spaces in query strings as %20\nThe AWS SigV4 signature of a request now matches its query string when a parameter contai",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.11.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -150,7 +156,7 @@
       "summary_en": "Features\n\napi: add beta support for the billing_policy request parameter\napi: add contract_spend_limit_reached error code to messages\napi: add error codes for linked billing refusals\napi: add the user_profile_billing_not_authorized error code\napi: add webhook ev",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.10.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -173,14 +179,24 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v2.7.0",
-      "title_en": "v2.7.0",
-      "summary": "Fonctionnalites api: accept utilisateur_profichier.program_status_mise a jour de on organization webhook endpoints api: add claude-fable-5-2 and claude-mythos-5-2 api: add parent organization filtrage and grouping to the usage and cost reports api: add the sandbox_egress_restricted erreur to Admin API write me",
-      "summary_en": "Features\n\napi: accept user_profile.program_status_updated on organization webhook endpoints\napi: add claude-fable-5-2 and claude-mythos-5-2\napi: add parent organization filtering and grouping to the usage and cost reports\napi: add the sandbox_egress_restricted error to Admin API write me",
+      "source": "SDK TypeScript",
+      "title": "sdk-v1.12.0",
+      "title_en": "sdk-v1.12.0",
+      "summary": "Fonctionnalites api: add the image_dimensions_too_large erreur code Corrections de bugs client: merge ANTHROPIC_CUSTOM_HEADERS with Headers or pairs in par defautHeaders Maintenance docs: clarify billing_policy in batches and two billing erreurs",
+      "summary_en": "Features\n\napi: add the image_dimensions_too_large error code\n\nBug Fixes\n\nclient: merge ANTHROPIC_CUSTOM_HEADERS with Headers or pairs in defaultHeaders\n\nChores\n\ndocs: clarify billing_policy in batches and two billing errors\n",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.7.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.12.0",
+      "is_new": true
+    },
+    {
+      "source": "SDK TypeScript",
+      "title": "bedrock-sdk-v1.1.3",
+      "title_en": "bedrock-sdk-v1.1.3",
+      "summary": "Corrections de bugs bedrock: send the utilisateur profichier ID in the request body Amazon Bedrock reads utilisateur_profichier_id from the request body and ignores the anthropic-utilisateur-profichier-id header, so a profichier ID given to AnthropicBedrock was not applied. AnthropicBedrock now moves it into the body of Messages requests and n",
+      "summary_en": "Bug Fixes\n\n\nbedrock: send the user profile ID in the request body\nAmazon Bedrock reads user_profile_id from the request body and ignores the anthropic-user-profile-id header, so a profile ID given to AnthropicBedrock was not applied. AnthropicBedrock now moves it into the body of Messages requests and n",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v1.1.3",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -190,7 +206,7 @@
       "summary_en": "Features\n\napi: add Claude Code managed settings to the Admin API\napi: add the sandbox_egress_restricted error to Admin API plugin methods\n\nPerformance Improvements\n\nclient: speed up streaming of large events\n\nChores\n\ndocs: explain how the input-token r",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.11.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -213,49 +229,29 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "vertex-sdk-v1.1.3",
-      "title_en": "vertex-sdk-v1.1.3",
-      "summary": "Corrections de bugs vertex: send a ; in the model as %3B vertex: throw an AnthropicErreur for a project ID, region or model such as ;x, .;x or ..;x",
-      "summary_en": "Bug Fixes\n\nvertex: send a ; in the model as %3B\nvertex: throw an AnthropicError for a project ID, region or model such as ;x, .;x or ..;x\n",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v1.1.3",
-      "is_new": false
-    },
-    {
-      "source": "SDK TypeScript",
-      "title": "sdk-v1.8.0",
-      "title_en": "sdk-v1.8.0",
-      "summary": "Fonctionnalites api: add Claude Tag metrics to the analytics summaries and utilisateurs reports api: add reply_mode to Claude Tag Slack channel parametres Maintenance docs: clarify display_nom for RBAC Roles created by Anthropic docs: clarify plugin delete and skill nom conflict descri",
-      "summary_en": "Features\n\napi: add Claude Tag metrics to the analytics summaries and users reports\napi: add reply_mode to Claude Tag Slack channel settings\n\nChores\n\ndocs: clarify display_name for RBAC Roles created by Anthropic\ndocs: clarify plugin delete and skill name conflict descri",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.8.0",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v1.11.0",
-      "title_en": "v1.11.0",
-      "summary": "Publie le 2026-11-19",
-      "summary_en": "Publie le 2026-11-19",
+      "title": "v1.12.0",
+      "title_en": "v1.12.0",
+      "summary": "Publie le 2026-11-20",
+      "summary_en": "Publie le 2026-11-20",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
       "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.329",
-      "title_en": "v2.1.329",
-      "summary": "Publie le 2026-11-19",
-      "summary_en": "Publie le 2026-11-19",
+      "title": "v2.1.330",
+      "title_en": "v2.1.330",
+      "summary": "Publie le 2026-11-20",
+      "summary_en": "Publie le 2026-11-20",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v2.11.0",
-      "title_en": "v2.11.0",
+      "title": "v2.12.0",
+      "title_en": "v2.12.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
@@ -281,6 +277,16 @@
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/s1-sec",
       "is_new": false
+    },
+    {
+      "source": "Blog",
+      "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ opt",
+      "title_en": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ opt",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/news/ipo-close",
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -353,16 +359,6 @@
       "is_new": false
     },
     {
-      "source": "Blog",
-      "title": "An update on independent evaluators",
-      "title_en": "An update on independent evaluators",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-      "is_new": false
-    },
-    {
       "source": "Recherche",
       "title": "Frontier Red Team",
       "title_en": "Frontier Red Team",
@@ -394,22 +390,22 @@
     },
     {
       "source": "Recherche",
+      "title": "Claude solves two ouvrir problems in the physics of black holes",
+      "title_en": "Claude solves two open problems in the physics of black holes",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+      "is_new": true
+    },
+    {
+      "source": "Recherche",
       "title": "Investigating vault particles with Claude",
       "title_en": "Investigating vault particles with Claude",
       "summary": "",
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
-      "is_new": false
-    },
-    {
-      "source": "Recherche",
-      "title": "AI for scientific discovery: How rerechercheers use Claude",
-      "title_en": "AI for scientific discovery: How researchers use Claude",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://www.anthropic.com/research/how-researchers-use-claude",
       "is_new": false
     },
     {
@@ -421,70 +417,20 @@
       "changelog_items": [],
       "url": "https://status.claude.com",
       "is_new": true
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "art-paper-data",
-      "title_en": "art-paper-data",
-      "summary": "Data package for the ART manuscript.",
-      "summary_en": "Data package for the ART manuscript.",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/art-paper-data",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "FlashProve",
-      "title_en": "FlashProve",
-      "summary": "A rerecherche prototaper for zero-knowledge proofs of AI inference. Not maintained.",
-      "summary_en": "A research prototype for zero-knowledge proofs of AI inference. Not maintained.",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/FlashProve",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "single-agent-loop-kit",
-      "title_en": "single-agent-loop-kit",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/single-agent-loop-kit",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "oss-scanner",
-      "title_en": "oss-scanner",
-      "summary": "",
-      "summary_en": "",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/oss-scanner",
-      "is_new": false
-    },
-    {
-      "source": "Nouveau Depot",
-      "title": "snix",
-      "title_en": "snix",
-      "summary": "Mirror of Snix (git.snix.dev/snix/snix)",
-      "summary_en": "Mirror of Snix (git.snix.dev/snix/snix)",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/snix",
-      "is_new": false
     }
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.329",
-    "Claude Code npm": "v2.1.329",
-    "SDK Python": "v2.11.0",
-    "SDK Python PyPI": "v2.11.0",
-    "SDK TypeScript": "sdk-v1.8.0",
+    "Claude Code": "v2.1.330",
+    "Claude Code npm": "v2.1.330",
+    "SDK Python": "v2.12.0",
+    "SDK Python PyPI": "v2.12.0",
+    "SDK TypeScript": "sdk-v1.9.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.325",
-    "GitHub SDK Python": "v2.7.0"
+    "GitHub Claude Code": "v2.1.326",
+    "GitHub SDK Python": "v2.8.0"
   }
 }
