@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-11-21T00:33:27.150530",
+  "last_check": "2026-11-21T23:41:14.950406",
   "updates": [
     {
       "source": "Claude Code",
@@ -22,7 +22,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -136,7 +136,7 @@
       "summary_en": "Features\n\napi: add the image_dimensions_too_large error code\n\nBug Fixes\n\n\nbedrock: send the user profile ID in the request body\nAmazon Bedrock reads user_profile_id from the request body and ignores the anthropic-user-profile-id header, so a profile ID given to AnthropicBedrock</",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.12.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -156,7 +156,7 @@
       "summary_en": "Features\n\napi: add beta support for the billing_policy request parameter\napi: add contract_spend_limit_reached error code to messages\napi: add error codes for linked billing refusals\napi: add the user_profile_billing_not_authorized error code\napi: add webhook ev",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.10.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -176,7 +176,7 @@
       "summary_en": "Features\n\napi: add Claude Tag metrics to the analytics summaries and users reports\napi: add reply_mode to Claude Tag Slack channel settings\n\nBug Fixes\n\nbedrock: send \";\" in a model ID as is, and refuse a model ID whose part before the first \";\" is empty, \".\" or \"..\"\ngoogle-cloud",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.8.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -186,7 +186,7 @@
       "summary_en": "Features\n\napi: add the image_dimensions_too_large error code\n\nBug Fixes\n\nclient: merge ANTHROPIC_CUSTOM_HEADERS with Headers or pairs in defaultHeaders\n\nChores\n\ndocs: clarify billing_policy in batches and two billing errors\n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.12.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -196,7 +196,7 @@
       "summary_en": "Bug Fixes\n\n\nbedrock: send the user profile ID in the request body\nAmazon Bedrock reads user_profile_id from the request body and ignores the anthropic-user-profile-id header, so a profile ID given to AnthropicBedrock was not applied. AnthropicBedrock now moves it into the body of Messages requests and n",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v1.1.3",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -236,7 +236,7 @@
       "summary_en": "Publie le 2026-11-20",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "npm @anthropic-ai/claude-code",
@@ -246,7 +246,7 @@
       "summary_en": "Publie le 2026-11-20",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "PyPI anthropic",
@@ -256,7 +256,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -286,7 +286,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/ipo-close",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
@@ -306,7 +306,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/roadshow-launch",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -396,7 +396,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/research/claude-black-hole-physics",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
@@ -417,6 +417,56 @@
       "changelog_items": [],
       "url": "https://status.claude.com",
       "is_new": true
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "art-paper-data",
+      "title_en": "art-paper-data",
+      "summary": "Data package for the ART manuscript.",
+      "summary_en": "Data package for the ART manuscript.",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/art-paper-data",
+      "is_new": false
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "FlashProve",
+      "title_en": "FlashProve",
+      "summary": "A rerecherche prototaper for zero-knowledge proofs of AI inference. Not maintained.",
+      "summary_en": "A research prototype for zero-knowledge proofs of AI inference. Not maintained.",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/FlashProve",
+      "is_new": false
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "single-agent-loop-kit",
+      "title_en": "single-agent-loop-kit",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/single-agent-loop-kit",
+      "is_new": false
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "oss-scanner",
+      "title_en": "oss-scanner",
+      "summary": "",
+      "summary_en": "",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/oss-scanner",
+      "is_new": false
+    },
+    {
+      "source": "Nouveau Depot",
+      "title": "snix",
+      "title_en": "snix",
+      "summary": "Mirror of Snix (git.snix.dev/snix/snix)",
+      "summary_en": "Mirror of Snix (git.snix.dev/snix/snix)",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/snix",
+      "is_new": false
     }
   ],
   "versions": {
