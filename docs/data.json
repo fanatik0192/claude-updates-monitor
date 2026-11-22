@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-11-21T23:41:14.950406",
+  "last_check": "2026-11-22T23:58:03.443222",
   "updates": [
     {
       "source": "Claude Code",
@@ -176,7 +176,7 @@
       "summary_en": "Features\n\napi: add Claude Tag metrics to the analytics summaries and users reports\napi: add reply_mode to Claude Tag Slack channel settings\n\nBug Fixes\n\nbedrock: send \";\" in a model ID as is, and refuse a model ID whose part before the first \";\" is empty, \".\" or \"..\"\ngoogle-cloud",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.8.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -226,7 +226,7 @@
       "summary_en": "Features\n\napi: add source and error codes to the RBAC Role read endpoints\napi: add Update Bundle, which sets a Claude Tag Bundle's instructions, and return instructions on Bundle\n\nBug Fixes\n\n\nhelpers: keep $schema out of the transformed schema description\n\n\nstreaming:<",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.9.0",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "npm @anthropic-ai/sdk",
@@ -306,7 +306,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/roadshow-launch",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Blog",
