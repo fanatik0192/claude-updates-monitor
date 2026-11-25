@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-11-24T04:09:21.266943",
+  "last_check": "2026-11-25T02:54:41.733640",
   "updates": [
+    {
+      "source": "Claude Code",
+      "title": "v2.1.332",
+      "title_en": "v2.1.332",
+      "summary": "Ce qui a change Ajout de skills from MCP servers (beta). They afficher as server:skill in the / menu; other skills keep their noms Ajout de a PreSkillShellCommande hook event that can refuse a skill or commande's inline shell commandes as it loads; on 2.1.331 and older, a parametres fichier naming it ouvrirs a dialog at start Ajout de \"Always del",
+      "summary_en": "What's changed\n\nAdded skills from MCP servers (beta). They show as server:skill in the / menu; other skills keep their names\nAdded a PreSkillShellCommand hook event that can refuse a skill or command's inline shell commands as it loads; on 2.1.331 and older, a settings file naming it opens a dialog at start\nAdded \"Always del",
+      "changelog_items": [
+        {
+          "type": "added",
+          "text": "skills from MCP servers (beta). They show as server:skill in the / menu; other skills keep their names"
+        },
+        {
+          "type": "added",
+          "text": "a PreSkillShellCommand hook event that can refuse a skill or command's inline shell commands as it loads; on 2.1.331 and older, a settings file naming it opens a dialog at start"
+        },
+        {
+          "type": "added",
+          "text": "\"Always del"
+        },
+        {
+          "type": "changed",
+          "text": "Added skills from MCP servers (beta). They show as server:skill in the / menu; other skills keep their names"
+        }
+      ],
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+      "is_new": true
+    },
     {
       "source": "Claude Code",
       "title": "v2.1.331",
@@ -26,7 +53,7 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.331",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Claude Code",
@@ -99,34 +126,17 @@
         }
       ],
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.328",
-      "is_new": false
+      "is_new": true
     },
     {
-      "source": "Claude Code",
-      "title": "v2.1.327",
-      "title_en": "v2.1.327",
-      "summary": "Ce qui a change Ajout de a confirmation before /install-github-app changes a repository Ajout de claude mcp add-json &lt;nom&gt; - to read the server's JSON from stdin, so jetons can stay off the commande line; not available inside a Claude Code session Ajout de a line when a resumed session's earlier messages can't be loaded Ajout de a lis",
-      "summary_en": "What's changed\n\nAdded a confirmation before /install-github-app changes a repository\nAdded claude mcp add-json &lt;name&gt; - to read the server's JSON from stdin, so tokens can stay off the command line; not available inside a Claude Code session\nAdded a line when a resumed session's earlier messages can't be loaded\nAdded a lis",
-      "changelog_items": [
-        {
-          "type": "added",
-          "text": "a confirmation before /install-github-app changes a repository"
-        },
-        {
-          "type": "added",
-          "text": "claude mcp add-json &lt;name&gt; - to read the server's JSON from stdin, so tokens can stay off the command line; not available inside a Claude Code session"
-        },
-        {
-          "type": "added",
-          "text": "a line when a resumed session's earlier messages can't be loaded"
-        },
-        {
-          "type": "changed",
-          "text": "Added a confirmation before /install-github-app changes a repository"
-        }
-      ],
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.327",
-      "is_new": false
+      "source": "SDK Python",
+      "title": "v2.14.0",
+      "title_en": "v2.14.0",
+      "summary": "Fonctionnalites api: add Google-managed data controls for Google Cloud projects api: add Google-managed data controls for utilisateur profichiers api: add prise en charge de compliance review cases, notices, and items Corrections de bugs client: honor proxy and trust_env when proxy variables are",
+      "summary_en": "Features\n\napi: add Google-managed data controls for Google Cloud projects\napi: add Google-managed data controls for user profiles\napi: add support for compliance review cases, notices, and items\n\nBug Fixes\n\n\nclient: honor proxy and trust_env when proxy variables are ",
+      "changelog_items": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.14.0",
+      "is_new": true
     },
     {
       "source": "SDK Python",
@@ -136,7 +146,7 @@
       "summary_en": "Features\n\napi: add an error code to Message Batches creation\napi: add External Storage to the Admin API beta\napi: add webhook events for external storage failure and recovery\n\nBug Fixes\n\nclient: build the right class for tool results with unknown values\n\nC",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.13.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -169,14 +179,14 @@
       "is_new": false
     },
     {
-      "source": "SDK Python",
-      "title": "v2.9.0",
-      "title_en": "v2.9.0",
-      "summary": "Fonctionnalites api: add source and erreur codes to the RBAC Role read endpoints api: add Update Bundle, which sets a Claude Tag Bundle's instructions, and return instructions on Bundle Corrections de bugs credentials: write the credentials fichier on Windows with Python 3.12 and earlier <st",
-      "summary_en": "Features\n\napi: add source and error codes to the RBAC Role read endpoints\napi: add Update Bundle, which sets a Claude Tag Bundle's instructions, and return instructions on Bundle\n\nBug Fixes\n\n\ncredentials: write the credentials file on Windows with Python 3.12 and earlier\n\n\n<st",
+      "source": "SDK TypeScript",
+      "title": "sdk-v1.14.0",
+      "title_en": "sdk-v1.14.0",
+      "summary": "Fonctionnalites api: add Google-managed data controls for Google Cloud projects api: add Google-managed data controls for utilisateur profichiers api: add prise en charge de compliance review cases, notices, and items Maintenance docs: nom both causes of the tool use limit erreur <stron",
+      "summary_en": "Features\n\napi: add Google-managed data controls for Google Cloud projects\napi: add Google-managed data controls for user profiles\napi: add support for compliance review cases, notices, and items\n\nChores\n\ndocs: name both causes of the tool use limit error\n<stron",
       "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.9.0",
-      "is_new": false
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.14.0",
+      "is_new": true
     },
     {
       "source": "SDK TypeScript",
@@ -186,7 +196,7 @@
       "summary_en": "Features\n\napi: add an error code to Message Batches creation\napi: add External Storage to the Admin API beta\napi: add webhook events for external storage failure and recovery\n\nBug Fixes\n\napi: type beta batch request params as message create params\n\nChores<",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.13.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK TypeScript",
@@ -219,39 +229,29 @@
       "is_new": false
     },
     {
-      "source": "SDK TypeScript",
-      "title": "sdk-v1.10.0",
-      "title_en": "sdk-v1.10.0",
-      "summary": "Fonctionnalites api: add beta prise en charge de the billing_policy request parameter api: add contract_spend_limit_reached erreur code to messages api: add erreur codes for linked billing refusals api: add the utilisateur_profichier_billing_not_authorized erreur code api: add webhook ev",
-      "summary_en": "Features\n\napi: add beta support for the billing_policy request parameter\napi: add contract_spend_limit_reached error code to messages\napi: add error codes for linked billing refusals\napi: add the user_profile_billing_not_authorized error code\napi: add webhook ev",
-      "changelog_items": [],
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.10.0",
-      "is_new": false
-    },
-    {
       "source": "npm @anthropic-ai/sdk",
-      "title": "v1.13.0",
-      "title_en": "v1.13.0",
-      "summary": "Publie le 2026-11-23",
-      "summary_en": "Publie le 2026-11-23",
+      "title": "v1.14.0",
+      "title_en": "v1.14.0",
+      "summary": "Publie le 2026-11-24",
+      "summary_en": "Publie le 2026-11-24",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/sdk",
       "is_new": true
     },
     {
       "source": "npm @anthropic-ai/claude-code",
-      "title": "v2.1.331",
-      "title_en": "v2.1.331",
-      "summary": "Publie le 2026-11-23",
-      "summary_en": "Publie le 2026-11-23",
+      "title": "v2.1.332",
+      "title_en": "v2.1.332",
+      "summary": "Publie le 2026-11-24",
+      "summary_en": "Publie le 2026-11-24",
       "changelog_items": [],
       "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
       "is_new": true
     },
     {
       "source": "PyPI anthropic",
-      "title": "v2.13.0",
-      "title_en": "v2.13.0",
+      "title": "v2.14.0",
+      "title_en": "v2.14.0",
       "summary": "The official Python library for the anthropic API",
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
@@ -426,7 +426,7 @@
       "summary_en": "Data package for the ART manuscript.",
       "changelog_items": [],
       "url": "https://github.com/anthropics/art-paper-data",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Nouveau Depot",
@@ -471,16 +471,16 @@
   ],
   "versions": {
     "Journal API": "N/A",
-    "Claude Code": "v2.1.331",
-    "Claude Code npm": "v2.1.331",
-    "SDK Python": "v2.13.0",
-    "SDK Python PyPI": "v2.13.0",
-    "SDK TypeScript": "sdk-v1.10.0",
+    "Claude Code": "v2.1.332",
+    "Claude Code npm": "v2.1.332",
+    "SDK Python": "v2.14.0",
+    "SDK Python PyPI": "v2.14.0",
+    "SDK TypeScript": "sdk-v1.11.0",
     "Blog Anthropic": "Articles",
     "Recherche": "Publications",
     "Status API": "Incident",
     "GitHub Anthropic": "Repos",
-    "GitHub Claude Code": "v2.1.327",
-    "GitHub SDK Python": "v2.9.0"
+    "GitHub Claude Code": "v2.1.328",
+    "GitHub SDK Python": "v2.10.0"
   }
 }
