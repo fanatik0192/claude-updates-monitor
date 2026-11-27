@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-11-26T02:00:37.717548",
+  "last_check": "2026-11-27T02:00:15.330119",
   "updates": [
     {
       "source": "Claude Code",
@@ -146,7 +146,7 @@
       "summary_en": "Features\n\napi: add an error code to Message Batches creation\napi: add External Storage to the Admin API beta\napi: add webhook events for external storage failure and recovery\n\nBug Fixes\n\nclient: build the right class for tool results with unknown values\n\nC",
       "changelog_items": [],
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.13.0",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "SDK Python",
@@ -256,7 +256,7 @@
       "summary_en": "The official Python library for the anthropic API",
       "changelog_items": [],
       "url": "https://pypi.org/project/anthropic/",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -346,7 +346,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-      "is_new": false
+      "is_new": true
     },
     {
       "source": "Blog",
@@ -356,7 +356,7 @@
       "summary_en": "",
       "changelog_items": [],
       "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
-      "is_new": true
+      "is_new": false
     },
     {
       "source": "Recherche",
